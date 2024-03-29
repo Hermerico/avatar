@@ -5,6 +5,12 @@ technologies = {
 		enable_equipments = {
 			firenation_yacht_1
 		}
+
+		dependencies = {
+			astronomy = 1
+			leverage = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_yacht_tech_2
 			research_cost_coeff = 1
@@ -97,6 +103,12 @@ technologies = {
 		enable_equipments = {
 			firenation_yacht_2
 		}
+
+		dependencies = {
+			natural_philosophy = 1
+			alchemy = 1
+		}
+
 		path = {
 			leads_to_tech = firenation_yacht_tech_3
 			research_cost_coeff = 1
@@ -188,6 +200,11 @@ technologies = {
 		enable_equipments = {
 			firenation_yacht_3
 		}
+		dependencies = {
+			magnetism = 1
+			steam_engine = 1
+		}
+
 		path = {
 			leads_to_tech = firenation_yacht_tech_4
 			research_cost_coeff = 1
@@ -279,6 +296,12 @@ technologies = {
 		enable_equipments = {
 			firenation_yacht_4
 		}
+
+		dependencies = {
+			steel_alloy = 1
+			scientific_method = 1
+		}
+
 		path = {
 			leads_to_tech = firenation_yacht_tech_5
 			research_cost_coeff = 1
@@ -370,6 +393,11 @@ technologies = {
 		enable_equipments = {
 			firenation_yacht_5
 		}
+
+		dependencies = {
+			gas_turbine = 1
+		}
+
 		path = {
 			leads_to_tech = firenation_yacht_tech_6
 			research_cost_coeff = 1
@@ -562,6 +590,12 @@ technologies = {
 		enable_equipments = {
 			firenation_frigate_1
 		}
+
+		dependencies = {
+			astronomy = 1
+			leverage = 1
+		}
+
 		path = {
 			leads_to_tech = firenation_frigate_tech_2
 			research_cost_coeff = 1
@@ -656,6 +690,12 @@ technologies = {
 		enable_equipments = {
 			firenation_frigate_2
 		}
+
+		dependencies = {
+			alchemy = 1
+			natural_philosophy = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_frigate_tech_3
 			research_cost_coeff = 1
@@ -748,6 +788,12 @@ technologies = {
 		enable_equipments = {
 			firenation_frigate_3
 		}
+		
+		dependencies = {
+			steam_engine = 1
+			magnetism = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_frigate_tech_4
 			research_cost_coeff = 1
@@ -840,6 +886,12 @@ technologies = {
 		enable_equipments = {
 			firenation_frigate_4
 		}
+
+		dependencies = {
+			steel_alloy = 1
+			scientific_method = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_frigate_tech_5
 			research_cost_coeff = 1
@@ -932,6 +984,11 @@ technologies = {
 		enable_equipments = {
 			firenation_frigate_5
 		}
+		
+		dependencies = {
+			gas_turbine = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_frigate_tech_6
 			research_cost_coeff = 1
@@ -1097,7 +1154,13 @@ technologies = {
 	}
 	
 	mid_bonus_frigate_6 = {
-
+		
+		
+		dependencies = {
+			gas_turbine = 1
+			applied_mathematics
+		}
+		
 		firenation_frigate = {
 			max_organisation = 15	
 		}
@@ -1127,6 +1190,12 @@ technologies = {
 		enable_equipments = {
 			firenation_cruiser_1
 		}
+		
+		dependencies = {
+			astronomy = 1
+			geometry = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_cruiser_tech_2
 			research_cost_coeff = 1
@@ -1192,6 +1261,12 @@ technologies = {
 		enable_equipments = {
 			firenation_cruiser_2
 		}
+		
+		dependencies = {
+			leverage = 1
+			natural_philosophy = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_cruiser_tech_3
 			research_cost_coeff = 1
@@ -1252,6 +1327,12 @@ technologies = {
 		enable_equipments = {
 			firenation_cruiser_3
 		}
+		
+		dependencies = {
+			magnetism = 1
+			alchemy = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_cruiser_tech_4
 			research_cost_coeff = 1
@@ -1313,6 +1394,11 @@ technologies = {
 		enable_equipments = {
 			firenation_cruiser_4
 		}
+		
+		dependencies = {
+			steam_engine = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_cruiser_tech_5
 			research_cost_coeff = 1
@@ -1374,6 +1460,12 @@ technologies = {
 		enable_equipments = {
 			firenation_cruiser_5
 		}
+		
+		dependencies = {
+			steel_alloy = 1
+			scientific_method = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_cruiser_tech_6
 			research_cost_coeff = 1
@@ -1434,6 +1526,11 @@ technologies = {
 		enable_equipments = {
 			firenation_cruiser_6
 		}
+		
+		dependencies = {
+			gas_turbine = 1
+		}
+		
 		path = {
 			leads_to_tech = left_bonus_cruiser_6
 			research_cost_coeff = 1
@@ -1491,6 +1588,12 @@ technologies = {
 		enable_equipments = {
 			firenation_heavy_cruiser_1
 		}
+		
+		dependencies = {
+			leverage = 1
+			natural_philosophy = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_heavy_cruiser_tech_2
 			research_cost_coeff = 1
@@ -1591,6 +1694,12 @@ technologies = {
 		enable_equipments = {
 			firenation_heavy_cruiser_2
 		}
+		
+		dependencies = {
+			alchemy = 1
+			magnetism = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_heavy_cruiser_tech_3
 			research_cost_coeff = 1
@@ -1687,6 +1796,11 @@ technologies = {
 		enable_equipments = {
 			firenation_heavy_cruiser_3
 		}
+		
+		dependencies = {
+			steam_engine = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_heavy_cruiser_tech_4
 			research_cost_coeff = 1
@@ -1784,6 +1898,13 @@ technologies = {
 		enable_equipments = {
 			firenation_heavy_cruiser_4
 		}
+		
+		
+		dependencies = {
+			scientific_method = 1
+			steel_alloy = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_heavy_cruiser_tech_5
 			research_cost_coeff = 1
@@ -1881,6 +2002,11 @@ technologies = {
 		enable_equipments = {
 			firenation_heavy_cruiser_5
 		}
+		
+		dependencies = {
+			gas_turbine = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_heavy_cruiser_tech_6
 			research_cost_coeff = 1
@@ -1978,6 +2104,13 @@ technologies = {
 		enable_equipments = {
 			firenation_heavy_cruiser_6
 		}
+		
+		
+		dependencies = {
+			applied_mathematics = 1
+			chemistry= 1
+		}
+		
 
 		research_cost = 1.5
 
@@ -2003,6 +2136,11 @@ technologies = {
 		enable_equipments = {
 			firenation_battleship_1
 		}
+		
+		dependencies = {
+			steam_engine = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_battleship_tech_2
 			research_cost_coeff = 1
@@ -2095,6 +2233,12 @@ technologies = {
 		enable_equipments = {
 			firenation_battleship_2
 		}
+		
+		dependencies = {
+			scientific_method = 1
+			steel_alloy = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_battleship_tech_3
 			research_cost_coeff = 1
@@ -2187,6 +2331,11 @@ technologies = {
 		enable_equipments = {
 			firenation_battleship_3
 		}
+		
+		dependencies = {
+			gas_turbine = 1
+		}
+		
 		path = {
 			leads_to_tech = firenation_battleship_tech_4
 			research_cost_coeff = 1
@@ -2278,6 +2427,11 @@ technologies = {
 
 		enable_equipments = {
 			firenation_battleship_4
+		}
+		
+		dependencies = {
+			applied_mathematics = 1
+			chemistry = 1
 		}
 		
 		path = {
@@ -2396,6 +2550,10 @@ technologies = {
 	
 	fire_mine_warfare_1 = {
 		
+		dependencies = {
+			smelting = 1
+		}
+		
 		naval_mines_damage_factor = 0.1
 		mines_planting_by_fleets_factor = 0.05
 		
@@ -2425,6 +2583,10 @@ technologies = {
 	}
 	
 	fire_mine_warfare_2 = {
+		
+		dependencies = {
+			natural_philosophy = 1
+		}
 
 		naval_mines_damage_factor = 0.1
 		mines_planting_by_fleets_factor = 0.05
@@ -2455,6 +2617,10 @@ technologies = {
 	}
 	
 	fire_mine_warfare_3 = {
+		
+		dependencies = {
+			alchemy = 1
+		}
 
 		naval_mines_damage_factor = 0.1
 		mines_planting_by_fleets_factor = 0.05
@@ -2485,6 +2651,11 @@ technologies = {
 	}
 	
 	fire_mine_warfare_4 = {
+		
+		dependencies = {
+			laws_of_nature = 1
+			magnetism = 1
+		}
 
 		naval_mines_damage_factor = 0.1
 		mines_planting_by_fleets_factor = 0.05
@@ -2515,7 +2686,11 @@ technologies = {
 	}
 	
 	fire_mine_warfare_5 = {
-
+		
+		dependencies = {
+			chemistry = 1
+		}
+		
 		naval_mines_damage_factor = 0.1
 		mines_planting_by_fleets_factor = 0.05
 
