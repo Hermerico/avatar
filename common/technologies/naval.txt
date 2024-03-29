@@ -5,6 +5,9 @@ technologies = {
 		enable_equipments = {
 			galley_ship_1
 		}
+		dependencies = {
+			kinectics = 1
+		}
 		path = {
 			leads_to_tech = galley_ship_tech_2
 			research_cost_coeff = 1
@@ -93,8 +96,9 @@ technologies = {
 	}
 	
 	galley_ship_tech_2 = {
+
 		dependencies = {
-			wind_manipulation = 1
+			geometry = 1
 		}
 
 		enable_equipments = {
@@ -191,6 +195,9 @@ technologies = {
 		enable_equipments = {
 			galley_ship_3
 		}
+		dependencies = {
+			leverage = 1
+		}
 		path = {
 			leads_to_tech = galley_ship_tech_4
 			research_cost_coeff = 1
@@ -279,7 +286,7 @@ technologies = {
 	
 	galley_ship_tech_4 = {
 		dependencies = {
-			astronomy = 1
+			magnetism = 1
 		}
 
 		enable_equipments = {
@@ -373,7 +380,7 @@ technologies = {
 	
 	galley_ship_tech_5 = {
 		dependencies = {
-			leverage = 1
+			alchemy = 1
 		}
 
 		enable_equipments = {
@@ -466,8 +473,9 @@ technologies = {
 	}
 	
 	galley_ship_tech_6 = {
+
 		dependencies = {
-			magnetism = 1
+			steel_alloy = 1
 		}
 
 		enable_equipments = {
@@ -560,6 +568,10 @@ technologies = {
 	}
 	
 	mid_bonus_galley_6 = {
+		
+		dependencies = {
+			gas_turbine = 1
+		}
 
 		galley = {
 			max_organisation = 10
@@ -589,6 +601,9 @@ technologies = {
 
 		enable_equipments = {
 			barque_ship_1
+		}
+		dependencies = {
+			wind_manipulation = 1
 		}
 		path = {
 			leads_to_tech = barque_ship_tech_2
@@ -680,7 +695,7 @@ technologies = {
 	
 	barque_ship_tech_2 = {
 		dependencies = {
-			wind_manipulation = 1
+			astronomy = 1
 		}
 
 		enable_equipments = {
@@ -778,6 +793,9 @@ technologies = {
 		enable_equipments = {
 			barque_ship_3
 		}
+		dependencies = {
+			leverage = 1
+		}
 		path = {
 			leads_to_tech = barque_ship_tech_4
 			research_cost_coeff = 1
@@ -867,7 +885,7 @@ technologies = {
 	
 	barque_ship_tech_4 = {
 		dependencies = {
-			astronomy = 1
+			magnetism = 1
 		}
 
 		enable_equipments = {
@@ -962,7 +980,7 @@ technologies = {
 	
 	barque_ship_tech_5 = {
 		dependencies = {
-			leverage = 1
+			alchemy = 1
 		}
 
 		enable_equipments = {
@@ -1057,7 +1075,7 @@ technologies = {
 	
 	barque_ship_tech_6 = {
 		dependencies = {
-			magnetism = 1
+			steel_alloy = 1
 		}
 
 		enable_equipments = {
@@ -1154,6 +1172,10 @@ technologies = {
 	
 	mid_bonus_barque_6 = {
 
+		dependencies = {
+			gas_turbine = 1
+		}
+
 		barque = {
 			max_organisation = 15	
 		}
@@ -1182,6 +1204,9 @@ technologies = {
 
 		enable_equipments = {
 			junk_ship_1
+		}
+		dependencies = {
+			wind_manipulation = 1
 		}
 		path = {
 			leads_to_tech = junk_ship_tech_2
@@ -1245,7 +1270,7 @@ technologies = {
 	
 	junk_ship_tech_2 = {
 		dependencies = {
-			wind_manipulation = 1
+			astronomy = 1
 		}
 
 		enable_equipments = {
@@ -1308,7 +1333,7 @@ technologies = {
 	
 	junk_ship_tech_3 = {
 		dependencies = {
-			astronomy = 1
+			leverage = 1
 		}
 
 		enable_equipments = {
@@ -1372,7 +1397,7 @@ technologies = {
 	
 	junk_ship_tech_4 = {
 		dependencies = {
-			leverage = 1
+			magnetism = 1
 		}
 
 		enable_equipments = {
@@ -1436,7 +1461,7 @@ technologies = {
 	
 	junk_ship_tech_5 = {
 		dependencies = {
-			magnetism = 1
+			steel_alloy = 1
 		}
 
 		enable_equipments = {
@@ -1499,6 +1524,10 @@ technologies = {
 	}
 	
 	left_bonus_junk_6 = {
+
+		dependencies = {
+			gas_turbine = 1
+		}
 
 		junk = {
 			max_organisation = 15	
@@ -1833,8 +1862,7 @@ technologies = {
 	
 	junk_flagship_tech_4 = {
 		dependencies = {
-			steam_engine = 1
-			steel_alloy = 1
+			alchemy = 1
 		}
 
 		enable_equipments = {
@@ -1935,7 +1963,7 @@ technologies = {
 	
 	junk_flagship_tech_5 = {
 		dependencies = {
-			gas_turbine = 1
+			steel_alloy = 1
 		}
 
 		enable_equipments = {
@@ -2221,7 +2249,6 @@ technologies = {
 	
 	warship_ship_tech_3 = {
 		dependencies = {
-			steel_alloy = 1
 			steam_engine = 1
 		}
 
@@ -2317,7 +2344,7 @@ technologies = {
 	
 	warship_ship_tech_4 = {
 		dependencies = {
-			gas_turbine = 1
+			steel_alloy = 1
 		}
 
 		enable_equipments = {
@@ -2413,6 +2440,9 @@ technologies = {
 	}
 	
 	mid_bonus_warship_4 = {
+		dependencies = {
+			gas_turbine = 1
+		}
 
 		warship = {
 			max_organisation = 15
@@ -2440,7 +2470,7 @@ technologies = {
 	
 	mine_warfare_1 = {
 		dependencies = {
-			geometry = 1
+			kinectics = 1
 		}
 		
 		naval_mines_damage_factor = 0.1
@@ -2473,7 +2503,7 @@ technologies = {
 	
 	mine_warfare_2 = {
 		dependencies = {
-			natural_philosophy = 1
+			smelting = 1
 		}
 
 		naval_mines_damage_factor = 0.1
@@ -2506,6 +2536,7 @@ technologies = {
 	
 	mine_warfare_3 = {
 		dependencies = {
+			natural_philosophy = 1
 			alchemy = 1
 		}
 
@@ -2539,7 +2570,8 @@ technologies = {
 	
 	mine_warfare_4 = {
 		dependencies = {
-			steel_alloy = 1
+			magnetism = 1
+			laws_of_nature = 1
 		}
 
 		naval_mines_damage_factor = 0.1
