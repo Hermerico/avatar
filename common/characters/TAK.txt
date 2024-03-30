@@ -64,7 +64,7 @@ characters={
 		advisor = {
 			slot = minister_of_personnel
 			idea_token = tak_minister_of_personnel_1
-			cost = 200
+			cost = 100
 			allowed = {
 				original_tag = TAK
 			}
