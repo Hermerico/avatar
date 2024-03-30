@@ -1155,10 +1155,9 @@ technologies = {
 	
 	mid_bonus_frigate_6 = {
 		
-		
 		dependencies = {
 			gas_turbine = 1
-			applied_mathematics
+			applied_mathematics = 1
 		}
 		
 		firenation_frigate = {

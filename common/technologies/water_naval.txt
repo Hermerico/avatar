@@ -391,7 +391,7 @@ technologies = {
 		}
 		
 		dependencies = {
-			steam_enginem = 1
+			steam_engine = 1
 		}
 
 		path = {
