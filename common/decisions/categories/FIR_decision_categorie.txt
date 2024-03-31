@@ -34,7 +34,6 @@ FIR_royal_family_category = {
 	}
 }
 
-
 air_genocide_category = {
 	icon = GFX_decision_category_genocide
 
@@ -173,6 +172,60 @@ FIR_civil_decision_category = {
 		modifier = {
 			factor = 2
 			has_war = yes
+		}
+		modifier = {
+			add = 1000
+			has_country_flag = prioritise_civilian
+		}
+	}
+}
+
+FIR_government_island_category = {
+	icon = home_island
+
+	picture = GFX_decision_cat_fir_capital
+
+	allowed = {
+		original_tag = FIR
+	}
+
+	visible = {
+		original_tag = FIR
+		NOT = { has_country_flag = hide_country_decisions }
+	}
+
+	priority = {
+		base = 20
+		modifier = {
+			factor = 2
+		}
+		modifier = {
+			add = 1000
+			has_country_flag = prioritise_civilian
+		}
+	}
+}
+
+FIR_fire_sage_category = {
+	icon = decision_category_sage_fire
+
+	picture = GFX_decision_cat_sage_large_image
+		
+	allowed = {
+		original_tag = FIR
+	}
+
+	visible = {
+		original_tag = FIR
+		has_country_flag = enabled_fire_sages
+		NOT = disabled_fire_sages
+		NOT = { has_country_flag = hide_mission_decisions }
+	}
+
+	priority = {
+		base = 20
+		modifier = {
+			factor = 2
 		}
 		modifier = {
 			add = 1000
