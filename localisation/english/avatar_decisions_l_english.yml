@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  generic_research_slot_category:0 "Research Investments"
  generic_research_slot_category_desc:0 "By financially supporting the research of philosophers, mathematicians, historians, and engineers, we can reach new heights as an enlightened society."
  second_extra_research_slot:0 "Second research Slot"
@@ -171,6 +171,23 @@
 
  ### Fire Nation
  
+ FIR_government_island_category:0 "§OThe Fire Nation§!"
+ FIR_government_island_category_desc:0 "The people of the §YFire Nation§! have desire, will, and the energy to achieve what they want. Decisions made by the §OFire Lord§! must be supported by the population in order §Rto ensure§! stability."
+ preserve_traditionalism:0 "Preserve Traditionalism"
+ preserve_traditionalism_desc:0 "The Fire & Air Center of Learning has provided the nobility new means at adapting to other styles of life, such as air nomad traditions. Nationalizing this sect should allow the Fire Nation to retain cultural traditions among the nobility."
+ reduce_nobility:0 "Reduce the Nobility & Clans"
+ reduce_nobility_desc:0 "The nobility have amassed a substantial amount of power within the Fire Nation. Reducing the power of the nobility, and repurposing former lands of clans within the Fire Nation will allow us to increase centralization."
+ nobility_land:0 "Seize Noble Property"
+ nobility_land_desc:0 "Seizing property owned by the Nobility will allow us to put that land to use towards the military."
+ purge_the_guiding_wind:0 "Purge the §7Guiding Wind§!"
+ purge_the_guiding_wind_desc:0 "Purging the Guiding Wind will allow us to continue our plans unresisted. Most importantly, it will end any attempts to stop us."
+ seal_catacombs:0 "Seal the Dragonbone Catacombs"
+ seal_catacombs_desc:0 "The history of the Fire Nation has been characterized by the legacy of past Fire Lords. Sealing the Dragonbone Catacombs can help us limit the spread of information and indoctrinate younger generations by depicting the narrative that the history of the Fire Nation began with Sozin, and him only."
+ cult_of_personality:0 "Establish a Cult of Personality"
+ cult_of_personality_desc:0 "The Fire Nation revolves around Fire Lord Sozin, and Sozin only. Creating a Cult of Personality will allow us to indoctrinate our citizens and prevent future revolts."
+ fire_sages:0 "§9The Fire Sages§!"
+ fire_sages_desc:0 "Avatar Roku betrayed our nation when he took it upon himself to confront the Fire Lord. In the process, he destroyed ancient architecture and collapsed the roof of the Royal Palace. It is in our best interest to reform the Fire Sages."
+ 
  FIR_civil_decision_category:0 "§mHome Islands§!"
  FIR_civil_decision_category_desc:0 "The core for the Fire Nation's success is a strong, supporting and protected Home Island. The population has to support every decision that is made and in return they are protected by a strong Nation."
  cultural_change:0 "Cultural Change"
@@ -185,23 +202,23 @@
  FIR_royal_family_category:0 "§MRoyal Family§!"
  FIR_royal_family_category_desc:0 "The §rRoyal Family§! is one of the oldest and most noble families in the §HFire Nation§!. Their power and influence reach the whole nation"
  regret_letting_roku_die:0 "Regret Roku's Death"
- regret_letting_roku_die_desc:0 "Years of friendship, companionship, gone - and for what? I had repaid Roku's mercy by stabbing him in the back at his most vulnerable moment. Reflecting on my actions that day brings me nothing but dread and disgust, I see now that my desires were born out of selfishness disguised as patriotism. Roku was right all along, and I will honor his memory by maintaing balance in the world to the best of my abilities."
+ regret_letting_roku_die_desc:0 "Years of friendship, companionship, gone - and for what? I had repaid Roku's mercy by stabbing him in the back at his most vulnerable moment. Reflecting on my actions that day brings me nothing but dread and disgust, I see now that my desires were born out of selfishness disguised as patriotism. Roku was right all along, and I will honor his memory by maintaining balance in the world."
  continue_expansion_plans:0 "Continue Expansion Plans"
  continue_expansion_plans_desc:0 "With Roku out of the picture, our plans laid long ago can finally come to fruition. There will exist no new Avatar for quite some time, granting the perfect opportunity to finally realize our ambitions."
- sozin_reading:0 "Sozins Studies"
- sozin_reading_desc:0 "TODO"
+ sozin_reading:0 "Sozin's Studies"
+ sozin_reading_desc:0 "Even as the Fire Lord remains in power, it is important - as any member in society, to self-educate under the guidance of skillful military tacticians."
  elua_teach_azulon_reading:0 "Educate Azulon"
  elua_teach_azulon_reading_desc:0 "One important skill as a high member of society is the ability to read and write. Hiring professional tutors to teach Azulon these skills will aid him greatly when he assumes the role of Fire Lord."
- azulon_reading:0 "Azulons Studies"
- azulon_reading_desc:0 "TODO"
- azulon_firebending_training:0 "Azulons firebending training"
- azulon_firebending_training_desc:0 "TODO"
+ azulon_reading:0 "Azulon's Studies"
+ azulon_reading_desc:0 "Azulon's Studies are an important aspect in securing his place in society. Royal tutors will help in providing excellency."
+ azulon_firebending_training:0 "Azulon's Firebending Training"
+ azulon_firebending_training_desc:0 "Azulon's Firebending Training requires precision and excellence if he is to become the next Fire Lord. The Fire Nation will not raise a coward or an incompetent."
  azulon_general:0 "Promote Azulon to General"
  becomes_general:0 "will become a General"
  divine_firelord:0 "Divine Ruler §Y[ROOT.GetLeader]§!"
- divine_firelord_desc:0 "TODO"
+ divine_firelord_desc:0 "The Fire Lord has proven himself to be favorable in the eyes of the people. Proclaiming his divinity shall bring us further to unity."
  godlike_firelord:0 "Godlike Ruler §Y[ROOT.GetLeader]§!"
- godlike_firelord_desc:0 "TODO"
+ godlike_firelord_desc:0 "Fire Lord §Y[ROOT.GetLeader]§!, is not a mere mortal, but rather a god. We shall proclaim his divinity and holiness under the name of the Fire Nation."
 
  FIR_dragon_category:0 "§mDragons§!"
  FIR_dragon_category_desc:0 "Dragons are the original practitioners of firebending, capable of flight and breathing fire. Although their scales and eggs are highly sought after by enterprising poachers, Dragons are greatly feared and respected for their intellect and Firebending prowess. [BefriendDragonsDecision]"
@@ -211,10 +228,20 @@
  start_dragon_hunting_desc:0 "To duel a Dragon is one of the greatest challenges a warrior can face. Anyone capable of slaying one shall be granted the honorary title of 'Dragon', an acknowledgement of their unquestionable skill in battle."
  assemble_dragon_hunter_parties:0 "Assemble Hunting Parties"
  assemble_dragon_hunter_parties_desc:0 "We need to get out there and face the dragon threat."
+ dragons_in_the_army:0 "Dragons in the Army"
+ dragons_in_the_army_desc:0 "Inviting dragons and training them alongside Imperial Firebender divisions will be beneficial towards our long-term relationship with the Four Nations."
+ origins_of_firebending:0 "True Origins of Firebending"
+ origins_of_firebending_desc:0 "The origins of Firebending come from the fire of our souls, and the connection we have to the fire of the dragons and the sun. By tapping into our spirtual selves, we are able to train and unquestionably better our army, tenfold."
+ ban_poaching:0 "Ban Poaching"
+ ban_poaching_desc:0 "Dragons are incredible creatures that require freedom. Annihilating them and hindering their ability to grow as a species is counterintuitive towards our development. Outlawing poaching will allow us to expand our services to that of the Dragon
  encourage_poaching:0 "Encourage Poachers"
  encourage_poaching_desc:0 "By encouraging dragon poaching we can easily find volunteers to get rid of the dragons, but its less prestigious."
+ offerings_to_the_dragons:0 "Offerings to the Dragons"
+ offerings_to_the_dragons_des:0 "It is important to appease our allies, and give offerings to Dragons. Without Dragons, we are but without nothing."
  royal_hunts:0 "Royal Dragon Hunts"
  royal_hunts_desc:0 "Hunting Dragons with a royal party can increase our honour and prestige."
+ provoke_the_dragons:0 "Provoke the Dragons"
+ provoke_the_dragons_desc:0 "Provoking Dragons should allow hunters to lure them into military encampments, where we can trap and kill them individually."
  
  dragon_hunt:0 "Hunt §Y[From.GetName]§! Dragons"
  dragon_hunt_desc:0 "Expert trackers have located a nearby nest of Dragons. The fame and glory for slaying these beasts will be ours for the taking!"
@@ -238,6 +265,8 @@
  industry_research_efforts:0 "Industry Research"
  industry_research_efforts_desc:0 "Spendings on improved technologies for our Industry."
  
+ FIR_fire_sage_category:0 "§9The Fire Sages§!"
+ FIR_fire_sage_category_desc:0 "The Fire Sages have been a crucial aspect in relations between the Fire Lord and the Avatar throughout history. As we move forward into a new age, time can only tell whether or not this relationship will change."
  FIR_conquest_category:0 "§mConquest Plans§!"
  FIR_conquest_category_desc:0 "Firelord Sozins ambitions are not limited to the borders of the Fire Nation. To make this Nation the greatest and most prosperous in the world, war is inevitable. The only question that remains is:\nWhere, When and How?"
  military_preparations:0 "Military Preparations"
@@ -282,6 +311,14 @@
  FIR_southern_temple_attack:0 "Southern Temple Assault"
  FIR_southern_temple_attack_desc:0 ""Begin the attack on the Southern Air Temple. Our informant told us the Avatar is located here."
  
+ fir_industrial_aera:0 "Industrializing"
+ fire_industrial_aera_desc:0 "Industrializing the Fire Nation is the best guarentee that we'll win the war."
+ fire_academy:0 "Mandatory Education"
+ fire_academy_desc:0 "Indoctrination is the best way to ensure complete compliance within the Fire Nation. The introduction and establishment of institutions loyal to the Fire Lord are perfect."
+ Yuyan_Archers:0 "Recruit the Yuyan Archers"
+ Yuyan_Archers_desc:0 "The Yuyan Archers are a group of highly skilled, and deadly Fire Nation archers. Known for their pinpoint percision and accuracy, employing them will work in our favor."
+ Rough_Rhinos:0 "Employ Rough Rhinos"
+ Rough_Rhinos_desc:0 "The Rough-Rhino legion comprises of mercanaries that are willing to serve under the Fire Lord. Working at our behest, they've been able to skillfully manuever through terrain and envelop their enemies."
  FIR_colonies_category:0 "§mEstablish Colonies§!"
  FIR_colonies_category_desc:0 "Although the volcanic islands of the Fire Nation provide it with fertile earth, tropical rainforests and a seemingly endless supply of minerals and metals, the economy and population is growing too fast to maintain. \nColonies would not only be a good long term investment for our empire, but would also increase the influence of our culture around the world."
  rescue_fire_citizen_mission:0 "Rescue Mission for our Citizens"
@@ -296,6 +333,7 @@
  FIR_colonial_area_desc:0 "Show me all potential colonial areas"
  FIR_approach_earth_kingdom:0 "Reclaim the Old Colonies"
  FIR_approach_earth_kingdom_desc:0 "Roku died years ago. It is time to finish what we started. By putting pressure on the Earth Kingdom, we can achieve a hefty head start to our operations."
+
  
  yu_dao_colony:0 "Yu Dao Colony"
  yu_dao_colony_desc:0 "Yu Dao Colony"
@@ -448,7 +486,8 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  western_alliance_invite_member:0 "Invite [FROM.owner.GetName] to Western Kingdom"
  western_alliance_invite_member_desc:0 ""
 
-
+ EAR_ba_sing_se_expansion_category:0 "§6Ba Sing Se Expansion"
+ EAR_ba_sing_se_expansion_category_desc:0 "Expanding Ba Sing Se will provide us greater measures against attacks and will allow us to reinforce divisions outside of the wall."
  EAR_dai_li_category:0 "§mDai Li§!"
  EAR_dai_li_category_desc:0 "The §DDai Li§! is the secretive and elite police force of Ba Sing Se, founded by Avatar Kyoshi with the aim of "protecting the cultural heritage of Ba Sing Se", effectively protecting the Earth King's interest against subversive individuals and groups. \n\n£dai_li_texticon  §YInfluence§!: [?dai_li_influence|D0]\n£dai_li_texticon  §YDisloyalty§!: [?dai_li_loyalty|+%0]"
  
@@ -460,6 +499,9 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  EAR_decision_cost_large_DLI_blocked:0 "£dai_li_texticon  §R[?dai_li_large_influence_cost|0]§!"
  EAR_decision_cost_max_DLI:0 "£dai_li_texticon  [?EAR_max_dai_li_influence|0]"
  EAR_decision_cost_max_DLI_blocked:0 "£dai_li_texticon  §R[?EAR_max_dai_li_influence|0]§!"
+ ba_sing_se_buildup:0 "Ba Sing Se Buildup"
+ ba_sing_se_buildup_desc:0 "By ordering for a general mobolization, we shall raise levies and order our vassals to assist the Earth Kingdom in preventing the Fire Nation invasion of Wulong."
+
 
 
  expand_the_headquaters:0 "Expand the Headquarters"
@@ -487,7 +529,7 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
 
  confront_the_firenation:0 "Confront the Fire Nation"
  confront_the_firenation_desc:0 "It's no secret that the Earth Kingdom is woefully unprepared to face the Fire Nation head-on. Perhaps by projecting strength during this period of weakness, we may be able to secure a more favorable position in our diplomatic efforts."
- 
+
  ba_sing_se_build_up:0 "Build Up of Ba Sing Se"
  ba_sing_se_build_up_desc:0 "War is coming, we must begin to mobilize our might if we wish to emerge victorious."
  focus_on_defense:0 "Focus on Defense"
@@ -498,11 +540,11 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  field_irrigation_canals_desc:0 "With some minor investments our farmers can drastically increase the amount they harvest from the fields."
  outer_wall_baraques_construction:0 "Intergrate Guard Houses Into the Outer Walls"
  outer_wall_baraques_construction_desc:0 "The watchmen who guard the walls typically go home for the night when their shift is done. /n/nWhile good for morale this is terrible for security, by building sleeping quarters in the walls themselves, we can ensure our guards are always at hand for when there is danger.
- 
- fields_of_ba_sing_se:0 "Fields of Ba Sing Se"
- 
- dai_li_units:0 "Dai Li Earthbenders"
 
+ fields_of_ba_sing_se:0 "Fields of Ba Sing Se"
+
+ dai_li_units:0 "Dai Li Earthbenders"
+ 
  EAR_firenation_hostility_category:0 "§mFire Nation Threat§!"
  EAR_firenation_hostility_category_desc:0 "The §rFire Nation§! is currently the greatest threat to the §uEarth Kingdom§!. During Roku's era both nations lived together in relative peace, but after Fire Lord Sozin's unwarranted advances into our territory, relations have reached a breaking point. The last time they caught us by surprise, let us learn from our mistakes and make them pay for their arrogance."
  EAR_firenation_hostility_category:0 "Firenation Threat"
@@ -579,7 +621,11 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  HEB_fongs_base:0 "§wFong´s Base§!"
  HEB_fongs_base_desc:0 ""
  CHN_chins_fortress:0 "§wChin´s Fortress§!"
- CHN_chins_fortress_desc:0 ""
+ CHN_chins_fortress_desc:0 "Chin the Conqueror's legacy remains above all. Establishing a fortress under his name will assist us in our conquests throughout the Earth Kingdom."
+ focus_on_defense:0 "Focus on Defense"
+ focus_on_defense_desc:0 "As of now, the Earth Kingdom remains in a state of war. We must focus on defense first, before we can go aggressive."
+
+
  castle_construction_mission:0 "Construction of [?castle_construction.GetTokenLocalizedKey|Y]"
  castle_construction_mission_desc:0 ""
  castle_wall_extension:0 "Improve Walls of [?castle_construction.GetTokenLocalizedKey|Y]"
@@ -692,6 +738,8 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
 
  SWT_tribe_union:0 "Tribe Unity"
  SWT_tribe_union_desc:0 "Although the inhabitants of the Southpole have a deep cultural connection, the idea of a united Tribe has remained a concept so far. The independent settlements and villages may prosper from this, the tribe as a whole however is weakened. They must be united to stay relevant in these times of change..."
+ SWT_capital_development:0 "Capital Development"
+ SWT_capital_development_desc:0 "Reuniting the nation, and focusing on the construction of a new capital is essential to our survival as a nation."
  WATER_unity_level:0 "[WatertribeUnityVariables]"
  WATER_unity_header:0 "Tribal Unity"
  nwt_unity_value:0 "[?NWT_unity_support]/[?NWT_unity_total]"

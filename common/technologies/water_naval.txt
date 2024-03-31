@@ -5,6 +5,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_canoe_1
 		}
+
+		dependencies = {
+			kinectics = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_canoe_tech_2
 			research_cost_coeff = 1
@@ -97,6 +102,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_canoe_2
 		}
+		
+		dependencies = {
+			geometry = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_canoe_tech_3
 			research_cost_coeff = 1
@@ -184,6 +194,10 @@ technologies = {
 	}
 	
 	watertribe_canoe_tech_3 = {
+
+		dependencies = {
+			leverage = 1
+		}
 
 		enable_equipments = {
 			watertribe_canoe_3
@@ -279,6 +293,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_canoe_4
 		}
+		
+		dependencies = {
+			alchemy = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_canoe_tech_5
 			research_cost_coeff = 1
@@ -370,6 +389,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_canoe_5
 		}
+		
+		dependencies = {
+			steam_engine = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_canoe_tech_6
 			research_cost_coeff = 1
@@ -561,6 +585,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_raft_1
 		}
+		
+		dependencies = {
+			wind_manipulation = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_raft_tech_2
 			research_cost_coeff = 1
@@ -654,6 +683,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_raft_2
 		}
+		
+		dependencies = {
+			astronomy = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_raft_tech_3
 			research_cost_coeff = 1
@@ -746,6 +780,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_raft_3
 		}
+		
+		dependencies = {
+			architecture = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_raft_tech_4
 			research_cost_coeff = 1
@@ -838,6 +877,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_raft_4
 		}
+		
+		dependencies = {
+			magnetism = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_raft_tech_5
 			research_cost_coeff = 1
@@ -930,6 +974,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_raft_5
 		}
+		
+		dependencies = {
+			steam_engine = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_raft_tech_6
 			research_cost_coeff = 1
@@ -1125,6 +1174,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_ship_1
 		}
+		
+		dependencies = {
+			wind_manipulation = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_cutter_ship_tech_2
 			research_cost_coeff = 1
@@ -1190,6 +1244,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_ship_2
 		}
+		
+		dependencies = {
+			astronomy = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_cutter_ship_tech_3
 			research_cost_coeff = 1
@@ -1250,6 +1309,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_ship_3
 		}
+		
+		dependencies = {
+			leverage = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_cutter_ship_tech_4
 			research_cost_coeff = 1
@@ -1311,6 +1375,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_ship_4
 		}
+		
+		dependencies = {
+			magnetism = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_cutter_ship_tech_5
 			research_cost_coeff = 1
@@ -1372,6 +1441,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_ship_5
 		}
+		
+		dependencies = {
+			steel_alloy = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_cutter_ship_tech_6
 			research_cost_coeff = 1
@@ -1432,6 +1506,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_ship_6
 		}
+
+		dependencies = {
+			gas_turbine = 1
+		}
+
 		path = {
 			leads_to_tech = left_bonus_cutter_6
 			research_cost_coeff = 1
@@ -1489,6 +1568,12 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_flagship_1
 		}
+		
+		dependencies = {
+			measurements = 1
+			kinectics = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_cutter_flagship_tech_2
 			research_cost_coeff = 1
@@ -1589,6 +1674,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_flagship_2
 		}
+		
+		dependencies = {
+			astronomy = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_cutter_flagship_tech_3
 			research_cost_coeff = 1
@@ -1685,6 +1775,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_flagship_3
 		}
+		
+		dependencies = {
+			bronze_alloy = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_cutter_flagship_tech_4
 			research_cost_coeff = 1
@@ -1782,6 +1877,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_flagship_4
 		}
+		
+		dependencies = {
+			magnetism = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_cutter_flagship_tech_5
 			research_cost_coeff = 1
@@ -1879,6 +1979,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_flagship_5
 		}
+		
+		dependencies = {
+			steel_alloy = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_cutter_flagship_tech_6
 			research_cost_coeff = 1
@@ -1976,6 +2081,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_cutter_flagship_6
 		}
+		
+		dependencies = {
+			gas_turbine = 1
+		}
+
 
 		research_cost = 1.5
 
@@ -2038,6 +2148,12 @@ technologies = {
 			max_organisation = 10
 			surface_detection = 0.05
 		}
+
+		
+		dependencies = {
+			smelting = 1
+		}
+
 		
 		xp_research_type = navy
 		xp_boost_cost = 100
@@ -2093,6 +2209,12 @@ technologies = {
 		enable_equipments = {
 			watertribe_warship_2
 		}
+
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+
 		path = {
 			leads_to_tech = watertribe_warship_tech_3
 			research_cost_coeff = 1
@@ -2185,6 +2307,11 @@ technologies = {
 		enable_equipments = {
 			watertribe_warship_3
 		}
+
+		dependencies = {
+			alchemy = 1
+		}
+
 		path = {
 			leads_to_tech = watertribe_warship_tech_4
 			research_cost_coeff = 1
@@ -2276,6 +2403,11 @@ technologies = {
 
 		enable_equipments = {
 			watertribe_warship_4
+		}
+		
+		dependencies = {
+			steam_engine = 1
+			steel_alloy = 1
 		}
 		
 		path = {
@@ -2393,6 +2525,10 @@ technologies = {
 	}
 	
 	water_mine_warfare_1 = {
+
+		dependencies = {
+			kinectics = 1
+		}
 		
 		naval_mines_damage_factor = 0.1
 		mines_planting_by_fleets_factor = 0.05
@@ -2423,6 +2559,10 @@ technologies = {
 	}
 	
 	water_mine_warfare_2 = {
+		
+		dependencies = {
+			smelting = 1
+		}
 
 		naval_mines_damage_factor = 0.1
 		mines_planting_by_fleets_factor = 0.05
@@ -2454,6 +2594,10 @@ technologies = {
 	
 	water_mine_warfare_3 = {
 
+		dependencies = {
+			natural_philosophy = 1
+		}
+
 		naval_mines_damage_factor = 0.1
 		mines_planting_by_fleets_factor = 0.05
 
@@ -2484,6 +2628,10 @@ technologies = {
 	
 	water_mine_warfare_4 = {
 
+		dependencies = {
+			magnetism = 1
+		}
+
 		naval_mines_damage_factor = 0.1
 		mines_planting_by_fleets_factor = 0.05
 
@@ -2513,6 +2661,10 @@ technologies = {
 	}
 	
 	water_mine_warfare_5 = {
+
+		dependencies = {
+			chemistry = 1
+		}
 
 		naval_mines_damage_factor = 0.1
 		mines_planting_by_fleets_factor = 0.05

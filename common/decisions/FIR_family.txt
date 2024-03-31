@@ -763,7 +763,6 @@ FIR_royal_family_category = {
 			NOT = {
 				has_war = yes
 				has_country_flag = hunting_dragons
-				has_country_leader_with_trait = out_of_controll
 			}
 			custom_trigger_tooltip = {
 				tooltip = can_add_mission		

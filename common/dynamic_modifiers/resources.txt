@@ -109,7 +109,6 @@ building_upkeep_resources = {
 	enable = { always = yes }
 
 	#icon = GFX_fall
-
 	country_resource_cost_planks_resource = local_plank_upkeep_cost
 	country_resource_cost_bricks_resource = local_brick_upkeep_cost
 	country_resource_cost_steel_beams_resource = local_steel_beam_upkeep_cost

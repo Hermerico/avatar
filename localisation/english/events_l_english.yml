@@ -347,6 +347,12 @@
  struggles_ek.11.desc:0 ""
  struggles_ek.11.a:0 "Where will we expand next?"
 
+#cabbagecorp
+cabbage_merchant.1.t:0 "Cabbage Merchant Arrives!"
+cabbage_merchant.1.d:0 "A Cabbage Merchant by the name of Cai has requested to fund his plan of establishing the Cobbage Corp within your Nation, the cabbage merchant travelled to various locations in the Earth Kingdom in his profession, selling cabbages from a cart that was repeatedly destroyed however from these setbacks, he hasn't given up yet on his plans"
+cabbage_merchant.1.a:0 "Let's help him establish his dreams!"
+cabbage_merchant.1.b:0 "Send him away and destroy his cabbages!"
+
  #struggles_ek.11.title:0 "[FROM.GetName] Demands To Become A governorship"
  #struggles_ek.11.desc:0 "The citizens of [FROM.GetName], our prefecture, started to rebel against us. It started by peacefull protests, but later it became violent as more and more of them started to demonstrate against our regime. [FROM.GetLeader], their leader, introduced us their demand: To become an official governorship, and gain more autonomy."
  #struggles_ek.11.a:0 "What else can we do than accept?"

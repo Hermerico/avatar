@@ -3211,6 +3211,461 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_left_bonus_galley_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/galley_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_galley_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/galley_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_galley_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_hull_reinforcements_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_galley_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/galley_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_galley_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_armor_plates_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_galley_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/galley_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_galley_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/sails_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_galley_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/oars_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_galley_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_galley_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/oars_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_galley_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/sails_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_galley_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/oars_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_galley_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_engine_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_barque_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/sails_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_barque_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_hull_reinforcements_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_barque_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_barque_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_armor_plates_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_barque_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_armor_plates_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_barque_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_barque_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/barque_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_barque_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_tech_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_barque_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/fire_sails_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_barque_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_upgrade_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_barque_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_sails_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_barque_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_storage_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_barque_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_engine_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_junk_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/junk_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_junk_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/junk_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_junk_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/main_sails_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_junk_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/junk_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_junk_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_junk_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_engine_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_junk_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_upgrade_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_junk_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_ballista_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_junk_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_catapult_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_junk_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_tech_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_junk_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_storage_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_junk_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/maintenance_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_junk_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_junk_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/medium_hull_reinforcements_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_junk_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/medium_armor_plates_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_junk_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/medium_armor_plates_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_warship_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_heavy_ballista_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_warship_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_hull_reinforcements_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_warship_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_trebuchet_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_warship_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_hull_reinforcements_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_warship_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_engine_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_warship_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_armor_plates_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_warship_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_storage_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_warship_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_armor_plates_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_warship_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_engine_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_mine_warfare_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_minelaying_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_mine_warfare_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_minelaying_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_mine_warfare_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_mine_warfare_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_mine_warfare_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_left_bonus_canoe_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/canoe_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_canoe_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/canoe_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_canoe_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_hull_reinforcements_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_canoe_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/canoe_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_canoe_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_armor_plates_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_canoe_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_canoe_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_engine_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_canoe_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/oars_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_canoe_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_canoe_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/oars_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_canoe_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_sails_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_canoe_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/oars_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_canoe_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_tech_6.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_left_bonus_raft_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_sails_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_raft_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_hull_reinforcements_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_raft_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_raft_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_armor_plates_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_raft_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/raft_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_raft_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_armor_plates_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_raft_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_engine_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_raft_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/raft_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_raft_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_tech_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_raft_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/fire_sails_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_raft_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_upgrade_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_raft_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_sails_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_raft_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_storage_6.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_left_bonus_cutter_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/cutter_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_cutter_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_storage_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_cutter_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_sails_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_cutter_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/cutter_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_cutter_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_cutter_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_engine_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_cutter_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_upgrade_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_cutter_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_ballista_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_cutter_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_catapult_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_cutter_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_tech_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_cutter_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_storage_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_cutter_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/maintenance_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_cutter_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_cutter_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/medium_hull_reinforcements_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_cutter_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/medium_armor_plates_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_cutter_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/medium_armor_plates_5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_left_bonus_watertribe_warship_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/warship_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_watertribe_warship_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_heavy_ballista_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_watertribe_warship_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_trebuchet_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_watertribe_warship_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_watertribe_warship_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_engine_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_watertribe_warship_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_hull_reinforcements_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_watertribe_warship_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_hull_reinforcements_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_watertribe_warship_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_armor_plates_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_watertribe_warship_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_armor_plates_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_water_mine_warfare_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_minelaying_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_water_mine_warfare_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_minelaying_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_water_mine_warfare_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_minelaying_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_water_mine_warfare_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_water_mine_warfare_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_2.dds"
+	}
+	
+
+	SpriteType = {
 		name = "GFX_galley_tech_1_medium"
 		texturefile = "gfx/interface/technologies/naval/galley_1.dds"
 	}
@@ -3440,6 +3895,235 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_warship_ship_tech_4_medium"
 		texturefile = "gfx/interface/technologies/naval/warship_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_left_bonus_yacht_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/maintenance_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_yacht_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_hull_reinforcements_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_yacht_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/river_boat_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_yacht_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_armor_plates_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_yacht_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_armor_plates_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_yacht_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/maintenance_tech_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_yacht_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_engine_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_yacht_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/river_boat_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_yacht_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/river_boat_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_yacht_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_yacht_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/river_boat_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_yacht_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/river_boat_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_yacht_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_tech_6.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_left_bonus_frigate_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_frigate_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/maintenance_tech_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_frigate_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_frigate_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/frigate_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_frigate_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_armor_plates_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_frigate_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/frigate_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_frigate_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_frigate_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/frigate_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_frigate_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/frigate_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_frigate_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_archers_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_frigate_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/canoe_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_frigate_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/maintenance_tech_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_frigate_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/light_engine_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_left_bonus_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/cruiser_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_storage_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_cruiser_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/cruiser_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_cruiser_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/cruiser_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_cruiser_6_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/maintenance_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_archers_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_cruiser_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/boarding_tech_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_cruiser_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_ballista_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_catapult_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/medium_armor_plates_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/cruiser_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_cruiser_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_armor_plates_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_cruiser_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_binoculars_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/cruiser_5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_left_bonus_battleship_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_storage_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_battleship_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_heavy_ballista_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_battleship_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_trebuchet_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_left_bonus_battleship_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/battleship_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_battleship_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/ship_support_modules.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_battleship_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_hull_reinforcements_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_battleship_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_armor_plates_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_right_bonus_battleship_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/maintenance_tech_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_mid_bonus_battleship_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/heavy_engine_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_fire_mine_warfare_1_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/water_minelaying_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fire_mine_warfare_2_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fire_mine_warfare_3_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_fire_mine_warfare_4_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_fire_mine_warfare_5_medium"
+		texturefile = "gfx/interface/technologies/naval_tech/minelaying_4.dds"
 	}
 
 	SpriteType = {
