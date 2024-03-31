@@ -264,7 +264,7 @@ ideas = {
 				expensive_convoys
 			}
 		}
-
+		
 		FIR_propaganda_1 = {
 
 			name = promote_war_support
@@ -570,14 +570,54 @@ ideas = {
 		}
 
 		banned_poaching = {
-			
+
 			name = banned_poaching
 			picture = FIR_banned_poaching
 
 			modifier = {
-				experience_gain_army = -0.15
+				experience_gain_army = -0.05
 				nobility_opinion = -1
-				experience_gain_air = .3
+				experience_gain_air = .03
+			}
+		}
+
+		The_Hundred_Years_War = {
+
+			name = The_Hundred_Years_War
+			picture = The_Hundred_Years_War
+
+			modifier = {
+				experience_gain_army = 0.1
+				weekly_war_weariness = 0.03
+				political_power_factor = 0.05
+				weekly_centralisation = -0.02
+			}
+		}
+
+		high_temple_decree = {
+
+			name = high_temple_decree
+			picture = idea = FIR_dragon_hunt_neutral
+
+			modifier = {
+				war_support_weekly = 0.05
+				weekly_war_weariness = -0.02
+			}
+		}
+
+		History_of_the_Fire_Nation = {
+
+			name = History_of_the_Fire_Nation
+			picture = History_of_the_Fire_Nation
+
+			modifier = {
+				weekly_centralisation = 0.05
+				experience_gain_firebender_training_factor = 0.0025
+				modifier_army_sub_unit_swordsmen_attack_factor = 0.07
+				modifier_army_sub_unit_firebender_defence_factor = -0.05
+				stability_factor = 0.1
+				nobility_opinion = -2
+				research_speed_factor = -0.05
 			}
 		}
 
