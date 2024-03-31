@@ -1,0 +1,64 @@
+
+
+FIR_fire_sage_category = {
+
+	reform_sages = {	
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			tag = FIR
+			fire_culture > 0.5
+			has_country_flag = earth_war_path
+			has_idea = ruthless_expansionism
+		}
+			
+		visible = {	
+			tag = FIR
+			has_country_flag = enabled_fire_sages
+		}		
+
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = fir_clergy_4
+			war_support_weekly = 0.05
+			set_country_flag = reformed_sage
+		}
+		
+		cost = 100	
+		fire_only_once = yes
+
+		ai_will_do = {	
+			factor = 100
+		}
+	}
+
+	high_temple_decree = {
+		
+		icon = GFX_decision_icon_default
+
+		available = {
+			tag = FIR
+		}
+
+		visible = {
+			tag = FIR
+			has_country_flag = reformed_sage
+			has_idea = ruthless_expansionism
+		}
+
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = high_temple_decree
+		}
+
+		cost = 100	
+		fire_only_once = yes
+
+		ai_will_do = {	
+			factor = 100
+		}
+	}
+}
