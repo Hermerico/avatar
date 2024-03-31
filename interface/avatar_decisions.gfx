@@ -378,6 +378,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_fir_capital.dds"
 	}
 	spriteType = {
+		name = "GFX_decision_cat_sage_large_image"
+		texturefile = "gfx/interface/decisions/decision_cat_sage_large_image.dds"
+	}
+	spriteType = {
 		name = "GFX_decision_cat_water_industry"
 		texturefile = "gfx/interface/decisions/decision_cat_water_industry.dds"
 	}
@@ -639,6 +643,38 @@ spriteTypes = {
 	spriteType = {
 		name = "fire_industry"
 		texturefile = "gfx/interface/decisions/decision_fire_industry.dds"
+	}
+	spriteType = {
+		name = "purge_the_guiding_wind"
+		texturefile = "gfx/interface/decisions/guiding_wind.dds"
+	}
+	spriteType = {
+		name = "fire_clans"
+		texturefile = "gfx/interface/decisions/decision_fire_clans.dds"
+	}
+	spriteType = {
+		name = "fire_traditions"
+		texturefile = "gfx/interface/decisions/decision_traditionalism.dds"
+	}
+	spriteType = {
+		name = "fire_cult"
+		texturefile = "gfx/interface/decisions/decision_cult.dds"
+	}
+	spriteType = {
+		name = "seal_catacombs"
+		texturefile = "gfx/interface/decisions/decision_catacombs.dds"
+	}
+	spriteType = {
+		name = "rotate_front"
+		texturefile = "gfx/interface/decisions/rotate_front.dds"
+	}
+	spriteType = {
+		name = "fire_sages"
+		texturefile = "gfx/interface/decisions/fire_sages.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_sage_fire"
+		texturefile = "gfx/interface/decisions/categories/decision_category_sage_fire.dds"
 	}
 	spriteType = {
 		name = "industry_investment"
