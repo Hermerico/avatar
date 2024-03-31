@@ -111,6 +111,10 @@ get_missions = {
 		has_country_flag = defense_category_active
 		add = 1
 	}
+	modifier = {
+		has_country_flag = cabbage_corp_expansion_active
+		add = 1
+	}
 
 	# chn
 	modifier = {
