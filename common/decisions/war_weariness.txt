@@ -36,8 +36,6 @@ war_weariness_category = {
 
 	rotate_frontlines = {
 
-		icon = rotate_front
-
 		available = {
 			meta_trigger = {
 				text = {

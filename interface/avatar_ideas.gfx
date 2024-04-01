@@ -99,15 +99,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/major_spirit/FIR_imperialism_small.dds"
 	}
 
-
 	#minor
 	SpriteType = {
 		name = "GFX_idea_national_prosperity"
 		texturefile = "gfx/interface/ideas/spirit/idea_national_prosperity_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_History_of_the_Fire_Nation"
-		texturefile = "gfx/interface/ideas/spirit/History_of_the_Fire_Nation.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_legacy_of_roku_and_sozin"
@@ -180,10 +175,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_FIR_dragon_hunt_noble"
 		texturefile = "gfx/interface/ideas/spirit/FIR_dragon_hunt_noble.dds"
-	}
-		SpriteType = {
-		name = "GFX_idea_The_Hundred_Years_War"
-		texturefile = "gfx/interface/ideas/spirit/The_Hundred_Years_War.dds"
 	}
 
 
