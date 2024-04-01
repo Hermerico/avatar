@@ -22,6 +22,10 @@ THE_EARTHKINGDOM = {
 
 		cost = 10
 
+		modifier = {
+			building_upkeep_factor = 0.20
+		}
+
 		ai_will_do = {
 			base = 100
 			modifier = {

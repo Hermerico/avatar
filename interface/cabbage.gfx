@@ -1,0 +1,17 @@
+spriteTypes = {
+
+    SpriteType = {
+		name = "GFX_report_event_cabbage_merchant"
+		texturefile = "gfx/event_pictures/report_event_cabbage_merchant.dds"
+	}
+
+    SpriteType = {
+        name = "decision_cabbage"
+        texturefile = "gfx/interface/decisions/decision_cabbage.dds"
+
+    SpriteType = {
+        name = "GFX_category_cabbage_expansion"
+        texturefile = "gfx/interface/decisions/decision_cat_cabbage_corp.dds"
+        }
+    }
+}
