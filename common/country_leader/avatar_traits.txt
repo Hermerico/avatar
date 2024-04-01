@@ -2348,7 +2348,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	earth_consumer = {
+	cabbage_merchant = {
 		random = no
 		consumer_demand = -0.1
 		prosperity = 0.2
@@ -2357,7 +2357,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	cabbage_merchant = {
+	earth_consumer = {
 		random = no
 		industrialist_opinion = 5
 		food_throughput = 0.05

@@ -197,7 +197,7 @@ ideas = {
 				is_earth_kingdom = yes
 			}
 			available = {
-				has_character = EAR_cabagge_merchant
+				has_country_flag = acquire_cabbage_corp
 			}
 
 			#research_bonus = {
@@ -217,7 +217,7 @@ ideas = {
 				is_earth_kingdom = yes
 			}
 			available = {
-				
+				has_country_flag = cabbage_corporation
 			}
 
 			#research_bonus = {

@@ -13,5 +13,10 @@ spriteTypes = {
         name = "GFX_category_cabbage_expansion"
         texturefile = "gfx/interface/decisions/decision_cat_cabbage_corp.dds"
         }
+
+    SpriteType = {
+        name = "GFX_idea_cabbage_corp"
+        texturefile = "gfx/interface/ideas/designer/idea_cabbage_corporation_designer.dds"
+    }
     }
 }
