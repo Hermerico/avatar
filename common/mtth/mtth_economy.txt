@@ -235,9 +235,6 @@ ranch_leather_gain = {
 		controller = {
 			multiply_temp_variable = { local_resource = ranch_output }
 		}
-		set_temp_variable = { animal_available = animal }
-		add_to_temp_variable = { animal_available = modifier@breeding }
-		multiply_temp_variable = { local_resource = animal_available }
 		multiply_temp_variable = { local_resource = mtth:local_resource_factor }
 
 		controller = {
@@ -1306,9 +1303,6 @@ ranch_bonus = {
 		controller = {
 			multiply_temp_variable = { bonus = ranch_output_2 }
 		}
-		set_temp_variable = { animal_available = animal }
-		add_to_temp_variable = { animal_available = modifier@breeding }
-		multiply_temp_variable = { bonus = animal_available }
 		multiply_temp_variable = { bonus = mtth:local_resource_factor }
 
 		controller = {
@@ -1507,7 +1501,7 @@ self_employed_grain_supply = {
 	base = 0
 	modifier = {
 		set_temp_variable = { output = mtth:state_self_employed }
-		multiply_temp_variable = { output = 2 }
+		multiply_temp_variable = { output = field }
 		controller = {
 			multiply_temp_variable = { output = mtth:peasant_output_factor }
 		}
@@ -1518,10 +1512,6 @@ self_employed_grain_supply = {
 			multiply_temp_variable = { output = mtth:grain_throughput }
 		}
 
-		set_temp_variable = { field_available = field }
-		add_to_temp_variable = { field_available = modifier@fertilizer }
-		clamp_temp_variable = { var = field_available  min = 0}
-		multiply_temp_variable = { output = field_available }
 		set_temp_variable = { harvest = 1 }
 		add_to_temp_variable = { harvest = modifier@harvesting_factor }
 		add_to_temp_variable = { harvest = controller:modifier@harvesting_factor }
