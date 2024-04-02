@@ -9,7 +9,7 @@ state={
 		add_dynamic_modifier = { modifier = dragon_moose_herd }
 		add_to_variable = {
 			var = forest
-			value = 0.1
+			value = 0.3
 		}
 		add_to_variable = {
 			var = mountain

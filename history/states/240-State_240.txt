@@ -6,10 +6,10 @@ state = {
 		
 		add_to_variable = {
 			var = forest
-			value = 0.1		}
+			value = 0.3		}
 		add_to_variable = {
 			var = mountain
-			value = 0.4
+			value = 0.5
 		}
 		add_to_variable = {
 			var = field
@@ -19,7 +19,7 @@ state = {
 			value = 0.1		}
 		add_to_variable = {
 			var = stonefield
-			value = 0.2		}
+			value = 0.4		}
 		add_to_variable = {
 			var = animal
 			value = 0.2		}

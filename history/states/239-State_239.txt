@@ -13,7 +13,7 @@ state={
 		}
 		add_to_variable = {
 			var = mountain
-			value = 1.0
+			value = 0.8
 
 		}
 		add_to_variable = {
@@ -26,7 +26,7 @@ state={
 		}
 		add_to_variable = {
 			var = stonefield
-			value = 1.0
+			value = 0.7
 
 		}
 		add_to_variable = {

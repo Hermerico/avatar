@@ -9,7 +9,7 @@ state={
 		add_dynamic_modifier = { modifier = ostrich_herd }
 		add_to_variable = {
 			var = forest
-			value = 0.7
+			value = 0.8
 
 		}
 		add_to_variable = {
@@ -23,7 +23,7 @@ state={
 		}
 		add_to_variable = {
 			var = water
-			value = 0
+			value = 0.2
 
 		}
 		add_to_variable = {

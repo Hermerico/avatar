@@ -11,7 +11,7 @@ state={
 		add_core_of = SWA
 		add_to_variable = {
 			var = forest
-			value = 0.9
+			value = 0.8
 
 		}
 		add_to_variable = {

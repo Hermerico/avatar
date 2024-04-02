@@ -16,7 +16,7 @@ state={
 		}
 		add_to_variable = {
 			var = mountain
-			value = 0
+			value = 0.4
 
 		}
 		add_to_variable = {
@@ -30,7 +30,7 @@ state={
 		}
 		add_to_variable = {
 			var = stonefield
-			value = 0.2
+			value = 1
 		}
 		add_to_variable = {
 			var = animal
@@ -47,11 +47,11 @@ state={
 			controller = ZIN
 			add_core_of = ZIN
 			buildings = {
-				infrastructure = 3
-				lumber_mill = 1
+				infrastructure = 2
+				quarry = 5
+				masonry = 2
 
 			}
-
 		instant_resource_calc = yes
 		}
 		52.5.16 = {

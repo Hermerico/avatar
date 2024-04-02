@@ -8,7 +8,7 @@ state={
 		
 		add_to_variable = {
 			var = forest
-			value = 0.8
+			value = 0.7
 		}
 		add_to_variable = {
 			var = mountain
@@ -28,7 +28,7 @@ state={
 		}
 		add_to_variable = {
 			var = animal
-			value = 0.3
+			value = 0.4
 		}
 		owner = EBA
 		controller = EBA
