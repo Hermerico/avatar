@@ -1514,7 +1514,7 @@ guiTypes = {
 				}
 				instantTextboxType = {
 					name = "forest"
-					position = { x = 2 y = 4 }
+					position = { x = -2 y = 4 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}
@@ -1537,7 +1537,7 @@ guiTypes = {
 				}
 				instantTextboxType = {
 					name = "field"
-					position = { x = 58 y = 4 }
+					position = { x = 54 y = 4 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}
@@ -1560,7 +1560,7 @@ guiTypes = {
 				}
 				instantTextboxType = {
 					name = "animal"
-					position = { x = 112 y = 4 }
+					position = { x = 108 y = 4 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}
@@ -1583,7 +1583,7 @@ guiTypes = {
 				}
 				instantTextboxType = {
 					name = "mountain"
-					position = { x = 2 y = 34 }
+					position = { x = -2 y = 34 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}
@@ -1606,7 +1606,7 @@ guiTypes = {
 				}
 				instantTextboxType = {
 					name = "stonefield"
-					position = { x = 58 y = 34 }
+					position = { x = 54 y = 34 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}
@@ -1629,7 +1629,7 @@ guiTypes = {
 				}
 				instantTextboxType = {
 					name = "water"
-					position = { x = 112 y = 34 }
+					position = { x = 108 y = 34 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}

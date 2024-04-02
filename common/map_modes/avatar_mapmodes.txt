@@ -356,6 +356,10 @@ scripted_map_modes = {
 					multiply_temp_variable = { blue = forest }
 					multiply_temp_variable = { green = forest }
 
+					multiply_temp_variable = { red = 0.1 }
+					multiply_temp_variable = { blue = 0.1 }
+					multiply_temp_variable = { green = 0.1 }
+
 					set_temp_variable = { alpha_factor = building_level@lumber_mill }
 					multiply_temp_variable = { alpha_factor = 0.1 }
 					multiply_temp_variable = { alpha = alpha_factor }
@@ -391,6 +395,10 @@ scripted_map_modes = {
 					multiply_temp_variable = { blue = field }
 					multiply_temp_variable = { green = field }
 
+					multiply_temp_variable = { red = 0.1 }
+					multiply_temp_variable = { blue = 0.1 }
+					multiply_temp_variable = { green = 0.1 }
+
 					set_temp_variable = { alpha_factor = building_level@farm }
 					multiply_temp_variable = { alpha_factor = 0.1 }
 					multiply_temp_variable = { alpha = alpha_factor }
@@ -424,6 +432,10 @@ scripted_map_modes = {
 					multiply_temp_variable = { red = animal }
 					multiply_temp_variable = { blue = animal }
 					multiply_temp_variable = { green = animal }
+
+					multiply_temp_variable = { red = 0.1 }
+					multiply_temp_variable = { blue = 0.1 }
+					multiply_temp_variable = { green = 0.1 }
 
 					set_temp_variable = { alpha_factor = building_level@ranch }
 					multiply_temp_variable = { alpha_factor = 0.1 }
@@ -459,6 +471,10 @@ scripted_map_modes = {
 					multiply_temp_variable = { blue = mountain }
 					multiply_temp_variable = { green = mountain }
 
+					multiply_temp_variable = { red = 0.1 }
+					multiply_temp_variable = { blue = 0.1 }
+					multiply_temp_variable = { green = 0.1 }
+
 					set_temp_variable = { alpha_factor = building_level@mine }
 					multiply_temp_variable = { alpha_factor = 0.1 }
 					multiply_temp_variable = { alpha = alpha_factor }
@@ -493,6 +509,10 @@ scripted_map_modes = {
 					multiply_temp_variable = { blue = stonefield }
 					multiply_temp_variable = { green = stonefield }
 
+					multiply_temp_variable = { red = 0.1 }
+					multiply_temp_variable = { blue = 0.1 }
+					multiply_temp_variable = { green = 0.1 }
+
 					set_temp_variable = { alpha_factor = building_level@quarry }
 					multiply_temp_variable = { alpha_factor = 0.1 }
 					multiply_temp_variable = { alpha = alpha_factor }
@@ -526,6 +546,10 @@ scripted_map_modes = {
 					multiply_temp_variable = { red = water }
 					multiply_temp_variable = { blue = water }
 					multiply_temp_variable = { green = water }
+
+					multiply_temp_variable = { red = 0.1 }
+					multiply_temp_variable = { blue = 0.1 }
+					multiply_temp_variable = { green = 0.1 }
 
 					set_temp_variable = { alpha_factor = building_level@fishing_stand }
 					multiply_temp_variable = { alpha_factor = 0.1 }

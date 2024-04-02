@@ -379,3 +379,41 @@ steel_beam_factory_output = {
 	precision = 0
 	postfix = none
 }
+
+
+farm_level_max = {
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+ranch_level_max = {
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+lumber_mill_level_max = {
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+quarry_level_max = {
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+mine_level_max = {
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+fishing_stand_level_max = {
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}

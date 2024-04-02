@@ -4,10 +4,8 @@ technologies = {
 		dependencies = {
 			agriculture = 1
 		}
-		enable_building = {
-			building = farm
-			level = 5
-		}
+
+		farm_level_max = 5
 
 		on_research_complete = {
 			set_variable = { farm_level = 5 }
@@ -53,10 +51,8 @@ technologies = {
 		dependencies = {
 			domestication = 1
 		}
-		enable_building = {
-			building = ranch
-			level = 5
-		}
+
+		ranch_level_max = 5
 
 		on_research_complete = {
 			set_variable = { ranch_level = 5 }
@@ -246,14 +242,8 @@ technologies = {
 			set_variable = { ranch_level = 10 }
 		}
 
-		enable_building = {
-			building = farm
-			level = 10
-		}
-		enable_building = {
-			building = ranch
-			level = 10
-		}
+		ranch_level_max = 10
+		farm_level_max = 10
 		
 		path = {
 			leads_to_tech = farm_2
@@ -447,10 +437,7 @@ technologies = {
 			custom_effect_tooltip = farm_upgrade_1_tt
 		}
 
-		enable_building = {
-			building = farm
-			level = 25
-		}
+		farm_level_max = 25
 
 		path = {
 			leads_to_tech = farm_3
@@ -491,10 +478,7 @@ technologies = {
 			custom_effect_tooltip = farm_upgrade_2_tt
 		}
 
-		enable_building = {
-			building = farm
-			level = 50
-		}
+		farm_level_max = 50
 
 		research_cost = 1.25
 		folder = {
@@ -529,10 +513,8 @@ technologies = {
 			custom_effect_tooltip = ranch_upgrade_1_tt
 		}
 
-		enable_building = {
-			building = ranch
-			level = 25
-		}
+		ranch_level_max = 25
+
 
 		production_cost_ranch_factor = -0.1
 
@@ -568,10 +550,7 @@ technologies = {
 			custom_effect_tooltip = ranch_upgrade_2_tt
 		}
 
-		enable_building = {
-			building = ranch
-			level = 50
-		}
+		ranch_level_max = 50
 
 		production_cost_ranch_factor = -0.15
 		
@@ -746,10 +725,7 @@ technologies = {
 
 	fishing_stand_1 = {
 
-		enable_building = {
-			building = fishing_stand
-			level = 5
-		}
+		fishing_stand_level_max = 5
 
 		on_research_complete = {
 			set_variable = { fishing_stand_level = 5 }
@@ -780,10 +756,7 @@ technologies = {
 		dependencies = {
 			astronomy = 1
 		}
-		enable_building = {
-			building = fishing_stand
-			level = 10
-		}
+		fishing_stand_level_max = 10
 
 		on_research_complete = {
 			set_variable = { fishing_stand_level = 10 }
@@ -813,10 +786,7 @@ technologies = {
 		dependencies = {
 			leverage = 1
 		}
-		enable_building = {
-			building = fishing_stand
-			level = 25
-		}
+		fishing_stand_level_max = 25
 
 		on_research_complete = {
 			set_variable = { fishing_stand_level = 25 }
@@ -850,10 +820,7 @@ technologies = {
 		dependencies = {
 			genetics = 1
 		}
-		enable_building = {
-			building = fishing_stand
-			level = 50
-		}
+		fishing_stand_level_max = 50
 
 		on_research_complete = {
 			set_variable = { fishing_stand_level = 50 }
@@ -889,10 +856,7 @@ technologies = {
 		dependencies = {
 			kinectics = 1
 		}
-		enable_building = {
-			building = lumber_mill
-			level = 5
-		}
+		lumber_mill_level_max = 5
 
 		on_research_complete = {
 			set_variable = { lumber_mill_level = 5 }
@@ -936,10 +900,7 @@ technologies = {
 		dependencies = {
 			smelting = 1
 		}
-		enable_building = {
-			building = lumber_mill
-			level = 10
-		}
+		lumber_mill_level_max = 10
 
 		on_research_complete = {
 			set_variable = { lumber_mill_level = 10 }
@@ -973,10 +934,7 @@ technologies = {
 		}
 		production_cost_lumber_mill_factor = -0.1
 
-		enable_building = {
-			building = lumber_mill
-			level = 25
-		}
+		lumber_mill_level_max = 25
 
 		on_research_complete = {
 			set_variable = { lumber_mill_level = 25 }
@@ -1012,10 +970,7 @@ technologies = {
 		}
 		production_cost_lumber_mill_factor = -0.15
 
-		enable_building = {
-			building = lumber_mill
-			level = 50
-		}
+		lumber_mill_level_max = 50
 
 		on_research_complete = {
 			set_variable = { lumber_mill_level = 50 }
@@ -1310,10 +1265,7 @@ technologies = {
 		dependencies = {
 			kinectics = 1
 		}
-		enable_building = {
-			building = quarry
-			level = 5
-		}
+		quarry_level_max = 5
 
 		on_research_complete = {
 			set_variable = { quarry_level = 5 }
@@ -1366,10 +1318,7 @@ technologies = {
 		dependencies = {
 			leverage = 1
 		}
-		enable_building = {
-			building = quarry
-			level = 10
-		}
+		quarry_level_max = 10
 
 		on_research_complete = {
 			set_variable = { quarry_level = 10 }
@@ -1401,10 +1350,7 @@ technologies = {
 			architecture = 1
 			magnetism = 1
 		}
-		enable_building = {
-			building = quarry
-			level = 25
-		}
+		quarry_level_max = 25
 
 		on_research_complete = {
 			set_variable = { quarry_level = 25 }
@@ -1439,10 +1385,7 @@ technologies = {
 		dependencies = {
 			gas_turbine = 1
 		}
-		enable_building = {
-			building = quarry
-			level = 50
-		}
+		quarry_level_max = 50
 
 		on_research_complete = {
 			set_variable = { quarry_level = 50 }
@@ -1613,10 +1556,7 @@ technologies = {
 		dependencies = {
 			smelting = 1
 		}
-		enable_building = {
-			building = mine
-			level = 5
-		}
+		mine_level_max = 5
 
 		on_research_complete = {
 			set_variable = { mine_level = 5 }
@@ -1655,10 +1595,7 @@ technologies = {
 		dependencies = {
 			architecture = 1
 		}
-		enable_building = {
-			building = mine
-			level = 10
-		}
+		mine_level_max = 10
 
 		on_research_complete = {
 			set_variable = { mine_level = 10 }
@@ -1689,10 +1626,7 @@ technologies = {
 		dependencies = {
 			alchemy = 1
 		}
-		enable_building = {
-			building = mine
-			level = 25
-		}
+		mine_level_max = 25
 
 		on_research_complete = {
 			set_variable = { mine_level = 25 }
@@ -1727,10 +1661,7 @@ technologies = {
 		dependencies = {
 			gas_turbine = 1
 		}
-		enable_building = {
-			building = mine
-			level = 50
-		}
+		mine_level_max = 50
 
 		on_research_complete = {
 			set_variable = { mine_level = 50 }

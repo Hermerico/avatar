@@ -72,7 +72,6 @@ on_actions = {
 			multiply_variable = { desert_grain = desert_consumed }
 			multiply_variable = { dragon_moose_grain = dragon_moose_consumed }
 			multiply_variable = { bison_grain = bison_consumed }
-			multiply_variable = { bird_grain = bird_consumed }
 
 			multiply_variable = { small_bird_grain = small_bird_consumed }
 			multiply_variable = { medium_bird_grain = medium_bird_consumed }

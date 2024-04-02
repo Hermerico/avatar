@@ -26,7 +26,7 @@ state={
 		}
 		add_to_variable = {
 			var = water
-			value = 0.3
+			value = 3
 
 		}
 		add_to_variable = {
@@ -41,7 +41,7 @@ state={
 		}
 		add_to_variable = {
 			var = resource_deposites
-			value = 0.6
+			value = 6
 
 		}
 		12.1.1 = {

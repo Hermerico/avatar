@@ -191,10 +191,6 @@ farm_grain_gain = {
 		controller = {
 			multiply_temp_variable = { local_resource = farm_output }
 		}
-		set_temp_variable = { field_available = field }
-		add_to_temp_variable = { field_available = modifier@fertilizer }
-		clamp_temp_variable = { var = field_available  min = 0}
-		multiply_temp_variable = { local_resource = field_available }
 		set_temp_variable = { harvest = 1 }
 		add_to_temp_variable = { harvest = modifier@harvesting_factor }
 		add_to_temp_variable = { harvest = controller:modifier@harvesting_factor }
@@ -217,10 +213,6 @@ farm_food_gain = {
 		controller = {
 			multiply_temp_variable = { local_resource = farm_output_2 }
 		}
-		set_temp_variable = { field_available = field }
-		add_to_temp_variable = { field_available = modifier@fertilizer }
-		clamp_temp_variable = { var = field_available  min = 0}
-		multiply_temp_variable = { local_resource = field_available }
 		set_temp_variable = { harvest = 1 }
 		add_to_temp_variable = { harvest = modifier@harvesting_factor }
 		add_to_temp_variable = { harvest = controller:modifier@harvesting_factor }
@@ -264,10 +256,6 @@ fishing_stand_food_gain = {
 		controller = {
 			multiply_temp_variable = { local_resource = fishing_stand_output }
 		}
-		set_temp_variable = { water_available = water }
-		add_to_temp_variable = { water_available = modifier@waters }
-		clamp_temp_variable = { var = water_available  min = 0 }
-		multiply_temp_variable = { local_resource = water_available }
 		multiply_temp_variable = { local_resource = mtth:local_resource_factor }
 
 		controller = {
@@ -286,10 +274,7 @@ lumber_mill_wood_gain = {
 		controller = {
 			multiply_temp_variable = { local_resource = lumber_mill_output }
 		}
-		set_temp_variable = { wood_available = forest }
-		add_to_temp_variable = { wood_available = modifier@reforestation }
-		clamp_temp_variable = { var = wood_available  min = 0}
-		multiply_temp_variable = { local_resource = wood_available }
+
 		multiply_temp_variable = { local_resource = mtth:local_resource_factor }
 
 		controller = {
@@ -308,7 +293,6 @@ quarry_stone_gain = {
 		controller = {
 			multiply_temp_variable = { local_resource = quarry_output }
 		}
-		multiply_temp_variable = { local_resource = stonefield }
 		multiply_temp_variable = { local_resource = mtth:local_resource_factor }
 
 		controller = {
@@ -417,7 +401,6 @@ mine_iron_gain = {
 		controller = {
 			multiply_temp_variable = { local_resource = mine_output1 }
 		}
-		multiply_temp_variable = { local_resource = mountain }
 		multiply_temp_variable = { local_resource = mtth:local_resource_factor }
 
 		controller = {
@@ -446,7 +429,6 @@ mine_coal_gain = {
 		controller = {
 			multiply_temp_variable = { local_resource = mine_output2 }
 		}
-		multiply_temp_variable = { local_resource = mountain }
 		multiply_temp_variable = { local_resource = mtth:local_resource_factor }
 
 		controller = {
@@ -1082,10 +1064,6 @@ fishing_stand_bonus = {
 		controller = {
 			multiply_temp_variable = { bonus = fishing_stand_output_2 }
 		}
-		set_temp_variable = { water_available = water }
-		add_to_temp_variable = { water_available = modifier@waters }
-		clamp_temp_variable = { var = water_available  min = 0 }
-		multiply_temp_variable = { bonus = water_available }
 		multiply_temp_variable = { bonus = mtth:local_resource_factor }
 
 		controller = {
@@ -1592,7 +1570,7 @@ self_employed_minerals_supply = {
 	base = 0
 	modifier = {
 		set_temp_variable = { output = mtth:state_self_employed }
-		multiply_temp_variable = { output = 2 }
+		multiply_temp_variable = { output = stonefield }
 		controller = {
 			multiply_temp_variable = { output = mtth:peasant_output_factor }
 		}
@@ -1603,7 +1581,6 @@ self_employed_minerals_supply = {
 			multiply_temp_variable = { output = mtth:minerals_throughput }
 		}
 
-		multiply_temp_variable = { output = stonefield }
 		multiply_temp_variable = { output = mtth:local_resource_factor }
 		
 		clamp_temp_variable = {
@@ -1619,7 +1596,7 @@ self_employed_iron_supply = {
 	base = 0
 	modifier = {
 		set_temp_variable = { output = mtth:state_self_employed }
-		multiply_temp_variable = { output = 2 }
+		multiply_temp_variable = { output = mountain }
 		controller = {
 			multiply_temp_variable = { output = mtth:peasant_output_factor }
 		}
@@ -1630,7 +1607,6 @@ self_employed_iron_supply = {
 			multiply_temp_variable = { output = mtth:iron_throughput }
 		}
 
-		multiply_temp_variable = { output = mountain }
 		multiply_temp_variable = { output = mtth:local_resource_factor }
 		
 		clamp_temp_variable = {
@@ -1646,7 +1622,7 @@ self_employed_wood_supply = {
 	base = 0
 	modifier = {
 		set_temp_variable = { output = mtth:state_self_employed }
-		multiply_temp_variable = { output = 2 }
+		multiply_temp_variable = { output = forest }
 		controller = {
 			multiply_temp_variable = { output = mtth:peasant_output_factor }
 			multiply_temp_variable = { output = wood_need }
@@ -1654,10 +1630,6 @@ self_employed_wood_supply = {
 		}
 		multiply_temp_variable = { output = mtth:peasant_output_factor }
 
-		set_temp_variable = { wood_available = forest }
-		add_to_temp_variable = { wood_available = modifier@reforestation }
-		clamp_temp_variable = { var = wood_available  min = 0}
-		multiply_temp_variable = { output = wood_available }
 		multiply_temp_variable = { output = mtth:local_resource_factor }
 		
 		clamp_temp_variable = {
@@ -1727,10 +1699,6 @@ self_employed_planks_supply = {
 		}
 		multiply_temp_variable = { output = mtth:peasant_output_factor }
 
-		set_temp_variable = { wood_available = forest }
-		add_to_temp_variable = { wood_available = modifier@reforestation }
-		clamp_temp_variable = { var = wood_available  min = 0}
-		multiply_temp_variable = { output = wood_available }
 		multiply_temp_variable = { output = mtth:local_resource_factor }
 
 		clamp_temp_variable = {
@@ -1746,7 +1714,7 @@ self_employed_bricks_supply = {
 	base = 0
 	modifier = {
 		set_temp_variable = { output = mtth:state_self_employed }
-		multiply_temp_variable = { output = 2 }
+		multiply_temp_variable = { output = stonefield }
 		controller = {
 			multiply_temp_variable = { output = mtth:peasant_output_factor }
 			multiply_temp_variable = { output = bricks_need }
@@ -1754,7 +1722,6 @@ self_employed_bricks_supply = {
 		}
 		multiply_temp_variable = { output = mtth:peasant_output_factor }
 
-		multiply_temp_variable = { output = stonefield }
 		multiply_temp_variable = { output = mtth:local_resource_factor }
 
 		clamp_temp_variable = {
@@ -1770,7 +1737,7 @@ self_employed_food_supply = {
 	base = 0
 	modifier = {
 		set_temp_variable = { output = mtth:state_self_employed }
-		multiply_temp_variable = { output = 2 }
+		multiply_temp_variable = { output = 0.05 }
 		controller = {
 			multiply_temp_variable = { output = mtth:peasant_output_factor }
 			multiply_temp_variable = { output = mtth:food_throughput }

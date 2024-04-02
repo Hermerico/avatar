@@ -11,7 +11,7 @@ state={
 		add_core_of = EAR
 		add_to_variable = {
 			var = forest
-			value = 0.3
+			value = 3
 
 		}
 		add_to_variable = {
@@ -21,7 +21,7 @@ state={
 		}
 		add_to_variable = {
 			var = field
-			value = 1.0
+			value = 10
 
 		}
 		add_to_variable = {
@@ -31,17 +31,17 @@ state={
 		}
 		add_to_variable = {
 			var = stonefield
-			value = 0.1
+			value = 1
 
 		}
 		add_to_variable = {
 			var = animal
-			value = 0.6
+			value = 6
 
 		}
 		add_to_variable = {
 			var = resource_deposites
-			value = 0.6
+			value = 6
 
 		}
 		12.1.1 = {

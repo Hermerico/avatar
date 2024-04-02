@@ -33,10 +33,10 @@ state={
 		}
 		add_to_variable = {
 			var = animal
-			value = 0.1		}
+			value = 1		}
 		add_to_variable = {
 			var = resource_deposites
-			value = 0.6
+			value = 6
 		}
 	
 		victory_points = { 6695 5 }

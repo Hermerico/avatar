@@ -8,14 +8,14 @@ state={
 		
 		add_to_variable = {
 			var = forest
-			value = 0.1		}
+			value = 1		}
 		add_to_variable = {
 			var = mountain
 			value = 0
 		}
 		add_to_variable = {
 			var = field
-			value = 0.9
+			value = 9
 		}
 		add_to_variable = {
 			var = water
@@ -23,13 +23,13 @@ state={
 		}
 		add_to_variable = {
 			var = stonefield
-			value = 0.2		}
+			value = 2		}
 		add_to_variable = {
 			var = animal
-			value = 0.7		}
+			value = 7		}
 		add_to_variable = {
 			var = resource_deposites
-			value = 0.6
+			value = 6
 		}
 		owner = EAR
 		controller = EAR

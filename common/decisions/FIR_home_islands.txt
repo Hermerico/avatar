@@ -42,6 +42,8 @@ FIR_civil_decision_category = {
 			pluralist_culture_drift = 0.02
 
 			stability_weekly = -0.005
+
+			civilian_factory_use = 5
 		}
 
 		remove_effect = {
