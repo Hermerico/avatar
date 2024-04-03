@@ -388,97 +388,97 @@ smithy_fuel = {
 	precision = 0
 	postfix = none
 }
-steelworks_fuelsmithy_fuel = {
+steelworks_fuel = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-factory_fuelsmithy_fuel = {
+factory_fuel = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-dockyard_fuelsmithy_fuel = {
+dockyard_fuel = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-steel_beam_factory_fuelsmithy_fuel = {
+steel_beam_factory_fuel = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-crop_weaving_needsmithy_fuel = {
+crop_weaving_need = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-mill_needsmithy_fuel = {
+mill_need = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-animal_weaving_needsmithy_fuel = {
+animal_weaving_need = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-steelworks_need1smithy_fuel = {
+steelworks_need1 = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-steelworks_need2smithy_fuel = {
+steelworks_need2 = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-consumer_good_factory_need1smithy_fuel = {
+consumer_good_factory_need1 = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-consumer_good_factory_need2smithy_fuel = {
+consumer_good_factory_need2 = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-luxury_good_factory_need1smithy_fuel = {
+luxury_good_factory_need1 = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-luxury_good_factory_need2smithy_fuel = {
+luxury_good_factory_need2 = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-carpentry_needsmithy_fuel = {
+carpentry_need = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-masonry_needsmithy_fuel = {
+masonry_need = {
 	color_type = bad
 	value_type = number
 	precision = 0
 	postfix = none
 }
-steel_beam_factory_needsmithy_fuel = {
+steel_beam_factory_need = {
 	color_type = bad
 	value_type = number
 	precision = 0
