@@ -7,7 +7,7 @@ guiTypes = {
 		buttonType = {
 			name = "state_riseup_partisan"
 			spriteType = "GFX_activate_resistance_icon"
-			position = { x = 297 y = -36 }
+			position = { x = 167 y = -36 }
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "PARTISAN_INFO"
 			pdx_tooltip_delayed = "PARTISAN_INFO_DELAYED"
@@ -39,7 +39,7 @@ guiTypes = {
 		buttonType = {
 			name = "core_state"
 			spriteType = "GFX_core_icon"
-			position = { x = 297 y = 2 }
+			position = { x = 167 y = 12 }
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "ANNEX_INFO"
 			pdx_tooltip_delayed = "ANNEX_INFO_DELAYED"

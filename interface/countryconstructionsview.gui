@@ -74,7 +74,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "from_trade"
-				position = { x = -1194 y = 24 }
+				position = { x = 194 y = 24 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
@@ -82,6 +82,7 @@ guiTypes = {
 				maxWidth = 200
 				maxHeight = 20
 				format = left
+				hide = yes
 			}			
 			instantTextboxType = {
 				name = "traded_factories_value"
@@ -117,7 +118,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "local_factories_value"
-				position = { x = -1159 y = 44 }
+				position = { x = 159 y = 44 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
@@ -125,6 +126,7 @@ guiTypes = {
 				maxWidth = 70
 				maxHeight = 20
 				format = right
+				hide = yes
 			}
 
 			iconType = {
@@ -241,7 +243,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "possible_constructions"
-			position = { x = 426 y = 68 }
+			position = { x = 426 y = 256 }
 			size = { width = 122 height = 100%% }
 			verticalScrollbar = "right_vertical_slider"
 			margin = { top = 5 }  
@@ -284,7 +286,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "province_item_grid"
-				position = { x = 8 y = 10 }
+				position = { x = 8 y = 40 }
 				size = { width = 100% height = 100% }
 				slotsize = { width = 46 height = 46 }
 				max_slots_horizontal = 2
@@ -293,16 +295,18 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "non_shared_item_grid"
-				position = { x = 56 y = 102 }
+				position = { x = 52 y = 132 }
 				size = { width = 100% height = 100% }
-				slotsize = { width = 46 height = 46 }
+				slotsize = { width = 46 height = 0 }
 				max_slots_horizontal = 1
+				max_slots_vertical = 10
 				format = "UPPER_LEFT"
+				#hide = yes
 			}
 			
 			gridBoxType = {
 				name = "shared_item_grid"
-				position = { x = 8 y = 148 }
+				position = { x = 8 y = 228 }
 				size = { width = 100% height = 100% }
 				slotsize = { width = 46 height = 46 }
 				max_slots_horizontal = 2
@@ -345,13 +349,13 @@ guiTypes = {
 			#	pdx_tooltip_delayed = "resource_building_tooltip_delayed"
 			#}
 #
-			#iconType = {
-			#	name = "factory_constructions"
-			#	position = { x = 5 y = 475 }
-			#	quadTextureSprite = "GFX_factory_constructions"
-			#	pdx_tooltip = "factory_building_tooltip"
-			#	pdx_tooltip_delayed = "factory_building_tooltip_delayed"
-			#}
+			iconType = {
+				name = "factory_constructions"
+				position = { x = 5 y = 190 }
+				quadTextureSprite = "GFX_factory_constructions"
+				pdx_tooltip = "factory_building_tooltip"
+				pdx_tooltip_delayed = "factory_building_tooltip_delayed"
+			}
 #
 			#iconType = {
 			#	name = "state_constructions"
@@ -359,13 +363,13 @@ guiTypes = {
 			#	quadTextureSprite = "GFX_factory_constructions"
 			#}
 #
-			#iconType = {
-			#	name = "misc_constructions"
-			#	position = { x = 5 y = 749 }
-			#	quadTextureSprite = "GFX_misc_constructions"
-			#	pdx_tooltip = "misc_building_tooltip"
-			#	pdx_tooltip_delayed = "misc_building_tooltip_delayed"
-			#}
+			iconType = {
+				name = "misc_constructions"
+				position = { x = 5 y = 0 }
+				quadTextureSprite = "GFX_misc_constructions"
+				pdx_tooltip = "misc_building_tooltip"
+				pdx_tooltip_delayed = "misc_building_tooltip_delayed"
+			}
 #
 			#iconType = {
 			#	name = "shared_constructions"
@@ -615,9 +619,10 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "static_consumer_goods_entry"
-		position = { x=-1000 y=0 }
+		position = { x=0 y=0 }
 		size = { width = 400 height = 0 }
 		clipping = no
+		hide = yes
 
 		background = {
 			name = "Background"
@@ -664,9 +669,10 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "static_traded_factories_entry"
-		position = { x=-1000 y=0 }
+		position = { x=0 y=0 }
 		size = { width = 400 height = 0 }
 		clipping = no
+		hide = yes
 
 		background = {
 			name = "Background"

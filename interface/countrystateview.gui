@@ -66,13 +66,13 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "shared_slot_count"
-				position = { x = 194 y = 250 }
+				position = { x = 34 y = 250 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = "SLOTS"
 				maxWidth = 190
 				maxHeight = 30
-				format = center
+				format = left
 			}
 			
 			gridBoxType = {

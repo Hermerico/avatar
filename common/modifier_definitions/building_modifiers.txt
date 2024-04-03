@@ -381,6 +381,111 @@ steel_beam_factory_output = {
 }
 
 
+
+smithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+steelworks_fuelsmithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+factory_fuelsmithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+dockyard_fuelsmithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+steel_beam_factory_fuelsmithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+crop_weaving_needsmithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+mill_needsmithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+animal_weaving_needsmithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+steelworks_need1smithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+steelworks_need2smithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+consumer_good_factory_need1smithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+consumer_good_factory_need2smithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+luxury_good_factory_need1smithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+luxury_good_factory_need2smithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+carpentry_needsmithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+masonry_needsmithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+steel_beam_factory_needsmithy_fuel = {
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+
+
 farm_level_max = {
 	color_type = neutral
 	value_type = number

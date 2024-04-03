@@ -45,6 +45,7 @@ guiTypes = {
 			centerPosition = yes
 			position = { x = 54 y = 43 }
 			pdx_tooltip = "revolt_tooltip"
+			hide = yes
 		}
 	}
 
@@ -102,46 +103,49 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "prosperity_ui_window"
-		position = { x = 460 y = -20 }
+		position = { x = 340 y = 120 }
 		Orientation = UPPER_LEFT
 
 		iconType = {
 			name = "prosperity_icon"
 			spriteType = "GFX_prosperity_icon"
-			position = { x = 60 y = 16 }
+			position = { x = 40 y = 22 }
 			pdx_tooltip = "prosperity_tooltip"
 			pdx_tooltip_delayed = "prosperity_tooltip_delayed"
 		}
 		instantTextBoxType = {
 			name ="prosperity_text"
-			position = { x = 66 y = -10 }
+			position = { x = 196 y = 28 }
 			font = "hoi_18mbs"
 			text = "prosperity_number"
 			maxWidth = 50
-			maxHeight = 80
+			maxHeight = 18
 			format = left
 			pdx_tooltip = "prosperity_tooltip"
 			pdx_tooltip_delayed = "prosperity_tooltip_delayed"
 		}
 		iconType = {
 			name ="prosperity_bar"
-			spriteType = "GFX_small_sol_bar_vertical"
-			position = { x= 96 y = 14 }
+			spriteType = "GFX_large_sol_bar"
+			position = { x= 76 y = 32 }
 			frame = 50
-			alwaystransparent = yes
+			pdx_tooltip = "prosperity_tooltip"
+			pdx_tooltip_delayed = "prosperity_tooltip_delayed"
 		}
 
 		iconType ={
 			name ="prosperity_increase"
 			spriteType = "GFX_increase_texticon"
-			position = { x=95 y=-6 }
-			alwaystransparent = yes
+			position = { x=180 y=32 }
+			pdx_tooltip = "prosperity_tooltip"
+			pdx_tooltip_delayed = "prosperity_tooltip_delayed"
 		}
 		iconType ={
 			name ="prosperity_decrease"
 			spriteType = "GFX_decrease_texticon"
-			position = { x=95 y=-6 }
-			alwaystransparent = yes
+			position = { x=180 y=32 }
+			pdx_tooltip = "prosperity_tooltip"
+			pdx_tooltip_delayed = "prosperity_tooltip_delayed"
 		}
 	}
 

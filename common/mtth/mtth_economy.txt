@@ -68,7 +68,7 @@ fuel_cost = {
 		add_to_temp_variable = { modifier_1 = modifier_5 }
 
 
-		multiply_temp_variable = { modifier_1 = 0.02 }
+		multiply_temp_variable = { modifier_1 = 10 }
 
 		set_temp_variable = { fuel_factor = 1 }
 		add_to_temp_variable = { fuel_factor = modifier@fuel_burning }

@@ -598,6 +598,93 @@ guiTypes = {
 
 		}
 
+
+		containerWindowType = {
+			name = "deposit_constructions"
+			position = { x = 416 y = 28 }
+			size = { width = 122 height = 184 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 5 }  
+			smooth_scrolling = yes 
+			scroll_wheel_factor = 20
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_plain_bg_small"
+			}
+
+			iconType = {
+				name = "resource_constructions"
+				position = { x = 5 y = 0 }
+				quadTextureSprite = "GFX_resource_constructions"
+				pdx_tooltip = "resource_building_tooltip"
+				pdx_tooltip_delayed = "resource_building_tooltip_delayed"
+			}
+
+
+			buttonType = {
+				name ="farm_construction"
+				spriteType = "GFX_buildings_strip"
+				frame = 3
+				position = { x = 8 y = 40 }
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				pdx_tooltip = "farm_extended"
+				pdx_tooltip_delayed = "construction_extended_ttp"
+			}
+			buttonType = {
+				name ="ranch_construction"
+				spriteType = "GFX_buildings_strip"
+				frame = 6
+				position = { x = 52 y = 40 }
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				pdx_tooltip = "ranch_extended"
+				pdx_tooltip_delayed = "construction_extended_ttp"
+			}
+			buttonType = {
+				name ="fishing_stand_construction"
+				spriteType = "GFX_buildings_strip"
+				frame = 11
+				position = { x = 8 y = 84 }
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				pdx_tooltip = "fishing_stand_extended"
+				pdx_tooltip_delayed = "construction_extended_ttp"
+			}
+			buttonType = {
+				name ="lumber_mill_construction"
+				spriteType = "GFX_buildings_strip"
+				frame = 4
+				position = { x = 52 y = 84 }
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				pdx_tooltip = "lumber_mill_extended"
+				pdx_tooltip_delayed = "construction_extended_ttp"
+			}
+			buttonType = {
+				name ="quarry_construction"
+				spriteType = "GFX_buildings_strip"
+				frame = 5
+				position = { x = 8 y = 128 }
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				pdx_tooltip = "quarry_extended"
+				pdx_tooltip_delayed = "construction_extended_ttp"
+			}
+			buttonType = {
+				name ="mine_construction"
+				spriteType = "GFX_buildings_strip"
+				frame = 7
+				position = { x = 52 y = 128 }
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				pdx_tooltip = "mine_extended"
+				pdx_tooltip_delayed = "construction_extended_ttp"
+			}
+			
+		}
+
 		containerWindowType = {
 			name = "population_window"
 			position = {x=0 y=62}
@@ -1199,16 +1286,6 @@ guiTypes = {
 				size = { width=100%% height=100%% }
 	
 				buttonType = {
-					name ="farm_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 3
-					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "farm_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
 					name ="mill_construction"
 					spriteType = "GFX_buildings_strip"
 					frame = 30
@@ -1216,26 +1293,6 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 					clicksound = click_default
 					pdx_tooltip = "mill_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="ranch_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 6
-					position = { x = 0 y = 44 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "ranch_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="fishing_stand_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 11
-					position = { x = 46 y = 44 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "fishing_stand_extended"
 					pdx_tooltip_delayed = "construction_extended_ttp"
 				}
 				buttonType = {
@@ -1256,36 +1313,6 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 					clicksound = click_default
 					pdx_tooltip = "animal_weaving_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="lumber_mill_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 4
-					position = { x = 0 y = 132 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "lumber_mill_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="quarry_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 5
-					position = { x = 46 y = 132 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "quarry_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="mine_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 7
-					position = { x = 0 y = 176 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "mine_extended"
 					pdx_tooltip_delayed = "construction_extended_ttp"
 				}
 				buttonType = {
@@ -1465,7 +1492,7 @@ guiTypes = {
 			buttonType = {
 				name = "send_settlers"
 				spriteType = "GFX_send_settlers"
-				position = { x = -22 y = -22 }
+				position = { x = -62 y = -22 }
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "send_settlers"
 				pdx_tooltip_delayed = "send_settlers_delayed"
@@ -1480,163 +1507,216 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "state_tiles_title"
-				position = { x = 29 y = -32 }
+				position = { x = 0 y = -36 }
 				textureFile = ""
-				font = "hoi_18mbs"
+				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "state_tiles"
-				maxWidth = 240
+				maxWidth = 220
 				maxHeight = 20
-				format = left	
+				format = center	
 			}
 
 			containerWindowType = {
 				name = "resource_deposits"
-				position = {x=33 y=-12}
+				position = {x=-26 y=-21}
 				size = { width=400 height=400 }
 
-				@SLOT_2 = 50
-				@SLOT_3 = 106
-				@SLOT_4 = -6
-				@SLOT_5 = 50
-				@SLOT_6 = 106
-
-				@SLOT_V = 32
-
-				iconType = {
-					name = "forest_icon"
-					spriteType = "GFX_resource_deposites"
-					frame = 1
-					position = { x = -6 y = 0 }
+				buttonType = {
+					name ="build_farm"
+					spriteType = "GFX_buildings_strip"
+					frame = 3
+					scale = 0.75
+					position = { x = 0 y = 0 }
 					Orientation = "UPPER_LEFT"
-					pdx_tooltip = "forest_info"
-					pdx_tooltip_delayed = "forest_info_delayed"
+					clicksound = click_default
+					pdx_tooltip = "farm_extended"
 				}
-				instantTextboxType = {
-					name = "forest"
-					position = { x = -2 y = 4 }
-					textureFile = ""
-					font = "cg_16b"
-					borderSize = {x = 0 y = 0}
-					text = "forest_var"
-					maxWidth = 45
-					maxHeight = 20
-					format = right	
-					pdx_tooltip = "forest_info"
-					pdx_tooltip_delayed = "forest_info_delayed"
-				}
-
 				iconType = {
 					name = "field_icon"
 					spriteType = "GFX_resource_deposites"
 					frame = 3
-					position = { x = @SLOT_2 y = 0 }
+					position = { x = 62 y = 2 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "field_info"
 					pdx_tooltip_delayed = "field_info_delayed"
 				}
 				instantTextboxType = {
 					name = "field"
-					position = { x = 54 y = 4 }
+					position = { x = 38 y = 8 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}
 					text = "field_var"
 					maxWidth = 45
 					maxHeight = 20
-					format = right
+					format = left
 					pdx_tooltip = "field_info"
 					pdx_tooltip_delayed = "field_info_delayed"
 				}
 
+				buttonType = {
+					name ="build_lumber_mill"
+					spriteType = "GFX_buildings_strip"
+					frame = 4
+					scale = 0.75
+					position = { x = 96 y = 0 }
+					Orientation = "UPPER_LEFT"
+					clicksound = click_default
+					pdx_tooltip = "lumber_mill_extended"
+				}
+				iconType = {
+					name = "forest_icon"
+					spriteType = "GFX_resource_deposites"
+					frame = 1
+					position = { x = 158 y = 2 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "forest_info"
+					pdx_tooltip_delayed = "forest_info_delayed"
+				}
+				instantTextboxType = {
+					name = "forest"
+					position = { x = 134 y = 8 }
+					textureFile = ""
+					font = "cg_16b"
+					borderSize = {x = 0 y = 0}
+					text = "forest_var"
+					maxWidth = 45
+					maxHeight = 20
+					format = let	
+					pdx_tooltip = "forest_info"
+					pdx_tooltip_delayed = "forest_info_delayed"
+				}
+
+				buttonType = {
+					name ="build_ranch"
+					spriteType = "GFX_buildings_strip"
+					frame = 6
+					scale = 0.75
+					position = { x = 192 y = 0 }
+					Orientation = "UPPER_LEFT"
+					clicksound = click_default
+					pdx_tooltip = "ranch_extended"
+				}
 				iconType = {
 					name = "animal_icon"
 					spriteType = "GFX_resource_deposites"
 					frame = 6
-					position = { x = @SLOT_3 y = 0 }
+					position = { x = 254 y = 2 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "animal_info"
 					pdx_tooltip_delayed = "animal_info_delayed"
 				}
 				instantTextboxType = {
 					name = "animal"
-					position = { x = 108 y = 4 }
+					position = { x = 230 y = 8 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}
 					text = "animal_var"
 					maxWidth = 45
 					maxHeight = 20
-					format = right	
+					format = left	
 					pdx_tooltip = "animal_info"
 					pdx_tooltip_delayed = "animal_info_delayed"
 				}
 
+				buttonType = {
+					name ="build_mine"
+					spriteType = "GFX_buildings_strip"
+					frame = 7
+					scale = 0.75
+					position = { x = 0 y = 38 }
+					Orientation = "UPPER_LEFT"
+					clicksound = click_default
+					pdx_tooltip = "mine_extended"
+				}
 				iconType = {
 					name = "mountain_icon"
 					spriteType = "GFX_resource_deposites"
 					frame = 2
-					position = { x = @SLOT_4 y = 30 }
+					position = { x = 62 y = 40 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "mountain_info"
 					pdx_tooltip_delayed = "mountain_info_delayed"
 				}
 				instantTextboxType = {
 					name = "mountain"
-					position = { x = -2 y = 34 }
+					position = { x = 38 y = 46 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}
 					text = "mountain_var"
 					maxWidth = 45
 					maxHeight = 20
-					format = right
+					format = left
 					pdx_tooltip = "mountain_info"
 					pdx_tooltip_delayed = "mountain_info_delayed"
 				}
 
+				buttonType = {
+					name ="build_quarry"
+					spriteType = "GFX_buildings_strip"
+					frame = 5
+					scale = 0.75
+					position = { x = 96 y = 38 }
+					Orientation = "UPPER_LEFT"
+					clicksound = click_default
+					pdx_tooltip = "quarry_extended"
+				}
 				iconType = {
 					name = "stonefield_icon"
 					spriteType = "GFX_resource_deposites"
 					frame = 5
-					position = { x = @SLOT_2 y = 30 }
+					position = { x = 158 y = 40 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "stonefield_info"
 					pdx_tooltip_delayed = "stonefield_info_delayed"
 				}
 				instantTextboxType = {
 					name = "stonefield"
-					position = { x = 54 y = 34 }
+					position = { x = 134 y = 46 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}
 					text = "stonefield_var"
 					maxWidth = 45
 					maxHeight = 20
-					format = right	
+					format = left	
 					pdx_tooltip = "stonefield_info"
 					pdx_tooltip_delayed = "stonefield_info_delayed"
 				}
 
+
+				buttonType = {
+					name ="build_fishing_stand"
+					spriteType = "GFX_buildings_strip"
+					frame = 11
+					scale = 0.75
+					position = { x = 192 y = 38 }
+					Orientation = "UPPER_LEFT"
+					clicksound = click_default
+					pdx_tooltip = "fishing_stand_extended"
+				}
 				iconType = {
 					name = "water_icon"
 					spriteType = "GFX_resource_deposites"
 					frame = 4
-					position = { x = @SLOT_3 y = 30 }
+					position = { x = 254 y = 40 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "water_info"
 					pdx_tooltip_delayed = "water_info_delayed"
 				}
 				instantTextboxType = {
 					name = "water"
-					position = { x = 108 y = 34 }
+					position = { x = 230 y = 46 }
 					textureFile = ""
 					font = "cg_16b"
 					borderSize = {x = 0 y = 0}
 					text = "water_var"
 					maxWidth = 45
 					maxHeight = 20
-					format = right	
+					format = left	
 					pdx_tooltip = "water_info"
 					pdx_tooltip_delayed = "water_info_delayed"
 				}
@@ -1645,14 +1725,14 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "resources_title"
-				position = { x = 29 y = 44 }
+				position = { x = 0 y = 46 }
 				textureFile = ""
-				font = "hoi_18mbs"
+				font = "hoi_16mbs"
 				borderSize = {x = 0 y = 0}
 				text = "resources_title"
-				maxWidth = 240
+				maxWidth = 220
 				maxHeight = 20
-				format = left	
+				format = center	
 			}
 
 			#buttonType = {

@@ -51,6 +51,13 @@ sabotaged_resources = {
 }
 
 
+deposit_construction_cost = {
+	enable = { always = yes }
+
+	civilian_factory_use = deposit_construction_cost
+}
+
+
 additional_scripted_resources = {
 	enable = { always = yes }
 
