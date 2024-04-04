@@ -241,6 +241,46 @@ scripted_gui = {
 			animal_visible = {
 				has_variable = animal
 			}
+
+			farm_progress_visible = {
+				check_variable = { farm_construction_que > 0 }
+			}
+			lumber_mill_progress_visible = {
+				check_variable = { lumber_mill_construction_que > 0 }
+			}
+			ranch_progress_visible = {
+				check_variable = { ranch_construction_que > 0 }
+			}
+			mine_progress_visible = {
+				check_variable = { mine_construction_que > 0 }
+			}
+			quarry_progress_visible = {
+				check_variable = { quarry_construction_que > 0 }
+			}
+			fishing_stand_progress_visible = {
+				check_variable = { fishing_stand_construction_que > 0 }
+			}
+		}
+
+		properties = {
+			farm_progress = {
+				frame = farm_progress_var
+			}
+			lumber_mill_progress = {
+				frame = lumber_mill_progress_var
+			}
+			ranch_progress = {
+				frame = ranch_progress_var
+			}
+			mine_progress = {
+				frame = mine_progress_var
+			}
+			quarry_progress = {
+				frame = quarry_progress_var
+			}
+			fishing_stand_progress = {
+				frame = fishing_stand_progress_var
+			}
 		}
 
 		ai_test_interval = 8000

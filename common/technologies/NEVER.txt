@@ -1,7 +1,15 @@
 technologies = {
 
 
-#################################### event ######################################
+	locking_industrial_complex = {
+		enable_building = {
+			building = industrial_complex
+			level = 1
+		}
+		allow = {
+			always = no
+		}
+	}
 
 	locking_farm = {
 		enable_building = {

@@ -164,7 +164,6 @@ reset_var_to_zero = {
 	set_variable = { factory_count = 0 }
 	set_variable = { harbour_count = 0 }
 	set_variable = { dockyard_count = 0 }
-	set_variable = { manufactory_count = 0 }
 	set_variable = { consumer_good_factory_count = 0 }
 	set_variable = { luxury_good_factory_count = 0 }
 	set_variable = { carpentry_count = 0 }
@@ -179,6 +178,8 @@ reset_var_to_zero = {
 
 	
 	set_variable = { employment_need_k = 0 }
+	set_variable = { employment_real_k = 0 }
+
 	set_variable = { farm_employed = 0 }
 	set_variable = { mill_employed = 0 }
 	set_variable = { fishing_stand_employed = 0 }
@@ -191,6 +192,19 @@ reset_var_to_zero = {
 	set_variable = { shopkeeper_employed = 0 }
 	set_variable = { harbour_employed = 0 }
 	set_variable = { craftsman_employed = 0 }
+
+	set_variable = { farm_employed_real = 0 }
+	set_variable = { mill_employed_real = 0 }
+	set_variable = { fishing_stand_employed_real = 0 }
+	set_variable = { ranch_employed_real = 0 }
+	set_variable = { lumber_mill_employed_real = 0 }
+	set_variable = { mine_employed_real = 0 }
+	set_variable = { weaving_employed_real = 0 }
+	set_variable = { smithy_employed_real = 0 }
+	set_variable = { factory_employed_real = 0 }
+	set_variable = { shopkeeper_employed_real = 0 }
+	set_variable = { harbour_employed_real = 0 }
+	set_variable = { craftsman_employed_real = 0 }
 
 	set_variable = { taxation_var = 0 }
 	set_variable = { inflation_money = 0 }
@@ -205,77 +219,118 @@ reset_var_to_zero = {
 }
 
 worker_counting_states = {
+
+	set_variable = { missing_workers_factor  = 1 }
+	add_to_variable = { missing_workers_factor = mtth:missing_workers_resource_modifier }
+
+
 	###view farm
 	set_variable = { farm_employed = modifier@farmer_k }
 	multiply_variable = { farm_employed = mtth:farmer_factor }
+	set_variable = { farm_employed_real = farm_employed }
+	multiply_variable = { farm_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = farm_employed }
-	add_to_variable = { ROOT.farm_employed = farm_employed }
+	add_to_variable = { ROOT.farm_employed = farm_employed_real }
+	add_to_variable = { ROOT.employment_real_k = farm_employed_real }
 	
 	###view mill
 	set_variable = { mill_employed = modifier@miller_k }
 	multiply_variable = { mill_employed = mtth:miller_factor }
+	set_variable = { mill_employed_real = mill_employed }
+	multiply_variable = { mill_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = mill_employed }
-	add_to_variable = { ROOT.mill_employed = mill_employed }
+	add_to_variable = { ROOT.mill_employed = mill_employed_real }
+	add_to_variable = { ROOT.employment_real_k = mill_employed_real }
 	
 	###view fishing_stand
 	set_variable = { fishing_stand_employed = modifier@fisher_k }
 	multiply_variable = { fishing_stand_employed = mtth:fisher_factor }
+	set_variable = { fishing_stand_employed_real = fishing_stand_employed }
+	multiply_variable = { fishing_stand_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = fishing_stand_employed }
-	add_to_variable = { ROOT.fishing_stand_employed = fishing_stand_employed }
+	add_to_variable = { ROOT.fishing_stand_employed = fishing_stand_employed_real }
+	add_to_variable = { ROOT.employment_real_k = fishing_stand_employed_real }
 	
 	###view ranch
 	set_variable = { ranch_employed = modifier@rancher_k }
 	multiply_variable = { ranch_employed = mtth:rancher_factor }
+	set_variable = { ranch_employed_real = ranch_employed }
+	multiply_variable = { ranch_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = ranch_employed }
-	add_to_variable = { ROOT.ranch_employed = ranch_employed }
+	add_to_variable = { ROOT.ranch_employed = ranch_employed_real }
+	add_to_variable = { ROOT.employment_real_k = ranch_employed_real }
 	
 	###view lumber_mill
 	set_variable = { lumber_mill_employed = modifier@lumberjack_k }
 	multiply_variable = { lumber_mill_employed = mtth:lumberjack_factor }
+	set_variable = { lumber_mill_employed_real = lumber_mill_employed }
+	multiply_variable = { lumber_mill_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = lumber_mill_employed }
-	add_to_variable = { ROOT.lumber_mill_employed = lumber_mill_employed }
+	add_to_variable = { ROOT.lumber_mill_employed = lumber_mill_employed_real }
+	add_to_variable = { ROOT.employment_real_k = lumber_mill_employed_real }
 	
 	###view mine
 	set_variable = { mine_employed = modifier@miner_k }
 	multiply_variable = { mine_employed = mtth:miner_factor }
+	set_variable = { mine_employed_real = mine_employed }
+	multiply_variable = { mine_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = mine_employed }
-	add_to_variable = { ROOT.mine_employed = mine_employed }
+	add_to_variable = { ROOT.mine_employed = mine_employed_real }
+	add_to_variable = { ROOT.employment_real_k = mine_employed_real }
 	
 	###view weaving
 	set_variable = { weaving_employed = modifier@weaver_k }
 	multiply_variable = { weaving_employed = mtth:weaver_factor }
+	set_variable = { weaving_employed_real = weaving_employed }
+	multiply_variable = { weaving_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = weaving_employed }
-	add_to_variable = { ROOT.weaving_employed = weaving_employed }
+	add_to_variable = { ROOT.weaving_employed = weaving_employed_real }
+	add_to_variable = { ROOT.employment_real_k = weaving_employed_real }
 	
 	###view smithy
 	set_variable = { smithy_employed = modifier@smith_k }
 	multiply_variable = { smithy_employed = mtth:smith_factor }
+	set_variable = { smithy_employed_real = smithy_employed }
+	multiply_variable = { smithy_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = smithy_employed }
-	add_to_variable = { ROOT.smithy_employed = smithy_employed }
+	add_to_variable = { ROOT.smithy_employed = smithy_employed_real }
+	add_to_variable = { ROOT.employment_real_k = smithy_employed_real }
 	
 	###view factory
 	set_variable = { factory_employed = modifier@industrial_worker_k }
 	multiply_variable = { factory_employed = mtth:industrial_worker_factor }
+	set_variable = { factory_employed_real = factory_employed }
+	multiply_variable = { factory_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = factory_employed }
-	add_to_variable = { ROOT.factory_employed = factory_employed }
+	add_to_variable = { ROOT.factory_employed = factory_employed_real }
+	add_to_variable = { ROOT.employment_real_k = factory_employed_real }
 	
 	###view shopkeeper
 	set_variable = { shopkeeper_employed = modifier@shopkeeper_k }
 	multiply_variable = { shopkeeper_employed = mtth:shopkeeper_factor }
+	set_variable = { shopkeeper_employed_real = shopkeeper_employed }
+	multiply_variable = { shopkeeper_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = shopkeeper_employed }
-	add_to_variable = { ROOT.shopkeeper_employed = shopkeeper_employed }
+	add_to_variable = { ROOT.shopkeeper_employed = shopkeeper_employed_real }
+	add_to_variable = { ROOT.employment_real_k = shopkeeper_employed_real }
 	
 	###view harbour
 	set_variable = { harbour_employed = modifier@harbour_worker_k }
 	multiply_variable = { harbour_employed = mtth:harbour_worker_factor }
+	set_variable = { harbour_employed_real = harbour_employed }
+	multiply_variable = { harbour_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = harbour_employed }
-	add_to_variable = { ROOT.harbour_employed = harbour_employed }
+	add_to_variable = { ROOT.harbour_employed = harbour_employed_real }
+	add_to_variable = { ROOT.employment_real_k = harbour_employed_real }
 	
 	###view craftsman
 	set_variable = { craftsman_employed = modifier@craftsman_k }
 	multiply_variable = { craftsman_employed = mtth:craftsman_factor }
+	set_variable = { craftsman_employed_real = craftsman_employed }
+	multiply_variable = { craftsman_employed_real = missing_workers_factor }
 	add_to_variable = { ROOT.employment_need_k = craftsman_employed }
-	add_to_variable = { ROOT.craftsman_employed = craftsman_employed }
+	add_to_variable = { ROOT.craftsman_employed = craftsman_employed_real }
+	add_to_variable = { ROOT.employment_real_k = craftsman_employed_real }
 }
 
 
@@ -295,7 +350,6 @@ count_buildings_in_states = {
 	add_to_variable = { ROOT.factory_count = building_level@factory }
 	add_to_variable = { ROOT.harbour_count = building_level@harbour }
 	add_to_variable = { ROOT.dockyard_count = building_level@dockyard }
-	add_to_variable = { ROOT.manufactory_count = building_level@industrial_complex }
 	add_to_variable = { ROOT.consumer_good_factory_count = building_level@consumer_good_factory }
 	add_to_variable = { ROOT.luxury_good_factory_count = building_level@luxury_good_factory }
 	add_to_variable = { ROOT.carpentry_count = building_level@carpentry }
@@ -312,19 +366,28 @@ count_buildings_in_states = {
 
 @deposit_construction_cost = 15
 
+@farm_cost = 3700
+@ranch_cost = 4000
+@lumber_mill_cost = 5200
+@quarry_cost = 5800
+@mine_cost = 9000
+@fishing_stand_cost = 3500
+
 deposit_calculations = {
 	### resource deposit construction
+
+	set_variable = { farm_cost = @farm_cost }
+	set_variable = { ranch_cost = @ranch_cost }
+	set_variable = { lumber_mill_cost = @lumber_mill_cost }
+	set_variable = { quarry_cost = @quarry_cost }
+	set_variable = { mine_cost = @mine_cost }
+	set_variable = { fishing_stand_cost = @fishing_stand_cost }
 	
 	### farm
 	if = {
 		limit = {
 			check_variable = { farm_construction_que > 0 }
-			NOT = {
-				has_state_flag = {
-					flag = farm_in_construction
-					value > 0
-				}
-			}
+			check_variable = { farm_in_construction > farm_cost }
 		}
 
 		add_building_construction = {
@@ -334,25 +397,28 @@ deposit_calculations = {
 		}
 
 		subtract_from_variable = { farm_construction_que = 1 }
-
-		if = {
-			limit = {
-				check_variable = { farm_construction_que > 0 }
-			}
-			set_state_flag = {
-				flag = farm_in_construction
-				days = 100
-				value = 1
-			}
-		}
+		subtract_from_variable = { farm_in_construction = farm_cost }
 	}
 	else_if = {
 		limit = {
-			has_state_flag = {
-				flag = farm_in_construction
-				value > 0
-			}
+			check_variable = { farm_construction_que > 0 }
 		}
+
+		set_temp_variable = { farm_weekly_construction = @deposit_construction_cost }
+		set_temp_variable = { farm_c_factor = 1 }
+		add_to_temp_variable = { farm_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { farm_c_factor = modifier@state_production_speed_farm_factor }
+		add_to_temp_variable = { farm_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { farm_c_factor = controller:modifier@production_speed_farm_factor }
+		multiply_temp_variable = { farm_weekly_construction = farm_c_factor }
+		multiply_temp_variable = { farm_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { farm_in_construction = farm_weekly_construction }
+
+		set_variable = { farm_progress_var = farm_in_construction }
+		divide_variable = { farm_progress_var = farm_cost }
+		multiply_variable = { farm_progress_var = 100 }
+
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
 
@@ -360,12 +426,7 @@ deposit_calculations = {
 	if = {
 		limit = {
 			check_variable = { ranch_construction_que > 0 }
-			NOT = {
-				has_state_flag = {
-					flag = ranch_in_construction
-					value > 0
-				}
-			}
+			check_variable = { ranch_in_construction > ranch_cost }
 		}
 
 		add_building_construction = {
@@ -375,25 +436,27 @@ deposit_calculations = {
 		}
 
 		subtract_from_variable = { ranch_construction_que = 1 }
-
-		if = {
-			limit = {
-				check_variable = { ranch_construction_que > 0 }
-			}
-			set_state_flag = {
-				flag = ranch_in_construction
-				days = 100
-				value = 1
-			}
-		}
+		subtract_from_variable = { ranch_in_construction = ranch_cost }
 	}
 	else_if = {
 		limit = {
-			has_state_flag = {
-				flag = ranch_in_construction
-				value > 0
-			}
+			check_variable = { ranch_construction_que > 0 }
 		}
+		set_temp_variable = { ranch_weekly_construction = @deposit_construction_cost }
+		set_temp_variable = { ranch_c_factor = 1 }
+		add_to_temp_variable = { ranch_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { ranch_c_factor = modifier@state_production_speed_ranch_factor }
+		add_to_temp_variable = { ranch_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { ranch_c_factor = controller:modifier@production_speed_ranch_factor }
+		multiply_temp_variable = { ranch_weekly_construction = ranch_c_factor }
+		multiply_temp_variable = { ranch_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { ranch_in_construction = ranch_weekly_construction }
+
+		set_variable = { ranch_progress_var = ranch_in_construction }
+		divide_variable = { ranch_progress_var = ranch_cost }
+		multiply_variable = { ranch_progress_var = 100 }
+
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
 
@@ -402,12 +465,7 @@ deposit_calculations = {
 	if = {
 		limit = {
 			check_variable = { lumber_mill_construction_que > 0 }
-			NOT = {
-				has_state_flag = {
-					flag = lumber_mill_in_construction
-					value > 0
-				}
-			}
+			check_variable = { lumber_mill_in_construction > lumber_mill_cost }
 		}
 
 		add_building_construction = {
@@ -417,25 +475,27 @@ deposit_calculations = {
 		}
 
 		subtract_from_variable = { lumber_mill_construction_que = 1 }
-
-		if = {
-			limit = {
-				check_variable = { lumber_mill_construction_que > 0 }
-			}
-			set_state_flag = {
-				flag = lumber_mill_in_construction
-				days = 100
-				value = 1
-			}
-		}
+		subtract_from_variable = { lumber_mill_in_construction = lumber_mill_cost }
 	}
 	else_if = {
 		limit = {
-			has_state_flag = {
-				flag = lumber_mill_in_construction
-				value > 0
-			}
+			check_variable = { lumber_mill_construction_que > 0 }
 		}
+		set_temp_variable = { lumber_mill_weekly_construction = @deposit_construction_cost }
+		set_temp_variable = { lumber_mill_c_factor = 1 }
+		add_to_temp_variable = { lumber_mill_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { lumber_mill_c_factor = modifier@state_production_speed_lumber_mill_factor }
+		add_to_temp_variable = { lumber_mill_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { lumber_mill_c_factor = controller:modifier@production_speed_lumber_mill_factor }
+		multiply_temp_variable = { lumber_mill_weekly_construction = lumber_mill_c_factor }
+		multiply_temp_variable = { lumber_mill_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { lumber_mill_in_construction = lumber_mill_weekly_construction }
+
+		set_variable = { lumber_mill_progress_var = lumber_mill_in_construction }
+		divide_variable = { lumber_mill_progress_var = lumber_mill_cost }
+		multiply_variable = { lumber_mill_progress_var = 100 }
+
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
 
@@ -443,12 +503,7 @@ deposit_calculations = {
 	if = {
 		limit = {
 			check_variable = { quarry_construction_que > 0 }
-			NOT = {
-				has_state_flag = {
-					flag = quarry_in_construction
-					value > 0
-				}
-			}
+			check_variable = { quarry_in_construction > quarry_cost }
 		}
 
 		add_building_construction = {
@@ -458,25 +513,27 @@ deposit_calculations = {
 		}
 
 		subtract_from_variable = { quarry_construction_que = 1 }
-
-		if = {
-			limit = {
-				check_variable = { quarry_construction_que > 0 }
-			}
-			set_state_flag = {
-				flag = quarry_in_construction
-				days = 100
-				value = 1
-			}
-		}
+		subtract_from_variable = { quarry_in_construction = quarry_cost }
 	}
 	else_if = {
 		limit = {
-			has_state_flag = {
-				flag = quarry_in_construction
-				value > 0
-			}
+			check_variable = { quarry_construction_que > 0 }
 		}
+		set_temp_variable = { quarry_weekly_construction = @deposit_construction_cost }
+		set_temp_variable = { quarry_c_factor = 1 }
+		add_to_temp_variable = { quarry_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { quarry_c_factor = modifier@state_production_speed_quarry_factor }
+		add_to_temp_variable = { quarry_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { quarry_c_factor = controller:modifier@production_speed_quarry_factor }
+		multiply_temp_variable = { quarry_weekly_construction = quarry_c_factor }
+		multiply_temp_variable = { quarry_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { quarry_in_construction = quarry_weekly_construction }
+
+		set_variable = { quarry_progress_var = quarry_in_construction }
+		divide_variable = { quarry_progress_var = quarry_cost }
+		multiply_variable = { quarry_progress_var = 100 }
+
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
 
@@ -484,12 +541,7 @@ deposit_calculations = {
 	if = {
 		limit = {
 			check_variable = { mine_construction_que > 0 }
-			NOT = {
-				has_state_flag = {
-					flag = mine_in_construction
-					value > 0
-				}
-			}
+			check_variable = { mine_in_construction > mine_cost }
 		}
 
 		add_building_construction = {
@@ -499,25 +551,27 @@ deposit_calculations = {
 		}
 
 		subtract_from_variable = { mine_construction_que = 1 }
-
-		if = {
-			limit = {
-				check_variable = { mine_construction_que > 0 }
-			}
-			set_state_flag = {
-				flag = mine_in_construction
-				days = 100
-				value = 1
-			}
-		}
+		subtract_from_variable = { mine_in_construction = mine_cost }
 	}
 	else_if = {
 		limit = {
-			has_state_flag = {
-				flag = mine_in_construction
-				value > 0
-			}
+			check_variable = { mine_construction_que > 0 }
 		}
+		set_temp_variable = { mine_weekly_construction = @deposit_construction_cost }
+		set_temp_variable = { mine_c_factor = 1 }
+		add_to_temp_variable = { mine_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { mine_c_factor = modifier@state_production_speed_mine_factor }
+		add_to_temp_variable = { mine_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { mine_c_factor = controller:modifier@production_speed_mine_factor }
+		multiply_temp_variable = { mine_weekly_construction = mine_c_factor }
+		multiply_temp_variable = { mine_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { mine_in_construction = mine_weekly_construction }
+
+		set_variable = { mine_progress_var = mine_in_construction }
+		divide_variable = { mine_progress_var = mine_cost }
+		multiply_variable = { mine_progress_var = 100 }
+
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
 
@@ -526,12 +580,7 @@ deposit_calculations = {
 	if = {
 		limit = {
 			check_variable = { fishing_stand_construction_que > 0 }
-			NOT = {
-				has_state_flag = {
-					flag = fishing_stand_in_construction
-					value > 0
-				}
-			}
+			check_variable = { fishing_stand_in_construction > fishing_stand_cost }
 		}
 
 		add_building_construction = {
@@ -541,25 +590,27 @@ deposit_calculations = {
 		}
 
 		subtract_from_variable = { fishing_stand_construction_que = 1 }
-
-		if = {
-			limit = {
-				check_variable = { fishing_stand_construction_que > 0 }
-			}
-			set_state_flag = {
-				flag = fishing_stand_in_construction
-				days = 100
-				value = 1
-			}
-		}
+		subtract_from_variable = { fishing_stand_in_construction = fishing_stand_cost }
 	}
 	else_if = {
 		limit = {
-			has_state_flag = {
-				flag = fishing_stand_in_construction
-				value > 0
-			}
+			check_variable = { fishing_stand_construction_que > 0 }
 		}
+		set_temp_variable = { fishing_stand_weekly_construction = @deposit_construction_cost }
+		set_temp_variable = { fishing_stand_c_factor = 1 }
+		add_to_temp_variable = { fishing_stand_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { fishing_stand_c_factor = modifier@state_production_speed_fishing_stand_factor }
+		add_to_temp_variable = { fishing_stand_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { fishing_stand_c_factor = controller:modifier@production_speed_fishing_stand_factor }
+		multiply_temp_variable = { fishing_stand_weekly_construction = fishing_stand_c_factor }
+		multiply_temp_variable = { fishing_stand_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { fishing_stand_in_construction = fishing_stand_weekly_construction }
+
+		set_variable = { fishing_stand_progress_var = fishing_stand_in_construction }
+		divide_variable = { fishing_stand_progress_var = fishing_stand_cost }
+		multiply_variable = { fishing_stand_progress_var = 100 }
+
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
 }
@@ -928,24 +979,25 @@ employment_calculation_country = {
 	subtract_from_variable = { dependant_population_k = deployed_manpower_k }
 
 
-	##### second employed calc for true value
-
-	set_variable = { employed_population_k = employment_need_k }
-	clamp_variable = { 
-		var = employed_population_k
-		max = working_population_k 
-	}
+### might be redundant
+#	##### second employed calc for true value
+#
+#	set_variable = { employed_population_k = employment_need_k }
+#	clamp_variable = { 
+#		var = employment_real_k
+#		max = working_population_k 
+#	}
 
 	#####
 	
-	set_temp_variable = { temp_epmployed_percentage = employed_population_k }
+	set_temp_variable = { temp_epmployed_percentage = employment_real_k }
 	divide_temp_variable = { temp_epmployed_percentage = working_population_k }
 	set_variable = { epmployed_percentage = temp_epmployed_percentage }
 
 
 	###view selfsufficient
 	set_temp_variable = { self_employed_temp = working_population_k }
-	subtract_from_temp_variable = { self_employed_temp = employed_population_k }
+	subtract_from_temp_variable = { self_employed_temp = employment_real_k }
 	set_variable = { self_employed_k = self_employed_temp }
 	set_temp_variable = { temp_unepmployed_percentage = 1 }
 	subtract_from_temp_variable = { temp_unepmployed_percentage = epmployed_percentage }

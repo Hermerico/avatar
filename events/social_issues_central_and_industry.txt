@@ -477,7 +477,7 @@ country_event = {
 	option = {
 		name = centralisation.17.a
 
-		add_manufactory_random_instant = yes
+		
 		
 		ai_chance = {
 			base = 0

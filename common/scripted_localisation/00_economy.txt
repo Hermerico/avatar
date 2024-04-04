@@ -148,3 +148,95 @@ defined_text = {
 		localization_key = extreme_wealth_delayed
 	}
 }
+
+
+defined_text = {
+	name = GetConstFarm
+	text = {
+		trigger = {
+			check_variable = { farm_construction_que > 0 }
+		}
+		localization_key = farm_que_ttp
+	}
+	text = {
+		trigger = {
+			check_variable = { farm_construction_que < 1 }
+		}
+		localization_key = ""
+	}
+}
+defined_text = {
+	name = GetConstLumber
+	text = {
+		trigger = {
+			check_variable = { lumber_mill_construction_que > 0 }
+		}
+		localization_key = lumber_mill_que_ttp
+	}
+	text = {
+		trigger = {
+			check_variable = { lumber_mill_construction_que < 1 }
+		}
+		localization_key = ""
+	}
+}
+defined_text = {
+	name = GetConstRanch
+	text = {
+		trigger = {
+			check_variable = { ranch_construction_que > 0 }
+		}
+		localization_key = ranch_que_ttp
+	}
+	text = {
+		trigger = {
+			check_variable = { ranch_construction_que < 1 }
+		}
+		localization_key = ""
+	}
+}
+defined_text = {
+	name = GetConstMine
+	text = {
+		trigger = {
+			check_variable = { mine_construction_que > 0 }
+		}
+		localization_key = mine_que_ttp
+	}
+	text = {
+		trigger = {
+			check_variable = { mine_construction_que < 1 }
+		}
+		localization_key = ""
+	}
+}
+defined_text = {
+	name = GetConstQuarry
+	text = {
+		trigger = {
+			check_variable = { quarry_construction_que > 0 }
+		}
+		localization_key = quarry_que_ttp
+	}
+	text = {
+		trigger = {
+			check_variable = { quarry_construction_que < 1 }
+		}
+		localization_key = ""
+	}
+}
+defined_text = {
+	name = GetConstFish
+	text = {
+		trigger = {
+			check_variable = { fishing_stand_construction_que > 0 }
+		}
+		localization_key = fishing_stand_que_ttp
+	}
+	text = {
+		trigger = {
+			check_variable = { fishing_stand_construction_que < 1 }
+		}
+		localization_key = ""
+	}
+}

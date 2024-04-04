@@ -119,7 +119,6 @@ country_event = {
 		add_to_variable = { building_count = dockyard_count }
 		add_to_variable = { building_count = consumer_good_factory_count }
 		add_to_variable = { building_count = luxury_good_factory_count }
-		add_to_variable = { building_count = manufactory_count }
 		add_to_variable = { building_count = carpentry_count }
 		add_to_variable = { building_count = masonry_count }
 		add_to_variable = { building_count = steel_beam_factory_count }

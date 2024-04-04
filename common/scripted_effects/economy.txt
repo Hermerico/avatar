@@ -915,45 +915,6 @@ add_luxury_good_factory_random = {
 	}
 }
 
-add_manufactory_random = {
-	if = {
-		limit = {
-			has_country_flag = core_all_construction_flag
-		}
-		random_owned_controlled_state = {
-			limit = {
-				free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = no
-				}
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = no
-			}
-		}
-	}
-	else = {
-		random_owned_controlled_state = {
-			limit = {
-				free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = no
-				}
-				is_core_of = ROOT
-			}
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = no
-			}
-		}
-	}
-}
-
 add_carpentry_random = {
 	if = {
 		limit = {
@@ -2111,54 +2072,6 @@ add_luxury_good_factory_random_instant = {
 	}
 }
 
-add_manufactory_random_instant = {
-	effect_tooltip = {
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-	hidden_effect = {
-		if = {
-			limit = {
-				has_country_flag = core_all_construction_flag
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = no
-					}
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = no
-					}
-					is_core_of = ROOT
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-}
-
 add_carpentry_random_instant = {
 	effect_tooltip = {
 		add_building_construction = {
@@ -2396,12 +2309,6 @@ shop_investment_cost = {
 luxury_store_investment_cost = {
 	subtract_from_variable = {
 		peoples_investment_ic = 1200
-	}
-}
-
-manufactory_investment_cost = {
-	subtract_from_variable = {
-		peoples_investment_ic = 800
 	}
 }
 
@@ -2836,24 +2743,6 @@ peoples_initiative_construction_effect = {
 			steel_beam_factory_investment_cost = yes
 			country_event = {
 				id = centralisation.16
-				days = 1
-				random_days = 30
-			}
-		}
-		0.1 = {
-			modifier = {
-				factor = 0
-				num_of_civilian_factories > 10
-			}
-			modifier = {
-				factor = 0
-				check_variable = {
-					peoples_investment_ic < 800
-				}
-			}
-			manufactory_investment_cost = yes
-			country_event = {
-				id = centralisation.17
 				days = 1
 				random_days = 30
 			}

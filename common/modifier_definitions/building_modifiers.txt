@@ -196,187 +196,187 @@ max_grain_building_k = {
 farm_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 farm_output_2 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 fishing_stand_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 fishing_stand_output_2 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 ranch_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 ranch_output_2 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 lumber_mill_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 quarry_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 quarry_output_2 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 quarry_output_3 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 mine_output1 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 mine_output2 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 crop_weaving_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 crop_weaving_output_2 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 crop_weaving_output_3 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 animal_weaving_need = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 animal_weaving_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 animal_weaving_output_2 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 animal_weaving_output_3 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 mill_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 steelworks_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 smithy_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 smithy_output_2 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 factory_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 consumer_good_factory_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 luxury_good_factory_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 carpentry_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 carpentry_output_2 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 carpentry_output_3 = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 masonry_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 steel_beam_factory_output = {
 	color_type = good
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 
@@ -385,103 +385,103 @@ steel_beam_factory_output = {
 smithy_fuel = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 steelworks_fuel = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 factory_fuel = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 dockyard_fuel = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 steel_beam_factory_fuel = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 crop_weaving_need = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 mill_need = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 animal_weaving_need = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 steelworks_need1 = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 steelworks_need2 = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 consumer_good_factory_need1 = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 consumer_good_factory_need2 = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 luxury_good_factory_need1 = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 luxury_good_factory_need2 = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 carpentry_need = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 masonry_need = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 steel_beam_factory_need = {
 	color_type = bad
 	value_type = number
-	precision = 0
+	precision = 1
 	postfix = none
 }
 

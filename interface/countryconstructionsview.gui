@@ -387,6 +387,7 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			pdx_tooltip = "CONSTRUCTION_CONVERT_IC_TOOLTIP"
 			pdx_tooltip_delayed = "CONSTRUCTION_CONVERT_IC_TOOLTIP_DELAYED"
+			hide = yes
 		}
 				
 		buttonType = {
@@ -729,7 +730,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "name"
-			position = { x = 20 y = 16 }
+			position = { x = 10 y = 16 }
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
@@ -743,7 +744,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "picture"
-			position = { x = 210 y = 26}
+			position = { x = 226 y = 26}
 			spriteType = "GFX_special_project_icon"
 			centerposition = yes
 			

@@ -178,6 +178,22 @@ buildings = {
 
 	###### state buildings
 
+	industrial_complex = {
+		show_on_map = 6
+		base_cost = 8000
+		base_cost_conversion = 16000
+		general_production = 1
+		icon_frame = 32
+		max_level = 1000000000
+		#shares_slots = yes
+		value = 6
+
+		show_modifier = yes
+		civilian_capacity_modifier = 1
+		building_upkeep_cost = 2
+		craftsman_k = 0.1
+	}
+
 	infrastructure = {
 		base_cost = 10000
 		per_level_extra_cost = 1000
@@ -457,22 +473,6 @@ buildings = {
 		show_modifier = yes
 		shopkeeper_k = 0.080
 		building_upkeep_cost = 2
-	}
-
-	industrial_complex = {
-		show_on_map = 6
-		base_cost = 8000
-		base_cost_conversion = 16000
-		general_production = 1
-		icon_frame = 32
-		max_level = 1000000000
-		shares_slots = yes
-		value = 6
-
-		show_modifier = yes
-		civilian_capacity_modifier = 1
-		building_upkeep_cost = 2
-		craftsman_k = 0.1
 	}
 
 	carpentry = {

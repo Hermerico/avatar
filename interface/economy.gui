@@ -200,67 +200,6 @@ guiTypes = {
 		position = {x=10 y=46}
 		size = { width=1036 height=1096 }
 
-#		buttonType = {
-#			name = "state_deposits_view"
-#			position = { x = 400 y = -40 }
-#			quadtexturesprite = "GFX_deposites_btn"
-#			pdx_tooltip = "deposites_onmap_ttp"
-#			#pdx_tooltip_anchor = { x = -364 y = -10 }
-#			shortcut = "shift+r"
-#		}
-
-		containerWindowType = {
-			name = "header1"
-			position = {x=350 y=-32}
-			size = { width=236 height=296 }
-
-			buttonType ={
-				name ="toggle_auto"
-				spriteType = "GFX_auto_construct"
-				frame = 2
-				position = { x= 0 y = 0 }
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "toggle_auto"
-				pdx_tooltip_delayed = "toggle_auto_delayed"
-			}
-			buttonType ={
-				name ="toggle_vanilla"
-				spriteType = "GFX_auto_construct"
-				frame = 1
-				position = { x= 0 y = 0 }
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "toggle_vanilla"
-				pdx_tooltip_delayed = "toggle_auto_delayed"
-			}
-
-		}
-
-		containerWindowType = {
-			name = "header2"
-			position = {x=310 y=-38}
-			size = { width=236 height=296 }
-
-			buttonType ={
-				name ="toggle_core"
-				spriteType = "GFX_toggle_core"
-				frame = 2
-				position = { x= 0 y = 0 }
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "toggle_core"
-				pdx_tooltip_delayed = "toggle_core_delayed"
-			}
-			buttonType ={
-				name ="toggle_all"
-				spriteType = "GFX_toggle_core"
-				frame = 1
-				position = { x= 0 y = 0 }
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "toggle_all"
-				pdx_tooltip_delayed = "toggle_core_delayed"
-			}
-
-		}
-
 		containerWindowType = {
 			name = "basic_resources_top"
 			position = { x = 0 y = 0 }
@@ -1261,184 +1200,31 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "auto_construction_ui_window"
-		position = {x=540 y=96}
+		position = {x=0 y=6}
 		size = { width=244 height=290 }
 
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_window_1b_thin_border"
-		}
-
 		containerWindowType = {
-			name = "construction_view"
-			position = {x=14 y=0}
-			size = { width=100%% height=70%% }
+			name = "header"
+			position = {x=482 y=76}
+			size = { width=236 height=296 }
 
-			iconType = {
-				name = "constructions_bg1"
-				position = { x = -6 y = 6 }
-				quadTextureSprite = "GFX_constructions_bg4"
+			buttonType ={
+				name ="toggle_core"
+				spriteType = "GFX_toggle_core"
+				frame = 2
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "toggle_core"
+				pdx_tooltip_delayed = "toggle_core_delayed"
 			}
-	
-			containerWindowType = {
-				name = "resource_buildings_window"
-				position = {x=0 y=56}
-				size = { width=100%% height=100%% }
-	
-				buttonType = {
-					name ="mill_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 30
-					position = { x = 46 y = 0 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "mill_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="crop_weaving_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 8
-					position = { x = 0 y = 88 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "crop_weaving_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="animal_weaving_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 9
-					position = { x = 46 y = 88 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "animal_weaving_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="steelworks_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 10
-					position = { x = 46 y = 176 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "steelworks_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-	
-			}
-
-			iconType = {
-				name = "constructions_bg2"
-				position = { x = 100 y = 6 }
-				quadTextureSprite = "GFX_constructions_bg4"
-			}
-	
-			containerWindowType = {
-				name = "factory_buildings_window"
-				position = {x=106 y=56}
-				size = { width=100%% height=100%% }
-	
-				buttonType = {
-					name ="smithy_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 21
-					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "arms_factory_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="factory_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 22
-					position = { x = 46 y = 0 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "factory_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="harbour_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 23
-					position = { x = 0 y = 44 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "harbour_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="dockyard_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 24
-					position = { x = 46 y = 44 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "dockyard_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="consumer_good_factory_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 28
-					position = { x = 0 y = 88 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "consumer_good_factory_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="luxury_good_factory_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 27
-					position = { x = 46 y = 88 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "luxury_good_factory_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="manufactory_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 32
-					position = { x = 0 y = 132 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "industrial_complex_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="carpentry_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 26
-					position = { x = 46 y = 132 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "carpentry_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="masonry_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 25
-					position = { x = 0 y = 176 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "masonry_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
-				buttonType = {
-					name ="steel_beam_factory_construction"
-					spriteType = "GFX_buildings_strip"
-					frame = 29
-					position = { x = 46 y = 176 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_default
-					pdx_tooltip = "steel_beam_factory_extended"
-					pdx_tooltip_delayed = "construction_extended_ttp"
-				}
+			buttonType ={
+				name ="toggle_all"
+				spriteType = "GFX_toggle_core"
+				frame = 1
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "toggle_all"
+				pdx_tooltip_delayed = "toggle_core_delayed"
 			}
 
 		}
@@ -1554,6 +1340,12 @@ guiTypes = {
 					pdx_tooltip = "field_info"
 					pdx_tooltip_delayed = "field_info_delayed"
 				}
+				iconType = {
+					name = "farm_progress"
+					spriteType = "GFX_construction_progressbar"
+					position = { x= 30 y = 24 }
+					pdx_tooltip = "farm_progress_ttp"
+				}
 
 				buttonType = {
 					name ="build_lumber_mill"
@@ -1586,6 +1378,12 @@ guiTypes = {
 					format = let	
 					pdx_tooltip = "forest_info"
 					pdx_tooltip_delayed = "forest_info_delayed"
+				}
+				iconType = {
+					name = "lumber_mill_progress"
+					spriteType = "GFX_construction_progressbar"
+					position = { x= 126 y = 24 }
+					pdx_tooltip = "lumber_mill_progress_ttp"
 				}
 
 				buttonType = {
@@ -1620,6 +1418,12 @@ guiTypes = {
 					pdx_tooltip = "animal_info"
 					pdx_tooltip_delayed = "animal_info_delayed"
 				}
+				iconType = {
+					name = "ranch_progress"
+					spriteType = "GFX_construction_progressbar"
+					position = { x= 222 y = 24 }
+					pdx_tooltip = "ranch_progress_ttp"
+				}
 
 				buttonType = {
 					name ="build_mine"
@@ -1652,6 +1456,12 @@ guiTypes = {
 					format = left
 					pdx_tooltip = "mountain_info"
 					pdx_tooltip_delayed = "mountain_info_delayed"
+				}
+				iconType = {
+					name = "mine_progress"
+					spriteType = "GFX_construction_progressbar"
+					position = { x= 30 y = 62 }
+					pdx_tooltip = "mine_progress_ttp"
 				}
 
 				buttonType = {
@@ -1686,6 +1496,12 @@ guiTypes = {
 					pdx_tooltip = "stonefield_info"
 					pdx_tooltip_delayed = "stonefield_info_delayed"
 				}
+				iconType = {
+					name = "quarry_progress"
+					spriteType = "GFX_construction_progressbar"
+					position = { x= 130 y = 62 }
+					pdx_tooltip = "quarry_progress_ttp"
+				}
 
 
 				buttonType = {
@@ -1719,6 +1535,12 @@ guiTypes = {
 					format = left	
 					pdx_tooltip = "water_info"
 					pdx_tooltip_delayed = "water_info_delayed"
+				}
+				iconType = {
+					name = "fishing_stand_progress"
+					spriteType = "GFX_construction_progressbar"
+					position = { x= 222 y = 62 }
+					pdx_tooltip = "fishing_stand_progress_ttp"
 				}
 
 			}
