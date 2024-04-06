@@ -125,6 +125,8 @@ on_actions = {
 				every_state = {
 					### migration attraction
 					set_variable = { local_migration_attraction = local_prosperity }
+					add_to_variable = { local_migration_attraction = mtth:workers_needed }
+					subtract_from_variable = { local_migration_attraction = mtth:workers_number }
 
 					set_variable = { local_migration_factor = 1 }
 					add_to_variable = { local_migration_factor = modifier@migration_attraction }
@@ -215,6 +217,17 @@ on_actions = {
 						min = migration_clamp
 					}
 
+
+
+
+					#################################### prosperity ### unrelated economy code ##########
+					
+					clamp_variable = {
+						var = global.max_local_prosperity
+						min = local_prosperity
+					}
+
+					#####################################################################################
 					add_manpower = var:refugees_accepted_last_month
 
 					if = {

@@ -1375,7 +1375,7 @@ guiTypes = {
 					text = "forest_var"
 					maxWidth = 45
 					maxHeight = 20
-					format = let	
+					format = left
 					pdx_tooltip = "forest_info"
 					pdx_tooltip_delayed = "forest_info_delayed"
 				}

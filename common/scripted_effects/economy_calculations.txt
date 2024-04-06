@@ -8,11 +8,11 @@ factory_output_calc = {
 	set_variable = { fishing_stand_output_2 = 2 }
 	add_to_variable = { fishing_stand_output = modifier@fishing_stand_output }
 	add_to_variable = { fishing_stand_output_2 = modifier@fishing_stand_output_2 }
-	set_variable = { ranch_output = 6 }
+	set_variable = { ranch_output = 2 }
 	set_variable = { ranch_output_2 = 3 }
 	add_to_variable = { ranch_output = modifier@ranch_output }
 	add_to_variable = { ranch_output_2 = modifier@ranch_output_2 }
-	set_variable = { lumber_mill_output = 10 }
+	set_variable = { lumber_mill_output = 4 }
 	add_to_variable = { lumber_mill_output = modifier@lumber_mill_output }
 	set_variable = { quarry_output = 6 }
 	set_variable = { quarry_output_2 = 2 }
@@ -20,17 +20,17 @@ factory_output_calc = {
 	add_to_variable = { quarry_output = modifier@quarry_output }
 	add_to_variable = { quarry_output_2 = modifier@quarry_output_2 }
 	add_to_variable = { quarry_output_3 = modifier@quarry_output_3 }
-	set_variable = { mine_output1 = 9 }
+	set_variable = { mine_output1 = 4 }
 	set_variable = { mine_output2 = 1 }
 	add_to_variable = { mine_output1 = modifier@mine_output1 }
 	add_to_variable = { mine_output2 = modifier@mine_output2 }
-	set_variable = { crop_weaving_output = 10 }
+	set_variable = { crop_weaving_output = 4 }
 	set_variable = { crop_weaving_output_2 = 4 }
 	set_variable = { crop_weaving_output_3 = 4 }
 	add_to_variable = { crop_weaving_output = modifier@crop_weaving_output }
 	add_to_variable = { crop_weaving_output_2 = modifier@crop_weaving_output_2 }
 	add_to_variable = { crop_weaving_output_3 = modifier@crop_weaving_output_3 }
-	set_variable = { animal_weaving_output = 10 }
+	set_variable = { animal_weaving_output = 4 }
 	set_variable = { animal_weaving_output_2 = 4 }
 	set_variable = { animal_weaving_output_3 = 4 }
 	add_to_variable = { animal_weaving_output = modifier@animal_weaving_output }
@@ -77,7 +77,7 @@ factory_output_calc = {
 	add_to_variable = { crop_weaving_need = modifier@crop_weaving_need }
 	set_variable = { mill_need = 4 }
 	add_to_variable = { mill_need = modifier@mill_need }
-	set_variable = { animal_weaving_need = 5 }
+	set_variable = { animal_weaving_need = 6 }
 	add_to_variable = { animal_weaving_need = modifier@animal_weaving_need }
 	set_variable = { steelworks_need1 = 20 }
 	add_to_variable = { steelworks_need1 = modifier@steelworks_need1 }
@@ -91,9 +91,9 @@ factory_output_calc = {
 	add_to_variable = { luxury_good_factory_need1 = modifier@luxury_good_factory_need1 }
 	set_variable = { luxury_good_factory_need2 = 2 }
 	add_to_variable = { luxury_good_factory_need2 = modifier@luxury_good_factory_need2 }
-	set_variable = { carpentry_need = 2 }
+	set_variable = { carpentry_need = 6 }
 	add_to_variable = { carpentry_need = modifier@carpentry_need }
-	set_variable = { masonry_need = 3 }
+	set_variable = { masonry_need = 6 }
 	add_to_variable = { masonry_need = modifier@masonry_need }
 	set_variable = { steel_beam_factory_need = 6 }
 	add_to_variable = { steel_beam_factory_need = modifier@steel_beam_factory_need }

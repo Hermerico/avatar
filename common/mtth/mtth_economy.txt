@@ -1794,19 +1794,19 @@ local_prosperity_growth = {
 			#set_temp_variable = { 2_harbour_value = 1 }
 			#set_temp_variable = { 2_dockyard_value = 1 }
 
-			add_to_temp_variable = { 2_steel_price = ROOT.steel_need }
-			add_to_temp_variable = { 2_animal_products_price = ROOT.animal_products_need }
-			add_to_temp_variable = { 2_wood_price = ROOT.wood_need }
-			add_to_temp_variable = { 2_iron_price = ROOT.iron_need }
-			add_to_temp_variable = { 2_textile_price = ROOT.textile_need }
-			add_to_temp_variable = { 2_minerals_price = ROOT.minerals_need }
-			add_to_temp_variable = { 2_grain_price = ROOT.grain_need }
-			add_to_temp_variable = { 2_fossile_fuels_price = ROOT.fossile_fuels_need }
-			add_to_temp_variable = { 2_consumer_goods_price = ROOT.consumer_goods_need }
-			add_to_temp_variable = { 2_luxury_goods_price = ROOT.luxury_goods_need }
-			add_to_temp_variable = { 2_planks_price = ROOT.planks_need }
-			add_to_temp_variable = { 2_bricks_price = ROOT.bricks_need }
-			add_to_temp_variable = { 2_steel_beams_price = ROOT.steel_beams_need }
+			add_to_temp_variable = { 2_steel_price = ROOT.steel_price }
+			add_to_temp_variable = { 2_animal_products_price = ROOT.animal_products_price }
+			add_to_temp_variable = { 2_wood_price = ROOT.wood_price }
+			add_to_temp_variable = { 2_iron_price = ROOT.iron_price }
+			add_to_temp_variable = { 2_textile_price = ROOT.textile_price }
+			add_to_temp_variable = { 2_minerals_price = ROOT.minerals_price }
+			add_to_temp_variable = { 2_grain_price = ROOT.grain_price }
+			add_to_temp_variable = { 2_fossile_fuels_price = ROOT.fossile_fuels_price }
+			add_to_temp_variable = { 2_consumer_goods_price = ROOT.consumer_goods_price }
+			add_to_temp_variable = { 2_luxury_goods_price = ROOT.luxury_goods_price }
+			add_to_temp_variable = { 2_planks_price = ROOT.planks_price }
+			add_to_temp_variable = { 2_bricks_price = ROOT.bricks_price }
+			add_to_temp_variable = { 2_steel_beams_price = ROOT.steel_beams_price }
 
 			#multiply_temp_variable = { 2_smithy_value = ROOT.smithy_output }
 			#multiply_temp_variable = { 2_factory_value = ROOT.factory_output }
@@ -1855,7 +1855,7 @@ local_prosperity_growth = {
 		#add_to_temp_variable = { local_prosperity = 2_dockyard_value }
 
 
-		multiply_temp_variable = { local_prosperity = 0.02 }
+		multiply_temp_variable = { local_prosperity = 0.03 }
 
 		set_temp_variable = { prosperity_growth = 1 }
 		add_to_temp_variable = { prosperity_growth = modifier@prosperity }
@@ -1936,17 +1936,6 @@ local_prosperity_cap = {
 		}
 
 		add = local_prosperity_cap
-	}
-}
-
-prosperity_number = {
-	base = 0
-	modifier = {
-		set_temp_variable = { prosperity_number = local_prosperity }
-
-		divide_temp_variable = { prosperity_number = mtth:local_prosperity_cap }
-
-		add = prosperity_number
 	}
 }
 
