@@ -77,7 +77,7 @@ recruit_character = EAT_quartermaster_6
 		ruling_party = air_culture
 		elections_allowed = no
 	}
-	set_cosmetic_tag = EAT_exterminated
+	#set_cosmetic_tag = EAT_exterminated
 	OOB = "empty"
 	clr_country_flag = air_council_active
 	retire_character = EAT_sister_lio

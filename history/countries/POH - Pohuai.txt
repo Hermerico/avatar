@@ -62,7 +62,7 @@ add_ideas = {
 	no_education
 }
 
-set_cosmetic_tag = POH_puppet
+#set_cosmetic_tag = POH_puppet
 
 recruit_character = POH_rhee
 
@@ -84,7 +84,7 @@ permanent_spirits_and_modifiers = yes
 
 	OOB = "POH_52"
 
-	set_cosmetic_tag = POH_puppet
+	#set_cosmetic_tag = POH_puppet
 
 	set_popularities = {
 		water_culture = 5
@@ -109,7 +109,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = POH_puppet
+	#set_cosmetic_tag = POH_puppet
 
 	set_popularities = {
 		water_culture = 5
@@ -133,7 +133,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = POH_puppet
+	#set_cosmetic_tag = POH_puppet
 
 }
 

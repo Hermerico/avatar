@@ -64,7 +64,7 @@ add_ideas = {
 
 recruit_character = MER_hui
 
-set_cosmetic_tag = MER_puppet
+#set_cosmetic_tag = MER_puppet
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -83,7 +83,7 @@ permanent_spirits_and_modifiers = yes
 
 	OOB = "MER_52"
 
-	set_cosmetic_tag = MER_puppet
+	#set_cosmetic_tag = MER_puppet
 
 	#add_to_war = {
 	#	targeted_alliance = EAR
@@ -105,7 +105,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = MER_puppet
+	#set_cosmetic_tag = MER_puppet
 
 	OOB = "MER_106"
 
@@ -122,7 +122,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = MER_puppet
+	#set_cosmetic_tag = MER_puppet
 
 	OOB = "MER_111"
 }

@@ -110,7 +110,7 @@ permanent_spirits_and_modifiers = yes
 		ruling_party = air_culture
 		elections_allowed = no
 	}
-	set_cosmetic_tag = SAT_exterminated
+	#set_cosmetic_tag = SAT_exterminated
 	OOB = "empty"
 	retire_character = SAT_monk_pasang
 	retire_character = SAT_monk_gyatso

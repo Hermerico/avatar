@@ -22,7 +22,7 @@ set_country_flag = WAT_navy
  
 set_country_flag = WATER_special_forces
 
-set_cosmetic_tag = NWT_tribes
+#set_cosmetic_tag = NWT_tribes
 
 set_variable = { legitimacy_var = 180 }
 

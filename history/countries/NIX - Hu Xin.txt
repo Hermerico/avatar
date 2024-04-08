@@ -101,7 +101,7 @@ recruit_character = NIX_paiwei
 #	}
 #}
 
-set_cosmetic_tag = XIN_puppet
+#set_cosmetic_tag = XIN_puppet
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -120,7 +120,7 @@ permanent_spirits_and_modifiers = yes
 
 	OOB = "NIX_52"
 
-	set_cosmetic_tag = XIN_puppet
+	#set_cosmetic_tag = XIN_puppet
 
 	#add_to_war = {
 	#	targeted_alliance = EAR
@@ -142,7 +142,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 	OOB = "empty"
-	set_cosmetic_tag = XIN_puppet
+	#set_cosmetic_tag = XIN_puppet
 }
 
 
@@ -157,7 +157,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = XIN_puppet
+	#set_cosmetic_tag = XIN_puppet
 
 }
 

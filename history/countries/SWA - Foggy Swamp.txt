@@ -64,7 +64,7 @@ add_ideas = {
 	no_education
 }
 
-set_cosmetic_tag = SWA_puppet
+#set_cosmetic_tag = SWA_puppet
 
 
 recruit_character = SWA_head_of_intelligence_1
@@ -107,7 +107,7 @@ permanent_spirits_and_modifiers = yes
 
 52.5.16 ={
 
-	set_cosmetic_tag = SWA_puppet
+	#set_cosmetic_tag = SWA_puppet
 
 
 	set_politics = {
@@ -140,7 +140,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = SWA_puppet
+	#set_cosmetic_tag = SWA_puppet
 
 	retire_character = SWA_otang
 
@@ -182,7 +182,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = SWA_puppet
+	#set_cosmetic_tag = SWA_puppet
 
 }
 

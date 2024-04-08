@@ -91,7 +91,7 @@ set_popularities = {
 
 recruit_character = EBA_than
 
-set_cosmetic_tag = EBA_integrated
+#set_cosmetic_tag = EBA_integrated
 
 EAR_generic_starting_tech = yes
 
@@ -110,7 +110,7 @@ permanent_spirits_and_modifiers = yes
 
 52.5.16 ={
 
-	set_cosmetic_tag = EBA_integrated
+	#set_cosmetic_tag = EBA_integrated
 
 	#add_to_war = {
 	#	targeted_alliance = EAR
@@ -131,7 +131,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = EBA_integrated
+	#set_cosmetic_tag = EBA_integrated
 	OOB = "EBA_106"
 	
 }
@@ -147,7 +147,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = EBA_integrated
+	#set_cosmetic_tag = EBA_integrated
 
 }
 

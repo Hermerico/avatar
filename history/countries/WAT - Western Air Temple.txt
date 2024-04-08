@@ -91,7 +91,7 @@ permanent_spirits_and_modifiers = yes
 		ruling_party = air_culture
 		elections_allowed = no
 	}
-	set_cosmetic_tag = WAT_exterminated
+	#set_cosmetic_tag = WAT_exterminated
 	OOB = "empty"
 	country_lock_all_division_template = yes
 	clr_country_flag = air_council_active

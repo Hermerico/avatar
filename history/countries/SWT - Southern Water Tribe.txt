@@ -13,7 +13,7 @@ set_country_flag = WAT_navy
  
 set_country_flag = WATER_special_forces
 
-set_cosmetic_tag = SWT_tribes
+#set_cosmetic_tag = SWT_tribes
 
 OOB = "SWT_12"
 if = {

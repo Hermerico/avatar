@@ -66,7 +66,7 @@ add_ideas = {
 
 recruit_character = MAK_hongli
 
-set_cosmetic_tag = MAK_puppet
+#set_cosmetic_tag = MAK_puppet
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -85,7 +85,7 @@ permanent_spirits_and_modifiers = yes
 
 	OOB = "MAK_52"
 
-	set_cosmetic_tag = MAK_puppet
+	#set_cosmetic_tag = MAK_puppet
 
 	
 	set_popularities = {
@@ -111,7 +111,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = MAK_puppet
+	#set_cosmetic_tag = MAK_puppet
 
 	set_popularities = {
 		water_culture = 0
@@ -134,7 +134,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = MAK_puppet
+	#set_cosmetic_tag = MAK_puppet
 
 }
 

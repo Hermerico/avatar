@@ -61,7 +61,7 @@ add_ideas = {
 	no_education
 }
 
-set_cosmetic_tag = GAR_puppet
+#set_cosmetic_tag = GAR_puppet
 
 #if = {
 #	limit = {
@@ -95,7 +95,7 @@ permanent_spirits_and_modifiers = yes
 
 	OOB = "XIN_52"
 
-	set_cosmetic_tag = GAR_puppet
+	#set_cosmetic_tag = GAR_puppet
 	#add_to_war = {
 	#	targeted_alliance = EAR
 	#	enemy = FIR
@@ -173,7 +173,7 @@ set_technology = {
 
 106.2.4 ={
 
-	set_cosmetic_tag = GAR_puppet
+	#set_cosmetic_tag = GAR_puppet
 
 	OOB = "empty"
 	set_naval_oob = "empty"
@@ -212,7 +212,7 @@ set_technology = {
 
 111.10.30 ={
 
-	set_cosmetic_tag = GAR_puppet
+	#set_cosmetic_tag = GAR_puppet
 
 	OOB = "empty"
 

@@ -96,7 +96,7 @@ permanent_spirits_and_modifiers = yes
 	}
 	OOB = "empty"
 	clr_country_flag = air_council_active
-	set_cosmetic_tag = NAT_exterminated
+	#set_cosmetic_tag = NAT_exterminated
 	retire_character = NAT_northern_monk
 	country_lock_all_division_template = yes
 	add_popularity = {
@@ -126,7 +126,7 @@ permanent_spirits_and_modifiers = yes
 	OOB = "NAT_106"
 	remove_ideas = no_ruler
 	remove_ideas = NAT_bison_polo
-	set_cosmetic_tag = NAT_mechanist
+	#set_cosmetic_tag = NAT_mechanist
 	add_political_power = 650
 
 	#set_research_slots = 4

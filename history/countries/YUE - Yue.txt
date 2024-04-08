@@ -86,7 +86,7 @@ add_ideas = {
 	no_education
 }
 
-set_cosmetic_tag = YUE_puppet
+#set_cosmetic_tag = YUE_puppet
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -149,7 +149,7 @@ permanent_spirits_and_modifiers = yes
 
 	OOB = "empty"
 	set_naval_oob = "empty"
-	set_cosmetic_tag = YUE_puppet
+	#set_cosmetic_tag = YUE_puppet
 
 	#add_to_war = {
 	#	targeted_alliance = EAR
@@ -171,7 +171,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = YUE_puppet
+	#set_cosmetic_tag = YUE_puppet
 # 	set_technology = {
 
 # }
@@ -207,7 +207,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = YUE_puppet
+	#set_cosmetic_tag = YUE_puppet
 
 }
 

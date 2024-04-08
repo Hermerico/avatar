@@ -65,7 +65,7 @@ add_ideas = {
 
 recruit_character = DAW_fengshui
 
-set_cosmetic_tag = DAW_puppet
+#set_cosmetic_tag = DAW_puppet
 
 
 bender_conscription_effect = yes
@@ -83,7 +83,7 @@ permanent_spirits_and_modifiers = yes
 
 52.5.16 ={
 
-	set_cosmetic_tag = DAW_puppet
+	#set_cosmetic_tag = DAW_puppet
 
 	OOB = "DAW_52"
 
@@ -106,7 +106,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = DAW_puppet
+	#set_cosmetic_tag = DAW_puppet
 	OOB = "DAW_106"
 	
 }
@@ -123,7 +123,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = DAW_puppet
+	#set_cosmetic_tag = DAW_puppet
 	OOB = "DAW_111"
 }
 

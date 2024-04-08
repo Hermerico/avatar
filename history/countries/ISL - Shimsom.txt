@@ -80,7 +80,7 @@ add_ideas = {
 
 recruit_character = ISL_gombo
 
-set_cosmetic_tag = ISL_puppet
+#set_cosmetic_tag = ISL_puppet
 
 
 if = {
@@ -151,7 +151,7 @@ permanent_spirits_and_modifiers = yes
 
 52.5.16 ={
 
-	set_cosmetic_tag = ISL_puppet
+	#set_cosmetic_tag = ISL_puppet
 
 	OOB = "ISL_52"
 
@@ -175,7 +175,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = ISL_puppet
+	#set_cosmetic_tag = ISL_puppet
 
 	OOB = "ISL_106"
 set_technology = {
@@ -213,7 +213,7 @@ if = {
 
 111.10.30 ={
 
-	set_cosmetic_tag = ISL_puppet
+	#set_cosmetic_tag = ISL_puppet
 
 	OOB = "ISL_111"
 

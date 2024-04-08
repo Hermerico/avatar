@@ -55,7 +55,7 @@ set_popularities = {
 
 recruit_character = WBA_gow
 
-set_cosmetic_tag = WBA_integrated
+#set_cosmetic_tag = WBA_integrated
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -72,7 +72,7 @@ permanent_spirits_and_modifiers = yes
 
 52.5.16 ={
 
-	set_cosmetic_tag = WBA_integrated
+	#set_cosmetic_tag = WBA_integrated
 
 	OOB = "WBA_52"
 
@@ -94,7 +94,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = WBA_integrated
+	#set_cosmetic_tag = WBA_integrated
 
 	OOB = "WBA_106"
 	
@@ -111,7 +111,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = WBA_integrated
+	#set_cosmetic_tag = WBA_integrated
 	OOB = "WBA_111"
 
 }

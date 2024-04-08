@@ -62,7 +62,7 @@ add_ideas = {
 
 recruit_character = ECB_sung
 
-set_cosmetic_tag = ECB_puppet
+#set_cosmetic_tag = ECB_puppet
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -79,7 +79,7 @@ permanent_spirits_and_modifiers = yes
 
 52.5.16 ={
 
-	set_cosmetic_tag = ECB_puppet
+	#set_cosmetic_tag = ECB_puppet
 
 	#add_to_war = {
 	#	targeted_alliance = EAR
@@ -100,7 +100,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = ECB_puppet
+	#set_cosmetic_tag = ECB_puppet
 	OOB = "ECB_106"
 	
 }
@@ -116,7 +116,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = ECB_puppet
+	#set_cosmetic_tag = ECB_puppet
 
 }
 

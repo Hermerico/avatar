@@ -64,7 +64,7 @@ add_ideas = {
 
 recruit_character = NAN_ping
 
-set_cosmetic_tag = NAN_puppet
+#set_cosmetic_tag = NAN_puppet
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -81,7 +81,7 @@ permanent_spirits_and_modifiers = yes
 
 52.5.16 ={
 
-	set_cosmetic_tag = NAN_puppet
+	#set_cosmetic_tag = NAN_puppet
 
 	OOB = "NAN_52"
 
@@ -105,7 +105,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 
-	set_cosmetic_tag = NAN_puppet
+	#set_cosmetic_tag = NAN_puppet
 
 	OOB = "NAN_106"
 	
@@ -123,7 +123,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = NAN_puppet
+	#set_cosmetic_tag = NAN_puppet
 
 	OOB = "NAN_111"
 }

@@ -64,7 +64,7 @@ add_ideas = {
 
 recruit_character = GAR_bolin
 
-set_cosmetic_tag = NIX_puppet
+#set_cosmetic_tag = NIX_puppet
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -83,7 +83,7 @@ permanent_spirits_and_modifiers = yes
 
 	OOB = "GAR_52"
 
-	set_cosmetic_tag = NIX_puppet
+	#set_cosmetic_tag = NIX_puppet
 
 	#add_to_war = {
 	#	targeted_alliance = EAR
@@ -105,7 +105,7 @@ permanent_spirits_and_modifiers = yes
 
 106.2.4 ={
 	OOB = "GAR_106"
-	set_cosmetic_tag = NIX_puppet
+	#set_cosmetic_tag = NIX_puppet
 	
 }
 
@@ -121,7 +121,7 @@ permanent_spirits_and_modifiers = yes
 
 111.10.30 ={
 
-	set_cosmetic_tag = NIX_puppet
+	#set_cosmetic_tag = NIX_puppet
 
 }
 
