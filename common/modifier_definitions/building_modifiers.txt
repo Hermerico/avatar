@@ -283,12 +283,6 @@ crop_weaving_output_3 = {
 	precision = 1
 	postfix = none
 }
-animal_weaving_need = {
-	color_type = good
-	value_type = number
-	precision = 1
-	postfix = none
-}
 animal_weaving_output = {
 	color_type = good
 	value_type = number

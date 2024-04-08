@@ -2651,6 +2651,7 @@ technologies = {
 		miller_factor = 0.05
 		
 		mill_output = 2
+		mill_need = 2
 		
 		research_cost = 2
 		#start_year = 18
@@ -2707,6 +2708,7 @@ technologies = {
 		miller_factor = 0.1
 		
 		mill_output = 2
+		mill_need = 2
 		
 		research_cost = 2
 		#start_year = 42
@@ -2763,6 +2765,7 @@ technologies = {
 		miller_factor = 0.15
 		
 		mill_output = 2
+		mill_need = 2
 		
 		research_cost = 2
 		#start_year = 66
@@ -2820,6 +2823,7 @@ technologies = {
 		miller_factor = 0.2
 		
 		mill_output = 2
+		mill_need = 2
 		
 		research_cost = 2
 		#start_year = 90
@@ -3272,7 +3276,7 @@ technologies = {
 			domestication = 1
 		}
 
-		rancher_factor = 0.05
+		rancher_factor = 0.1
 
 		path = {
 			leads_to_tech = tanning_2
@@ -3309,7 +3313,7 @@ technologies = {
 	}
 	tanning_2 = {
 
-		rancher_factor = 0.05
+		rancher_factor = 0.15
 
 		path = {
 			leads_to_tech = tanning_3
@@ -3344,7 +3348,7 @@ technologies = {
 			surgery = 1
 		}
 
-		rancher_factor = 0.05
+		rancher_factor = 0.1
 
 		path = {
 			leads_to_tech = tanning_4
@@ -3412,7 +3416,7 @@ technologies = {
 			botanics = 1
 		}
 
-		rancher_factor = 0.05
+		rancher_factor = -0.1
 
 		path = {
 			leads_to_tech = tanning_6
@@ -3446,7 +3450,7 @@ technologies = {
 		dependencies = {
 			genetics = 1
 		}
-		rancher_factor = 0.05
+		rancher_factor = -0.15
 		
 		ranch_output = 1
 		ranch_output_2 = 2
@@ -3477,15 +3481,18 @@ technologies = {
 		dependencies = {
 			measurements = 1
 		}
-		weaver_factor = 0.1
+		weaver_factor = 0.05
 		
 		path = {
 			leads_to_tech = textile_2
 			research_cost_coeff = 1
 		}
 		
-		crop_weaving_output = 2
-		animal_weaving_output = 2
+		crop_weaving_output = 0.5
+		animal_weaving_output = 0.5
+
+		crop_weaving_need = 0.5
+		animal_weaving_need = 0.5
 		
 		research_cost = 2
 		#start_year = 12
@@ -3518,8 +3525,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		crop_weaving_output = 2
-		animal_weaving_output = 2
+		crop_weaving_output = 0.5
+		animal_weaving_output = 0.5
+
+		crop_weaving_need = 0.5
+		animal_weaving_need = 0.5
 		
 		research_cost = 2
 		#start_year = 24
@@ -3546,15 +3556,18 @@ technologies = {
 			natural_philosophy = 1
 		}
 
-		weaver_factor = 0.1
+		weaver_factor = 0.15
 		
 		path = {
 			leads_to_tech = textile_4
 			research_cost_coeff = 1
 		}
 		
-		crop_weaving_output = 2
-		animal_weaving_output = 2
+		crop_weaving_output = 1
+		animal_weaving_output = 1
+
+		crop_weaving_need = 1
+		animal_weaving_need = 1
 		
 		research_cost = 2
 		#start_year = 36
@@ -3581,15 +3594,18 @@ technologies = {
 			printing_press = 1
 		}
 
-		weaver_factor = 0.1
+		weaver_factor = 0.2
 		
 		path = {
 			leads_to_tech = textile_5
 			research_cost_coeff = 1
 		}
 		
-		crop_weaving_output = 2
-		animal_weaving_output = 2
+		crop_weaving_output = 1
+		animal_weaving_output = 1
+
+		crop_weaving_need = 1
+		animal_weaving_need = 1
 		
 		research_cost = 2
 		#start_year = 48
@@ -3616,7 +3632,7 @@ technologies = {
 			steam_engine = 1
 		}
 
-		weaver_factor = 0.1
+		weaver_factor = -0.1
 		
 		path = {
 			leads_to_tech = textile_6
@@ -3625,6 +3641,9 @@ technologies = {
 		
 		crop_weaving_output = 2
 		animal_weaving_output = 2
+
+		crop_weaving_need = 2
+		animal_weaving_need = 2
 		
 		research_cost = 2
 		#start_year = 60
@@ -3651,10 +3670,13 @@ technologies = {
 			gas_turbine = 1
 		}
 
-		weaver_factor = 0.1
+		weaver_factor = -0.15
 		
-		crop_weaving_output = 2
-		animal_weaving_output = 2
+		crop_weaving_output = 3
+		animal_weaving_output = 3
+
+		crop_weaving_need = 3
+		animal_weaving_need = 3
 		
 		research_cost = 2
 		#start_year = 72
@@ -4314,6 +4336,9 @@ technologies = {
 		}
 		
 		steelworks_output = 2
+
+		steelworks_need1 = 0.1
+		steelworks_need2 = 2
 		
 		research_cost = 2
 		#start_year = 54
@@ -4346,6 +4371,9 @@ technologies = {
 		}
 		
 		steelworks_output = 3
+
+		steelworks_need1 = 0.1
+		steelworks_need2 = 3
 		
 		research_cost = 2
 		#start_year = 66
@@ -4382,6 +4410,9 @@ technologies = {
 		}
 		
 		steelworks_output = 4
+
+		steelworks_need1 = 0.2
+		steelworks_need2 = 4
 		
 		research_cost = 2
 		#start_year = 78
@@ -4418,7 +4449,14 @@ technologies = {
 		}
 		
 		steelworks_output = 6
+		steelworks_need1 = 0.3
+		steelworks_need2 = 6
+
+
 		steel_beam_factory_output = 3
+		steel_beam_factory_need = 3
+
+
 		
 		XOR = {
 			smelting_r1
@@ -4455,6 +4493,9 @@ technologies = {
 		}
 		
 		steelworks_output = 10
+
+		steelworks_need1 = 1
+		steelworks_need2 = 10
 		
 		XOR = {
 			smelting_l1
@@ -4489,7 +4530,11 @@ technologies = {
 		industrial_worker_factor = 0.05
 		
 		steelworks_output = 6
+		steelworks_need1 = 0.3
+		steelworks_need2 = 6
+
 		steel_beam_factory_output = 3
+		steel_beam_factory_need = 3
 		
 		research_cost = 2
 		#start_year = 90
@@ -4517,6 +4562,8 @@ technologies = {
 		industrial_worker_factor = 0.05
 		
 		steelworks_output = 10
+		steelworks_need1 = 1
+		steelworks_need2 = 10
 		
 		research_cost = 2
 		#start_year = 90

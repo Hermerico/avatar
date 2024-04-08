@@ -32,6 +32,7 @@ on_actions = {
 				}
 
 				country_event = { id = economy.2 }
+				country_event = { id = economy.3 hours = 1 }
 
 				force_update_dynamic_modifier = yes
 

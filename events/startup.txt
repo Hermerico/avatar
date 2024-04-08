@@ -235,3 +235,23 @@ country_event = {
 		name = economy.2.a
 	}	
 }
+
+country_event = {
+	id = economy.3
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_state = {
+			clamp_variable = {
+				var = global.max_local_prosperity
+				min = local_prosperity
+			}
+		}
+	}
+
+	option = {
+		name = economy.3.a
+	}	
+}

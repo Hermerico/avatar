@@ -704,31 +704,31 @@ national_wealth_calc = {
 prices_and_demand = {
 	### resource demand per 1000 population
 
-	set_variable = { steel_need = 0.01 }
+	set_variable = { steel_need = 0.02 }
 	multiply_variable = { steel_need = mtth:steel_demand }
-	set_variable = { animal_products_need = 0.06 }
+	set_variable = { animal_products_need = 0.12 }
 	multiply_variable = { animal_products_need = mtth:animal_products_demand }
-	set_variable = { wood_need = 0.15 }
+	set_variable = { wood_need = 0.3 }
 	multiply_variable = { wood_need = mtth:wood_demand }
-	set_variable = { iron_need = 0.04 }
+	set_variable = { iron_need = 0.08 }
 	multiply_variable = { iron_need = mtth:iron_demand }
-	set_variable = { textile_need = 0.05 }
+	set_variable = { textile_need = 0.1 }
 	multiply_variable = { textile_need = mtth:textile_demand }
-	set_variable = { minerals_need = 0.04 }
+	set_variable = { minerals_need = 0.08 }
 	multiply_variable = { minerals_need = mtth:minerals_demand }
-	set_variable = { grain_need = 0.05 }
+	set_variable = { grain_need = 0.1 }
 	multiply_variable = { grain_need = mtth:grain_demand }
-	set_variable = { fossile_fuels_need = 0.02 }
+	set_variable = { fossile_fuels_need = 0.04 }
 	multiply_variable = { fossile_fuels_need = mtth:fossile_fuels_demand }
-	set_variable = { consumer_goods_need = 0.25 }
+	set_variable = { consumer_goods_need = 0.5 }
 	multiply_variable = { consumer_goods_need = mtth:consumer_goods_demand }
-	set_variable = { luxury_goods_need = 0.05 }
+	set_variable = { luxury_goods_need = 0.1 }
 	multiply_variable = { luxury_goods_need = mtth:luxury_goods_demand }
-	set_variable = { planks_need = 0.08 }
+	set_variable = { planks_need = 0.16 }
 	multiply_variable = { planks_need = mtth:planks_demand }
-	set_variable = { bricks_need = 0.07 }
+	set_variable = { bricks_need = 0.14 }
 	multiply_variable = { bricks_need = mtth:bricks_demand }
-	set_variable = { steel_beams_need = 0.01 }
+	set_variable = { steel_beams_need = 0.02 }
 	multiply_variable = { steel_beams_need = mtth:steel_beams_demand }
 
 	multiply_variable = { steel_need = mtth:consumer_demand }
