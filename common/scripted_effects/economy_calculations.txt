@@ -1204,12 +1204,47 @@ wages_and_taxes = {
 	add_to_variable = { military_wages = reservist_wages }
 	add_to_variable = { military_wages = officer_wages }
 
+	set_variable = { mil_factory_use = num_of_military_factories }
+	subtract_from_variable = { mil_factory_use = num_of_available_military_factories }
+
+	set_variable = { mil_factory_use_percentage = num_of_military_factories }
+	if = {
+		limit = {
+			check_variable = { mil_factory_use > 0 }
+		}
+		divide_variable = { mil_factory_use_percentage = mil_factory_use }
+	}
+	else = {
+		set_variable = { mil_factory_use_percentage = 0 }
+	}
+
+	set_variable = { smithy_payments = mil_factory_use }
+	multiply_variable = { smithy_payments = 0.1 }
+
+	set_variable = { naval_factory_use = num_of_navalitary_factories }
+	subtract_from_variable = { naval_factory_use = num_of_available_navalitary_factories }
+
+	set_variable = { naval_factory_use_percentage = num_of_navalitary_factories }
+	if = {
+		limit = {
+			check_variable = { naval_factory_use > 0 }
+		}
+		divide_variable = { naval_factory_use_percentage = naval_factory_use }
+	}
+	else = {
+		set_variable = { naval_factory_use_percentage = 0 }
+	}
+
+	set_variable = { dockyard_payments = naval_factory_use }
+	multiply_variable = { dockyard_payments = 0.1 }
+
 
 	set_variable = { tax_balance = taxation_var }
 	add_to_variable = { tax_balance = inflation_money }
 	add_to_variable = { tax_balance = modifier@income }
 	set_variable = { state_expenses = mtth:expenses_per_pop }
 	add_to_variable = { state_expenses = military_wages }
+	add_to_variable = { state_expenses = smithy_payments }
 	multiply_variable = { state_expenses = mtth:expenses_factor }
 	clamp_variable = { var = state_expenses  min = 0 }
 	subtract_from_variable = { tax_balance = state_expenses }
