@@ -67,7 +67,7 @@ if = {
 		name = "Pirate Class"
 		type = galley_hull_1
 		#name_group = GER_CA_HISTORICAL
-		parent_version = 0
+		#parent_version = 0
 		modules = {
 			fixed_ship_crew_slot = ship_archers_1
 		}
