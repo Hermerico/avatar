@@ -1,4 +1,4 @@
-capital = 19
+capital = 407
 
 OOB = "GOU_12"
 

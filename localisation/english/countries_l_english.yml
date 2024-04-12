@@ -1033,78 +1033,157 @@
 
 
 
- ANP_earth_culture:0 "Anpu"
+ ANP:0 "Anpu"
+ ANP_DEF:0 "Anpu"
+ ANP_ADJ:0 "Anpuan"
 
- AOT_earth_culture:0 "Aotou"
+ AOT:0 "Aotou"
+ AOT_DEF:0 "Aotou"
+ AOT_ADJ:0 "Aotouan"
+ 
+ BAI:0 "Baichuan"
+ BAI_DEF:0 "Biachuan"
+ BAI_ADJ:0 "Baichuanese"
 
- BAI_earth_culture:0 "Baichuan"
+ BIN:0 "Binwu"
+ BIN_DEF:0 "Binwu"
+ BIN_ADJ:0 "Binwuan"
+ 
+ CAI:0 "Caixi"
+ CAI_DEF:0 "Caixi"
+ CAI_ADJ:0 "Caixic"
 
- BIN_earth_culture:0 "Binwu"
+ CAO:0 "Caolou"
+ CAO_DEF:0 "Caolou"
+ CAO_ADJ:0 "Caolout"
 
- CAI_earth_culture:0 "Caixi"
+ DAW:0 "Dawa"
+ DAW_DEF:0 "Dawa"
+ DAW_ADJ:0 "Dawan"
+ 
+ DIN:0 "Dingcuo"
+ DIN_DEF:0 "Dingcuo"
+ DIN_ADJ:0 "Dingcuan"
+ 
+ FUJ:0 "Fujian"
+ FUJ_DEF:0 "Fujian"
+ FUJ_ADJ:0 "Fujianese"
 
- CAO_earth_culture:0 "Caolou"
+ FUN:0 "Fung"
+ FUN_DEF:0 "Fung"
+ FUN_ADJ:0 "Fungan"
 
- DAW_earth_culture:0 "Dawa"
+ GAN:0 "Ganjingzi"
+ GAN_DEF:0 "Ganjingzi"
+ GAN_ADJ:0 "Ganjingzic"
 
- DIN_earth_culture:0 "Dingcuo"
-
- FUJ_earth_culture:0 "Fujian"
-
- FUN_earth_culture:0 "Fung"
-
- GAN_earth_culture:0 "Ganjingzi"
-
- GAS_earth_culture:0 "Gashun"
+ GAS:0 "Gashun"
+ GAS_DEF:0 "Gashun"
+ GAS_ADJ:0 "Gashunese"
 
  GOU_earth_culture:0 "Goutou"
+ GOU_earth_culture_DEF:0 "Goutou"
+ GOU_earth_culture_ADJ:0 "Goutouan"
+ GOU_earth_culture_puppet:0 "Goutou"
+ GOU_earth_culture_puppet_DEF:0 "Goutou"
+ GOU_earth_culture_puppet_ADJ:0 "Goutouan"
 
- HAS_earth_culture:0 "Hasu"
+ HAS:0 "Hasu"
+ HAS_DEF:0 "Hasu"
+ HAS_ADJ:0 "Hasuan"
 
- HON_earth_culture:0 "Honggou"
+ HON:0 "Honggou"
+ HON_DEF:0 "Honggou"
+ HON_ADJ:0 "Honggolese"
 
- JIA_earth_culture:0 "Jiachong"
+ JIA:0 "Jiachong"
+ JIA_DEF:0 "Jiachong"
+ JIA_ADJ:0 "Jiachongan"
+ 
+ JIU:0 "Jiunao"
+ JIU_DEF:0 "Jiunao"
+ JIU_ADJ:0 "Jiunaoan"
 
- JIU_earth_culture:0 "Jiunao"
+ KEY:0 "Keyu"
+ KEY_DEF:0 "Keyu"
+ KEY_ADJ:0 "Keyuan"
+ 
+ KUN:0 "Kunlun"
+ KUN_DEF:0 "Kunlun"
+ KUN_ADJ:0 "Kunlunese"
 
- KEY_earth_culture:0 "Keyu"
- 
- KUN_earth_culture:0 "Kunlun"
+ LUO:0 "Luo"
+ LUO_DEF:0 "Luo"
+ LUO_ADJ:0 "Luan"
 
- LUO_earth_culture:0 "Luo"
+ NYA:0 "Shimsom"
+ NYA_DEF:0 "Shimsom"
+ NYA_ADJ:0 "Shimsomese"
  
- NYA_earth_culture:0 "Shimsom"
- 
- PEN_earth_culture:0 "Penglai"
- 
- QIA_earth_culture:0 "Qian Shu"
- 
- REX_earth_culture:0 "Rexi"
- 
- SAN_earth_culture:0 "Sanfren"
- 
- SHE_earth_culture:0 "Shendu"
+ PEN:0 "Penglai"
+ PEN_DEF:0 "Penglai"
+ PEN_ADJ:0 "Penglaian"
 
- TAN_earth_culture:0 "Tangjia"
+ QIA:0 "Qian Shu"
+ QIA_DEF:0 "Qian Shu"
+ QIA_ADJ:0 "Qianshese"
+
+ REX:0 "Rexi"
+ REX_DEF:0 "Rexi"
+ REX_ADJ:0 "Rectic"
+
+ SAN:0 "Sanfren"
+ SAN_DEF:0 "Sanfren"
+ SAN_ADJ:0 "Sanfrenese"
+
+ SHE:0 "Shendu"
+ SHE_DEF:0 "Shendu"
+ SHE_ADJ:0 "Shenduese"
+
+ TAN:0 "Tangjia"
+ TAN_DEF:0 "Tangjia"
+ TAN_ADJ:0 "Tangjian"
+
+ TIA:0 "Tiantai"
+ TIA_DEF:0 "Tiantai"
+ TIA_ADJ:0 "Tiantaian"
+
+ TIG:0 "Tigu"
+ TIG_DEF:0 "Tigu"
+ TIG_ADJ:0 "Tiguan"
+
+ TON:0 "Tongren"
+ TON_DEF:0 "Tongren"
+ TON_ADJ:0 "Tongrenese"
+
+ TUM:0 "Tumuzhen"
+ TUM_DEF:0 "Tumuzhen"
+ TUM_ADJ:0 "Tumuzhenese"
+
+ ULA:0 "Xishaan"
+ ULA_DEF:0 "Xishaan"
+ ULA_ADJ:0 "Xishaanese"
+
+ WAI:0 "Waigou"
+ WAI_DEF:0 "Waigou"
+ WAI_ADJ:0 "Waigouan"
+
+ WAO:0 "Wao'ao"
+ WAO_DEF:0 "Wao'ao"
+ WAO_ADJ:0 "Waoaoan"
+
+ XIL:0 "Xili"
+ XIL_DEF:0 "Xili"
+ XIL_ADJ:0 "Xilese"
  
- TIA_earth_culture:0 "Tiantai"
- 
- TIG_earth_culture:0 "Tigu"
- 
- TON_earth_culture:0 "Tongren"
- 
- TUM_earth_culture:0 "Tumuzhen"
- 
- ULA_earth_culture:0 "Xishaan"
- 
- WAI_earth_culture:0 "Waigou"
- 
- WAO_earth_culture:0 "Wao'ao"
- 
- XIL_earth_culture:0 "Xili"
- 
- YON_earth_culture:0 "Gintong"
- 
- ZHA_earth_culture:0 "Zhangye"
- 
- ZHI_earth_culture:0 "Zhihuo"
+ YON:0 "Gintong"
+ YON_DEF:0 "Gintong"
+ YON_ADJ:0 "Gintongan"
+
+ ZHA:0 "Zhangye"
+ ZHA_DEF:0 "Zhangye"
+ ZHA_ADJ:0 "Zhangyese"
+
+ ZHI:0 "Zhihuo"
+ ZHI_DEF:0 "Zhihuo"
+ ZHI_ADJ:0 "Zhihuan"
