@@ -495,42 +495,18 @@ defined_text = {
 ### full moon
 
 defined_text = {
-	name = GetFullMoonYear
+	name = GetFullMoonEffect
 	text = {
 		trigger = {
-			check_variable = { full_moon_intel < 0 }
-		}
-		localization_key = calendar_unknown
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				var = full_moon_intel
-				value = 0
-				compare = greater_than_or_equals
+			OR = {
+				has_tech = astronomy
+				has_country_flag = full_moon_intel_bought
 			}
 		}
-		localization_key = [?global.full_moon_year]
+		localization_key = moon_tooltip
 	}
-}
-
-defined_text = {
-	name = GetFullMoonMonth
 	text = {
-		trigger = {
-			check_variable = { full_moon_intel < 20 }
-		}
 		localization_key = calendar_unknown
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				var = full_moon_intel
-				value = 20
-				compare = greater_than_or_equals
-			}
-		}
-		localization_key = [?global.full_moon_month]
 	}
 }
 
@@ -538,19 +514,15 @@ defined_text = {
 	name = GetFullMoonDay
 	text = {
 		trigger = {
-			check_variable = { full_moon_intel < 30 }
-		}
-		localization_key = calendar_unknown
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				var = full_moon_intel
-				value = 30
-				compare = greater_than_or_equals
+			OR = {
+				has_tech = astronomy
+				has_country_flag = full_moon_intel_bought
 			}
 		}
-		localization_key = [?global.full_moon_day]
+		localization_key = moon_day
+	}
+	text = {
+		localization_key = calendar_unknown
 	}
 }
 

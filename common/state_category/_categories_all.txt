@@ -2,72 +2,84 @@ state_categories={
 
 	barren_wasteland = {
 		local_building_slots = 1
+		state_production_speed_buildings_factor = -0.5
 	
 		color = { 255 0 0 }
 	}
 
 	tiny_island = {
 		local_building_slots = 2
+		state_production_speed_buildings_factor = -0.4
 	
 		color = { 235 50 0 }
 	}
 
 	pastoral = {
 		local_building_slots = 4
+		state_production_speed_buildings_factor = -0.3
 	
 		color = { 215 70 0 }
 	}
 
 	small_island = {
 		local_building_slots = 5
+		state_production_speed_buildings_factor = -0.2
 	
 		color = { 195 90 0 }
 	}
 
 	rural = {
 		local_building_slots = 6
+		state_production_speed_buildings_factor = -0.1
 	
 		color = { 175 110 0 }
 	}
 
 	enclave = {
 		local_building_slots = 8
+		state_production_speed_buildings_factor = 0.0
 
 		color = { 155 130 0 }
 	}
 
 	town = {
 		local_building_slots = 10
+		state_production_speed_buildings_factor = 0.04
 	
 		color = { 130 155 0 }
 	}
 
 	large_town = {
 		local_building_slots = 12
+		state_production_speed_buildings_factor = 0.08
 	
 		color = { 110 175 0 }
 	}
 
 	city = {
 		local_building_slots = 14
+		state_production_speed_buildings_factor = 0.12
 	
 		color = { 90 195 0 }
 	}
 
 	large_city = {
 		local_building_slots = 16
+		state_production_speed_buildings_factor = 0.16
 	
 		color = { 70 215 0 }
 	}
 
 	metropolis = {
 		local_building_slots = 18
+		state_production_speed_buildings_factor = 0.2
 		
 		color = { 50 235 0 }
 	}
 
 	megalopolis = {
 		local_building_slots = 20
+		state_production_speed_buildings_factor = 0.24
 	
 		color = { 0 255 0 }
 	}

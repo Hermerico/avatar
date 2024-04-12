@@ -99,6 +99,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_urbanisation_texticon"
+		texturefile = "gfx/texticons/urbanisation_texticon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_resistance_texticon"
 		texturefile = "gfx/texticons/resistance_texticon.dds"
 		legacy_lazy_load = no

@@ -122,6 +122,15 @@ building_upkeep_resources = {
 
 }
 
+urbanisation_modifiers = {
+	enable = { always = yes }
+
+	building_upkeep_cost = pleb_construction_cost
+
+	local_building_slots_factor = mtth:urbanisation_building_slots
+
+}
+
 missing_workers_state = {
 	enable = { always = yes }
 

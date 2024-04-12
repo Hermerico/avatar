@@ -150,6 +150,61 @@ guiTypes = {
 	}
 
 	containerWindowType = {
+		name = "urbanisation_ui_window"
+		position = { x = 150 y = 120 }
+		Orientation = UPPER_LEFT
+
+		iconType = {
+			name = "urbanisation_icon"
+			spriteType = "GFX_urbanisation_icon"
+			position = { x = 44 y = 24 }
+			pdx_tooltip = "urbanisation_tooltip"
+			pdx_tooltip_delayed = "urbanisation_tooltip_delayed"
+		}
+		instantTextBoxType = {
+			name ="prosperity_text"
+			position = { x = 180 y = 28 }
+			font = "hoi_18mbs"
+			text = "urbanisation_number"
+			maxWidth = 64
+			maxHeight = 18
+			format = left
+			pdx_tooltip = "urbanisation_tooltip"
+			pdx_tooltip_delayed = "urbanisation_tooltip_delayed"
+		}
+		iconType = {
+			name ="urbanisation_bar_2"
+			spriteType = "GFX_urbanisation_bar_2"
+			position = { x= 76 y = 32 }
+			frame = 50
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="urbanisation_bar"
+			spriteType = "GFX_urbanisation_bar"
+			position = { x= 76 y = 32 }
+			frame = 50
+			pdx_tooltip = "urbanisation_tooltip"
+			pdx_tooltip_delayed = "urbanisation_tooltip_delayed"
+		}
+
+		#iconType ={
+		#	name ="prosperity_increase"
+		#	spriteType = "GFX_increase_texticon"
+		#	position = { x=180 y=32 }
+		#	pdx_tooltip = "urbanisation_tooltip"
+		#	pdx_tooltip_delayed = "urbanisation_tooltip_delayed"
+		#}
+		#iconType ={
+		#	name ="prosperity_decrease"
+		#	spriteType = "GFX_decrease_texticon"
+		#	position = { x=180 y=32 }
+		#	pdx_tooltip = "urbanisation_tooltip"
+		#	pdx_tooltip_delayed = "urbanisation_tooltip_delayed"
+		#}
+	}
+
+	containerWindowType = {
 		name = "population_culture_ui_window"
 		position = { x = 17 y = 6 }
 		Orientation = UPPER_LEFT

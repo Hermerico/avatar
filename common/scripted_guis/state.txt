@@ -101,5 +101,39 @@ scripted_gui = {
 		}
 
 	}
+
+	urbanisation_ui_window = {
+		context_type = selected_state_context
+		
+		window_name = "urbanisation_ui_window"
+		parent_window_token = selected_state_view
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+			prosperity_increase_visible = {
+				check_variable = { real_prosp_growth > 0 }
+			}
+			prosperity_decrease_visible = {
+				check_variable = { real_prosp_growth < 0 }
+			}
+		}
+
+		properties = {
+			urbanisation_bar = {
+				frame = THIS.actual_urbanisation
+			}
+			urbanisation_bar_2 = {
+				frame = THIS.urbanisation_cap
+			}
+
+			urbanisation_icon = {
+				frame = THIS.urbanisation_icon
+			}
+		}
+
+	}
 	
 }

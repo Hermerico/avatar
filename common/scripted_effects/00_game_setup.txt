@@ -5,6 +5,7 @@ instant_resource_calc = {
 
 	add_dynamic_modifier = { modifier = additional_scripted_resources }
 	add_dynamic_modifier = { modifier = missing_workers_state }
+	add_dynamic_modifier = { modifier = urbanisation_modifiers }
 	
 	add_dynamic_modifier = { modifier = farm_scripted_resources }
 	add_dynamic_modifier = { modifier = ranch_scripted_resources }
@@ -41,6 +42,8 @@ permanent_spirits_and_modifiers = {
 	set_variable = { spirit_army_orga = logistic_spirit_var }
 	multiply_variable = { spirit_army_orga = 0.015 }
 	subtract_from_variable = { spirit_army_orga = 0.1 }
+
+	add_dynamic_modifier = { modifier = full_moon }
 
 	force_update_dynamic_modifier = yes
 }

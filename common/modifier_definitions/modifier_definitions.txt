@@ -219,28 +219,55 @@ prosperity_factor = {
 	postfix = none
 }
 
+urbanisation = {
+	color_type = good 
+	value_type = number
+	precision = 2
+	postfix = none
+}
+urbanisation_factor = {
+	color_type = good 
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = state
+}
+urbanisation_country_factor = {
+	color_type = good 
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+urbanisation_cost = {
+	color_type = bad 
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = state
+}
+
 
 reforestation = {
 	color_type = good 
-	value_type = number
+	value_type = percentage
 	precision = 1
 	postfix = none
 }
 breeding = {
 	color_type = good 
-	value_type = number
+	value_type = percentage
 	precision = 1
 	postfix = none
 }
 fertilizer = {
 	color_type = good 
-	value_type = number
+	value_type = percentage
 	precision = 1
 	postfix = none
 }
 waters = {
 	color_type = good 
-	value_type = number
+	value_type = percentage
 	precision = 1
 	postfix = none
 }

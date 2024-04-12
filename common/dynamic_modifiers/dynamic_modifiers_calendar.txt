@@ -28,9 +28,16 @@
 full_moon = {
 	enable = { always = yes }
 
-	modifier_army_sub_unit_waterbender_attack_factor = 0.4
-	modifier_army_sub_unit_waterbender_defence_factor = 0.6
-	modifier_army_sub_unit_waterbender_speed_factor = 0.2
+	modifier_army_sub_unit_waterbender_attack_factor = mtth:moon_effect
+	modifier_army_sub_unit_waterbender_defence_factor = mtth:moon_effect
+	modifier_army_sub_unit_waterbender_speed_factor = mtth:moon_effect
+}
+
+lunar_eclipse = {
+	enable = { always = yes }
+
+	modifier_army_sub_unit_waterbender_attack_factor = -1
+	modifier_army_sub_unit_waterbender_defence_factor = -1
 }
 
 great_comet = {

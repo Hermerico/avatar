@@ -196,6 +196,7 @@ peasant_uprising_effect = {
 					has_dynamic_modifier = { modifier = revolt_origin }
 				}
 			}
+			has_country_flag = active_peasant_revolt
 		}
 		random_core_state = {
 			limit = {

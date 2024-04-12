@@ -58,6 +58,7 @@
  missing_workers_state:0 "Lack of Workers"
  impoverished_region:0 "Impoverished Region"
  impoverished_region_desc:0 "The inhabitants of this region suffer from abject poverty as they cannot satisfy their basic needs."
+ urbanisation_modifiers:0 "Urbanisation"
 
  additional_scripted_resources:0 "Self Employed Output"
  population_resource_bought_on_market:0 "Population need"

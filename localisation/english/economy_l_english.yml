@@ -253,6 +253,22 @@
  prosperity_tooltip:0 "§YLocal Prosperity§!: [?local_prosperity|3] / [?mtth:local_prosperity_cap|Y3] \n\nWeekly change: [?real_prosp_growth|=+3] \nCaused by:\n -£construction_capacity_texticon  Productivity: [?var_local_prosperity_growth|+=Y3] \n -£population_texticon  Population need: [?var_local_goods_bought|+=Y3] \n -£taxes_texticon  Taxation: [?var_local_tax|Y3] \n -£inflation_texticon  Minting: [?var_local_inflation_steal|+=Y3] \n\nContribution to £peoples_initiative_texticon  People's Initiative: [?var_local_investment|+=3]"
  prosperity_tooltip_delayed:0 "§LProsperity is an indicator for how wealthy a state is. It influences the consumer behaviour and how much taxes are paid.§!"
 
+ urbanisation_number:0 "[?actual_urbanisation|0]/[?urbanisation_cap|0]"
+ urbanisation_tooltip:0 "§Y[GetUrbanisation]§! \n\n£migration_texticon  Base Migration attraction: [?mtth:urbanisation_migration_attraction|+0] \n£building_slots  Building Slots in State: [?mtth:urbanisation_building_slots|%0+=]\n\nWeekly Urbanisation change: [?weekly_urbanisation|Y1]/[?weekly_urbanisation_demand|Y1]"
+ urbanisation_tooltip_delayed:0 "§LUrbanisation shows the population density and civilisation level of a state. Rural areas tend to have higer birth rates and migration while urban areas welcome those migrants.§!"
+
+ get_urb_1:0 "Virgin Land"
+ get_urb_2:0 "Pastoral Land"
+ get_urb_3:0 "Sparse Rural Land"
+ get_urb_4:0 "Rural Land"
+ get_urb_5:0 "Dense Rural Land"
+ get_urb_6:0 "Semi-Urban Area"
+ get_urb_7:0 "Sparse Urban Area"
+ get_urb_8:0 "Urban Area"
+ get_urb_9:0 "Dense Urban Area"
+ get_urb_10:0 "Metropolis"
+
+
  resource_title:0 "Resource Buildings"
  factory_title:0 "Industry Buildings"
  misc_title:0 "Misc Buildings"

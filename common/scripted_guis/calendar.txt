@@ -65,8 +65,8 @@ scripted_gui = {
 			}
 
 			full_moon_buy_click_enabled = {
-				check_variable = { knowledge_variable > 1}
-				check_variable = { full_moon_intel < 100 }
+				check_variable = { knowledge_variable > 1 }
+				NOT = { has_country_flag = full_moon_intel_bought }
 			}
 			black_sun_buy_click_enabled = {
 				check_variable = { knowledge_variable > 50}
@@ -126,7 +126,11 @@ scripted_gui = {
 			}
 
 			full_moon_buy_click = {
-				add_to_variable = { full_moon_intel = 10 }
+				set_country_flag = {
+					flag = full_moon_intel_bought
+					days = 90
+					value = 1
+				}
 				subtract_from_variable = { knowledge_variable = 1 }
 			}
 			black_sun_buy_click = {

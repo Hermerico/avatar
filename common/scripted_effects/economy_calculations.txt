@@ -216,6 +216,8 @@ reset_var_to_zero = {
 	set_variable = { worker_deficit_k = 0 }
 
 	set_variable = { deposit_construction_cost = 0 }
+
+	set_variable = { pleb_construction_cost = 0 }
 }
 
 worker_counting_states = {
@@ -1133,6 +1135,9 @@ factory_calculations = {
 }
 
 taxation_state_calc = {
+
+	##### prosperity 
+
 	add_to_variable = { ROOT.prosperity_productivity = mtth:local_prosperity_growth }
 	set_variable = { var_local_tax = mtth:local_tax }
 	set_variable = { var_local_inflation_steal = mtth:local_inflation_steal }
@@ -1173,6 +1178,50 @@ taxation_state_calc = {
 			}
 		}
 		add_dynamic_modifier = { modifier = impoverished_region }
+	}
+
+
+
+
+	#### urbanisation
+
+	set_variable = { urbanisation_cap = mtth:local_urbanisation_cap }
+
+	set_variable = { urbanisation_icon = urbanisation_cap }
+	add_to_variable = { urbanisation_icon = 4.9 }
+	divide_variable = { urbanisation_icon = 10 }
+	round_variable = urbanisation_icon
+
+	set_variable = { weekly_urbanisation = urbanisation_cap }
+	multiply_variable = { weekly_urbanisation = var_local_prosperity_growth }
+	multiply_variable = { weekly_urbanisation = 0.002 }
+	clamp_variable = { 
+		var = weekly_urbanisation
+		min = 0.1
+	}
+
+	set_variable = { weekly_urbanisation_demand = weekly_urbanisation }
+
+	set_variable = { urbanisation_cost = 1 }
+	add_to_variable = { urbanisation_cost = modifier@urbanisation_cost }
+	add_to_variable = { urbanisation_cost = controller:modifier@urbanisation_cost }
+	clamp_variable = { 
+		var = urbanisation_cost
+		min = 0
+	}
+
+	set_variable = { pleb_construction_cost = weekly_urbanisation }
+	multiply_variable = { pleb_construction_cost = urbanisation_cost }
+	add_to_variable = { ROOT.pleb_construction_cost = pleb_construction_cost }
+
+	multiply_variable = { weekly_urbanisation = ROOT.construction_material_factor }
+
+	add_to_variable = { actual_urbanisation = weekly_urbanisation }
+
+	clamp_variable = { 
+		var = actual_urbanisation
+		min = 0
+		max = urbanisation_cap
 	}
 }
 

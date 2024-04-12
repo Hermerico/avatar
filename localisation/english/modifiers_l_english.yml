@@ -229,6 +229,11 @@
  revolt_risk:0 "£revolt_texticon  Revolt Risk"
  settler_defiance:0 "Settler Defiance"
 
+ urbanisation:0 "£urbanisation_texticon  Urbanisation"
+ urbanisation_factor:0 "£urbanisation_texticon  Urbanisation"
+ urbanisation_country_factor:0 "£urbanisation_texticon  Global Urbanisation"
+ urbanisation_cost:0 "£urbanisation_texticon  Urbanisation Cost"
+
  civil_infiltration_factor:0 "£text_infiltrate_civilian_token  Civil Infiltration Success"
  army_infiltration_factor:0 "£text_infiltrate_army_token  Army Infiltration Success"
  navy_infiltration_factor:0 "£text_infiltrate_navy_token  Navy Infiltration Success"

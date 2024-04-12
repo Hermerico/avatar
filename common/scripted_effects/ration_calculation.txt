@@ -104,7 +104,7 @@ ration_calculation = {
 
 	# base gain
 	set_variable = { resource_gain = resource@food_resource }
-	divide_variable = { resource_gain = 10 }
+	divide_variable = { resource_gain = 20 }
 	add_to_variable = { ration_daily = resource_gain }
 
 	# factor
@@ -338,6 +338,11 @@ ratio_effects_and_interface = {
 	divide_variable = { ration_penalty = daily_ration_need }
 	multiply_variable = { ration_penalty = -1 }
 	set_variable = { famine_check = ration_penalty }
+	clamp_variable = { 
+		var = famine_check 
+		min = -0.75 
+		max = 0.75
+	}
 	clamp_variable = { 
 		var = ration_penalty 
 		min = -0.5 

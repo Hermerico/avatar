@@ -286,7 +286,7 @@ hebai_coal_mines = {
 
 	icon = GFX_modifiers_hebai_coal_mines
 	
-	state_resource_rubber = 46
+	fossile_fuels_throughput = 0.5
 }
 
 volcano = {
@@ -303,7 +303,7 @@ gold_vein = {
 	icon = GFX_modifiers_gold_vein
 	
 	local_building_slots = 4
-	state_resource_iron = 12
+	iron_throughput = 0.5
 	prosperity = 0.1
 }
 

@@ -13,7 +13,7 @@ technologies = {
 		}
 		
 		#production_factory_max_efficiency_factor = 0.02
-		global_building_slots_factor = 0.06
+		urbanisation_country_factor = 0.06
 		production_factory_efficiency_gain_factor = 0.05
 		peasant_output_factor = 0.05
 		
@@ -360,7 +360,7 @@ technologies = {
 		}
 		
 		production_factory_max_efficiency_factor = 0.025
-		global_building_slots_factor = 0.08
+		urbanisation_country_factor = 0.08
 		peasant_output_factor = 0.1
 		
 		research_cost = 2.5
@@ -697,7 +697,7 @@ technologies = {
 		}
 		
 		production_factory_max_efficiency_factor = 0.025
-		global_building_slots_factor = 0.10
+		urbanisation_country_factor = 0.10
 		
 		research_cost = 2.5
 		#start_year = 32
@@ -1036,7 +1036,7 @@ technologies = {
 		}
 		
 		production_factory_max_efficiency_factor = 0.025
-		global_building_slots_factor = 0.12
+		urbanisation_country_factor = 0.12
 		#peasant_output_factor = -0.01
 		
 		research_cost = 2.5
@@ -1381,7 +1381,7 @@ technologies = {
 		}
 		
 		production_factory_max_efficiency_factor = 0.05
-		global_building_slots_factor = 0.14
+		urbanisation_country_factor = 0.14
 		#peasant_output_factor = -0.02
 		
 		research_cost = 2.5
@@ -1715,7 +1715,7 @@ technologies = {
 			energy_manipulation = 1
 		}
 		production_factory_max_efficiency_factor = 0.05
-		global_building_slots_factor = 0.20
+		urbanisation_country_factor = 0.20
 		#peasant_output_factor = -0.03
 		
 		research_cost = 2.5

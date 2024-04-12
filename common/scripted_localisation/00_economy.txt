@@ -240,3 +240,76 @@ defined_text = {
 		localization_key = ""
 	}
 }
+
+
+defined_text = {
+	name = GetUrbanisation
+	text = {
+		trigger = {
+			check_variable = { urbanisation_cap < 10 }
+		}
+		localization_key = get_urb_1
+	}
+	text = {
+		trigger = {
+			check_variable = { urbanisation_cap > 10 }
+			check_variable = { urbanisation_cap < 20 }
+		}
+		localization_key = get_urb_2
+	}
+	text = {
+		trigger = {
+			check_variable = { urbanisation_cap > 20 }
+			check_variable = { urbanisation_cap < 30 }
+		}
+		localization_key = get_urb_3
+	}
+	text = {
+		trigger = {
+			check_variable = { urbanisation_cap > 30 }
+			check_variable = { urbanisation_cap < 40 }
+		}
+		localization_key = get_urb_4
+	}
+	text = {
+		trigger = {
+			check_variable = { urbanisation_cap > 40 }
+			check_variable = { urbanisation_cap < 50 }
+		}
+		localization_key = get_urb_5
+	}
+	text = {
+		trigger = {
+			check_variable = { urbanisation_cap > 50 }
+			check_variable = { urbanisation_cap < 60 }
+		}
+		localization_key = get_urb_6
+	}
+	text = {
+		trigger = {
+			check_variable = { urbanisation_cap > 60 }
+			check_variable = { urbanisation_cap < 70 }
+		}
+		localization_key = get_urb_7
+	}
+	text = {
+		trigger = {
+			check_variable = { urbanisation_cap > 70 }
+			check_variable = { urbanisation_cap < 80 }
+		}
+		localization_key = get_urb_8
+	}
+	text = {
+		trigger = {
+			check_variable = { urbanisation_cap > 80 }
+			check_variable = { urbanisation_cap < 90 }
+		}
+		localization_key = get_urb_9
+	}
+	text = {
+		trigger = {
+			check_variable = { urbanisation_cap > 90 }
+		}
+		localization_key = get_urb_10
+	}
+}

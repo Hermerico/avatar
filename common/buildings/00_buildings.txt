@@ -79,6 +79,8 @@ buildings = {
 		building_upkeep_cost = 1
 		local_supplies_for_controller = 0.05
 		max_grain_building_k = 10
+
+		urbanisation = -0.1
 	}
 
 	ranch = {
@@ -98,6 +100,8 @@ buildings = {
 		building_upkeep_cost = 1
 		local_supplies_for_controller = 0.025
 		max_grain_building_k = 20
+
+		urbanisation = -0.1
 	}
 
 	fishing_stand = {
@@ -134,6 +138,8 @@ buildings = {
 		show_modifier = yes
 		lumberjack_k = 0.1
 		building_upkeep_cost = 1
+
+		urbanisation = -0.1
 	}
 
 	quarry = {
@@ -153,6 +159,8 @@ buildings = {
 		show_modifier = yes
 		miner_k = 0.160
 		building_upkeep_cost = 2
+
+		urbanisation = -0.1
 	}
 
 	mine = {
@@ -172,6 +180,8 @@ buildings = {
 		show_modifier = yes
 		miner_k = 0.180
 		building_upkeep_cost = 2
+
+		urbanisation = -0.1
 	}
 
 
@@ -209,6 +219,8 @@ buildings = {
 		#local_manpower = 0.01
 		#local_building_slots = 1
 		army_speed_factor_for_controller = 0.1
+
+		urbanisation_factor = 0.02
 	}
 	rail_way = {
 		base_cost = 200
@@ -304,6 +316,8 @@ buildings = {
 		#local_resources_tungsten = 10
 		weaver_k = 0.10
 		building_upkeep_cost = 1
+
+		urbanisation = 0.1
 	}
 
 	animal_weaving = {
@@ -321,6 +335,8 @@ buildings = {
 		#local_resources_tungsten = 10
 		weaver_k = 0.10
 		building_upkeep_cost = 1
+
+		urbanisation = 0.1
 	}
 
 	mill = {
@@ -338,6 +354,8 @@ buildings = {
 		show_modifier = yes
 		miller_k = 0.060
 		building_upkeep_cost = 1
+
+		urbanisation = 0.1
 	}
 
 	steelworks = {
@@ -360,6 +378,8 @@ buildings = {
 		show_modifier = yes
 		#fuel_gain_from_states = -10.0 #per hour
 		building_upkeep_cost = 3
+
+		urbanisation = 0.6
 	}
 
 	arms_factory = {
@@ -380,6 +400,8 @@ buildings = {
 
 		#fuel_gain_from_states = -1.0 #per hour
 		building_upkeep_cost = 2
+
+		urbanisation = 0.8
 	}
 
 	factory = {
@@ -399,6 +421,8 @@ buildings = {
 
 		#fuel_gain_from_states = -5.0 #per hour
 		building_upkeep_cost = 4
+
+		urbanisation = 1
 	}
 
 	harbour = {
@@ -418,6 +442,8 @@ buildings = {
 
 		#naval_capacity_modifier = 10
 		building_upkeep_cost = 2
+
+		urbanisation = 1.2
 	}
 
 	dockyard = {
@@ -438,6 +464,8 @@ buildings = {
 
 		#naval_capacity_modifier = 20
 		building_upkeep_cost = 3
+
+		urbanisation = 1.4
 	}
 
 	consumer_good_factory = {
@@ -456,6 +484,8 @@ buildings = {
 		show_modifier = yes
 		shopkeeper_k = 0.120
 		building_upkeep_cost = 2
+
+		urbanisation = 0.8
 	}
 	luxury_good_factory = {
 		show_on_map = 6
@@ -473,6 +503,8 @@ buildings = {
 		show_modifier = yes
 		shopkeeper_k = 0.080
 		building_upkeep_cost = 2
+
+		urbanisation = 1.2
 	}
 
 	carpentry = {
@@ -490,6 +522,8 @@ buildings = {
 		show_modifier = yes
 		craftsman_k = 0.12
 		building_upkeep_cost = 2
+
+		urbanisation = 0.5
 	}
 	masonry = {
 		show_on_map = 6
@@ -506,6 +540,8 @@ buildings = {
 		show_modifier = yes
 		craftsman_k = 0.24
 		building_upkeep_cost = 2
+
+		urbanisation = 0.7
 	}
 	steel_beam_factory = {
 		show_on_map = 6
@@ -524,6 +560,8 @@ buildings = {
 		show_modifier = yes
 		industrial_worker_k = 2.400
 		building_upkeep_cost = 3
+
+		urbanisation = 0.9
 	}
 
 	fuel_repository = {
@@ -539,6 +577,8 @@ buildings = {
 		show_modifier = yes
 		max_fuel_building = 100.0 #k
 		building_upkeep_cost = 2
+
+		urbanisation = 0.2
 	}
 
 	granary = {
@@ -556,6 +596,8 @@ buildings = {
 		max_grain_building_k = 150.0
 		building_upkeep_cost = 2
 		local_supplies_for_controller = 0.1
+
+		urbanisation_factor = 0.05
 	}
 
 	scout_tower = {

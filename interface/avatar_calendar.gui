@@ -602,8 +602,8 @@ guiTypes = {
 			iconType = {
 				name = "full_moon_unlock"
 				position = {x=10 y=60}
-				spriteType = "GFX_unlock_info"
-				scale = 1
+				spriteType = "GFX_astronomy_medium"
+				scale = 0.5
 				Orientation = center
 			
 				pdx_tooltip = "unlock_tooltip"
@@ -625,7 +625,7 @@ guiTypes = {
 				font = "hoi_20bs"
 				text = "FULL_MOON_SHOW"
 				maxWidth = 120
-				maxHeight = 20
+				maxHeight = 40
 				format = center
 				Orientation = center
 

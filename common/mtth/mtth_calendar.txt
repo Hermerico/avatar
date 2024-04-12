@@ -8,3 +8,28 @@ moon_phases = {
 		add = moon_phase_progress
 	}
 }
+
+moon_effect = {
+	base = 0
+	modifier = {
+		set_temp_variable = { moon_phase_progress = global.num_days }
+		modulo_temp_variable = { moon_phase_progress = 29 }
+
+		subtract_from_temp_variable = { moon_phase_progress = 14.5 }
+
+		divide_temp_variable = { moon_phase_progress = 20 }
+
+		multiply_temp_variable = { moon_phase_progress = moon_phase_progress }
+
+
+
+		add = moon_phase_progress
+	}
+
+	modifier = {
+
+		has_dynamic_modifier = { modifier = lunar_eclipse }
+
+		factor = 0
+	}
+}

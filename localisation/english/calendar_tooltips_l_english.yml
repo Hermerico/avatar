@@ -41,10 +41,12 @@ black_sun_buy_tooltip:0 "Buy §YSolar Eclipse Intel§!: [?black_sun_intel]/§Y10
 black_sun_tooltip_delayed:0 "Calendar"
 BLACK_SUN_SHOW:0 "Next §YBlack Sun§!:\n[GetBlackSunDay].[GetBlackSunMonth].[GetBlackSunYear]"
 
-full_moon_tooltip:0 "§YFull Moon§!"
-full_moon_buy_tooltip:0 "Buy §YFull Moon Intel§!: [?full_moon_intel]/§Y100§!\n\nIt costs §Y1§! £knowledge_texticon  to gain §Y10§! §GIntel§! \n\n§G0§! -Year \n§G20§! -Month \n§G30§! -Day"
+full_moon_tooltip:0 "§YFull Moon§! \nEffect:\nWaterbender abilities: [GetFullMoonEffect]"
+full_moon_buy_tooltip:0 "Buy §YFull Moon Intel§!\n\nIt costs §Y1§! £knowledge_texticon  to gain §GIntel§! for 90 days"
 full_moon_tooltip_delayed:0 "Calendar"
-FULL_MOON_SHOW:0 "Next §YFull Moon§!:\n[GetFullMoonDay].[GetFullMoonMonth].[GetFullMoonYear]"
+FULL_MOON_SHOW:0 "§YMoon Cycle day§!: [GetFullMoonDay]"
+moon_day:0 "[?mtth:moon_phases]/29"
+moon_tooltip:0 "[?mtth:moon_effect|=+%]"
 full_moon_effects_tooltip:0 "§YFull Moon§! \n[?mtth:moon_phases]"
 
 great_comet_tooltip:0 "§YGreat Comet§!"

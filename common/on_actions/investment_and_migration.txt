@@ -124,7 +124,7 @@ on_actions = {
 
 				every_state = {
 					### migration attraction
-					set_variable = { local_migration_attraction = local_prosperity }
+					set_variable = { local_migration_attraction = mtth:urbanisation_migration_attraction }
 					add_to_variable = { local_migration_attraction = mtth:workers_needed }
 					subtract_from_variable = { local_migration_attraction = mtth:workers_number }
 
