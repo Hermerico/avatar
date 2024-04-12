@@ -1,4 +1,4 @@
-capital = 19
+capital = 65
 
 OOB = "DIN_12"
 
