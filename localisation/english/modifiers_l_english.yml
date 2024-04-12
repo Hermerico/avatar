@@ -219,7 +219,7 @@
  knowledge:0 "£knowledge_texticon  Daily Knowledge Gain"
  knowledge_cap:0 "£knowledge_texticon  Max Knowledge"
  knowledge_gain:0 "£knowledge_texticon  Literacy"
- peoples_initiative:0 "£peoples_initiative_texticon  Peoples Initiative"
+ peoples_initiative:0 "£peoples_initiative_texticon  People's Initiative"
  leader_battle_chance:0 "Chance to induce a Battle"
  leader_battle_chance_factor:0 "Chance to induce a Battle Factor"
  core_state_cost_factor:0 "Core State Cost"
