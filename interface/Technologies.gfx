@@ -7692,6 +7692,38 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_shops_2_medium"
+		texturefile = "gfx/interface/technologies/construction/shops_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_shops_3_medium"
+		texturefile = "gfx/interface/technologies/construction/shops_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_shops_4_medium"
+		texturefile = "gfx/interface/technologies/construction/shops_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_shops_5_medium"
+		texturefile = "gfx/interface/technologies/construction/shops_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_shops_1_medium"
+		texturefile = "gfx/interface/technologies/construction/shops_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_shops_2_medium"
+		texturefile = "gfx/interface/technologies/construction/shops_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_shops_3_medium"
+		texturefile = "gfx/interface/technologies/construction/shops_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_shops_4_medium"
+		texturefile = "gfx/interface/technologies/construction/shops_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_shops_5_medium"
 		texturefile = "gfx/interface/technologies/construction/shops_2.dds"
 	}
 

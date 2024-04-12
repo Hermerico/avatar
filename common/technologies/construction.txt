@@ -2845,19 +2845,19 @@ technologies = {
 	shops_1 = {
 		dependencies = {
 			agriculture = 1
-			measurements = 1
+			kinectics = 1
 		}
 		enable_building = {
 			building = consumer_good_factory
-			level = 5
-		}
-		enable_building = {
-			building = luxury_good_factory
-			level = 5
+			level = 3
 		}
 
 		path = {
 			leads_to_tech = shops_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = luxury_shops_1
 			research_cost_coeff = 1
 		}
 	
@@ -2878,16 +2878,19 @@ technologies = {
 		}	
 	}
 	shops_2 = {
+
 		dependencies = {
-			statistics = 1
+			astronomy = 1
 		}
+		
 		enable_building = {
 			building = consumer_good_factory
-			level = 10
+			level = 6
 		}
-		enable_building = {
-			building = luxury_good_factory
-			level = 10
+
+		path = {
+			leads_to_tech = shops_3
+			research_cost_coeff = 1
 		}
 
 		on_research_complete = {
@@ -2910,6 +2913,277 @@ technologies = {
 			stone_construction
 		}	
 	}
+	shops_3 = {
+		dependencies = {
+			surgery = 1
+		}
+		enable_building = {
+			building = consumer_good_factory
+			level = 9
+		}
+
+		path = {
+			leads_to_tech = shops_4
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = shop_upgrade_tt
+		}
+	
+		research_cost = 0.75
+		folder = {
+			name = construction_folder
+			position = { x = 16 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			stone_construction
+		}	
+	}
+	shops_4 = {
+		dependencies = {
+			printing_press = 1
+		}
+		enable_building = {
+			building = consumer_good_factory
+			level = 12
+		}
+
+		path = {
+			leads_to_tech = shops_5
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = shop_upgrade_tt
+		}
+	
+		research_cost = 0.75
+		folder = {
+			name = construction_folder
+			position = { x = 16 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			stone_construction
+		}	
+	}
+	shops_5 = {
+		dependencies = {
+		steam_engine = 1
+		}
+		enable_building = {
+			building = consumer_good_factory
+			level = 15
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = shop_upgrade_tt
+		}
+	
+		research_cost = 0.75
+		folder = {
+			name = construction_folder
+			position = { x = 16 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			stone_construction
+		}	
+	}
+	luxury_shops_1 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_building = {
+			building = luxury_good_factory
+			level = 3
+		}
+
+		path = {
+			leads_to_tech = luxury_shops_2
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = shop_upgrade_tt
+		}
+	
+		research_cost = 0.75
+		folder = {
+			name = construction_folder
+			position = { x = 18 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			stone_construction
+		}	
+	}
+	luxury_shops_2 = {
+		dependencies = {
+			architecture = 1
+		}
+
+		enable_building = {
+			building = luxury_good_factory
+			level = 6
+		}
+
+		path = {
+			leads_to_tech = luxury_shops_3
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = shop_upgrade_tt
+		}
+	
+		research_cost = 0.75
+		folder = {
+			name = construction_folder
+			position = { x = 18 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			stone_construction
+		}	
+	}
+	luxury_shops_3 = {
+		dependencies = {
+			statistics = 1
+			botanics = 1
+		}
+
+		enable_building = {
+			building = luxury_good_factory
+			level = 9
+		}
+
+		path = {
+			leads_to_tech = luxury_shops_4
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = shop_upgrade_tt
+		}
+	
+		research_cost = 0.75
+		folder = {
+			name = construction_folder
+			position = { x = 18 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			stone_construction
+		}	
+	}
+	luxury_shops_4 = {
+		dependencies = {
+			genetics = 1
+			laws_of_nature = 1
+		}
+
+		enable_building = {
+			building = luxury_good_factory
+			level = 12
+		}
+
+		path = {
+			leads_to_tech = luxury_shops_5
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = shop_upgrade_tt
+		}
+	
+		research_cost = 0.75
+		folder = {
+			name = construction_folder
+			position = { x = 18 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			stone_construction
+		}	
+	}
+	luxury_shops_5 = {
+		dependencies = {
+			applied_mathematics = 1
+		}
+
+		enable_building = {
+			building = luxury_good_factory
+			level = 15
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = shop_upgrade_tt
+		}
+	
+		research_cost = 0.75
+		folder = {
+			name = construction_folder
+			position = { x = 18 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			stone_construction
+		}	
+	}
+	
+	
 	#granary_1 = {
 #
 	#	enable_building = {
