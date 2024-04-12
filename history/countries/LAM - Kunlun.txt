@@ -1,4 +1,4 @@
-capital = 40
+capital = 75
 
 OOB = "LAM_12"
 
