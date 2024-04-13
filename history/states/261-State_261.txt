@@ -74,10 +74,9 @@ state={
 			controller = FIR
 			add_core_of = FMB
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

@@ -84,10 +84,9 @@ state={
 			owner = DIN
 			controller = DIN
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

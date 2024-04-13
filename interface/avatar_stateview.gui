@@ -54,12 +54,20 @@ guiTypes = {
 		position = { x = 0 y = -20 }
 		Orientation = UPPER_LEFT
 
+		iconType ={
+			name ="population_icon"
+			spriteType = "GFX_population_icon"
+			position = { x = 20 y = -20 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "state_population_tooltip"
+		}
+
 		instantTextBoxType = {
 			name ="population_text"
 			position = { x = 64 y = -10 }
 			font = "hoi_18mbs"
 			text = "population_number"
-			maxWidth = 50
+			maxWidth = 64
 			maxHeight = 23
 			format = left
 			pdx_tooltip = "state_population_tooltip"

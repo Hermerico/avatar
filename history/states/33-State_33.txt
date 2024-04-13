@@ -82,10 +82,9 @@ state={
 			owner = YII
 			controller = YII
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

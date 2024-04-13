@@ -68,10 +68,9 @@ state={
 			controller = HFC
 			add_core_of = HFC
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

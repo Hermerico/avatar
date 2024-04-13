@@ -49,7 +49,7 @@ state = {
 					naval_base = 4
 				}
 			}
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = ECB
@@ -60,13 +60,16 @@ state = {
 		106.2.4 = {
 			owner = ECB
 			controller = ECB
+
 			instant_resource_calc = yes
 		}
 		111.10.30 = {
 			owner = ECB
 			controller = ECB
+
+			instant_resource_calc = yes
 		}
-	#instant_resource_calc = yes
+
 	}
 
 	provinces = {

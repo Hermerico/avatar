@@ -78,10 +78,9 @@ state={
 			owner = GAR
 			controller = GAR
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

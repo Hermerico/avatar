@@ -74,10 +74,9 @@ state={
 		111.10.30 = {
 			controller = FIR
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

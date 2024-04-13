@@ -69,10 +69,9 @@ state={
 			owner = FIR
 			controller = FIR
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

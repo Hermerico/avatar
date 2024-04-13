@@ -888,7 +888,7 @@ farm_bonus = {
 	base = 0
 	modifier = {
 		set_temp_variable = { bonus = building_level@farm }
-		multiply_temp_variable = { bonus = 0.01 }
+		multiply_temp_variable = { bonus = 0.05 }
 		
 		add = bonus
 	}
@@ -2213,6 +2213,20 @@ urbanisation_migration_attraction = {
 		add_to_temp_variable = { attraction = urb_factor }
 
 		add = attraction
+	}
+}
+
+urbanisation_birth_bonus = {
+	base = 0
+	modifier = {
+		set_temp_variable = { birthings = 50 }
+		subtract_from_temp_variable = { birthings = urbanisation_cap }
+		multiply_temp_variable = { birthings = 0.04 }
+
+		multiply_temp_variable = { birthings = urbanisation_percentage }
+		
+
+		add = birthings
 	}
 }
 

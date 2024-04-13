@@ -45,24 +45,30 @@ state={
 				lumber_mill = 3
 				carpentry = 1
 			}
+			instant_resource_calc = yes
 		}
 
 		52.5.16 = {
 			owner = DAW
 			controller = DAW
+
+			instant_resource_calc = yes
 		}
 
 		106.2.4 = {
 			owner = DAW
 			controller = DAW
+
+			instant_resource_calc = yes
 		}
 
 		111.10.30 = {
 			owner = DAW
 			controller = DAW
+
+			instant_resource_calc = yes
 		}
-	
-		#instant_resource_calc = yes
+		
 	}
 
 	provinces = {

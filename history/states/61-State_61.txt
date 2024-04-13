@@ -77,10 +77,9 @@ state={
 			owner = YON
 			controller = YON
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

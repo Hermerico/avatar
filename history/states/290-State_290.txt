@@ -2,6 +2,8 @@
 state={
 	id=290
 	name="STATE_290"
+	manpower=8950
+	state_category=town
 
 	history = {
 		pop_growth = yes
@@ -9,17 +11,14 @@ state={
 		add_to_variable = {
 			var = forest
 			value = 7
-
 		}
 		add_to_variable = {
 			var = mountain
 			value = 0
-
 		}
 		add_to_variable = {
 			var = field
 			value = 8
-
 		}
 		add_to_variable = {
 			var = water
@@ -32,13 +31,12 @@ state={
 		add_to_variable = {
 			var = animal
 			value = 5
-
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
 
+		victory_points = {
+			781 15
 		}
+
 		owner = FMB
 		controller = FMB
 		add_core_of = FMB
@@ -56,7 +54,7 @@ state={
 
 			}
 
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = FMB
@@ -75,18 +73,13 @@ state={
 			owner = FMB
 			controller = FIR
 
+			instant_resource_calc = yes
 		}
-		victory_points = {
-			781 15
-		}
-	#instant_resource_calc = yes
+
 	}
 
 	provinces = {
 		251 731 781 1122 1487 1610 2089 2525 3015 3089 3688 4155 4419 4776 4899 5002 7726 7754 7789 7814 
 	}
-	manpower=8950
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	
 }

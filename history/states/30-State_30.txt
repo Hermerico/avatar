@@ -48,6 +48,8 @@ state={
 					naval_base = 1
 				}
 			}
+
+			instant_resource_calc = yes
 		}
 
 		52.5.16 = {
@@ -60,6 +62,8 @@ state={
 					coastal_fortress = 5
 				}
 			}
+
+			instant_resource_calc = yes
 		}
 
 		106.2.4 = {
@@ -72,14 +76,17 @@ state={
 					coastal_fortress = 10
 				}
 			}
+
+			instant_resource_calc = yes
 		}
 
 		111.10.30 = {
 			owner = NWT
 			controller = NWT
+
+			instant_resource_calc = yes
 		}
-	
-		#instant_resource_calc = yes
+
 	}
 
 	provinces = {

@@ -78,10 +78,9 @@ state={
 			owner = ZAO
 			controller = ZAO
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

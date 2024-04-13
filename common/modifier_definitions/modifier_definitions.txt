@@ -188,7 +188,7 @@ garrison_factor_modifier = {
 
 monthly_population_state = {
 	color_type = good 
-	value_type = percentage_in_hundred
+	value_type = percentage
 	precision = 2
 	postfix = none
 }

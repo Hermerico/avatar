@@ -62,24 +62,30 @@ state={
 					naval_base = 4
 				}
 			}
+			instant_resource_calc = yes
 		}
 
 		52.5.16 = {
 			owner = SNW
 			controller = SNW
+
+			instant_resource_calc = yes
 		}
 
 		106.2.4 = {
 			owner = SNW
 			controller = SNW
+
+			instant_resource_calc = yes
 		}
 
 		111.10.30 = {
 			owner = SNW
 			controller = SNW
+
+			instant_resource_calc = yes
 		}
-	
-		#instant_resource_calc = yes
+
 	}
 
 	provinces = {

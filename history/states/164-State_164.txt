@@ -55,6 +55,7 @@ state={
 					naval_base = 1
 				}
 			}
+			instant_resource_calc = yes
 		}
 
 		52.5.16 = {
@@ -62,20 +63,25 @@ state={
 			FIR = {
 				set_province_controller = 3351
 			}
+
+			instant_resource_calc = yes
 		}
 
 		106.2.4 = {
 			owner = GFC
 			controller = GFC
 			add_core_of = GFC
+
+			instant_resource_calc = yes
 		}
 
 		111.10.30 = {
 			owner = GFC
 			controller = GFC
+
+			instant_resource_calc = yes
 		}
-	
-		#instant_resource_calc = yes
+
 	}
 
 	provinces = {

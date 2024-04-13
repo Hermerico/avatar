@@ -73,10 +73,9 @@ state={
 			owner = YFC
 			controller = YFC
 			add_core_of = YFC
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

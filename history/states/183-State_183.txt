@@ -78,10 +78,9 @@ state={
 			owner = ZIN
 			controller = ZIN
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

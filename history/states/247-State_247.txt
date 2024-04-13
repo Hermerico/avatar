@@ -46,24 +46,30 @@ state={
 				infrastructure = 1
 				lumber_mill = 1
 			}
+			instant_resource_calc = yes
 		}
 
 		52.5.16 = {
 			owner = EAT
 			controller = EAT
+
+			instant_resource_calc = yes
 		}
 
 		106.2.4 = {
 			owner = EAT
 			controller = EAT
+
+			instant_resource_calc = yes
 		}
 
 		111.10.30 = {
 			owner = EAT
 			controller = EAT
+
+			instant_resource_calc = yes
 		}
 	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

@@ -76,10 +76,9 @@ state={
 			owner = KFC
 			controller = KFC
 			add_core_of = KFC
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

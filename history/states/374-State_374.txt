@@ -71,10 +71,9 @@ state={
 			owner = GOU
 			controller = GOU
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

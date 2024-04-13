@@ -70,10 +70,9 @@ state={
 			owner = WBA
 			controller = WBA
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

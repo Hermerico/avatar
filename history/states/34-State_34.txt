@@ -79,10 +79,9 @@ state={
 			owner = NAT
 			controller = NAT
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

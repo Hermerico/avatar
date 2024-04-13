@@ -51,24 +51,30 @@ state={
 				consumer_good_factory = 1
 				mill = 1
 			}
+			instant_resource_calc = yes
 		}
 
 		52.5.16 = {
 			owner = EBA
 			controller = EBA
+
+			instant_resource_calc = yes
 		}
 
 		106.2.4 = {
 			owner = EBA
 			controller = EBA
+
+			instant_resource_calc = yes
 		}
 
 		111.10.30 = {
 			owner = EBA
 			controller = EBA
+
+			instant_resource_calc = yes
 		}
-	
-		#instant_resource_calc = yes
+
 	}
 
 	provinces = {

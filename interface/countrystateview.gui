@@ -187,6 +187,7 @@ guiTypes = {
 				spriteType = "GFX_population_icon"
 				position = { x = 20 y = 63 }
 				Orientation = "UPPER_LEFT"
+				hide = yes
 			}
 			
 			instantTextboxType = {

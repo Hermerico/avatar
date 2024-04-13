@@ -62,24 +62,30 @@ state={
 					wall = 10
 				}
 			}
+			instant_resource_calc = yes
 		}
 
 		52.5.16 = {
 			owner = EAR
 			controller = EAR
+
+			instant_resource_calc = yes
 		}
 
 		106.2.4 = {
 			owner = EAR
 			controller = EAR
+
+			instant_resource_calc = yes
 		}
 
 		111.10.30 = {
 			owner = EAR
 			controller = EAR
+
+			instant_resource_calc = yes
 		}
-	
-		#instant_resource_calc = yes
+
 	}
 
 	provinces = {

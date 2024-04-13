@@ -129,6 +129,8 @@ urbanisation_modifiers = {
 
 	local_building_slots_factor = mtth:urbanisation_building_slots
 
+	monthly_population_state = mtth:urbanisation_birth_bonus
+
 }
 
 missing_workers_state = {

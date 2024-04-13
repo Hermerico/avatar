@@ -53,24 +53,30 @@ state={
 				consumer_good_factory = 1
 				luxury_good_factory = 1
 			}
+			instant_resource_calc = yes
 		}
 
 		52.5.16 = {
 			owner = KYI
 			controller = KYI
+
+			instant_resource_calc = yes
 		}
 
 		106.2.4 = {
 			owner = KYI
 			controller = KYI
+
+			instant_resource_calc = yes
 		}
 
 		111.10.30 = {
 			owner = KYI
 			controller = KYI
+
+			instant_resource_calc = yes
 		}
 	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

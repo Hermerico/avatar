@@ -102,10 +102,9 @@ state={
 				set_province_controller = 4175
 			}
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

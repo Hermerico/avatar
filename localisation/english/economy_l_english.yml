@@ -242,7 +242,7 @@
  fishing_stand_progress_ttp:0 "£fishing|2 §YFishing Stand§! is [?fishing_stand_in_construction|Y0]/[?fishing_stand_cost|Y0] ( [?fishing_stand_progress_var|0Y%%] ) completed."
  
  population_number:0 "[?state_population_k|Y2]§YK§!"
- state_population_tooltip:0 "§YState Population§! \nTotal Population: [?state_population_k|Y2]§YK§! \nCivilian Population: [?mtth:state_workforce_k|Y2]§YK§! \nActive Recruits: [?mtth:working_soldiers_k|Y2]§YK§!"
+ state_population_tooltip:0 "§YState Population§! \nTotal Population: [?state_population_k|Y2]§YK§! \nCivilian Population: [?mtth:state_workforce_k|Y2]§YK§! \nActive Recruits: [?mtth:working_soldiers_k|Y2]§YK§!  \n\nMonthly Population growth: [?population_growth|+=0] \nBase growth: §Y0.03%§! * [?population_growth_factor|2Y] \nFrom country: [?FROM.controller:modifier@monthly_population|%2=+] \nFrom state: [?modifier@monthly_population_state|%2=+] "
  workers_number:0 "[?mtth:workers_number|Y2]§YK§!"
  workers_tootlip:0 "§YLocal Workforce§! \nAvailable Workforce: [?mtth:state_workforce_k|Y2]§YK§! \nEmployed in Buildings: [?mtth:workers_number|Y2]§YK§! \n£farming|1 Farmers: [?farm_employed_real|*Y3] \n£milling|1 Millers: [?mill_employed_real|*Y3] \n£fishing|1 Fishers: [?fishing_stand_employed_real|*Y3] \n£ranch|1 Rancher: [?ranch_employed_real|*Y3] \n£lumberjack|1 Lumberjack : [?lumber_mill_employed_real|*Y3] \n£mine|1 Miners: [?mine_employed_real|*Y3]\n£weaving|1 Weaver: [?weaving_employed_real|*Y3] \n£smithy|1 Blacksmiths: [?smithy_employed_real|*Y3] \n£factory|1 Factory Workers: [?factory_employed_real|*Y3] \n£harbour|1 Harbour Workers: [?harbour_employed_real|*Y3]\n£store|1 Shopkeeper: [?shopkeeper_employed_real|*Y3]\n£carpentry|1 Craftsmen: [?craftsman_employed_real|*Y3]"
  working_soldiers_number:0 "[?mtth:working_soldiers_k|Y2]§YK§!"
@@ -254,7 +254,7 @@
  prosperity_tooltip_delayed:0 "§LProsperity is an indicator for how wealthy a state is. It influences the consumer behaviour and how much taxes are paid.§!"
 
  urbanisation_number:0 "[?actual_urbanisation|0]/[?urbanisation_cap|0]"
- urbanisation_tooltip:0 "§Y[GetUrbanisation]§! \n\n£migration_texticon  Base Migration attraction: [?mtth:urbanisation_migration_attraction|+0] \n£building_slots  Building Slots in State: [?mtth:urbanisation_building_slots|%0+=]\n\nWeekly Urbanisation change: [?weekly_urbanisation|Y1]/[?weekly_urbanisation_demand|Y1]"
+ urbanisation_tooltip:0 "§Y[GetUrbanisation]§! \n\nHousings build: [?urbanisation_percentage|Y0%] \n£population_texticon  Monthly Population in State: [?mtth:urbanisation_birth_bonus|+=2%] \n\n£migration_texticon  Base Migration attraction: [?mtth:urbanisation_migration_attraction|+0] \n£building_slots  Building Slots in State: [?mtth:urbanisation_building_slots|%0+=]\n\nWeekly Urbanisation change: [?weekly_urbanisation|Y1]/[?weekly_urbanisation_demand|Y1]"
  urbanisation_tooltip_delayed:0 "§LUrbanisation shows the population density and civilisation level of a state. Rural areas tend to have higer birth rates and migration while urban areas welcome those migrants.§!"
 
  get_urb_1:0 "Virgin Land"

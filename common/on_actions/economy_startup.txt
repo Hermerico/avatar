@@ -29,6 +29,8 @@ on_actions = {
 					else = {
 						multiply_variable = { local_prosperity = 0.05 }
 					}
+
+					set_variable = { actual_urbanisation = urbanisation_cap }
 				}
 
 				country_event = { id = economy.2 }

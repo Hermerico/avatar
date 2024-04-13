@@ -71,10 +71,9 @@ state={
 			owner = SWT
 			controller = SWT
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

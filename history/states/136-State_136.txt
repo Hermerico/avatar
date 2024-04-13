@@ -75,10 +75,9 @@ state={
 			owner = SWA
 			controller = SWA
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

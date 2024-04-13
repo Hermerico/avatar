@@ -79,10 +79,9 @@ state={
 			controller = MFC
 			add_core_of = MFC
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

@@ -61,10 +61,9 @@ state={
 		111.10.30 = {
 			owner = WBA
 			controller = FIR
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

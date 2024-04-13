@@ -119,8 +119,10 @@ state = {
 					supply_node = 1
 				}
 			}
+
+			instant_resource_calc = yes
 		}
-		instant_resource_calc = yes
+		
 	}
 
 	provinces = {

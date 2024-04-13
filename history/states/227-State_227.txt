@@ -52,25 +52,31 @@ state={
 				crop_weaving = 1
 				consumer_good_factory = 1
 			}
+			instant_resource_calc = yes
 		}
 
 		52.5.16 = {
 			controller = FIR
+
+			instant_resource_calc = yes
 		}
 
 		106.2.4 = {
 			owner = MFC
 			controller = MFC
 			add_core_of = MFC
+
+			instant_resource_calc = yes
 		}
 
 		111.10.30 = {
 			owner = MFC
 			controller = MFC
 			add_core_of = MFC
+
+			instant_resource_calc = yes
 		}
-	
-		#instant_resource_calc = yes
+
 	}
 
 	provinces = {

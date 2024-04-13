@@ -1223,6 +1223,17 @@ taxation_state_calc = {
 		min = 0
 		max = urbanisation_cap
 	}
+
+	set_variable = { urbanisation_percentage = actual_urbanisation }
+	if = {
+		limit = {
+			check_variable = { urbanisation_cap > 0 }
+		}
+		divide_variable = { urbanisation_percentage = urbanisation_cap }
+	}
+	else = {
+		set_variable = { urbanisation_percentage = 0 }
+	}
 }
 
 wages_and_taxes = {

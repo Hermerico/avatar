@@ -68,10 +68,9 @@ state={
 			owner = FMB
 			controller = FMB
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

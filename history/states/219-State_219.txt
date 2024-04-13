@@ -69,10 +69,9 @@ state={
 			owner = PFC
 			controller = PFC
 			add_core_of = PFC
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

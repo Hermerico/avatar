@@ -93,10 +93,9 @@ state={
 			owner = DAW
 			controller = DAW
 
+			instant_resource_calc = yes
 		}
 
-	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {

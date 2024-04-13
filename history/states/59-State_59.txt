@@ -47,16 +47,21 @@ state={
 				farm = 1
 				lumber_mill = 1
 			}
+			instant_resource_calc = yes
 		}
 
 		52.5.16 = {
 			owner = BAI
 			controller = BAI
+
+			instant_resource_calc = yes
 		}
 
 		106.2.4 = {
 			owner = BAI
 			controller = FIR
+
+			instant_resource_calc = yes
 		}
 
 		111.10.30 = {
@@ -70,9 +75,10 @@ state={
 				set_province_controller = 3977
 				set_province_controller = 784
 			}
+
+			instant_resource_calc = yes
 		}
 	
-		#instant_resource_calc = yes
 	}
 
 	provinces = {
