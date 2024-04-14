@@ -51,6 +51,10 @@ scripted_gui = {
 				check_variable = { worker_deficit_k > 0 }
 			}
 
+			cancel_deposit_construction_visible = {
+				check_variable = { modifier@civilian_factory_use > 0 }
+			}
+
 			fire_boni_visible = {
 				has_dynamic_modifier = { modifier = fire_nation }
 			}
@@ -75,7 +79,6 @@ scripted_gui = {
 			}
 
 			farm_construction_click_enabled = {
-				check_variable = { num_of_civilian_factories_available_for_projects > 0 }
 				check_variable = { modifier@farm_level_max > 0}
 				any_controlled_state = {
 					set_temp_variable = { farms = building_level@farm }
@@ -84,7 +87,6 @@ scripted_gui = {
 				}
 			}
 			fishing_stand_construction_click_enabled = {
-				check_variable = { num_of_civilian_factories_available_for_projects > 0 }
 				check_variable = { modifier@fishing_stand_level_max > 0}
 				any_controlled_state = {
 					set_temp_variable = { fishing_stands = building_level@fishing_stand }
@@ -93,7 +95,6 @@ scripted_gui = {
 				}
 			}
 			ranch_construction_click_enabled = {
-				check_variable = { num_of_civilian_factories_available_for_projects > 0 }
 				check_variable = { modifier@ranch_level_max > 0}
 				any_controlled_state = {
 					set_temp_variable = { ranches = building_level@ranch }
@@ -102,7 +103,6 @@ scripted_gui = {
 				}
 			}
 			lumber_mill_construction_click_enabled = {
-				check_variable = { num_of_civilian_factories_available_for_projects > 0 }
 				check_variable = { modifier@lumber_mill_level_max > 0}
 				any_controlled_state = {
 					set_temp_variable = { lumber_mills = building_level@lumber_mill }
@@ -111,7 +111,6 @@ scripted_gui = {
 				}
 			}
 			quarry_construction_click_enabled = {
-				check_variable = { num_of_civilian_factories_available_for_projects > 0 }
 				check_variable = { modifier@quarry_level_max > 0}
 				any_controlled_state = {
 					set_temp_variable = { quarries = building_level@quarry }
@@ -120,7 +119,6 @@ scripted_gui = {
 				}
 			}
 			mine_construction_click_enabled = {
-				check_variable = { num_of_civilian_factories_available_for_projects > 0 }
 				check_variable = { modifier@mine_level_max > 0}
 				any_controlled_state = {
 					set_temp_variable = { mines = building_level@mine }
@@ -230,6 +228,17 @@ scripted_gui = {
 				add_mine_random = yes
 			}
 
+			cancel_deposit_construction_click = {
+				every_controlled_state = {
+					clear_variable = farm_construction_que
+					clear_variable = ranch_construction_que
+					clear_variable = mine_construction_que
+					clear_variable = quarry_construction_que
+					clear_variable = lumber_mill_construction_que
+					clear_variable = fishing_stand_construction_que
+				}
+			}
+
 		}
 
 		properties = {
@@ -241,8 +250,174 @@ scripted_gui = {
 			}
 		}
 
+
+
+		######## ai behaviour
+
+		ai_test_interval = 1200    #50 days
+		ai_test_variance = 0.5
+		
+		ai_enabled = {
+			always = yes
+		}
+		
+		ai_max_weight_taken_per_test = 10
+		ai_weights = {
+			farm_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						oil < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			fishing_stand_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						food_resource < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			ranch_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						chromium < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			lumber_mill_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						aluminium < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			quarry_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						stone < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			mine_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						iron < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+
+			invention_button_click = {
+				ai_will_do = {
+					base = 0
+
+					modifier = {
+						check_variable = { 
+							var = knowledge_variable 
+							value = 100
+							compare = greater_than_or_equals
+						}
+						NOT = {
+							has_country_flag = all_inventions_made
+						}
+						
+						add = 100
+					}
+				}
+			}
+		}
+
 	}
+
+	states_fastview_entry = {
+		context_type = player_context
+		window_name = "states_fastview_window"
+		parent_window_token = construction_tab
+
+		visible = {
+			has_country_flag = view_states_fastview
+		}
+
+		triggers = {
+
+			capital_visible = {
+				THIS = {
+					is_capital = yes
+				}
+			}
+			occupied_visible = {
+				THIS = {
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+			}
+			
+		}
 	
+
+		dynamic_lists = {
+			constructions_gridbox = {
+				array = ROOT.controlled_states
+				entry_container = construction_state_list_entry
+				change_scope = yes
+			}
+		}
+
+	}
 
 
 
@@ -258,16 +433,30 @@ scripted_gui = {
 				NOT = {
 					has_country_flag = core_all_construction_flag
 				}
-				has_country_flag = auto_construction_interface
 			}
 			toggle_all_visible = {
 				has_country_flag = core_all_construction_flag
-				has_country_flag = auto_construction_interface
 			}
 			
 		}
 
 		effects = {
+
+			toggle_stateview_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = view_states_fastview
+						}
+					}
+					ROOT = {
+						set_country_flag = view_states_fastview
+					}
+				}
+				else = {
+					clr_country_flag = view_states_fastview
+				}
+			}
 
 			
 			toggle_core_click = {

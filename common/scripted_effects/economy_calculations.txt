@@ -216,8 +216,27 @@ reset_var_to_zero = {
 	set_variable = { worker_deficit_k = 0 }
 
 	set_variable = { deposit_construction_cost = 0 }
+	set_variable = { farm_deposit_construction = 0 }
+	set_variable = { ranch_deposit_construction = 0 }
+	set_variable = { mine_deposit_construction = 0 }
+	set_variable = { quarry_deposit_construction = 0 }
+	set_variable = { lumber_mill_deposit_construction = 0 }
+	set_variable = { fishing_stand_deposit_construction = 0 }
 
 	set_variable = { pleb_construction_cost = 0 }
+
+	set_variable = { civs_for_deposites = num_of_civilian_factories }
+
+
+	###### never use more than 75% for deposits (slider could be added later to distribute construction)
+	#if = {
+	#	limit = {
+	#		is_ai = yes
+	#	}
+	#	multiply_variable = { civs_for_deposites = 0.75 }
+	#}
+
+	multiply_variable = { civs_for_deposites = 0.75 }
 }
 
 worker_counting_states = {
@@ -389,21 +408,7 @@ deposit_calculations = {
 	if = {
 		limit = {
 			check_variable = { farm_construction_que > 0 }
-			check_variable = { farm_in_construction > farm_cost }
-		}
-
-		add_building_construction = {
-			type = farm
-			level = 1
-			instant_build = yes
-		}
-
-		subtract_from_variable = { farm_construction_que = 1 }
-		subtract_from_variable = { farm_in_construction = farm_cost }
-	}
-	else_if = {
-		limit = {
-			check_variable = { farm_construction_que > 0 }
+			check_variable = { ROOT.civs_for_deposites > ROOT.deposit_construction_cost }
 		}
 
 		set_temp_variable = { farm_weekly_construction = @deposit_construction_cost }
@@ -423,27 +428,55 @@ deposit_calculations = {
 
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
+	else_if = {
+		limit = {
+			check_variable = { farm_construction_que > 0 }
+			check_variable = { ROOT.civs_for_deposites > 0 }
+		}
+
+		set_temp_variable = { remaining_civs = ROOT.civs_for_deposites }
+		subtract_from_temp_variable = { remaining_civs = ROOT.deposit_construction_cost }
+
+		set_temp_variable = { farm_weekly_construction = remaining_civs }
+		set_temp_variable = { farm_c_factor = 1 }
+		add_to_temp_variable = { farm_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { farm_c_factor = modifier@state_production_speed_farm_factor }
+		add_to_temp_variable = { farm_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { farm_c_factor = controller:modifier@production_speed_farm_factor }
+		multiply_temp_variable = { farm_weekly_construction = farm_c_factor }
+		multiply_temp_variable = { farm_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { farm_in_construction = farm_weekly_construction }
+
+		set_variable = { farm_progress_var = farm_in_construction }
+		divide_variable = { farm_progress_var = farm_cost }
+		multiply_variable = { farm_progress_var = 100 }
+
+		add_to_variable = { ROOT.deposit_construction_cost = remaining_civs }
+	}
+	if = {
+		limit = {
+			check_variable = { farm_construction_que > 0 }
+			check_variable = { farm_in_construction > farm_cost }
+		}
+
+		add_building_construction = {
+			type = farm
+			level = 1
+			instant_build = yes
+		}
+
+		subtract_from_variable = { farm_construction_que = 1 }
+		subtract_from_variable = { farm_in_construction = farm_cost }
+	}
 
 	### ranch
 	if = {
 		limit = {
 			check_variable = { ranch_construction_que > 0 }
-			check_variable = { ranch_in_construction > ranch_cost }
+			check_variable = { ROOT.civs_for_deposites > ROOT.deposit_construction_cost }
 		}
 
-		add_building_construction = {
-			type = ranch
-			level = 1
-			instant_build = yes
-		}
-
-		subtract_from_variable = { ranch_construction_que = 1 }
-		subtract_from_variable = { ranch_in_construction = ranch_cost }
-	}
-	else_if = {
-		limit = {
-			check_variable = { ranch_construction_que > 0 }
-		}
 		set_temp_variable = { ranch_weekly_construction = @deposit_construction_cost }
 		set_temp_variable = { ranch_c_factor = 1 }
 		add_to_temp_variable = { ranch_c_factor = modifier@state_production_speed_buildings_factor }
@@ -461,28 +494,56 @@ deposit_calculations = {
 
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
+	else_if = {
+		limit = {
+			check_variable = { ranch_construction_que > 0 }
+			check_variable = { ROOT.civs_for_deposites > 0 }
+		}
+
+		set_temp_variable = { remaining_civs = ROOT.civs_for_deposites }
+		subtract_from_temp_variable = { remaining_civs = ROOT.deposit_construction_cost }
+
+		set_temp_variable = { ranch_weekly_construction = remaining_civs }
+		set_temp_variable = { ranch_c_factor = 1 }
+		add_to_temp_variable = { ranch_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { ranch_c_factor = modifier@state_production_speed_ranch_factor }
+		add_to_temp_variable = { ranch_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { ranch_c_factor = controller:modifier@production_speed_ranch_factor }
+		multiply_temp_variable = { ranch_weekly_construction = ranch_c_factor }
+		multiply_temp_variable = { ranch_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { ranch_in_construction = ranch_weekly_construction }
+
+		set_variable = { ranch_progress_var = ranch_in_construction }
+		divide_variable = { ranch_progress_var = ranch_cost }
+		multiply_variable = { ranch_progress_var = 100 }
+
+		add_to_variable = { ROOT.deposit_construction_cost = remaining_civs }
+	}
+	if = {
+		limit = {
+			check_variable = { ranch_construction_que > 0 }
+			check_variable = { ranch_in_construction > ranch_cost }
+		}
+
+		add_building_construction = {
+			type = ranch
+			level = 1
+			instant_build = yes
+		}
+
+		subtract_from_variable = { ranch_construction_que = 1 }
+		subtract_from_variable = { ranch_in_construction = ranch_cost }
+	}
 
 
 	### lumber_mill
 	if = {
 		limit = {
 			check_variable = { lumber_mill_construction_que > 0 }
-			check_variable = { lumber_mill_in_construction > lumber_mill_cost }
+			check_variable = { ROOT.civs_for_deposites > ROOT.deposit_construction_cost }
 		}
 
-		add_building_construction = {
-			type = lumber_mill
-			level = 1
-			instant_build = yes
-		}
-
-		subtract_from_variable = { lumber_mill_construction_que = 1 }
-		subtract_from_variable = { lumber_mill_in_construction = lumber_mill_cost }
-	}
-	else_if = {
-		limit = {
-			check_variable = { lumber_mill_construction_que > 0 }
-		}
 		set_temp_variable = { lumber_mill_weekly_construction = @deposit_construction_cost }
 		set_temp_variable = { lumber_mill_c_factor = 1 }
 		add_to_temp_variable = { lumber_mill_c_factor = modifier@state_production_speed_buildings_factor }
@@ -500,27 +561,55 @@ deposit_calculations = {
 
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
+	else_if = {
+		limit = {
+			check_variable = { lumber_mill_construction_que > 0 }
+			check_variable = { ROOT.civs_for_deposites > 0 }
+		}
+
+		set_temp_variable = { remaining_civs = ROOT.civs_for_deposites }
+		subtract_from_temp_variable = { remaining_civs = ROOT.deposit_construction_cost }
+
+		set_temp_variable = { lumber_mill_weekly_construction = remaining_civs }
+		set_temp_variable = { lumber_mill_c_factor = 1 }
+		add_to_temp_variable = { lumber_mill_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { lumber_mill_c_factor = modifier@state_production_speed_lumber_mill_factor }
+		add_to_temp_variable = { lumber_mill_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { lumber_mill_c_factor = controller:modifier@production_speed_lumber_mill_factor }
+		multiply_temp_variable = { lumber_mill_weekly_construction = lumber_mill_c_factor }
+		multiply_temp_variable = { lumber_mill_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { lumber_mill_in_construction = lumber_mill_weekly_construction }
+
+		set_variable = { lumber_mill_progress_var = lumber_mill_in_construction }
+		divide_variable = { lumber_mill_progress_var = lumber_mill_cost }
+		multiply_variable = { lumber_mill_progress_var = 100 }
+
+		add_to_variable = { ROOT.deposit_construction_cost = remaining_civs }
+	}
+	if = {
+		limit = {
+			check_variable = { lumber_mill_construction_que > 0 }
+			check_variable = { lumber_mill_in_construction > lumber_mill_cost }
+		}
+
+		add_building_construction = {
+			type = lumber_mill
+			level = 1
+			instant_build = yes
+		}
+
+		subtract_from_variable = { lumber_mill_construction_que = 1 }
+		subtract_from_variable = { lumber_mill_in_construction = lumber_mill_cost }
+	}
 
 	### quarry
 	if = {
 		limit = {
 			check_variable = { quarry_construction_que > 0 }
-			check_variable = { quarry_in_construction > quarry_cost }
+			check_variable = { ROOT.civs_for_deposites > ROOT.deposit_construction_cost }
 		}
 
-		add_building_construction = {
-			type = quarry
-			level = 1
-			instant_build = yes
-		}
-
-		subtract_from_variable = { quarry_construction_que = 1 }
-		subtract_from_variable = { quarry_in_construction = quarry_cost }
-	}
-	else_if = {
-		limit = {
-			check_variable = { quarry_construction_que > 0 }
-		}
 		set_temp_variable = { quarry_weekly_construction = @deposit_construction_cost }
 		set_temp_variable = { quarry_c_factor = 1 }
 		add_to_temp_variable = { quarry_c_factor = modifier@state_production_speed_buildings_factor }
@@ -538,27 +627,55 @@ deposit_calculations = {
 
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
+	else_if = {
+		limit = {
+			check_variable = { quarry_construction_que > 0 }
+			check_variable = { ROOT.civs_for_deposites > 0 }
+		}
+
+		set_temp_variable = { remaining_civs = ROOT.civs_for_deposites }
+		subtract_from_temp_variable = { remaining_civs = ROOT.deposit_construction_cost }
+
+		set_temp_variable = { quarry_weekly_construction = remaining_civs }
+		set_temp_variable = { quarry_c_factor = 1 }
+		add_to_temp_variable = { quarry_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { quarry_c_factor = modifier@state_production_speed_quarry_factor }
+		add_to_temp_variable = { quarry_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { quarry_c_factor = controller:modifier@production_speed_quarry_factor }
+		multiply_temp_variable = { quarry_weekly_construction = quarry_c_factor }
+		multiply_temp_variable = { quarry_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { quarry_in_construction = quarry_weekly_construction }
+
+		set_variable = { quarry_progress_var = quarry_in_construction }
+		divide_variable = { quarry_progress_var = quarry_cost }
+		multiply_variable = { quarry_progress_var = 100 }
+
+		add_to_variable = { ROOT.deposit_construction_cost = remaining_civs }
+	}
+	if = {
+		limit = {
+			check_variable = { quarry_construction_que > 0 }
+			check_variable = { quarry_in_construction > quarry_cost }
+		}
+
+		add_building_construction = {
+			type = quarry
+			level = 1
+			instant_build = yes
+		}
+
+		subtract_from_variable = { quarry_construction_que = 1 }
+		subtract_from_variable = { quarry_in_construction = quarry_cost }
+	}
 
 	### mine
 	if = {
 		limit = {
 			check_variable = { mine_construction_que > 0 }
-			check_variable = { mine_in_construction > mine_cost }
+			check_variable = { ROOT.civs_for_deposites > ROOT.deposit_construction_cost }
 		}
 
-		add_building_construction = {
-			type = mine
-			level = 1
-			instant_build = yes
-		}
-
-		subtract_from_variable = { mine_construction_que = 1 }
-		subtract_from_variable = { mine_in_construction = mine_cost }
-	}
-	else_if = {
-		limit = {
-			check_variable = { mine_construction_que > 0 }
-		}
 		set_temp_variable = { mine_weekly_construction = @deposit_construction_cost }
 		set_temp_variable = { mine_c_factor = 1 }
 		add_to_temp_variable = { mine_c_factor = modifier@state_production_speed_buildings_factor }
@@ -576,28 +693,56 @@ deposit_calculations = {
 
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
+	else_if = {
+		limit = {
+			check_variable = { mine_construction_que > 0 }
+			check_variable = { ROOT.civs_for_deposites > 0 }
+		}
+
+		set_temp_variable = { remaining_civs = ROOT.civs_for_deposites }
+		subtract_from_temp_variable = { remaining_civs = ROOT.deposit_construction_cost }
+
+		set_temp_variable = { mine_weekly_construction = remaining_civs }
+		set_temp_variable = { mine_c_factor = 1 }
+		add_to_temp_variable = { mine_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { mine_c_factor = modifier@state_production_speed_mine_factor }
+		add_to_temp_variable = { mine_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { mine_c_factor = controller:modifier@production_speed_mine_factor }
+		multiply_temp_variable = { mine_weekly_construction = mine_c_factor }
+		multiply_temp_variable = { mine_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { mine_in_construction = mine_weekly_construction }
+
+		set_variable = { mine_progress_var = mine_in_construction }
+		divide_variable = { mine_progress_var = mine_cost }
+		multiply_variable = { mine_progress_var = 100 }
+
+		add_to_variable = { ROOT.deposit_construction_cost = remaining_civs }
+	}
+	if = {
+		limit = {
+			check_variable = { mine_construction_que > 0 }
+			check_variable = { mine_in_construction > mine_cost }
+		}
+
+		add_building_construction = {
+			type = mine
+			level = 1
+			instant_build = yes
+		}
+
+		subtract_from_variable = { mine_construction_que = 1 }
+		subtract_from_variable = { mine_in_construction = mine_cost }
+	}
 
 
 	### fishing_stand
 	if = {
 		limit = {
 			check_variable = { fishing_stand_construction_que > 0 }
-			check_variable = { fishing_stand_in_construction > fishing_stand_cost }
+			check_variable = { ROOT.civs_for_deposites > ROOT.deposit_construction_cost }
 		}
 
-		add_building_construction = {
-			type = fishing_stand
-			level = 1
-			instant_build = yes
-		}
-
-		subtract_from_variable = { fishing_stand_construction_que = 1 }
-		subtract_from_variable = { fishing_stand_in_construction = fishing_stand_cost }
-	}
-	else_if = {
-		limit = {
-			check_variable = { fishing_stand_construction_que > 0 }
-		}
 		set_temp_variable = { fishing_stand_weekly_construction = @deposit_construction_cost }
 		set_temp_variable = { fishing_stand_c_factor = 1 }
 		add_to_temp_variable = { fishing_stand_c_factor = modifier@state_production_speed_buildings_factor }
@@ -615,6 +760,55 @@ deposit_calculations = {
 
 		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
 	}
+	else_if = {
+		limit = {
+			check_variable = { fishing_stand_construction_que > 0 }
+			check_variable = { ROOT.civs_for_deposites > 0 }
+		}
+
+		set_temp_variable = { remaining_civs = ROOT.civs_for_deposites }
+		subtract_from_temp_variable = { remaining_civs = ROOT.deposit_construction_cost }
+
+		set_temp_variable = { fishing_stand_weekly_construction = remaining_civs }
+		set_temp_variable = { fishing_stand_c_factor = 1 }
+		add_to_temp_variable = { fishing_stand_c_factor = modifier@state_production_speed_buildings_factor }
+		add_to_temp_variable = { fishing_stand_c_factor = modifier@state_production_speed_fishing_stand_factor }
+		add_to_temp_variable = { fishing_stand_c_factor = controller:modifier@production_speed_buildings_factor }
+		add_to_temp_variable = { fishing_stand_c_factor = controller:modifier@production_speed_fishing_stand_factor }
+		multiply_temp_variable = { fishing_stand_weekly_construction = fishing_stand_c_factor }
+		multiply_temp_variable = { fishing_stand_weekly_construction = 7 }   #### weekly calc
+
+		add_to_variable = { fishing_stand_in_construction = fishing_stand_weekly_construction }
+
+		set_variable = { fishing_stand_progress_var = fishing_stand_in_construction }
+		divide_variable = { fishing_stand_progress_var = fishing_stand_cost }
+		multiply_variable = { fishing_stand_progress_var = 100 }
+
+		add_to_variable = { ROOT.deposit_construction_cost = remaining_civs }
+	}
+	if = {
+		limit = {
+			check_variable = { fishing_stand_construction_que > 0 }
+			check_variable = { fishing_stand_in_construction > fishing_stand_cost }
+		}
+
+		add_building_construction = {
+			type = fishing_stand
+			level = 1
+			instant_build = yes
+		}
+
+		subtract_from_variable = { fishing_stand_construction_que = 1 }
+		subtract_from_variable = { fishing_stand_in_construction = fishing_stand_cost }
+	}
+
+
+	add_to_variable = { ROOT.farm_deposit_construction = farm_construction_que }
+	add_to_variable = { ROOT.ranch_deposit_construction = ranch_construction_que }
+	add_to_variable = { ROOT.mine_deposit_construction = mine_construction_que }
+	add_to_variable = { ROOT.quarry_deposit_construction = quarry_construction_que }
+	add_to_variable = { ROOT.lumber_mill_deposit_construction = lumber_mill_construction_que }
+	add_to_variable = { ROOT.fishing_stand_deposit_construction = fishing_stand_construction_que }
 }
 
 

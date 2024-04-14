@@ -83,6 +83,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/economy/auto_construct.dds"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_state_array"
+		texturefile = "gfx/interface/economy/state_array.dds"
+	}
 
 	spriteType = {
 		name = "GFX_increase_infra"

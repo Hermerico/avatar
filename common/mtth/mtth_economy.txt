@@ -2193,7 +2193,7 @@ urbanisation_building_slots = {
 	modifier = {
 		set_temp_variable = { slots = 0.2 }
 
-		set_temp_variable = { factors = actual_urbanisation }
+		set_temp_variable = { factors = urbanisation_cap }
 		divide_temp_variable = { factors = 100 }
 		
 		multiply_temp_variable = { slots = factors }
@@ -2218,6 +2218,11 @@ urbanisation_migration_attraction = {
 
 urbanisation_birth_bonus = {
 	base = 0
+	modifier = {
+		check_variable = { urbanisation_cap = 0 }
+
+		add = 2
+	}
 	modifier = {
 		set_temp_variable = { birthings = 50 }
 		subtract_from_temp_variable = { birthings = urbanisation_cap }

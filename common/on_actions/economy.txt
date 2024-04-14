@@ -211,6 +211,19 @@ on_actions = {
 				add_to_variable = { population_growth_factor = ROOT.modifier@monthly_population }
 
 				multiply_temp_variable = { population_growth_temp = population_growth_factor }
+				if = {
+					limit = {
+						check_variable = {
+							var = population_growth_temp
+							value = 0
+							compare = greater_than_or_equals
+						}
+					}
+					clamp_temp_variable = {
+						var = population_growth_temp
+						min = 1
+					}
+				}
 	
 				round_temp_variable = population_growth_temp
 				set_variable = { population_growth = population_growth_temp }
