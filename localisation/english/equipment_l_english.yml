@@ -661,6 +661,10 @@ transport_equipment_desc:0 "A wooden cart capable of clearing any terrain, if gi
  birb_equipment_1_desc:0 "A Falcon, trained for carrying messages."
  small_birb_equipment_1:0 "Messenger Pigeon"
  small_birb_equipment_1_desc:0 "A Pigeon, trained for carrying messages."
+ medium_birb_equipment:0 "Attack Birds"
+ medium_birb_equipment:0 "Birds of prey trained in attacking humans."
+ heavy_birb_equipment:0 "Vulture Hawks"
+ heavy_birb_equipment_desc:0 "These ravenous beasts needed little instruction in devouring humans."
  FIR_birb_equipment_1:0 "Messenger Hawk"
  FIR_birb_equipment_1_desc:0 "A Hawk, trained for carrying messages."
  

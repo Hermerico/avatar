@@ -63,6 +63,7 @@
  additional_scripted_resources:0 "Self Employed Output"
  population_resource_bought_on_market:0 "Population need"
  factory_resource_consumption:0 "Factory Consumption"
+ building_upkeep_resources:0 "Building Upkeep"
  dynamic_bender_capacity:0 "Bender recruitment Law"
  farm_scripted_resources:0 "$farm_plural$"
  ranch_scripted_resources:0 "$ranch_plural$"
