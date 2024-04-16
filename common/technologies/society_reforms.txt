@@ -228,21 +228,16 @@ technologies = {
 			writing = 1
 		}
 
-		urbanisation_country_factor = 0.05
-		political_power_gain = 0.1
-		centralisation_target_modifier = 0.05
-
-		
-		path = {
-			leads_to_tech = reform_1
-			research_cost_coeff = 1
-		}
+		academics_opinion = 5
+		urbanisation_country_factor = 0.025
+		political_power_gain = 0.2
+		centralisation_target_modifier = 0.025
 
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = -3 y = 6 }
+			position = { x = -1 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -272,11 +267,20 @@ technologies = {
 		research_speed_factor = 0.08
 		knowledge_gain = 5
 
+		path = {
+			leads_to_tech = reform_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = medicine_0
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = -1 y = 4 }
+			position = { x = -3 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -363,9 +367,43 @@ technologies = {
 			writing = 1
 		}
 
-		peoples_initiative = 0.1
-		urbanisation_country_factor = -0.05
-		peasant_opinion = 5
+		stability_factor = 0.1
+		monthly_population = 0.2
+
+		research_cost = 2.5
+		#start_year = 12
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			age_1
+
+			society_reforms
+			society_progressive
+		}	
+	}
+	conservative_education_0 = {
+		
+		political_power_gain = 0.1
+		research_speed_factor = 0.04
+		knowledge = 0.05
+
+		path = {
+			leads_to_tech = medicine_0
+			research_cost_coeff = 1
+		}
 		
 		path = {
 			leads_to_tech = reform_1
@@ -393,21 +431,32 @@ technologies = {
 			age_1
 
 			society_reforms
-			society_progressive
+			society_conservative
 		}	
 	}
-	conservative_education_0 = {
-		
-		political_power_gain = 0.1
-		research_speed_factor = 0.04
-		knowledge = 0.05
 
+	medicine_0 = {
+
+		on_research_complete_limit = {
+			has_tech = progressive_3
+		}
+		on_research_complete = {
+			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+		}
+		
+		monthly_population = 0.2
+		
 		research_cost = 2.5
-		#start_year = 12
+		#start_year = 64
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 4 }
+			position = { x = 1 y = 6 }
 		}
+
+		#folder = {
+		#	name = construction_folder
+		#	position = { x = 36 y = 2 }
+		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -420,13 +469,14 @@ technologies = {
 		}
 		
 		categories = {
-			age_1
+			age_5
 
 			society_reforms
-			society_conservative
 		}	
+
+		show_effect_as_desc = yes
 	}
-	
+
 	reform_1 = {
 		dependencies = {
 			agriculture = 1
@@ -441,7 +491,7 @@ technologies = {
 		}
 		
 		production_factory_max_efficiency_factor = 0.025
-		urbanisation_country_factor = 0.08
+		urbanisation_country_factor = 0.075
 		peasant_output_factor = 0.1
 		
 		research_cost = 2.5
@@ -646,17 +696,12 @@ technologies = {
 		urbanisation_country_factor = 0.05
 		political_power_gain = 0.1
 		centralisation_target_modifier = 0.05
-		
-		path = {
-			leads_to_tech = reform_2
-			research_cost_coeff = 1
-		}
 
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = -3 y = 14 }
+			position = { x = -1 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -684,11 +729,21 @@ technologies = {
 		research_speed_factor = 0.08
 		knowledge = 0.05
 
+		path = {
+			leads_to_tech = medicine_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = reform_2
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2.5
 		#start_year = 28
 		folder = {
 			name = electronics_folder
-			position = { x = -1 y = 12 }
+			position = { x = -3 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -774,19 +829,15 @@ technologies = {
 		}
 
 		peoples_initiative = 0.1
-		urbanisation_country_factor = -0.05
+		urbanisation_country_factor = -0.04
 		peasant_opinion = 5
-		
-		path = {
-			leads_to_tech = reform_2
-			research_cost_coeff = 1
-		}
+		monthly_population = 0.2
 
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = 5 y = 14 }
+			position = { x = 3 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -814,12 +865,22 @@ technologies = {
 		political_power_gain = 0.1
 		research_speed_factor = 0.06
 		knowledge_gain = 5
+		
+		path = {
+			leads_to_tech = medicine_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = reform_2
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.5
 		#start_year = 28
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 12 }
+			position = { x = 5 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -839,7 +900,49 @@ technologies = {
 			society_conservative
 		}	
 	}
-	
+
+	medicine_1 = {
+
+		on_research_complete_limit = {
+			has_tech = progressive_3
+		}
+		on_research_complete = {
+			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+		}
+		
+		monthly_population = 0.25
+		
+		research_cost = 2.5
+		#start_year = 64
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 14 }
+		}
+
+		#folder = {
+		#	name = construction_folder
+		#	position = { x = 36 y = 2 }
+		#}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			age_5
+
+			society_reforms
+		}	
+
+		show_effect_as_desc = yes
+	}
+
 	reform_2 = {
 		dependencies = {
 			astronomy = 1
@@ -1046,20 +1149,14 @@ technologies = {
 			writing = 1
 		}
 
-		urbanisation_country_factor = 0.05
-		political_power_gain = 0.1
-		centralisation_target_modifier = 0.05
-		
-		path = {
-			leads_to_tech = reform_3
-			research_cost_coeff = 1
-		}
+		party_popularity_stability_factor = -0.1
+		stability_factor = 0.15
 
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = -3 y = 22 }
+			position = { x = -1 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -1090,12 +1187,21 @@ technologies = {
 		
 		political_power_gain = 0.1
 		research_speed_factor = 0.06
+		
+		path = {
+			leads_to_tech = medicine_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = reform_3
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.5
 		#start_year = 44
 		folder = {
 			name = electronics_folder
-			position = { x = -1 y = 20 }
+			position = { x = -3 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -1185,20 +1291,14 @@ technologies = {
 			writing = 1
 		}
 
-		peoples_initiative = 0.1
-		urbanisation_country_factor = -0.05
-		peasant_opinion = 5
-		
-		path = {
-			leads_to_tech = reform_3
-			research_cost_coeff = 1
-		}
+		party_popularity_stability_factor = 0.20
+		stability_factor = -0.1
 
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = 5 y = 22 }
+			position = { x = 3 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -1229,12 +1329,21 @@ technologies = {
 		
 		expenses_per_pop = -0.05
 		research_speed_factor = 0.04
+		
+		path = {
+			leads_to_tech = medicine_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = reform_3
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.5
 		#start_year = 44
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 20 }
+			position = { x = 5 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -1256,7 +1365,49 @@ technologies = {
 
 		show_effect_as_desc = yes
 	}
-	
+
+	medicine_2 = {
+
+		on_research_complete_limit = {
+			has_tech = progressive_3
+		}
+		on_research_complete = {
+			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+		}
+		
+		monthly_population = 0.3
+		
+		research_cost = 2.5
+		#start_year = 64
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 22 }
+		}
+
+		#folder = {
+		#	name = construction_folder
+		#	position = { x = 36 y = 2 }
+		#}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			age_5
+
+			society_reforms
+		}	
+
+		show_effect_as_desc = yes
+	}
+
 	reform_3 = {
 
 		path = {
@@ -1477,17 +1628,12 @@ technologies = {
 		urbanisation_country_factor = 0.05
 		political_power_gain = 0.1
 		centralisation_target_modifier = 0.05
-		
-		path = {
-			leads_to_tech = reform_4
-			research_cost_coeff = 1
-		}
 
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = -3 y = 30 }
+			position = { x = -1 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -1513,12 +1659,21 @@ technologies = {
 		}
 		
 		research_speed_factor = 0.08
+		
+		path = {
+			leads_to_tech = medicine_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = reform_4
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.5
 		#start_year = 60
 		folder = {
 			name = electronics_folder
-			position = { x = -1 y = 28 }
+			position = { x = -3 y = 30 }
 		}
 		
 		ai_will_do = {
@@ -1606,20 +1761,16 @@ technologies = {
 			writing = 1
 		}
 
-		peoples_initiative = 0.1
-		urbanisation_country_factor = -0.05
+		peoples_initiative = 0.15
+		urbanisation_country_factor = -0.06
 		peasant_opinion = 5
-		
-		path = {
-			leads_to_tech = reform_4
-			research_cost_coeff = 1
-		}
+		monthly_population = 0.3
 
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = 5 y = 30 }
+			position = { x = 3 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -1646,12 +1797,21 @@ technologies = {
 		
 		expenses_per_pop = -0.05
 		research_speed_factor = 0.06
+		
+		path = {
+			leads_to_tech = medicine_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = reform_4
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.5
 		#start_year = 60
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 28 }
+			position = { x = 5 y = 30 }
 		}
 		
 		ai_will_do = {
@@ -1671,7 +1831,49 @@ technologies = {
 			society_conservative
 		}	
 	}
-	
+
+	medicine_3 = {
+
+		on_research_complete_limit = {
+			has_tech = progressive_3
+		}
+		on_research_complete = {
+			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+		}
+		
+		monthly_population = 0.35
+		
+		research_cost = 2.5
+		#start_year = 64
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 30 }
+		}
+
+		#folder = {
+		#	name = construction_folder
+		#	position = { x = 36 y = 2 }
+		#}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			age_5
+
+			society_reforms
+		}	
+
+		show_effect_as_desc = yes
+	}
+
 	reform_4 = {
 		path = {
 			leads_to_tech = progressive_4
@@ -1900,19 +2102,14 @@ technologies = {
 		}
 
 		urbanisation_country_factor = 0.05
-		political_power_gain = 0.1
-		centralisation_target_modifier = 0.05
-		
-		path = {
-			leads_to_tech = reform_5
-			research_cost_coeff = 1
-		}
+		research_speed_factor = 0.15
+		stability_factor = -0.2
 
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = -3 y = 38 }
+			position = { x = -1 y = 36 }
 		}
 		
 		ai_will_do = {
@@ -1938,12 +2135,21 @@ technologies = {
 		}
 		
 		research_speed_factor = 0.08
+		
+		path = {
+			leads_to_tech = medicine_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = reform_5
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.5
 		#start_year = 72
 		folder = {
 			name = electronics_folder
-			position = { x = -1 y = 36 }
+			position = { x = -3 y = 38 }
 		}
 		
 		ai_will_do = {
@@ -2029,20 +2235,15 @@ technologies = {
 			writing = 1
 		}
 
-		peoples_initiative = 0.1
 		urbanisation_country_factor = -0.05
-		peasant_opinion = 5
-		
-		path = {
-			leads_to_tech = reform_5
-			research_cost_coeff = 1
-		}
+		party_popularity_stability_factor = 0.2
+		war_support_factor = 0.2
 
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = 5 y = 38 }
+			position = { x = 3 y = 36 }
 		}
 		
 		ai_will_do = {
@@ -2069,12 +2270,21 @@ technologies = {
 		
 		expenses_per_pop = -0.1
 		research_speed_factor = 0.04
+		
+		path = {
+			leads_to_tech = medicine_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = reform_5
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.5
 		#start_year = 72
 		folder = {
 			name = electronics_folder
-			position = { x = 3 y = 36 }
+			position = { x = 5 y = 38 }
 		}
 		
 		ai_will_do = {
@@ -2094,7 +2304,47 @@ technologies = {
 			society_conservative
 		}	
 	}
-	
+	medicine_4 = {
+
+		on_research_complete_limit = {
+			has_tech = progressive_3
+		}
+		on_research_complete = {
+			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+		}
+		
+		monthly_population = 0.4
+		
+		research_cost = 2.5
+		#start_year = 64
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 38 }
+		}
+
+		#folder = {
+		#	name = construction_folder
+		#	position = { x = 36 y = 2 }
+		#}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			age_5
+
+			society_reforms
+		}	
+
+		show_effect_as_desc = yes
+	}
 	reform_5 = {
 		dependencies = {
 			steam_engine = 1
