@@ -360,24 +360,6 @@ scripted_gui = {
                 }
 			}
 
-			invention_button_click = {
-				ai_will_do = {
-					base = 0
-
-					modifier = {
-						check_variable = { 
-							var = knowledge_variable 
-							value = 100
-							compare = greater_than_or_equals
-						}
-						NOT = {
-							has_country_flag = all_inventions_made
-						}
-						
-						add = 100
-					}
-				}
-			}
 		}
 
 	}
