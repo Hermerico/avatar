@@ -63,7 +63,7 @@ add_ideas = {
 	no_education
 }
 
-recruit_character = FUJ_fengshui
+recruit_character = FUJ_Goruta
 
 #set_cosmetic_tag = FUJ_puppet
 

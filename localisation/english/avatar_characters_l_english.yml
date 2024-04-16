@@ -51,6 +51,12 @@
  EAR_moku:0 "Moku"
  EAR_saiful:0 "Saiful"
  EAR_cam:0 "Cam"
+
+ #Fujian
+ FUJ_Goruta:0 "Goruta"
+ #Baichuan
+ BAI_Yomi:0 "Yomi"
+
   #Taku
  tak_minister_of_personnel_1:0 "Jie-Ten"
  tak_minister_of_personnel_2:0 "Tien-She-Min"
