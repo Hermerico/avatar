@@ -222,4 +222,15 @@ spriteTypes = {
 		name = "GFX_Portrait_Xiang_old_small"
 		texturefile = "gfx/interface/ideas/leader_small/CHN/idea_xiang_old.dds"
 	}
+	############# FUJ
+	spriteType = {
+		name = "GFX_Portrait_Fujian_Goruta"
+		texturefile = "gfx/leaders/FUJ/Portrait_Fujian_Goruta.dds"
+	}
+	############# BAI
+	spriteType = {
+		name = "GFX_Portrait_Baichuan_Yomi"
+		texturefile = "gfx/leaders/BAI/Portrait_Baichuan_Yomi.dds"
+	}
+
 }

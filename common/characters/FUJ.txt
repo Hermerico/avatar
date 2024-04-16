@@ -1,0 +1,14 @@
+characters = {
+	FUJ_Goruta = {
+		name = FUJ_Goruta
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Fujian_Goruta
+			}
+		}
+		gender = male
+		country_leader = {
+			ideology = earth_tribe
+		}
+	}
+}
