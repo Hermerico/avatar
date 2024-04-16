@@ -234,6 +234,10 @@
  open_construction_info:0 "§YOpen Construction Window§!"
  open_construction_info_delayed:0 "§LFor precise construction in this state.§!"
 
+ cancel_deposit_construction:0 "Cancel all deposit constructions \n\n£farming|2 Farms: [?ROOT.farm_deposit_construction|Y0] \n£ranch|2 Ranches: [?ROOT.ranch_deposit_construction|Y0] \n£mine|2 Mines: [?ROOT.mine_deposit_construction|Y0] \n£quarry|2 Quarries: [?ROOT.quarry_deposit_construction|Y0] \n£lumberjack|2 Lumber Mills: [?ROOT.lumber_mill_deposit_construction|Y0] \n£fishing|2 Fishing Stand: [?ROOT.fishing_stand_deposit_construction|Y0]"
+ cancel_deposit_construction_ttp:0 ""
+
+
  farm_progress_ttp:0 "£farming|2 §YFarm§! is [?farm_in_construction|Y0]/[?farm_cost|Y0] ( [?farm_progress_var|0Y%%] ) completed."
  lumber_mill_progress_ttp:0 "£lumberjack|2 §YLumber Mill§! is [?lumber_mill_in_construction|Y0]/[?lumber_mill_cost|Y0] ( [?lumber_mill_progress_var|0Y%%] ) completed."
  ranch_progress_ttp:0 "£ranch|2 §YRanch§! is [?ranch_in_construction|Y0]/[?ranch_cost|Y0] ( [?ranch_progress_var|0Y%%] ) completed."

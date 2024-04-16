@@ -119,6 +119,7 @@ add_farm_here = {
 
 	ROOT = {
 		simulated_construction = yes
+		add_to_variable = { farm_deposit_construction = 1 }
 	}
 	
 	if = {
@@ -146,6 +147,7 @@ add_fishing_stand_here = {
 
 	ROOT = {
 		simulated_construction = yes
+		add_to_variable = { fishing_stand_deposit_construction = 1 }
 	}
 	
 	if = {
@@ -173,6 +175,7 @@ add_ranch_here = {
 	
 	ROOT = {
 		simulated_construction = yes
+		add_to_variable = { ranch_deposit_construction = 1 }
 	}
 	
 	if = {
@@ -199,6 +202,7 @@ add_lumber_mill_here = {
 	
 	ROOT = {
 		simulated_construction = yes
+		add_to_variable = { lumber_mill_deposit_construction = 1 }
 	}
 	
 	if = {
@@ -225,6 +229,7 @@ add_quarry_here = {
 	
 	ROOT = {
 		simulated_construction = yes
+		add_to_variable = { quarry_deposit_construction = 1 }
 	}
 	
 	if = {
@@ -251,6 +256,7 @@ add_mine_here = {
 	
 	ROOT = {
 		simulated_construction = yes
+		add_to_variable = { mine_deposit_construction = 1 }
 	}
 	
 	if = {
