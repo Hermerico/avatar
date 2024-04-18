@@ -2072,7 +2072,64 @@ local_prosperity_cap = {
 	}
 }
 
-local_tax = {
+prosperity_taxation_efficiency = {
+	base = 0
+	modifier = {
+		set_temp_variable = { taxation_efficiency = lp_frame }
+
+		multiply_temp_variable = { taxation_efficiency = 0.005 }
+
+		add = taxation_efficiency
+	}
+}
+
+prosperity_attraction = {
+	base = 0
+	modifier = {
+		check_variable = { lp_frame = 0 }
+
+		add = -0.75
+	}
+	modifier = {
+		set_temp_variable = { attraction = 50 }
+		subtract_from_temp_variable = { attraction = lp_frame }
+		multiply_temp_variable = { attraction = -0.02 }
+
+		multiply_temp_variable = { attraction = local_prosperity_percentage }
+		
+
+		add = attraction
+	}
+}
+
+local_tax_efficiency = {
+	base = 0
+	modifier = {
+		controller = {
+			set_temp_variable = { taxation_efficiency = modifier@taxation_efficiency }
+		}
+		add_to_temp_variable = { taxation_efficiency = modifier@taxation_efficiency }
+		clamp_temp_variable = {
+			var = taxation_efficiency
+			min = 0
+			max = 1
+		}
+
+		add = taxation_efficiency
+	}
+}
+
+local_tax_waste = {
+	base = 0
+	modifier = {
+		set_temp_variable = { local_tax = var_local_tax_reduction }
+		add_to_temp_variable = { local_tax = var_local_tax }
+
+		add = local_tax
+	}
+}
+
+local_tax_reduction = {
 	base = 0
 	modifier = {
 		set_temp_variable = { local_tax = THIS.local_prosperity }
@@ -2086,7 +2143,35 @@ local_tax = {
 		controller = {
 			multiply_temp_variable = { local_tax = modifier@taxation }
 		}
+
 		multiply_temp_variable = { local_tax = -1 }
+
+		add = local_tax
+	}
+}
+
+local_tax = {
+	base = 0
+	modifier = {
+		set_temp_variable = { local_tax = THIS.local_prosperity }
+		set_temp_variable = { local_clamp = state_population_k }
+		multiply_temp_variable = { local_clamp = 0.1 }
+		clamp_temp_variable = {
+			var = local_tax
+			min = local_clamp
+		}
+
+		controller = {
+			multiply_temp_variable = { local_tax = modifier@taxation }
+			set_temp_variable = { taxation_efficiency = modifier@taxation_efficiency }
+		}
+		add_to_temp_variable = { taxation_efficiency = modifier@taxation_efficiency }
+		clamp_temp_variable = {
+			var = taxation_efficiency
+			min = 0
+			max = 1
+		}
+		multiply_temp_variable = { local_tax = taxation_efficiency }
 
 		add = local_tax
 	}
@@ -2235,3 +2320,40 @@ urbanisation_birth_bonus = {
 	}
 }
 
+urbanisation_taxation_efficiency = {
+	base = 0
+	modifier = {
+		check_variable = { urbanisation_cap = 0 }
+
+		add = -0.5
+	}
+	modifier = {
+		set_temp_variable = { efficiency = urbanisation_cap }
+		multiply_temp_variable = { efficiency = 0.01 }
+
+		multiply_temp_variable = { efficiency = urbanisation_percentage }
+		
+
+		add = efficiency
+	}
+}
+
+urbanisation_prosperity_cap = {
+	base = 0
+	modifier = {
+		check_variable = { urbanisation_cap = 0 }
+
+		add = -0.75
+	}
+	modifier = {
+		set_temp_variable = { efficiency = 50 }
+		subtract_from_temp_variable = { efficiency = urbanisation_cap }
+		multiply_temp_variable = { efficiency = -0.01 }
+		multiply_temp_variable = { efficiency = 1.5 }
+
+		multiply_temp_variable = { efficiency = urbanisation_percentage }
+		
+
+		add = efficiency
+	}
+}

@@ -569,3 +569,43 @@ expenses_per_pop = {
 		add = expenses
 	}
 }
+
+taxation_efficiency = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@taxation_efficiency } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+civilian_cost_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@civilian_cost_factor } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+military_cost_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@military_cost_factor } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+naval_cost_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@naval_cost_factor } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}

@@ -126,10 +126,18 @@ urbanisation_modifiers = {
 	enable = { always = yes }
 
 	building_upkeep_cost = pleb_construction_cost
-
 	local_building_slots_factor = mtth:urbanisation_building_slots
-
 	monthly_population_state = mtth:urbanisation_birth_bonus
+	taxation_efficiency = mtth:urbanisation_taxation_efficiency
+	prosperity_factor = mtth:urbanisation_prosperity_cap
+
+}
+
+prosperity_modifiers = {
+	enable = { always = yes }
+
+	taxation_efficiency = mtth:prosperity_taxation_efficiency
+	migration_attraction = mtth:prosperity_attraction
 
 }
 

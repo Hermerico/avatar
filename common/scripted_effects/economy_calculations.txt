@@ -1218,14 +1218,15 @@ employment_calculation_country = {
 factory_calculations = {
 	#### civil capacity
 
-	set_variable = { factories_bought = tax_balance }
+	set_variable = { factories_bought = civ_factory_payments }
 	clamp_variable = { var = factories_bought  min = 0 }
-	multiply_variable = { factories_bought = 10 }
+	set_variable = { factories_bought_price = 10 }
+	multiply_variable = { factories_bought_price = mtth:civilian_cost_factor }
+	multiply_variable = { factories_bought = factories_bought_price }
+	multiply_variable = { factories_bought = construction_material_factor }
 	round_variable = factories_bought
 
 	set_variable = { ic = factories_bought }
-
-	multiply_variable = { ic = construction_material_factor }
 
 	set_variable = { ic_factor = 1 }
 	add_to_variable = { ic_factor = modifier@civilian_capacity_factor }
@@ -1334,31 +1335,34 @@ taxation_state_calc = {
 
 	add_to_variable = { ROOT.prosperity_productivity = mtth:local_prosperity_growth }
 	set_variable = { var_local_tax = mtth:local_tax }
+	set_variable = { var_local_tax_reduction = mtth:local_tax_reduction }
 	set_variable = { var_local_inflation_steal = mtth:local_inflation_steal }
 	set_variable = { var_local_goods_bought = mtth:local_goods_bought }
 	set_variable = { var_local_prosperity_growth = mtth:local_prosperity_growth }
 	set_variable = { real_prosp_growth = var_local_prosperity_growth }
-	add_to_variable = { real_prosp_growth = var_local_tax }
+	add_to_variable = { real_prosp_growth = var_local_tax_reduction }
 	add_to_variable = { real_prosp_growth = var_local_inflation_steal }
 	add_to_variable = { real_prosp_growth = var_local_goods_bought }
+
+	set_variable = { local_prosperity_cap = mtth:local_prosperity_cap }
 	
 	add_to_variable = { local_prosperity = THIS.real_prosp_growth }
 
-	set_variable = { prosp_cap = mtth:local_prosperity_cap }
 	clamp_variable = { 
 		var = local_prosperity
 		min = 0
-		max = prosp_cap
+		max = THIS.local_prosperity_cap
 	}
 
-	subtract_from_variable = { ROOT.taxation_var = var_local_tax }
+	add_to_variable = { ROOT.taxation_var = var_local_tax }
 	subtract_from_variable = { ROOT.inflation_money = var_local_inflation_steal }
 
 	set_variable = { var_local_investment = mtth:local_investment }
 	add_to_variable = { ROOT.weekly_peoples_investment_ic = var_local_investment }
 
-	set_variable = { lp_frame = THIS.local_prosperity }
-	divide_variable = { lp_frame = THIS.prosp_cap }
+	set_variable = { local_prosperity_percentage = THIS.local_prosperity }
+	divide_variable = { local_prosperity_percentage = THIS.local_prosperity_cap }
+	set_variable = { lp_frame = THIS.local_prosperity_percentage }
 	multiply_variable = { lp_frame = 100 }
 
 	add_to_variable = { ROOT.national_prosperity = THIS.local_prosperity }
@@ -1432,20 +1436,16 @@ taxation_state_calc = {
 
 wages_and_taxes = {
 	set_variable = { army_wages = deployed_army_manpower_k }
-	multiply_variable = { army_wages = 100 }
-	multiply_variable = { army_wages = 0.01 }  ### 10 money per soldier
+	multiply_variable = { army_wages = 0.1 }  ### 10 money per soldier
 	multiply_variable = { army_wages = mtth:army_wages_factor }
 	set_variable = { navy_wages = deployed_navy_manpower_k }
-	multiply_variable = { navy_wages = 100 }
-	multiply_variable = { navy_wages = 0.015 }  ### 15 money per sailor
+	multiply_variable = { navy_wages = 0.15 }  ### 15 money per sailor
 	multiply_variable = { navy_wages = mtth:navy_wages_factor }
 	set_variable = { air_wages = deployed_airforce_manpower_k }
-	multiply_variable = { air_wages = 100 }
-	multiply_variable = { air_wages = 0.05 }  ### 50 money per pilot
+	multiply_variable = { air_wages = 0.5 }  ### 50 money per pilot
 	multiply_variable = { air_wages = mtth:air_wages_factor }
 	set_variable = { reservist_wages = reservist_manpower_k }
-	multiply_variable = { reservist_wages = 100 }
-	multiply_variable = { reservist_wages = 0.001 }  ### 1 money per reservist
+	multiply_variable = { reservist_wages = 0.01 }  ### 1 money per reservist
 	multiply_variable = { reservist_wages = mtth:reservist_wages_factor }
 	set_variable = { officer_wages = army_leaders^num }
 	add_to_variable = { officer_wages = navy_leaders^num }
@@ -1474,8 +1474,9 @@ wages_and_taxes = {
 
 	set_variable = { smithy_payments = mil_factory_use }
 	multiply_variable = { smithy_payments = 0.1 }
+	multiply_variable = { dockyard_payments = mtth:military_cost_factor }
 
-	set_variable = { naval_factory_use = num_of_navalitary_factories }
+	set_variable = { naval_factory_use = num_of_naval_factories }
 	subtract_from_variable = { naval_factory_use = num_of_available_navalitary_factories }
 
 	set_variable = { naval_factory_use_percentage = num_of_navalitary_factories }
@@ -1491,18 +1492,34 @@ wages_and_taxes = {
 
 	set_variable = { dockyard_payments = naval_factory_use }
 	multiply_variable = { dockyard_payments = 0.1 }
-
+	multiply_variable = { dockyard_payments = mtth:naval_cost_factor }
 
 	set_variable = { tax_balance = taxation_var }
 	add_to_variable = { tax_balance = inflation_money }
-	add_to_variable = { tax_balance = modifier@income }
 	set_variable = { state_expenses = mtth:expenses_per_pop }
 	add_to_variable = { state_expenses = military_wages }
 	add_to_variable = { state_expenses = smithy_payments }
+	add_to_variable = { state_expenses = dockyard_payments }
 	multiply_variable = { state_expenses = mtth:expenses_factor }
 	clamp_variable = { var = state_expenses  min = 0 }
 	subtract_from_variable = { tax_balance = state_expenses }
-	#clamp_variable = { var = tax_balance  min = 0 }
+	 
+	set_variable = { civ_factory_payments = tax_balance }
+	multiply_variable = { civ_factory_payments = civ_buy_factor }
+	clamp_variable = { var = civ_factory_payments  min = 0 }
+
+	subtract_from_variable = { tax_balance = civ_factory_payments }
+}
+
+money_calculation = {
+
+	set_variable = { income_variable = 1 }
+	add_to_variable = { income_variable = modifier@income }
+	add_to_variable = { income_variable = tax_balance }
+
+	add_to_variable = { money_variable = income_variable }
+
+	clamp_variable = { var = money_variable  min = 0 max = mtth:money_cap }
 }
 
 building_upkeep_calc = {

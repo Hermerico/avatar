@@ -226,18 +226,16 @@ FIR_civil_decision_category = {
 		fire_only_once = yes
 
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 10 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 10000 }
 		}
 		custom_cost_text = expenses_10000
-
-		modifier = {
-			income = -10
-		}
 
 		days_remove = 90
 
 
 		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 10000 }
+
 			417 = {
 				add_dynamic_modifier = { modifier = fire_academy }
 			}
@@ -383,17 +381,15 @@ FIR_civil_decision_category = {
 		on_map_mode = map_only
 
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 2 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 2000 }
 		}
 		custom_cost_text = expenses_2000
 		
 		days_remove = 120
 		
-		modifier = {
-			income = -2
-		}
-
 		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 2000 }
+			
 			
 		}
 

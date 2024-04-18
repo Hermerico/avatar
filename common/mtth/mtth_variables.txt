@@ -710,6 +710,15 @@ pp_ratio = {
 	}
 }
 
+money_cap = {
+	base = 150
+	modifier = {
+		set_temp_variable = { cap = modifier@money_capacity }
+		
+		add = cap
+	}
+}
+
 
 autonomy_frame = {
 	base = 0

@@ -875,14 +875,8 @@ country_event = {
 				id = fir_treaty.2
 				days = 2
 			}
-			puppet = KFC
-			puppet = YFC
-			KFC = {
-				set_imperial_colony_effect = yes
-			}
-			YFC = {
-				set_imperial_colony_effect = yes
-			}
+			set_autonomy = { target = KFC autonomy_state = autonomy_imperial_colony }
+			set_autonomy = { target = YFC autonomy_state = autonomy_imperial_colony }
 		}
 		HAN = {
 			country_event = {
@@ -1003,14 +997,8 @@ country_event = {
 		FIR = {
 			clr_country_flag = approach_earthkingdom
 			set_country_flag = earth_diplomacy_path
-			puppet = KFC
-			puppet = YFC
-			KFC = {
-				set_imperial_colony_effect = yes
-			}
-			YFC = {
-				set_imperial_colony_effect = yes
-			}
+			set_autonomy = { target = KFC autonomy_state = autonomy_imperial_colony }
+			set_autonomy = { target = YFC autonomy_state = autonomy_imperial_colony }
 		}
 		EAR = {
 			country_event = {

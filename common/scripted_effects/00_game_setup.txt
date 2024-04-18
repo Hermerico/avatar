@@ -6,6 +6,7 @@ instant_resource_calc = {
 	add_dynamic_modifier = { modifier = additional_scripted_resources }
 	add_dynamic_modifier = { modifier = missing_workers_state }
 	add_dynamic_modifier = { modifier = urbanisation_modifiers }
+	add_dynamic_modifier = { modifier = prosperity_modifiers }
 	
 	add_dynamic_modifier = { modifier = farm_scripted_resources }
 	add_dynamic_modifier = { modifier = ranch_scripted_resources }
@@ -26,6 +27,8 @@ instant_resource_calc = {
 
 
 	add_dynamic_modifier = { modifier = needed_garrison_modifier }
+
+	taxation_state_calc = yes
 
 	force_update_dynamic_modifier = yes
 }
@@ -150,42 +153,19 @@ hemisphere_setup = {
 
 
 fire_puppets_52 = {
-	puppet = YFC
-	puppet = KFC
-
-	YFC = {
-		set_imperial_colony_effect = yes
-	}
-	KFC = {
-		set_imperial_colony_effect = yes
-	}
+	set_autonomy = { target = KFC autonomy_state = autonomy_imperial_colony }
+	set_autonomy = { target = YFC autonomy_state = autonomy_imperial_colony }
 }
 
 fire_puppets_106 = {
-	puppet = PFC
-	puppet = HFC
-	puppet = MFC
-	puppet = GFC
-
-	PFC = {
-		set_imperial_colony_effect = yes
-	}
-	HFC = {
-		set_imperial_colony_effect = yes
-	}
-	MFC = {
-		set_imperial_colony_effect = yes
-	}
-	GFC = {
-		set_imperial_colony_effect = yes
-	}
+	set_autonomy = { target = PFC autonomy_state = autonomy_imperial_colony }
+	set_autonomy = { target = HFC autonomy_state = autonomy_imperial_colony }
+	set_autonomy = { target = MFC autonomy_state = autonomy_imperial_colony }
+	set_autonomy = { target = GFC autonomy_state = autonomy_imperial_colony }
 }
 
 fire_puppets_111 = {
-	puppet = NAT
-	NAT = {
-		set_tributary_effect = yes
-	}
+	set_autonomy = { target = NAT autonomy_state = autonomy_tributary }
 }
 
 fire_faction_52 = {
@@ -271,14 +251,8 @@ taku_puppet_12 = {
 		limit = {
 			has_start_date < 13.1.1
 		}
-		puppet = POH
-		puppet = HAN
-		POH = {
-			set_county_effect = yes
-		}
-		HAN = {
-			set_county_effect = yes
-		}
+		set_autonomy = { target = POH autonomy_state = autonomy_county }
+		set_autonomy = { target = HAN autonomy_state = autonomy_county }
 	}
 }
 
@@ -287,15 +261,8 @@ omashu_puppet_12 = {
 		limit = {
 			has_start_date < 13.1.1
 		}
-		puppet = MPO
-		puppet = GOU
-
-		MPO = {
-			set_tributary_effect = yes
-		}
-		GOU = {
-			set_county_effect = yes
-		}
+		set_autonomy = { target = MPO autonomy_state = autonomy_tributary }
+		set_autonomy = { target = GOU autonomy_state = autonomy_county }
 	}
 }
 
@@ -492,95 +459,28 @@ earth_faction_111 = {
 }
 
 earth_puppets_12 = {
-	puppet = WBA
-	puppet = EBA
-	puppet = BAI
-	puppet = FMB
-	puppet = LAM
-	puppet = ECB
-	puppet = GDD
-	puppet = MER
-	puppet = NIX
-	puppet = XIN
-	puppet = WUL
-	puppet = HEB
-	puppet = MAK
-	puppet = YUE
-	puppet = NOW
-	puppet = NCB
-	puppet = FUJ
-	puppet = SHE
-	puppet = XIL
-	puppet = YON
-	puppet = DIN
-	puppet = DAW
-
-	WBA = {
-		set_royal_domain_effect = yes
-	}
-	EBA = {
-		set_royal_domain_effect = yes
-	}
-	BAI = {
-		set_county_effect = yes
-	}
-	FMB = {
-		set_county_effect = yes
-	}
-	LAM = {
-		set_county_effect = yes
-	}
-	ECB = {
-		set_county_effect = yes
-	}
-	GDD = {
-		set_county_effect = yes
-	}
-	MER = {
-		set_county_effect = yes
-	}
-	NIX = {
-		set_county_effect = yes
-	}
-	XIN = {
-		set_county_effect = yes
-	}
-	WUL = {
-		set_county_effect = yes
-	}
-	HEB = {
-		set_county_effect = yes
-	}
-	MAK = {
-		set_county_effect = yes
-	}
-	YUE = {
-		set_county_effect = yes
-	}
-	NOW = {
-		set_county_effect = yes
-	}
-	NCB = {
-		set_county_effect = yes
-	}
-	FUJ = {
-		set_county_effect = yes
-	}
-	SHE = {
-		set_county_effect = yes
-	}
-	XIL = {
-		set_county_effect = yes
-	}
-	YON = {
-		set_county_effect = yes
-	}
-	DIN = {
-		set_royal_domain_effect = yes
-	}
-	DAW = {
-		set_royal_domain_effect = yes
-	}
+	set_autonomy = { target = WBA autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = EBA autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = DIN autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = DAW autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = BAI autonomy_state = autonomy_county }
+	set_autonomy = { target = FMB autonomy_state = autonomy_county }
+	set_autonomy = { target = LAM autonomy_state = autonomy_county }
+	set_autonomy = { target = ECB autonomy_state = autonomy_county }
+	set_autonomy = { target = GDD autonomy_state = autonomy_county }
+	set_autonomy = { target = MER autonomy_state = autonomy_county }
+	set_autonomy = { target = NIX autonomy_state = autonomy_county }
+	set_autonomy = { target = XIN autonomy_state = autonomy_county }
+	set_autonomy = { target = WUL autonomy_state = autonomy_county }
+	set_autonomy = { target = HEB autonomy_state = autonomy_county }
+	set_autonomy = { target = MAK autonomy_state = autonomy_county }
+	set_autonomy = { target = YUE autonomy_state = autonomy_county }
+	set_autonomy = { target = NOW autonomy_state = autonomy_county }
+	set_autonomy = { target = NCB autonomy_state = autonomy_county }
+	set_autonomy = { target = FUJ autonomy_state = autonomy_county }
+	set_autonomy = { target = SHE autonomy_state = autonomy_county }
+	set_autonomy = { target = XIL autonomy_state = autonomy_county }
+	set_autonomy = { target = YON autonomy_state = autonomy_county }
 }
 
 
@@ -598,156 +498,43 @@ earth_puppets_106 = {
 
 earth_puppets_111 = {
 	
-	puppet = OMS
-	puppet = GAO
-	puppet = YII
-	puppet = YUE
-	puppet = MPO
-	puppet = SWA
-	puppet = TAK
-	puppet = ZAO
-	puppet = CHN
-	puppet = ISL
-	puppet = NAN
-	puppet = ZIN
-	puppet = GAR
-	puppet = POH
-	puppet = WBA
-	puppet = EBA
-	puppet = BAI
-	puppet = FMB
-	puppet = LAM
-	puppet = ECB
-	puppet = GDD
-	puppet = MER
-	puppet = NIX
-	puppet = XIN
-	puppet = WUL
-	puppet = HEB
-	puppet = MAK
-	puppet = NOW
-	puppet = NCB
-	puppet = HAN
-	puppet = FUJ
-	puppet = SHE
-	puppet = XIL
-	puppet = YON
-	puppet = GOU
-	puppet = DIN
-	puppet = DAW
-
-
-	OMS = {
-		set_kingdom_effect = yes
-	}
-	GAO = {
-		set_kingdom_effect = yes
-	}
-	YII = {
-		set_county_effect = yes
-	}
-	YUE = {
-		set_county_effect = yes
-	}
-	MPO = {
-		set_tributary_effect = yes
-	}
-	SWA = {
-		set_county_effect = yes
-	}
-	TAK = {
-		set_kingdom_effect = yes
-	}
-	ZAO = {
-		set_county_effect = yes
-	}
-	CHN = {
-		set_county_effect = yes
-	}
-	ISL = {
-		set_county_effect = yes
-	}
-	NAN = {
-		set_county_effect = yes
-	}
-	ZIN = {
-		set_county_effect = yes
-	}
-	GAR = {
-		set_county_effect = yes
-	}
-	POH = {
-		set_county_effect = yes
-	}
-	WBA = {
-		set_royal_domain_effect = yes
-	}
-	EBA = {
-		set_royal_domain_effect = yes
-	}
-	BAI = {
-		set_county_effect = yes
-	}
-	FMB = {
-		set_county_effect = yes
-	}
-	LAM = {
-		set_county_effect = yes
-	}
-	ECB = {
-		set_county_effect = yes
-	}
-	GDD = {
-		set_county_effect = yes
-	}
-	MER = {
-		set_county_effect = yes
-	}
-	NIX = {
-		set_county_effect = yes
-	}
-	XIN = {
-		set_county_effect = yes
-	}
-	WUL = {
-		set_county_effect = yes
-	}
-	HEB = {
-		set_county_effect = yes
-	}
-	MAK = {
-		set_county_effect = yes
-	}
-	NOW = {
-		set_county_effect = yes
-	}
-	NCB = {
-		set_county_effect = yes
-	}
-	HAN = {
-		set_county_effect = yes
-	}
-	FUJ = {
-		set_county_effect = yes
-	}
-	SHE = {
-		set_county_effect = yes
-	}
-	XIL = {
-		set_county_effect = yes
-	}
-	YON = {
-		set_county_effect = yes
-	}
-	GOU = {
-		set_county_effect = yes
-	}
-	DIN = {
-		set_royal_domain_effect = yes
-	}
-	DAW = {
-		set_royal_domain_effect = yes
-	}
+	set_autonomy = { target = OMS autonomy_state = autonomy_kingdom }
+	set_autonomy = { target = GAO autonomy_state = autonomy_kingdom }
+	set_autonomy = { target = YII autonomy_state = autonomy_county }
+	set_autonomy = { target = YUE autonomy_state = autonomy_county }
+	set_autonomy = { target = MPO autonomy_state = autonomy_tributary }
+	set_autonomy = { target = SWA autonomy_state = autonomy_tributary }
+	set_autonomy = { target = TAK autonomy_state = autonomy_kingdom }
+	set_autonomy = { target = ZAO autonomy_state = autonomy_county }
+	set_autonomy = { target = CHN autonomy_state = autonomy_county }
+	set_autonomy = { target = ISL autonomy_state = autonomy_county }
+	set_autonomy = { target = NAN autonomy_state = autonomy_county }
+	set_autonomy = { target = ZIN autonomy_state = autonomy_county }
+	set_autonomy = { target = GAR autonomy_state = autonomy_county }
+	set_autonomy = { target = POH autonomy_state = autonomy_county }
+	set_autonomy = { target = WBA autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = EBA autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = BAI autonomy_state = autonomy_county }
+	set_autonomy = { target = FMB autonomy_state = autonomy_county }
+	set_autonomy = { target = LAM autonomy_state = autonomy_county }
+	set_autonomy = { target = ECB autonomy_state = autonomy_county }
+	set_autonomy = { target = GDD autonomy_state = autonomy_county }
+	set_autonomy = { target = MER autonomy_state = autonomy_county }
+	set_autonomy = { target = NIX autonomy_state = autonomy_county }
+	set_autonomy = { target = XIN autonomy_state = autonomy_county }
+	set_autonomy = { target = WUL autonomy_state = autonomy_county }
+	set_autonomy = { target = HEB autonomy_state = autonomy_county }
+	set_autonomy = { target = MAK autonomy_state = autonomy_county }
+	set_autonomy = { target = NOW autonomy_state = autonomy_county }
+	set_autonomy = { target = NCB autonomy_state = autonomy_county }
+	set_autonomy = { target = HAN autonomy_state = autonomy_county }
+	set_autonomy = { target = FUJ autonomy_state = autonomy_county }
+	set_autonomy = { target = SHE autonomy_state = autonomy_county }
+	set_autonomy = { target = XIL autonomy_state = autonomy_county }
+	set_autonomy = { target = YON autonomy_state = autonomy_county }
+	set_autonomy = { target = GOU autonomy_state = autonomy_county }
+	set_autonomy = { target = DIN autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = DAW autonomy_state = autonomy_royal_domain }
 	
 }
 

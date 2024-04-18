@@ -73,10 +73,7 @@ on_actions = {
 						id = firenation.15
 						days = 1
 					}
-					puppet = KFC
-					KFC = {
-						set_imperial_colony_effect = yes
-					}
+					set_autonomy = { target = KFC autonomy_state = autonomy_imperial_colony }
 				}
 			}
 			if = {
@@ -149,10 +146,7 @@ on_actions = {
 						id = firenation.16
 						days = 1
 					}
-					puppet = YFC
-					YFC = {
-						set_imperial_colony_effect = yes
-					}
+					set_autonomy = { target = YFC autonomy_state = autonomy_imperial_colony }
 				}
 			}
 		}

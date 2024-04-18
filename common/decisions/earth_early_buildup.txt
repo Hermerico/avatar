@@ -179,16 +179,10 @@ earth_economic_buildup_category = {
 		days_remove = 30
 
 		complete_effect = {
-			ROOT = {
-				subtract_from_variable = { tax_balance = 0.5 }
-				add_to_variable = { state_expenses = 0.5 }
-			}
-		}
-		modifier = {
-			income = -0.5
+			subtract_from_variable = { var = money_variable value = 500 }
 		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.5 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
 		}
 		custom_cost_text = expenses_500
 
@@ -273,16 +267,11 @@ earth_economic_buildup_category = {
 		days_remove = 30
 
 		complete_effect = {
-			ROOT = {
-				subtract_from_variable = { tax_balance = 0.5 }
-				add_to_variable = { state_expenses = 0.5 }
-			}
+			subtract_from_variable = { var = money_variable value = 500 }
 		}
-		modifier = {
-			income = -0.5
-		}
+		
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.5 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
 		}
 		custom_cost_text = expenses_500
 
@@ -311,16 +300,11 @@ earth_economic_buildup_category = {
 		days_remove = 30
 
 		complete_effect = {
-			ROOT = {
-				subtract_from_variable = { tax_balance = 0.5 }
-				add_to_variable = { state_expenses = 0.5 }
-			}
+			subtract_from_variable = { var = money_variable value = 500 }
 		}
-		modifier = {
-			income = -0.5
-		}
+		
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.5 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
 		}
 		custom_cost_text = expenses_500
 
@@ -356,17 +340,12 @@ earth_economic_buildup_category = {
 
         }
 
-        complete_effect = {
-			ROOT = {
-				subtract_from_variable = { tax_balance = 0.1 }
-				add_to_variable = { state_expenses = 0.1 }
-			}
+		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 100 }
 		}
-		modifier = {
-			income = -0.1
-		}
+		
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.1 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
 		}
 		custom_cost_text = expenses_100
 
@@ -467,17 +446,10 @@ earth_economic_buildup_category = {
 		cost = 100
 
 		complete_effect = {
-			ROOT = {
-				subtract_from_variable = { tax_balance = 0.1 }
-				add_to_variable = { state_expenses = 0.1 }
-			}
-		}
-		modifier = {
-			industrial_capacity_factory = -0.1
-			income = -0.1
+			subtract_from_variable = { var = money_variable value = 100 }
 		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.1 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
 		}
 		custom_cost_text = expenses_100
 

@@ -632,7 +632,7 @@ guiTypes = {
 			iconType ={
 				name ="population_icon"
 				spriteType = "GFX_population_icon"
-				position = { x= 80 y = 8 }
+				position = { x= 6 y = 8 }
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "population_tooltip"
 				pdx_tooltip_delayed = "population_tooltip_delayed"
@@ -641,52 +641,52 @@ guiTypes = {
 			iconType ={
 				name ="fire_boni"
 				spriteType = "GFX_boni_fire_nation"
-				position = { x= 80 y = 8 }
+				position = { x= 6 y = 8 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
 			iconType ={
 				name ="earth_boni"
 				spriteType = "GFX_boni_earth_nation"
-				position = { x= 80 y = 8 }
+				position = { x= 6 y = 8 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
 			iconType ={
 				name ="water_boni"
 				spriteType = "GFX_boni_water_nation"
-				position = { x= 80 y = 8 }
+				position = { x= 6 y = 8 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
 			iconType ={
 				name ="air_boni"
 				spriteType = "GFX_boni_air_nation"
-				position = { x= 80 y = 8 }
+				position = { x= 6 y = 8 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
 			iconType ={
 				name ="pluralist_boni"
 				spriteType = "GFX_boni_pluralist_nation"
-				position = { x= 80 y = 8 }
+				position = { x= 6 y = 8 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
 	
 			instantTextboxType = {
 				name = "population_title"
-				position = {x = 46 y = 12}
+				position = {x = 16 y = 12}
 				font = "hoi_24header"
 				text = "population_title"
-				maxWidth = 200
+				maxWidth = 160
 				maxHeight = 20
 				format = right
 				pdx_tooltip = "population_tooltip"
 			}
 			instantTextboxType = {
 				name = "population_count"
-				position = {x = 255 y = 12}
+				position = {x = 180 y = 12}
 				font = "hoi_24header"
 				text = "population_count"
 				maxWidth = 160
@@ -694,167 +694,181 @@ guiTypes = {
 				format = left
 				pdx_tooltip = "population_tooltip"
 			}
+
+			containerWindowType = {
+				name = "food_box"
+				position = {x=10 y=-30}
+				size = { width=236 height=296 }
 	
-			instantTextboxType = {
-				name = "food_title"
-				position = {x = 224 y = 48}
-				font = "hoi_18mbs"
-				text = "food_title"
-				maxWidth = 120
-				maxHeight = 20
-				format = right
-				pdx_tooltip = "ration_topbar_tooltip"
-				pdx_tooltip_delayed = "ration_topbar_tooltip_delayed"
+				instantTextboxType = {
+					name = "food_title"
+					position = {x = 224 y = 48}
+					font = "hoi_18mbs"
+					text = "food_title"
+					maxWidth = 120
+					maxHeight = 20
+					format = right
+					pdx_tooltip = "ration_topbar_tooltip"
+					pdx_tooltip_delayed = "ration_topbar_tooltip_delayed"
+				}
+
+				iconType ={
+					name ="famine_icon"
+					spriteType = "GFX_idea_famine"
+					position = { x= 350 y = 38 }
+					scale = 1
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "famine_extended"
+					pdx_tooltip_delayed = "famine_delayed"
+				}
+				iconType ={
+					name ="food_shortages_icon"
+					spriteType = "GFX_idea_food_shortages"
+					position = { x= 350 y = 38 }
+					scale = 1
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "food_shortages_extended"
+					pdx_tooltip_delayed = "food_shortages_delayed"
+				}
+				iconType ={
+					name ="food_surplus_icon"
+					spriteType = "GFX_idea_food_surplus"
+					position = { x= 350 y = 38 }
+					scale = 1
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "food_surplus_extended"
+					pdx_tooltip_delayed = "food_surplus_delayed"
+				}
+				iconType ={
+					name ="burgerking_icon"
+					spriteType = "GFX_idea_burgerking"
+					position = { x= 350 y = 38 }
+					scale = 1
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "burgerking_extended"
+					pdx_tooltip_delayed = "burgerking_delayed"
+				}
+
+				iconType = {
+					name = "rations_bg"
+					spriteType = "GFX_generic_box_ratio"
+					position = { x= 237 y = 79 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "ration_topbar_tooltip"
+					pdx_tooltip_delayed = "ration_topbar_tooltip_delayed"
+				}
+				iconType = {
+					name ="large_ratio_bar"
+					spriteType = "GFX_large_ration_bar"
+					position = { x= 240 y = 80 }
+					frame = 50
+					alwaystransparent = yes
+				}
+
 			}
 
-			iconType ={
-				name ="famine_icon"
-				spriteType = "GFX_idea_famine"
-				position = { x= 350 y = 38 }
-				scale = 1
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "famine_extended"
-				pdx_tooltip_delayed = "famine_delayed"
-			}
-			iconType ={
-				name ="food_shortages_icon"
-				spriteType = "GFX_idea_food_shortages"
-				position = { x= 350 y = 38 }
-				scale = 1
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "food_shortages_extended"
-				pdx_tooltip_delayed = "food_shortages_delayed"
-			}
-			iconType ={
-				name ="food_surplus_icon"
-				spriteType = "GFX_idea_food_surplus"
-				position = { x= 350 y = 38 }
-				scale = 1
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "food_surplus_extended"
-				pdx_tooltip_delayed = "food_surplus_delayed"
-			}
-			iconType ={
-				name ="burgerking_icon"
-				spriteType = "GFX_idea_burgerking"
-				position = { x= 350 y = 38 }
-				scale = 1
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "burgerking_extended"
-				pdx_tooltip_delayed = "burgerking_delayed"
-			}
 
-			iconType = {
-				name = "rations_bg"
-				spriteType = "GFX_generic_box_ratio"
-				position = { x= 237 y = 79 }
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "ration_topbar_tooltip"
-				pdx_tooltip_delayed = "ration_topbar_tooltip_delayed"
-			}
-			iconType = {
-				name ="large_ratio_bar"
-				spriteType = "GFX_large_ration_bar"
-				position = { x= 240 y = 80 }
-				frame = 50
-				alwaystransparent = yes
-			}
-
+			containerWindowType = {
+				name = "prosperity_box"
+				position = {x=214 y=50}
+				size = { width=236 height=296 }
 	
-			instantTextboxType = {
-				name = "consumer_goods_title"
-				position = {x = 4 y = 48}
-				font = "hoi_18mbs"
-				text = "consumer_goods_title"
-				maxWidth = 140
-				maxHeight = 20
-				format = right
-				pdx_tooltip = "consumer_goods_supply_ttp"
-				pdx_tooltip_delayed = "consumer_goods_supply_ttp_delayed"
-			}
+				instantTextboxType = {
+					name = "consumer_goods_title"
+					position = {x = 4 y = 48}
+					font = "hoi_18mbs"
+					text = "consumer_goods_title"
+					maxWidth = 140
+					maxHeight = 20
+					format = right
+					pdx_tooltip = "consumer_goods_supply_ttp"
+					pdx_tooltip_delayed = "consumer_goods_supply_ttp_delayed"
+				}
 
-			iconType = {
-				name = "consumer_goods_bg"
-				spriteType = "GFX_generic_box_ratio"
-				position = {x = 31 y = 79}
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "consumer_goods_supply_ttp"
-				pdx_tooltip_delayed = "consumer_goods_supply_ttp_delayed"
-			}
-			iconType = {
-				name ="large_sol_bar"
-				spriteType = "GFX_large_sol_bar"
-				position = { x= 34 y = 80 }
-				frame = 50
-				alwaystransparent = yes
-			}
+				iconType = {
+					name = "consumer_goods_bg"
+					spriteType = "GFX_generic_box_ratio"
+					position = {x = 31 y = 79}
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "consumer_goods_supply_ttp"
+					pdx_tooltip_delayed = "consumer_goods_supply_ttp_delayed"
+				}
+				iconType = {
+					name ="large_sol_bar"
+					spriteType = "GFX_large_sol_bar"
+					position = { x= 34 y = 80 }
+					frame = 50
+					alwaystransparent = yes
+				}
 
-			iconType ={
-				name ="extreme_poverty_icon"
-				spriteType = "GFX_idea_extreme_poverty"
-				position = { x= 155 y = 38 }
-				scale = 1
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "sol_tooltip"
-				pdx_tooltip_delayed = "sol_tooltip_delayed"
-			}
-			iconType ={
-				name ="poverty_icon"
-				spriteType = "GFX_idea_poverty"
-				position = { x= 155 y = 38 }
-				scale = 1
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "sol_tooltip"
-				pdx_tooltip_delayed = "sol_tooltip_delayed"
-			}
-			iconType ={
-				name ="struggeling_icon"
-				spriteType = "GFX_idea_struggeling"
-				position = { x= 155 y = 38 }
-				scale = 1
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "sol_tooltip"
-				pdx_tooltip_delayed = "sol_tooltip_delayed"
-			}
-			iconType ={
-				name ="middeling_icon"
-				spriteType = "GFX_idea_middeling"
-				position = { x= 155 y = 38 }
-				scale = 1
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "sol_tooltip"
-				pdx_tooltip_delayed = "sol_tooltip_delayed"
-			}
-			iconType ={
-				name ="wealth_icon"
-				spriteType = "GFX_idea_wealth"
-				position = { x= 155 y = 38 }
-				scale = 1
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "sol_tooltip"
-				pdx_tooltip_delayed = "sol_tooltip_delayed"
-			}
-			iconType ={
-				name ="extreme_wealth_icon"
-				spriteType = "GFX_idea_extreme_wealth"
-				position = { x= 155 y = 38 }
-				scale = 1
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "sol_tooltip"
-				pdx_tooltip_delayed = "sol_tooltip_delayed"
+				iconType ={
+					name ="extreme_poverty_icon"
+					spriteType = "GFX_idea_extreme_poverty"
+					position = { x= 145 y = 38 }
+					scale = 1
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "sol_tooltip"
+					pdx_tooltip_delayed = "sol_tooltip_delayed"
+				}
+				iconType ={
+					name ="poverty_icon"
+					spriteType = "GFX_idea_poverty"
+					position = { x= 145 y = 38 }
+					scale = 1
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "sol_tooltip"
+					pdx_tooltip_delayed = "sol_tooltip_delayed"
+				}
+				iconType ={
+					name ="struggeling_icon"
+					spriteType = "GFX_idea_struggeling"
+					position = { x= 145 y = 38 }
+					scale = 1
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "sol_tooltip"
+					pdx_tooltip_delayed = "sol_tooltip_delayed"
+				}
+				iconType ={
+					name ="middeling_icon"
+					spriteType = "GFX_idea_middeling"
+					position = { x= 145 y = 38 }
+					scale = 1
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "sol_tooltip"
+					pdx_tooltip_delayed = "sol_tooltip_delayed"
+				}
+				iconType ={
+					name ="wealth_icon"
+					spriteType = "GFX_idea_wealth"
+					position = { x= 145 y = 38 }
+					scale = 1
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "sol_tooltip"
+					pdx_tooltip_delayed = "sol_tooltip_delayed"
+				}
+				iconType ={
+					name ="extreme_wealth_icon"
+					spriteType = "GFX_idea_extreme_wealth"
+					position = { x= 145 y = 38 }
+					scale = 1
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "sol_tooltip"
+					pdx_tooltip_delayed = "sol_tooltip_delayed"
+				}
+
 			}
 
 		}
 
 		containerWindowType = {
 			name = "working_class_window"
-			position = {x=0 y=166}
+			position = {x=0 y=96}
 			size = { width=236 height=296 }
 
 			iconType ={
 				name ="workers_icon"
 				spriteType = "GFX_workers"
-				position = { x= 54 y = 10 }
+				position = { x= 6 y = 10 }
 				Orientation = "UPPER_LEFT"
 				scale = 0.75
 				pdx_tooltip = "workers_tooltip"
@@ -862,17 +876,17 @@ guiTypes = {
 	
 			instantTextboxType = {
 				name = "workers_title"
-				position = {x = -66 y = 12}
+				position = {x = 16 y = 12}
 				font = "hoi_24header"
 				text = "workers_title"
-				maxWidth = 250
+				maxWidth = 160
 				maxHeight = 20
 				format = right
 				pdx_tooltip = "workers_tooltip"
 			}
 			instantTextboxType = {
 				name = "workers_count"
-				position = {x = 200 y = 12}
+				position = {x = 180 y = 12}
 				font = "hoi_24header"
 				text = "workers_count"
 				maxWidth = 160
@@ -923,7 +937,7 @@ guiTypes = {
 	
 			containerWindowType = {
 				name = "self_sufficient_container"
-				position = {x=70 y=0}
+				position = {x=0 y=0}
 				size = { width=236 height=296 }
 
 				iconType ={
@@ -962,7 +976,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "employed_container"
-				position = {x=230 y=0}
+				position = {x=100 y=0}
 				size = { width=236 height=296 }
 	
 				iconType ={
@@ -1008,11 +1022,89 @@ guiTypes = {
 
 			}
 
+			containerWindowType = {
+				name = "buy_slider_container"
+				position = {x=16 y=200}
+				size = { width=236 height=296 }
+
+				iconType ={
+					name ="buy_civ_bg"
+					spriteType = "GFX_slider_bg"
+					position = { x= 4 y = 12 }
+					scale = 0.5
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "buy_civ_tooltip"
+					pdx_tooltip_delayed = "buy_civ_tooltip_delayed"
+				}
+
+				iconType ={
+					name ="buy_civ_icon"
+					spriteType = "GFX_non_available_factory_icon"
+					position = { x= 144 y = 10 }
+					Orientation = "UPPER_LEFT"
+					alwaystransparent = yes
+				}
+
+				buttonType = {
+					name ="decrease_civ_buy"
+					spriteType = "GFX_scroll_left"
+					position = { x= 14 y = 14 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "decrease_civ_buy"
+				}
+				buttonType = {
+					name ="increase_civ_buy"
+					spriteType = "GFX_scroll_right"
+					position = { x= 180 y = 14 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "increase_civ_buy"
+				}
+
+				instantTextboxType = {
+					name = "civ_title"
+					position = {x = 30 y = 14}
+					font = "hoi_16mbs"
+					text = "civ_title"
+					maxWidth = 120
+					maxHeight = 20
+					format = center
+					alwaystransparent = yes
+				}
+
+			}
+
 		}
 
 		containerWindowType = {
+			name = "deposit_container"
+			position = {x=300 y=306 }
+			size = { width=236 height=296 }
+
+			iconType ={
+				name ="deposit_icon"
+				spriteType = "GFX_special_project_icon"
+				position = { x= 14 y = -6 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "deposit_construction"
+				pdx_tooltip_delayed = "deposit_construction_ttp"
+			}
+	
+			buttonType = {
+				name ="cancel_deposit_construction"
+				spriteType = "GFX_closebutton_small"
+				position = { x = 60 y = 0 }
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				pdx_tooltip = "cancel_deposit_construction"
+				pdx_tooltip_delayed = "cancel_deposit_construction_ttp"
+			}
+		}
+
+
+
+		containerWindowType = {
 			name = "stat_bar"
-			position = {x=-10 y=300}
+			position = {x=-10 y=235}
 			size = { width=236 height=296 }
 
 			iconType ={
@@ -1072,8 +1164,8 @@ guiTypes = {
 				spriteType = "GFX_money_icon"
 				position = { x= 20 y = 8 }
 				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "money_tooltip"
-				pdx_tooltip_delayed = "money_tooltip_delayed"
+				pdx_tooltip = "treasury_tooltip"
+				pdx_tooltip_delayed = "treasury_tooltip_delayed"
 			}
 			instantTextboxType = {
 				name = "money_value"
@@ -1083,8 +1175,8 @@ guiTypes = {
 				maxWidth = 60
 				maxHeight = 30
 				format = right
-				pdx_tooltip = "money_tooltip"
-				pdx_tooltip_delayed = "money_tooltip_delayed"
+				pdx_tooltip = "treasury_tooltip"
+				pdx_tooltip_delayed = "treasury_tooltip_delayed"
 			}
 
 
@@ -1190,16 +1282,6 @@ guiTypes = {
 				pdx_tooltip_delayed = "civ_conversion_tooltip_delayed"
 			}
 
-		}
-
-		buttonType = {
-			name ="cancel_deposit_construction"
-			spriteType = "GFX_closebutton_small"
-			position = { x = 360 y = 396 }
-			Orientation = "UPPER_LEFT"
-			clicksound = click_default
-			pdx_tooltip = "cancel_deposit_construction"
-			pdx_tooltip_delayed = "cancel_deposit_construction_ttp"
 		}
 
 	}

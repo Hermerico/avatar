@@ -75,6 +75,22 @@ scripted_gui = {
 
 	}
 
+	tax_ui_window = {
+		context_type = selected_state_context
+		
+		window_name = "tax_ui_window"
+		parent_window_token = selected_state_view
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+			
+		}
+
+	}
+
 	prosperity_ui_window = {
 		context_type = selected_state_context
 		
@@ -95,9 +111,7 @@ scripted_gui = {
 		}
 
 		properties = {
-			prosperity_bar = {
-				frame = THIS.lp_frame
-			}
+			
 		}
 
 	}

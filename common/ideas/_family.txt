@@ -34,6 +34,8 @@ ideas = {
 
 				peoples_initiative = -0.05
 				centralisation_target_modifier = 0.5
+
+				money_capacity = 250
 			}
 			
 			cancel_if_invalid = no
@@ -69,6 +71,8 @@ ideas = {
 
 				peoples_initiative = -0.03
 				centralisation_target_modifier = 0.4
+
+				money_capacity = 200
 			}
 			
 			cancel_if_invalid = no
@@ -112,6 +116,8 @@ ideas = {
 
 				#peoples_initiative = 0.01
 				centralisation_target_modifier = 0.3
+
+				money_capacity = 150
 			}
 			
 			cancel_if_invalid = no
@@ -145,6 +151,8 @@ ideas = {
 
 				peoples_initiative = 0.03
 				centralisation_target_modifier = 0.2
+
+				money_capacity = 100
 			}
 			
 			cancel_if_invalid = no
@@ -174,10 +182,12 @@ ideas = {
 				war_support_factor = 0.05
 				stability_factor = 0.05
 				MONTHLY_POPULATION = 0.4
-				fuel_gain_factor = -0.3
+				#fuel_gain_factor = -0.3
 
 				peoples_initiative = 0.05
 				centralisation_target_modifier = 0.1
+
+				money_capacity = 50
 			}
 			
 			cancel_if_invalid = no
