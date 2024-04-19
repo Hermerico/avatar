@@ -39,3 +39,56 @@ country_event = {
 		#}
 	}
 }
+country_event = { #We survived the  Genocide! Feel the pain, Fire Nation!
+	id = western.2
+	title = western.2.t
+	desc = western.2.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = western.2.a
+
+		FIR = {
+			add_country_leader_trait = known_mass_murderer
+			add_named_threat = {
+				name = fire_nations_genocide_attempt
+				threat = 40
+			}
+			
+		}
+		ROOT = {
+			add_to_variable = {
+				name = ROOT.knowledge_variable
+				value = 500
+			}
+			add_country_leader_trait = icon_of_resistance
+		}	
+	}
+}
+country_event = { #We survived the  Genocide! Feel the pain, Ba Sing Se!
+	id = western.3
+	title = western.3.t
+	desc = western.3.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = western.3.a
+		EAR = {
+			add_country_leader_trait = known_mass_murderer
+			add_named_threat = {
+				name = Ba_Sing_Se_genocide_attempt
+				threat = 40
+			}
+			
+		}
+		ROOT = {
+			add_to_variable = {
+				name = ROOT.knowledge_variable
+				value = 200
+			}
+			add_country_leader_trait = icon_of_resistance
+		}	
+	}
+}

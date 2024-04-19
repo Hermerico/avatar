@@ -12,8 +12,10 @@
  philosopher:0 "Philosopher"
  personality_cult:0 "Godlike Ruler"
  divine_ruler:0 "Divine Ruler"
+ known_mass_murderer:0 "Known Mass-Murderer"
  extinguished_population:0 "Extinguished Population"
  pirate_king:0 "Scourge of the Seas"
+ icon_of_resistance:0 "Icon of Resistance"
 
  # advisor and ideas
  military_organiser:0 "Military Organiser"

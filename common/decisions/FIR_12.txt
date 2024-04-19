@@ -636,6 +636,7 @@ air_genocide_category = {
 						}
 						transfer_state_to = WAT
 					}
+					country_event = western.2
 				}
 				set_global_flag = west_temple_survived
 			}

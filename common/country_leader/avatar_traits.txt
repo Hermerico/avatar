@@ -103,6 +103,26 @@ leader_traits = {
 		peasant_opinion = 10
 		nobility_opinion = 10
 	}
+	known_mass_murderer = {
+		random = no
+		stability_factor = -0.25
+		political_power_gain = -0.5
+		trade_opinion_factor = -50
+		resistance_growth=  -0.3
+		compliance_growth = -0.3
+	}
+	icon_of_resistance = {
+		random = no
+		resistance_target_on_our_occupied_states = 0.3
+		resistance_damage_to_garrison_on_our_occupied_states = 0.4
+		resistance_decay_on_our_occupied_states = -0.25
+		opinion_gain_monthly = 0.3
+		trade_opinion_factor = 0.45
+		can_send_volunteer_forces = yes
+		send_volunteer_divisions_required = -0.9
+		send_volunteer_size = 4
+		air_volunteer_cap = 2
+	}
 	extinguished_population = {
 		random = no
 		stability_factor = -1
