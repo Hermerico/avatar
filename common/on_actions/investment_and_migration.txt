@@ -118,6 +118,7 @@ on_actions = {
 				}
 
 				set_variable = { global.max_refugees_accepted = 0 }
+				set_variable = { global.max_local_prosperity = 0 }
 
 				### set_variable = { global.migrat_1 = 0 }
 				### set_variable = { global.migrat_2 = 0 }

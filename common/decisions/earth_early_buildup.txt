@@ -179,12 +179,12 @@ earth_economic_buildup_category = {
 		days_remove = 30
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 500 }
+			subtract_from_variable = { var = money_variable value = 50 }
 		}
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
-		custom_cost_text = expenses_500
+		custom_cost_text = expenses_50
 
 		remove_effect = {
 			FROM = {
@@ -267,13 +267,13 @@ earth_economic_buildup_category = {
 		days_remove = 30
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 500 }
+			subtract_from_variable = { var = money_variable value = 50 }
 		}
 		
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
-		custom_cost_text = expenses_500
+		custom_cost_text = expenses_50
 
 		remove_effect = {
 			FROM = {
@@ -300,13 +300,13 @@ earth_economic_buildup_category = {
 		days_remove = 30
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 500 }
+			subtract_from_variable = { var = money_variable value = 50 }
 		}
 		
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
-		custom_cost_text = expenses_500
+		custom_cost_text = expenses_50
 
 		remove_effect = {
 			FROM = {
@@ -341,13 +341,13 @@ earth_economic_buildup_category = {
         }
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 100 }
+			subtract_from_variable = { var = money_variable value = 10 }
 		}
 		
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 10 }
 		}
-		custom_cost_text = expenses_100
+		custom_cost_text = expenses_10
 
         remove_effect = { 
 			add_farm_random_instant = yes
@@ -446,12 +446,12 @@ earth_economic_buildup_category = {
 		cost = 100
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 100 }
+			subtract_from_variable = { var = money_variable value = 10 }
 		}
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 10 }
 		}
-		custom_cost_text = expenses_100
+		custom_cost_text = expenses_10
 
 		days_remove = 150
 		allowed = {

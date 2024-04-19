@@ -260,7 +260,7 @@
  working_soldiers_delayed:0 "§LFor precise construction in this state.§!"
 
  tax_number:0 "[?var_local_tax|Y3]"
- tax_tooltip:0 "§YLocal Taxation§! \nTaxes Efficiency: [?mtth:local_tax_efficiency|+Y%]\nTaxes Wasted: [?mtth:local_tax_waste|=+Y3]"
+ tax_tooltip:0 "§YLocal Taxation§!: [?var_local_tax|3] / [?tax_reduction_inverted|Y3] \n\nTaxes Efficiency: [?mtth:local_tax_efficiency|+Y%]\nTaxes Wasted: [?mtth:local_tax_waste|=+Y3]"
  tax_tooltip_delayed:0 "§LTaxation effects§!"
 
  prosperity_number:0 "[?local_prosperity|Y1]"

@@ -60,8 +60,8 @@
  impoverished_region_desc:0 "The inhabitants of this region suffer from abject poverty as they cannot satisfy their basic needs."
  urbanisation_modifiers:0 "Urbanisation"
 
- additional_scripted_resources:0 "Self Employed Output"
- population_resource_bought_on_market:0 "Population need"
+ additional_scripted_resources:0 "£self_employed_texticon  Self Sufficient Output"
+ population_resource_bought_on_market:0 "£consumer_goods_texticon  Population need"
  factory_resource_consumption:0 "Factory Consumption"
  building_upkeep_resources:0 "Building Upkeep"
  dynamic_bender_capacity:0 "Bender recruitment Law"

@@ -689,7 +689,7 @@ guiTypes = {
 				position = {x = 180 y = 12}
 				font = "hoi_24header"
 				text = "population_count"
-				maxWidth = 160
+				maxWidth = 64
 				maxHeight = 20
 				format = left
 				pdx_tooltip = "population_tooltip"
@@ -889,7 +889,7 @@ guiTypes = {
 				position = {x = 180 y = 12}
 				font = "hoi_24header"
 				text = "workers_count"
-				maxWidth = 160
+				maxWidth = 64
 				maxHeight = 20
 				format = left
 				pdx_tooltip = "workers_tooltip"

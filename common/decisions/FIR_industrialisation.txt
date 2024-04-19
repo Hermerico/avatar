@@ -61,12 +61,12 @@ FIR_industrialisation_category = {
 		days_remove = 120
 
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 1000 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
 		}
-		custom_cost_text = expenses_1000
+		custom_cost_text = expenses_100
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 1000 }
+			subtract_from_variable = { var = money_variable value = 100 }
 			
 		}
 
@@ -171,12 +171,12 @@ FIR_industrialisation_category = {
 		days_remove = 200
 
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 2000 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
 		}
-		custom_cost_text = expenses_2000
+		custom_cost_text = expenses_200
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 2000 }
+			subtract_from_variable = { var = money_variable value = 200 }
 			
 		}
 
