@@ -110,20 +110,46 @@ guiTypes = {
 	}
 
 	containerWindowType = {
+		name = "tax_ui_window"
+		position = { x = 380 y = 120 }
+		Orientation = UPPER_LEFT
+
+		iconType = {
+			name = "tax_icon"
+			spriteType = "GFX_tax_icon"
+			position = { x = 20 y = 24 }
+			pdx_tooltip = "tax_tooltip"
+			pdx_tooltip_delayed = "tax_tooltip_delayed"
+		}
+		instantTextBoxType = {
+			name ="tax_text"
+			position = { x = 56 y = 28 }
+			font = "hoi_18mbs"
+			text = "tax_number"
+			maxWidth = 50
+			maxHeight = 18
+			format = left
+			pdx_tooltip = "tax_tooltip"
+			pdx_tooltip_delayed = "tax_tooltip_delayed"
+		}
+
+	}
+
+	containerWindowType = {
 		name = "prosperity_ui_window"
-		position = { x = 340 y = 120 }
+		position = { x = 480 y = 120 }
 		Orientation = UPPER_LEFT
 
 		iconType = {
 			name = "prosperity_icon"
 			spriteType = "GFX_prosperity_icon"
-			position = { x = 40 y = 22 }
+			position = { x = 10 y = 22 }
 			pdx_tooltip = "prosperity_tooltip"
 			pdx_tooltip_delayed = "prosperity_tooltip_delayed"
 		}
 		instantTextBoxType = {
 			name ="prosperity_text"
-			position = { x = 196 y = 28 }
+			position = { x = 56 y = 28 }
 			font = "hoi_18mbs"
 			text = "prosperity_number"
 			maxWidth = 50
@@ -132,26 +158,18 @@ guiTypes = {
 			pdx_tooltip = "prosperity_tooltip"
 			pdx_tooltip_delayed = "prosperity_tooltip_delayed"
 		}
-		iconType = {
-			name ="prosperity_bar"
-			spriteType = "GFX_large_sol_bar"
-			position = { x= 76 y = 32 }
-			frame = 50
-			pdx_tooltip = "prosperity_tooltip"
-			pdx_tooltip_delayed = "prosperity_tooltip_delayed"
-		}
 
 		iconType ={
 			name ="prosperity_increase"
 			spriteType = "GFX_increase_texticon"
-			position = { x=180 y=32 }
+			position = { x=40 y=32 }
 			pdx_tooltip = "prosperity_tooltip"
 			pdx_tooltip_delayed = "prosperity_tooltip_delayed"
 		}
 		iconType ={
 			name ="prosperity_decrease"
 			spriteType = "GFX_decrease_texticon"
-			position = { x=180 y=32 }
+			position = { x=40 y=32 }
 			pdx_tooltip = "prosperity_tooltip"
 			pdx_tooltip_delayed = "prosperity_tooltip_delayed"
 		}

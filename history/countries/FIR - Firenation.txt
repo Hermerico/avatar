@@ -583,14 +583,6 @@ permanent_spirits_and_modifiers = yes
 
 ##############################################   year 12 after rokus death
 
-if = {
-	limit = {
-		has_start_date < 13.01.01
-	}
-	EAR = {
-		earth_puppets_12 = yes
-	}
-}
 
 ##############################################   year 52 after rokus death
 
@@ -623,16 +615,8 @@ if = {
 	FIR = {
 		fire_puppets_52 = yes
 	}
-	EAR = {
-		ear_exiles_52 = yes
-		earth_puppets_52 = yes
-	}
 
 	###### alliances
-
-	EAR = {
-		earth_faction_52 = yes
-	}
 	FIR = {
 		fire_faction_52 = yes
 	}
@@ -672,17 +656,8 @@ if = {
 		fire_puppets_52 = yes
 		fire_puppets_106 = yes
 	}
-	EAR = {
-		ear_exiles_52 = yes
-		ear_exiles_106 = yes
-		earth_puppets_106 = yes
-	}
 
 	###### alliances
-
-	EAR = {
-		earth_faction_106 = yes
-	}
 	FIR = {
 		fire_faction_106 = yes
 	}
@@ -720,17 +695,8 @@ if = {
 		fire_puppets_106 = yes
 		fire_puppets_111 = yes
 	}
-	EAR = {
-		ear_exiles_52 = yes
-		ear_exiles_106 = yes
-		earth_puppets_111 = yes
-	}
 
 	###### alliances
-
-	EAR = {
-		earth_faction_111 = yes
-	}
 	FIR = {
 		fire_faction_111 = yes
 	}

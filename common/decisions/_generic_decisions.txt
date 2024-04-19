@@ -85,7 +85,7 @@ reoccupy_category = {
 
 		fire_only_once = no
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 1 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 1000 }
 		}
 		custom_cost_text = expenses_1000
 
@@ -93,6 +93,8 @@ reoccupy_category = {
 		#days_re_enable = 180
 		on_map_mode = map_only
 		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 1000 }
+			
 			FROM = {
 				set_state_flag = recolonisation_in_progress
 			}

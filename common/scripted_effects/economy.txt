@@ -111,6 +111,16 @@ extra_dockyard_output = {
 }
 
 
+decrease_civ_buy_effect = {
+	add_to_variable = { civ_buy_factor = -0.01 }
+	clamp_variable = { var = civ_buy_factor  min = 0 max = 1 }
+}
+increase_civ_buy_effect = {
+	add_to_variable = { civ_buy_factor = 0.01 }
+	clamp_variable = { var = civ_buy_factor  min = 0 max = 1 }
+}
+
+
 @deposit_construction_cost = 15
 
 ####### state construction not instant

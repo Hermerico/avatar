@@ -96,12 +96,10 @@ civil_leader_cost_factor = {
 
 
 weekly_centralisation = {
-
 	color_type = neutral 
 	value_type = percentage_in_hundred
 	precision = 2
 	postfix = none
-	
 }
 centralisation_target_modifier = {
 	color_type = neutral 
@@ -110,20 +108,11 @@ centralisation_target_modifier = {
 	postfix = none
 }
 
-subjects_autonomy_gain_new = {
-	color_type = bad 
-	value_type = number
-	precision = 2
-	postfix = none
-}
-
 revolt_risk = {
-
 	color_type = bad 
 	value_type = percentage
 	precision = 2
 	postfix = none
-	
 }
 
 peasant_opinion = {
@@ -378,6 +367,18 @@ income = {
 	color_type = good
 	value_type = number
 	precision = 2
+	postfix = none
+}
+taxation_efficiency = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+money_capacity = {
+	color_type = good
+	value_type = number
+	precision = 0
 	postfix = none
 }
 expenses_factor = {
@@ -804,47 +805,55 @@ occupied_ration_need_factor = {
 	postfix = none
 }
 
+civilian_cost_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
+military_cost_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
+naval_cost_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
 
 civilian_capacity_factor = {
-
 	color_type = good
 	value_type = percentage
 	precision = 0
 	postfix = none
-	
 }
 military_capacity_factor = {
-
 	color_type = good
 	value_type = percentage
 	precision = 0
 	postfix = none
-	
 }
 naval_capacity_factor = {
-
 	color_type = good
 	value_type = percentage
 	precision = 0
 	postfix = none
-	
 }
 
 military_to_civil_factory = {
-
 	color_type = neutral
 	value_type = percentage
 	precision = 0
 	postfix = none
-	
 }
 civil_to_military_factory = {
-
 	color_type = neutral
 	value_type = percentage
 	precision = 0
 	postfix = none
-	
 }
 
 

@@ -52,7 +52,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "civilian_factory_icon"
-				position = { x = 311 y = 332 }
+				position = { x = 311 y = 267 }
 				spriteType = "GFX_non_available_factory_icon"
 				pdx_tooltip = "construction_capacity_tooltip"
 				pdx_tooltip_delayed = "construction_capacity_tooltip_delayed"
@@ -61,7 +61,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "available_factories_value"
-				position = { x = 316 y = 332 }
+				position = { x = 316 y = 267 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
@@ -86,7 +86,7 @@ guiTypes = {
 			}			
 			instantTextboxType = {
 				name = "traded_factories_value"
-				position = { x = 152 y = 333 }
+				position = { x = 152 y = 268 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
@@ -99,14 +99,14 @@ guiTypes = {
 			}
 			iconType = {
 				name = "trade_income_icon"
-				position = { x = 155 y = 330 }
+				position = { x = 155 y = 265 }
 				scale = 0.65
 				spriteType = "GFX_trade_income"
 			}
 
 			instantTextboxType = {
 				name = "local_factories"
-				position = { x = -194 y = 44 }
+				position = { x = 194 y = 44 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
@@ -114,6 +114,7 @@ guiTypes = {
 				maxWidth = 200
 				maxHeight = 20
 				format = left
+				hide = yes
 			}
 			
 			instantTextboxType = {
@@ -151,13 +152,13 @@ guiTypes = {
 
 			iconType = {
 				name = "construction_speed_icon"
-				position = { x = 312 y = 301 }
+				position = { x = 312 y = 236 }
 				spriteType = "GFX_construction_speed_icon"
 			}
 			
 			instantTextboxType = {
 				name = "construction_speed_value"
-				position = { x = 327 y = 301 }
+				position = { x = 327 y = 236 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				borderSize = {x = 0 y = 0}
@@ -171,35 +172,39 @@ guiTypes = {
 			
 		instantTextboxType = {
 			name = "location"
-			position = { x = 20 y = -1106 }
+			position = { x = 20 y = 106 }
 			font = "hoi_18mbs"
 			maxWidth = 150			
 			text = "CONSTRUCTION_LOCATION_LABEL"
 			format = center
+			hide = yes
 		}
 		
 		instantTextboxType = {
 			name = "task"
-			position = { x = 180 y = -1106 }
+			position = { x = 180 y = 106 }
 			font = "hoi_18mbs"
 			maxWidth = 80				
 			text = "CONSTRUCTION_TASK_LABEL"
 			format = center
+			hide = yes
 		}
 		
 		iconType = {
 			name = "factories"
-			position = { x = 274 y = -1106 }
+			position = { x = 274 y = 106 }
 			spriteType = "GFX_non_available_factory_icon"
+			hide = yes
 		}
 
 		instantTextboxType = {
 			name = "factories_amount"
-			position = { x = 250 y = -1106 }
+			position = { x = 250 y = 106 }
 			font = "hoi_18mbs"
 			maxWidth = 120				
 			text = "CONSTRUCTION_FACTORIES_LABEL"
 			format = center
+			hide = yes
 		}
 		
 		instantTextboxType = {
@@ -213,7 +218,7 @@ guiTypes = {
 			
 		containerWindowType = {
 			name = "production_lines"
-			position = { x = 0 y = 410 }
+			position = { x = 0 y = 375 }
 			size = { width = 430 height = 100%% }
 			verticalScrollbar = "right_vertical_slider"
 			vertical_scroll_step = 10

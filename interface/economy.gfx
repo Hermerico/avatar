@@ -180,6 +180,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/economy/i_like_money.dds"
 	}
 	spriteType = {
+		name = "GFX_treasury_icon"
+		texturefile = "gfx/interface/economy/treasury_icon.dds"
+	}
+	spriteType = {
 		name = "GFX_tax_icon"
 		texturefile = "gfx/interface/economy/tax_icon.dds"
 	}

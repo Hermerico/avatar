@@ -44,7 +44,7 @@ THE_EARTHKINGDOM = {
 		days_re_enable = 160
 
 		modifier = {
-			subjects_autonomy_gain_new = -0.5
+			subjects_autonomy_gain = -0.5
 		}
 
 		complete_effect = { 

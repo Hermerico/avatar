@@ -239,6 +239,27 @@ scripted_gui = {
 				}
 			}
 
+			decrease_civ_buy_click = {
+				decrease_civ_buy_effect = yes
+			}
+			increase_civ_buy_click = {
+				increase_civ_buy_effect = yes
+			}
+			decrease_civ_buy_shift_click = {
+				decrease_civ_buy_effect = yes
+				decrease_civ_buy_effect = yes
+				decrease_civ_buy_effect = yes
+				decrease_civ_buy_effect = yes
+				decrease_civ_buy_effect = yes
+			}
+			increase_civ_buy_shift_click = {
+				increase_civ_buy_effect = yes
+				increase_civ_buy_effect = yes
+				increase_civ_buy_effect = yes
+				increase_civ_buy_effect = yes
+				increase_civ_buy_effect = yes
+			}
+
 		}
 
 		properties = {

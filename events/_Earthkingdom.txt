@@ -120,12 +120,12 @@ country_event = {
 
 		end_puppet = OVERLORD
 		EAR = {
-			puppet = {
+			set_autonomy = {
 				target = ROOT
+				autonomous_state = autonomy_vassalage
 				end_wars = no
 			}
 		}
-		set_vassalage_effect = yes
 
 		hidden_effect = {
 			apply_ideology = yes
@@ -153,12 +153,12 @@ country_event = {
 		}
 
 		EAR = {
-			puppet = {
+			set_autonomy = {
 				target = ROOT
+				autonomous_state = autonomy_county
 				end_wars = no
 			}
 		}
-		set_county_effect = yes
 
 		hidden_effect = {
 			apply_ideology = yes
@@ -201,12 +201,12 @@ country_event = {
 		}
 
 		EAR = {
-			puppet = {
+			set_autonomy = {
 				target = ROOT
+				autonomous_state = autonomy_kingdom
 				end_wars = no
 			}
 		}
-		set_kingdom_effect = yes
 
 		hidden_effect = {
 			apply_ideology = yes
@@ -230,12 +230,12 @@ country_event = {
 		}
 
 		EAR = {
-			puppet = {
+			set_autonomy = {
 				target = ROOT
+				autonomous_state = autonomy_tributary
 				end_wars = no
 			}
 		}
-		set_tributary_effect = yes
 
 		hidden_effect = {
 			apply_ideology = yes

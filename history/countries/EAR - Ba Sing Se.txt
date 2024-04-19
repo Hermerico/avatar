@@ -181,3 +181,99 @@ permanent_spirits_and_modifiers = yes
 
 
 }
+
+
+
+#############################################
+#############################################
+#				HISTORY SETUP				#
+#############################################
+#############################################
+
+
+##############################################   year 12 after rokus death
+
+if = {
+	limit = {
+		has_start_date < 13.01.01
+	}
+	EAR = {
+		earth_puppets_12 = yes
+	}
+}
+
+##############################################   year 52 after rokus death
+
+if = {
+	limit = {
+		has_start_date > 13.01.01
+		has_start_date < 53.01.01
+	}
+
+	###### war declaration
+
+
+	###### diplomatic relations
+	EAR = {
+		ear_exiles_52 = yes
+		earth_puppets_52 = yes
+	}
+
+	###### alliances
+
+	EAR = {
+		earth_faction_52 = yes
+	}
+
+}
+
+##############################################   year 106 after rokus death
+
+if = {
+	limit = {
+		has_start_date > 53.01.01
+		has_start_date < 107.01.01
+	}
+
+	###### war declaration
+
+
+	###### diplomatic relations
+	EAR = {
+		ear_exiles_52 = yes
+		ear_exiles_106 = yes
+		earth_puppets_106 = yes
+	}
+
+	###### alliances
+
+	EAR = {
+		earth_faction_106 = yes
+	}
+}
+
+##############################################   year 111 after rokus death
+
+if = {
+	limit = {
+		has_start_date > 107.01.01
+	}
+
+	###### war declaration
+
+
+	###### diplomatic relations
+	EAR = {
+		ear_exiles_52 = yes
+		ear_exiles_106 = yes
+		earth_puppets_111 = yes
+	}
+
+	###### alliances
+
+	EAR = {
+		earth_faction_111 = yes
+	}
+
+
+}

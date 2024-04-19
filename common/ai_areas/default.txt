@@ -7,17 +7,14 @@ areas = {
 		}
 	}
 
-	#### could this be cause for freezing?
+	earth_kingdom_ai_area = {
 
-#	earth_kingdom_ai_area = {
-#
-#		continents = { 
-#			europe
-#			north_america 
-#			south_america
-#		}
-#	}
-
+		continents = { 
+			europe
+			north_america 
+			south_america
+		}
+	}
 
 	earth_plate = {
 

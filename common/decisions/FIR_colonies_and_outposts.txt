@@ -165,12 +165,14 @@ FIR_outpost_category = {
 		days_remove = 12
 
 		modifier = {
-			income = -0.5
 			country_resource_cost_aluminium = 10
 			country_resource_cost_steel = 2
 		}
+		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 500 }
+		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.5 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
 		}
 		custom_cost_text = expenses_500
 
@@ -299,10 +301,7 @@ FIR_colonies_category = {
 					}
 				}
 				
-				puppet = PFC
-				PFC = {
-					set_imperial_colony_effect = yes
-				}
+				set_autonomy = { target = PFC autonomy_state = autonomy_imperial_colony }
 
 				if = {
 					limit = {
@@ -656,11 +655,8 @@ FIR_colonies_category = {
 			
 		}
 
-		modifier = {
-			income = -0.5
-		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.5 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
 		}
 		custom_cost_text = expenses_500
 
@@ -669,6 +665,8 @@ FIR_colonies_category = {
 		days_remove = 365
 
 		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 500 }
+
 			154 = {
 				add_dynamic_modifier = { modifier = firenation_colony }
 			}
@@ -837,10 +835,7 @@ FIR_colonies_category = {
 			}
 
 			FIR = {
-				puppet = YFC
-				YFC = {
-					set_imperial_colony_effect = yes
-				}
+				set_autonomy = { target = YFC autonomy_state = autonomy_imperial_colony }
 			}
 		}
 
@@ -945,10 +940,7 @@ FIR_colonies_category = {
 			}
 
 			FIR = {
-				puppet = MFC
-				MFC = {
-					set_imperial_colony_effect = yes
-				}
+				set_autonomy = { target = MFC autonomy_state = autonomy_imperial_colony }
 			}
 		}
 
@@ -1039,10 +1031,7 @@ FIR_colonies_category = {
 			}
 
 			FIR = {
-				puppet = GFC
-				GFC = {
-					set_imperial_colony_effect = yes
-				}
+				set_autonomy = { target = GFC autonomy_state = autonomy_imperial_colony }
 			}
 		}
 
@@ -1125,11 +1114,11 @@ FIR_colonies_category = {
 
 		fire_only_once = yes
 
-		modifier = {
-			income = -0.5
+		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 500 }
 		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.5 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
 		}
 		custom_cost_text = expenses_500
 
@@ -1185,11 +1174,8 @@ FIR_colonies_category = {
 			
 		}
 
-		modifier = {
-			income = -0.5
-		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.5 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
 		}
 		custom_cost_text = expenses_500
 
@@ -1198,6 +1184,7 @@ FIR_colonies_category = {
 		days_remove = 365
 
 		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 500 }
 			124 = {
 				add_dynamic_modifier = { modifier = firenation_colony }
 			}
@@ -1302,10 +1289,7 @@ FIR_colonies_category = {
 			}
 
 			FIR = {
-				puppet = HFC
-				HFC = {
-					set_imperial_colony_effect = yes
-				}
+				set_autonomy = { target = HFC autonomy_state = autonomy_imperial_colony }
 			}
 		}
 
@@ -1408,10 +1392,7 @@ FIR_colonies_category = {
 			}
 
 			FIR = {
-				puppet = KFC
-				KFC = {
-					set_imperial_colony_effect = yes
-				}
+				set_autonomy = { target = KFC autonomy_state = autonomy_imperial_colony }
 			}
 		}
 
@@ -1520,10 +1501,7 @@ FIR_colonies_category = {
 			}
 
 			FIR = {
-				puppet = OMC
-				OMC = {
-					set_imperial_colony_effect = yes
-				}
+				set_autonomy = { target = OMC autonomy_state = autonomy_imperial_colony }
 			}
 		}
 

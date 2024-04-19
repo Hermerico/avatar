@@ -282,8 +282,12 @@ FIR_conquest_category = {
 		}
 
 		modifier = {
-			income = -0.2
 			production_speed_arms_factory_factor = 0.25
+		}
+
+		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 200 }
+			
 		}
 
 		remove_effect = {
@@ -300,7 +304,7 @@ FIR_conquest_category = {
 		days_remove = 90
 
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.2 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
 		}
 		custom_cost_text = expenses_200
 
@@ -669,11 +673,9 @@ FIR_conquest_category = {
 			
 		}
 
-		modifier = {
-			income = -1
-		}
-
 		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 1000 }
+			
 			
 		}
 
@@ -689,7 +691,7 @@ FIR_conquest_category = {
 		days_remove = 100
 
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 1 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 1000 }
 		}
 		custom_cost_text = expenses_1000
 
@@ -718,11 +720,9 @@ FIR_conquest_category = {
 			
 		}
 
-		modifier = {
-			income = -1
-		}
-
 		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 1000 }
+			
 			
 		}
 
@@ -741,7 +741,7 @@ FIR_conquest_category = {
 		days_remove = 100
 
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 1 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 1000 }
 		}
 		custom_cost_text = expenses_1000
 
@@ -770,11 +770,8 @@ FIR_conquest_category = {
 			
 		}
 
-		modifier = {
-			income = -1
-		}
-
 		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 1000 }
 			
 		}
 
@@ -793,7 +790,7 @@ FIR_conquest_category = {
 		days_remove = 100
 
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 1 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 1000 }
 		}
 		custom_cost_text = expenses_1000
 

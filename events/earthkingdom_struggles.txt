@@ -679,7 +679,10 @@ country_event = {
 					}
 				}
 				ROOT = {
-					puppet = PREV.THIS
+					set_autonomy = {
+						target = ROOT
+						autonomous_state = autonomy_kingdom
+					}
 				}
 			}
 			declare_war_on = {
