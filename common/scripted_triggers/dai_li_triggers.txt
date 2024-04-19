@@ -1,1 +1,10 @@
-
+dai_li_full = {
+	EAR = {
+		has_idea = ear_quon
+		has_idea = ear_hiroshi
+		has_idea = ear_juno
+		has_idea = ear_moku
+		has_idea = ear_saiful
+		has_idea = ear_cam
+	}
+}
