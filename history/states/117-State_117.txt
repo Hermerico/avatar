@@ -43,15 +43,11 @@ state={
 			value = 6
 
 		}
+		
 		victory_points = {
-			8743 5 
+			1254 10 
 		}
-		victory_points = {
-			8691 10 
-		}
-		victory_points = {
-			8663 5 
-		}
+		
 		12.1.1 = {
 			owner = SWA
 			controller = SWA
