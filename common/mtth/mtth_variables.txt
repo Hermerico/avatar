@@ -712,7 +712,7 @@ money_cap = {
 autonomy_frame = {
 	base = 0
 	modifier = {
-		set_temp_variable = { autonomy = autonomy_ratio_val }
+		set_temp_variable = { autonomy = autonomy_ratio }
 		multiply_temp_variable = { autonomy = 100 }
 		
 		add = autonomy

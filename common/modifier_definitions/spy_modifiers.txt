@@ -1,68 +1,68 @@
 
 
-enemy_intel_network_gain_factor = {
+enemy_intel_network_gain_factor = { 			#### factor on intel network gain
 	color_type = bad
 	value_type = percentage
 	precision = 0
 }
 
-civil_infiltration_factor = {
+civil_infiltration_factor = {					#### chance to succeed in civil infiltration after mission and gain intel
 	color_type = good
 	value_type = percentage_in_hundred
 	precision = 1
 }
-army_infiltration_factor = {
+army_infiltration_factor = { 					#### chance to succeed in army infiltration after mission and gain intel
 	color_type = good
 	value_type = percentage_in_hundred
 	precision = 1
 }
-navy_infiltration_factor = {
+navy_infiltration_factor = {					#### chance to succeed in navy infiltration after mission and gain intel
 	color_type = good
 	value_type = percentage_in_hundred
 	precision = 1
 }
-air_infiltration_factor = {
+air_infiltration_factor = {						#### chance to succeed in air infiltration after mission and gain intel
 	color_type = good
 	value_type = percentage_in_hundred
 	precision = 1
 }
 
-kill_agent_factor = {
+kill_agent_factor = {							#### chance to kill a defending agent
 	color_type = good
 	value_type = percentage
 	precision = 0
 }
 
-cheaper_trade_chance_factor = {
+cheaper_trade_chance_factor = {					#### chance to succed in getting better trade
 	color_type = good
 	value_type = percentage_in_hundred
 	precision = 0
 }
-more_trade_chance_factor = {
-	color_type = good
-	value_type = percentage_in_hundred
-	precision = 0
-}
-
-steal_invention_chance = {
+more_trade_chance_factor = {					#### chance to succed in getting more trade
 	color_type = good
 	value_type = percentage_in_hundred
 	precision = 0
 }
 
-spy_destabilisation_chance = {
+steal_invention_chance = {						#### chance to succed in stealing inventions
 	color_type = good
 	value_type = percentage_in_hundred
 	precision = 0
 }
 
-spy_destabilisation = {
+spy_destabilisation_chance = {					#### chance to succed in destabilasing a country
+	color_type = good
+	value_type = percentage_in_hundred
+	precision = 0
+}
+
+spy_destabilisation = {							#### chance to succed in destabilising a country
 	color_type = good
 	value_type = percentage
 	precision = 0
 }
 
-spy_destabilisation_regain = {
+spy_destabilisation_regain = {					#### countries destabilisation from spies recovery every month
 	color_type = good
 	value_type = percentage
 	precision = 0

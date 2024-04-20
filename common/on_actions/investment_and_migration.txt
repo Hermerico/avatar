@@ -210,12 +210,12 @@ on_actions = {
 
 					#### potential fluctuation here, but not everyone can survive and some are born along the way ;D
 
-					set_temp_variable = { migration_clamp = refugees_accepted_last_month }
-					subtract_from_temp_variable = { migration_clamp = migrating_population }
+					set_variable = { migration_balance = refugees_accepted_last_month }
+					subtract_from_variable = { migration_balance = migrating_population }
 
 					clamp_variable = {
 						var = global.max_refugees_accepted
-						min = migration_clamp
+						min = migration_balance
 					}
 
 

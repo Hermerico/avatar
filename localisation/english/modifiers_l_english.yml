@@ -300,8 +300,6 @@
  civilian_cost_factor:0 "£civ_factory  Civil Capacity Cost"
  military_cost_factor:0 "£mil_factory  Military Capacity Cost"
  naval_cost_factor:0 "£dockyard_texticon  Naval Capacity Cost"
- manpower_requirement_k:0 "£population_texticon  Employees (K)"
- manpower_requirement_fake:0 "£population_texticon  Employees (K)"
 
  farmer_k:0 "£farming|1 Farmers"
  miller_k:0 "£milling|1 Millers"

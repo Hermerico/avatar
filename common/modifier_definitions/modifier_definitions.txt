@@ -31,63 +31,55 @@
 #	category = country
 #}
 
-weekly_war_weariness = {
-
+weekly_war_weariness = {							#### weekly war weariness
 	color_type = bad 
 	value_type = percentage_in_hundred
 	precision = 2
 	postfix = none
-	
 }
-weekly_occupation_war_weariness = {
-
+weekly_occupation_war_weariness = {					#### weekly war weariness from occupied states
 	color_type = bad 
 	value_type = percentage_in_hundred
 	precision = 2
 	postfix = none
-	
 }
-weekly_casualty_war_weariness = {
-
+weekly_casualty_war_weariness = {					#### weekly war weariness from casualties
 	color_type = bad 
 	value_type = percentage_in_hundred
 	precision = 2
 	postfix = none
-	
 }
 
-war_weariness_factor = {
-
+war_weariness_factor = {							#### multiplier for war weariness gain
 	color_type = bad 
 	value_type = percentage
 	precision = 1
 	postfix = none
-	
 }
 
 
-animal_breeding_factor = {
+animal_breeding_factor = {							#### reproduction rate for animals
 	color_type = good 
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
 
-dragons_modifier = {
+dragons_modifier = {								#### amount of dragons available
 	color_type = good 
 	value_type = number
 	precision = 0
 	postfix = none
 }
 
-political_power_cap = {
+political_power_cap = {								#### maximal political power stored
 	color_type = good 
 	value_type = number
 	precision = 0
 	postfix = none
 }
 
-civil_leader_cost_factor = {
+civil_leader_cost_factor = {						#### recruiting new advisors pp cost
 	color_type = bad 
 	value_type = percentage
 	precision = 2
@@ -95,79 +87,79 @@ civil_leader_cost_factor = {
 }
 
 
-weekly_centralisation = {
+weekly_centralisation = {							#### weekly change in centralisation
 	color_type = neutral 
 	value_type = percentage_in_hundred
 	precision = 2
 	postfix = none
 }
-centralisation_target_modifier = {
+centralisation_target_modifier = {					#### desired target for centralisation
 	color_type = neutral 
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
 
-revolt_risk = {
+revolt_risk = {										#### chance of peasant uprisings happening
 	color_type = bad 
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
 
-peasant_opinion = {
+peasant_opinion = {									#### opinion of peasant interest group
 	color_type = good 
 	value_type = number
 	precision = 0
 	postfix = none
 }
-labourers_opinion = {
+labourers_opinion = {								#### opinion of labourers interest group
 	color_type = good 
 	value_type = number
 	precision = 0
 	postfix = none
 }
-nobility_opinion = {
+nobility_opinion = {								#### opinion of nobility interest group
 	color_type = good 
 	value_type = number
 	precision = 0
 	postfix = none
 }
-industrialist_opinion = {
+industrialist_opinion = {							#### opinion of industrialist interest group
 	color_type = good 
 	value_type = number
 	precision = 0
 	postfix = none
 }
-academics_opinion = {
+academics_opinion = {								#### opinion of academics interest group
 	color_type = good 
 	value_type = number
 	precision = 0
 	postfix = none
 }
-clergy_opinion = {
-	color_type = good 
-	value_type = number
-	precision = 0
-	postfix = none
-}
-
-
-research_slots_num = {
+clergy_opinion = {									#### opinion of clergy interest group
 	color_type = good 
 	value_type = number
 	precision = 0
 	postfix = none
 }
 
-available_missions = {
+
+research_slots_num = {								#### amount of research slots
 	color_type = good 
 	value_type = number
 	precision = 0
 	postfix = none
 }
 
-garrison_factor_modifier = {
+available_missions = {								#### mission decision categories available at the same time
+	color_type = good 
+	value_type = number
+	precision = 0
+	postfix = none
+}
+
+garrison_factor_modifier = {						#### required garrison size in occupied territories (needed to account for population size)
 	color_type = bad 
 	value_type = percentage
 	precision = 2
@@ -175,59 +167,59 @@ garrison_factor_modifier = {
 }
 
 
-monthly_population_state = {
+monthly_population_state = {						#### factor on population growth in a state
 	color_type = good 
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
 
-monthly_migration_state = {
+monthly_migration_state = {							#### percentage of state population that want to migrate
 	color_type = good 
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
-migration_attraction = {
-	color_type = good 
-	value_type = percentage
-	precision = 2
-	postfix = none
-}
-
-prosperity = {
-	color_type = good 
-	value_type = percentage
-	precision = 2
-	postfix = none
-}
-prosperity_factor = {
+migration_attraction = {							#### factor on migration attraction in state or country
 	color_type = good 
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
 
-urbanisation = {
+prosperity = {										#### factor on productivity in a state or country
+	color_type = good 
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+prosperity_factor = {								#### factor on maximal prosperity in state or country
+	color_type = good 
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+
+urbanisation = {									#### flat urbanisation in a state/building
 	color_type = good 
 	value_type = number
 	precision = 2
 	postfix = none
 }
-urbanisation_factor = {
+urbanisation_factor = {								#### factor on urbanisation in a state/building
 	color_type = good 
 	value_type = percentage
 	precision = 2
 	postfix = none
 	category = state
 }
-urbanisation_country_factor = {
+urbanisation_country_factor = {						#### factor on urbanisation in country
 	color_type = good 
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
-urbanisation_cost = {
+urbanisation_cost = {								#### construction resource cost of urbanisation and civil buildings
 	color_type = bad 
 	value_type = percentage
 	precision = 2
@@ -236,31 +228,31 @@ urbanisation_cost = {
 }
 
 
-reforestation = {
+reforestation = {									#### factor on wood gain efficiency in a state
 	color_type = good 
 	value_type = percentage
 	precision = 1
 	postfix = none
 }
-breeding = {
+breeding = {										#### factor on ranch animal product gain in a state
 	color_type = good 
 	value_type = percentage
 	precision = 1
 	postfix = none
 }
-fertilizer = {
+fertilizer = {										#### factor on grain gain in a state
 	color_type = good 
 	value_type = percentage
 	precision = 1
 	postfix = none
 }
-waters = {
+waters = {											#### factor on fishing efficiency in a state
 	color_type = good 
 	value_type = percentage
 	precision = 1
 	postfix = none
 }
-mill_factor = {
+mill_factor = {										#### factor on milling efficiency in a state
 	color_type = good 
 	value_type = percentage
 	precision = 2
@@ -270,586 +262,563 @@ mill_factor = {
 
 
 
-nonbender_factor = {
+nonbender_factor = {								#### amount of nonbenders in army. only used in bender laws
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
 
+bender_unit_factor = {								#### factor on bender unit amount
 	color_type = good 
 	value_type = percentage
 	precision = 2
 	postfix = none
-	
 }
-bender_unit_factor = {
-
+bender_growth = {									#### monthly growth of bending population towards target
 	color_type = good 
 	value_type = percentage
 	precision = 2
 	postfix = none
-	
 }
-bender_growth = {
-
-	color_type = good 
-	value_type = percentage
-	precision = 2
-	postfix = none
-	
-}
-bender_target = {
-
+bender_target = {									#### countries target of bending population in percent
 	color_type = neutral 
 	value_type = percentage
 	precision = 2
 	postfix = none
-	
 }
-bender_disabled = {
-
+bender_disabled = {									#### disables monthly bender growth
 	color_type = bad 
 	value_type = yes_no
 	precision = 0
 	postfix = none
-	
 }
 
 
 
-avatar_opinion_modifier = {
+avatar_opinion_modifier = {							#### avatar opinion currently unused
 	color_type = good
 	value_type = yes_no
 	precision = 0
 	postfix = none
 }
-women_recruitment_modifier = {
+women_recruitment_modifier = {						#### feminism decisions currently used in a weird way
 	color_type = good
 	value_type = yes_no
 	precision = 0
 	postfix = none
 }
-tech_share_modifier = {
+tech_share_modifier = {								#### disable spreading inventions currently unused
 	color_type = good
 	value_type = yes_no
 	precision = 0
 	postfix = none
 }
 
-ministry_advisor_cost = {
+ministry_advisor_cost = {							#### cost of appoining a ministry advisor
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
-institution_cost = {
+institution_cost = {								#### cost of assigning an institution
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
-law_change_cost = {
+law_change_cost = {									#### cost of changing the laws
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
-monthly_unification = {
+monthly_unification = {								#### monthly tribal unification for nwt and swt
 	color_type = good
 	value_type = number
 	precision = 0
 	postfix = none
 }
 
-taxation = {
+taxation = {										#### percentage of tax extracted from populations prosperity in country
 	color_type = neutral
 	value_type = percentage
 	precision = 1
 	postfix = none
 }
-income = {
+income = {											#### cash added or removed to treasury mana
 	color_type = good
 	value_type = number
 	precision = 2
 	postfix = none
 }
-taxation_efficiency = {
+taxation_efficiency = {								#### efficiency of taxation in state or country
 	color_type = good
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
-money_capacity = {
+money_capacity = {									#### countries maximal treasury capacity
 	color_type = good
 	value_type = number
 	precision = 0
 	postfix = none
 }
-expenses_factor = {
+expenses_factor = {									#### factor on all kinds of expenses
 	color_type = bad
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
-expenses_per_pop = {
+expenses_per_pop = {								#### country expenses for 10K core population
 	color_type = bad
 	value_type = number
 	precision = 3
 	postfix = none
 }
-army_wages_factor = {
+army_wages_factor = {								#### factor on army wages expenses
 	color_type = bad
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
-navy_wages_factor = {
+navy_wages_factor = {								#### factor on navy wages
 	color_type = bad
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
-air_wages_factor = {
+air_wages_factor = {								#### factor on air wages
 	color_type = bad
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
-reservist_wages = {
+reservist_wages = {									#### factor on wages for manpower pool
 	color_type = bad
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
-officer_wages = {
-	color_type = bad
-	value_type = percentage
-	precision = 2
-	postfix = none
-}
-
-consumer_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-
-grain_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-animal_products_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-textile_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-wood_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-minerals_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-fossile_fuels_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-iron_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-steel_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-consumer_goods_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-luxury_goods_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-planks_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-bricks_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-steel_beams_demand = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-
-
-
-grain_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-animal_products_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-textile_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-wood_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-minerals_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-fossile_fuels_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-iron_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-steel_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-food_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-consumer_goods_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-luxury_goods_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-planks_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-bricks_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-steel_beams_throughput = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-
-
-
-building_upkeep_factor = {
-	color_type = bad
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-
-farmer_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-miller_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-fisher_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-rancher_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-lumberjack_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-miner_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-weaver_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-smith_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-harbour_worker_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-shopkeeper_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-craftsman_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-industrial_worker_factor = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-	category = country
-}
-
-currency_amount = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	postfix = none
-}
-
-#weekly_workless_people = {
-#	color_type = bad
-#	value_type = percentage_in_hundred
-#	precision = 2
-#	postfix = none
-#}
-
-working_percentage = {
-	color_type = neutral
-	value_type = percentage
-	precision = 2
-	postfix = none
-}
-
-fuel_burning  = {
+officer_wages = {									#### factor on wages for admirals generals and officers
 	color_type = bad
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
 
-society_reforms_research_bonus = {
+consumer_demand = {									#### population need. contributes to productivity and prosperity
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+
+grain_demand = {									#### country population demand for grain
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+animal_products_demand = {							#### country population demand for animal products
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+textile_demand = {									#### country population demand for textile
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+wood_demand = {										#### country population demand for wood
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+minerals_demand = {									#### country population demand for minerals
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+fossile_fuels_demand = {							#### country population demand for fossiel fuels
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+iron_demand = {										#### country population demand for metals
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+steel_demand = {									#### country population demand for steel
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+consumer_goods_demand = {							#### country population demand for consumer goods
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+luxury_goods_demand = {								#### country population demand for luxury goods
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+planks_demand = {									#### country population demand for planks
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+bricks_demand = {									#### country population demand for bricks
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+steel_beams_demand = {								#### country population demand for steel beams
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+
+
+
+grain_throughput = {								#### grain production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+animal_products_throughput = {						#### animal products production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+textile_throughput = {								#### textile production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+wood_throughput = {									#### wood production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+minerals_throughput = {								#### minerals production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+fossile_fuels_throughput = {						#### fossile fuels production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+iron_throughput = {									#### metals production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+steel_throughput = {								#### steel production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+food_throughput = {									#### food production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+consumer_goods_throughput = {						#### consumer goods production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+luxury_goods_throughput = {							#### luxury goods production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+planks_throughput = {								#### plank production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+bricks_throughput = {								#### bricks production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+steel_beams_throughput = {							#### steel beams production efficiency
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+
+
+
+building_upkeep_factor = {							#### factor on country cost of upkeep resource
+	color_type = bad
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+
+farmer_factor = {									#### country farmers needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+miller_factor = {									#### country millers needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+fisher_factor = {									#### country fishers needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+rancher_factor = {									#### country ranchers needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+lumberjack_factor = {								#### country lumberjack needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+miner_factor = {									#### country miner needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+weaver_factor = {									#### country weaver needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+smith_factor = {									#### country smiths needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+harbour_worker_factor = {							#### country harbour workers needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+shopkeeper_factor = {								#### country shopkeeper needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+craftsman_factor = {								#### country craftsmen needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+industrial_worker_factor = {						#### country industrial workers needed factor
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+currency_amount = {									#### inflation amount. will give money and decrease prosperity
+	color_type = neutral
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+
+working_percentage = {								#### percentage of people who can work. base 55%
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+
+fuel_burning  = {									#### factor on fuel burned in industry
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+
+society_reforms_research_bonus = {					#### fake modifier currently unused
 	color_type = good
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
 
-peasant_output_factor  = {
-
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none
-	
-}
-
-peasant_food_factor  = {
+peasant_output_factor  = {							#### factor on resource output of self sufficient people in country or states
 	color_type = good
 	value_type = percentage
 	precision = 1
 	postfix = none
 }
 
-peasant_consumer_good_factor  = {
+peasant_food_factor  = {							#### factor on self sufficient food output in country
 	color_type = good
 	value_type = percentage
 	precision = 1
 	postfix = none
 }
 
-grain_capacity_factor = {
+peasant_consumer_good_factor = {					#### factor on self sufficient consumer good output in country currently unused!!!
 	color_type = good
 	value_type = percentage
 	precision = 1
 	postfix = none
 }
 
-daily_ration_gain = {
+grain_capacity_factor = {							#### factor on grain capacity in country
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+
+daily_ration_gain = {								#### daily ration gain in country
 	color_type = good
 	value_type = number
 	precision = 1
 	postfix = none
 }
-
-ration_factor = {
+ration_factor = {									#### factor on daily rations in country
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+ration_capacity_factor = {							#### factor on ration capacity in country
 	color_type = good
 	value_type = percentage
 	precision = 1
 	postfix = none
 }
 
-ration_capacity_factor = {
-	color_type = good
+military_ration_need_factor = {						#### factor on army ration need
+	color_type = bad
 	value_type = percentage
-	precision = 1
+	precision = 2
 	postfix = none
 }
-
-military_ration_need_factor = {
+population_ration_need_factor = {					#### factor on unoccupied population ration need
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+workers_ration_need_factor = {						#### factor on workers/employed people ration need
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+occupied_ration_need_factor = {						#### factor on occupied population ration need
 	color_type = bad
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
 
-population_ration_need_factor = {
-	color_type = bad
-	value_type = percentage
-	precision = 2
-	postfix = none
-}
-
-workers_ration_need_factor = {
-	color_type = bad
-	value_type = percentage
-	precision = 2
-	postfix = none
-}
-
-occupied_ration_need_factor = {
-	color_type = bad
-	value_type = percentage
-	precision = 2
-	postfix = none
-}
-
-civilian_cost_factor = {
+civilian_cost_factor = {							#### cost of buying civil industries with tax money
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
-military_cost_factor = {
+military_cost_factor = {							#### cost of paying for military industries
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
-naval_cost_factor = {
+naval_cost_factor = {								#### cost of paying for naval industries
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
 
-civilian_capacity_factor = {
+civilian_capacity_factor = {						#### factor on civilian capacities bought
 	color_type = good
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
-military_capacity_factor = {
+military_capacity_factor = {						#### factor on military capacities 
 	color_type = good
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
-naval_capacity_factor = {
+naval_capacity_factor = {							#### factor on naval capacities 
 	color_type = good
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
 
-military_to_civil_factory = {
+military_to_civil_factory = {						#### percentage of military capacities used as civil capacity
 	color_type = neutral
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
-civil_to_military_factory = {
+civil_to_military_factory = {						#### percentage of civil capacities used as military capacity
 	color_type = neutral
 	value_type = percentage
 	precision = 0
@@ -857,68 +826,62 @@ civil_to_military_factory = {
 }
 
 
-monthly_unit_quality = {
+monthly_unit_quality = {							#### monthly change of unit quality
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+unit_quality_target = {								#### target for unit quality
 	color_type = good
 	value_type = percentage
 	precision = 2
 	postfix = none
 }
 
-unit_quality_target = {
-	color_type = good
-	value_type = percentage
-	precision = 2
-	postfix = none
-}
 
-
-knowledge = {
+knowledge = {										#### daily knowledge gain
 	color_type = good
 	value_type = number
 	precision = 2
 	postfix = none
 }
-knowledge_cap = {
+knowledge_cap = {									#### maximal stored knowledge
 	color_type = good
 	value_type = number
 	precision = 0
 	postfix = none
 }
-knowledge_gain = {     #### is literacy cap
-
+knowledge_gain = {									#### maximal literacy 0-100%
 	color_type = good
 	value_type = percentage_in_hundred
 	precision = 2
 	postfix = none
-	
 }
 
-peoples_initiative = {
-
+peoples_initiative = {								#### percentage of prosperity reinvested in free construction events
 	color_type = good
 	value_type = percentage
 	precision = 2
 	postfix = none
-	
 }
 
 
-
-core_state_cost_factor = {
+core_state_cost_factor = {							#### cost of coring a state
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
 
-settler_defiance = {
+settler_defiance = {								#### modifier effects of culture settlers in a state
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
 
-colonise_state_cost_factor = {
+colonise_state_cost_factor = {						#### cost of colonising a state
 	color_type = bad
 	value_type = percentage
 	precision = 0
