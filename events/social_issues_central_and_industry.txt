@@ -163,7 +163,7 @@ country_event = {
 	option = {
 		name = centralisation.6.a
 
-		add_mill_random_instant = yes
+		add_lumber_mill_random_instant = yes
 		
 		ai_chance = {
 			base = 0

@@ -169,12 +169,12 @@ FIR_outpost_category = {
 			country_resource_cost_steel = 2
 		}
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 500 }
+			subtract_from_variable = { var = money_variable value = 50 }
 		}
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
-		custom_cost_text = expenses_500
+		custom_cost_text = expenses_50
 
 		remove_effect = {
 			FROM = {
@@ -656,16 +656,16 @@ FIR_colonies_category = {
 		}
 
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
-		custom_cost_text = expenses_500
+		custom_cost_text = expenses_50
 
 		fire_only_once = yes
 
 		days_remove = 365
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 500 }
+			subtract_from_variable = { var = money_variable value = 50 }
 
 			154 = {
 				add_dynamic_modifier = { modifier = firenation_colony }
@@ -1115,12 +1115,12 @@ FIR_colonies_category = {
 		fire_only_once = yes
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 500 }
+			subtract_from_variable = { var = money_variable value = 50 }
 		}
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
-		custom_cost_text = expenses_500
+		custom_cost_text = expenses_50
 
 		days_remove = 90
 
@@ -1175,16 +1175,16 @@ FIR_colonies_category = {
 		}
 
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 500 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
-		custom_cost_text = expenses_500
+		custom_cost_text = expenses_50
 
 		fire_only_once = yes
 
 		days_remove = 365
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 500 }
+			subtract_from_variable = { var = money_variable value = 50 }
 			124 = {
 				add_dynamic_modifier = { modifier = firenation_colony }
 			}

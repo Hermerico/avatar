@@ -77,9 +77,10 @@
  synthetic_refinery_resource:0 "£resources_strip|$FRAME$"
 
  mine:0 "£mine|2  Mine"
- mine_plural:0 "Mines"
- mine_desc:0 "Deep in the mines, hidden in the dark, there lie metals and fossil fuels of utmost value. \n\n£import_texticon  Requirements:£resource_deposites|2 \n\n£export_texticon  Output: £resources_strip|6 +£resources_strip|7 " 
- mine_extended:0 "§YMine§! \nDeep in the mines, hidden in the dark, there lie metals and fossil fuels of utmost value. \n\nMax Level: §Y[?mine_level]§! \nHealth: §Y8§! \nEmployees: §Y100§!\n\nRequirements: §R-1§!£resource_deposites|2 \nOutput: §G+[?ROOT.mine_output1]§! £resources_strip|7 §G+[?ROOT.mine_output2]§! £resources_strip|6  \n\nCost: £civ_factory_output §Y9000§!"
+ mine_plural:0 "£mine|2  Mines"
+ mine_desc:0 "Deep in the mines, hidden in the dark, there lie metals and fossile fuels of utmost value. \n\n£import_texticon  Requirements:£resource_deposites|2 \n\n£export_texticon  Output: £resources_strip|6 +£resources_strip|7 " 
+ mine_extended:0 "§YMine§! \nDeep in the mines, hidden in the dark, there lie metals and fossile fuels of utmost value. \n\nMax Level: §Y[?mine_level]§! \nHealth: §Y8§! \nEmployees: §Y100§!\n\nRequirements: §R-1§!£resource_deposites|2 \nOutput: §G+[?ROOT.mine_output1]§! £resources_strip|7 §G+[?ROOT.mine_output2]§! £resources_strip|6  \n\nCost: £civ_factory_output §Y9000§!"
+
 
  mine_ooo:0 "Abandoned Mine"
  mine_ooo_plural:0 "Abandoned Mines"

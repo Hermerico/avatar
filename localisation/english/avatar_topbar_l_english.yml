@@ -1,6 +1,6 @@
 ﻿l_english:
  money_topbar:0 "[?money_variable|0]"
- money_tooltip:0 "§YTreasury§! \nIncome change: [?income_variable|1+=] per day \nBase value: §Y1.00§! \nFrom modifiers: [?modifier@income|2+=] \nFrom taxation and expenses: [?tax_balance|2+=] \n\nCurrent Max: [?mtth:money_cap|0Y]"
+ money_tooltip:0 "§YTreasury§! \nIncome change: [?income_variable|2+=] per day \nBase value: §Y1.00§! \nFrom modifiers: [?modifier@income|2+=] \nFrom taxation and expenses: [?income_factor|2+=%] \n\nCurrent Max: [?mtth:money_cap|0Y]"
  money_tooltip_delayed:0 "The Treasury can be used to finance projects of all different types. You can also try and bribe someone with it."
 
  knowledge_topbar:0 "[?knowledge_variable|0]"

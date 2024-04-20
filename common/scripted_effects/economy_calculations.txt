@@ -212,6 +212,7 @@ reset_var_to_zero = {
 	set_variable = { prosperity_productivity = 0 }
 
 	set_variable = { national_prosperity = 0 }
+	set_variable = { national_prosperity_cap = 0 }
 
 	set_variable = { worker_deficit_k = 0 }
 
@@ -813,8 +814,6 @@ deposit_calculations = {
 
 
 national_wealth_calc = {
-	set_variable = { national_prosperity_cap = core_population_k }
-
 	clamp_variable = { 
 		var = national_prosperity  
 		min = 0 
@@ -1336,6 +1335,8 @@ taxation_state_calc = {
 	add_to_variable = { ROOT.prosperity_productivity = mtth:local_prosperity_growth }
 	set_variable = { var_local_tax = mtth:local_tax }
 	set_variable = { var_local_tax_reduction = mtth:local_tax_reduction }
+	set_variable = { tax_reduction_inverted = var_local_tax_reduction }
+	multiply_variable = { tax_reduction_inverted = -1 }
 	set_variable = { var_local_inflation_steal = mtth:local_inflation_steal }
 	set_variable = { var_local_goods_bought = mtth:local_goods_bought }
 	set_variable = { var_local_prosperity_growth = mtth:local_prosperity_growth }
@@ -1344,6 +1345,7 @@ taxation_state_calc = {
 	add_to_variable = { real_prosp_growth = var_local_inflation_steal }
 	add_to_variable = { real_prosp_growth = var_local_goods_bought }
 
+	set_variable = { local_prosperity_cap_base = mtth:local_prosperity_cap_base }
 	set_variable = { local_prosperity_cap = mtth:local_prosperity_cap }
 	
 	add_to_variable = { local_prosperity = THIS.real_prosp_growth }
@@ -1366,6 +1368,13 @@ taxation_state_calc = {
 	multiply_variable = { lp_frame = 100 }
 
 	add_to_variable = { ROOT.national_prosperity = THIS.local_prosperity }
+	if = {
+		limit = {
+			THIS = { is_core_of = controller }
+		}
+		add_to_variable = { ROOT.national_prosperity_cap = THIS.local_prosperity_cap_base }
+	}
+
 
 	if = {
 		limit = {
@@ -1494,14 +1503,16 @@ wages_and_taxes = {
 	multiply_variable = { dockyard_payments = 0.1 }
 	multiply_variable = { dockyard_payments = mtth:naval_cost_factor }
 
-	set_variable = { tax_balance = taxation_var }
-	add_to_variable = { tax_balance = inflation_money }
+	set_variable = { state_income = taxation_var }
+	add_to_variable = { state_income = inflation_money }
 	set_variable = { state_expenses = mtth:expenses_per_pop }
 	add_to_variable = { state_expenses = military_wages }
 	add_to_variable = { state_expenses = smithy_payments }
 	add_to_variable = { state_expenses = dockyard_payments }
 	multiply_variable = { state_expenses = mtth:expenses_factor }
 	clamp_variable = { var = state_expenses  min = 0 }
+
+	set_variable = { tax_balance = state_income }
 	subtract_from_variable = { tax_balance = state_expenses }
 	 
 	set_variable = { civ_factory_payments = tax_balance }
@@ -1515,11 +1526,22 @@ money_calculation = {
 
 	set_variable = { income_variable = 1 }
 	add_to_variable = { income_variable = modifier@income }
-	add_to_variable = { income_variable = tax_balance }
+
+	set_variable = { income_factor = tax_balance }
+	set_variable = { income_divideer = state_income }
+	clamp_variable = { var = income_divideer  min = 0.001 }
+	divide_variable = { income_factor = income_divideer }
+	clamp_variable = { var = income_factor  min = -0.9 }
+
+	set_variable = { income_factor_real = 1 }
+	add_to_variable = { income_factor_real = income_factor }
+
+	multiply_variable = { income_variable = income_factor_real }
 
 	add_to_variable = { money_variable = income_variable }
 
-	clamp_variable = { var = money_variable  min = 0 max = mtth:money_cap }
+	set_variable = { money_cap = mtth:money_cap }
+	clamp_variable = { var = money_variable  min = 0 max = money_cap }
 }
 
 building_upkeep_calc = {

@@ -157,10 +157,12 @@ ideas = {
 				#research_speed_factor = 0.15
 				#currency_amount = -0.2
 				prosperity = 0.3
-				production_speed_infrastructure_factor = 0.15
-				production_speed_consumer_good_factory_factor = 0.15
-				production_speed_luxury_good_factory_factor = 0.15
-				industrial_capacity_factory = 0.1
+				prosperity_factor = 0.75
+				income = 1
+				#production_speed_infrastructure_factor = 0.15
+				#production_speed_consumer_good_factory_factor = 0.15
+				#production_speed_luxury_good_factory_factor = 0.15
+				#industrial_capacity_factory = 0.1
 			}
 		}
 
@@ -190,10 +192,12 @@ ideas = {
 				#good
 				#currency_amount = -0.1
 				prosperity = 0.2
-				production_speed_infrastructure_factor = 0.1
-				production_speed_consumer_good_factory_factor = 0.1
-				production_speed_luxury_good_factory_factor = 0.1
-				industrial_capacity_factory = 0.1
+				prosperity_factor = 0.5
+				income = 0.5
+				#production_speed_infrastructure_factor = 0.1
+				#production_speed_consumer_good_factory_factor = 0.1
+				#production_speed_luxury_good_factory_factor = 0.1
+				#industrial_capacity_factory = 0.1
 			}
 		}
 
@@ -223,10 +227,12 @@ ideas = {
 				#good
 				#currency_amount = -0.05
 				prosperity = 0.1
-				production_speed_infrastructure_factor = 0.05
-				production_speed_consumer_good_factory_factor = 0.05
-				production_speed_luxury_good_factory_factor = 0.05
-				industrial_capacity_factory = 0.05
+				prosperity_factor = 0.25
+				income = 0.2
+				#production_speed_infrastructure_factor = 0.05
+				#production_speed_consumer_good_factory_factor = 0.05
+				#production_speed_luxury_good_factory_factor = 0.05
+				#industrial_capacity_factory = 0.05
 			}
 		}
 

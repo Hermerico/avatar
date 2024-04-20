@@ -563,7 +563,7 @@ expenses_per_pop = {
 	base = 0
 	modifier = { 
 		set_temp_variable = { expenses = modifier@expenses_per_pop } 
-		multiply_temp_variable = { expenses = max_manpower_k }
+		multiply_temp_variable = { expenses = core_population_k }
 		multiply_temp_variable = { expenses = 0.1 }
 		clamp_temp_variable = { var = expenses min = 0 }
 		add = expenses

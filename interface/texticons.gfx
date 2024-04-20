@@ -598,6 +598,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_income_texticon"
+		texturefile = "gfx/texticons/income.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_tax_efficiency_texticon"
 		texturefile = "gfx/texticons/tax_efficiency.dds"
 		legacy_lazy_load = no

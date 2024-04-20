@@ -58,6 +58,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/state_modifiers/destroyed_city.dds"
 	}
 	spriteType = {
+		name = "GFX_modifiers_impoverished_region"
+		textureFile = "gfx/interface/state_modifiers/impoverished_region.dds"
+	}
+	spriteType = {
 		name = "GFX_modifiers_hostile_bottleneck"
 		textureFile = "gfx/interface/state_modifiers/hostile_bottleneck.dds"
 	}

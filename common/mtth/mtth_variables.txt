@@ -152,12 +152,12 @@ legitimacy_autonomy = {
 	}
 }
 
-legitimacy_war_weariness = {
+legitimacy_tax_efficiency = {
 	base = 0
 	modifier = {
 		set_temp_variable = { weariness = centralisation_variable }
 		subtract_from_temp_variable = { weariness = 100 }
-		divide_temp_variable = { weariness = 100 }
+		divide_temp_variable = { weariness = -200 }
 		
 		add = weariness
 	}
@@ -182,17 +182,6 @@ legitimacy_war_support = {
 		#clamp_temp_variable = { var = war_support min = 0 }
 		
 		add = war_support
-	}
-}
-
-legitimacy_unit_quality = {
-	base = 0
-	modifier = {
-		set_temp_variable = { unit_quality = 50 }
-		subtract_from_temp_variable = { unit_quality = centralisation_variable }
-		divide_temp_variable = { unit_quality = 250 }
-		
-		add = unit_quality
 	}
 }
 
@@ -723,7 +712,7 @@ money_cap = {
 autonomy_frame = {
 	base = 0
 	modifier = {
-		set_temp_variable = { autonomy = autonomy_ratio_val }
+		set_temp_variable = { autonomy = autonomy_ratio }
 		multiply_temp_variable = { autonomy = 100 }
 		
 		add = autonomy

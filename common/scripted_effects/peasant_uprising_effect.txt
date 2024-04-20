@@ -357,6 +357,18 @@ peasant_war_effect = {
 			}
 			five_peasant_units = yes
 		}
+		every_country = {
+			limit = {
+				OR = {
+					has_war_with = PREV.PREV
+					is_in_faction_with = PREV.PREV
+				}
+			}
+			declare_war_on = {
+				target = PREV
+				type = annex_everything
+			}
+		}
 	}
 
 	add_civil_war_target = var:ROOT.peasant_tag

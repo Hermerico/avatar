@@ -2045,10 +2045,34 @@ local_inflation_steal = {
 	}
 }
 
+local_prosperity_cap_base = {
+	base = 0
+	modifier = {
+		
+		set_temp_variable = { local_prosperity_cap_base = var_local_prosperity_growth }
+		set_temp_variable = { prosperity_divider = state_population_k }
+		clamp_temp_variable = { var = prosperity_divider  min = 0.001 }
+		divide_temp_variable = { local_prosperity_cap_base = prosperity_divider }
+		multiply_temp_variable = { local_prosperity_cap_base = 100 }
+
+		clamp_temp_variable = {
+			var = local_prosperity_cap_base
+			min = 1
+		}
+
+		add = local_prosperity_cap_base
+	}
+}
+
 local_prosperity_cap = {
 	base = 0
 	modifier = {
-		set_temp_variable = { local_prosperity_cap = state_population_k }
+		
+		set_temp_variable = { local_prosperity_cap = var_local_prosperity_growth }
+		set_temp_variable = { prosperity_divider = state_population_k }
+		clamp_temp_variable = { var = prosperity_divider  min = 0.001 }
+		divide_temp_variable = { local_prosperity_cap = prosperity_divider }
+		multiply_temp_variable = { local_prosperity_cap = 100 }
 
 		set_temp_variable = { prosperity_factor = 1 }
 		add_to_temp_variable = { prosperity_factor = modifier@prosperity_factor }
@@ -2077,7 +2101,7 @@ prosperity_taxation_efficiency = {
 	modifier = {
 		set_temp_variable = { taxation_efficiency = lp_frame }
 
-		multiply_temp_variable = { taxation_efficiency = 0.005 }
+		multiply_temp_variable = { taxation_efficiency = 0.001 }  ## 10% max
 
 		add = taxation_efficiency
 	}
@@ -2133,12 +2157,6 @@ local_tax_reduction = {
 	base = 0
 	modifier = {
 		set_temp_variable = { local_tax = THIS.local_prosperity }
-		set_temp_variable = { local_clamp = state_population_k }
-		multiply_temp_variable = { local_clamp = 0.1 }
-		clamp_temp_variable = {
-			var = local_tax
-			min = local_clamp
-		}
 
 		controller = {
 			multiply_temp_variable = { local_tax = modifier@taxation }
@@ -2154,12 +2172,6 @@ local_tax = {
 	base = 0
 	modifier = {
 		set_temp_variable = { local_tax = THIS.local_prosperity }
-		set_temp_variable = { local_clamp = state_population_k }
-		multiply_temp_variable = { local_clamp = 0.1 }
-		clamp_temp_variable = {
-			var = local_tax
-			min = local_clamp
-		}
 
 		controller = {
 			multiply_temp_variable = { local_tax = modifier@taxation }
@@ -2329,7 +2341,8 @@ urbanisation_taxation_efficiency = {
 	}
 	modifier = {
 		set_temp_variable = { efficiency = urbanisation_cap }
-		multiply_temp_variable = { efficiency = 0.01 }
+		multiply_temp_variable = { efficiency = 0.01 }  
+		multiply_temp_variable = { efficiency = 0.5 }   ## 0%-50% max
 
 		multiply_temp_variable = { efficiency = urbanisation_percentage }
 		
@@ -2349,7 +2362,7 @@ urbanisation_prosperity_cap = {
 		set_temp_variable = { efficiency = 50 }
 		subtract_from_temp_variable = { efficiency = urbanisation_cap }
 		multiply_temp_variable = { efficiency = -0.01 }
-		multiply_temp_variable = { efficiency = 1.5 }
+		multiply_temp_variable = { efficiency = 1.5 }  ## -75%-75%
 
 		multiply_temp_variable = { efficiency = urbanisation_percentage }
 		

@@ -20,12 +20,10 @@ THE_EARTHKINGDOM = {
 		
 		fire_only_once = yes
 
-		cost = 10
-
-		modifier = {
-			income = -0.20
-			civilian_factory_use = 2
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
+		custom_cost_text = expenses_50
 
 		ai_will_do = {
 			base = 100
@@ -36,6 +34,7 @@ THE_EARTHKINGDOM = {
 		}
 
 		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 50 }
 			unlock_decision_category_tooltip = cabbage_corp_expansion
 			set_country_flag = {
 				flag = cabbage_corp_expansion_active

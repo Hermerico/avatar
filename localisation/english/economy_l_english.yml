@@ -252,7 +252,7 @@
  fishing_stand_progress_ttp:0 "£fishing|2 §YFishing Stand§! is [?fishing_stand_in_construction|Y0]/[?fishing_stand_cost|Y0] ( [?fishing_stand_progress_var|0Y%%] ) completed."
  
  population_number:0 "[?state_population_k|Y2]§YK§!"
- state_population_tooltip:0 "§YState Population§! \nTotal Population: [?state_population_k|Y2]§YK§! \nCivilian Population: [?mtth:state_workforce_k|Y2]§YK§! \nActive Recruits: [?mtth:working_soldiers_k|Y2]§YK§!  \n\nMonthly Population growth: [?population_growth|+=0] \nBase growth: §Y0.03%§! * [?population_growth_factor|2Y] \nFrom country: [?FROM.controller:modifier@monthly_population|%2=+] \nFrom state: [?modifier@monthly_population_state|%2=+] "
+ state_population_tooltip:0 "§YState Population§! \nTotal Population: [?state_population_k|Y2]§YK§! \nCivilian Population: [?mtth:state_workforce_k|Y2]§YK§! \nActive Recruits: [?mtth:working_soldiers_k|Y2]§YK§!  \n\nMonthly Population growth: [?population_growth|+=0] \nBase growth: §Y0.03%§! * [?population_growth_factor|2Y] \nFrom country: [?FROM.controller:modifier@monthly_population|%2=+] \nFrom state: [?modifier@monthly_population_state|%2=+] \n\n§YMigration§! in the last month: [?migration_balance|0=+]"
  workers_number:0 "[?mtth:workers_number|Y2]§YK§!"
  workers_tootlip:0 "§YLocal Workforce§! \nAvailable Workforce: [?mtth:state_workforce_k|Y2]§YK§! \nEmployed in Buildings: [?mtth:workers_number|Y2]§YK§! \n£farming|1 Farmers: [?farm_employed_real|*Y3] \n£milling|1 Millers: [?mill_employed_real|*Y3] \n£fishing|1 Fishers: [?fishing_stand_employed_real|*Y3] \n£ranch|1 Rancher: [?ranch_employed_real|*Y3] \n£lumberjack|1 Lumberjack : [?lumber_mill_employed_real|*Y3] \n£mine|1 Miners: [?mine_employed_real|*Y3]\n£weaving|1 Weaver: [?weaving_employed_real|*Y3] \n£smithy|1 Blacksmiths: [?smithy_employed_real|*Y3] \n£factory|1 Factory Workers: [?factory_employed_real|*Y3] \n£harbour|1 Harbour Workers: [?harbour_employed_real|*Y3]\n£store|1 Shopkeeper: [?shopkeeper_employed_real|*Y3]\n£carpentry|1 Craftsmen: [?craftsman_employed_real|*Y3]"
  working_soldiers_number:0 "[?mtth:working_soldiers_k|Y2]§YK§!"
@@ -260,11 +260,11 @@
  working_soldiers_delayed:0 "§LFor precise construction in this state.§!"
 
  tax_number:0 "[?var_local_tax|Y3]"
- tax_tooltip:0 "§YLocal Taxation§! \nTaxes Efficiency: [?mtth:local_tax_efficiency|+Y%]\nTaxes Wasted: [?mtth:local_tax_waste|=+Y3]"
+ tax_tooltip:0 "§YLocal Taxation§!: [?var_local_tax|3] / [?tax_reduction_inverted|Y3] \n\nTaxes Efficiency: [?mtth:local_tax_efficiency|+Y%]\nTaxes Wasted: [?mtth:local_tax_waste|=+Y3]"
  tax_tooltip_delayed:0 "§LTaxation effects§!"
 
  prosperity_number:0 "[?local_prosperity|Y1]"
- prosperity_tooltip:0 "§YLocal Prosperity§!: [?local_prosperity|3] / [?mtth:local_prosperity_cap|Y3] \n\n£tax_efficiency_texticon  Taxation Efficiency: [?mtth:prosperity_taxation_efficiency|=+%2]\n\nWeekly change: [?real_prosp_growth|=+3] \nCaused by:\n -£construction_capacity_texticon  Productivity: [?var_local_prosperity_growth|+=Y3] \n -£population_texticon  Population need: [?var_local_goods_bought|+=Y3] \n -£taxes_texticon  Taxation: [?var_local_tax_reduction|Y3] \n -£inflation_texticon  Minting: [?var_local_inflation_steal|+=Y3] \n\nContribution to £peoples_initiative_texticon  People's Initiative: [?var_local_investment|+=3]"
+ prosperity_tooltip:0 "§YLocal Prosperity§!: [?local_prosperity|3] / [?mtth:local_prosperity_cap|Y3] \n\n£tax_efficiency_texticon  Taxation Efficiency: [?mtth:prosperity_taxation_efficiency|=+%2] \n£migration_texticon  Migration attraction: [?mtth:prosperity_attraction|=+%2]\n\nWeekly change: [?real_prosp_growth|=+3] \nCaused by:\n -£construction_capacity_texticon  Productivity: [?var_local_prosperity_growth|+=Y3] \n -£population_texticon  Population need: [?var_local_goods_bought|+=Y3] \n -£taxes_texticon  Taxation: [?var_local_tax_reduction|Y3] \n -£inflation_texticon  Minting: [?var_local_inflation_steal|+=Y3] \n\nContribution to £peoples_initiative_texticon  People's Initiative: [?var_local_investment|+=3]"
  prosperity_tooltip_delayed:0 "§LProsperity is an indicator for how wealthy a state is. It influences the consumer behaviour and how much taxes are paid.§!"
 
  urbanisation_number:0 "[?actual_urbanisation|0]/[?urbanisation_cap|0]"

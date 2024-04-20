@@ -576,12 +576,37 @@ scripted_map_modes = {
 
 	urbanisation_map_mode = {
 		top = {
+			
 			type = state
 			color = {
 				set_temp_variable = { red = 0.08 }
 				set_temp_variable = { blue = 0.05 }
 				set_temp_variable = { green = 0.1 }
 				set_temp_variable = { alpha = 0.8 }
+
+				FROM = {
+					set_temp_variable = { urb_sub = urbanisation_cap }
+					divide_temp_variable = { urb_sub = 10 }
+
+					set_temp_variable = { urb = 10 }
+					subtract_from_temp_variable = { urb = urb_sub }
+
+					multiply_temp_variable = { red = urb }
+					multiply_temp_variable = { blue = urb }
+					multiply_temp_variable = { green = urb }
+
+
+				}
+				
+			}
+		}
+		bottom = {
+			type = state
+			color = {
+				set_temp_variable = { red = 0.05 }
+				set_temp_variable = { blue = 0.1 }
+				set_temp_variable = { green = 0.08 }
+				set_temp_variable = { alpha = 0.4 }
 
 				FROM = {
 					set_temp_variable = { urb = urbanisation_cap }
@@ -598,32 +623,6 @@ scripted_map_modes = {
 			}
 
 			targets = {
-				
-			}
-		}
-		bottom = {
-			
-			type = state
-			color = {
-				set_temp_variable = { red = 0.1 }
-				set_temp_variable = { blue = 0.04 }
-				set_temp_variable = { green = 0.08 }
-				set_temp_variable = { alpha = 0.4 }
-
-				FROM = {
-					set_temp_variable = { urb_sub = urbanisation_cap }
-					divide_temp_variable = { urb_sub = 10 }
-
-					set_temp_variable = { urb = 10 }
-					subtract_from_temp_variable = { urb = urb_sub }
-
-
-					multiply_temp_variable = { red = urb }
-					multiply_temp_variable = { blue = urb }
-					multiply_temp_variable = { green = urb }
-
-
-				}
 				
 			}
 		}

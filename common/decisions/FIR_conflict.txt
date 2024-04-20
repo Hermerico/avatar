@@ -286,7 +286,7 @@ FIR_conquest_category = {
 		}
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 200 }
+			subtract_from_variable = { var = money_variable value = 20 }
 			
 		}
 
@@ -304,9 +304,9 @@ FIR_conquest_category = {
 		days_remove = 90
 
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 20 }
 		}
-		custom_cost_text = expenses_200
+		custom_cost_text = expenses_20
 
 		fire_only_once = yes
 		ai_will_do = {
@@ -351,13 +351,16 @@ FIR_conquest_category = {
 			}
 		}
 
-        modifier = {
-			command_power_gain = -0.5
-			civilian_factory_use = 5
+
+		#cost = 100
+		custom_cost_trigger = {
+			command_power > 20
 		}
+		custom_cost_text = honour_cost_20
 
 		complete_effect = {
 			set_country_flag = FIR_attack_plan_made
+			hidden_effect = { add_command_power = -20 }
 		}
 
 		remove_effect = {
@@ -381,11 +384,7 @@ FIR_conquest_category = {
 		}
 
 		days_remove = 30
-
-		custom_cost_trigger = {
-			num_of_civilian_factories > 4
-		}
-		custom_cost_text = manufactory_5
+		
 
 		fire_only_once = yes
 		ai_will_do = {
@@ -431,12 +430,14 @@ FIR_conquest_category = {
 			}
 		}
 
-        modifier = {
-			command_power_gain = -0.5
-			civilian_factory_use = 5
+        #cost = 100
+		custom_cost_trigger = {
+			command_power > 20
 		}
+		custom_cost_text = honour_cost_20
 
 		complete_effect = {
+			hidden_effect = { add_command_power = -20 }
 			set_country_flag = FIR_attack_plan_made
 		}
 
@@ -461,10 +462,6 @@ FIR_conquest_category = {
 
 		days_remove = 30
 
-		custom_cost_trigger = {
-			num_of_civilian_factories > 4
-		}
-		custom_cost_text = manufactory_5
 
 		fire_only_once = yes
  		ai_will_do = {
@@ -511,12 +508,14 @@ FIR_conquest_category = {
 			}
 		}
 
-		modifier = {
-			command_power_gain = -0.5
-			civilian_factory_use = 5
+		#cost = 100
+		custom_cost_trigger = {
+			command_power > 20
 		}
+		custom_cost_text = honour_cost_20
 
 		complete_effect = {
+			hidden_effect = { add_command_power = -20 }
 			set_country_flag = FIR_attack_plan_made
 		}
 
@@ -540,11 +539,6 @@ FIR_conquest_category = {
 		}
 
 		days_remove = 30
-
-		custom_cost_trigger = {
-			num_of_civilian_factories > 4
-		}
-		custom_cost_text = manufactory_5
 
 		fire_only_once = yes
 		ai_will_do = {
@@ -674,7 +668,7 @@ FIR_conquest_category = {
 		}
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 1000 }
+			subtract_from_variable = { var = money_variable value = 100 }
 			
 			
 		}
@@ -691,9 +685,9 @@ FIR_conquest_category = {
 		days_remove = 100
 
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 1000 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
 		}
-		custom_cost_text = expenses_1000
+		custom_cost_text = expenses_100
 
 		fire_only_once = yes
 		ai_will_do = {
@@ -721,7 +715,7 @@ FIR_conquest_category = {
 		}
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 1000 }
+			subtract_from_variable = { var = money_variable value = 100 }
 			
 			
 		}
@@ -741,9 +735,9 @@ FIR_conquest_category = {
 		days_remove = 100
 
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 1000 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
 		}
-		custom_cost_text = expenses_1000
+		custom_cost_text = expenses_100
 
 		fire_only_once = yes
 		ai_will_do = {
@@ -771,7 +765,7 @@ FIR_conquest_category = {
 		}
 
 		complete_effect = {
-			subtract_from_variable = { var = money_variable value = 1000 }
+			subtract_from_variable = { var = money_variable value = 100 }
 			
 		}
 
@@ -790,9 +784,9 @@ FIR_conquest_category = {
 		days_remove = 100
 
 		custom_cost_trigger = {
-			check_variable = { var = money_variable compare = greater_than_or_equals value = 1000 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
 		}
-		custom_cost_text = expenses_1000
+		custom_cost_text = expenses_100
 
 		fire_only_once = yes
 		ai_will_do = {
