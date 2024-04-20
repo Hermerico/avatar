@@ -22,6 +22,7 @@ legitimacy_effects = {
 	political_power_cap = mtth:legitimacy_pp_cap
 	taxation_efficiency = mtth:legitimacy_tax_efficiency
 	war_support_factor = mtth:legitimacy_war_support
+	war_weariness_stability_impact = mtth:legitimacy_war_weariness_stability
 
 	### low centralisation
 	stability_factor = mtth:legitimacy_stability

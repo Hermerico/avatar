@@ -163,6 +163,17 @@ legitimacy_tax_efficiency = {
 	}
 }
 
+legitimacy_war_weariness_stability = {
+	base = 0
+	modifier = {
+		set_temp_variable = { weariness = centralisation_variable }
+		subtract_from_temp_variable = { weariness = 100 }
+		divide_temp_variable = { weariness = 100 }
+		
+		add = weariness
+	}
+}
+
 legitimacy_revolt = {
 	base = 0
 	modifier = {
@@ -249,16 +260,6 @@ war_weariness_peanalty = {
 	modifier = {
 		set_temp_variable = { war_weariness = war_exhaustion_percentage }
 		multiply_temp_variable = { war_weariness = war_weariness }
-		multiply_temp_variable = { war_weariness = -1 }
-		
-		add = war_weariness
-	}
-}
-war_weariness_peanalty_halfed = {
-	base = 0
-	modifier = {
-		set_temp_variable = { war_weariness = war_exhaustion_percentage }
-		multiply_temp_variable = { war_weariness = war_weariness }
 		multiply_temp_variable = { war_weariness = -0.5 }
 		
 		add = war_weariness
@@ -269,7 +270,16 @@ war_weariness_peanalty_2 = {
 	modifier = {
 		set_temp_variable = { war_weariness = war_exhaustion_percentage }
 		multiply_temp_variable = { war_weariness = war_weariness }
-		multiply_temp_variable = { war_weariness = -2 }
+		multiply_temp_variable = { war_weariness = -1 }
+
+		set_temp_variable = { war_weariness_stability_impact = 1 }
+		add_to_temp_variable = { war_weariness_stability_impact = modifier@war_weariness_stability_impact }
+		clamp_temp_variable = {
+			var = war_weariness_stability_impact
+			min = 0
+		}
+
+		multiply_temp_variable = { war_weariness = war_weariness_stability_impact }
 		
 		add = war_weariness
 	}

@@ -97,9 +97,8 @@
 
 
  #general
-transport_equipment:0 "Transport cart"
-transport_equipment_desc:0 "A wooden cart capable of clearing any terrain, if given enough time. A fabric protects the cargo and grass is used to prevent the perishable contents from spoiling."
- EQUIPMENT_VERSION:0 "Version $VERSION|0$"
+ transport_equipment:0 "Transport cart"
+ transport_equipment_desc:0 "A wooden cart capable of clearing any terrain, if given enough time. A fabric protects the cargo and grass is used to prevent the perishable contents from spoiling."
 
  #FIR_EQUIPMENT_VERSION_1:0 "A"
  #FIR_EQUIPMENT_VERSION_2:0 "B"
@@ -1143,7 +1142,8 @@ fire_mine_warfare_1:0 "Nerve Gas Mines"
  warship_hull_3_desc:0 "A massive ship with a reinforced hull made to lead the vanguard."
  warship_hull_4:0 "Ironclad"
  warship_hull_4_desc:0 "A steam ship clad in steel, virtually invulnerable to conventional weapons."
-EQ_MOD_CAT_sails_TITLE:0 "Sails"
-EQ_MOD_CAT_crows_nest_TITLE:0 "Crows Nests"
 
-EQUIPMENT_DESCRIPTION:0 "$NAME$"
+ 
+ EQ_MOD_CAT_sails_TITLE:0 "Sails"
+ EQ_MOD_CAT_crows_nest_TITLE:0 "Crows Nests"
+

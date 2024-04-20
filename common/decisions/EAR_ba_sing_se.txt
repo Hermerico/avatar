@@ -71,16 +71,13 @@ EAR_ba_sing_se_expansion = {
 		days_remove = 1#00
 		days_re_enable = 5#0
 
-		modifier = {
-			building_upkeep_factor = 0.1
-		}
 		custom_cost_trigger = {
-			check_variable = { construction_material > -0.65 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
-		custom_cost_text = construction_material_10
+		custom_cost_text = expenses_50
 
 		complete_effect = {
-			set_country_flag = economic_investments
+			subtract_from_variable = { var = money_variable value = 50 }
 		}
 		remove_effect = {
 			random_controlled_state = {

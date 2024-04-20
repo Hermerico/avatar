@@ -65,82 +65,6 @@ smithy_good = {
 #	}
 }
 
-build_farms = {
-	allowed = {
-		NOT = {
-			OR = {
-				tag = NWT
-				tag = SWT
-			}
-		}
-	}
-	enable = {
-		has_resources_in_country = {
-			resource = oil
-			amount < 0
-		}
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = building_target
-		id = farm
-		value = 1000
-	}
-}
-
-build_ranches = {
-	allowed = {
-		always = yes
-	}
-	enable = {
-		has_resources_in_country = {
-			resource = chromium
-			amount < 0
-		}
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = building_target
-		id = ranch
-		value = 1000
-	}
-}
-
-build_quarries = {
-	allowed = {
-		always = yes
-	}
-	enable = {
-		has_resources_in_country = {
-			resource = stone
-			amount < 0
-		}
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = building_target
-		id = quarry
-		value = 1000
-	}
-}
-
-build_lumber_mills = {
-	allowed = {
-		always = yes
-	}
-	enable = {
-		has_resources_in_country = {
-			resource = aluminium
-			amount < 0
-		}
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = building_target
-		id = lumber_mill
-		value = 1000
-	}
-}
 
 build_weavings = {
 	allowed = {
@@ -161,30 +85,6 @@ build_weavings = {
 	ai_strategy = {
 		type = building_target
 		id = animal_weaving
-		value = 1000
-	}
-}
-
-build_mines = {
-	allowed = {
-		always = yes
-	}
-	enable = {
-		OR = {
-			has_resources_in_country = {
-				resource = iron
-				amount < 0
-			}
-			has_resources_in_country = {
-				resource = rubber
-				amount < 0
-			}
-		}
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = building_target
-		id = mine
 		value = 1000
 	}
 }

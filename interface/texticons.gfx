@@ -1327,6 +1327,11 @@ spriteTypes = {
 		texturefile = "gfx/texticons/civ_factory.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_factory_consumption"
+		texturefile = "gfx/texticons/factory_consumption.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_decrease_texticon"

@@ -366,7 +366,7 @@ count_buildings_in_states = {
 	add_to_variable = { ROOT.crop_weaving_count = building_level@crop_weaving }
 	add_to_variable = { ROOT.animal_weaving_count = building_level@animal_weaving }
 	add_to_variable = { ROOT.mine_count = building_level@mine }
-	add_to_variable = { ROOT.steelworks_count = uilding_level@steelworks }
+	add_to_variable = { ROOT.steelworks_count = building_level@steelworks }
 
 	add_to_variable = { ROOT.smithy_count = building_level@arms_factory }
 	add_to_variable = { ROOT.factory_count = building_level@factory }

@@ -56,6 +56,12 @@ war_weariness_factor = {							#### multiplier for war weariness gain
 	precision = 1
 	postfix = none
 }
+war_weariness_stability_impact = {					#### effects on stability from war weariness
+	color_type = bad
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
 
 
 animal_breeding_factor = {							#### reproduction rate for animals
