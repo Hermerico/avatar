@@ -1134,6 +1134,7 @@ EAR_dai_li_category = {
 						}
 						transfer_state_to = WAT
 					}
+					country_event = western.3
 				}
 				set_global_flag = west_temple_survived
 			}

@@ -1462,3 +1462,29 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = air_gen.9
+	title = air_gen.9.t
+	desc = air_gen.9.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = air_gen.9.a
+		add_named_threat = {
+			name = fire_nations_genocide_attempt
+			threat = 40
+		}
+		FIR = {
+			add_country_leader_trait = known_mass_murderer
+			
+		}
+		ROOT = {
+			add_to_variable = {
+				name = ROOT.knowledge_variable
+				value = 500
+			}
+			add_country_leader_trait = icon_of_resistance
+		}	
+	}
+}
