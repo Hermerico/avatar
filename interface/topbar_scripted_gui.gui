@@ -14,12 +14,12 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
-		iconType ={
-			name ="pp_ratio_bar"
-			spriteType = "GFX_topbar_pp_bar"
-			position = { x=100 y=36 }
-			alwaystransparent = yes
-		}
+		#iconType ={
+		#	name ="pp_ratio_bar"
+		#	spriteType = "GFX_topbar_pp_bar"
+		#	position = { x=100 y=36 }
+		#	alwaystransparent = yes
+		#}
 
 		iconType ={
 			name ="pol_power_icon"
@@ -113,6 +113,20 @@ guiTypes = {
 			name ="political_power_decrease"
 			spriteType = "GFX_decrease_texticon"
 			position = { x=96 y=48 }
+			alwaystransparent = yes
+		}
+
+
+		iconType ={
+			name ="trasury_increase"
+			spriteType = "GFX_increase_texticon"
+			position = { x=168 y=48 }
+			alwaystransparent = yes
+		}
+		iconType ={
+			name ="trasury_decrease"
+			spriteType = "GFX_decrease_texticon"
+			position = { x=168 y=48 }
 			alwaystransparent = yes
 		}
 

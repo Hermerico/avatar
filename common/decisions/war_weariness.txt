@@ -80,4 +80,109 @@ war_weariness_category = {
 			}
 		}
 	}
+
+
+	occupation_department = {
+
+		visible = {
+			num_occupied_states > 9
+		}
+		available = {
+			check_variable = { 
+				var = occupation_accumulated_exhaustion
+				value = 20
+				compare = greater_than_or_equals
+				tooltip = at_least_occupation_war_weariness_tooltip
+			}
+		}
+
+		days_remove = -1
+		#days_re_enable = 10
+
+		modifier = {
+			weekly_occupation_war_weariness = -0.5
+			garrison_factor_modifier = 0.1
+		}
+
+		remove_trigger = {
+			check_variable = { 
+				var = occupation_accumulated_exhaustion
+				value = 20
+				compare = less_than_or_equals
+				tooltip = at_most_occupation_war_weariness_tooltip
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = occupation_accumulated_exhaustion
+				value = -15
+				tooltip = occupation_war_weariness_remove_tooltip
+			}
+		}
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { occupation_accumulated_exhaustion > 20 }
+				}
+				add = 50
+			}
+			modifier = {
+				stockpile_ratio = {
+					archetype = spear_equipment
+					ratio < 0.1
+				}
+				stockpile_ratio = {
+					archetype = heavy_armor_equipment
+					ratio < 0.1
+				}
+				factor = 0
+			}
+		}
+	}
+
+	public_war_propaganda = {
+
+		visible = {
+			
+		}
+		available = {
+			check_variable = {
+				var = current_authority
+				value = 60
+				compare = greater_than_or_equals
+				tooltip = check_authority_tooltip
+			}
+		}
+
+		days_remove = -1
+		#days_re_enable = 10
+
+		modifier = {
+			war_weariness_factor = -0.05
+			income = -0.1
+		}
+
+		remove_trigger = {
+			check_variable = {
+				var = current_authority
+				value = 60
+				compare = less_than_or_equals
+				tooltip = check_liberty_tooltip
+			}
+		}
+		remove_effect = {
+			add_political_power = -50
+		}
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
 }

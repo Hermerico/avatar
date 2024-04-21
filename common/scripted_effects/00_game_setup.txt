@@ -39,6 +39,9 @@ permanent_spirits_and_modifiers = {
 	}
 	add_dynamic_modifier = { modifier = population_resource_bought_on_market }
 	add_dynamic_modifier = { modifier = building_upkeep_resources }
+	add_dynamic_modifier = { modifier = civs_from_tax_buy }
+	add_dynamic_modifier = { modifier = civs_from_conversion }
+	add_dynamic_modifier = { modifier = mils_and_dockyards_extra }
 	add_dynamic_modifier = { modifier = logistics_and_orga_spirit }
 	add_dynamic_modifier = { modifier = wages_and_professionalism_spirit }
 	add_dynamic_modifier = { modifier = unit_leader_spirit }

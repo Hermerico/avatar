@@ -27,6 +27,38 @@ spriteTypes = {
 		texturefile = "gfx/texticons/age_5.dds"
 		legacy_lazy_load = no
 	}
+
+	spriteType = {
+		name = "GFX_peasant_texticon"
+		texturefile = "gfx/texticons/peasant_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_labourers_texticon"
+		texturefile = "gfx/texticons/labourers_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_nobility_texticon"
+		texturefile = "gfx/texticons/nobility_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_industrialist_texticon"
+		texturefile = "gfx/texticons/industrialist_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_academics_texticon"
+		texturefile = "gfx/texticons/academics_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_clergy_texticon"
+		texturefile = "gfx/texticons/clergy_texticon.dds"
+		legacy_lazy_load = no
+	}
+
 	spriteType = {
 		name = "GFX_age_6_texticon"
 		texturefile = "gfx/texticons/age_6.dds"

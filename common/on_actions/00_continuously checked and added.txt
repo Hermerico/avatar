@@ -6,6 +6,30 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {
+						has_dynamic_modifier = { modifier = civs_from_tax_buy }
+					}
+				}
+				add_dynamic_modifier = { modifier = civs_from_tax_buy }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = civs_from_conversion }
+					}
+				}
+				add_dynamic_modifier = { modifier = civs_from_conversion }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = mils_and_dockyards_extra }
+					}
+				}
+				add_dynamic_modifier = { modifier = mils_and_dockyards_extra }
+			}
+			if = {
+				limit = {
+					NOT = {
 						has_dynamic_modifier = { modifier = factory_resource_consumption }
 					}
 				}

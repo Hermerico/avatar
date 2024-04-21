@@ -1,8 +1,8 @@
 ﻿l_english:
  political_power_cap:0 "Political Power Capacity reached"
  legitimacy_effects:0 "£centralisation_weekly_texticon  Centralisation"
- unit_quality_effects:0 "Unit Quality"
- war_weariness_dynamic_modifier:0 "War Weariness"
+ unit_quality_effects:0 "£unit_quality_texticon  Unit Quality"
+ war_weariness_dynamic_modifier:0 "£war_weariness_texticon  War Weariness"
 
  logistics_and_orga_spirit:0 "Logistics Level"
  wages_and_professionalism_spirit:0 "Training Level"
@@ -63,7 +63,10 @@
  additional_scripted_resources:0 "£self_employed_texticon  Self Sufficient Output"
  population_resource_bought_on_market:0 "£consumer_goods_texticon  Population need"
  factory_resource_consumption:0 "£factory_consumption  Factory Consumption"
- building_upkeep_resources:0 "£construction_material_texticon  Building Upkeep"
+ building_upkeep_resources:0 "£construction_material_texticon  Construction Resources"
+ civs_from_tax_buy:0 "£taxes_texticon  Bought with Taxation"
+ civs_from_conversion:0 "£mil_civ  Militaries used in Civil Sector"
+ mils_and_dockyards_extra:0 "£mil_factory  £dockyard_texticon  Military and Naval Capacities"
  dynamic_bender_capacity:0 "Bender recruitment Law"
  farm_scripted_resources:0 "$farm_plural$"
  ranch_scripted_resources:0 "$ranch_plural$"
