@@ -92,6 +92,12 @@
  autonomy_satelit_state:0 "Satelite"
  autonomy_imperial_dominion:0 "Dominion"
  autonomy_imperial_colony:0 "Colony"
+ autonomy_military_state:0 "Military State"
+ autonomy_territorial_fief:0 "Territorial Fief"
+ autonomy_spiritual_acolyte:0 "Spiritual Acolyte"
+ autonomy_tribal_colony:0 "Tribal Colony"
+ autonomy_tribal_protectorate:0 "Tribal Protectorate"
+ autonomy_tribal_puppet:0 "Tribal Puppet"
 
  low_vassal_taxes:0 "Low Vassal Tax"
  medium_vassal_taxes:0 "Medium Vassal Tax"
