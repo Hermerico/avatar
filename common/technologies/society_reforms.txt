@@ -59,7 +59,8 @@ technologies = {
 			conservative_0
 		}
 		
-		bender_target = 0.15
+		bender_target = 0.02
+		peasant_opinion = 1
 		
 		research_cost = 2.5
 		#start_year = 5
@@ -109,7 +110,7 @@ technologies = {
 			add_dynamic_modifier = { modifier = clergy_dynamic_modifier }
 		}
 
-		bender_growth = 0.1
+		bender_growth = 0.006
 		clergy_opinion = 5
 		
 		research_cost = 2.5
@@ -209,10 +210,10 @@ technologies = {
 	}
 	progressive_culture_0 = {
 
-		academics_opinion = 5
-		taxation_efficiency = 0.05
-		revolt_risk = -0.1
-		centralisation_target_modifier = 0.4
+		academics_opinion = 1
+		taxation_efficiency = 0.02
+		revolt_risk = -0.075
+		centralisation_target_modifier = 0.04
 
 
 		research_cost = 2.5
@@ -309,7 +310,7 @@ technologies = {
 			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
 		}
 		
-		monthly_population = 0.04
+		monthly_population = 0.1
 		research_speed_factor = 0.02
 		
 		research_cost = 2.5
@@ -413,8 +414,8 @@ technologies = {
 			writing = 1
 		}
 
-		stability_factor = 0.1
-		monthly_population = 0.08
+		peasant_output_factor = 0.05
+		monthly_population = 0.12
 
 		research_cost = 2.5
 		#start_year = 12
@@ -443,7 +444,7 @@ technologies = {
 	conservative_education_0 = {
 		
 		stability_factor = 0.1
-		weekly_casualties_war_support = 0.005
+		weekly_casualty_war_weariness = -0.015
 		research_speed_factor = 0.04
 		knowledge = 0.04
 
@@ -502,9 +503,9 @@ technologies = {
 			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
 		}
 		
-		monthly_population = 0.02
+		monthly_population = 0.08
 		clergy_opinion = 2
-		stability = 0.05
+		stability_factor = 0.05
 		
 		research_cost = 2.5
 		#start_year = 64
@@ -600,11 +601,11 @@ technologies = {
 			conservative_1
 		}
 		
-		political_power_cap = 10
+		prosperity_factor = 0.05
 		migration_attraction = 0.1
-		core_state_cost_factor = -0.15
-		settler_defiance = -0.15
-		colonise_state_cost_factor = -0.15
+		core_state_cost_factor = -0.1
+		settler_defiance = -0.1
+		colonise_state_cost_factor = -0.1
 		
 		research_cost = 2.5
 		#start_year = 20
@@ -650,6 +651,7 @@ technologies = {
 			progressive_1
 		}
 		
+		martial_art_cost_factor = -0.1
 		political_power_cap = 10
 		party_popularity_stability_factor = 0.2
 		clergy_opinion = 4
@@ -680,9 +682,9 @@ technologies = {
 	}
 	
 	progressive_economy_1 = {
-	
-		political_power_gain = 0.2
+		
 		production_factory_max_efficiency_factor = 0.025
+		production_factory_efficiency_gain_factor = 0.04
 		
 		research_cost = 2.5
 		#start_year = 24
@@ -713,8 +715,9 @@ technologies = {
 		dependencies = {
 			measurements = 1
 		}
-		peasant_food_factor = 0.2
-		production_lack_of_resource_penalty_factor = -0.5
+
+		minister_of_finance_cost_factor = -0.1
+		local_resources_factor = 0.12
 
 		research_cost = 2.5
 		#start_year = 24
@@ -742,9 +745,9 @@ technologies = {
 	}
 	progressive_culture_1 = {
 
-		urbanisation_country_factor = 0.05
-		taxation_efficiency = 0.02
-		centralisation_target_modifier = 0.05
+		urbanisation_country_factor = 0.06
+		taxation_efficiency = 0.025
+		centralisation_target_modifier = 0.04
 		labourers_opinion = 2
 
 		research_cost = 2.5
@@ -869,7 +872,8 @@ technologies = {
 	conservative_economy_1 = {
 	
 		production_factory_start_efficiency_factor = 0.02
-		production_factory_efficiency_gain_factor = 0.04
+		expenses_per_pop = -0.1
+		research_speed_factor = -0.04
 		
 		research_cost = 2.5
 		#start_year = 24
@@ -898,7 +902,8 @@ technologies = {
 	
 	conservative_resources_1 = {
 
-		local_resources_factor = 0.12
+		peasant_food_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.5
 
 		research_cost = 2.5
 		#start_year = 24
@@ -929,7 +934,7 @@ technologies = {
 		peoples_initiative = 0.1
 		urbanisation_country_factor = -0.04
 		peasant_opinion = 5
-		monthly_population = 0.12
+		monthly_population = 0.14
 
 		research_cost = 2.5
 		#start_year = 12
@@ -1015,7 +1020,8 @@ technologies = {
 			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
 		}
 		
-		monthly_population = 0.14
+		monthly_population = 0.16
+		knowledge = 0.04
 		
 		research_cost = 2.5
 		#start_year = 64
@@ -1062,8 +1068,9 @@ technologies = {
 		}
 		
 		production_factory_max_efficiency_factor = 0.025
-		urbanisation_country_factor = 0.10
+		prosperity_factor = 0.1
 		expenses_per_pop = -0.05
+		nobility_opinion = 5
 		
 		research_cost = 2.5
 		#start_year = 32
@@ -1108,8 +1115,7 @@ technologies = {
 			conservative_2
 		}
 		
-		political_power_gain = 0.25
-		industry_air_damage_factor = -0.1
+		industry_air_damage_factor = -0.15
 		academics_opinion = 5
 		peasant_opinion = 5
 		labourers_opinion = 5
@@ -1160,9 +1166,11 @@ technologies = {
 			progressive_2
 		}
 		
-		political_power_gain = 0.5
+		political_power_gain = 0.2
+		political_power_cap = 10
 		war_stability_factor = 0.15
-		#clergy_opinion = 5
+		nobility_opinion = 2
+		clergy_opinion = 3
 		
 		research_cost = 2.5
 		#start_year = 36
@@ -1255,7 +1263,7 @@ technologies = {
 
 		party_popularity_stability_factor = -0.1
 		stability_factor = 0.15
-		settler_defiance = -0.05
+		settler_defiance = -0.1
 		migration_attraction = 0.1
 
 		research_cost = 2.5
@@ -1291,6 +1299,7 @@ technologies = {
 			add_dynamic_modifier = { modifier = academics_dynamic_modifier }
 		}
 		
+		academia_cost_factor = -0.10
 		political_power_gain = 0.1
 		research_speed_factor = 0.06
 		academics_opinion = 4
@@ -1351,7 +1360,8 @@ technologies = {
 		}
 		
 		prosperity_factor = 0.05
-		monthly_population = 0.10
+		monthly_population = 0.18
+		urbanisation_cost = 0.1
 		
 		research_cost = 2.5
 		#start_year = 64
@@ -1453,8 +1463,8 @@ technologies = {
 			writing = 1
 		}
 
-		bender_target = 0.10
-		bender_growth = 0.05
+		bender_target = 0.06
+		bender_growth = 0.002
 
 		research_cost = 2.5
 		#start_year = 12
@@ -1489,6 +1499,7 @@ technologies = {
 			add_dynamic_modifier = { modifier = clergy_dynamic_modifier }
 		}
 		
+		clergy_cost_factor = -0.1
 		expenses_per_pop = -0.05
 		research_speed_factor = 0.04
 		academics_opinion = -5
@@ -1551,7 +1562,8 @@ technologies = {
 		}
 		
 		consumer_demand = -0.1
-		monthly_population = 0.04
+		monthly_population = 0.08
+		urbanisation_cost = -0.05
 		
 		research_cost = 2.5
 		#start_year = 64
@@ -1595,12 +1607,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		money_capacity = 0.1
-		reservist_wages = -0.1
+		civilian_cost_factor = -0.15
 		production_factory_max_efficiency_factor = 0.025
-		urbanisation_country_factor = 0.05
-		core_state_cost_factor = -0.05
-		colonise_state_cost_factor = -0.05
+		urbanisation_country_factor = 0.06
+		core_state_cost_factor = -0.1
+		colonise_state_cost_factor = -0.1
 		
 		
 		research_cost = 2.5
@@ -1652,8 +1663,12 @@ technologies = {
 		
 		peasant_opinion = 5
 		labourers_opinion = 5
-		political_power_gain = 0.7
-		law_change_cost = -0.2
+		mobilization_laws_cost_factor = -0.25
+        bender_laws_cost_factor = -0.25
+        trade_laws_cost_factor = -0.25
+        economy_cost_factor = -0.25
+        family_support_cost_factor = -0.25
+        education_laws_cost_factor = -0.25
 		
 		research_cost = 2.5
 		#start_year = 52
@@ -1703,7 +1718,8 @@ technologies = {
 		
 		political_power_gain = 0.5
 		political_power_cap = 10
-		ministry_advisor_cost = -0.15
+		minister_of_justice_cost_factor = -0.1
+		law_enforcement_cost_factor = -0.1
 		officer_wages = 0.15
 		unit_quality_target = 0.05
 		
@@ -1770,7 +1786,9 @@ technologies = {
 		dependencies = {
 			statistics = 1
 		}
-		local_resources_factor = 0.12
+		local_resources_factor = 0.06
+		equipment_conversion_speed = 0.2
+		minister_of_works_cost_factor = -0.1
 
 		research_cost = 2.5
 		#start_year = 56
@@ -1798,9 +1816,10 @@ technologies = {
 	}
 	progressive_culture_3 = {
 
-		urbanisation_country_factor = 0.05
-		political_power_gain = 0.1
-		centralisation_target_modifier = 0.05
+		migration_attraction = 0.1
+		non_core_manpower = 0.1
+		core_state_cost_factor = -0.1
+		colonise_state_cost_factor = -0.1
 
 		research_cost = 2.5
 		#start_year = 12
@@ -1887,7 +1906,7 @@ technologies = {
 		}
 		
 		research_speed_factor = 0.04
-		monthly_population = 0.06
+		monthly_population = 0.18
 		urbanisation_country_factor = 0.02
 		
 		research_cost = 2.5
@@ -1959,7 +1978,7 @@ technologies = {
 	
 	conservative_resources_3 = {
 
-		local_resources_factor = 0.06
+		local_resources_factor = 0.08
 		peasant_output_factor = 0.12
 
 		research_cost = 2.5
@@ -1989,9 +2008,10 @@ technologies = {
 	conservative_culture_3 = {
 
 		peoples_initiative = 0.15
-		urbanisation_country_factor = -0.06
+		urbanisation_country_factor = -0.04
 		peasant_opinion = 5
-		monthly_population = 0.3
+		monthly_population = 0.08
+		expenses_factor = -0.1
 
 		research_cost = 2.5
 		#start_year = 12
@@ -2077,7 +2097,7 @@ technologies = {
 			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
 		}
 		
-		monthly_population = 0.08
+		monthly_population = 0.06
 		experience_loss_factor = -0.05
 		war_weariness_factor = -0.1
 		
@@ -2129,6 +2149,7 @@ technologies = {
 			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
 		}
 		
+		minister_of_culture_cost_factor = -0.1
 		production_factory_max_efficiency_factor = 0.05
 		taxation_efficiency = 0.15
 		army_core_defence_factor 0.05
@@ -2184,9 +2205,9 @@ technologies = {
 			conservative_4
 		}
 		
-		stability = 0.15
+		prosperity_factor = 0.05
+		stability_factor = 0.15
 		refit_ic_cost = -0.5
-		equipment_conversion_speed = 0.2
 		labourers_opinion = 3
 		industrialist_opinion = 3
 		academics_opinion = 3
@@ -2235,8 +2256,8 @@ technologies = {
 			progressive_4
 		}
 		
-		weekly_casualty_war_weariness = -0.3
-		war_weariness_factor = -0.15
+		weekly_casualty_war_weariness = -0.20
+		war_weariness_factor = -0.10
 		party_popularity_stability_factor = 0.25
 		
 		research_cost = 2.5
@@ -2332,7 +2353,8 @@ technologies = {
 			applied_mathematics = 1
 		}
 
-		urbanisation_country_factor = 0.05
+		urbanisation_country_factor = 0.08
+		centralisation_target_modifier = 0.06
 		research_speed_factor = 0.15
 		stability_factor = -0.2
 
@@ -2340,7 +2362,7 @@ technologies = {
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 40 }
+			position = { x = -5 y = 40 }
 		}
 		
 		ai_will_do = {
@@ -2426,14 +2448,14 @@ technologies = {
 			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
 		}
 		
-		urbanisation_country_factor = 0.05
-		monthly_population = 0.15
+		urbanisation_country_factor = 0.08
+		monthly_population = 0.24
 		
 		research_cost = 2.5
 		#start_year = 64
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 40 }
+			position = { x = -1 y = 40 }
 		}
 
 		#folder = {
@@ -2493,6 +2515,8 @@ technologies = {
 	
 	conservative_resources_4 = {
 
+		army_cost_factor = -0.1
+		navy_cost_factor = -0.1
 		local_resources_factor = 0.12
 
 		research_cost = 2.5
@@ -2525,14 +2549,15 @@ technologies = {
 			energy_manipulation = 1
 		}
 
-		bender_growth = 0.15
-		bender_target = 0.15
+		party_popularity_stability_factor = 0.1
+		bender_growth = 0.004
+		bender_target = 0.04
 
 		research_cost = 2.5
 		#start_year = 12
 		folder = {
 			name = electronics_folder
-			position = { x = 6 y = 40 }
+			position = { x = 7 y = 40 }
 		}
 		
 		ai_will_do = {
@@ -2557,7 +2582,7 @@ technologies = {
 			genetics = 1
 		}
 		
-		civil_leader_cost_factor = -0.15
+		minister_of_personnel_cost_factor = -0.1
 		prosperity_factor = 0.15
 		research_speed_factor = 0.04
 		knowledge_gain = 0.20
@@ -2617,13 +2642,13 @@ technologies = {
 		}
 		
 		experience_loss_factor = -0.15
-		monthly_population = 0.1
+		monthly_population = 0.2
 		
 		research_cost = 2.5
 		#start_year = 64
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 40 }
+			position = { x = 3 y = 40 }
 		}
 
 		#folder = {
