@@ -1222,7 +1222,7 @@ factory_calculations = {
 	set_variable = { factories_bought_price = 10 }
 	multiply_variable = { factories_bought_price = mtth:civilian_cost_factor }
 	multiply_variable = { factories_bought = factories_bought_price }
-	multiply_variable = { factories_bought = construction_material_factor }
+	#multiply_variable = { factories_bought = construction_material_factor }
 	round_variable = factories_bought
 
 	set_variable = { ic = factories_bought }

@@ -411,7 +411,7 @@
  light_armor_equipment_2_desc:0"A metal breastplate can potentially deflect slashing or stabbing attacks."
  light_armor_equipment_3:0"Bronze Breastplate"
  light_armor_equipment_3_desc:0"Stronger and more durable than its copper counterpart."
- light_armor_equipment_4:0"Iron Breastplat"
+ light_armor_equipment_4:0"Iron Breastplate"
  light_armor_equipment_4_desc:0"Not only can it save your life in a fight, it will also spare you some broken ribs."
  light_armor_equipment_5:0"Iron Cuirass"
  light_armor_equipment_5_desc:0"The perfect balance between decent protection without hampering mobility."
@@ -448,7 +448,7 @@
  catapult_equipment_2:0 "Light Onager"
  catapult_equipment_2_desc:0 "This siege weapon is accurate and efficient at bringing down enemy walls or gates."
  catapult_equipment_3:0 "Heavy Onager"
- catapult_equipment_3_desc:0 "With a skille crew, this massive siege device is capable of leveling pretty anything in its path."
+ catapult_equipment_3_desc:0 "With a skilled crew, this massive siege device is capable of leveling pretty anything in its path."
  catapult_equipment_4:0 "Trebuchet"
  catapult_equipment_4_desc:0 "This towering contraption can hurl massive projectiles over the enemy defences and hit targets behind their defensive lines. Invaluable for any seige."
  catapult_equipment_5:0 "Bombard Cannon"
@@ -483,7 +483,15 @@
  trebuchet_upgrade_2:0 "Siege Engineers"
  trebuchet_upgrade_2_desc:0 "Those experienced in siegecraft will oversee the handling and use of our siege engines to maximize their potential."
 
+ armored_train:0 "Armored Train" 
+ armored_train_desc:0 "An armored engine car towing 6 cars, each with 20 mm of armor plating at the sides and 15 mm at the front and back."
  fire_tank:0 "Fire Tank"
+ fire_tank_desc:0 "A tracked armored vehicle carrying a driver and a firebender who shoots out of a slit in its turret."
+ tundra_tank:0 "Tundra Tank"
+ tundra_tank_desc:0 "A variant of the Fire Tank equipped with spikes on its two large wheels to better cross over frozen terrain."
+ siege_tundra_tank:0 "Siege Tundra Tank"
+ siege_tundra_tank_desc:0 "A tundra tank carrying a large ballista to engage armoured and fortified targets."
+
  tank_equipment_1:0 "Landship Prototype"
  tank_equipment_1_desc:0 "Overland war vehicles have been a topic of great interest within the Fire Nation military. With our advancements in metallurgy and steam technology, these new armored prototypes are ready for field testing."
  tank_equipment_2:0 "Improved Landship"
@@ -540,6 +548,7 @@
 
 
  earth_tank:0 "Earth Tank"
+ earth_tank_desc:0 "A long segmented tracked vehicle powered by earth bending."
  earth_tank_equipment_1:0 "Landcrawler Prototype"
  earth_tank_equipment_1_desc:0 "Overland war vehicles have been a topic of great interest within the Fire Nation military. With our advancements in metallurgy and steam technology, these new armored prototypes are ready for field testing."
  earth_tank_equipment_2:0 "Improved Landcrawler"

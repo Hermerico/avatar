@@ -301,87 +301,6 @@ buildings = {
 
 	#### shared buildings
 
-	crop_weaving = {
-		show_on_map = 1
-		base_cost = 4100
-		icon_frame = 8
-		max_level = 50
-		shares_slots = yes
-		value = 4
-		infrastructure_construction_effect = yes
-		
-
-		show_modifier = yes
-		#country_resource_cost_oil = 6
-		#local_resources_tungsten = 10
-		weaver_k = 0.10
-		building_upkeep_cost = 1
-
-		urbanisation = 0.1
-	}
-
-	animal_weaving = {
-		show_on_map = 1
-		base_cost = 4100
-		icon_frame = 9
-		max_level = 50
-		shares_slots = yes
-		value = 4
-		infrastructure_construction_effect = yes
-		
-
-		show_modifier = yes
-		#country_resource_cost_chromium = 5
-		#local_resources_tungsten = 10
-		weaver_k = 0.10
-		building_upkeep_cost = 1
-
-		urbanisation = 0.1
-	}
-
-	mill = {
-		show_on_map = 6
-		base_cost = 4600
-		icon_frame = 30
-		max_level = 50
-		shares_slots = yes
-		value = 3
-		infrastructure_construction_effect = yes
-
-		#local_resources_food_resource = 4
-		#country_resource_cost_oil = 4
-
-		show_modifier = yes
-		miller_k = 0.060
-		building_upkeep_cost = 1
-
-		urbanisation = 0.1
-	}
-
-	steelworks = {
-		show_on_map = 1
-		base_cost = 18000
-		icon_frame = 10
-		max_level = 50 # This is the max unlock level
-		shares_slots = yes
-		value = 5
-		infrastructure_construction_effect = yes
-
-		#country_resource_cost_iron = 20
-		#country_resource_cost_stone = 1
-		#local_resources_steel = 10
-
-		custom_modifier_tooltip = steelworks_tt
-
-		industrial_worker_k = 0.400
-
-		show_modifier = yes
-		#fuel_gain_from_states = -10.0 #per hour
-		building_upkeep_cost = 3
-
-		urbanisation = 0.6
-	}
-
 	arms_factory = {
 		show_on_map = 6
 		base_cost = 22000
@@ -466,6 +385,89 @@ buildings = {
 		building_upkeep_cost = 3
 
 		urbanisation = 1.4
+	}
+
+	
+
+	crop_weaving = {
+		show_on_map = 1
+		base_cost = 4100
+		icon_frame = 8
+		max_level = 50
+		shares_slots = yes
+		value = 4
+		infrastructure_construction_effect = yes
+		
+
+		show_modifier = yes
+		#country_resource_cost_oil = 6
+		#local_resources_tungsten = 10
+		weaver_k = 0.10
+		building_upkeep_cost = 1
+
+		urbanisation = 0.1
+	}
+
+	animal_weaving = {
+		show_on_map = 1
+		base_cost = 4100
+		icon_frame = 9
+		max_level = 50
+		shares_slots = yes
+		value = 4
+		infrastructure_construction_effect = yes
+		
+
+		show_modifier = yes
+		#country_resource_cost_chromium = 5
+		#local_resources_tungsten = 10
+		weaver_k = 0.10
+		building_upkeep_cost = 1
+
+		urbanisation = 0.1
+	}
+
+	mill = {
+		show_on_map = 6
+		base_cost = 4600
+		icon_frame = 30
+		max_level = 50
+		shares_slots = yes
+		value = 3
+		infrastructure_construction_effect = yes
+
+		#local_resources_food_resource = 4
+		#country_resource_cost_oil = 4
+
+		show_modifier = yes
+		miller_k = 0.060
+		building_upkeep_cost = 1
+
+		urbanisation = 0.1
+	}
+
+	steelworks = {
+		show_on_map = 1
+		base_cost = 18000
+		icon_frame = 10
+		max_level = 50 # This is the max unlock level
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+
+		#country_resource_cost_iron = 20
+		#country_resource_cost_stone = 1
+		#local_resources_steel = 10
+
+		custom_modifier_tooltip = steelworks_tt
+
+		industrial_worker_k = 0.400
+
+		show_modifier = yes
+		#fuel_gain_from_states = -10.0 #per hour
+		building_upkeep_cost = 3
+
+		urbanisation = 0.6
 	}
 
 	consumer_good_factory = {

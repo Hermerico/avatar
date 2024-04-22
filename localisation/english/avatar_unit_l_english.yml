@@ -69,7 +69,8 @@ swordsmen:0 "Swordsmen"
 swordsmen_desc:0 "A lighter Infantry Unit. Better suited for offenses or combat in close environments."
 pikemen:0 "Polearmsmen"
 pikemen_desc:0 "A heavy armored Infantry unit with a two handed weapon fit to beat both armor and mounted foes."
-
+peasant_unit:0 "Peasants"
+peasant_unit_desc:0 "Peasants who have mustered up the courage to use their work tools for battle."
 archers:0 "Archers"
 archers_desc:0 "Can deal a lot of damage, but are very vunerable."
 skirmishers:0 "Skirmishers"
@@ -179,6 +180,8 @@ ranged_camelophant:0 "Camel Elephants"
 ranged_camelophant_desc:0 "Camel Elephants"
 bender_camelophant:0 "Bender Camel Elephants"
 bender_camelophant_desc:0 "Camel Elephants with Sandbenders"
+
+
 
 
 watertribe_canoe:0 "Canoe"

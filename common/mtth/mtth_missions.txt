@@ -17,6 +17,14 @@ get_emergencies = {
 
 	modifier = {
 		OR = {
+			has_dynamic_modifier = { modifier = famine }
+			has_dynamic_modifier = { modifier = food_shortages }
+		}
+		add = 1
+	}
+
+	modifier = {
+		OR = {
 			check_variable = { war_exhaustion_variable > 10 }
 			has_war = yes
 		}

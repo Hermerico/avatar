@@ -26,7 +26,7 @@
  TOPBAR_CONVOY_STRING:0 "$FREE|^0$"
  MILITARY_FACTORIES_STATUS:0 "£mil_factory  Military Capacity: §Y$USED$§! of §Y$TOTAL$§! used"
  TOPBAR_FACTORY_STATUS_OWNED: "Owned: $COUNT|H$"
- TOPBAR_FACTORY_STATUS_OCCUPIED: "From economy and taxation: §G+$COUNT$§!"
+ TOPBAR_FACTORY_STATUS_OCCUPIED: "From occupation: §G+$COUNT$§!"
  TOPBAR_FACTORY_STATUS_TRADED: "From trade: §G+$COUNT$§!"
  TOPBAR_FACTORY_STATUS_DAMAGED: "Damaged: §R-$COUNT$§!"
  DAMAGED_MILITARY_FACTORIES:0 "£mil_factory_damaged  Damaged Military Capacities: $COUNT|H$"

@@ -1,0 +1,16 @@
+famine_management_category = {
+	icon = war_weariness
+
+	priority = 100
+
+	allowed = {
+		always = yes 
+	}
+	visible = {
+		OR = {
+			has_dynamic_modifier = { modifier = famine }
+			has_dynamic_modifier = { modifier = food_shortages }
+		}
+		NOT = { has_country_flag = hide_emergency_decisions }
+	}
+}
