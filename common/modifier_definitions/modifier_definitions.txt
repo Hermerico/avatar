@@ -701,7 +701,7 @@ fuel_burning  = {									#### factor on fuel burned in industry
 	postfix = none
 }
 
-society_reforms_research_bonus = {					#### fake modifier currently unused
+society_reforms_research_bonus = {					#### fake and gay modifier currently unused
 	color_type = good
 	value_type = percentage
 	precision = 0
