@@ -321,19 +321,19 @@ tech_share_modifier = {								#### disable spreading inventions currently unuse
 	postfix = none
 }
 
-ministry_advisor_cost = {							#### cost of appoining a ministry advisor
+ministry_advisor_cost = {							#### cost of appoining a ministry advisor. does nothing
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
-institution_cost = {								#### cost of assigning an institution
+institution_cost = {								#### cost of assigning an institution. does nothing
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
 }
-law_change_cost = {									#### cost of changing the laws
+law_change_cost = {									#### cost of changing the laws. does nothing
 	color_type = bad
 	value_type = percentage
 	precision = 0

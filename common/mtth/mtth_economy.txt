@@ -15,7 +15,6 @@ prosperity_consumer_demand_factor = {
 	modifier = {
 		set_temp_variable = { solf = -0.5 }
 		add_to_temp_variable = { solf = national_prosperity_percent }
-		multiply_temp_variable = { solf = 2 }
 		
 		add = solf
 	}
@@ -25,6 +24,16 @@ prosperity_wealthy_factor = {
 	base = 0
 	modifier = {
 		set_temp_variable = { solf = national_prosperity_percent }
+		
+		add = solf
+	}
+}
+prosperity_luxury_demand = {
+	base = 0
+	modifier = {
+		set_temp_variable = { solf = -0.5 }
+		add_to_temp_variable = { solf = national_prosperity_percent }
+		multiply_temp_variable = { solf = 2 }
 		
 		add = solf
 	}
