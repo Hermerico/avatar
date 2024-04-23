@@ -105,10 +105,6 @@ technologies = {
 		XOR = {
 			progressive_0
 		}
-		
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = clergy_dynamic_modifier }
-		}
 
 		bender_growth = 0.006
 		clergy_opinion = 5
@@ -205,8 +201,6 @@ technologies = {
 			society_reforms
 			society_progressive
 		}
-
-		show_effect_as_desc = yes
 	}
 	progressive_culture_0 = {
 
@@ -247,10 +241,7 @@ technologies = {
 			writing = 1
 		}
 
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = academics_dynamic_modifier }
-		}
-		stability = -0.1
+		stability_factor = -0.1
 		political_power_gain = 0.1
 		research_speed_factor = 0.08
 		knowledge = 0.06
@@ -302,13 +293,6 @@ technologies = {
 		dependencies = {
 			measurements = 1
 		}
-
-		on_research_complete_limit = {
-			has_tech = progressive_3
-		}
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
-		}
 		
 		monthly_population = 0.1
 		research_speed_factor = 0.02
@@ -319,11 +303,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = -1 y = 8 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -339,9 +318,8 @@ technologies = {
 			age_5
 
 			society_reforms
-		}	
-
-		show_effect_as_desc = yes
+			society_progressive
+		}
 	}
 	
 	conservative_economy_0 = {
@@ -495,13 +473,6 @@ technologies = {
 		dependencies = {
 			metaphysics = 1
 		}
-
-		on_research_complete_limit = {
-			has_tech = progressive_3
-		}
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
-		}
 		
 		monthly_population = 0.08
 		clergy_opinion = 2
@@ -513,11 +484,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = 3 y = 8 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -533,9 +499,8 @@ technologies = {
 			age_5
 
 			society_reforms
-		}	
-
-		show_effect_as_desc = yes
+			society_conservative
+		}
 	}
 
 	reform_1 = {
@@ -561,10 +526,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = 1 y = 8 }
 		}
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 0 y = 0 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -825,13 +786,6 @@ technologies = {
 	}
 
 	progressive_medicine_1 = {
-
-		on_research_complete_limit = {
-			has_tech = progressive_3
-		}
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
-		}
 		
 		monthly_population = 0.04
 		research_speed_factor = 0.04
@@ -844,11 +798,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = -1 y = 16 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -864,9 +813,8 @@ technologies = {
 			age_5
 
 			society_reforms
-		}	
-
-		show_effect_as_desc = yes
+			society_progressive
+		}
 	}
 	
 	conservative_economy_1 = {
@@ -1012,13 +960,6 @@ technologies = {
 	}
 
 	conservative_medicine_1 = {
-
-		on_research_complete_limit = {
-			has_tech = progressive_3
-		}
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
-		}
 		
 		monthly_population = 0.16
 		knowledge = 0.04
@@ -1029,11 +970,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = 3 y = 16 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -1049,9 +985,8 @@ technologies = {
 			age_5
 
 			society_reforms
-		}	
-
-		show_effect_as_desc = yes
+			society_conservative
+		}
 	}
 
 	reform_2 = {
@@ -1351,13 +1286,6 @@ technologies = {
 		dependencies = {
 			surgery = 1
 		}
-
-		on_research_complete_limit = {
-			has_tech = progressive_3
-		}
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
-		}
 		
 		prosperity_factor = 0.05
 		monthly_population = 0.18
@@ -1369,11 +1297,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = -1 y = 24 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -1389,9 +1312,8 @@ technologies = {
 			age_5
 
 			society_reforms
-		}	
-
-		show_effect_as_desc = yes
+			society_progressive
+		}
 	}
 	
 	conservative_economy_2 = {
@@ -1453,9 +1375,7 @@ technologies = {
 
 			society_reforms
 			society_conservative
-		}	
-
-		show_effect_as_desc = yes
+		}
 	}
 	conservative_culture_2 = {
 
@@ -1553,13 +1473,6 @@ technologies = {
 		dependencies = {
 			surgery = 1
 		}
-
-		on_research_complete_limit = {
-			has_tech = progressive_3
-		}
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
-		}
 		
 		consumer_demand = -0.1
 		monthly_population = 0.08
@@ -1571,11 +1484,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = 3 y = 24 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -1591,9 +1499,8 @@ technologies = {
 			age_5
 
 			society_reforms
-		}	
-
-		show_effect_as_desc = yes
+			society_conservative
+		}
 	}
 
 	reform_3 = {
@@ -1897,13 +1804,6 @@ technologies = {
 		}	
 	}
 	progressive_medicine_3 = {
-
-		on_research_complete_limit = {
-			has_tech = progressive_3
-		}
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
-		}
 		
 		research_speed_factor = 0.04
 		monthly_population = 0.18
@@ -1915,11 +1815,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = -1 y = 32 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -1935,9 +1830,8 @@ technologies = {
 			age_5
 
 			society_reforms
-		}	
-
-		show_effect_as_desc = yes
+			society_progressive
+		}
 	}
 	
 	conservative_economy_3 = {
@@ -2089,13 +1983,6 @@ technologies = {
 	}
 
 	conservative_medicine_3 = {
-
-		on_research_complete_limit = {
-			has_tech = progressive_3
-		}
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
-		}
 		
 		monthly_population = 0.06
 		experience_loss_factor = -0.05
@@ -2107,11 +1994,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = 3 y = 32 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -2127,9 +2009,8 @@ technologies = {
 			age_5
 
 			society_reforms
-		}	
-
-		show_effect_as_desc = yes
+			society_conservative
+		}
 	}
 
 	reform_4 = {
@@ -2161,11 +2042,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = 1 y = 32 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -2343,9 +2219,7 @@ technologies = {
 
 			society_reforms
 			society_progressive
-		}	
-
-		show_effect_as_desc = yes
+		}
 	}
 	progressive_culture_4 = {
 
@@ -2388,7 +2262,7 @@ technologies = {
 			scientific_method = 1
 		}
 		
-		academics = 6
+		academics_opinion = 6
 		political_power_cap = 20
 		political_power_gain = 0.1
 		research_speed_factor = 0.08
@@ -2440,13 +2314,6 @@ technologies = {
 		dependencies = {
 			chemistry = 1
 		}
-
-		on_research_complete_limit = {
-			has_tech = progressive_3
-		}
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
-		}
 		
 		urbanisation_country_factor = 0.08
 		monthly_population = 0.24
@@ -2457,11 +2324,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = -1 y = 40 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
 		
 		ai_will_do = {
 			factor = 30
@@ -2477,9 +2339,8 @@ technologies = {
 			age_5
 
 			society_reforms
-		}	
-
-		show_effect_as_desc = yes
+			society_progressive
+		}
 	}
 	
 	conservative_economy_4 = {
@@ -2633,13 +2494,6 @@ technologies = {
 		dependencies = {
 			aerodynamics = 1
 		}
-
-		on_research_complete_limit = {
-			has_tech = progressive_3
-		}
-		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
-		}
 		
 		experience_loss_factor = -0.15
 		monthly_population = 0.2
@@ -2651,11 +2505,6 @@ technologies = {
 			position = { x = 3 y = 40 }
 		}
 
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 36 y = 2 }
-		#}
-		
 		ai_will_do = {
 			factor = 30
 			
@@ -2670,9 +2519,7 @@ technologies = {
 			age_5
 
 			society_reforms
-		}	
-
-		show_effect_as_desc = yes
+		}
 	}
 	reform_5 = {
 		dependencies = {
@@ -2688,11 +2535,6 @@ technologies = {
 			name = electronics_folder
 			position = { x = 1 y = 40 }
 		}
-
-		#folder = {
-		#	name = construction_folder
-		#	position = { x = 11 y = 11 }
-		#}
 		
 		ai_will_do = {
 			factor = 30

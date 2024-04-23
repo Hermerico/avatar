@@ -2165,7 +2165,13 @@ local_tax_waste = {
 local_tax_reduction = {
 	base = 0
 	modifier = {
-		set_temp_variable = { local_tax = THIS.local_prosperity }
+		set_temp_variable = { local_tax = THIS.state_population_k }
+
+		set_temp_variable = { tax_prosperity_effect = 1 }
+		add_to_temp_variable = { tax_prosperity_effect = THIS.local_prosperity }
+
+		multiply_temp_variable = { local_tax = tax_prosperity_effect }
+		multiply_temp_variable = { local_tax = 0.1 }
 
 		controller = {
 			multiply_temp_variable = { local_tax = modifier@taxation }
@@ -2180,7 +2186,13 @@ local_tax_reduction = {
 local_tax = {
 	base = 0
 	modifier = {
-		set_temp_variable = { local_tax = THIS.local_prosperity }
+		set_temp_variable = { local_tax = THIS.state_population_k }
+
+		set_temp_variable = { tax_prosperity_effect = 1 }
+		add_to_temp_variable = { tax_prosperity_effect = THIS.local_prosperity }
+
+		multiply_temp_variable = { local_tax = tax_prosperity_effect }
+		multiply_temp_variable = { local_tax = 0.1 }
 
 		controller = {
 			multiply_temp_variable = { local_tax = modifier@taxation }

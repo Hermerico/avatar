@@ -322,6 +322,11 @@ add_farm_random = {
 			check_variable = {
 				field > farms
 			}
+			check_variable = {
+				var = ROOT:modifier@farm_level_max
+				value = farms
+				compare = greater_than
+			}
 		}
 
 		add_farm_here = yes
@@ -341,6 +346,11 @@ add_fishing_stand_random = {
 			add_to_temp_variable = { fishing_stands = fishing_stand_construction_que }
 			check_variable = {
 				water > fishing_stands
+			}
+			check_variable = {
+				var = ROOT:modifier@fishing_stand_level_max
+				value = fishing_stands
+				compare = greater_than
 			}
 		}
 
@@ -362,6 +372,11 @@ add_ranch_random = {
 			check_variable = {
 				animal > ranches
 			}
+			check_variable = {
+				var = ROOT:modifier@ranch_level_max
+				value = ranches
+				compare = greater_than
+			}
 		}
 
 		add_ranch_here = yes
@@ -380,6 +395,11 @@ add_lumber_mill_random = {
 			add_to_temp_variable = { lumber_mills = lumber_mill_construction_que }
 			check_variable = {
 				forest > lumber_mills
+			}
+			check_variable = {
+				var = ROOT:modifier@lumber_mill_level_max
+				value = lumber_mills
+				compare = greater_than
 			}
 		}
 
@@ -400,6 +420,11 @@ add_quarry_random = {
 			check_variable = {
 				stonefield > quarries
 			}
+			check_variable = {
+				var = ROOT:modifier@quarry_level_max
+				value = quarries
+				compare = greater_than
+			}
 		}
 
 		add_quarry_here = yes
@@ -418,6 +443,11 @@ add_mine_random = {
 			add_to_temp_variable = { mines = mine_construction_que }
 			check_variable = {
 				mountain > mines
+			}
+			check_variable = {
+				var = ROOT:modifier@mine_level_max
+				value = mines
+				compare = greater_than
 			}
 		}
 

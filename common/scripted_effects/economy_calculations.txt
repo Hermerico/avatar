@@ -1222,14 +1222,14 @@ factory_calculations = {
 	set_variable = { factories_bought_price = 10 }
 	multiply_variable = { factories_bought_price = mtth:civilian_cost_factor }
 	multiply_variable = { factories_bought = factories_bought_price }
-	#multiply_variable = { factories_bought = construction_material_factor }
-	round_variable = factories_bought
 
 	set_variable = { ic = factories_bought }
 
 	set_variable = { ic_factor = 1 }
 	add_to_variable = { ic_factor = modifier@civilian_capacity_factor }
-	multiply_variable = { ic = ic_factor }
+	multiply_variable = { factories_bought = ic_factor }
+
+	round_variable = factories_bought
 
 
 	#### military capacity
@@ -1482,8 +1482,8 @@ wages_and_taxes = {
 	}
 
 	set_variable = { smithy_payments = mil_factory_use }
-	multiply_variable = { smithy_payments = 0.1 }
-	multiply_variable = { dockyard_payments = mtth:military_cost_factor }
+	multiply_variable = { smithy_payments = 0.05 }
+	multiply_variable = { smithy_payments = mtth:military_cost_factor }
 
 	set_variable = { naval_factory_use = num_of_naval_factories }
 	subtract_from_variable = { naval_factory_use = num_of_available_navalitary_factories }
@@ -1500,7 +1500,7 @@ wages_and_taxes = {
 	}
 
 	set_variable = { dockyard_payments = naval_factory_use }
-	multiply_variable = { dockyard_payments = 0.1 }
+	multiply_variable = { dockyard_payments = 0.02 }
 	multiply_variable = { dockyard_payments = mtth:naval_cost_factor }
 
 	set_variable = { state_income = taxation_var }

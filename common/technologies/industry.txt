@@ -742,15 +742,16 @@ technologies = {
 		dependencies = {
 			smelting = 1
 		}
-		industrial_capacity_factory = 0.05
-		smith_factor = 0.05
-
-		production_factory_max_efficiency_factor = 0.025
-
+		
+		smith_factor = 0.5
 		smithy_output = 1
 		
 		path = {
 			leads_to_tech = production_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = production_r1
 			research_cost_coeff = 1
 		}
 		
@@ -777,6 +778,34 @@ technologies = {
 			cat_smithy_output
 		}
 	}
+
+	production_r1 = {
+
+		military_cost_factor = 0.1
+
+		industrial_capacity_factory = 0.05
+		production_factory_max_efficiency_factor = 0.025
+
+		
+		research_cost = 2
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_production
+			cat_smithy_output
+		}
+	}
 	
 	naval_1 = {
 		dependencies = {
@@ -789,7 +818,11 @@ technologies = {
 			leads_to_tech = naval_2
 			research_cost_coeff = 1
 		}
-		
+#		path = {
+#			leads_to_tech = naval_l1
+#			research_cost_coeff = 1
+#		}
+
 		research_cost = 2
 		#start_year = 12
 		folder = {
@@ -808,20 +841,50 @@ technologies = {
 			industry_production
 		}
 	}
+
+#### feels unnecessary
+
+#	naval_l1 = {
+#		dependencies = {
+#			kinectics = 1
+#		}
+#		
+#		naval_cost_factor = 0.1
+#		naval_capacity_factor = 0.1
+#		
+#		research_cost = 2
+#		#start_year = 12
+#		folder = {
+#			name = industry_folder
+#			position = { x = -2 y = 6 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 2
+#		}
+#		
+#		categories = {
+#			age_1
+#
+#			industry_tech
+#			industry_production
+#		}
+#	}
 	
 	production_2 = {
 		dependencies = {
 			bronze_alloy = 1
 		}
-		industrial_capacity_factory = 0.05
-		smith_factor = 0.05
-
-		production_factory_max_efficiency_factor = 0.025
-
+		
+		smith_factor = 0.5
 		smithy_output = 1
 		
 		path = {
 			leads_to_tech = production_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = production_r2
 			research_cost_coeff = 1
 		}
 		
@@ -842,6 +905,34 @@ technologies = {
 		
 		categories = {
 			age_2
+
+			industry_tech
+			industry_production
+			cat_smithy_output
+		}
+	}
+
+	production_r2 = {
+
+		military_cost_factor = 0.1
+
+		industrial_capacity_factory = 0.05
+		production_factory_max_efficiency_factor = 0.025
+
+		
+		research_cost = 2
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			age_1
 
 			industry_tech
 			industry_production
@@ -881,16 +972,17 @@ technologies = {
 		dependencies = {
 			alchemy = 1
 		}
-		industrial_capacity_factory = 0.05
-		smith_factor = 0.05
 
-		production_factory_max_efficiency_factor = 0.025
-
+		smith_factor = 0.5
 		smithy_output = 1
 		smithy_output_2 = 1
 		
 		path = {
 			leads_to_tech = production_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = production_r3
 			research_cost_coeff = 1
 		}
 		
@@ -916,8 +1008,34 @@ technologies = {
 			industry_production
 			cat_smithy_output
 		}
+	}
 
-		show_effect_as_desc = yes
+	production_r3 = {
+
+		military_cost_factor = 0.1
+
+		industrial_capacity_factory = 0.05
+		production_factory_max_efficiency_factor = 0.025
+
+		
+		research_cost = 2
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_production
+			cat_smithy_output
+		}
 	}
 	
 	naval_3 = {
@@ -955,16 +1073,16 @@ technologies = {
 		dependencies = {
 			statistics = 1
 		}
-		industrial_capacity_factory = 0.05
-		smith_factor = 0.075
-		industrial_worker_factor = 0.01
 
-		production_factory_max_efficiency_factor = 0.025
-
+		industrial_worker_factor = 0.1
 		factory_output = 1
 		
 		path = {
 			leads_to_tech = production_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = production_r4
 			research_cost_coeff = 1
 		}
 		
@@ -990,8 +1108,35 @@ technologies = {
 			industry_production
 			cat_smithy_output
 		}
+	}
 
-		show_effect_as_desc = yes
+	production_r4 = {
+
+		military_cost_factor = 0.1
+		industrial_capacity_factory = 0.05
+		production_factory_max_efficiency_factor = 0.025
+
+		smith_factor = -0.25
+
+		
+		research_cost = 2
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_production
+			cat_smithy_output
+		}
 	}
 	
 	naval_4 = {
@@ -1030,16 +1175,16 @@ technologies = {
 		dependencies = {
 			steel_alloy = 1
 		}
-		industrial_capacity_factory = 0.05
-		smith_factor = 0.075
-		industrial_worker_factor = 0.01
 
-		production_factory_max_efficiency_factor = 0.025
-
+		industrial_worker_factor = 0.1
 		factory_output = 1
 		
 		path = {
 			leads_to_tech = production_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = production_r5
 			research_cost_coeff = 1
 		}
 		
@@ -1065,8 +1210,35 @@ technologies = {
 			industry_production
 			cat_smithy_output
 		}
+	}
 
-		show_effect_as_desc = yes
+	production_r5 = {
+
+		military_cost_factor = 0.1
+		industrial_capacity_factory = 0.05
+		production_factory_max_efficiency_factor = 0.025
+
+		smith_factor = -0.25
+
+		
+		research_cost = 2
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_production
+			cat_smithy_output
+		}
 	}
 	
 	naval_5 = {
@@ -1105,16 +1277,16 @@ technologies = {
 		dependencies = {
 			steam_engine = 1
 		}
-		industrial_capacity_factory = 0.05
-		smith_factor = 0.075
-		industrial_worker_factor = 0.01
 
-		production_factory_max_efficiency_factor = 0.025
-
+		industrial_worker_factor = 0.1
 		factory_output = 1
 		
 		path = {
 			leads_to_tech = production_7
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = production_r6
 			research_cost_coeff = 1
 		}
 		
@@ -1135,8 +1307,35 @@ technologies = {
 			industry_tech
 			industry_production
 		}
+	}
 
-		show_effect_as_desc = yes
+	production_r6 = {
+
+		military_cost_factor = 0.1
+		industrial_capacity_factory = 0.05
+		production_factory_max_efficiency_factor = 0.025
+
+		smith_factor = -0.25
+
+		
+		research_cost = 2
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_production
+			cat_smithy_output
+		}
 	}
 	
 	naval_6 = {
@@ -1175,13 +1374,14 @@ technologies = {
 		dependencies = {
 			gas_turbine = 1
 		}
-		industrial_capacity_factory = 0.05
-		smith_factor = 0.075
-		industrial_worker_factor = 0.01
 
-		production_factory_max_efficiency_factor = 0.025
-
+		industrial_worker_factor = 0.1
 		factory_output = 1
+
+		path = {
+			leads_to_tech = production_r7
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		#start_year = 78
@@ -1201,8 +1401,35 @@ technologies = {
 			industry_production
 			
 		}
+	}
 
-		show_effect_as_desc = yes
+	production_r7 = {
+
+		military_cost_factor = 0.1
+		industrial_capacity_factory = 0.05
+		production_factory_max_efficiency_factor = 0.025
+
+		smith_factor = -0.25
+
+		
+		research_cost = 2
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_production
+			cat_smithy_output
+		}
 	}
 	
 	naval_7 = {
@@ -1247,6 +1474,14 @@ technologies = {
 	
 		path = {
 			leads_to_tech = gathering_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = consumer_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = luxury_1
 			research_cost_coeff = 1
 		}
 		path = {
@@ -1581,7 +1816,7 @@ technologies = {
 		#start_year = 6
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 2 }
+			position = { x = 6 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -1594,9 +1829,546 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
+
+	consumer_1 = {
+
+		shopkeeper_factor = 0.05
+		consumer_good_factory_output = 1
+
+		
+		path = {
+			leads_to_tech = consumer_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advertisement_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	consumer_2 = {
+
+		shopkeeper_factor = 0.05
+		consumer_good_factory_output = 1
+		consumer_good_factory_need1 = 1
+		
+		path = {
+			leads_to_tech = consumer_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advertisement_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	consumer_3 = {
+
+		shopkeeper_factor = 0.05
+		consumer_good_factory_output = 1
+		consumer_good_factory_need2 = 1
+		
+		path = {
+			leads_to_tech = consumer_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advertisement_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	consumer_4 = {
+
+		shopkeeper_factor = 0.05
+		consumer_good_factory_output = 1
+		consumer_good_factory_need1 = 1
+		
+		path = {
+			leads_to_tech = consumer_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advertisement_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	consumer_5 = {
+
+		shopkeeper_factor = 0.05
+		consumer_good_factory_output = 1
+		consumer_good_factory_need2 = 1
+		
+		path = {
+			leads_to_tech = consumer_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advertisement_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	consumer_6 = {
+
+		shopkeeper_factor = 0.05
+		consumer_good_factory_output = 1
+		consumer_good_factory_need1 = 1
+		consumer_good_factory_need2 = 1
+
+		path = {
+			leads_to_tech = advertisement_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	luxury_1 = {
+		shopkeeper_factor = 0.05
+		luxury_good_factory_output = 1
+	
+		path = {
+			leads_to_tech = luxury_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advertisement_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 6
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	luxury_2 = {
+
+		shopkeeper_factor = 0.05
+		luxury_good_factory_output = 1
+		luxury_good_factory_need1 = 1
+		
+		path = {
+			leads_to_tech = luxury_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advertisement_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	luxury_3 = {
+
+		shopkeeper_factor = 0.05
+		luxury_good_factory_output = 1
+		luxury_good_factory_need2 = 1
+		
+		path = {
+			leads_to_tech = luxury_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advertisement_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	luxury_4 = {
+
+		shopkeeper_factor = 0.05
+		luxury_good_factory_output = 1
+		luxury_good_factory_need1 = 1
+		
+		path = {
+			leads_to_tech = luxury_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advertisement_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	luxury_5 = {
+
+		shopkeeper_factor = 0.05
+		luxury_good_factory_output = 1
+		luxury_good_factory_need2 = 1
+		
+		path = {
+			leads_to_tech = luxury_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advertisement_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	luxury_6 = {
+
+		shopkeeper_factor = 0.05
+		luxury_good_factory_output = 1
+		luxury_good_factory_need1 = 1
+		luxury_good_factory_need2 = 1
+
+		path = {
+			leads_to_tech = advertisement_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	advertisement_1 = {
+
+		consumer_demand = 0.05
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	advertisement_2 = {
+
+		consumer_demand = 0.05
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	advertisement_3 = {
+
+		consumer_demand = 0.05
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	advertisement_4 = {
+
+		consumer_demand = 0.05
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	advertisement_5 = {
+
+		consumer_demand = 0.05
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
+	advertisement_6 = {
+
+		consumer_demand = 0.05
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+
 	plank_1 = {
 
 		craftsman_factor = 0.025
@@ -1608,7 +2380,7 @@ technologies = {
 		#start_year = 12
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 4 }
+			position = { x = 7 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -1621,8 +2393,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	wood_1 = {
@@ -1646,7 +2416,7 @@ technologies = {
 		#start_year = 18
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 6 }
+			position = { x = 6 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -1659,8 +2429,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	plank_2 = {
 		dependencies = {
@@ -1676,7 +2444,7 @@ technologies = {
 		#start_year = 24
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 8 }
+			position = { x = 7 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -1689,8 +2457,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	wood_2 = {
 		dependencies = {
@@ -1713,7 +2479,7 @@ technologies = {
 		#start_year = 30
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 10 }
+			position = { x = 6 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -1726,8 +2492,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	plank_3 = {
 		dependencies = {
@@ -1742,7 +2506,7 @@ technologies = {
 		#start_year = 36
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 12 }
+			position = { x = 7 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -1755,8 +2519,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	wood_3 = {
 		dependencies = {
@@ -1779,7 +2541,7 @@ technologies = {
 		#start_year = 42
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 14 }
+			position = { x = 6 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -1792,8 +2554,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	plank_4 = {
 		dependencies = {
@@ -1808,7 +2568,7 @@ technologies = {
 		#start_year = 48
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 16 }
+			position = { x = 7 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -1821,8 +2581,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	wood_4 = {
 		dependencies = {
@@ -1845,7 +2603,7 @@ technologies = {
 		#start_year = 54
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 18 }
+			position = { x = 6 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -1858,8 +2616,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	plank_5 = {
 		dependencies = {
@@ -1874,7 +2630,7 @@ technologies = {
 		#start_year = 60
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 20 }
+			position = { x = 7 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -1887,8 +2643,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	wood_5 = {
 		dependencies = {
@@ -1908,7 +2662,7 @@ technologies = {
 		#start_year = 66
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 22 }
+			position = { x = 6 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -1921,8 +2675,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	plank_6 = {
 		dependencies = {
@@ -1937,7 +2689,7 @@ technologies = {
 		#start_year = 72
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 24 }
+			position = { x = 7 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -1950,8 +2702,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	stone_1 = {
@@ -1976,7 +2726,7 @@ technologies = {
 		#start_year = 6
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 2 }
+			position = { x = 8 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -1989,8 +2739,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	brick_1 = {
 
@@ -2002,7 +2750,7 @@ technologies = {
 		#start_year = 12
 		folder = {
 			name = industry_folder
-			position = { x = 5 y = 4 }
+			position = { x = 9 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -2015,8 +2763,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	stone_2 = {
 		dependencies = {
@@ -2039,7 +2785,7 @@ technologies = {
 		#start_year = 18
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 6 }
+			position = { x = 8 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -2052,8 +2798,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	brick_2 = {
 		dependencies = {
@@ -2067,7 +2811,7 @@ technologies = {
 		#start_year = 24
 		folder = {
 			name = industry_folder
-			position = { x = 5 y = 8 }
+			position = { x = 9 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -2080,8 +2824,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	stone_3 = {
 		dependencies = {
@@ -2104,7 +2846,7 @@ technologies = {
 		#start_year = 30
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 10 }
+			position = { x = 8 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -2117,8 +2859,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	brick_3 = {
 		dependencies = {
@@ -2132,7 +2872,7 @@ technologies = {
 		#start_year = 36
 		folder = {
 			name = industry_folder
-			position = { x = 5 y = 12 }
+			position = { x = 9 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -2145,8 +2885,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	stone_4 = {
 		dependencies = {
@@ -2169,7 +2907,7 @@ technologies = {
 		#start_year = 42
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 14 }
+			position = { x = 8 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -2182,8 +2920,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	brick_4 = {
@@ -2199,7 +2935,7 @@ technologies = {
 		#start_year = 48
 		folder = {
 			name = industry_folder
-			position = { x = 5 y = 16 }
+			position = { x = 9 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -2212,8 +2948,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	stone_5 = {
@@ -2237,7 +2971,7 @@ technologies = {
 		#start_year = 54
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 18 }
+			position = { x = 8 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -2250,8 +2984,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	brick_5 = {
@@ -2266,7 +2998,7 @@ technologies = {
 		#start_year = 60
 		folder = {
 			name = industry_folder
-			position = { x = 5 y = 20 }
+			position = { x = 9 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -2279,8 +3011,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	stone_6 = {
 		dependencies = {
@@ -2299,7 +3029,7 @@ technologies = {
 		#start_year = 66
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 22 }
+			position = { x = 8 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -2312,8 +3042,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	brick_6 = {
 		dependencies = {
@@ -2327,7 +3055,7 @@ technologies = {
 		#start_year = 72
 		folder = {
 			name = industry_folder
-			position = { x = 5 y = 24 }
+			position = { x = 9 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -2340,8 +3068,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	storage_1 = {
@@ -2376,8 +3102,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	storage_2 = {
 		dependencies = {
@@ -2411,8 +3135,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	storage_3 = {
 
@@ -2444,8 +3166,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	storage_4 = {
 		dependencies = {
@@ -2479,8 +3199,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	storage_5 = {
 		dependencies = {
@@ -2514,8 +3232,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	storage_6 = {
 		dependencies = {
@@ -2549,8 +3265,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	storage_7 = {
 		dependencies = {
@@ -2584,8 +3298,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	storage_8 = {
 		dependencies = {
@@ -2615,8 +3327,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	fish_1 = {
@@ -2642,8 +3352,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	bread_1 = {
@@ -2670,8 +3378,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	fish_2 = {
@@ -2699,8 +3405,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	bread_2 = {
@@ -2727,8 +3431,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	fish_3 = {
@@ -2756,8 +3458,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	bread_3 = {
@@ -2784,8 +3484,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	fish_4 = {
@@ -2813,8 +3511,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	bread_4 = {
 		dependencies = {
@@ -2842,8 +3538,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	farming_1 = {
@@ -2885,8 +3579,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	food_1 = {
@@ -2920,8 +3612,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	farming_2 = {
@@ -2960,8 +3650,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	food_2 = {
@@ -2993,8 +3681,6 @@ technologies = {
 			industry_resources
 			cat_farm_output
 		}
-
-		show_effect_as_desc = yes
 	}
 	farming_3 = {
 		dependencies = {
@@ -3030,8 +3716,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	food_3 = {
@@ -3061,8 +3745,6 @@ technologies = {
 			industry_resources
 			cat_farm_output
 		}
-
-		show_effect_as_desc = yes
 	}
 	farming_4 = {
 		dependencies = {
@@ -3100,8 +3782,6 @@ technologies = {
 			industry_resources
 			cat_farm_output
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	food_4 = {
@@ -3131,8 +3811,6 @@ technologies = {
 			industry_resources
 			cat_farm_output
 		}
-
-		show_effect_as_desc = yes
 	}
 	farming_5 = {
 		dependencies = {
@@ -3169,8 +3847,6 @@ technologies = {
 			industry_resources
 			cat_farm_output
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	food_5 = {
@@ -3200,8 +3876,6 @@ technologies = {
 			industry_resources
 			cat_farm_output
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	farming_6 = {
@@ -3236,8 +3910,6 @@ technologies = {
 			industry_resources
 			cat_farm_output
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	food_6 = {
@@ -3267,8 +3939,6 @@ technologies = {
 			industry_resources
 			cat_farm_output
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	tanning_1 = {
@@ -3308,8 +3978,6 @@ technologies = {
 			industry_resources
 			ranch_tech
 		}
-
-		show_effect_as_desc = yes
 	}
 	tanning_2 = {
 
@@ -3340,8 +4008,6 @@ technologies = {
 			industry_resources
 			ranch_tech
 		}
-
-		show_effect_as_desc = yes
 	}
 	tanning_3 = {
 		dependencies = {
@@ -3376,8 +4042,6 @@ technologies = {
 			industry_resources
 			ranch_tech
 		}
-
-		show_effect_as_desc = yes
 	}
 	tanning_4 = {
 
@@ -3408,8 +4072,6 @@ technologies = {
 			industry_resources
 			ranch_tech
 		}
-
-		show_effect_as_desc = yes
 	}
 	tanning_5 = {
 		dependencies = {
@@ -3443,8 +4105,6 @@ technologies = {
 			industry_resources
 			ranch_tech
 		}
-
-		show_effect_as_desc = yes
 	}
 	tanning_6 = {
 		dependencies = {
@@ -3473,8 +4133,6 @@ technologies = {
 			industry_resources
 			ranch_tech
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	textile_1 = {
@@ -3511,8 +4169,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	textile_2 = {
 		dependencies = {
@@ -3548,8 +4204,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	textile_3 = {
 		dependencies = {
@@ -3586,8 +4240,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	textile_4 = {
 		dependencies = {
@@ -3624,8 +4276,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	textile_5 = {
 		dependencies = {
@@ -3662,8 +4312,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	textile_6 = {
 		dependencies = {
@@ -3695,8 +4343,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	mining_1 = {
@@ -3716,7 +4362,7 @@ technologies = {
 		#start_year = 12
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 4 }
+			position = { x = 12 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -3729,8 +4375,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	mining_c1 = {
@@ -3755,7 +4399,7 @@ technologies = {
 		#start_year = 36
 		folder = {
 			name = industry_folder
-			position = { x = 9 y = 12 }
+			position = { x = 13 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -3768,8 +4412,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	burning_1 = {
@@ -3780,7 +4422,7 @@ technologies = {
 		#start_year = 42
 		folder = {
 			name = industry_folder
-			position = { x = 10 y = 14 }
+			position = { x = 14 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -3818,7 +4460,7 @@ technologies = {
 		#start_year = 24
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 8 }
+			position = { x = 12 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -3831,8 +4473,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	mining_c2 = {
@@ -3868,7 +4508,7 @@ technologies = {
 		#start_year = 48
 		folder = {
 			name = industry_folder
-			position = { x = 9 y = 16 }
+			position = { x = 13 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -3881,8 +4521,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	burning_2 = {
 
@@ -3892,7 +4530,7 @@ technologies = {
 		#start_year = 54
 		folder = {
 			name = industry_folder
-			position = { x = 10 y = 18 }
+			position = { x = 14 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -3926,7 +4564,7 @@ technologies = {
 		#start_year = 36
 		folder = {
 			name = industry_folder
-			position = { x = 7 y = 12 }
+			position = { x = 11 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -3939,8 +4577,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	mining_c3 = {
@@ -3965,7 +4601,7 @@ technologies = {
 		#start_year = 60
 		folder = {
 			name = industry_folder
-			position = { x = 9 y = 20 }
+			position = { x = 13 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -3978,8 +4614,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	burning_3 = {
 
@@ -3989,7 +4623,7 @@ technologies = {
 		#start_year = 66
 		folder = {
 			name = industry_folder
-			position = { x = 10 y = 22 }
+			position = { x = 14 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -4025,7 +4659,7 @@ technologies = {
 		#start_year = 48
 		folder = {
 			name = industry_folder
-			position = { x = 7 y = 16 }
+			position = { x = 11 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -4038,8 +4672,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	mining_c4 = {
@@ -4063,7 +4695,7 @@ technologies = {
 		#start_year = 72
 		folder = {
 			name = industry_folder
-			position = { x = 9 y = 24 }
+			position = { x = 13 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -4076,8 +4708,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	burning_4 = {
 
@@ -4087,7 +4717,7 @@ technologies = {
 		#start_year = 78
 		folder = {
 			name = industry_folder
-			position = { x = 10 y = 26 }
+			position = { x = 14 y = 26 }
 		}
 		
 		ai_will_do = {
@@ -4119,7 +4749,7 @@ technologies = {
 		#start_year = 60
 		folder = {
 			name = industry_folder
-			position = { x = 7 y = 20 }
+			position = { x = 11 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -4132,8 +4762,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	mining_6 = {
@@ -4149,7 +4777,7 @@ technologies = {
 		#start_year = 72
 		folder = {
 			name = industry_folder
-			position = { x = 7 y = 24 }
+			position = { x = 11 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -4162,8 +4790,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	fossile_fuels_1 = {
@@ -4182,7 +4808,7 @@ technologies = {
 		#start_year = 36
 		folder = {
 			name = industry_folder
-			position = { x = 11 y = 12 }
+			position = { x = 15 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -4195,8 +4821,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	fossile_fuels_2 = {
 		dependencies = {
@@ -4214,7 +4838,7 @@ technologies = {
 		#start_year = 48
 		folder = {
 			name = industry_folder
-			position = { x = 11 y = 16 }
+			position = { x = 15 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -4227,8 +4851,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	fossile_fuels_3 = {
 		dependencies = {
@@ -4245,7 +4867,7 @@ technologies = {
 		#start_year = 60
 		folder = {
 			name = industry_folder
-			position = { x = 11 y = 20 }
+			position = { x = 15 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -4258,8 +4880,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	fossile_fuels_4 = {
 		dependencies = {
@@ -4277,7 +4897,7 @@ technologies = {
 		#start_year = 72
 		folder = {
 			name = industry_folder
-			position = { x = 11 y = 24 }
+			position = { x = 15 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -4290,8 +4910,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 
 	fossile_fuels_5 = {
@@ -4306,7 +4924,7 @@ technologies = {
 		#start_year = 84
 		folder = {
 			name = industry_folder
-			position = { x = 11 y = 28 }
+			position = { x = 15 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -4319,8 +4937,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	smelting_1 = {
@@ -4344,7 +4960,7 @@ technologies = {
 		#start_year = 54
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 18 }
+			position = { x = 12 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -4357,8 +4973,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	smelting_2 = {
@@ -4379,7 +4993,7 @@ technologies = {
 		#start_year = 66
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 22 }
+			position = { x = 12 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -4392,8 +5006,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	smelting_3 = {
@@ -4418,7 +5030,7 @@ technologies = {
 		#start_year = 78
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 26 }
+			position = { x = 12 y = 26 }
 		}
 		
 		ai_will_do = {
@@ -4431,8 +5043,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	smelting_l1 = {
@@ -4466,7 +5076,7 @@ technologies = {
 		#start_year = 84
 		folder = {
 			name = industry_folder
-			position = { x = 7 y = 28 }
+			position = { x = 11 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -4479,8 +5089,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	smelting_r1 = {
@@ -4505,7 +5113,7 @@ technologies = {
 		#start_year = 84
 		folder = {
 			name = industry_folder
-			position = { x = 9 y = 28 }
+			position = { x = 13 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -4518,8 +5126,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	smelting_l2 = {
@@ -4540,7 +5146,7 @@ technologies = {
 		#start_year = 90
 		folder = {
 			name = industry_folder
-			position = { x = 7 y = 30 }
+			position = { x = 11 y = 30 }
 		}
 		
 		ai_will_do = {
@@ -4553,8 +5159,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	smelting_r2 = {
@@ -4569,7 +5173,7 @@ technologies = {
 		#start_year = 90
 		folder = {
 			name = industry_folder
-			position = { x = 9 y = 30 }
+			position = { x = 13 y = 30 }
 		}
 		
 		ai_will_do = {
@@ -4582,8 +5186,6 @@ technologies = {
 			industry_tech
 			industry_resources
 		}
-
-		show_effect_as_desc = yes
 	}
 	
 	
