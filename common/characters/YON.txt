@@ -1,0 +1,14 @@
+characters = {
+	YON_Huweto = {
+		name = YON_Huweto
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Yontai_Huweto
+			}
+		}
+		gender = female
+		country_leader = {
+			ideology = earth_tribe
+		}
+	}
+}

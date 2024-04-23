@@ -1,0 +1,14 @@
+characters = {
+	DIN_Riteka = {
+		name = DIN_Riteka
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Dingcuo_Riteka
+			}
+		}
+		gender = male
+		country_leader = {
+			ideology = earth_tribe
+		}
+	}
+}

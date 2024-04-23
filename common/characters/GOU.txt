@@ -1,0 +1,14 @@
+characters = {
+	GOU_Yahatsu = {
+		name = GOU_Yahatsu
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Goutou_Yahatsu
+			}
+		}
+		gender = female
+		country_leader = {
+			ideology = earth_tribe
+		}
+	}
+}

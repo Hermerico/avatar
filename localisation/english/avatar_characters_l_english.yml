@@ -106,7 +106,13 @@
  tak_head_of_intelligence_4:0 "Lud-Cev"
  tak_head_of_intelligence_5:0 "Ku-Kizun"
  tak_head_of_intelligence_6:0 "Trandeh"
+ #Dawa
+ DAW_Yojiku:0 "Yojiku"
+ #Dingcuo
+ DIN_Riteka:0 "Riteka"
+
  #Ba Sing Se
+EAR_dai_li_government:0 "Dai Li Government"
 ear_minister_of_personnel_1:0 "Biyang"
 ear_minister_of_personnel_2:0 "Zheng"
 ear_minister_of_personnel_3:0 "Tao"
@@ -509,6 +515,8 @@ gdd_quartermaster_3:0 "Miltufi"
 gdd_quartermaster_4:0 "Anwasto"
 gdd_quartermaster_5:0 "Kinyatob"
 gdd_quartermaster_6:0 "Hidrabo"
+#Goutou
+GOU_Yahatsu:0 "Yahatsu"
 # Han Tui
 han_gambu:0 "Gambu"
 han_minister_of_personnel_1:0 "Orudo"
@@ -1324,6 +1332,10 @@ sat_quartermaster_3:0 "Payamu"
 sat_quartermaster_4:0 "Sutorebi"
 sat_quartermaster_5:0 "Peyunoma"
 sat_quartermaster_6:0 "Morotibap"
+
+#Shendu
+SHE_Finuoka:0 "Finuoka"
+
 # Sun Warriors
 snw_minister_of_personnel_1:0 "Nua"
 snw_minister_of_personnel_2:0 "Roshiniku"
@@ -1539,6 +1551,8 @@ wul_head_of_intelligence_4:0 "Yumu"
 wul_head_of_intelligence_5:0 "Rechise"
 wul_head_of_intelligence_6:0 "Ani"
 
+#Xilii
+XIL_Gezaki:0 "Gezaki"
 xin_minister_of_personnel_1:0 "Semu"
 xin_minister_of_personnel_2:0 "Toyu"
 xin_minister_of_personnel_3:0 "Neyono"
@@ -1668,6 +1682,9 @@ yii_head_of_intelligence_3:0 "Hoyu"
 yii_head_of_intelligence_4:0 "Umikoshi"
 yii_head_of_intelligence_5:0 "Machi"
 yii_head_of_intelligence_6:0 "Nehotsu"
+
+#Yontai
+YON_Huweto:0 "Huweto"
 
 yue_minister_of_personnel_1:0 "Raa"
 yue_minister_of_personnel_2:0 "Nomita"

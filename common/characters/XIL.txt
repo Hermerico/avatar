@@ -1,0 +1,14 @@
+characters = {
+	XIL_Gezaki = {
+		name = XIL_Gezaki
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Xilii_Gezaki
+			}
+		}
+		gender = male
+		country_leader = {
+			ideology = earth_tribe
+		}
+	}
+}
