@@ -1,0 +1,14 @@
+characters = {
+	DAW_Yojiku = {
+		name = DAW_Yojiku
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Dawa_Yojiku
+			}
+		}
+		gender = male
+		country_leader = {
+			ideology = earth_tribe
+		}
+	}
+}

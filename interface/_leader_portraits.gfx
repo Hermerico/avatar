@@ -232,5 +232,39 @@ spriteTypes = {
 		name = "GFX_Portrait_Baichuan_Yomi"
 		texturefile = "gfx/leaders/BAI/Portrait_Baichuan_Yomi.dds"
 	}
-
+	############# XIL
+	spriteType = {
+		name = "GFX_Portrait_Xilii_Gezaki"
+		texturefile = "gfx/leaders/XIL/Portrait_Xilii_Gezaki.dds"
+	}
+	############# DAW
+	spriteType = {
+		name = "GFX_Portrait_Dawa_Yojiku"
+		texturefile = "gfx/leaders/DAW/Portrait_Dawa_Yojiku.dds"
+	}
+	############# DIN
+	spriteType = {
+		name = "GFX_Portrait_Dingcuo_Riteka"
+		texturefile = "gfx/leaders/DIN/Portrait_Dingcuo_Riteka.dds"
+	}
+	############# EAR
+	spriteType = {
+		name = "GFX_Portrait_Earthkingdom_Dai_Li_Government"
+		texturefile = "gfx/leaders/EAR/Portrait_Earthkingdom_Dai_Li_Government.dds"
+	}
+	############# SHE
+	spriteType = {
+		name = "GFX_Portrait_Shendu_Finuoka"
+		texturefile = "gfx/leaders/SHE/Portrait_Shendu_Finuoka.dds"
+	}
+	############# YON
+	spriteType = {
+		name = "GFX_Portrait_Yontai_Huweto"
+		texturefile = "gfx/leaders/YON/Portrait_Yontai_Huweto.dds"
+	}
+	############# GOU
+	spriteType = {
+		name = "GFX_Portrait_Goutou_Yahatsu"
+		texturefile = "gfx/leaders/GOU/Portrait_Goutou_Yahatsu.dds"
+	}				
 }

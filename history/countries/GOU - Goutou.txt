@@ -63,7 +63,7 @@ add_ideas = {
 	no_education
 }
 
-recruit_character = GOU_fengshui
+recruit_character = GOU_Yahatsu
 
 #set_cosmetic_tag = GOU_puppet
 

@@ -63,7 +63,7 @@ add_ideas = {
 	no_education
 }
 
-recruit_character = YON_fengshui
+recruit_character = YON_Huweto
 
 #set_cosmetic_tag = YON_puppet
 

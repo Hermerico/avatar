@@ -1,0 +1,14 @@
+characters = {
+	SHE_Finuoka = {
+		name = SHE_Finuoka
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Shendu_Finuoka
+			}
+		}
+		gender = male
+		country_leader = {
+			ideology = earth_tribe
+		}
+	}
+}

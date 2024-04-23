@@ -63,7 +63,7 @@ add_ideas = {
 	no_education
 }
 
-recruit_character = SHE_fengshui
+recruit_character = SHE_Finuoka
 
 #set_cosmetic_tag = SHE_puppet
 
