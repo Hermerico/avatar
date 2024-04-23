@@ -11,13 +11,11 @@ ideas = {
 			level = 5
 
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = check_authority_60_tooltip		
-					check_variable = {
-						var = current_authority
-						value = 60
-						compare = greater_than_or_equals
-					}
+				check_variable = {
+					var = current_authority
+					value = 60
+					compare = greater_than_or_equals
+					tooltip = check_authority_tooltip
 				}
 			}
 
@@ -48,13 +46,11 @@ ideas = {
 			level = 4
 			
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = check_authority_40_tooltip		
-					check_variable = {
-						var = current_authority
-						value = 40
-						compare = greater_than_or_equals
-					}
+				check_variable = {
+					var = current_authority
+					value = 40
+					compare = greater_than_or_equals
+					tooltip = check_authority_tooltip
 				}
 			}
 
@@ -86,21 +82,17 @@ ideas = {
 			level = 3
 			
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = check_liberty_80_tooltip		
-					check_variable = {
-						var = current_authority
-						value = 80
-						compare = less_than_or_equals
-					}
+				check_variable = {
+					var = current_authority
+					value = 80
+					compare = less_than_or_equals
+					tooltip = check_liberty_tooltip
 				}
-				custom_trigger_tooltip = {
-					tooltip = check_authority_20_tooltip		
-					check_variable = {
-						var = current_authority
-						value = 20
-						compare = greater_than_or_equals
-					}
+				check_variable = {
+					var = current_authority
+					value = 20
+					compare = greater_than_or_equals
+					tooltip = check_authority_tooltip
 				}
 			}
 
@@ -130,13 +122,11 @@ ideas = {
 			level = 2
 			
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = check_liberty_60_tooltip		
-					check_variable = {
-						var = current_authority
-						value = 60
-						compare = less_than_or_equals
-					}
+				check_variable = {
+					var = current_authority
+					value = 60
+					compare = less_than_or_equals
+					tooltip = check_liberty_tooltip
 				}
 			}
 
@@ -165,13 +155,11 @@ ideas = {
 			level = 1
 			
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = check_liberty_40_tooltip		
-					check_variable = {
-						var = current_authority
-						value = 40
-						compare = less_than_or_equals
-					}
+				check_variable = {
+					var = current_authority
+					value = 40
+					compare = less_than_or_equals
+					tooltip = check_liberty_tooltip
 				}
 			}
 

@@ -1,0 +1,79 @@
+
+famine_management_category = {
+
+
+	shorten_food_for_workers = {
+
+		icon = icon_refugee
+
+		visible = {
+			
+		}
+
+		available = {
+			
+		}
+
+		cost = 100
+
+		days_remove = 120
+
+		modifier = {
+			workers_ration_need_factor = -0.2
+			labourers_opinion = -10
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	subsidide_food_production = {
+
+		icon = icon_refugee
+
+		visible = {
+			
+		}
+
+		available = {
+			
+		}
+
+		cost = 100
+
+		days_remove = 120
+
+		modifier = {
+			food_throughput = 0.1
+			income = -1
+		}
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 10 }
+		}
+		custom_cost_text = expenses_10
+
+		complete_effect = {
+			subtract_from_variable = { var = money_variable value = 10 }
+		}
+
+		remove_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+}
+

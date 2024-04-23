@@ -17,11 +17,11 @@ scripted_gui = {
 			
 		}
 
-		properties = {
-			pp_ratio_bar = {
-				frame = mtth:pp_ratio
-			}
-		}
+		#properties = {
+		#	pp_ratio_bar = {
+		#		frame = mtth:pp_ratio
+		#	}
+		#}
 
 	}
 
@@ -123,6 +123,13 @@ scripted_gui = {
 			}
 			political_power_decrease_visible = {
 				check_variable = { political_power_daily < 0 }
+			}
+
+			trasury_increase_visible = {
+				check_variable = { income_variable > 0 }
+			}
+			trasury_decrease_visible = {
+				check_variable = { income_variable < 0 }
 			}
 
 			honour_increase_visible = {

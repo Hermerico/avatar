@@ -180,10 +180,12 @@ country_event = {
 		factory_calculations = yes
 		
 
-		### factories added offmap
-		civil_factory_output = yes
-		extra_factory_output = yes
-		extra_dockyard_output = yes
+		### replaced by donations dynamic modifier
+			
+		#### factories added offmap
+		#civil_factory_output = yes
+		#extra_factory_output = yes
+		#extra_dockyard_output = yes
 
 
 

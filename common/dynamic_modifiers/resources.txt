@@ -57,6 +57,24 @@ deposit_construction_cost = {
 	civilian_factory_use = deposit_construction_cost
 }
 
+civs_from_tax_buy = {
+	enable = { always = yes }
+
+	industrial_factory_donations = factories_bought
+}
+civs_from_conversion = {
+	enable = { always = yes }
+
+	industrial_factory_donations = military_ic_transfer
+}
+
+mils_and_dockyards_extra = {
+	enable = { always = yes }
+
+	military_factory_donations = factory_duplicator
+	dockyard_donations = dockyard_duplicator
+}
+
 
 additional_scripted_resources = {
 	enable = { always = yes }
@@ -119,6 +137,8 @@ building_upkeep_resources = {
 	country_resource_cost_planks_resource = local_plank_upkeep_cost
 	country_resource_cost_bricks_resource = local_brick_upkeep_cost
 	country_resource_cost_steel_beams_resource = local_steel_beam_upkeep_cost
+
+	production_speed_buildings_factor = construction_material
 
 }
 

@@ -22,7 +22,7 @@
  MAPMODE_URBANISATION_MAP_MODE_NAME:0 "Urbanisation"
  MAPMODE_URBANISATION_MAP_MODE:0 "§HUrbanisation§! map mode"
  MAPMODE_URBANISATION_MAP_MODE_DESCRIPTION:0 "Shows the urbanisation in the states."
- urbanisation_map_mode_tooltip:0 "£urbanisation_texticon  §YProsperity§! in this State: [?FROM.local_prosperity|3Y]"
+ urbanisation_map_mode_tooltip:0 "£urbanisation_texticon  §YUrbanisation§! in this State: [?FROM.urbanisation_cap|0Y]"
  urbanisation_map_mode_tooltip_delayed:0 ""
  MAPMODE_PROSPERITY_MAP_MODE_NAME:0 "Prosperity"
  MAPMODE_PROSPERITY_MAP_MODE:0 "§HProsperity§! map mode"
