@@ -44,7 +44,7 @@ ideas = {
 			}
 		}
 
-		cild_labour = {
+		child_labour = {
 
 			removal_cost = -1
 

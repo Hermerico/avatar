@@ -20,6 +20,8 @@
  war_weariness_category_desc:0 "The people want peace. During war they become tired"
  rotate_frontlines:0 "Rotate Frontlines"
  rotate_frontlines_desc:0 "The soldiers have been fighting on the frontlines for too long, it is time to replace them with fresh recruits."
+ public_war_propaganda:0 "Spread War Propaganda Among the People"
+ public_war_propaganda_desc:0 "Adequately curated stories of combat can stir up feelings of patriotism among our people."
  
  war_measures_category:0 "War Measures"
  war_measures_category_desc:0 "The war is a burden for everyone in our country. It is our duty to do everything possible to reduce the suffering of our people."
@@ -38,8 +40,14 @@
 
  enact_land_tax:0 "Enact a Land Tax"
  enact_land_tax_desc:0 "A land tax stands as a progressive approach to levy our citizens without hindering economic growth, all while promoting income equality by proportionally taxing wealthy landowners."
+ remove_land_tax:0 "Rescind The Land Tax"
+ remove_land_tax_desc:0 "Rescind the land tax to appease the nobility, harming our income."
  enact_consumption_tax:0 "Enact a Sales Tax"
  enact_consumption_tax_desc:0 "A nominal tax will be applied to everyday goods and services, providing an efficient, but unpopular, means of generating revenue for our government."
+ remove_consumption_tax:0 "Rescind The Consumption Tax"
+ remove_consumption_tax_desc:0 "The Consumption Tax has proven to unpopular. We have to get rid of it."
+ print_money_for_deficit:0 "Mint More Coins"
+ print_money_for_deficit_desc:0 "We lack coins? Then mint more of them!"
  
  Earth_Nation:0 "Earth Kingdom"
  military_investments:0 "Military Investments"

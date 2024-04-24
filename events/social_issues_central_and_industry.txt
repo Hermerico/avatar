@@ -534,7 +534,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = child_labour_event
-			add_ideas = cild_labour
+			add_ideas = child_labour
 		}
 	}
 

@@ -1,8 +1,10 @@
+gfx/texticons/unit_bender_ostrich_horses_icon_small
 gfx/texticons/unit_peasant_unit_icon_small
 gfx/texticons/unit_kyoshi_warriors_icon_small
 gfx/texticons/unit_buffalo_sledges_icon_small
 gfx/texticons/unit_buffalo_yaks_icon_small
 gfx/texticons/unit_ranged_buffalo_yaks_icon_small
+gfx/texticons/unit_ostrich_horses_icon_small
 
 gfx/texticons/unit_firenation_cruiser_icon_small
 gfx/texticons/unit_firenation_heavy_cruiser_icon_small
@@ -43,9 +45,8 @@ gfx/leaders/TEJ/Portrait_Chin_fire_tribes.dds
 	
 Ideas
 
-cavalry_tradition
-
-waterbender_ice_construction
+gfx/interface/ideas/spirit/cavalry_tradition
+gfx/interface/ideas/spirit/waterbender_ice_construction
 
 kyoshi_benders_only
 kyoshi_exceptional
@@ -140,4 +141,6 @@ unlock_tech_info_window
 	research_MIO
 	researchtime_label
 	research_progressbar
+diplomacy_lend_lease_entry
+	maximum_amount_button 
 

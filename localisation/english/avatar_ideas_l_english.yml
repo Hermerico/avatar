@@ -244,7 +244,7 @@
  full_moon:0 "Full Moon"
  full_moon_desc:0 "My first girlfriend turned into the moon."
  half_moon:0 "New Moon"
- half_moon_desc:0 "Thats not a moon..."
+ half_moon_desc:0 "That's not a moon..."
  
  firebender_population_1:0 "Firebender Population"
  firebender_population_1_desc:0 "Firebenders have always been a part of our culture. However only a certain percentage of the population has this special trait."
@@ -382,6 +382,17 @@
  tribal_education:0 "Tribal Education"
  tribal_education_desc:0 "Tribal elders educate new generations with their captivating stories, though some of their exploits may sound a bit exaggerated..."
 
+ strong_national_economy:0 "Strenghten Our Economy"
+ strong_national_economy_desc:0 "Investments into our economy can pay off handsomely in the long run, provided that it is us and not our enemies who will reap the rewards."
+ population_counted:0 "Succesful Census"
+ population_counted_desc:0 "The recent census helps the ruler know how to direct public funds, reducing waste."
+ tax_relief:0 "Tax Relief"
+ tax_relief_desc:0 "The peasants enjoy a tax break making them much less likely to revolt."
+ stolen_resources:0 "Has Looted Resources"
+ stolen_resources_desc:0 "When considering where to obtain their resources from, these people have not failed to consider the stocks of others."
+ child_labour:0 "Child Labour"
+ child_labour_desc:0 "Hello, boys and girls! Today I will teach you a new game! It's called help me work! Whoever helps me the most gets an extra half an hour of rest!"
+ 
  minister_of_personnel:0 "Minister of Personnel"
  minister_of_finance:0 "Minister of Finance"
  minister_of_justice:0 "Minister of Justice"
