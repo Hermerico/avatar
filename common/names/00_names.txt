@@ -94,8 +94,11 @@ WAT = {
 }
 
 EAT = {
+	male = {
+		names = {Limelis Hortokas Irobo Nomuka Savokis Jonukas Horuko Mefaga Rotupi Hewoto Nuriweka Anokoda Fecuhepi Saratiso Yosukobi Awameru}
+	}
 	female = {
-		names = { Iio Jesa Yangchen Choekyi Akar Amala Assam Amrita Dawa Diki Ikki Jinora Jinpa Opame Gyaltsen Gewa Ngawang Pema Popo Passang Popo Sashi }
+		names = { Iio Jesa Wimu Kotura Noribo Setoka Hinoro Fewuna Yangchen Choekyi Akar Amala Assam Amrita Dawa Diki Ikki Jinora Jinpa Opame Gyaltsen Gewa Ngawang Pema Popo Passang Popo Sashi }
 	}
 	surnames = { "" }
 	callsigns = { "" }
