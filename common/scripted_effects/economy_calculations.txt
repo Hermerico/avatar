@@ -1536,7 +1536,22 @@ money_calculation = {
 	set_variable = { income_factor_real = 1 }
 	add_to_variable = { income_factor_real = income_factor }
 
-	multiply_variable = { income_variable = income_factor_real }
+	set_variable = { income_negative_factor_calc = 1 }
+	subtract_from_variable = { income_negative_factor_calc = income_factor }
+	clamp_variable = { var = income_negative_factor_calc min = 0 }
+
+	if = {
+		limit = {
+			check_variable = { income_variable > 0 }
+		}
+		multiply_variable = { income_variable = income_factor_real }
+	}
+	if = {
+		limit = {
+			check_variable = { income_variable < 0 }
+		}
+		multiply_variable = { income_variable = income_negative_factor_calc }
+	}
 
 	add_to_variable = { money_variable = income_variable }
 

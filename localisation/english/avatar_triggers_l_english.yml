@@ -17,6 +17,8 @@
  check_authority_tooltip:0 "More than $RIGHT|%%Y2$ £centralisation_weekly_texticon  Centralisation"
 
  income_deficit_check:0 "Having an income §Rdeficit§! from £taxes_texticon  Taxation and £payments_texticon  Expenses: $LEFT|Y2$"
+ daily_money_check:0 "Having a daily £income_texticon  §YIncome§! of at least: $RIGHT|Y2$"
+ money_check:0 "£income_texticon  §YTreasury§! is less than or equals: $RIGHT|Y2$"
 
  at_least_occupation_war_weariness_tooltip:0 "Has at least $RIGHT|%%Y2$ £war_weariness_texticon  §YWar Weariness§! from Occupied States"
  at_most_occupation_war_weariness_tooltip:0 "Has at most $RIGHT|%%Y2$ £war_weariness_texticon  §YWar Weariness§! from Occupied States"
