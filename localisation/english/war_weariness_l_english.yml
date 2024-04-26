@@ -15,7 +15,7 @@ weariness_bad_2:0 "§R"
 
 weariness_economy_3:0 "\n    - Balanced Economy: §R+5§!"
 weariness_economy_4:0 "\n    - War Economy: §R+15§!"
-weariness_economy_5:0 "\n    - Total Mobilzation: §R+50§!"
+weariness_total_mobilised_economy:0 "\n    - Total Mobilzation: §R+50§!"
 weariness_family_support_2:0 "\n    - High Taxes: §G-5§!"
 weariness_family_support_3:0 "\n    - Average Taxes: §G-10§!"
 weariness_family_support_4:0 "\n    - Low Taxes: §G-15§!"

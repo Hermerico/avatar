@@ -349,8 +349,8 @@
  economy_3_desc:0 "The economy maintains a careful distribution of resources and bending talents between civilian needs and national defense."
  economy_4:0 "War Economy"
  economy_4_desc:0 "Economic priorities will shift toward producing weapons and military resources, adapting traditional structures to meet the demands of wartime."
- economy_5:0 "Total Mobilization"
- economy_5_desc:0 "All available resources, including bending abilities and communal support, will be focused on the war effort."
+ total_mobilised_economy:0 "Total Mobilization"
+ total_mobilised_economy_desc:0 "All available resources, including bending abilities and communal support, will be focused on the war effort."
 
  hidden_economy:0 "Hidden Economy"
  hidden_economy_desc:0 "Since our tribe went into hiding we cannot trade without revealing ourselves."

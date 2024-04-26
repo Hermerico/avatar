@@ -229,15 +229,10 @@ reset_var_to_zero = {
 	set_variable = { civs_for_deposites = num_of_civilian_factories }
 
 
-	###### never use more than 75% for deposits (slider could be added later to distribute construction)
-	#if = {
-	#	limit = {
-	#		is_ai = yes
-	#	}
-	#	multiply_variable = { civs_for_deposites = 0.75 }
-	#}
+	recalc_increase_factory_clamp = yes
 
-	multiply_variable = { civs_for_deposites = 0.75 }
+	multiply_variable = { civs_for_deposites = deposit_percentage }
+
 }
 
 worker_counting_states = {
@@ -1533,6 +1528,8 @@ wages_and_taxes = {
 	set_variable = { civ_factory_payments = tax_balance }
 	multiply_variable = { civ_factory_payments = civ_buy_factor }
 	clamp_variable = { var = civ_factory_payments  min = 0 }
+
+	recalc_civ_buy_clamp = yes
 
 	subtract_from_variable = { tax_balance = civ_factory_payments }
 }

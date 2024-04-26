@@ -831,6 +831,32 @@ civil_to_military_factory = {						#### percentage of civil capacities used as m
 	postfix = none
 }
 
+min_treasury_percentage = {						#### minimum percentage of treasury priority
+	color_type = neutral
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
+min_civil_percentage = {						#### minimum percentage of civil buying priority
+	color_type = neutral
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
+
+min_deposit_percentage = {						#### minimum percentage of deposit construction priority
+	color_type = neutral
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
+min_factory_percentage = {						#### minimum percentage of factory construction priority
+	color_type = neutral
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
+
 
 monthly_unit_quality = {							#### monthly change of unit quality
 	color_type = good

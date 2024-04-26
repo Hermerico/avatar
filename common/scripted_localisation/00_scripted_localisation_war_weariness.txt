@@ -213,9 +213,9 @@ defined_text = {
 	name = LawWeariness3
 	text = {
 		trigger = {
-			has_idea = economy_5
+			has_idea = total_mobilised_economy
 		}
-		localization_key = weariness_economy_5
+		localization_key = weariness_total_mobilised_economy
 	}
 }
 defined_text = {

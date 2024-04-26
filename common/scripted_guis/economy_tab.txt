@@ -284,6 +284,27 @@ scripted_gui = {
 				increase_civ_buy_effect = yes
 			}
 
+			decrease_factory_percentage_click = {
+				decrease_factory_effect = yes
+			}
+			increase_factory_percentage_click = {
+				increase_factory_effect = yes
+			}
+			decrease_factory_percentage_shift_click = {
+				decrease_factory_effect = yes
+				decrease_factory_effect = yes
+				decrease_factory_effect = yes
+				decrease_factory_effect = yes
+				decrease_factory_effect = yes
+			}
+			increase_factory_percentage_shift_click = {
+				increase_factory_effect = yes
+				increase_factory_effect = yes
+				increase_factory_effect = yes
+				increase_factory_effect = yes
+				increase_factory_effect = yes
+			}
+
 		}
 
 		properties = {

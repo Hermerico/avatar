@@ -1024,23 +1024,32 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "buy_slider_container"
-				position = {x=16 y=200}
+				position = {x=4 y=200}
 				size = { width=236 height=296 }
 
 				iconType ={
 					name ="buy_civ_bg"
-					spriteType = "GFX_slider_bg"
-					position = { x= 4 y = 12 }
-					scale = 0.5
+					spriteType = "GFX_slider_202"
+					position = { x= 0 y = 10 }
+					scale = 0.75
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "buy_civ_tooltip"
 					pdx_tooltip_delayed = "buy_civ_tooltip_delayed"
 				}
 
 				iconType ={
+					name ="treasury_icon"
+					spriteType = "GFX_treasury_icon"
+					position = { x= 20 y = 8 }
+					scale = 0.5
+					Orientation = "UPPER_LEFT"
+					alwaystransparent = yes
+				}
+
+				iconType ={
 					name ="buy_civ_icon"
 					spriteType = "GFX_non_available_factory_icon"
-					position = { x= 144 y = 10 }
+					position = { x= 104 y = 12 }
 					Orientation = "UPPER_LEFT"
 					alwaystransparent = yes
 				}
@@ -1048,23 +1057,84 @@ guiTypes = {
 				buttonType = {
 					name ="decrease_civ_buy"
 					spriteType = "GFX_scroll_left"
-					position = { x= 14 y = 14 }
+					position = { x= 4 y = 16 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "decrease_civ_buy"
 				}
 				buttonType = {
 					name ="increase_civ_buy"
 					spriteType = "GFX_scroll_right"
-					position = { x= 180 y = 14 }
+					position = { x= 130 y = 16 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "increase_civ_buy"
 				}
 
 				instantTextboxType = {
 					name = "civ_title"
-					position = {x = 30 y = 14}
+					position = {x = 8 y = 16}
 					font = "hoi_16mbs"
 					text = "civ_title"
+					maxWidth = 140
+					maxHeight = 20
+					format = center
+					alwaystransparent = yes
+				}
+
+			}
+
+			containerWindowType = {
+				name = "deposit_slider_container"
+				position = {x=156 y=200}
+				size = { width=236 height=296 }
+
+				iconType ={
+					name ="deposit_percent_bg"
+					spriteType = "GFX_slider_202"
+					position = { x= 0 y = 10 }
+					scale = 0.75
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "deposit_percent_tooltip"
+					pdx_tooltip_delayed = "deposit_percent_tooltip_delayed"
+				}
+
+				iconType ={
+					name ="treasury_icon"
+					spriteType = "GFX_resource_constructions"
+					position = { x= 24 y = 8 }
+					scale = 0.70
+					Orientation = "UPPER_LEFT"
+					alwaystransparent = yes
+				}
+
+				iconType ={
+					name ="buy_civ_icon"
+					spriteType = "GFX_factory_constructions"
+					position = { x= 104 y = 10 }
+					scale = 0.70
+					Orientation = "UPPER_LEFT"
+					alwaystransparent = yes
+				}
+
+				buttonType = {
+					name ="decrease_factory_percentage"
+					spriteType = "GFX_scroll_left"
+					position = { x= 4 y = 16 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "decrease_factory_percentage"
+				}
+				buttonType = {
+					name ="increase_factory_percentage"
+					spriteType = "GFX_scroll_right"
+					position = { x= 130 y = 16 }
+					Orientation = "UPPER_LEFT"
+					pdx_tooltip = "increase_factory_percentage"
+				}
+
+				instantTextboxType = {
+					name = "deposit_title"
+					position = {x = 20 y = 14}
+					font = "hoi_16mbs"
+					text = "deposit_title"
 					maxWidth = 120
 					maxHeight = 20
 					format = center

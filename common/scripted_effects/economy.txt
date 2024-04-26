@@ -115,11 +115,62 @@
 
 decrease_civ_buy_effect = {
 	add_to_variable = { civ_buy_factor = -0.01 }
-	clamp_variable = { var = civ_buy_factor  min = 0 max = 1 }
+	recalc_civ_buy_clamp = yes
 }
 increase_civ_buy_effect = {
 	add_to_variable = { civ_buy_factor = 0.01 }
-	clamp_variable = { var = civ_buy_factor  min = 0 max = 1 }
+	recalc_civ_buy_clamp = yes
+}
+recalc_civ_buy_clamp = {
+	set_variable = { treasury_min = modifier@min_treasury_percentage }
+	set_variable = { treasury_max = 1 }
+	subtract_from_variable = { treasury_max = modifier@min_civil_percentage }
+	if = {
+		limit = {
+			check_variable = { treasury_min > treasury_max }
+		}
+		set_variable = { treasury_difference = modifier@min_deposit_percentage }
+		add_to_variable = { treasury_difference = modifier@min_factory_percentage }
+		add_to_variable = { treasury_difference = -1 }
+		divide_variable = { treasury_difference = 2 }
+		
+		subtract_from_variable = { deposit_min = treasury_difference }
+		subtract_from_variable = { deposit_max = treasury_difference }
+	}
+
+	clamp_variable = { var = civ_buy_factor  min = treasury_min max = treasury_max }
+	set_variable = { treasury_factor = 1 }
+	subtract_from_variable = { treasury_factor = civ_buy_factor }
+}
+
+decrease_factory_effect = {
+	add_to_variable = { deposit_percentage = 0.01 }
+	recalc_increase_factory_clamp = yes
+}
+increase_factory_effect = {
+	add_to_variable = { deposit_percentage = -0.01 }
+	recalc_increase_factory_clamp = yes
+}
+recalc_increase_factory_clamp = {
+	set_variable = { deposit_min = modifier@min_deposit_percentage }
+	set_variable = { deposit_max = 1 }
+	subtract_from_variable = { deposit_max = modifier@min_factory_percentage }
+	if = {
+		limit = {
+			check_variable = { deposit_min > deposit_max }
+		}
+		set_variable = { deposit_difference = modifier@min_deposit_percentage }
+		add_to_variable = { deposit_difference = modifier@min_factory_percentage }
+		add_to_variable = { deposit_difference = -1 }
+		divide_variable = { deposit_difference = 2 }
+		
+		subtract_from_variable = { deposit_min = deposit_difference }
+		subtract_from_variable = { deposit_max = deposit_difference }
+	}
+
+	clamp_variable = { var = deposit_percentage  min = deposit_min max = deposit_max }
+	set_variable = { factory_percentage = 1 }
+	subtract_from_variable = { factory_percentage = deposit_percentage }
 }
 
 

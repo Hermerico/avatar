@@ -161,7 +161,7 @@ FIR_industrialisation_category = {
 				has_war = yes
 				OR = {
 					has_idea = economy_4
-					has_idea = economy_5
+					has_idea = total_mobilised_economy
 				}
 			}
 		}
