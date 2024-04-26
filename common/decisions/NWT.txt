@@ -1268,7 +1268,7 @@ NWT_isolation_policies = {
 		
 		available = {
 			has_idea = remote_isolation_3
-			has_idea = economy_4
+			has_idea = war_economy_law
 			has_idea = one_tribe
 			has_navy_size = {
 			    size > 9

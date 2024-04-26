@@ -67,7 +67,7 @@ add_ideas = {
 	limited_fire_conscription
 	fire_benders_only
 	international_trade
-	economy_2
+	buildup_focus_law
 	family_support_2
 	elite_education
 
@@ -249,7 +249,7 @@ permanent_spirits_and_modifiers = yes
 		extensive_conscription
 		fire_volunteers
 		international_trade
-		economy_4
+		war_economy_law
 		family_support_3
 		indoctrination
 
@@ -387,7 +387,7 @@ permanent_spirits_and_modifiers = yes
 		extensive_conscription
 		fire_volunteers
 		international_trade
-		economy_4
+		war_economy_law
 		family_support_3
 		indoctrination
 	}

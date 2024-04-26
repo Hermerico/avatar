@@ -49,7 +49,7 @@ add_ideas = {
 	pacifist_detachment
 
 	international_trade
-	economy_1
+	construction_efforts_law
 	disarmed_air_nation
 	air_benders_only
 	family_support_3

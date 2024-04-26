@@ -56,7 +56,7 @@ add_ideas = {
 	volunteer_earth_nation
 	earth_benders_only
 	intercontinental_trade
-	economy_1
+	construction_efforts_law
 	family_support_3
 	no_education
 }
@@ -109,7 +109,7 @@ add_ideas = {
 	earth_indiscriminate
 	all_adults_serve
 	city_markets
-	economy_4
+	war_economy_law
 	family_support_1
 	no_education
 }

@@ -125,6 +125,8 @@ recalc_civ_buy_clamp = {
 	set_variable = { treasury_min = modifier@min_treasury_percentage }
 	set_variable = { treasury_max = 1 }
 	subtract_from_variable = { treasury_max = modifier@min_civil_percentage }
+	clamp_variable = { var = treasury_min  min = 0 }
+	clamp_variable = { var = treasury_max  min = 0 }
 	if = {
 		limit = {
 			check_variable = { treasury_min > treasury_max }
@@ -155,6 +157,8 @@ recalc_increase_factory_clamp = {
 	set_variable = { deposit_min = modifier@min_deposit_percentage }
 	set_variable = { deposit_max = 1 }
 	subtract_from_variable = { deposit_max = modifier@min_factory_percentage }
+	clamp_variable = { var = deposit_min  min = 0 }
+	clamp_variable = { var = deposit_max  min = 0 }
 	if = {
 		limit = {
 			check_variable = { deposit_min > deposit_max }

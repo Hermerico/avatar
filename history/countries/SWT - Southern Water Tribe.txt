@@ -72,7 +72,7 @@ add_ideas = {
 	
 	local_markets
 	water_volunteers
-	economy_1
+	construction_efforts_law
 	volunteer_water_nation
 	family_support_3
 	tribal_education
@@ -139,7 +139,7 @@ permanent_spirits_and_modifiers = yes
 	add_ideas = {
 		local_markets
 		water_exceptional
-		economy_1
+		construction_efforts_law
 		limited_water_conscription
 		family_support_3
 		tribal_education
@@ -177,7 +177,7 @@ permanent_spirits_and_modifiers = yes
 	add_ideas = {
 		local_markets
 		extensive_conscription
-		economy_3
+		balanced_economy_law
 		water_indiscriminate
 		family_support_5
 		tribal_education

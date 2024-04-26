@@ -21,7 +21,7 @@ on_actions = {
 
 			add_ideas = { 
 				occupation_black_market
-				occupation_economy
+				occupation_economy_law
 			}
 			
 			if = {
@@ -50,7 +50,7 @@ on_actions = {
 
 			add_ideas = { 
 				local_markets
-				economy_3
+				balanced_economy_law
 			}
 		}
 	}
