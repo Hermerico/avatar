@@ -1219,9 +1219,24 @@ factory_calculations = {
 
 	set_variable = { factories_bought = civ_factory_payments }
 	clamp_variable = { var = factories_bought  min = 0 }
-	set_variable = { factories_bought_price = 10 }
+	set_variable = { factories_bought_price = 0.1 }
 	multiply_variable = { factories_bought_price = mtth:civilian_cost_factor }
-	multiply_variable = { factories_bought = factories_bought_price }
+
+	set_variable = { building_income_ratio = building_count }
+	set_variable = { building_divider = state_income }
+	multiply_variable = { building_divider = 10 }
+	clamp_variable = { var = building_divider  min = 1 }
+	divide_variable = { building_income_ratio = building_divider }
+	subtract_from_variable = { building_income_ratio = 1 }
+	clamp_variable = { var = building_income_ratio  min = -0.9  max = 1 }
+	set_variable = { building_income_factor = 1 }
+	add_to_variable = { building_income_factor = building_income_ratio }
+
+	multiply_variable = { factories_bought_price = building_income_factor }
+
+	clamp_variable = { var = factories_bought_price  min = 0.005 }
+
+	divide_variable = { factories_bought = factories_bought_price }
 
 	set_variable = { ic = factories_bought }
 
