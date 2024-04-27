@@ -118,7 +118,7 @@ cabbage_corp_expansion = {
 
 		fire_only_once = yes
 
-		remove_effect_ = {
+		remove_effect = {
 			has_country_flag = {
 				flag = cabbage_corp_expansion_active
 				add = 1
