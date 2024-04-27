@@ -1,0 +1,21 @@
+cabbage_corp_expansion = {
+    icon = decision_cabbage
+
+    title = cabbage_corp_expansion.title
+    desc = cabbage_corp_expansion.desc
+
+    picture = GFX_category_cabbage_expansion
+
+	visible = {
+		NOT = { has_country_flag = hide_mission_decisions }
+
+		has_country_flag = {
+			flag = cabbage_corp_expansion_active
+			value < 5
+		}
+	}
+
+	priority = {
+		base = 100
+	}
+}
