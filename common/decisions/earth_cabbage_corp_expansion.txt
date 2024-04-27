@@ -64,10 +64,10 @@ cabbage_corp_expansion = {
 		fire_only_once = yes
 
 		remove_effect = {
-			has_country_flag = {
+			modify_country_flag = {
 				flag = cabbage_corp_expansion_active
-				add = 1
-		}
+				value = 1
+			  }
 			food_throughput = 0.2
 			income = 0.5
 			peasant_opinion = 10
@@ -92,10 +92,10 @@ cabbage_corp_expansion = {
 		fire_only_once = yes
 
 		remove_effect = {
-			has_country_flag = {
+			modify_country_flag = {
 				flag = cabbage_corp_expansion_active
-				add = 1
-		}
+				value = 1
+			  }
 			set_country_flag = cabbage_corporation
 		}
 
@@ -119,10 +119,10 @@ cabbage_corp_expansion = {
 		fire_only_once = yes
 
 		remove_effect = {
-			has_country_flag = {
+			modify_country_flag = {
 				flag = cabbage_corp_expansion_active
-				add = 1
-		}
+				value = 1
+			  }
 			industrialist_opinion = 5
 		}
 	}
