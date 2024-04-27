@@ -101,6 +101,18 @@ winter_modifier = {
 	local_supplies = -0.6
 }
 
+permafrost_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_permafrost_modifier_icon
+
+	modifier_army_sub_unit_waterbender_attack_factor = 0.2
+	modifier_army_sub_unit_waterbender_defence_factor = 0.2
+
+	harvesting_factor = -1
+	local_building_upkeep_factor = controller:modifier@ice_construction_cost
+}
+
 drought_modifier = {
 	enable = { always = yes }
 

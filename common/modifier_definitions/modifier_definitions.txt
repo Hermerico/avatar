@@ -587,6 +587,39 @@ steel_beams_throughput = {							#### steel beams production efficiency
 }
 
 
+local_building_upkeep_factor = {							#### factor on state cost of upkeep resource
+	color_type = bad
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+
+ice_construction_cost = {							#### how much construction upkeep cost is reduced by construction with icebending
+	color_type = bad
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+
+stone_upkeep_factor = {						#### percentage how much of secondary construction resource is used
+	color_type = neutral
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
+steel_upkeep_factor = {						#### percentage of how much tertiary construction is used. overwrites lower resource, so 80% steel and 60% stone would result in 80% steel and 20% stone
+	color_type = neutral
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
+
+animal_product_upkeep_factor = {			#### percentage how much animal products is used in primary resource
+	color_type = neutral
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
 
 building_upkeep_factor = {							#### factor on country cost of upkeep resource
 	color_type = bad

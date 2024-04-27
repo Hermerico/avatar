@@ -191,6 +191,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/state_modifiers/winter_icon.dds"
 	}
 
+	spriteType = {
+		name = "GFX_permafrost_modifier_icon"
+		texturefile = "gfx/interface/state_modifiers/permafrost_modifier.dds"
+	}
+
 
 	spriteType = {
 		name = "GFX_farm_bonus"

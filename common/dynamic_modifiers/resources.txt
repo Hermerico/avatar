@@ -79,8 +79,6 @@ mils_and_dockyards_extra = {
 additional_scripted_resources = {
 	enable = { always = yes }
 
-	#icon = GFX_fall
-
 	state_resource_oil = mtth:self_employed_grain_supply
 	state_resource_chromium = mtth:self_animal_products_supply
 	state_resource_stone = mtth:self_employed_minerals_supply
@@ -96,8 +94,6 @@ additional_scripted_resources = {
 factory_resource_consumption = {
 	enable = { always = yes }
 
-	#icon = GFX_fall
-
 	country_resource_cost_oil = mtth:crop_cost
 	country_resource_cost_chromium = mtth:leather_cost
 	country_resource_cost_stone = mtth:stone_cost
@@ -111,8 +107,6 @@ factory_resource_consumption = {
 
 population_resource_bought_on_market = {
 	enable = { always = yes }
-
-	#icon = GFX_fall
 
 	country_resource_cost_oil = grain_demand
 	country_resource_cost_chromium = animal_products_demand
@@ -133,10 +127,11 @@ population_resource_bought_on_market = {
 building_upkeep_resources = {
 	enable = { always = yes }
 
-	#icon = GFX_fall
 	country_resource_cost_planks_resource = local_plank_upkeep_cost
 	country_resource_cost_bricks_resource = local_brick_upkeep_cost
 	country_resource_cost_steel_beams_resource = local_steel_beam_upkeep_cost
+
+	country_resource_cost_chromium = local_animal_product_upkeep_cost
 
 	production_speed_buildings_factor = construction_material
 
@@ -163,8 +158,6 @@ prosperity_modifiers = {
 
 missing_workers_state = {
 	enable = { always = yes }
-
-	#icon = GFX_fall
 
 	state_resources_factor = mtth:missing_workers_resource_modifier
 }
