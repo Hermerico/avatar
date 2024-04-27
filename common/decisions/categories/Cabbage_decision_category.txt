@@ -1,7 +1,5 @@
 cabbage_corp_expansion = {
     icon = decision_cabbage
-
-    title = cabbage_corp_expansion.title
     desc = cabbage_corp_expansion.desc
 
     picture = GFX_category_cabbage_expansion

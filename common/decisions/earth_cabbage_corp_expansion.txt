@@ -61,10 +61,16 @@ cabbage_corp_expansion = {
 
 		days_remove = 60
 
-		complete_effect = {
-			value = 1
+		fire_only_once = yes
+
+		remove_effect = {
+			has_country_flag = {
+				flag = cabbage_corp_expansion_active
+				add = 1
+		}
 			food_throughput = 0.2
 			income = 0.5
+			peasant_opinion = 10
 		}
 
 	}
@@ -78,13 +84,18 @@ cabbage_corp_expansion = {
 		}
 
 		modifier = {
-			income = -0.50
+			income = -1
 		}
 
 		days_remove = 125
 
-		complete_effect = {
-			value = 1
+		fire_only_once = yes
+
+		remove_effect = {
+			has_country_flag = {
+				flag = cabbage_corp_expansion_active
+				add = 1
+		}
 			set_country_flag = cabbage_corporation
 		}
 
@@ -95,19 +106,24 @@ cabbage_corp_expansion = {
 		icon = decision_cabbage
 
 		allowed = {
-			has_country_flag = cabbage_corp_expansion active
+			has_country_flag = cabbage_corp_expansion_active
 		}
 
 		modifier = {
 			income = -0.10
+			civilian_capacity_factor = -0.2
 		}
 
 		days_remove = 60
 
-		complete_effect = {
-			value = 1
+		fire_only_once = yes
+
+		remove_effect_ = {
+			has_country_flag = {
+				flag = cabbage_corp_expansion_active
+				add = 1
+		}
 			industrialist_opinion = 5
-			civilian_capacity_factor = 0.5
 		}
 	}
 
