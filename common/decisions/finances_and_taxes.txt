@@ -1519,6 +1519,41 @@ taxation_category = {
 		}
 	}
 
+	send_tax_collectors = {
+
+		icon = inflation
+
+		visible = {
+			
+		}
+		available = {
+			check_variable = {
+				var = modifier@taxation_efficiency
+				value = 0.5
+				compare = less_than_or_equals
+				tooltip = less_than_taxation_efficiency_check
+			}
+		}
+
+		days_remove = 120
+
+
+		modifier = {
+			taxation_efficiency = 0.1
+			political_power_factor = -0.1
+		}
+
+		cost = 50
+
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+
 	enact_land_tax = {
 
 		icon = land_tax

@@ -12,7 +12,7 @@ wages_and_professionalism_spirit = {
 	
 	army_wages_factor = mtth:spirit_wages_modifier
 	unit_quality_target = mtth:spirit_unit_quality_modifier
-
+	reservist_wages = mtth:spirit_wages_modifier
 }
 
 unit_leader_spirit = {
@@ -20,5 +20,5 @@ unit_leader_spirit = {
 	
 	army_leader_cost_factor = mtth:spirit_leader_cost_modifier
 	army_leader_start_level = mtth:spirit_leader_level_modifier
-
+	officer_wages = mtth:spirit_leader_cost_modifier
 }
