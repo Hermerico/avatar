@@ -58,7 +58,7 @@ add_ideas = {
 	SWA_spirits
 	local_markets
 	swamp_siwong_volunteers
-	economy_1
+	construction_efforts_law
 	volunteer_water_nation
 	family_support_3
 	no_education

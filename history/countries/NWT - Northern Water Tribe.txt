@@ -75,7 +75,7 @@ add_ideas = {
 
 	local_markets
 	water_exceptional
-	economy_1
+	construction_efforts_law
 	volunteer_water_nation
 	family_support_4
 	tribal_education
@@ -160,7 +160,7 @@ permanent_spirits_and_modifiers = yes
 	add_ideas = {
 		intercontinental_trade
 		water_exceptional
-		economy_1
+		construction_efforts_law
 		limited_water_conscription
 		family_support_3
 		tribal_education
@@ -207,7 +207,7 @@ permanent_spirits_and_modifiers = yes
 	add_ideas = {
 		city_markets
 		water_exceptional
-		economy_1
+		construction_efforts_law
 		limited_water_conscription
 		family_support_3
 		tribal_education

@@ -229,15 +229,10 @@ reset_var_to_zero = {
 	set_variable = { civs_for_deposites = num_of_civilian_factories }
 
 
-	###### never use more than 75% for deposits (slider could be added later to distribute construction)
-	#if = {
-	#	limit = {
-	#		is_ai = yes
-	#	}
-	#	multiply_variable = { civs_for_deposites = 0.75 }
-	#}
+	recalc_increase_factory_clamp = yes
 
-	multiply_variable = { civs_for_deposites = 0.75 }
+	multiply_variable = { civs_for_deposites = deposit_percentage }
+
 }
 
 worker_counting_states = {
@@ -1460,20 +1455,20 @@ taxation_state_calc = {
 
 wages_and_taxes = {
 	set_variable = { army_wages = deployed_army_manpower_k }
-	multiply_variable = { army_wages = 0.1 }  ### 10 money per soldier
+	multiply_variable = { army_wages = 0.1 }  ### 0.1 money per soldier
 	multiply_variable = { army_wages = mtth:army_wages_factor }
 	set_variable = { navy_wages = deployed_navy_manpower_k }
-	multiply_variable = { navy_wages = 0.15 }  ### 15 money per sailor
+	multiply_variable = { navy_wages = 0.15 }  ### 0.15 money per sailor
 	multiply_variable = { navy_wages = mtth:navy_wages_factor }
 	set_variable = { air_wages = deployed_airforce_manpower_k }
-	multiply_variable = { air_wages = 0.5 }  ### 50 money per pilot
+	multiply_variable = { air_wages = 0.5 }  ### 0.5 money per pilot
 	multiply_variable = { air_wages = mtth:air_wages_factor }
 	set_variable = { reservist_wages = reservist_manpower_k }
-	multiply_variable = { reservist_wages = 0.01 }  ### 1 money per reservist
+	multiply_variable = { reservist_wages = 0.01 }  ### 0.01 money per reservist
 	multiply_variable = { reservist_wages = mtth:reservist_wages_factor }
 	set_variable = { officer_wages = army_leaders^num }
 	add_to_variable = { officer_wages = navy_leaders^num }
-	multiply_variable = { officer_wages = 0.1 }  ### 100 money per officer
+	multiply_variable = { officer_wages = 0.005 }  ### 5 money per officer
 	multiply_variable = { officer_wages = mtth:officer_wages_factor }
 
 	set_variable = { military_wages = army_wages }
@@ -1501,7 +1496,7 @@ wages_and_taxes = {
 	multiply_variable = { smithy_payments = mtth:military_cost_factor }
 
 	set_variable = { naval_factory_use = num_of_naval_factories }
-	subtract_from_variable = { naval_factory_use = num_of_available_navalitary_factories }
+	subtract_from_variable = { naval_factory_use = num_of_available_naval_factories }
 
 	set_variable = { naval_factory_use_percentage = num_of_navalitary_factories }
 	if = {
@@ -1533,6 +1528,8 @@ wages_and_taxes = {
 	set_variable = { civ_factory_payments = tax_balance }
 	multiply_variable = { civ_factory_payments = civ_buy_factor }
 	clamp_variable = { var = civ_factory_payments  min = 0 }
+
+	recalc_civ_buy_clamp = yes
 
 	subtract_from_variable = { tax_balance = civ_factory_payments }
 }
@@ -1575,14 +1572,32 @@ money_calculation = {
 }
 
 building_upkeep_calc = {
-	set_variable = { planks = resource@planks_resource }
-	set_variable = { bricks = resource@bricks_resource }
-	set_variable = { steel_beams = resource@steel_beams_resource }
+
+	set_variable = { first_construction_resource = 0 }
+	set_variable = { second_construction_resource = 0 }
+	set_variable = { third_construction_resource = 0 }
+
+	add_to_variable = { first_construction_resource = resource@planks_resource }
+	add_to_variable = { second_construction_resource = resource@bricks_resource }
+	add_to_variable = { third_construction_resource = resource@steel_beams_resource }
+
+	if = {
+		limit = {
+			check_variable = { modifier@animal_product_construction > 0 }
+		}
+		add_to_variable = { first_construction_resource = resource@chromium }
+	}
 
 	set_variable = { local_upkeep_cost = 0 }
 
 	every_controlled_state = {
-		add_to_variable = { ROOT.local_upkeep_cost = modifier@building_upkeep_cost }
+		set_variable = { local_upkeep_factor = 1 }
+		add_to_variable = { local_upkeep_factor = modifier@local_building_upkeep_factor }
+		clamp_variable = { var = local_upkeep_factor  min = 0 }
+		set_variable = { local_upkeep_cost = modifier@building_upkeep_cost }
+		multiply_variable = { local_upkeep_cost = local_upkeep_factor }
+
+		add_to_variable = { ROOT.local_upkeep_cost = local_upkeep_cost }
 	}
 
 	multiply_variable = { local_upkeep_cost = mtth:upkeep_factor }
@@ -1611,6 +1626,9 @@ building_upkeep_calc = {
 		max = local_plank_clamp
 	}
 
+
+	##### upkeep costs for standart resources
+
 	set_variable = { local_plank_upkeep_cost = local_upkeep_cost }
 	set_variable = { local_brick_upkeep_cost = local_upkeep_cost }
 	set_variable = { local_steel_beam_upkeep_cost = local_upkeep_cost }
@@ -1619,14 +1637,46 @@ building_upkeep_calc = {
 	multiply_variable = { local_brick_upkeep_cost = local_brick_factor }
 	multiply_variable = { local_steel_beam_upkeep_cost = local_steel_beam_factor }
 
+	set_variable = { primary_upkeep_cost = local_plank_upkeep_cost }
+	set_variable = { secondary_upkeep_cost = local_brick_upkeep_cost }
+	set_variable = { tertiary_upkeep_cost = local_steel_beam_upkeep_cost }
+
+
+	#### upkeep cost for modifier unlocked resources
+
+	set_variable = { animal_construction_factor = modifier@animal_product_upkeep_factor }
+	clamp_variable = {
+		var = animal_construction_factor
+		min = 0
+		max = 1
+	}
+	set_variable = { local_plank_clamp_2 = 1 }
+	subtract_from_variable = { local_plank_clamp_2 = animal_construction_factor }
+	set_variable = { local_plank_factor_2 = 1 }
+	clamp_variable = {
+		var = local_plank_factor_2
+		min = 0
+		max = local_plank_clamp_2
+	}
+
+	set_variable = { local_animal_product_upkeep_cost = local_plank_upkeep_cost }
+
+	multiply_variable = { local_plank_upkeep_cost = local_plank_factor_2 }
+	multiply_variable = { local_animal_product_upkeep_cost = animal_construction_factor }
+
+
+	#### end special resource
+
+
+
 	set_variable = { construction_material = 0 }
-	set_variable = { plank_factor = planks }
+	set_variable = { plank_factor = first_construction_resource }
 	multiply_variable = { plank_factor = local_plank_factor }
 	add_to_variable = { construction_material = plank_factor }
-	set_variable = { brick_factor = bricks }
+	set_variable = { brick_factor = second_construction_resource }
 	multiply_variable = { brick_factor = local_brick_factor }
 	add_to_variable = { construction_material = brick_factor }
-	set_variable = { steel_beam_factor = steel_beams }
+	set_variable = { steel_beam_factor = third_construction_resource }
 	multiply_variable = { steel_beam_factor = local_steel_beam_factor }
 	add_to_variable = { construction_material = steel_beam_factor }
 

@@ -56,7 +56,7 @@ add_ideas = {
 	limited_earth_conscription
 	earth_auxiliary
 	city_markets
-	economy_2
+	buildup_focus_law
 	family_support_3
 }
 

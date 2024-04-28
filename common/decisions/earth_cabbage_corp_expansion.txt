@@ -44,3 +44,87 @@ THE_EARTHKINGDOM = {
 	}
 
 }
+
+cabbage_corp_expansion = {
+
+	expand_cabbage_shops = {
+
+		icon = decision_cabbage
+
+		allowed = {
+			has_country_flag = cabbage_corp_expansion_active
+		}
+
+		modifier = {
+			income = -0.50
+		}
+
+		days_remove = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+			modify_country_flag = {
+				flag = cabbage_corp_expansion_active
+				value = 1
+			  }
+			food_throughput = 0.2
+			income = 0.5
+			peasant_opinion = 10
+		}
+
+	}
+
+	expand_cabbage_industry = {
+
+		icon = decision_cabbage
+		
+		allowed = {
+			has_country_flag = cabbage_corp_expansion_active
+		}
+
+		modifier = {
+			income = -1
+		}
+
+		days_remove = 125
+
+		fire_only_once = yes
+
+		remove_effect = {
+			modify_country_flag = {
+				flag = cabbage_corp_expansion_active
+				value = 1
+			  }
+			set_country_flag = cabbage_corporation
+		}
+
+	}
+
+	expand_cabbage_opinion = {
+		
+		icon = decision_cabbage
+
+		allowed = {
+			has_country_flag = cabbage_corp_expansion_active
+		}
+
+		modifier = {
+			income = -0.10
+			civilian_capacity_factor = -0.2
+		}
+
+		days_remove = 60
+
+		fire_only_once = yes
+
+		remove_effect = {
+			modify_country_flag = {
+				flag = cabbage_corp_expansion_active
+				value = 1
+			  }
+			industrialist_opinion = 5
+		}
+	}
+
+}

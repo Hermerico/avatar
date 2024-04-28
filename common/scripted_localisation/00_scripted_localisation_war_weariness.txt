@@ -195,7 +195,7 @@ defined_text = {
 	name = LawWeariness1
 	text = {
 		trigger = {
-			has_idea = economy_3
+			has_idea = balanced_economy_law
 		}
 		localization_key = weariness_economy_3
 	}
@@ -204,7 +204,7 @@ defined_text = {
 	name = LawWeariness2
 	text = {
 		trigger = {
-			has_idea = economy_4
+			has_idea = war_economy_law
 		}
 		localization_key = weariness_economy_4
 	}
@@ -213,9 +213,9 @@ defined_text = {
 	name = LawWeariness3
 	text = {
 		trigger = {
-			has_idea = economy_5
+			has_idea = total_mobilisation_law
 		}
-		localization_key = weariness_economy_5
+		localization_key = weariness_total_mobilised_economy
 	}
 }
 defined_text = {

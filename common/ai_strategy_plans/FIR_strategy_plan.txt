@@ -23,8 +23,8 @@ FIR_invasion_plan = {
 	ideas = {
 		city_markets = 100
 		family_support_1 = 100
-		economy_4 = 100
-		economy_3 = 10
+		war_economy_law = 100
+		balanced_economy_law = 10
 		indoctrination = 5
 	}
 	

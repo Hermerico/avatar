@@ -57,7 +57,7 @@ add_ideas = {
 	volunteer_earth_nation
 	earth_benders_only
 	local_markets
-	economy_1
+	construction_efforts_law
 	family_support_3
 	no_education
 }

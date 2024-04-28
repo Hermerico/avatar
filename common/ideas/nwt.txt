@@ -195,7 +195,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				building_upkeep_factor = -0.75
+				ice_construction_cost = -0.8
+				animal_product_upkeep_factor = 1
+				planks_demand = -0.8
 			}
 		}
 
@@ -242,8 +244,9 @@ ideas = {
 				#political_advisor_cost_factor = -0.3
 				political_power_factor = -0.40
 				planning_speed = -0.4
-				conscription_factor = -0.2
-				land_reinforce_rate = -0.02
+				#conscription_factor = -0.2
+				#land_reinforce_rate = -0.02
+				peasant_output_factor = 0.4
 				centralisation_target_modifier = -0.2
 			}
 
@@ -263,8 +266,7 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.30
 				planning_speed = -0.3
-				conscription_factor = -0.15
-				land_reinforce_rate = -0.015
+				peasant_output_factor = 0.3
 				centralisation_target_modifier = -0.15
 			}
 
@@ -284,8 +286,7 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.2
 				planning_speed = -0.2
-				conscription_factor = -0.1
-				land_reinforce_rate = -0.01
+				peasant_output_factor = 0.2
 				centralisation_target_modifier = -0.1
 			}
 
@@ -305,8 +306,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.1
 				planning_speed = -0.1
-				conscription_factor = -0.05
-				land_reinforce_rate = -0.005
+				peasant_output_factor = 0.1
 				centralisation_target_modifier = -0.05
 			}
 

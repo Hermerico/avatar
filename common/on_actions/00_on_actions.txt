@@ -18,6 +18,18 @@ on_actions = {
 			}
 
 
+			every_state = {
+				limit = {
+					OR = {
+						is_on_continent = africa
+						is_on_continent = asia
+					}
+				}
+
+				add_dynamic_modifier = { modifier = permafrost_modifier }
+			}
+
+
 			#### animal population ####
 
 			if = {

@@ -157,18 +157,6 @@ building_upkeep_cost = {					#### upkeep resource cost of a building
 	precision = 0
 	postfix = none
 }
-stone_upkeep_factor = {						#### percentage how much of secondary construction resource is used
-	color_type = neutral
-	value_type = percentage
-	precision = 0
-	postfix = none
-}
-steel_upkeep_factor = {						#### percentage of how much tertiary construction is used. overwrites lower resource, so 80% steel and 60% stone would result in 80% steel and 20% stone
-	color_type = neutral
-	value_type = percentage
-	precision = 0
-	postfix = none
-}
 
 max_rations_building_k = {					#### ration storage
 	color_type = good

@@ -401,6 +401,10 @@ spriteTypes = {
 		name = "GFX_idea_water_raids_100"
 		texturefile = "gfx/interface/ideas/spirit/water_raids_100.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_waterbender_ice_construction"
+		texturefile = "gfx/interface/ideas/spirit/idea_waterbender_ice_construction.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_idea_water_payments"
@@ -557,24 +561,32 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_idea_economy_1"
-		texturefile = "gfx/interface/ideas/laws/idea_economy_1.dds"
+		name = "GFX_idea_construction_efforts_law"
+		texturefile = "gfx/interface/ideas/laws/idea_construction_efforts_law.dds"
 	}
 	SpriteType = {
-		name = "GFX_idea_economy_2"
-		texturefile = "gfx/interface/ideas/laws/idea_economy_2.dds"
+		name = "GFX_idea_buildup_focus_law"
+		texturefile = "gfx/interface/ideas/laws/idea_buildup_focus_law.dds"
 	}
 	SpriteType = {
-		name = "GFX_idea_economy_3"
-		texturefile = "gfx/interface/ideas/laws/idea_economy_3.dds"
+		name = "GFX_idea_balanced_economy_law"
+		texturefile = "gfx/interface/ideas/laws/idea_balanced_economy_law.dds"
 	}
 	SpriteType = {
-		name = "GFX_idea_economy_4"
-		texturefile = "gfx/interface/ideas/laws/idea_economy_4.dds"
+		name = "GFX_idea_war_economy_law"
+		texturefile = "gfx/interface/ideas/laws/idea_war_economy_law.dds"
 	}
 	SpriteType = {
-		name = "GFX_idea_economy_5"
-		texturefile = "gfx/interface/ideas/laws/idea_economy_5.dds"
+		name = "GFX_idea_total_mobilisation_law"
+		texturefile = "gfx/interface/ideas/laws/idea_total_mobilisation_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_rural_economy_law"
+		texturefile = "gfx/interface/ideas/laws/idea_rural_economy_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_free_economy_law"
+		texturefile = "gfx/interface/ideas/laws/idea_free_economy_law.dds"
 	}
 
 	SpriteType = {

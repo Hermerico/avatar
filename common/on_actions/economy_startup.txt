@@ -35,6 +35,10 @@ on_actions = {
 				}
 
 				set_variable = { civ_buy_factor = 0.5 }
+				set_variable = { deposit_percentage = 0.5 }
+
+				recalc_civ_buy_clamp = yes
+				recalc_increase_factory_clamp = yes
 
 				country_event = { id = economy.2 }
 				country_event = { id = economy.3 hours = 1 }

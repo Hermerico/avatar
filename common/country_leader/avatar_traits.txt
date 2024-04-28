@@ -2374,8 +2374,9 @@ leader_traits = {
 	}
 	cabbage_merchant = {
 		random = no
-		consumer_demand = -0.1
-		prosperity = 0.2
+		consumer_demand = 0.05
+		peasant_opinion = 5
+		prosperity = 0.10
 		income = @expenses1
 		ai_will_do = {
 			factor = 1
@@ -2383,9 +2384,12 @@ leader_traits = {
 	}
 	earth_consumer = {
 		random = no
-		industrialist_opinion = 5
-		food_throughput = 0.05
-		prosperity = 0.1
+		industrialist_opinion = 10
+		peasant_opinion = 10
+		peasant_food_factor = 0.1
+		consumer_demand = 0.20
+		food_throughput = 0.5
+		prosperity = 0.30
 		income = @expenses2
 		ai_will_do = {
 			factor = 1
