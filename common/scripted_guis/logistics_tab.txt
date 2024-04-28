@@ -140,14 +140,6 @@ scripted_gui = {
 
 		properties = {
 
-			breeding_icon = {
-				frame = breeding_icon
-			}
-
-			grain_bar = {
-				frame = grain_ratio_percent
-			}
-
 
 			soldier_fulfilled = {
 				frame = soldier_ratio_hundred

@@ -1,0 +1,165 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "production_tab_ui_window"
+		position = {x=10 y=44}
+		size = { width=1036 height=1096 }
+
+		iconType ={
+			name ="resource_efficiency_gain"
+			spriteType = "GFX_resource_efficiency"
+			position = { x = 447 y = 53 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "resource_extraction_info"
+			pdx_tooltip_delayed = "resource_extraction_info_delayed"
+		}
+
+		instantTextboxType = {
+			name = "resource_extraction"
+			position = { x = 477 y = 58 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "resource_extraction_bonus"
+			maxWidth = 80
+			maxHeight = 40
+			format = left	
+			pdx_tooltip = "resource_extraction_info"
+			pdx_tooltip_delayed = "resource_extraction_info_delayed"
+		}
+
+
+		containerWindowType = {
+			name = "breeding_info"
+			position = { x = 0 y = 240 }
+			size = { width = 546 height = 70 }
+			
+			iconType ={
+				name ="breeding_icon"
+				spriteType = "GFX_animal_breeding_strip"
+				position = { x= 20 y = 4 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "animal_breeding_tooltip"
+				pdx_tooltip_delayed = "animal_breeding_tooltip_delayed"
+			}
+
+			iconType = {
+				name ="grain_bar"
+				spriteType = "GFX_logistics_fuelbar"
+				position = { x=74 y = 18 }
+				frame = 100
+				pdx_tooltip = "animal_breeding_tooltip"
+				pdx_tooltip_delayed = "animal_breeding_tooltip_delayed"
+			}
+
+		}
+
+		containerWindowType = {
+			name = "animal_gridbox"
+			position = { x = 180 y = 246 }
+			size = { width = 546 height = 70 }
+		
+			iconType ={
+				name ="buffalo_yak"
+				spriteType = "GFX_buffalo_yak_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "buffalo_yak_tooltip"
+				pdx_tooltip_delayed = "buffalo_yak_animal_desc"
+			}
+			iconType ={
+				name ="cat_deer"
+				spriteType = "GFX_cat_deer_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "cat_deer_tooltip"
+				pdx_tooltip_delayed = "cat_deer_animal_desc"
+			}
+			iconType ={
+				name ="eel_hound"
+				spriteType = "GFX_eel_hound_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "eel_hound_tooltip"
+				pdx_tooltip_delayed = "eel_hound_animal_desc"
+			}
+			iconType ={
+				name ="elephant_camel"
+				spriteType = "GFX_elephant_camel_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "elephant_camel_tooltip"
+				pdx_tooltip_delayed = "elephant_camel_animal_desc"
+			}
+			iconType ={
+				name ="desert_bug"
+				spriteType = "GFX_desert_bug_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "desert_bug_tooltip"
+				pdx_tooltip_delayed = "desert_bug_animal_desc"
+			}
+			iconType ={
+				name ="komodo_rhino"
+				spriteType = "GFX_komodo_rhino_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "komodo_rhino_tooltip"
+				pdx_tooltip_delayed = "komodo_rhino_animal_desc"
+			}
+			iconType ={
+				name ="mongooze_lizard"
+				spriteType = "GFX_mongooze_lizard_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "mongooze_lizard_tooltip"
+				pdx_tooltip_delayed = "mongooze_lizard_animal_desc"
+			}
+			iconType ={
+				name ="ostrich_horse"
+				spriteType = "GFX_ostrich_horse_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "ostrich_horse_tooltip"
+				pdx_tooltip_delayed = "ostrich_horse_animal_desc"
+			}
+			iconType ={
+				name ="polar_dog"
+				spriteType = "GFX_polar_dog_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "polar_dog_tooltip"
+				pdx_tooltip_delayed = "polar_dog_animal_desc"
+			}
+			iconType ={
+				name ="walrus_yak"
+				spriteType = "GFX_walrus_yak_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "walrus_yak_tooltip"
+				pdx_tooltip_delayed = "walrus_yak_animal_desc"
+			}
+			iconType ={
+				name ="dragon_moose"
+				spriteType = "GFX_dragon_moose_animal_medium"
+				scale = 0.75
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "dragon_moose_tooltip"
+				pdx_tooltip_delayed = "dragon_moose_animal_desc"
+			}
+
+		}
+
+	}
+
+}

@@ -2218,9 +2218,15 @@ local_goods_bought = {
 
 		controller = {
 			multiply_temp_variable = { local_goods_bought_2 = ROOT.total_need_factor }
+			set_temp_variable = { local_goods_price_factor = 1 }
+			add_to_temp_variable = { local_goods_price_factor = modifier@consumer_cost }
 		}
+		add_to_temp_variable = { local_goods_price_factor = modifier@consumer_cost }
+		clamp_temp_variable = { var = local_goods_price_factor min = 0 }
 
-		add_TO_temp_variable = { local_goods_bought = local_goods_bought_2 }
+		add_to_temp_variable = { local_goods_bought = local_goods_bought_2 }
+
+		multiply_temp_variable = { local_goods_bought = local_goods_price_factor }
 
 		multiply_temp_variable = { local_goods_bought = -0.05 }
 

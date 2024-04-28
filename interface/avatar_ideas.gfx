@@ -588,6 +588,10 @@ spriteTypes = {
 		name = "GFX_idea_free_economy_law"
 		texturefile = "gfx/interface/ideas/laws/idea_free_economy_law.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_command_economy_law"
+		texturefile = "gfx/interface/ideas/laws/idea_command_economy_law.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_idea_occupation_economy"

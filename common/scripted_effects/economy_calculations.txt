@@ -1214,7 +1214,7 @@ factory_calculations = {
 
 	set_variable = { factories_bought = civ_factory_payments }
 	clamp_variable = { var = factories_bought  min = 0 }
-	set_variable = { factories_bought_price = 0.1 }
+	set_variable = { factories_bought_price = 0.2 }
 	multiply_variable = { factories_bought_price = mtth:civilian_cost_factor }
 
 	set_variable = { building_income_ratio = building_count }
@@ -1233,13 +1233,23 @@ factory_calculations = {
 
 	divide_variable = { factories_bought = factories_bought_price }
 
-	set_variable = { ic = factories_bought }
-
 	set_variable = { ic_factor = 1 }
 	add_to_variable = { ic_factor = modifier@civilian_capacity_factor }
 	multiply_variable = { factories_bought = ic_factor }
 
 	round_variable = factories_bought
+
+
+	set_variable = { ic_from_self_employed = 0.1 }
+	add_to_variable = { ic_from_self_employed = modifier@ic_per_self_employed_k }
+	clamp_variable = { var = ic_from_self_employed  min = 0 }
+	multiply_variable = { ic_from_self_employed = self_employed_k }
+	multiply_variable = { ic_from_self_employed = mtth:peasant_output_factor }
+	multiply_variable = { ic_from_self_employed = ic_factor }
+
+	round_variable = ic_from_self_employed
+
+	set_variable = { ic = factories_bought }
 
 
 	#### military capacity
@@ -1336,6 +1346,11 @@ factory_calculations = {
 		var = factory_duplicator
 		min = 0
 	}
+
+	##### used to update dynamic modfier donations without the need to trade or changing civs by other means
+
+	add_offsite_building = { type = industrial_complex level = 1 }
+	add_offsite_building = { type = industrial_complex level = -1 }
 }
 
 taxation_state_calc = {

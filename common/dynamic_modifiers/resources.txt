@@ -67,6 +67,11 @@ civs_from_conversion = {
 
 	industrial_factory_donations = military_ic_transfer
 }
+civs_from_self_employed = {
+	enable = { always = yes }
+
+	industrial_factory_donations = ic_from_self_employed
+}
 
 mils_and_dockyards_extra = {
 	enable = { always = yes }

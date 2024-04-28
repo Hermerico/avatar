@@ -14,6 +14,14 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {
+						has_dynamic_modifier = { modifier = civs_from_self_employed }
+					}
+				}
+				add_dynamic_modifier = { modifier = civs_from_self_employed }
+			}
+			if = {
+				limit = {
+					NOT = {
 						has_dynamic_modifier = { modifier = civs_from_conversion }
 					}
 				}

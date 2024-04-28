@@ -2166,6 +2166,13 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.12
 		line_change_production_efficiency_factor = 0.04
 		peoples_initiative = -0.1
+
+		on_research_complete = {
+			custom_effect_tooltip = enable_law_tt
+			effect_tooltip = {
+				add_ideas = command_economy_law
+			}
+		}
 		
 		research_cost = 2.5
 		#start_year = 72
@@ -2348,6 +2355,13 @@ technologies = {
 		production_factory_efficiency_gain_factor = 0.08
 		production_factory_max_efficiency_factor = 0.025
 		peoples_initiative = 0.1
+
+		on_research_complete = {
+			custom_effect_tooltip = enable_law_tt
+			effect_tooltip = {
+				add_ideas = free_economy_law
+			}
+		}
 		
 		research_cost = 2.5
 		#start_year = 72
