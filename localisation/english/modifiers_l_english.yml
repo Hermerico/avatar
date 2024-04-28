@@ -260,6 +260,8 @@
  dragons_modifier:0 "Recruitable Dragons"
  dragons_modifier_desc:0 "The number of dragons willing to join our ranks"
 
+ animal_breeding_factor:0 "£animal_growth_texticon  Animal Breeding"
+
  research_slots_num:0 "Research Slots"
 
  gain_xp_chance_tt:0 "Gets a chance to gain §Y$ARMY_EXPERIENCE$§! and §Y$AIR_EXPERIENCE$§! after a succesfull hunt"

@@ -27,7 +27,6 @@ guiTypes = {
 			pdx_tooltip_delayed = "resource_extraction_info_delayed"
 		}
 
-
 		containerWindowType = {
 			name = "breeding_info"
 			position = { x = 0 y = 240 }
