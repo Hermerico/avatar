@@ -7,6 +7,7 @@ set_technology = {
 	basic_armor = 1
 	basic_spear_1 = 1
 	basic_sword_1 = 1
+	light_armor_0 = 1
 # ranged
 	ranged_weapons = 1
 # support

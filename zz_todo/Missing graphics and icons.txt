@@ -33,6 +33,7 @@ gfx/texticons/unit_category_light_airship_icon_small
 gfx/texticons/unit_category_heavy_airship_icon_small
 
 gfx/texticons/weatherpenalty_texticon
+gfx/texticons/no_order_texticon
 
 gfx/interface/counters/divisions_small/onmap_unit_buffalo_yaks_icon.dds
 gfx/interface/counters/divisions_small/onmap_eel_hound_icon.dds
@@ -137,10 +138,14 @@ watermtgnavalfolder
 	warship_strength_tech_2_tree
 	warship_strength_tech_3_tree
 	warship_strength_tech_4_tree
+world_tension_entry
+	tracking_icon	
 unlock_tech_info_window
 	research_MIO
 	researchtime_label
 	research_progressbar
 diplomacy_lend_lease_entry
-	maximum_amount_button 
+	maximum_amount_button
+statsarea
+	tech_info_special_description_bottom_margin	 
 
