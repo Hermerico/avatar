@@ -216,6 +216,9 @@ peasant_uprising_category = {
 				days = 365
 			}
 		}
+		ai_will_do = {
+			base = 100
+		}
 
 	}
 
@@ -239,7 +242,7 @@ peasant_uprising_category = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			base = 100
 		}
 
 	}
