@@ -26,6 +26,9 @@
  angered_peasants:0 "Angered Peasants"
  enraged_peasants:0 "Enraged Peasants"
 
+ paesant_discontent:0 "Paesant Discontent"
+ paesant_discontent_desc:0 "The paesantry in this state is agitatated at its living conditions." 
+
  nobility_dynamic_modifier:0 "Nobility"
  
  #nobility_dynamic_modifier:0 "[GetNobilityMood]"

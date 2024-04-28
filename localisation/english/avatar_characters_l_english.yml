@@ -39,6 +39,8 @@
  FIR_azula:0 "Azula"
  azula_ttp:0 "§YAzula§! \nAge: [?mtth:azula_age|Y0]"
  azula_ttp_delayed:0 ""
+ FIR_empty_throne:0 "Empty Throne"
+ FIR_empty_throne_desc:0 "The Mighty Fire Nation has been left leaderless. Its people can only hope that a worthy leader soon arrives."
 
  FIR_zeisan:0 "Zeisan"
  FIR_elua:0 "Elua"
