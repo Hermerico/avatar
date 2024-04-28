@@ -118,10 +118,14 @@ leader_traits = {
 		resistance_decay_on_our_occupied_states = -0.25
 		opinion_gain_monthly = 0.3
 		trade_opinion_factor = 0.45
-		can_send_volunteer_forces = yes
 		send_volunteer_divisions_required = -0.9
 		send_volunteer_size = 4
 		air_volunteer_cap = 2
+		ROOT.GetCountry = {
+			rule = {
+				can_send_volunteer_forces = yes
+			}
+		}
 	}
 	extinguished_population = {
 		random = no
