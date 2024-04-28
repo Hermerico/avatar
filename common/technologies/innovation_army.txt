@@ -1769,8 +1769,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		air_air_superiority_attack_factor = 0.2
-		air_air_superiority_agility_factor = 0.1
+		air_superiority_efficiency = 0.2
 		
 		#doctrine = yes
 		research_cost = 1.5
