@@ -11,8 +11,6 @@ country_event = {
 
     picture = GFX_report_event_cabbage_merchant
 
-    is_triggered_only = yes
-
     trigger = {
         original_tag = OMS
         date > 13.1.1
