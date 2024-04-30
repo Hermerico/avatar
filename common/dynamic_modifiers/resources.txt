@@ -212,7 +212,7 @@ mill_upgrade = {
 lumber_mill_upgrade = {
 	enable = { always = yes }
 	remove_trigger = {
-		lumber_mill < 10
+		lumber_mill < 8
 	}
 
 	icon = GFX_lumber_mill_bonus
@@ -328,7 +328,7 @@ animal_weaving_upgrade = {
 ranch_upgrade = {
 	enable = { always = yes }
 	remove_trigger = {
-		lumber_mill < 10
+		ranch < 4
 	}
 
 	icon = GFX_ranch_bonus

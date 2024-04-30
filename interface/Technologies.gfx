@@ -7256,6 +7256,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/society/progressive_education_0.dds"
 	}
 	SpriteType = {
+		name = "GFX_progressive_culture_0_medium"
+		texturefile = "gfx/interface/technologies/society/progressive_culture_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_progressive_medicine_0_medium"
+		texturefile = "gfx/interface/technologies/society/progressive_medicine_0.dds"
+	}
+	SpriteType = {
 		name = "GFX_conservative_0_medium"
 		texturefile = "gfx/interface/technologies/society/conservative_0.dds"
 	}
@@ -7270,6 +7278,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_conservative_education_0_medium"
 		texturefile = "gfx/interface/technologies/society/conservative_education_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_culture_0_medium"
+		texturefile = "gfx/interface/technologies/society/conservative_culture_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_medicine_0_medium"
+		texturefile = "gfx/interface/technologies/society/conservative_medicine_0.dds"
 	}
 	SpriteType = {
 		name = "GFX_reform_1_medium"
@@ -7292,6 +7308,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/society/progressive_education_1.dds"
 	}
 	SpriteType = {
+		name = "GFX_progressive_culture_1_medium"
+		texturefile = "gfx/interface/technologies/society/progressive_culture_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_progressive_medicine_1_medium"
+		texturefile = "gfx/interface/technologies/society/progressive_medicine_1.dds"
+	}
+	SpriteType = {
 		name = "GFX_conservative_1_medium"
 		texturefile = "gfx/interface/technologies/society/conservative_1.dds"
 	}
@@ -7306,6 +7330,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_conservative_education_1_medium"
 		texturefile = "gfx/interface/technologies/society/conservative_education_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_culture_1_medium"
+		texturefile = "gfx/interface/technologies/society/conservative_culture_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_medicine_1_medium"
+		texturefile = "gfx/interface/technologies/society/conservative_medicine_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_reform_2_medium"
@@ -7328,6 +7360,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/society/progressive_education_2.dds"
 	}
 	SpriteType = {
+		name = "GFX_progressive_culture_2_medium"
+		texturefile = "gfx/interface/technologies/society/progressive_culture_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_progressive_medicine_2_medium"
+		texturefile = "gfx/interface/technologies/society/progressive_medicine_2.dds"
+	}
+	SpriteType = {
 		name = "GFX_conservative_2_medium"
 		texturefile = "gfx/interface/technologies/society/conservative_2.dds"
 	}
@@ -7342,6 +7382,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_conservative_education_2_medium"
 		texturefile = "gfx/interface/technologies/society/conservative_education_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_culture_2_medium"
+		texturefile = "gfx/interface/technologies/society/conservative_culture_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_medicine_2_medium"
+		texturefile = "gfx/interface/technologies/society/conservative_medicine_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_reform_3_medium"
@@ -7364,6 +7412,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/society/progressive_education_3.dds"
 	}
 	SpriteType = {
+		name = "GFX_progressive_culture_3_medium"
+		texturefile = "gfx/interface/technologies/society/progressive_culture_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_progressive_medicine_3_medium"
+		texturefile = "gfx/interface/technologies/society/progressive_medicine_3.dds"
+	}
+	SpriteType = {
 		name = "GFX_conservative_3_medium"
 		texturefile = "gfx/interface/technologies/society/conservative_3.dds"
 	}
@@ -7378,6 +7434,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_conservative_education_3_medium"
 		texturefile = "gfx/interface/technologies/society/conservative_education_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_culture_3_medium"
+		texturefile = "gfx/interface/technologies/society/conservative_culture_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_medicine_3_medium"
+		texturefile = "gfx/interface/technologies/society/conservative_medicine_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_reform_4_medium"
@@ -7400,6 +7464,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/society/progressive_education_4.dds"
 	}
 	SpriteType = {
+		name = "GFX_progressive_culture_4_medium"
+		texturefile = "gfx/interface/technologies/society/progressive_culture_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_progressive_medicine_4_medium"
+		texturefile = "gfx/interface/technologies/society/progressive_medicine_4.dds"
+	}
+	SpriteType = {
 		name = "GFX_conservative_4_medium"
 		texturefile = "gfx/interface/technologies/society/conservative_4.dds"
 	}
@@ -7414,6 +7486,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_conservative_education_4_medium"
 		texturefile = "gfx/interface/technologies/society/conservative_education_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_culture_4_medium"
+		texturefile = "gfx/interface/technologies/society/conservative_culture_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_medicine_4_medium"
+		texturefile = "gfx/interface/technologies/society/conservative_medicine_4.dds"
 	}
 	SpriteType = {
 		name = "GFX_reform_5_medium"

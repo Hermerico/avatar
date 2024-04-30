@@ -1130,7 +1130,7 @@ fishing_stand_bonus_2 = {
 		if = {
 			limit = {
 				OR = {
-					fishing_stand < 15
+					fishing_stand < 6
 					NOT = {
 						controller = {
 							has_tech = fishing_stand_4
@@ -1376,7 +1376,7 @@ ranch_bonus_2 = {
 		set_temp_variable = { bonus = 0 }
 		if = {
 			limit = {
-				ranch > 14
+				ranch > 7
 				controller = {
 					has_tech = ranch_3
 				}

@@ -5,10 +5,17 @@ technologies = {
 			agriculture = 1
 		}
 
-		farm_level_max = 5
+		hidden_modifier = {
+			farm_level_max = 2
+		}
+
+		enable_building = {
+			building = farm
+			level = 2
+		}
 
 		on_research_complete = {
-			set_variable = { farm_level = 5 }
+			set_variable = { farm_level = 2 }
 		}
 		
 		path = {
@@ -47,15 +54,167 @@ technologies = {
 		}	
 	}
 
+	farm_united = {
+		dependencies = {
+			agriculture = 1
+			domestication = 1
+		}
+		on_research_complete = {
+			set_variable = { farm_level = 4 }
+			set_variable = { ranch_level = 4 }
+
+			custom_effect_tooltip = farm_upgrade_2_tt
+		}
+
+		enable_building = {
+			building = farm
+			level = 4
+		}
+
+		enable_building = {
+			building = ranch
+			level = 4
+		}
+
+		hidden_modifier = {
+			ranch_level_max = 2
+			farm_level_max = 2
+		}
+		
+		path = {
+			leads_to_tech = farm_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ranch_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 0.75
+		folder = {
+			name = construction_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			farm_construction
+			ranch_construction
+		}	
+	}
+
+	farm_2 = {
+		dependencies = {
+			botanics = 1
+		}
+		production_cost_farm_factor = -0.1
+
+		enable_building = {
+			building = farm
+			level = 6
+		}
+
+		on_research_complete = {
+			set_variable = { farm_level = 6 }
+
+			custom_effect_tooltip = farm_upgrade_1_tt
+		}
+
+		hidden_modifier = {
+			farm_level_max = 2
+		}
+
+		path = {
+			leads_to_tech = farm_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		folder = {
+			name = construction_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			farm_construction
+		}	
+	}
+
+	farm_3 = {
+		dependencies = {
+			genetics = 1
+		}
+		production_cost_farm_factor = -0.15
+
+		enable_building = {
+			building = farm
+			level = 10
+		}
+
+		on_research_complete = {
+			set_variable = { farm_level = 10 }
+		}
+
+		hidden_modifier = {
+			farm_level_max = 4
+		}
+
+		research_cost = 1.25
+		folder = {
+			name = construction_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			farm_construction
+		}	
+	}
+
 	ranch_1 = {
 		dependencies = {
 			domestication = 1
 		}
 
-		ranch_level_max = 5
+		hidden_modifier = {
+			ranch_level_max = 2
+		}
+
+		enable_building = {
+			building = ranch
+			level = 2
+		}
 
 		on_research_complete = {
-			set_variable = { ranch_level = 5 }
+			set_variable = { ranch_level = 2 }
 		}
 
 		path = {
@@ -85,6 +244,87 @@ technologies = {
 				factor = 3
 				date > "2.1.1"
 			}
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			ranch_construction
+		}	
+	}
+
+	ranch_2 = {
+		dependencies = {
+			surgery = 1
+		}
+		on_research_complete = {
+			set_variable = { ranch_level = 6 }
+
+			custom_effect_tooltip = ranch_upgrade_1_tt
+		}
+
+		enable_building = {
+			building = ranch
+			level = 6
+		}
+
+		hidden_modifier = {
+			ranch_level_max = 2
+		}
+
+
+		production_cost_ranch_factor = -0.1
+
+		path = {
+			leads_to_tech = ranch_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		folder = {
+			name = construction_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		categories = {
+			construction
+			resource_construction
+			ranch_construction
+		}	
+	}
+	ranch_3 = {
+		dependencies = {
+			genetics = 1
+		}
+
+		on_research_complete = {
+			set_variable = { ranch_level = 10 }
+
+			custom_effect_tooltip = ranch_upgrade_2_tt
+		}
+
+		enable_building = {
+			building = ranch
+			level = 10
+		}
+		hidden_modifier = {
+			ranch_level_max = 4
+		}
+
+		production_cost_ranch_factor = -0.15
+		
+		research_cost = 1.25
+		folder = {
+			name = construction_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 100
 		}
 		
 		categories = {
@@ -232,45 +472,6 @@ technologies = {
 		}	
 	}
 
-	farm_united = {
-		dependencies = {
-			agriculture = 1
-			domestication = 1
-		}
-		on_research_complete = {
-			set_variable = { farm_level = 10 }
-			set_variable = { ranch_level = 10 }
-		}
-
-		ranch_level_max = 10
-		farm_level_max = 10
-		
-		path = {
-			leads_to_tech = farm_2
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = ranch_2
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 0.75
-		folder = {
-			name = construction_folder
-			position = { x = 1 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-		categories = {
-			construction
-			resource_construction
-			farm_construction
-			ranch_construction
-		}	
-	}
 
 	crop_weaving_1 = {
 		dependencies = {
@@ -422,152 +623,6 @@ technologies = {
 			construction
 			resource_construction
 			mill_construction
-		}	
-	}
-
-	farm_2 = {
-		dependencies = {
-			botanics = 1
-		}
-		production_cost_farm_factor = -0.1
-
-		on_research_complete = {
-			set_variable = { farm_level = 25 }
-
-			custom_effect_tooltip = farm_upgrade_1_tt
-		}
-
-		farm_level_max = 25
-
-		path = {
-			leads_to_tech = farm_3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		folder = {
-			name = construction_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 100
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			construction
-			resource_construction
-			farm_construction
-		}	
-	}
-
-	farm_3 = {
-		dependencies = {
-			genetics = 1
-		}
-		production_cost_farm_factor = -0.15
-		on_research_complete = {
-			set_variable = { farm_level = 50 }
-
-			custom_effect_tooltip = farm_upgrade_2_tt
-		}
-
-		farm_level_max = 50
-
-		research_cost = 1.25
-		folder = {
-			name = construction_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 100
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
-		}
-		
-		categories = {
-			construction
-			resource_construction
-			farm_construction
-		}	
-	}
-
-	ranch_2 = {
-		dependencies = {
-			surgery = 1
-		}
-		on_research_complete = {
-			set_variable = { ranch_level = 25 }
-
-			custom_effect_tooltip = ranch_upgrade_1_tt
-		}
-
-		ranch_level_max = 25
-
-
-		production_cost_ranch_factor = -0.1
-
-		path = {
-			leads_to_tech = ranch_3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-		folder = {
-			name = construction_folder
-			position = { x = 2 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-		categories = {
-			construction
-			resource_construction
-			ranch_construction
-		}	
-	}
-	ranch_3 = {
-		dependencies = {
-			genetics = 1
-		}
-
-		on_research_complete = {
-			set_variable = { ranch_level = 50 }
-
-			custom_effect_tooltip = ranch_upgrade_2_tt
-		}
-
-		ranch_level_max = 50
-
-		production_cost_ranch_factor = -0.15
-		
-		research_cost = 1.25
-		folder = {
-			name = construction_folder
-			position = { x = 2 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-		categories = {
-			construction
-			resource_construction
-			ranch_construction
 		}	
 	}
 
@@ -725,10 +780,17 @@ technologies = {
 
 	fishing_stand_1 = {
 
-		fishing_stand_level_max = 5
+		hidden_modifier = {
+			fishing_stand_level_max = 2
+		}
+
+		enable_building = {
+			building = fishing_stand
+			level = 2
+		}
 
 		on_research_complete = {
-			set_variable = { fishing_stand_level = 5 }
+			set_variable = { fishing_stand_level = 2 }
 		}
 
 		path = {
@@ -756,10 +818,20 @@ technologies = {
 		dependencies = {
 			astronomy = 1
 		}
-		fishing_stand_level_max = 10
+		
+		hidden_modifier = {
+			fishing_stand_level_max = 2
+		}
+
+		enable_building = {
+			building = fishing_stand
+			level = 4
+		}
 
 		on_research_complete = {
-			set_variable = { fishing_stand_level = 10 }
+			set_variable = { fishing_stand_level = 4 }
+
+			custom_effect_tooltip = fishing_upgrade_1_tt
 		}
 
 		path = {
@@ -786,12 +858,20 @@ technologies = {
 		dependencies = {
 			leverage = 1
 		}
-		fishing_stand_level_max = 25
+		
+		hidden_modifier = {
+			fishing_stand_level_max = 2
+		}
+
+		enable_building = {
+			building = fishing_stand
+			level = 5
+		}
 
 		on_research_complete = {
-			set_variable = { fishing_stand_level = 25 }
+			set_variable = { fishing_stand_level = 5 }
 
-			custom_effect_tooltip = fishing_upgrade_1_tt
+			custom_effect_tooltip = fishing_upgrade_2_tt
 		}
 
 		production_cost_fishing_stand_factor = -0.05
@@ -820,12 +900,18 @@ technologies = {
 		dependencies = {
 			genetics = 1
 		}
-		fishing_stand_level_max = 50
+		
+		hidden_modifier = {
+			fishing_stand_level_max = 4
+		}
+
+		enable_building = {
+			building = fishing_stand
+			level = 10
+		}
 
 		on_research_complete = {
-			set_variable = { fishing_stand_level = 50 }
-
-			custom_effect_tooltip = fishing_upgrade_2_tt
+			set_variable = { fishing_stand_level = 10 }
 		}
 
 		production_cost_fishing_stand_factor = -0.10
@@ -856,10 +942,18 @@ technologies = {
 		dependencies = {
 			kinectics = 1
 		}
-		lumber_mill_level_max = 5
+
+		hidden_modifier = {
+			lumber_mill_level_max = 2
+		}
+
+		enable_building = {
+			building = lumber_mill
+			level = 2
+		}
 
 		on_research_complete = {
-			set_variable = { lumber_mill_level = 5 }
+			set_variable = { lumber_mill_level = 2 }
 		}
 		
 		path = {
@@ -900,10 +994,18 @@ technologies = {
 		dependencies = {
 			smelting = 1
 		}
-		lumber_mill_level_max = 10
+		
+		hidden_modifier = {
+			lumber_mill_level_max = 2
+		}
+
+		enable_building = {
+			building = lumber_mill
+			level = 4
+		}
 
 		on_research_complete = {
-			set_variable = { lumber_mill_level = 10 }
+			set_variable = { lumber_mill_level = 4 }
 		}
 		
 		path = {
@@ -934,10 +1036,17 @@ technologies = {
 		}
 		production_cost_lumber_mill_factor = -0.1
 
-		lumber_mill_level_max = 25
+		hidden_modifier = {
+			lumber_mill_level_max = 2
+		}
+
+		enable_building = {
+			building = lumber_mill
+			level = 6
+		}
 
 		on_research_complete = {
-			set_variable = { lumber_mill_level = 25 }
+			set_variable = { lumber_mill_level = 6 }
 
 			custom_effect_tooltip = lumber_mill_upgrade_tt
 		}
@@ -970,10 +1079,17 @@ technologies = {
 		}
 		production_cost_lumber_mill_factor = -0.15
 
-		lumber_mill_level_max = 50
+		hidden_modifier = {
+			lumber_mill_level_max = 4
+		}
+
+		enable_building = {
+			building = lumber_mill
+			level = 10
+		}
 
 		on_research_complete = {
-			set_variable = { lumber_mill_level = 50 }
+			set_variable = { lumber_mill_level = 10 }
 		}
 		
 		research_cost = 1.25
@@ -2497,10 +2613,13 @@ technologies = {
 			building = infrastructure
 			level = 3
 		}
-		enable_building = {
-			building = rail_way
-			level = 2
-		}
+
+		#### disabled til works
+		#enable_building = {
+		#	building = rail_way
+		#	level = 2
+		#}
+
 		path = {
 			leads_to_tech = shops_1
 			research_cost_coeff = 1
@@ -2558,10 +2677,13 @@ technologies = {
 			building = infrastructure
 			level = 6
 		}
-		enable_building = {
-			building = rail_way
-			level = 4
-		}
+
+		#### disabled til works
+		#enable_building = {
+		#	building = rail_way
+		#	level = 4
+		#}
+		production_cost_rail_way_factor = -0.1
 
 		path = {
 			leads_to_tech = road_3
@@ -2597,10 +2719,13 @@ technologies = {
 			building = infrastructure
 			level = 10
 		}
-		enable_building = {
-			building = rail_way
-			level = 5
-		}
+
+		#### disabled til works
+		#enable_building = {
+		#	building = rail_way
+		#	level = 5
+		#}
+		production_cost_rail_way_factor = -0.1
 
 		path = {
 			leads_to_tech = road_4
@@ -2628,10 +2753,13 @@ technologies = {
 			steam_engine = 1
 			magnetism = 1
 		}
-		enable_building = {
-			building = rail_way
-			level = 8
-		}
+
+		#### disabled til works
+		#enable_building = {
+		#	building = rail_way
+		#	level = 8
+		#}
+		production_cost_rail_way_factor = -0.1
 
 		on_research_complete = {
 			custom_effect_tooltip = road_upgrade_tt
@@ -2663,10 +2791,14 @@ technologies = {
 			steel_alloy = 1
 			gas_turbine = 1
 		}
-		enable_building = {
-			building = rail_way
-			level = 10
-		}
+
+		production_cost_rail_way_factor = -0.2
+
+		#### disabled til works
+		#enable_building = {
+		#	building = rail_way
+		#	level = 10
+		#}
 		
 		research_cost = 0.5
 		folder = {
@@ -2926,10 +3058,6 @@ technologies = {
 			leads_to_tech = shops_4
 			research_cost_coeff = 1
 		}
-
-		on_research_complete = {
-			custom_effect_tooltip = shop_upgrade_tt
-		}
 	
 		research_cost = 0.75
 		folder = {
@@ -2960,10 +3088,6 @@ technologies = {
 			leads_to_tech = shops_5
 			research_cost_coeff = 1
 		}
-
-		on_research_complete = {
-			custom_effect_tooltip = shop_upgrade_tt
-		}
 	
 		research_cost = 0.75
 		folder = {
@@ -2988,10 +3112,6 @@ technologies = {
 		enable_building = {
 			building = consumer_good_factory
 			level = 15
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = shop_upgrade_tt
 		}
 	
 		research_cost = 0.75
@@ -3024,10 +3144,6 @@ technologies = {
 			leads_to_tech = luxury_shops_2
 			research_cost_coeff = 1
 		}
-
-		on_research_complete = {
-			custom_effect_tooltip = shop_upgrade_tt
-		}
 	
 		research_cost = 0.75
 		folder = {
@@ -3058,10 +3174,6 @@ technologies = {
 		path = {
 			leads_to_tech = luxury_shops_3
 			research_cost_coeff = 1
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = shop_upgrade_tt
 		}
 	
 		research_cost = 0.75
@@ -3096,10 +3208,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			custom_effect_tooltip = shop_upgrade_tt
-		}
-	
 		research_cost = 0.75
 		folder = {
 			name = construction_folder
@@ -3131,10 +3239,6 @@ technologies = {
 			leads_to_tech = luxury_shops_5
 			research_cost_coeff = 1
 		}
-
-		on_research_complete = {
-			custom_effect_tooltip = shop_upgrade_tt
-		}
 	
 		research_cost = 0.75
 		folder = {
@@ -3160,10 +3264,6 @@ technologies = {
 		enable_building = {
 			building = luxury_good_factory
 			level = 15
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = shop_upgrade_tt
 		}
 	
 		research_cost = 0.75
