@@ -6246,7 +6246,15 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_birb_tech_1_medium"
-		texturefile = "gfx/interface/technologies/aircraft/birb_equipment.dds"
+		texturefile = "gfx/interface/technologies/aircraft/small_birb_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_tech_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/medium_birb_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_tech_3_medium"
+		texturefile = "gfx/interface/technologies/aircraft/heavy_birb_equipment.dds"
 	}
 	SpriteType = {
 		name = "GFX_dragon_tech_1_medium"
@@ -6298,7 +6306,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_FIR_birb_tech_1_medium"
-		texturefile = "gfx/interface/technologies/aircraft/FIR_birb_equipment.dds"
+		texturefile = "gfx/interface/technologies/aircraft/FIR_small_birb_equipment.dds"
 	}
 	SpriteType = {
 		name = "GFX_FIR_air_baloon_tech_1_medium"
@@ -6483,6 +6491,73 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_birb_seeb_medium"
 		texturefile = "gfx/interface/technologies/aircraft_tech/birb_seeb.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_birb_training_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_training_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_intercept_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_intercept_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_message_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_message_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_range_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_range_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_seeb_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_seeb_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_birb_training_3_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_training_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_intercept_3_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_intercept_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_message_3_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_message_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_range_3_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_range_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_seeb_3_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_seeb_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_birb_defense_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_defense.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_offense_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_offense.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_armor_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_armor.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_weapons_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_weapons.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_breeding_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_breeding.dds"
+	}
+	SpriteType = {
+		name = "GFX_birb_bombs_medium"
+		texturefile = "gfx/interface/technologies/aircraft_tech/birb_bombs.dds"
 	}
 
 	SpriteType = {
@@ -8126,6 +8201,34 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/industry/naval_7.dds"
 	}
 	SpriteType = {
+		name = "GFX_production_r1_medium"
+		texturefile = "gfx/interface/technologies/industry/production_r1.dds"
+	}
+	SpriteType = {
+		name = "GFX_production_r2_medium"
+		texturefile = "gfx/interface/technologies/industry/production_r2.dds"
+	}
+	SpriteType = {
+		name = "GFX_production_r3_medium"
+		texturefile = "gfx/interface/technologies/industry/production_r3.dds"
+	}
+	SpriteType = {
+		name = "GFX_production_r4_medium"
+		texturefile = "gfx/interface/technologies/industry/production_r4.dds"
+	}
+	SpriteType = {
+		name = "GFX_production_r5_medium"
+		texturefile = "gfx/interface/technologies/industry/production_r5.dds"
+	}
+	SpriteType = {
+		name = "GFX_production_r6_medium"
+		texturefile = "gfx/interface/technologies/industry/production_r6.dds"
+	}
+	SpriteType = {
+		name = "GFX_production_r7_medium"
+		texturefile = "gfx/interface/technologies/industry/production_r7.dds"
+	}
+	SpriteType = {
 		name = "GFX_gathering_tech_1_medium"
 		texturefile = "gfx/interface/technologies/industry/gathering_1.dds"
 	}
@@ -8156,6 +8259,78 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_gathering_tech_8_medium"
 		texturefile = "gfx/interface/technologies/industry/gathering_8.dds"
+	}
+	SpriteType = {
+		name = "GFX_consumer_1_medium"
+		texturefile = "gfx/interface/technologies/industry/consumer_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_consumer_2_medium"
+		texturefile = "gfx/interface/technologies/industry/consumer_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_consumer_3_medium"
+		texturefile = "gfx/interface/technologies/industry/consumer_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_consumer_4_medium"
+		texturefile = "gfx/interface/technologies/industry/consumer_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_consumer_5_medium"
+		texturefile = "gfx/interface/technologies/industry/consumer_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_consumer_6_medium"
+		texturefile = "gfx/interface/technologies/industry/consumer_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_1_medium"
+		texturefile = "gfx/interface/technologies/industry/luxury_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_2_medium"
+		texturefile = "gfx/interface/technologies/industry/luxury_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_3_medium"
+		texturefile = "gfx/interface/technologies/industry/luxury_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_4_medium"
+		texturefile = "gfx/interface/technologies/industry/luxury_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_5_medium"
+		texturefile = "gfx/interface/technologies/industry/luxury_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_luxury_6_medium"
+		texturefile = "gfx/interface/technologies/industry/luxury_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_advertisement_1_medium"
+		texturefile = "gfx/interface/technologies/industry/advertisement_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_advertisement_2_medium"
+		texturefile = "gfx/interface/technologies/industry/advertisement_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_advertisement_3_medium"
+		texturefile = "gfx/interface/technologies/industry/advertisement_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_advertisement_4_medium"
+		texturefile = "gfx/interface/technologies/industry/advertisement_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_advertisement_5_medium"
+		texturefile = "gfx/interface/technologies/industry/advertisement_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_advertisement_6_medium"
+		texturefile = "gfx/interface/technologies/industry/advertisement_6.dds"
 	}
 	SpriteType = {
 		name = "GFX_fish_1_medium"

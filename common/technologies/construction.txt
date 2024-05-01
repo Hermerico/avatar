@@ -1381,10 +1381,18 @@ technologies = {
 		dependencies = {
 			kinectics = 1
 		}
-		quarry_level_max = 5
+
+		hidden_modifier = {
+			quarry_level_max = 2
+		}
+
+		enable_building = {
+			building = quarry
+			level = 2
+		}
 
 		on_research_complete = {
-			set_variable = { quarry_level = 5 }
+			set_variable = { quarry_level = 2 }
 		}
 
 		path = {
@@ -1434,10 +1442,17 @@ technologies = {
 		dependencies = {
 			leverage = 1
 		}
-		quarry_level_max = 10
+		hidden_modifier = {
+			quarry_level_max = 2
+		}
+
+		enable_building = {
+			building = quarry
+			level = 4
+		}
 
 		on_research_complete = {
-			set_variable = { quarry_level = 10 }
+			set_variable = { quarry_level = 4 }
 		}
 
 		path = {
@@ -1466,10 +1481,18 @@ technologies = {
 			architecture = 1
 			magnetism = 1
 		}
-		quarry_level_max = 25
+
+		hidden_modifier = {
+			quarry_level_max = 2
+		}
+
+		enable_building = {
+			building = quarry
+			level = 6
+		}
 
 		on_research_complete = {
-			set_variable = { quarry_level = 25 }
+			set_variable = { quarry_level = 6 }
 
 			custom_effect_tooltip = quarry_upgrade_1_tt
 		}
@@ -1501,10 +1524,18 @@ technologies = {
 		dependencies = {
 			gas_turbine = 1
 		}
-		quarry_level_max = 50
+		
+		hidden_modifier = {
+			quarry_level_max = 4
+		}
+
+		enable_building = {
+			building = quarry
+			level = 10
+		}
 
 		on_research_complete = {
-			set_variable = { quarry_level = 50 }
+			set_variable = { quarry_level = 10 }
 
 			custom_effect_tooltip = quarry_upgrade_2_tt
 		}
@@ -1672,10 +1703,18 @@ technologies = {
 		dependencies = {
 			smelting = 1
 		}
-		mine_level_max = 5
+
+		hidden_modifier = {
+			mine_level_max = 2
+		}
+
+		enable_building = {
+			building = mine
+			level = 2
+		}
 
 		on_research_complete = {
-			set_variable = { mine_level = 5 }
+			set_variable = { mine_level = 2 }
 		}
 
 		path = {
@@ -1711,10 +1750,18 @@ technologies = {
 		dependencies = {
 			architecture = 1
 		}
-		mine_level_max = 10
+		
+		hidden_modifier = {
+			mine_level_max = 2
+		}
+
+		enable_building = {
+			building = mine
+			level = 4
+		}
 
 		on_research_complete = {
-			set_variable = { mine_level = 10 }
+			set_variable = { mine_level = 4 }
 		}
 
 		path = {
@@ -1742,10 +1789,18 @@ technologies = {
 		dependencies = {
 			alchemy = 1
 		}
-		mine_level_max = 25
+		
+		hidden_modifier = {
+			mine_level_max = 2
+		}
+
+		enable_building = {
+			building = mine
+			level = 6
+		}
 
 		on_research_complete = {
-			set_variable = { mine_level = 25 }
+			set_variable = { mine_level = 6 }
 
 			custom_effect_tooltip = mine_upgrade_1_tt
 		}
@@ -1777,10 +1832,18 @@ technologies = {
 		dependencies = {
 			gas_turbine = 1
 		}
-		mine_level_max = 50
+		
+		hidden_modifier = {
+			mine_level_max = 4
+		}
+
+		enable_building = {
+			building = mine
+			level = 10
+		}
 
 		on_research_complete = {
-			set_variable = { mine_level = 50 }
+			set_variable = { mine_level = 10 }
 
 			custom_effect_tooltip = mine_upgrade_2_tt
 		}
@@ -2071,7 +2134,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.5
+		research_cost = 2
 		folder = {
 			name = construction_folder
 			position = { x = -6 y = 8 }
@@ -2207,7 +2270,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.5
+		research_cost = 2
 		folder = {
 			name = construction_folder
 			position = { x = -8 y = 8 }
@@ -2343,7 +2406,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.5
+		research_cost = 2
 		folder = {
 			name = construction_folder
 			position = { x = -10 y = 8 }

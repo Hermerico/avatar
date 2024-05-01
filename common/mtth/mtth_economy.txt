@@ -1052,7 +1052,7 @@ quarry_bonus_2 = {
 		set_temp_variable = { bonus = building_level@quarry }
 		if = {
 			limit = {
-				check_variable = { building_level@quarry < 15 }
+				check_variable = { building_level@quarry < 10 }
 			}
 			NOT = {
 				controller = {

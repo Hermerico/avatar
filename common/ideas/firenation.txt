@@ -583,7 +583,7 @@ ideas = {
 			modifier = {
 				experience_gain_army = -0.15
 				nobility_opinion = -1
-				experience_gain_air = .3
+				experience_gain_air = 0.3
 			}
 		}
 

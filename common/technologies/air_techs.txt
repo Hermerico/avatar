@@ -603,10 +603,6 @@ technologies = {
 			leads_to_tech = birb_armor
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = birb_breeding
-			research_cost_coeff = 1
-		}
 
 		category_birb = {
 			air_defence = 0.5

@@ -669,9 +669,9 @@ EAR_generic_starting_tech = {
 
             ##### bender #####
             earth_training_2 = 1
-            earth_equipment_2 = 1
+            earthbender_equipment_2 = 1
             earth_training_3 = 1
-            earth_equipment_3 = 1
+            earthbender_equipment_3 = 1
             earth_training_4 = 1
             earth_training_5 = 1
 
@@ -935,10 +935,10 @@ EAR_generic_starting_tech = {
 
             ##### bender #####
             earth_training_2 = 1
-            earth_equipment_2 = 1
+            earthbender_equipment_2 = 1
             earth_training_3 = 1
-            earth_equipment_3 = 1
-            earth_equipment_4 = 1
+            earthbender_equipment_3 = 1
+            earthbender_equipment_4 = 1
             earth_training_4 = 1
             earth_training_5 = 1
 			defense_training_earth_2 = 1
@@ -960,7 +960,7 @@ EAR_generic_starting_tech = {
 
             ##### construction #####
 
-            smelting_4 = 1
+            steelworks_4 = 1
             road_4 = 1
             wall_4 = 1
             coastal_fortress_4 = 1
@@ -992,10 +992,10 @@ EAR_generic_starting_tech = {
                 galley_strength_tech_5 = 1
                 barque_strength_tech_5 = 1
                 sails_tech_6 = 1
-                junk_armor_tech_5
-                junk_strength_tech_5
-                light_armor_plates_1 = 1
-                light_armor_plates_2 = 1
+                junk_armor_tech_5 = 1
+                junk_strength_tech_5 = 1
+            #    light_armor_plates_1 = 1
+            #    light_armor_plates_2 = 1
                 main_sail_4 = 1
                 heavy_plates_1 = 1
                 heavy_plates_2 = 1

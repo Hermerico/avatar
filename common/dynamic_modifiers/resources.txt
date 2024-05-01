@@ -246,7 +246,7 @@ smithy_upgrade = {
 quarry_upgrade = {
 	enable = { always = yes }
 	remove_trigger = {
-		quarry < 10
+		quarry < 5
 	}
 
 	icon = GFX_quarry_bonus
