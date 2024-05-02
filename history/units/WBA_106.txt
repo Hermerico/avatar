@@ -1,2 +1,228 @@
+division_template = {
+	name = "Town Guard"
+	regiments = {
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		spearmen = {
+			x = 0
+			y = 1
+		}
+		spearmen = {
+			x = 1
+			y = 0
+		}
+		spearmen = {
+			x = 1
+			y = 1
+		}
+	}
+	support = {
+		scout = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "Infantry Banner"
+	regiments = {
+		pikemen = {
+			x = 0
+			y = 0
+		}
+		pikemen = {
+			x = 0
+			y = 1
+		}
+		pikemen = {
+			x = 1
+			y = 0
+		}
+		pikemen = {
+			x = 1
+			y = 1
+		}
+		archers = {
+			x = 2
+			y = 0
+		}
+		archers = {
+			x = 2
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Earthbender Brigade"
+	regiments = {
+		earthbender = {
+			x = 0
+			y = 0
+		}
+		earthbender = {
+			x = 0
+			y = 1
+		}
+		earthbender = {
+			x = 0
+			y = 2
+		}
+		earthbender = {
+			x = 0
+			y = 3
+		}
+	}
+	support = {
+		scout = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "Ostrich Cavalry Brigade"
+	regiments = {
+		ostrich_horses = {
+			x = 0
+			y = 0
+		}
+		ostrich_horses = {
+			x = 0
+			y = 1
+		}
+		ostrich_horses = {
+			x = 1
+			y = 0
+		}
+		ostrich_horses = {
+			x = 1
+			y = 0
+		}
+	}
+	support = {
+		scout_ostrich_horses = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "Earthbender Cavalry Brigade"
+	regiments = {
+		bender_ostrich_horses = {
+			x = 0
+			y = 0
+		}
+		bender_ostrich_horses = {
+			x = 0
+			y = 1
+		}
+		bender_ostrich_horses = {
+			x = 1
+			y = 0
+		}
+		bender_ostrich_horses = {
+			x = 1
+			y = 0
+		}
+	}
+	support = {
+		scout_ostrich_horses = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
 units = {
+	division = {
+		location = 3395
+		division_template = "Earthbender Cavalry Brigade"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 7186
+		division_template = "Earthbender Brigade"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 2606
+		division_template = "Ostrich Cavalry Brigade"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 3332
+		division_template = "Infantry Banner"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 2032
+		division_template = "Earthbender Brigade"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 3435
+		division_template = "Infantry Banner"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 2972
+		division_template = "Earthbender Brigade"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 7104
+		division_template = "Infantry Banner"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 4054
+		division_template = "Earthbender Brigade"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 3048
+		division_template = "Ostrich Cavalry Brigade"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 7078
+		division_template = "Infantry Banner"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 7098
+		division_template = "Infantry Banner"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 7129
+		division_template = "Earthbender Brigade"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 3974
+		division_template = "Town Guard"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.15
+	}
 }
