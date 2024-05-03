@@ -210,6 +210,7 @@ FIR_royal_family_category = {
 
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
 			country_event = {
 				id = fir_character.1
 				days = 12
@@ -255,6 +256,10 @@ FIR_royal_family_category = {
 		}
 
 		days_remove = 15#0
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
+		}
 
 		remove_effect = {
 			FIR_azulon = {
@@ -343,6 +348,7 @@ FIR_royal_family_category = {
 
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
 			country_event = {
 				id = fir_character.2
 				days = 12
@@ -535,6 +541,7 @@ FIR_royal_family_category = {
 		}
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "glory" }
 			add_country_leader_trait = divine_ruler
 
 			unlock_decision_category_tooltip = FIR_civil_decision_category
@@ -590,6 +597,10 @@ FIR_royal_family_category = {
 
 		modifier = {
 			
+		}
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "glory" }
 		}
 
 		remove_effect = {

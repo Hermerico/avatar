@@ -127,6 +127,7 @@ air_genocide_category = {
 		custom_cost_text = expenses_10
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 10 }
 		}
 
@@ -174,6 +175,7 @@ air_genocide_category = {
 		custom_cost_text = expenses_10
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 10 }
 		}
 
@@ -229,6 +231,7 @@ air_genocide_category = {
 		custom_cost_text = expenses_10
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 10 }
 		}
 
@@ -284,6 +287,7 @@ air_genocide_category = {
 		custom_cost_text = expenses_10
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 10 }
 		}
 

@@ -286,6 +286,7 @@ FIR_conquest_category = {
 		}
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 20 }
 			
 		}
@@ -668,6 +669,7 @@ FIR_conquest_category = {
 		}
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 100 }
 			
 			
@@ -715,6 +717,7 @@ FIR_conquest_category = {
 		}
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 100 }
 			
 			
@@ -765,6 +768,7 @@ FIR_conquest_category = {
 		}
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 100 }
 			
 		}

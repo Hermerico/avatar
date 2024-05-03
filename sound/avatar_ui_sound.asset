@@ -1,0 +1,120 @@
+
+sound = {
+	name = "political_tab_sound"
+	file = "avatar_ui/tab_political.wav"
+	always_load = no
+}
+
+sound = {
+	name = "decision_tab_sound"
+	file = "avatar_ui/tab_decisions.wav"
+	always_load = no
+}
+sound = {
+	name = "research_tab_sound"
+	file = "avatar_ui/tab_research.wav"
+	always_load = no
+}
+sound = {
+	name = "diplomacy_tab_sound"
+	file = "avatar_ui/tab_diplomacy.wav"
+	always_load = no
+}
+sound = {
+	name = "trade_tab_sound"
+	file = "avatar_ui/tab_trade.wav"
+	always_load = no
+}
+sound = {
+	name = "economy_tab_sound"
+	file = "avatar_ui/tab_economy.wav"
+	always_load = no
+}
+sound = {
+	name = "production_tab_sound"
+	file = "avatar_ui/tab_production.wav"
+	always_load = no
+}
+sound = {
+	name = "deploy_tab_sound"
+	file = "avatar_ui/tab_deploy.wav"
+	always_load = no
+}
+sound = {
+	name = "logisitcs_tab_sound"
+	file = "avatar_ui/tab_logisitcs.wav"
+	always_load = no
+}
+sound = {
+	name = "war_council_tab_sound"
+	file = "avatar_ui/tab_war_council.wav"
+	always_load = no
+}
+
+sound = {
+	name = "army_tab_sound"
+	file = "avatar_ui/tab_army.wav"
+	always_load = no
+}
+sound = {
+	name = "navy_tab_sound"
+	file = "avatar_ui/tab_navy.wav"
+	always_load = no
+}
+sound = {
+	name = "air_tab_sound"
+	file = "avatar_ui/tab_air.wav"
+	always_load = no
+}
+
+sound = {
+	name = "select_state_sound"
+	file = "avatar_ui/select_state.wav"
+	always_load = no
+}
+
+sound = {
+	name = "gain_gold_sound"
+	file = "avatar_ui/gain_gold.wav"
+	always_load = no
+}
+sound = {
+	name = "lose_gold_sound"
+	file = "avatar_ui/lose_gold.wav"
+	always_load = no
+}
+sound = {
+	name = "turning_page_sound"
+	file = "avatar_ui/turning_page.wav"
+	always_load = no
+}
+sound = {
+	name = "wardrums_sound"
+	file = "avatar_ui/wardrums.wav"
+	always_load = no
+}
+sound = {
+	name = "glory_sound"
+	file = "avatar_ui/glory.wav"
+	always_load = no
+}
+sound = {
+	name = "citysound_sound"
+	file = "avatar_ui/citysound.wav"
+	always_load = no
+}
+sound = {
+	name = "mysterious_sound"
+	file = "avatar_ui/mysterious.wav"
+	always_load = no
+}
+sound = {
+	name = "select_powerful_sound"
+	file = "avatar_ui/select_powerful.wav"
+	always_load = no
+}
+sound = {
+	name = "revolt_sound"
+	file = "avatar_ui/revolt.wav"
+	always_load = no
+}

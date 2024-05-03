@@ -36,6 +36,7 @@ THE_EARTHKINGDOM = {
 		}
 
 		remove_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 50 }
 			unlock_decision_category_tooltip = cabbage_corp_expansion
 			set_country_flag = {
@@ -93,6 +94,7 @@ cabbage_corp_expansion = {
 		fire_only_once = yes
 
 		remove_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 50 }
 			modify_country_flag = {
 				flag = cabbage_corp_expansion_active

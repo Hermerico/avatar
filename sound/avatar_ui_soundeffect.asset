@@ -1,0 +1,177 @@
+
+soundeffect = {
+	name = political_tab
+	sounds = {
+		sound = political_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = decision_tab
+	sounds = {
+		sound = decision_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = research_tab
+	sounds = {
+		sound = research_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = diplomacy_tab
+	sounds = {
+		sound = diplomacy_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = trade_tab
+	sounds = {
+		sound = trade_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = economy_tab
+	sounds = {
+		sound = economy_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = production_tab
+	sounds = {
+		sound = production_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = deploy_tab
+	sounds = {
+		sound = deploy_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = logisitcs_tab
+	sounds = {
+		sound = logisitcs_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = war_council_tab
+	sounds = {
+		sound = war_council_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = army_tab
+	sounds = {
+		sound = army_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = navy_tab
+	sounds = {
+		sound = navy_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = air_tab
+	sounds = {
+		sound = air_tab_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = select_state
+	sounds = {
+		sound = select_state_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = gain_gold
+	sounds = {
+		sound = gain_gold_sound
+	} 
+	volume = 2
+}
+soundeffect = {
+	name = lose_gold
+	sounds = {
+		sound = lose_gold_sound
+	} 
+	volume = 2
+}
+soundeffect = {
+	name = turning_page
+	sounds = {
+		sound = turning_page_sound
+	} 
+	volume = 2
+}
+soundeffect = {
+	name = wardrums
+	sounds = {
+		sound = wardrums_sound
+	} 
+	volume = 2
+}
+soundeffect = {
+	name = glory
+	sounds = {
+		sound = glory_sound
+	} 
+	volume = 2
+}
+soundeffect = {
+	name = citysound
+	sounds = {
+		sound = citysound_sound
+	} 
+	volume = 2
+}
+soundeffect = {
+	name = mysterious
+	sounds = {
+		sound = mysterious_sound
+	} 
+	volume = 2
+}
+soundeffect = {
+	name = select_powerful
+	sounds = {
+		sound = select_powerful_sound
+	} 
+	volume = 2
+}
+
+soundeffect = {
+	name = revolt
+	sounds = {
+		sound = revolt_sound
+	} 
+	volume = 2
+}

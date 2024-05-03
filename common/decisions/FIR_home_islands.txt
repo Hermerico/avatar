@@ -27,6 +27,8 @@ FIR_civil_decision_category = {
 		}
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "mysterious" }
+
 			add_tech_bonus = {
 				name = FIR_cultural_change
 				bonus = 1
@@ -90,6 +92,10 @@ FIR_civil_decision_category = {
 			war_support_weekly = 0.007
 		}
 
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "wardrums" }
+		}
+
 		remove_effect = {
 			add_ideas = FIR_propaganda_1
 		}
@@ -126,6 +132,10 @@ FIR_civil_decision_category = {
 
 		modifier = {
 			war_support_weekly = 0.007
+		}
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "wardrums" }
 		}
 
 		remove_effect = {
@@ -167,6 +177,7 @@ FIR_civil_decision_category = {
 		custom_cost_text = expenses_50
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 50 }
 		}
 
@@ -237,6 +248,7 @@ FIR_civil_decision_category = {
 
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 1000 }
 
 			417 = {
@@ -391,6 +403,7 @@ FIR_civil_decision_category = {
 		days_remove = 120
 		
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 2000 }
 			
 			

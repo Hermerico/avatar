@@ -45,25 +45,25 @@ build_supply_lines = {
 	}
 }
 
-smithy_good = {
-	allowed = {
-		always = yes
-	}
-	enable = {
-		has_country_flag = construct_all
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = building_target
-		id = arms_factory
-		value = 1000
-	}
+#smithy_good = {
+#	allowed = {
+#		always = yes
+#	}
+#	enable = {
+#		has_country_flag = construct_all
+#	}
+#	abort_when_not_enabled = yes
+#	ai_strategy = {
+#		type = building_target
+#		id = arms_factory
+#		value = 1000
+#	}
 #	ai_strategy = {
 #		type = building_target
 #		id = factory
 #		value = 500
 #	}
-}
+#}
 
 
 build_weavings = {

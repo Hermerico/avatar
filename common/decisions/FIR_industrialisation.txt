@@ -66,6 +66,7 @@ FIR_industrialisation_category = {
 		custom_cost_text = expenses_100
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 100 }
 			
 		}
@@ -176,6 +177,7 @@ FIR_industrialisation_category = {
 		custom_cost_text = expenses_200
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 200 }
 			
 		}
