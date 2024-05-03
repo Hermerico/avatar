@@ -55,3 +55,92 @@ division_template = {
 		}
 	}
 }
+
+division_template = {
+	name = "Eel Hound Cavalry Brigade"
+	regiments = {
+		eel_hound = {
+			x = 0
+			y = 0
+		}
+		eel_hound = {
+			x = 0
+			y = 1
+		}
+		ranged_eel_hound = {
+			x = 1
+			y = 0
+		}
+		ranged_eel_hound = {
+			x = 1
+			y = 1
+		}
+	}
+}
+division_template = {
+	name = "Bender Eel Hound Cavalry Brigade"
+	regiments = {
+		bender_eel_hound = {
+			x = 0
+			y = 0
+		}
+		bender_eel_hound = {
+			x = 0
+			y = 1
+		}
+		bender_eel_hound = {
+			x = 1
+			y = 0
+		}
+		bender_eel_hound = {
+			x = 1
+			y = 1
+		}
+	}
+}
+units = {
+	division = {
+		location = 7912
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 1937
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 790
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 47
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 8069
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 8105
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 8120
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 8163
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 1803
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 1803
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 7933
+		division_template = "Earthbender Brigade"
+	}
+}

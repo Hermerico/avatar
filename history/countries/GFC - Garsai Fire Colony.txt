@@ -49,8 +49,7 @@ permanent_spirits_and_modifiers = yes
 		targeted_alliance = FIR
 		enemy = EAR
 	}
-
-
+	OOB="GFC_106"
 }
 
  ## #####  ##  ###  #####       #   #   #
