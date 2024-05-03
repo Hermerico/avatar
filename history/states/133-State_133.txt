@@ -2,14 +2,11 @@
 state={
 	id=133
 	name="STATE_133"
-
 	history = {
 		pop_growth = yes
-		
 		owner = MAK
 		controller = MAK
 		add_core_of = MAK
-		
 		add_to_variable = {
 			var = forest
 			value = 5
@@ -34,7 +31,6 @@ state={
 			var = animal
 			value = 4
 		}
-		
 		12.1.1 = {
 			owner = MAK
 			controller = MAK
@@ -44,15 +40,11 @@ state={
 				arms_factory = 1
 				ranch = 1
 				carpentry = 1
-				
 			}
-
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			controller = FIR
-
-		
 			instant_resource_calc = yes
 		}
 		106.2.4 = {
@@ -67,9 +59,10 @@ state={
 			add_core_of = MFC
 			instant_resource_calc = yes
 		}
-
 	}
-
+	victory_points = {
+		6900 5
+	}
 	provinces = {
 		137 1064 1405 3009 3713 4035 4955 5230 6900 6929 6944 6966 6986 6991 7024 
 	}
