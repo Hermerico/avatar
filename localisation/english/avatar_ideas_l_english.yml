@@ -25,6 +25,8 @@
  fire_imperialism_idea_instant_desc:0 "\n§RIs canceled when you have less than 2 subjects.§!"
  fire_imperialism_idea_desc:0 "§LWe are the sons and daughters of fire, the superior element! We must ensure it prevails."
  fire_imperialism_spirit_hidden:0 "Inactive Fire Imperialism"
+ FIR_cultural_change:0 "Cultural Change"
+ FIR_private_investors:0 "Private Investors"
 
  heart_of_the_kingdom_spirit:0 "Heart of the Kingdom"
  heart_of_the_kingdom_spirit_description:0 "§YHeart of the Kingdom§!  \n£population_texticon  Monthly Population: §G+25.0%§! \n£pol_power  Political Power Gain: §G+25%§! \nSurrender Limit: §G+100%§!"
@@ -137,6 +139,7 @@
  FIR_modern_agriculture_desc:0 "New harvesting machines allow a higher output for less workforce. However it is a very expensive investment."
  earthkingdom_operation_bases:0 "Earthkingdom Operation Bases"
  earthkingdom_operation_bases_desc:0 "New harvesting machines allow a higher output for less workforce. However it is a very expensive investment."
+ earthkingdom_operation_bases_range_upgrade:0 "Range Upgrade for Earth Kingdom Operation Bases"
  dragon_army:0 "Imperial Dragons"
  dragon_army_desc:0 "Dragons are intelligent creatures and humble creatures; they have decided to join forces with us. We can now dominate the air, and potentially use them as glorified artillery, allowing firebender armies to scorch fortifications and defenses."
  Firebending_Origins:0 "True Firebending"
@@ -341,6 +344,7 @@
  family_support_4:0 "Low Taxes"
  family_support_5:0 "Very Low Taxes"
 
+ rural_economy_law:0 "Rural Economy"
  construction_efforts_law:0 "Construction Efforts"
  economy_1_desc:0 "The economy is entirely focused on infrastructure and societal development."
  buildup_focus_law:0 "Buildup Focus"
