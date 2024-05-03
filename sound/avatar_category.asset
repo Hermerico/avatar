@@ -50,6 +50,31 @@ category = {
  name = "AVATAR_UI"
  soundeffects = {
 	
+	political_tab
+	decision_tab
+	research_tab
+	diplomacy_tab
+	trade_tab
+	economy_tab
+	production_tab
+	deploy_tab
+	logisitcs_tab
+	war_council_tab
+	army_tab
+	navy_tab
+	air_tab
+
+	select_state
+
+	gain_gold
+	lose_gold
+	turning_page
+	wardrums
+	glory
+	citysound
+	mysterious
+	select_powerful
+	revolt
 
  }
  

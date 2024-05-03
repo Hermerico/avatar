@@ -15,6 +15,7 @@ prosperity_consumer_demand_factor = {
 	modifier = {
 		set_temp_variable = { solf = -0.5 }
 		add_to_temp_variable = { solf = national_prosperity_percent }
+		multiply_temp_variable = { solf = 0.2 }
 		
 		add = solf
 	}
@@ -2169,6 +2170,8 @@ local_tax_reduction = {
 
 		set_temp_variable = { tax_prosperity_effect = 1 }
 		add_to_temp_variable = { tax_prosperity_effect = THIS.local_prosperity }
+		multiply_temp_variable = { tax_prosperity_effect = 0.25 }
+
 
 		multiply_temp_variable = { local_tax = tax_prosperity_effect }
 		multiply_temp_variable = { local_tax = 0.1 }
@@ -2190,6 +2193,7 @@ local_tax = {
 
 		set_temp_variable = { tax_prosperity_effect = 1 }
 		add_to_temp_variable = { tax_prosperity_effect = THIS.local_prosperity }
+		multiply_temp_variable = { tax_prosperity_effect = 0.25 }
 
 		multiply_temp_variable = { local_tax = tax_prosperity_effect }
 		multiply_temp_variable = { local_tax = 0.1 }
@@ -2228,7 +2232,7 @@ local_goods_bought = {
 
 		multiply_temp_variable = { local_goods_bought = local_goods_price_factor }
 
-		multiply_temp_variable = { local_goods_bought = -0.05 }
+		multiply_temp_variable = { local_goods_bought = -0.04 }
 
 		add = local_goods_bought
 	}

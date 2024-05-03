@@ -93,6 +93,7 @@ reoccupy_category = {
 		#days_re_enable = 180
 		on_map_mode = map_only
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 100 }
 			
 			FROM = {

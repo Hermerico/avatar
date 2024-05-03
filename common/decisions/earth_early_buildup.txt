@@ -179,6 +179,7 @@ earth_economic_buildup_category = {
 		days_remove = 30
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 50 }
 		}
 		custom_cost_trigger = {
@@ -267,6 +268,7 @@ earth_economic_buildup_category = {
 		days_remove = 30
 
 		complete_effect = {
+			hidden_effect = { hidden_effect = { scoped_sound_effect  = "lose_gold" } }
 			subtract_from_variable = { var = money_variable value = 50 }
 		}
 		
@@ -300,6 +302,7 @@ earth_economic_buildup_category = {
 		days_remove = 30
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 50 }
 		}
 		
@@ -341,6 +344,7 @@ earth_economic_buildup_category = {
         }
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 10 }
 		}
 		
@@ -446,6 +450,7 @@ earth_economic_buildup_category = {
 		cost = 100
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 10 }
 		}
 		custom_cost_trigger = {
