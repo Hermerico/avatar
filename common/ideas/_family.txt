@@ -37,6 +37,7 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
 		}
 		
 		family_support_2 = {
@@ -146,6 +147,75 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			ai_will_do = {
+				base = 0
+				modifier = {
+					has_stability < 0.4
+					NOT = { has_idea = family_support_5}
+					NOT = {
+						has_war = yes
+						surrender_progress > 0.45
+						OR = {
+							stockpile_ratio = {
+								archetype = heavy_armor_equipment
+								ratio < -0.2
+							}
+							stockpile_ratio = {
+								archetype = light_armor_equipment
+								ratio < -0.2
+							}
+							stockpile_ratio = {
+								archetype = bow_equipment
+								ratio < -0.2
+							}
+							stockpile_ratio = {
+								archetype = spear_equipment
+								ratio < -0.2
+							}	
+							stockpile_ratio = {
+								archetype = sword_equipment
+								ratio < -0.2
+							}
+							AND = {
+								has_country_flag = FIR_special_forces
+								stockpile_ratio = {
+									archetype = firebender_equipment
+									ratio < -0.2
+								}
+							}
+							AND = {
+								has_country_flag = AIR_special_forces
+								stockpile_ratio = {
+									archetype = airebender_equipment
+									ratio < -0.2
+								}
+							}																					
+							AND = {
+								has_country_flag = EARTH_special_forces
+								stockpile_ratio = {
+									archetype = earthbender_equipment
+									ratio < -0.2
+								}
+							}
+							AND = {
+								has_country_flag = WATER_special_forces
+								stockpile_ratio = {
+									archetype = waterbender_equipment
+									ratio < -0.2
+								}
+							}
+							AND = {
+								has_country_flag = SAND_special_forces
+								stockpile_ratio = {
+									archetype = sandbender_equipment
+									ratio < -0.2
+								}
+							}																								
+						}
+					}
+				add = 10	
+				}
+			}
 		}
 
 		family_support_5 = {
@@ -179,6 +249,27 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			ai_will_do = {
+				base = 0
+				modifier = {
+					check_variable = {
+						peasant_revolt_risk_variable > 45
+					}
+					add = 10
+				}
+				modifier = {
+					check_variable = {
+						worker_deficit_k > 3
+					}
+					add = 10
+				}
+				modifier = {
+					check_variable = {
+						tax_balance < 0
+					}
+					factor = 0	
+				}
+			}
 		}
 
 	}
