@@ -2789,7 +2789,7 @@ guiTypes = {
 				name = "size_filler"
 				position = { x=0 y=0 }
 				size = {
-					width = 3200 height = 1300 
+					width = 3400 height = 1300 
 					min = { width = 100%% height = 100%% }
 				}
 				
@@ -2806,7 +2806,7 @@ guiTypes = {
 				iconType = {
 					name ="GFX_construction_techtree_bg3"
 					spriteType = "GFX_construction_techtree_bg3"
-					position = { x=2120 y=0 }
+					position = { x=2260 y=0 }
 				}	
 				
 				
@@ -2840,7 +2840,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "construction_subtitle_intel"
-					position = { x = 2400 y = 80 }
+					position = { x = 2600 y = 80 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2962,7 +2962,7 @@ guiTypes = {
 				name = "size_filler"
 				position = { x=0 y=0 }
 				size = {
-					width = 710 height = 1100
+					width = 710 height = 2800
 					min = { width= 100%% height = 100%% }
 				}
 				
@@ -2974,18 +2974,18 @@ guiTypes = {
 				iconType = {
 					name ="society_techtree_bg2"
 					spriteType = "GFX_society_techtree_bg2"
-					position = { x=-1071 y=633 }
+					position = { x=-1071 y=683 }
 					Orientation = "UPPER_RIGHT"
 				}
 				iconType = {
 					name ="society_techtree_bg3"
 					spriteType = "GFX_society_techtree_bg3"
-					position = { x=0 y=1266 }
+					position = { x=0 y=1366 }
 				}
 				iconType = {
 					name ="society_techtree_bg4"
 					spriteType = "GFX_society_techtree_bg4"
-					position = { x=-1071 y=1900 }
+					position = { x=-1071 y=2060 }
 					Orientation = "UPPER_RIGHT"
 				}		
 

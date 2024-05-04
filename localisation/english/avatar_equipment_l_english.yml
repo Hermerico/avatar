@@ -664,12 +664,16 @@
 
  # air
 
- birb_equipment_1:0 "Messenger Falcon"
- birb_equipment_1_desc:0 "A Falcon, trained for carrying messages."
+ small_birb_equipment_1:0 "Messenger Falcon"
+ small_birb_equipment_1_desc:0 "A Falcon, trained for carrying messages."
+ medium_birb_equipment_1:0 "Messenger Falcon"
+ medium_birb_equipment_1_desc:0 "A Falcon, trained for carrying messages."
+ heavy_birb_equipment_1:0 "Messenger Falcon"
+ heavy_birb_equipment_1_desc:0 "A Falcon, trained for carrying messages."
  FIR_small_birb_equipment_1:0 "Messenger Hawk"
  FIR_small_birb_equipment_1_desc:0 "A Hawk, trained for carrying messages."
  WAT_small_birb_equipment_1:0 "Winged Lemur"
- WAT_bsmall_irb_equipment_1_desc:0 "A Winged Lemur, trained for carrying messages."
+ WAT_small_birb_equipment_1_desc:0 "A Winged Lemur, trained for carrying messages."
  NAT_small_birb_equipment_1:0 "Winged Lemur"
  NAT_small_birb_equipment_1_desc:0 "A Winged Lemur, trained for carrying messages."
  SAT_small_birb_equipment_1:0 "Winged Lemur"

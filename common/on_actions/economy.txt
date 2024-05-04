@@ -230,7 +230,7 @@ on_actions = {
 							compare = greater_than_or_equals
 						}
 						controller = {
-							has_tech = farm_3
+							has_tech = farm_united
 						}
 					}
 					add_dynamic_modifier = { modifier = farm_ranch_upgrade }
@@ -303,9 +303,9 @@ on_actions = {
 
 				if = {
 					limit = {
-						fishing_stand > 4
+						fishing_stand > 3
 						controller = {
-							has_tech = fishing_stand_3
+							has_tech = fishing_stand_2
 						}
 					}
 					add_dynamic_modifier = { modifier = fishing_stand_upgrade }

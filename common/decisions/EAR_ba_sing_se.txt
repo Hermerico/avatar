@@ -77,6 +77,7 @@ EAR_ba_sing_se_expansion = {
 		custom_cost_text = expenses_50
 
 		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 50 }
 		}
 		remove_effect = {

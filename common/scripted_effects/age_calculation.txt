@@ -168,14 +168,12 @@ recalculate_age = {
 	if = {
 		limit = {
 			NOT = {
-				OR = {
-					has_idea = age_1_bonus
-					has_idea = age_2_bonus
-					has_idea = age_3_bonus
-					has_idea = age_4_bonus
-					has_idea = age_5_bonus
-					has_idea = age_6_bonus
-				}
+				has_idea = age_1_bonus
+				has_idea = age_2_bonus
+				has_idea = age_3_bonus
+				has_idea = age_4_bonus
+				has_idea = age_5_bonus
+				has_idea = age_6_bonus
 			}
 		}
 		add_ideas = age_1_bonus

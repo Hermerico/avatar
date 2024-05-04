@@ -1,34 +1,31 @@
-
 state={
 	id=25
 	name="STATE_25"
+	manpower=9840
+	state_category=town
 
 	history = {
 		pop_growth = yes
-		
+
 		owner = ZAO
 		controller = ZAO
 		add_core_of = ZAO
-		
+
 		add_to_variable = {
 			var = forest
 			value = 7
-
 		}
 		add_to_variable = {
 			var = mountain
 			value = 3
-
 		}
 		add_to_variable = {
 			var = field
 			value = 7
-
 		}
 		add_to_variable = {
 			var = water
 			value = 5
-
 		}
 		add_to_variable = {
 			var = stonefield
@@ -37,31 +34,27 @@ state={
 		add_to_variable = {
 			var = animal
 			value = 5
-
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
 
-		}
+		victory_points = { 8794 5 }
+
 		12.1.1 = {
 			owner = ZAO
 			controller = ZAO
 			add_core_of = ZAO
+
 			buildings = {
 				infrastructure = 3
 				fishing_stand = 1
 				mill = 1
-
 			}
 
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = ZAO
 			controller = ZAO
 
-		
 			instant_resource_calc = yes
 		}
 		106.2.4 = {
@@ -76,13 +69,8 @@ state={
 
 			instant_resource_calc = yes
 		}
-
 	}
-
 	provinces = {
 		490 514 815 873 2085 2529 2542 2551 2589 2638 2782 2963 3129 3883 4619 4812 5092 5142 5527 5618 8794 8805 8813 8814 8821 8851 8872 8873 8877 8937 8956 
 	}
-	manpower=9840
-	buildings_max_level_factor=1.000
-	state_category=town
 }

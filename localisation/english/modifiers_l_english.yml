@@ -224,6 +224,7 @@
  workers_ration_need_factor:0 "£ration_texticon|1  Workers Ration Need"
  occupied_ration_need_factor:0 "£ration_texticon|1  Occupied Ration Need"
  peasant_output_factor:0 "£self_employed_texticon  Self Sufficient Output Factor"
+ ic_per_self_employed_k:0 "£civ_factory  Civil Capacity Output per §Y1K§! £self_employed_texticon  Self Sufficient"
  peasant_food_factor:0 "£self_employed_texticon  Self Sufficient Food Production Factor"
  peasant_consumer_good_factor:0 "£self_employed_texticon  Self Sufficient Consumer Good Production Factor"
  knowledge:0 "£knowledge_texticon  Daily Knowledge Gain"
@@ -258,6 +259,8 @@
 
  dragons_modifier:0 "Recruitable Dragons"
  dragons_modifier_desc:0 "The number of dragons willing to join our ranks"
+
+ animal_breeding_factor:0 "£animal_growth_texticon  Animal Breeding"
 
  research_slots_num:0 "Research Slots"
 
@@ -390,6 +393,7 @@
 
 
  consumer_demand:0 "£consumer_goods_texticon  Consumer Demand"
+ consumer_cost:0 "£consumer_goods_texticon  Cost for Consumer Demand"
  grain_demand:0 "£resources_texticons|1  Grain Demand"
  animal_products_demand:0 "£resources_texticons|2  Animal Products Demand"
  textile_demand:0 "£resources_texticons|3  Textile Demand"
@@ -485,19 +489,19 @@
  mill_factor:0 "£milling|2  Mill Output"
  refugee_node:0 "Migrant Route"
 
- farm_upgrade_1_tt:0 "£farming|2  §YFarm§!: §G+0.01%§! £population_texticon  Monthly Population in State per building when on level §Y5§!"
+ farm_upgrade_1_tt:0 "£farming|2  §YFarm§!: §G+5.00%§! £population_texticon  Monthly Population in State per building when on level §Y4§!"
  farm_upgrade_2_tt:0 "£farming|2  §YFarm§!: §Gx0.2§! £resource_deposites|3  when £ranch|2  §YRanch§! in state is on an equal or higher level"
- lumber_mill_upgrade_tt:0 "£lumberjack|2  §YLumber Mill§!: §Gx0.2§! £resource_deposites|1  Reforestation when on level §Y10§!"
+ lumber_mill_upgrade_tt:0 "£lumberjack|2  §YLumber Mill§!: §Gx0.2§! £resource_deposites|1  Reforestation when on level §Y8§!"
  carpentry_upgrade_1_tt:0 "£carpentry|2  §YCarpentry§!: also produces £economy_resources_texticons|2  when on level §Y5§!"
  carpentry_upgrade_2_tt:0 "£carpentry|2  §YCarpentry§!: also produces £economy_resources_texticons|3  when on level §Y15§!"
  smithy_upgrade_tt:0 "£smithy|2  §YSmithy§!: also produces £resources_texticons|8  when on level §Y5§!"
  shop_upgrade_tt:0 "£store|2  §YShops§!: §G+1.00%§! output for every §Y1K§! £population_texticon  Population in the state"
- quarry_upgrade_1_tt:0 "£quarry|2  §YQuarry§!: also produces £resources_texticons|7  when on level §Y10§!"
- quarry_upgrade_2_tt:0 "£quarry|2  §YQuarry§!: also produces £resources_texticons|6  when on level §Y15§!"
+ quarry_upgrade_1_tt:0 "£quarry|2  §YQuarry§!: also produces £resources_texticons|7  when on level §Y5§!"
+ quarry_upgrade_2_tt:0 "£quarry|2  §YQuarry§!: also produces £resources_texticons|6  when on level §Y10§!"
  masonry_upgrade_1_tt:0 "£masonry|2  §YMasonry§!: §G+10.00%§! £construction_speed_texticon  Civilian Capacity Output in State per building when on level §Y5§!"
  masonry_upgrade_2_tt:0 "£masonry|2  §YMasonry§!: §G+20.00%§! £construction_speed_texticon  Civilian Capacity Output in State per building when on level §Y10§!"
- fishing_upgrade_1_tt:0 "£fishing|2  §YFishing Stand§!: also produces £resources_texticons|2  when on level §Y5§!"
- fishing_upgrade_2_tt:0 "£fishing|2  §YFishing Stand§!: gives £dockyard_texticon for each level when on level §Y15§!"
+ fishing_upgrade_1_tt:0 "£fishing|2  §YFishing Stand§!: also produces £resources_texticons|2  when on level §Y4§!"
+ fishing_upgrade_2_tt:0 "£fishing|2  §YFishing Stand§!: gives £dockyard_texticon for each level when on level §Y6§!"
  mine_upgrade_1_tt:0 "£mine|2  §YMine§!: §G+2§! £max_dig_in_texticon  Max Entrenchment and §R-0.5%§! £resistance_decay_texticon  Resistance Decay in State per building when on level §Y5§!"
  mine_upgrade_2_tt:0 "£mine|2  §YMine§!: §Gx1.5§! Mining Potential when on level §Y10§!"
  road_upgrade_tt:0 "§YInfrastructure§!: §G+1§! £building_slots  Building Slot per level for every §Y100K§! £population_texticon  Population in the state"
@@ -505,8 +509,8 @@
  animal_weaving_upgrade_1_tt:0 "£weaving|2  §YAnimal Weaving§!: also produces £economy_resources_texticons|2  when on level §Y5§!"
  crop_weaving_upgrade_2_tt:0 "£weaving|2  §YCrop Weaving§!: also produces £economy_resources_texticons|3  when on level §Y15§!"
  animal_weaving_upgrade_2_tt:0 "£weaving|2  §YAnimal Weaving§!: also produces £economy_resources_texticons|3  when on level §Y15§!"
- ranch_upgrade_1_tt:0 "£ranch|2  §YRanch§!: also produces £economy_resources_texticons|1  when on level §Y5§!"
- ranch_upgrade_2_tt:0 "£ranch|2  §YRanch§!: §Gx0.3§! £resource_deposites|6  Breeding when on level §Y15§!"
+ ranch_upgrade_1_tt:0 "£ranch|2  §YRanch§!: also produces £economy_resources_texticons|1  when on level §Y4§!"
+ ranch_upgrade_2_tt:0 "£ranch|2  §YRanch§!: §Gx0.3§! £resource_deposites|6  Breeding when on level §Y8§!"
  mill_upgrade_tt:0 "£milling|2  §YMill§!: §G+50.00%§! Milling output when £farming|2  §YFarm§! in state is on an equal or higher level"
 
  farm_upgrade:0 "Countryside"

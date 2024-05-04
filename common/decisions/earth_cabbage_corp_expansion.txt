@@ -25,6 +25,8 @@ THE_EARTHKINGDOM = {
 		}
 		custom_cost_text = expenses_50
 
+		days_remove = 30
+
 		ai_will_do = {
 			base = 100
 			modifier = {
@@ -33,7 +35,8 @@ THE_EARTHKINGDOM = {
 			}
 		}
 
-		complete_effect = {
+		remove_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 50 }
 			unlock_decision_category_tooltip = cabbage_corp_expansion
 			set_country_flag = {
@@ -56,21 +59,15 @@ cabbage_corp_expansion = {
 		}
 
 		modifier = {
-			income = -0.50
+			income = 3
 		}
 
-		days_remove = 60
+		days_remove = 120
 
 		fire_only_once = yes
 
 		remove_effect = {
-			modify_country_flag = {
-				flag = cabbage_corp_expansion_active
-				value = 1
-			  }
-			food_throughput = 0.2
-			income = 0.5
-			peasant_opinion = 10
+			set_country_flag = cabbage_cs1
 		}
 
 	}
@@ -79,24 +76,32 @@ cabbage_corp_expansion = {
 
 		icon = decision_cabbage
 		
-		allowed = {
-			has_country_flag = cabbage_corp_expansion_active
+		visible = {
+			has_country_flag = cabbage_cs1
 		}
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
 
 		modifier = {
 			income = -1
 		}
 
-		days_remove = 125
+		days_remove = 250
 
 		fire_only_once = yes
 
 		remove_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 50 }
 			modify_country_flag = {
 				flag = cabbage_corp_expansion_active
 				value = 1
 			  }
 			set_country_flag = cabbage_corporation
+			set_country_flag = cabbage_op1
 		}
 
 	}
@@ -105,25 +110,25 @@ cabbage_corp_expansion = {
 		
 		icon = decision_cabbage
 
-		allowed = {
-			has_country_flag = cabbage_corp_expansion_active
+		visible = {
+			has_country_flag = cabbage_op1
 		}
 
 		modifier = {
 			income = -0.10
 			civilian_capacity_factor = -0.2
+			industrialist_opinion = 20
 		}
 
-		days_remove = 60
+		days_remove = 300
 
 		fire_only_once = yes
 
 		remove_effect = {
 			modify_country_flag = {
 				flag = cabbage_corp_expansion_active
-				value = 1
+				value = 3
 			  }
-			industrialist_opinion = 5
 		}
 	}
 

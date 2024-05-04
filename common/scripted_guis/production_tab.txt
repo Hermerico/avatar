@@ -1,0 +1,98 @@
+
+scripted_gui = {
+
+	production_tab_ui = {
+		context_type = player_context
+		window_name = "production_tab_ui_window"
+		parent_window_token = production_tab
+
+		triggers = {
+			buffalo_yak_visible = {
+				check_variable = { has_buffalo_breeding > 0 }
+			}
+			cat_deer_visible = {
+				check_variable = { has_cat_breeding > 0 }
+			}
+			eel_hound_visible = {
+				check_variable = { has_eel_breeding > 0 }
+			}
+			elephant_camel_visible = {
+				check_variable = { has_elephant_breeding > 0 }
+			}
+			desert_bug_visible = {
+				check_variable = { has_desert_breeding > 0 }
+			}
+			komodo_rhino_visible = {
+				check_variable = { has_komodo_breeding > 0 }
+			}
+			mongooze_lizard_visible = {
+				check_variable = { has_mongooze_breeding > 0 }
+			}
+			ostrich_horse_visible = {
+				check_variable = { has_ostrich_breeding > 0 }
+			}
+			polar_dog_visible = {
+				check_variable = { has_polar_breeding > 0 }
+			}
+			walrus_yak_visible = {
+				check_variable = { has_walrus_breeding > 0 }
+			}
+			dragon_moose_visible = {
+				check_variable = { has_dragon_breeding > 0 }
+			}
+		}
+
+		effects = {
+
+		}
+
+		properties = {
+
+			breeding_icon = {
+				frame = breeding_icon
+			}
+
+			grain_bar = {
+				frame = grain_ratio_percent
+			}
+
+			buffalo_yak = {
+				x = buffalo_x
+			}
+			cat_deer = {
+				x = cat_x
+			}
+			eel_hound = {
+				x = eel_x
+			}
+			elephant_camel = {
+				x = elephant_x
+			}
+			desert_bug = {
+				x = desert_x
+			}
+			komodo_rhino = {
+				x = komodo_x
+			}
+			mongooze_lizard = {
+				x = mongooze_x
+			}
+			ostrich_horse = {
+				x = ostrich_x
+			}
+			polar_dog = {
+				x = polar_x
+			}
+			walrus_yak = {
+				x = walrus_x
+			}
+			dragon_moose = {
+				x = dragon_x
+			}
+
+		}
+
+	}
+
+	
+}

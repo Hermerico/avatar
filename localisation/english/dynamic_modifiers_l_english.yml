@@ -68,6 +68,7 @@
  factory_resource_consumption:0 "£factory_consumption  Factory Consumption"
  building_upkeep_resources:0 "£construction_material_texticon  Construction Resources"
  civs_from_tax_buy:0 "£taxes_texticon  Bought with Taxation"
+ civs_from_self_employed:0 "£self_employed_texticon  Self Employed"
  civs_from_conversion:0 "£mil_civ  Militaries used in Civil Sector"
  mils_and_dockyards_extra:0 "£mil_factory  £dockyard_texticon  Military and Naval Capacities"
  dynamic_bender_capacity:0 "Bender recruitment Law"

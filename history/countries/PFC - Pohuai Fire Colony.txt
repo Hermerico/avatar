@@ -45,13 +45,8 @@ permanent_spirits_and_modifiers = yes
 
 
 
-106.2.4 ={
-	#add_to_war = {
-	#	targeted_alliance = FIR
-	#	enemy = EAR
-	#}
-
-
+106.2.4 = {
+	OOB="PFC_106"
 }
 
  ## #####  ##  ###  #####       #   #   #

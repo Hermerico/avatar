@@ -419,6 +419,12 @@ consumer_demand = {									#### population need. contributes to productivity an
 	precision = 1
 	postfix = none
 }
+consumer_cost = {									#### cost for the demand of people in country or state. major impact on prosperity
+	color_type = bad
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
 
 grain_demand = {									#### country population demand for grain
 	color_type = neutral
@@ -829,6 +835,13 @@ naval_cost_factor = {								#### cost of paying for naval industries
 	color_type = bad
 	value_type = percentage
 	precision = 0
+	postfix = none
+}
+
+ic_per_self_employed_k = {							#### civilian capacities per 1k self employed
+	color_type = good
+	value_type = number
+	precision = 2
 	postfix = none
 }
 

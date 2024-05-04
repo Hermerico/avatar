@@ -53,6 +53,8 @@
  dai_li_extremism_ttp:0 "Follow a more radical path that gives more power to the §DDai Li§! £dai_li_texticon and away from the king. \nMutual exclusive with: §YLoyalists in the Dai Li§!!"
  dai_li_loyalist_ttp:0 "Ensure dominance over the §DDai Li§! £dai_li_texticon to limit its actions and keep your powers. \nMutual exclusive with: §YEncourage Extremism§!!"
  desinger_enable_tt:0 "Enables following Designers:"
+ enable_idea_tt:0 "Enables following Ideas:"
+ enable_law_tt:0 "Enables following Laws:"
  dai_li_government_tt:0 "Half of the Governemnt is occupied by §DDai Li§! £dai_li_texticon §YAgents§!"
  ear_castle_build_effect:0 "Provinces with <§Y20§! £victory_points  : add 1 §YWall§!  \n   Provinces with >=§Y20§! £victory_points  : add 2 §YWalls§!"
  ear_castle_supply_extension:0 "Adds a supply extension to the Castle"

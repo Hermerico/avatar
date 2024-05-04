@@ -63,22 +63,22 @@ on_actions = {
 					limit = {
 						has_tech = farm_1
 					}
-					set_variable = { farm_level = 5 }
+					set_variable = { farm_level = 2 }
 					if = {
 						limit = {
 							has_tech = farm_united
 						}
-						set_variable = { farm_level = 10 }
+						set_variable = { farm_level = 4 }
 						if = {
 							limit = {
 								has_tech = farm_2
 							}
-							set_variable = { farm_level = 25 }
+							set_variable = { farm_level = 6 }
 							if = {
 								limit = {
 									has_tech = farm_3
 								}
-								set_variable = { farm_level = 50 }
+								set_variable = { farm_level = 10 }
 							}
 						}
 					}

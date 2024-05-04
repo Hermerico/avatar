@@ -51,7 +51,7 @@ guiTypes = {
 		
 			containerWindowType = {
 				name = "production_lines"
-				position = { x = 0 y = 223 }
+				position = { x = 0 y = 263 }
 				size = { width = 550 height = 100%% }
 				margin = {top =36 bottom = 13}
 				verticalScrollbar = "right_vertical_slider"

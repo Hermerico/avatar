@@ -1760,7 +1760,7 @@ technologies = {
 		political_power_cap = 10
 		expenses_per_pop = 0.05
 		research_speed_factor = 0.08
-		knowledge_gain = 0.15
+		knowledge_gain = 5
 		
 		path = {
 			leads_to_tech = progressive_medicine_3
@@ -1938,7 +1938,7 @@ technologies = {
 		
 		expenses_per_pop = -0.05
 		research_speed_factor = 0.06
-		knowledge_gain = 0.1
+		knowledge_gain = 5
 		
 		path = {
 			leads_to_tech = conservative_medicine_3
@@ -2166,6 +2166,13 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.12
 		line_change_production_efficiency_factor = 0.04
 		peoples_initiative = -0.1
+
+		on_research_complete = {
+			custom_effect_tooltip = enable_law_tt
+			effect_tooltip = {
+				add_ideas = command_economy_law
+			}
+		}
 		
 		research_cost = 2.5
 		#start_year = 72
@@ -2266,7 +2273,7 @@ technologies = {
 		political_power_cap = 20
 		political_power_gain = 0.1
 		research_speed_factor = 0.08
-		knowledge_gain = 0.25
+		knowledge_gain = 15
 		
 		path = {
 			leads_to_tech = progressive_medicine_4
@@ -2348,6 +2355,13 @@ technologies = {
 		production_factory_efficiency_gain_factor = 0.08
 		production_factory_max_efficiency_factor = 0.025
 		peoples_initiative = 0.1
+
+		on_research_complete = {
+			custom_effect_tooltip = enable_law_tt
+			effect_tooltip = {
+				add_ideas = free_economy_law
+			}
+		}
 		
 		research_cost = 2.5
 		#start_year = 72
@@ -2446,7 +2460,7 @@ technologies = {
 		minister_of_personnel_cost_factor = -0.1
 		prosperity_factor = 0.15
 		research_speed_factor = 0.04
-		knowledge_gain = 0.20
+		knowledge_gain = 10
 
 		path = {
 			leads_to_tech = conservative_medicine_4

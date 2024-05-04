@@ -15,6 +15,7 @@ prosperity_consumer_demand_factor = {
 	modifier = {
 		set_temp_variable = { solf = -0.5 }
 		add_to_temp_variable = { solf = national_prosperity_percent }
+		multiply_temp_variable = { solf = 0.2 }
 		
 		add = solf
 	}
@@ -1052,7 +1053,7 @@ quarry_bonus_2 = {
 		set_temp_variable = { bonus = building_level@quarry }
 		if = {
 			limit = {
-				check_variable = { building_level@quarry < 15 }
+				check_variable = { building_level@quarry < 10 }
 			}
 			NOT = {
 				controller = {
@@ -1130,7 +1131,7 @@ fishing_stand_bonus_2 = {
 		if = {
 			limit = {
 				OR = {
-					fishing_stand < 15
+					fishing_stand < 6
 					NOT = {
 						controller = {
 							has_tech = fishing_stand_4
@@ -1376,7 +1377,7 @@ ranch_bonus_2 = {
 		set_temp_variable = { bonus = 0 }
 		if = {
 			limit = {
-				ranch > 14
+				ranch > 7
 				controller = {
 					has_tech = ranch_3
 				}
@@ -2169,6 +2170,8 @@ local_tax_reduction = {
 
 		set_temp_variable = { tax_prosperity_effect = 1 }
 		add_to_temp_variable = { tax_prosperity_effect = THIS.local_prosperity }
+		multiply_temp_variable = { tax_prosperity_effect = 0.25 }
+
 
 		multiply_temp_variable = { local_tax = tax_prosperity_effect }
 		multiply_temp_variable = { local_tax = 0.1 }
@@ -2190,6 +2193,7 @@ local_tax = {
 
 		set_temp_variable = { tax_prosperity_effect = 1 }
 		add_to_temp_variable = { tax_prosperity_effect = THIS.local_prosperity }
+		multiply_temp_variable = { tax_prosperity_effect = 0.25 }
 
 		multiply_temp_variable = { local_tax = tax_prosperity_effect }
 		multiply_temp_variable = { local_tax = 0.1 }
@@ -2218,11 +2222,17 @@ local_goods_bought = {
 
 		controller = {
 			multiply_temp_variable = { local_goods_bought_2 = ROOT.total_need_factor }
+			set_temp_variable = { local_goods_price_factor = 1 }
+			add_to_temp_variable = { local_goods_price_factor = modifier@consumer_cost }
 		}
+		add_to_temp_variable = { local_goods_price_factor = modifier@consumer_cost }
+		clamp_temp_variable = { var = local_goods_price_factor min = 0 }
 
-		add_TO_temp_variable = { local_goods_bought = local_goods_bought_2 }
+		add_to_temp_variable = { local_goods_bought = local_goods_bought_2 }
 
-		multiply_temp_variable = { local_goods_bought = -0.05 }
+		multiply_temp_variable = { local_goods_bought = local_goods_price_factor }
+
+		multiply_temp_variable = { local_goods_bought = -0.04 }
 
 		add = local_goods_bought
 	}

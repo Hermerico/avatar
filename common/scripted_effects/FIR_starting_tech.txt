@@ -28,7 +28,7 @@ FIR_starting_tech_12 = {
 	# ranged
 		ranged_weapons = 1
 		javelin1 = 1
-		javelin2 = 2
+		javelin2 = 1
 		bow0 = 1
 		bow1 = 1
 		light_armor_0 = 1
@@ -45,20 +45,14 @@ FIR_starting_tech_12 = {
 		guard0 = 1
 		guard1 = 1
 
-	# support
-		tech_support = 1
-		tech_combat_pioneers = 1
-		tech_engineers = 1
-		tech_scouts = 1
-		tech_high_command = 1
-		tech_military_police = 1
-		tech_scavengers = 1
-		tech_transport = 1
-	        #tech_armored_transport = 1
-		tech_field_hospital = 1
-		tech_supply_wagons = 1
-		basic_train = 1
+	}
 
+	# support
+
+	support_row_1 = yes
+
+
+	set_technology = {
 	# air
 		birb_tech_1 = 1
 
@@ -71,43 +65,26 @@ FIR_starting_tech_12 = {
 	# doctrine
 		power = 1
 
+	}
+
+
+
 	# inventions
-		measurements = 1
-		kinectics = 1
-		wind_manipulation = 1
-		domestication = 1
-		metaphysics = 1
-		geometry = 1
-		astronomy = 1
-		smelting = 1
-		agriculture = 1
-		writing = 1
-		architecture = 1
-		leverage = 1
-		bronze_alloy = 1
-		surgery = 1
-		natural_philosophy = 1
-		
+
+	inventions_1 = yes
+	inventions_2 = yes
+	inventions_3 = yes
 
 	# reform
-		reform_0 = 1
-		progressive_0 = 1
-		progressive_resources_0 = 1
-		progressive_economy_0 = 1
-		progressive_education_0 = 1
-		conservative_1 = 1
-		reform_1 = 1
-		conservative_resources_1 = 1
-		conservative_economy_1 = 1
-		conservative_education_1 = 1
+	
+	conservative_0 = yes
+	procressive_1 = yes
+	set_technology = {
 		reform_2 = 1
 		conservative_2 = 1
-		conservative_resources_2 = 1
-		conservative_economy_2 = 1
-		conservative_resources_1 = 1
-		conservative_economy_1 = 1
+	}
 
-
+	set_technology = {
 	# construction
 		farm_1 = 1
 		farm_2 = 1
@@ -135,14 +112,21 @@ FIR_starting_tech_12 = {
 		mine_1 = 1
 		mine_2 = 1
 		steelworks_1 = 1
+		steelworks_2 = 1
+		steelworks_3 = 1
+		steelworks_4 = 1
+		steel_beam_factory_1 = 1
 		road_1 = 1
 		road_2 = 1
+		road_3 = 1
 		wall_1 = 1
 		wall_2 = 1
 		coastal_fortress_1 = 1
 		depot_1 = 1
 		settlement_1 = 1
 		shops_1 = 1
+		shops_2 = 1
+		luxury_shops_1 = 1
 
 
 	 # industry
@@ -151,6 +135,8 @@ FIR_starting_tech_12 = {
 		gathering_tech_1 = 1
 		construction_l1 = 1
 		construction_l2 = 1
+		construction_l3 = 1
+		construction_l4 = 1
 		construction_r1 = 1
 		construction_r2 = 1
 		naval_1 = 1
@@ -161,6 +147,9 @@ FIR_starting_tech_12 = {
 		production_1 = 1
 		production_2 = 1
 		production_3 = 1
+		production_r1 = 1
+		production_r2 = 1
+		production_r3 = 1
 		tanning_1 = 1
 		tanning_2 = 1
 		textile_1 = 1
@@ -175,6 +164,12 @@ FIR_starting_tech_12 = {
 		gathering_tech_1 = 1
 		gathering_tech_2 = 1
 		gathering_tech_3 = 1
+		consumer_1 = 1
+		consumer_2 = 1
+		luxury_1 = 1
+		luxury_1 = 1
+		advertisement_1 = 1
+		advertisement_2 = 1
 		fish_1 = 1
 		fish_2 = 1
 		stone_1 = 1

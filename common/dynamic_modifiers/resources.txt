@@ -67,6 +67,11 @@ civs_from_conversion = {
 
 	industrial_factory_donations = military_ic_transfer
 }
+civs_from_self_employed = {
+	enable = { always = yes }
+
+	industrial_factory_donations = ic_from_self_employed
+}
 
 mils_and_dockyards_extra = {
 	enable = { always = yes }
@@ -207,7 +212,7 @@ mill_upgrade = {
 lumber_mill_upgrade = {
 	enable = { always = yes }
 	remove_trigger = {
-		lumber_mill < 10
+		lumber_mill < 8
 	}
 
 	icon = GFX_lumber_mill_bonus
@@ -241,7 +246,7 @@ smithy_upgrade = {
 quarry_upgrade = {
 	enable = { always = yes }
 	remove_trigger = {
-		quarry < 10
+		quarry < 5
 	}
 
 	icon = GFX_quarry_bonus
@@ -323,7 +328,7 @@ animal_weaving_upgrade = {
 ranch_upgrade = {
 	enable = { always = yes }
 	remove_trigger = {
-		lumber_mill < 10
+		ranch < 4
 	}
 
 	icon = GFX_ranch_bonus

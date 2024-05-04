@@ -120,7 +120,10 @@ get_missions = {
 		add = 1
 	}
 	modifier = {
-		has_country_flag = cabbage_corp_expansion_active
+		has_country_flag = {
+			flag = cabbage_corp_expansion_active
+			value < 3
+		}
 		add = 1
 	}
 

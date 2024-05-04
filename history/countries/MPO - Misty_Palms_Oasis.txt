@@ -89,7 +89,7 @@ permanent_spirits_and_modifiers = yes
 
 	#set_cosmetic_tag = MPO_puppet
 
-
+	OOB = "MPO_52"
 	set_politics = {
 		ruling_party = earth_culture
 		last_election = "2.1.1"

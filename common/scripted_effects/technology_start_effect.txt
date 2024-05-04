@@ -1,0 +1,187 @@
+support_row_1 = {
+	set_technology = {
+		tech_support = 1
+		tech_combat_pioneers = 1
+		tech_engineers = 1
+		tech_scouts = 1
+		tech_high_command = 1
+		tech_military_police = 1
+		tech_scavengers = 1
+		tech_transport = 1
+		tech_field_hospital = 1
+		tech_supply_wagons = 1
+		basic_train = 1
+	}
+}
+
+
+inventions_1 = {
+	set_technology = {
+		measurements = 1
+		kinectics = 1
+		wind_manipulation = 1
+		domestication = 1
+		metaphysics = 1
+	}
+}
+inventions_2 = {
+	set_technology = {
+		geometry = 1
+		astronomy = 1
+		smelting = 1
+		agriculture = 1
+		writing = 1
+	}
+}
+inventions_3 = {
+	set_technology = {
+		architecture = 1
+		leverage = 1
+		bronze_alloy = 1
+		surgery = 1
+		natural_philosophy = 1
+	}
+}
+
+society_reforms_progress = {
+	procressive_0 = yes
+	procressive_1 = yes
+	procressive_2 = yes
+	procressive_3 = yes
+	procressive_4 = yes
+	set_technology = {
+		reform_5 = 1
+	}
+}
+
+society_reforms_tradition = {
+	conservative_0 = yes
+	conservative_1 = yes
+	conservative_2 = yes
+	conservative_3 = yes
+	conservative_4 = yes
+	set_technology = {
+		reform_5 = 1
+	}
+}
+
+procressive_0 = {
+	set_technology = {
+		reform_0 = 1
+		progressive_0 = 1
+		progressive_resources_0 = 1
+		progressive_economy_0 = 1
+		progressive_education_0 = 1
+		progressive_culture_0 = 1
+		progressive_medicine_0 = 1
+		conservative_medicine_0 = 1
+	}
+}
+procressive_1 = {
+	set_technology = {
+		reform_1 = 1
+		progressive_1 = 1
+		progressive_resources_1 = 1
+		progressive_economy_1 = 1
+		progressive_education_1 = 1
+		progressive_culture_1 = 1
+		progressive_medicine_1 = 1
+		conservative_medicine_1 = 1
+	}
+}
+procressive_2 = {
+	set_technology = {
+		reform_2 = 1
+		progressive_2 = 1
+		progressive_resources_2 = 1
+		progressive_economy_2 = 1
+		progressive_education_2 = 1
+		progressive_culture_2 = 1
+		progressive_medicine_2 = 1
+		conservative_medicine_2 = 1
+	}
+}
+procressive_3 = {
+	set_technology = {
+		reform_3 = 1
+		progressive_3 = 1
+		progressive_resources_3 = 1
+		progressive_economy_3 = 1
+		progressive_education_3 = 1
+		progressive_culture_3 = 1
+		progressive_medicine_3 = 1
+		conservative_medicine_3 = 1
+	}
+}
+procressive_4 = {
+	set_technology = {
+		reform_4 = 1
+		progressive_4 = 1
+		progressive_resources_4 = 1
+		progressive_economy_4 = 1
+		progressive_education_4 = 1
+		progressive_culture_4 = 1
+		progressive_medicine_4 = 1
+		conservative_medicine_4 = 1
+	}
+}
+conservative_0 = {
+	set_technology = {
+		reform_0 = 1
+		conservative_0 = 1
+		conservative_resources_0 = 1
+		conservative_economy_0 = 1
+		conservative_education_0 = 1
+		conservative_culture_0 = 1
+		conservative_medicine_0 = 1
+		progressive_medicine_0 = 1
+	}
+}
+conservative_1 = {
+	set_technology = {
+		reform_1 = 1
+		conservative_1 = 1
+		conservative_resources_1 = 1
+		conservative_economy_1 = 1
+		conservative_education_1 = 1
+		conservative_culture_1 = 1
+		conservative_medicine_1 = 1
+		progressive_medicine_1 = 1
+	}
+}
+conservative_2 = {
+	set_technology = {
+		reform_2 = 1
+		conservative_2 = 1
+		conservative_resources_2 = 1
+		conservative_economy_2 = 1
+		conservative_education_2 = 1
+		conservative_culture_2 = 1
+		conservative_medicine_2 = 1
+		progressive_medicine_2 = 1
+	}
+}
+conservative_3 = {
+	set_technology = {
+		reform_3 = 1
+		conservative_3 = 1
+		conservative_resources_3 = 1
+		conservative_economy_3 = 1
+		conservative_education_3 = 1
+		conservative_culture_3 = 1
+		conservative_medicine_3 = 1
+		progressive_medicine_3 = 1
+	}
+}
+conservative_4 = {
+	set_technology = {
+		reform_4 = 1
+		conservative_4 = 1
+		conservative_resources_4 = 1
+		conservative_economy_4 = 1
+		conservative_education_4 = 1
+		conservative_culture_4 = 1
+		conservative_medicine_4 = 1
+		progressive_medicine_4 = 1
+	}
+}

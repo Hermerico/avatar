@@ -1,0 +1,24 @@
+
+scripted_gui = {
+
+#	deployment_tab_ui = {
+#		context_type = player_context
+#		window_name = "deployment_tab_ui_window"
+#		parent_window_name = deployment_tab
+#
+#		triggers = {
+#			
+#		}
+#
+#		effects = {
+#
+#		}
+#
+#		properties = {
+#
+#		}
+#
+#	}
+
+	
+}

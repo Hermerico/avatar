@@ -38,6 +38,7 @@
  victory_celebration:0 "Victory Celebration"
  distribute_food_desc:0 "Throw a celebration to honour our great war heroes!"
 
+
  enact_land_tax:0 "Enact a Land Tax"
  enact_land_tax_desc:0 "A land tax stands as a progressive approach to levy our citizens without hindering economic growth, all while promoting income equality by proportionally taxing wealthy landowners."
  remove_land_tax:0 "Rescind The Land Tax"
@@ -48,6 +49,7 @@
  remove_consumption_tax_desc:0 "The Consumption Tax has proven to unpopular. We have to get rid of it."
  print_money_for_deficit:0 "Mint More Coins"
  print_money_for_deficit_desc:0 "We lack coins? Then mint more of them!"
+ send_tax_collectors:0 "Send Tax Collectors"
  
  Earth_Nation:0 "Earth Kingdom"
  military_investments:0 "Military Investments"
@@ -259,6 +261,7 @@
  
  FIR_conquest_category:0 "§mConquest Plans§!"
  FIR_conquest_category_desc:0 "Firelord Sozins ambitions are not limited to the borders of the Fire Nation. To make this Nation the greatest and most prosperous in the world, war is inevitable. The only question that remains is:\nWhere, When and How?"
+ FIR_establish_colonies:0 "Establish Colonies"
  military_preparations:0 "Military Preparations"
  military_preparations_desc:0 "We have to prepare for war."
  northern_attack_plan:0 "Northern Attack Plan"
@@ -371,15 +374,17 @@
  FIR_naval_outpost:0 "Build new naval bases on §Y[From.GetName]§!"
  FIR_naval_outpost_desc:0 "Build new naval bases on [From.GetName] to supply our troops and ships."
 
-war_with_northern_air_nomads:0 "Declare War on The Northern Air Nomads."
-war_with_northern_air_nomads_desc:0 "The Air Nomads of the Northern Air Temple may have survived the airbender genocide, but they will not be so lucky this time!"
-war_with_southern_air_nomads:0 "Declare War on The Southern Air Nomads."
-war_with_southern_air_nomads_desc:0 "The Southern Air Temple remained standing. Let us raze it to the ground!"
-war_with_eastern_air_nomads:0 "Declare War on The Eastern Air Nomads."
-war_with_eastern_air_nomads_desc:0 "The monks of the Eastern Air Temple have driven off the Unknown Invaders. Let's see how they fare against the full might of the Fire Nation!"
-war_with_western_air_nomads:0 "Declare War on The Western Air Nomads."
-war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery of airbending, we possess control of our burning desire to see them all dead! We will not delay this any longer! They will all die!"
+ war_with_northern_air_nomads:0 "Declare War on The Northern Air Nomads."
+ war_with_northern_air_nomads_desc:0 "The Air Nomads of the Northern Air Temple may have survived the airbender genocide, but they will not be so lucky this time!"
+ war_with_southern_air_nomads:0 "Declare War on The Southern Air Nomads."
+ war_with_southern_air_nomads_desc:0 "The Southern Air Temple remained standing. Let us raze it to the ground!"
+ war_with_eastern_air_nomads:0 "Declare War on The Eastern Air Nomads."
+ war_with_eastern_air_nomads_desc:0 "The monks of the Eastern Air Temple have driven off the Unknown Invaders. Let's see how they fare against the full might of the Fire Nation!"
+ war_with_western_air_nomads:0 "Declare War on The Western Air Nomads."
+ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery of airbending, we possess control of our burning desire to see them all dead! We will not delay this any longer! They will all die!"
 
+ war_with_northern_watertribe:0 "War with the Northern Water Tribe"
+ war_with_southern_watertribe:0 "War with the Southern Water Tribe"
 
  
  ### firenation battle
@@ -489,6 +494,11 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  encourage_extremism_desc:0 "Only the most radical process of action can help us in this dire situation."
  loyalists_in_the_dai_li:0 "Loyalists in the Dai Li"
  loyalists_in_the_dai_li_desc:0 "Never was the Dai Li intended to serve anyone other than the King. We must ensure that this fierce loyalty will not falter."
+ concessions_to_the_dai_li:0 "Concessions to the Dai Li"
+ concessions_to_the_dai_li_desc:0 "The Dai Li have been a loyal and effective force in the past. We must ensure that they remain so."
+ expand_the_dai_li_units:0 "Expand the Dai Li Units"
+ expand_the_dai_li_units_desc:0 "The Dai Li are the most effective force in the city. We should expand their numbers to ensure that they can protect the city."
+ EAR_dai_li_coup:0 "Dai Li Coup"
  dai_li_minister_of_personnel:0 "Dai Li §YMinister of Personnel§!"
  dai_li_minister_of_personnel_desc:0 ""
  dai_li_minister_of_finance:0 "Dai Li §YMinister of Finance§!"
@@ -532,6 +542,10 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  rally_the_kingdom_desc:0 ""
  anti_sozin_pact:0 "Anti-Sozin Pact"
  anti_sozin_pact_desc:0 "It has become apparent, in these dark times, that nobody is truly safe from the clutches of the Fire Nation. The time has come to band together, and meet this growing danger head-on."
+ EAR_ba_sing_se_expansion:0 "Ba Sing Se Expansion"
+ ba_sing_se_buildup:0 "Ba Sing Se Buildup"
+ field_irrigation_canals:0 "Field Irrigation Canals"
+ outer_wall_baraques_construction:0 "Outer Wall Baracks Construction"
  
 
  gather_dai_li_units:0 "Gather Dai Li Units: [?genocide_preparation|Y0]/§Y20§! per Temple"
@@ -550,6 +564,10 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  southern_operation_base_desc:0 ""
  western_operation_base:0 "West Temple Operation Base"
  western_operation_base_desc:0 ""
+ EAR_occupy_northern_temple_lands:0 "Occupy Lands Surrounding Northern Air Temple"
+ EAR_occupy_western_temple_lands:0 "Occupy Lands Surrounding Western Air Temple"
+ EAR_occupy_southern_temple_lands:0 "Occupy Lands Surrounding Southern Air Temple"
+ EAR_occupy_eastern_temple_lands:0 "Occupy Lands Surrounding Eastern Air Temple"
  EAR_northern_temple_attack:0 "Northern Temple Attack"
  EAR_northern_temple_attack_desc:0 ""
  EAR_eastern_temple_attack:0 "Eastern Temple Attack"
@@ -611,6 +629,13 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  castle_construction_material_desc:0 ""
  castle_construction_material_2:0 "Gather Wood"
  castle_construction_material_2_desc:0 ""
+
+ scorched_earth:0 "Scorched Earth"
+
+
+ famine_management_category:0 "§RFamine Management§!"
+ shorten_food_for_workers:0 "Reduce Food for Workers"
+ subsidide_food_production:0 "Subsidize Food Production"
 
  HAN_defenses:0 "The Defense of Han Tui"
  HAN_defenses_desc:0 "Han Tui may not be the most defensible place, but its a vital position to hold."
@@ -739,25 +764,26 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  arrival_of_the_great_comet_desc:0 "Every 100 years, a comet passes by the Earth. Upon its closest approach, firebenders are able to harness its energy, granting them the power of a hundred suns."
 
   #formables
-formable_nations_mod_category:0 "The Southern States"
-formable_nations_mod_category_desc:0 "The people of the Southern Earth Kingdom states have retained a noticeably distinct culture from the rest of the continent, distancing themselves from the more centralized Northern states. Their opinions on the Earth Monarchy have historically fluctuated, but after the Earth King's failure to stop Sozin's armies, confidence in the crown has faltered and talks of secession have risen. "
-formable_nations_SEK:0 "Unite the Southern Earth Kingdom"
-Formable_nations_SEK_KYOSHI:0 "Spread Southern unification propaganda in Kyoshi Island"
-Formable_nations_SEK_SHIMSON:0 "Spread Southern unification propaganda in Shimson"
-compliance_tt:0 "Gain 50 compliance in all required states"
-FORM_SEK:0 "Southern Earth Kingdom"
-FORM_SEK_DEF:0 "The Southern Earth Kingdom"
-formable_nations_GAR_tt:0 "Controls all Zheizhou states"
-formable_nations_NAN_tt:0 "Controls all Nan Shan states"
-formable_nations_GAO_tt:0 "Controls all Gaoling states"
-formable_nations_ZIN_tt:0 "Controls all Yang states"
-formable_nations_ZAO_tt:0 "Controls all Zaofu states"
-formable_nations_YII_tt:0 "Controls all Yi states"
-formable_nations_KYI_tt:0 "Controls all Kyoshi Island states"
-formable_nations_CHN_tt:0 "Controls all Qinchao states"
-formable_nations_ISL_tt:0 "Controls all Shimson states"
-
-add_100:0 "DEBUG add 100 war weariness"
-set_0:0 "DEBUG set war weariness to 0"
-
-show_wanted_divisions:0 "DEBUG AI Wants Divisions: [?ai_wants_divisions|Y]"
+ formable_nations_mod_category:0 "The Southern States"
+ formable_nations_mod_category_desc:0 "The people of the Southern Earth Kingdom states have retained a noticeably distinct culture from the rest of the continent, distancing themselves from the more centralized Northern  states. Their opinions on the Earth Monarchy have historically fluctuated, but after the Earth King's failure to stop Sozin's armies, confidence in the crown has faltered and talks of secession have risen. "
+ formable_nations_SEK:0 "Unite the Southern Earth Kingdom"
+ Formable_nations_SEK_KYOSHI:0 "Spread Southern unification propaganda in Kyoshi Island"
+ Formable_nations_SEK_SHIMSON:0 "Spread Southern unification propaganda in Shimson"
+ compliance_tt:0 "Gain 50 compliance in all required states"
+ FORM_SEK:0 "Southern Earth Kingdom"
+ FORM_SEK_DEF:0 "The Southern Earth Kingdom"
+ formable_nations_GAR_tt:0 "Controls all Zheizhou states"
+ formable_nations_NAN_tt:0 "Controls all Nan Shan states"
+ formable_nations_GAO_tt:0 "Controls all Gaoling states"
+ formable_nations_ZIN_tt:0 "Controls all Yang states"
+ formable_nations_ZAO_tt:0 "Controls all Zaofu states"
+ formable_nations_YII_tt:0 "Controls all Yi states"
+ formable_nations_KYI_tt:0 "Controls all Kyoshi Island states"
+ formable_nations_CHN_tt:0 "Controls all Qinchao states"
+ formable_nations_ISL_tt:0 "Controls all Shimson states"
+ 
+ add_100:0 "DEBUG add 100 war weariness"
+ set_0:0 "DEBUG set war weariness to 0"
+ 
+ show_wanted_divisions:0 "DEBUG AI Wants Divisions: [?ai_wants_divisions|Y]"
+ 

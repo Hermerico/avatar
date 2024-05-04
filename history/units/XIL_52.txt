@@ -1,0 +1,128 @@
+division_template = {
+	name = "Earthbender Brigade"
+	regiments = {
+		earthbender = {
+			x = 0
+			y = 0
+		}
+		earthbender = {
+			x = 0
+			y = 1
+		}
+		earthbender = {
+			x = 0
+			y = 2
+		}
+	}
+}
+
+division_template = {
+	name = "Town Guard"
+	regiments = {
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		spearmen = {
+			x = 0
+			y = 1
+		}
+		spearmen = {
+			x = 1
+			y = 0
+		}
+		spearmen = {
+			x = 1
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Militia Brigade"
+	regiments = {
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		swordsmen = {
+			x = 1
+			y = 0
+		}
+		swordsmen = {
+			x = 1
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Eel Hound Brigade"
+	regiments = {
+		eel_hound = {
+			x = 0
+			y = 0
+		}
+		eel_hound = {
+			x = 0
+			y = 1
+		}
+		ranged_eel_hound = {
+			x = 1
+			y = 0
+		}
+		ranged_eel_hound = {
+			x = 1
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Bender Eel Hound Brigade"
+	regiments = {
+		bender_eel_hound = {
+			x = 0
+			y = 0
+		}
+		bender_eel_hound = {
+			x = 0
+			y = 1
+		}
+		bender_eel_hound = {
+			x = 1
+			y = 0
+		}
+		bender_eel_hound = {
+			x = 1
+			y = 1
+		}
+	}
+}
+
+units = {
+	division = {
+		division_template = "Earthbender Brigade"
+		location = 3557
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_template = "Town Guard"
+		location = 3133
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 6344
+		division_template = "Bender Eel Hound Brigade"
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 6548
+		division_template = "Eel Hound Brigade"
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 993
+		division_template = "Militia Brigade"
+	}
+}

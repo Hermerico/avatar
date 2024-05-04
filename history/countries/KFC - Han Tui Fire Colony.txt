@@ -128,8 +128,7 @@ permanent_spirits_and_modifiers = yes
 
 
 106.2.4 ={
-
-
+	OOB="KFC_106"
 }
 
  ## #####  ##  ###  #####       #   #   #

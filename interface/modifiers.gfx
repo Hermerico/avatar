@@ -78,6 +78,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/state_modifiers/hebai_coal_mines.dds"
 	}
 	spriteType = {
+		name = "GFX_modifiers_omashu_delivery_system"
+		textureFile = "gfx/interface/state_modifiers/omashu_delivery_system.dds"
+	}
+	spriteType = {
 		name = "GFX_modifiers_fields_of_ba_sing_se"
 		textureFile = "gfx/interface/state_modifiers/fields_of_ba_sing_se.dds"
 	}
@@ -174,6 +178,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/state_modifiers/peasant_insurgency.dds"
 	}
 
+
+
+	##### seasons and weather
+
 	spriteType = {
 		name = "GFX_spring_icon"
 		texturefile = "gfx/interface/state_modifiers/spring_icon.dds"
@@ -195,6 +203,11 @@ spriteTypes = {
 		name = "GFX_permafrost_modifier_icon"
 		texturefile = "gfx/interface/state_modifiers/permafrost_modifier.dds"
 	}
+
+
+
+
+	##### resource boni
 
 
 	spriteType = {
@@ -257,6 +270,10 @@ spriteTypes = {
 		name = "GFX_industrial_zone"
 		texturefile = "gfx/interface/state_modifiers/industrial_zone.dds"
 	}
+
+
+
+	####### animals
 
 
 	spriteType = {

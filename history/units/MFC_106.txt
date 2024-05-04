@@ -1,0 +1,58 @@
+division_template = {
+	name = "Town Guard"
+	regiments = {
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		spearmen = {
+			x = 0
+			y = 1
+		}
+		spearmen = {
+			x = 1
+			y = 0
+		}
+		spearmen = {
+			x = 1
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Collaborator Brigade"
+	regiments = {
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		swordsmen = {
+			x = 1
+			y = 0
+		}
+		pikemen = {
+			x = 2
+			y = 0
+		}
+	}
+}
+
+units = {
+	division = {
+		location = 4327
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 7007
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 4394
+		division_template = "Collaborator Brigade"
+	}
+	division = {
+		location = 6991
+		division_template = "Collaborator Brigade"
+	}
+}

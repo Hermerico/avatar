@@ -56,85 +56,129 @@ division_template = {
 	}
 }
 
-#units = {
-#	division = {
-#		division_name = {
-#			is_name_ordered = yes
-#			name_order = 1
-#		}
-#		location = 2803
-#		division_template = "Earthbender Brigade"
-#		start_experience_factor = 0.05
-#		start_equipment_factor = 0.5
-#	}
-#	division = {
-#		division_name = {
-#			is_name_ordered = yes
-#			name_order = 1
-#		}
-#		location = 8636
-#		division_template = "Earthbender Brigade"
-#		start_experience_factor = 0.05
-#		start_equipment_factor = 0.5
-#	}
-#	division = {
-#		division_name = {
-#			is_name_ordered = yes
-#			name_order = 1
-#		}
-#		location = 8416
-#		division_template = "Earthbender Brigade"
-#		start_experience_factor = 0.05
-#		start_equipment_factor = 0.5
-#	}
-#	division = {
-#		division_name = {
-#			is_name_ordered = yes
-#			name_order = 1
-#		}
-#		location = 8373
-#		division_template = "Earthbender Brigade"
-#		start_experience_factor = 0.05
-#		start_equipment_factor = 0.5
-#	}
-#	division = {
-#		division_name = {
-#			is_name_ordered = yes
-#			name_order = 1
-#		}
-#		location = 8134
-#		division_template = "Town Guard"
-#		start_experience_factor = 0.1
-#		start_equipment_factor = 0.8
-#	}
-#	division = {
-#		division_name = {
-#			is_name_ordered = yes
-#			name_order = 1
-#		}
-#		location = 8563
-#		division_template = "Town Guard"
-#		start_experience_factor = 0.1
-#		start_equipment_factor = 0.8
-#	}
-#	division = {
-#		division_name = {
-#			is_name_ordered = yes
-#			name_order = 1
-#		}
-#		location = 2931
-#		division_template = "Militia Brigade"
-#		start_experience_factor = 0.08
-#		start_equipment_factor = 0.75
-#	}
-#	division = {
-#		division_name = {
-#			is_name_ordered = yes
-#			name_order = 1
-#		}
-#		location = 8684
-#		division_template = "Militia Brigade"
-#		start_experience_factor = 0.08
-#		start_equipment_factor = 0.75
-#	}
-#}
+division_template = {
+	name = "Ostrich Cavalry Brigade"
+	regiments = {
+		ostrich_horses = {
+			x = 0
+			y = 0
+		}
+		ostrich_horses = {
+			x = 0
+			y = 1
+		}
+		ostrich_horses = {
+			x = 1
+			y = 0
+		}
+		ostrich_horses = {
+			x = 1
+			y = 0
+		}
+	}
+	support = {
+		scout_ostrich_horses = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "Earthbender Ostrich Cavalry Brigade"
+	regiments = {
+		bender_ostrich_horses = {
+			x = 0
+			y = 0
+		}
+		bender_ostrich_horses = {
+			x = 0
+			y = 1
+		}
+		bender_ostrich_horses = {
+			x = 1
+			y = 0
+		}
+		bender_ostrich_horses = {
+			x = 1
+			y = 0
+		}
+	}
+	support = {
+		scout_ostrich_horses = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+units = {
+	division = {
+		location = 497
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 8342
+		division_template = "Militia Brigade"
+	}
+	division = {
+		location = 8269
+		division_template = "Militia Brigade"
+	}
+	division = {
+		location = 1366
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 336
+		division_template = "Militia Brigade"
+	}
+	division = {
+		location = 562
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 2826
+		division_template = "Earthbender Brigade"
+	}
+	division = {
+		location = 4108
+		division_template = "Militia Brigade"
+	}
+	division = {
+		location = 8563
+		division_template = "Ostrich Cavalry Brigade"
+	}
+	division = {
+		location = 1823
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 8647
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 8416
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 1619
+		division_template = "Earthbender Ostrich Cavalry Brigade"
+	}
+	division = {
+		location = 8470
+		division_template = "Earthbender Ostrich Cavalry Brigade"
+	}
+	division = {
+		location = 5655
+		division_template = "Ostrich Cavalry Brigade"
+	}
+	division = {
+		location = 1969
+		division_template = "Earthbender Ostrich Cavalry Brigade"
+	}
+	division = {
+		location = 941
+		division_template = "Ostrich Cavalry Brigade"
+	}
+}

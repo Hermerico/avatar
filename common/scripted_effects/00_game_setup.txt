@@ -40,6 +40,7 @@ permanent_spirits_and_modifiers = {
 	add_dynamic_modifier = { modifier = population_resource_bought_on_market }
 	add_dynamic_modifier = { modifier = building_upkeep_resources }
 	add_dynamic_modifier = { modifier = civs_from_tax_buy }
+	add_dynamic_modifier = { modifier = civs_from_self_employed }
 	add_dynamic_modifier = { modifier = civs_from_conversion }
 	add_dynamic_modifier = { modifier = mils_and_dockyards_extra }
 	add_dynamic_modifier = { modifier = logistics_and_orga_spirit }
@@ -51,6 +52,9 @@ permanent_spirits_and_modifiers = {
 
 	add_dynamic_modifier = { modifier = full_moon }
 
+	set_variable = { civ_buy_factor = 0.5 }
+	set_variable = { deposit_percentage = 0.5 }
+
 	force_update_dynamic_modifier = yes
 }
 
@@ -60,36 +64,40 @@ bender_conscription_effect = {
 		limit = {
 			has_government = fire_culture
 		}
-		set_variable = { bender_percentage = 0.30 }
 		add_dynamic_modifier = { modifier = fire_nation }
 	}
 	if = { 
 		limit = {
 			has_government = earth_culture
 		}
-		set_variable = { bender_percentage = 0.20 }
 		add_dynamic_modifier = { modifier = earth_nation }
 	}
 	if = { 
 		limit = {
 			has_government = water_culture
 		}
-		set_variable = { bender_percentage = 0.40 }
 		add_dynamic_modifier = { modifier = water_nation }
 	}
 	if = { 
 		limit = {
 			has_government = air_culture
 		}
-		set_variable = { bender_percentage = 1.0 }
 		add_dynamic_modifier = { modifier = air_nation }
 	}
 	if = { 
 		limit = {
 			has_government = pluralist_culture
 		}
-		set_variable = { bender_percentage = 0.25 }
 		add_dynamic_modifier = { modifier = pluralist_nation }
+	}
+
+	set_variable = { bender_target = modifier@bender_target}
+	set_variable = { bender_percentage = modifier@bender_target}
+
+	clamp_variable = {
+		var = bender_percentage
+		min = 0
+		max = bender_target
 	}
 
 

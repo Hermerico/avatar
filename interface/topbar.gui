@@ -93,7 +93,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_shield_medium"
 			position = { x= 12 y = 6 }
 			Orientation = "UPPER_LEFT"
-			clicksound = click_close
+			clicksound = political_tab
 			oversound = ui_menu_over
 			shortcut = "q"
 		}
@@ -711,7 +711,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_topbar_decisionview_button"
 				position = { x= -104 y = 0 }
 				Orientation = "UPPER_LEFT"
-				clicksound = click_close
+				clicksound = decision_tab
 				oversound = ui_menu_over
 				shortcut = "shift+q"
 			}
@@ -825,7 +825,7 @@ guiTypes = {
 					position = { x= -50 y = 0 }
 					Orientation = "UPPER_LEFT"
 					shortcut = "w"
-					clicksound = click_close
+					clicksound = research_tab
 					oversound = ui_menu_over
 				}
 				
@@ -835,7 +835,7 @@ guiTypes = {
 					position = { x= 5 y = 0 }
 					Orientation = "UPPER_LEFT"
 					shortcut = "e"
-					clicksound = click_close
+					clicksound = diplomacy_tab
 					oversound = ui_menu_over
 				}
 				containerWindowType = {
@@ -892,7 +892,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_topbar_trade_button"
 					Orientation = "UPPER_LEFT"
 					shortcut = "r"
-					clicksound = click_close
+					clicksound = trade_tab
 					oversound = ui_menu_over
 				}	
 
@@ -902,7 +902,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_construction_button"
 					Orientation = "UPPER_LEFT"
 					shortcut = "t"
-					clicksound = click_close
+					clicksound = economy_tab
 					oversound = ui_menu_over
 				}
 				
@@ -919,7 +919,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_topbar_production"
 					Orientation = "UPPER_LEFT"
 					shortcut = "y"
-					clicksound = click_close
+					clicksound = production_tab
 					oversound = ui_menu_over
 				}
 				
@@ -929,7 +929,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_deployment_button"
 					Orientation = "UPPER_LEFT"
 					shortcut = "u"
-					clicksound = click_close
+					clicksound = deploy_tab
 					oversound = ui_menu_over
 				}		
 				
@@ -939,7 +939,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_ledger_button"
 					Orientation = "UPPER_LEFT"
 					shortcut = "i"
-					clicksound = click_close
+					clicksound = logisitcs_tab
 					oversound = ui_menu_over
 				}
 				
@@ -949,7 +949,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_staff_office_button"
 					Orientation = "UPPER_LEFT"
 					shortcut = "shift+e"
-					clicksound = click_close
+					clicksound = war_council_tab
 					oversound = ui_menu_over
 				}
 			}
@@ -960,7 +960,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_armyoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "o"
-				clicksound = click_close
+				clicksound = army_tab
 				oversound = ui_menu_over
 			}
 			
@@ -970,7 +970,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_navyoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "p"
-				clicksound = click_close
+				clicksound = navy_tab
 				oversound = ui_menu_over
 			}
 			
@@ -980,7 +980,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_airoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "l"
-				clicksound = click_close
+				clicksound = air_tab
 				oversound = ui_menu_over
 			}
 			

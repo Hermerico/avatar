@@ -337,6 +337,22 @@ on_actions = {
 			set_variable = { medium_bird_breeding = 0 }
 			set_variable = { heavy_bird_breeding = 0 }
 
+			set_variable = { states_with_komodo_breeding = 0 }
+			set_variable = { states_with_mongooze_breeding = 0 }
+			set_variable = { states_with_polar_breeding = 0 }
+			set_variable = { states_with_buffalo_breeding = 0 }
+			set_variable = { states_with_cat_breeding = 0 }
+			set_variable = { states_with_walrus_breeding = 0 }
+			set_variable = { states_with_ostrich_breeding = 0 }
+			set_variable = { states_with_eel_breeding = 0 }
+			set_variable = { states_with_elephant_breeding = 0 }
+			set_variable = { states_with_desert_breeding = 0 }
+			set_variable = { states_with_dragon_moose_breeding = 0 }
+			set_variable = { states_with_bison_breeding = 0 }
+			set_variable = { states_with_small_bird_breeding = 0 }
+			set_variable = { states_with_medium_bird_breeding = 0 }
+			set_variable = { states_with_heavy_bird_breeding = 0 }
+
 			set_variable = { komodo_growth = 100 }
 			set_variable = { mongooze_growth = 100 }
 			set_variable = { polar_growth = 100 }
@@ -360,77 +376,184 @@ on_actions = {
 						has_dynamic_modifier = { modifier = komodo_herd }
 					}
 					add_to_variable = { controller:komodo_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_komodo_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = mongooze_herd }
 					}
 					add_to_variable = { controller:mongooze_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_mongooze_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = polar_herd }
 					}
 					add_to_variable = { controller:polar_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_polar_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = buffalo_herd }
 					}
 					add_to_variable = { controller:buffalo_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_buffalo_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = cat_herd }
 					}
 					add_to_variable = { controller:cat_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_cat_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = walrus_herd }
 					}
 					add_to_variable = { controller:walrus_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_walrus_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = ostrich_herd }
 					}
 					add_to_variable = { controller:ostrich_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_ostrich_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = eel_herd }
 					}
 					add_to_variable = { controller:eel_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_eel_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = elephant_herd }
 					}
 					add_to_variable = { controller:elephant_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_elephant_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = desert_herd }
 					}
 					add_to_variable = { controller:desert_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_desert_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = dragon_moose_herd }
 					}
 					add_to_variable = { controller:dragon_moose_breeding = building_level@ranch }
+					add_to_variable = { controller:states_with_moose_breeding = 1 }
 				}
 				if = {
 					limit = {
 						has_dynamic_modifier = { modifier = bison_herd }
 					}
 					add_to_variable = { controller:bison_breeding = building_level@air_base }
+					add_to_variable = { controller:states_with_bison_breeding = 1 }
 				}
 				add_to_variable = { controller:small_bird_breeding = building_level@air_base }
 				add_to_variable = { controller:medium_bird_breeding = building_level@air_base }
 				add_to_variable = { controller:heavy_bird_breeding = building_level@air_base }
 			}
+
+			set_variable = { has_komodo_breeding = states_with_komodo_breeding }
+			set_variable = { has_mongooze_breeding = states_with_mongooze_breeding }
+			set_variable = { has_polar_breeding = states_with_polar_breeding }
+			set_variable = { has_buffalo_breeding = states_with_buffalo_breeding }
+			set_variable = { has_cat_breeding = states_with_cat_breeding }
+			set_variable = { has_walrus_breeding = states_with_walrus_breeding }
+			set_variable = { has_ostrich_breeding = states_with_ostrich_breeding }
+			set_variable = { has_eel_breeding = states_with_eel_breeding }
+			set_variable = { has_elephant_breeding = states_with_elephant_breeding }
+			set_variable = { has_desert_breeding = states_with_desert_breeding }
+			set_variable = { has_dragon_moose_breeding = states_with_dragon_moose_breeding }
+			set_variable = { has_bison_breeding = states_with_bison_breeding }
+			set_variable = { has_small_bird_breeding = states_with_small_bird_breeding }
+			set_variable = { has_medium_bird_breeding = states_with_medium_bird_breeding }
+			set_variable = { has_heavy_bird_breeding = states_with_heavy_bird_breeding }
+
+			clamp_variable = { var = has_komodo_breeding max = 1 }
+			clamp_variable = { var = has_mongooze_breeding max = 1 }
+			clamp_variable = { var = has_polar_breeding max = 1 }
+			clamp_variable = { var = has_buffalo_breeding max = 1 }
+			clamp_variable = { var = has_cat_breeding max = 1 }
+			clamp_variable = { var = has_walrus_breeding max = 1 }
+			clamp_variable = { var = has_ostrich_breeding max = 1 }
+			clamp_variable = { var = has_eel_breeding max = 1 }
+			clamp_variable = { var = has_elephant_breeding max = 1 }
+			clamp_variable = { var = has_desert_breeding max = 1 }
+			clamp_variable = { var = has_dragon_moose_breeding max = 1 }
+			clamp_variable = { var = has_bison_breeding max = 1 }
+			clamp_variable = { var = has_small_bird_breeding max = 1 }
+			clamp_variable = { var = has_medium_bird_breeding max = 1 }
+			clamp_variable = { var = has_heavy_bird_breeding max = 1 }
+
+			@animal_x_frames = 72
+			set_variable = { x_frames_used = 0 }
+
+			set_variable = { komodo_x = @animal_x_frames }
+			multiply_variable = { komodo_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_komodo_breeding }
+
+			set_variable = { mongooze_x = @animal_x_frames }
+			multiply_variable = { mongooze_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_mongooze_breeding }
+
+			set_variable = { polar_x = @animal_x_frames }
+			multiply_variable = { polar_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_polar_breeding }
+
+			set_variable = { buffalo_x = @animal_x_frames }
+			multiply_variable = { buffalo_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_buffalo_breeding }
+
+			set_variable = { cat_x = @animal_x_frames }
+			multiply_variable = { cat_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_cat_breeding }
+
+			set_variable = { walrus_x = @animal_x_frames }
+			multiply_variable = { walrus_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_walrus_breeding }
+
+			set_variable = { ostrich_x = @animal_x_frames }
+			multiply_variable = { ostrich_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_ostrich_breeding }
+
+			set_variable = { eel_x = @animal_x_frames }
+			multiply_variable = { eel_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_eel_breeding }
+
+			set_variable = { elephant_x = @animal_x_frames }
+			multiply_variable = { elephant_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_elephant_breeding }
+
+			set_variable = { desert_x = @animal_x_frames }
+			multiply_variable = { desert_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_desert_breeding }
+
+			set_variable = { dragon_moose_x = @animal_x_frames }
+			multiply_variable = { dragon_moose_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_dragon_moose_breeding }
+
+			set_variable = { bison_x = @animal_x_frames }
+			multiply_variable = { bison_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_bison_breeding }
+
+			set_variable = { small_bird_x = @animal_x_frames }
+			multiply_variable = { small_bird_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_small_bird_breeding }
+
+			set_variable = { medium_bird_x = @animal_x_frames }
+			multiply_variable = { medium_bird_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_medium_bird_breeding }
+
+			set_variable = { heavy_bird_x = @animal_x_frames }
+			multiply_variable = { heavy_bird_x = x_frames_used }
+			add_to_variable = { x_frames_used = has_heavy_bird_breeding }
 
 
 			multiply_variable = { komodo_breeding = mtth:animal_breeding }

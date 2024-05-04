@@ -1,0 +1,156 @@
+division_template = {
+	name = "Town Guard"
+	regiments = {
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		spearmen = {
+			x = 0
+			y = 1
+		}
+		spearmen = {
+			x = 1
+			y = 0
+		}
+		spearmen = {
+			x = 1
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Infantry Banner"
+	regiments = {
+		pikemen = {
+			x = 0
+			y = 0
+		}
+		pikemen = {
+			x = 0
+			y = 1
+		}
+		pikemen = {
+			x = 1
+			y = 0
+		}
+		pikemen = {
+			x = 1
+			y = 1
+		}
+		archers = {
+			x = 2
+			y = 0
+		}
+		archers = {
+			x = 2
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Earthbender Brigade"
+	regiments = {
+		earthbender = {
+			x = 0
+			y = 0
+		}
+		earthbender = {
+			x = 0
+			y = 1
+		}
+		earthbender = {
+			x = 1
+			y = 0
+		}
+		earthbender = {
+			x = 1
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Ostrich Cavalry Brigade"
+	regiments = { 
+		ostrich_horses = {
+			x = 0
+			y = 0
+		}
+		ostrich_horses = {
+			x = 0
+			y = 1
+		}
+		ranged_ostrich_horses = {
+			x = 1
+			y = 0
+		}
+		ranged_ostrich_horses = {
+			x = 1
+			y = 1
+		}
+	}
+	support = {
+		scout_ostrich_horses = {
+			x = 0
+			y = 0
+		}
+	}
+}
+division_template = {
+	name = "Bender Ostrich Cavalry Brigade"
+	regiments = {
+		bender_eel_hound = {
+			x = 0
+			y = 0
+		}
+		bender_eel_hound = {
+			x = 0
+			y = 1
+		}
+		bender_eel_hound = {
+			x = 1
+			y = 0
+		}
+		bender_eel_hound = {
+			x = 1
+			y = 1
+		}
+	}
+	support = {
+		scout_ostrich_horses = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+units = {
+	division = {
+		location = 7473
+		division_template = "Town Guard"
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 3677
+		division_template = "Town Guard"
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 7360
+		division_template = "Bender Ostrich Cavalry Brigade"
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 7269
+		division_template = "Infantry Banner"
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 7269
+		division_template = "Ostrich Cavalry Brigade"
+		start_equipment_factor = 0.6
+	}
+}

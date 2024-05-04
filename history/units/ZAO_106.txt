@@ -1,114 +1,113 @@
 division_template = {
 	name = "Town Guard"
-
 	regiments = {
-		spearmen = { x = 0 y = 0 }
-		spearmen = { x = 0 y = 1 }
-		spearmen = { x = 1 y = 0 }
-        spearmen = { x = 1 y = 1 }
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		spearmen = {
+			x = 0
+			y = 1
+		}
+		spearmen = {
+			x = 1
+			y = 0
+		}
+		spearmen = {
+			x = 1
+			y = 1
+		}
 	}
-
 }
 
 division_template = {
 	name = "Militia Brigade"
-
 	regiments = {
-		spearmen = { x = 0 y = 0 }
-		swordsmen = { x = 1 y = 0 }
-		swordsmen = { x = 1 y = 1 }
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		swordsmen = {
+			x = 1
+			y = 0
+		}
+		swordsmen = {
+			x = 1
+			y = 1
+		}
 	}
 }
 
 division_template = {
 	name = "Earthbender Brigade"
-
 	regiments = {
-		earthbender = { x = 0 y = 0 }
-		earthbender = { x = 0 y = 1 }
-		earthbender = { x = 0 y = 2 }
+		earthbender = {
+			x = 0
+			y = 0
+		}
+		earthbender = {
+			x = 0
+			y = 1
+		}
+		earthbender = {
+			x = 0
+			y = 2
+		}
 	}
-
 }
 
 #############################################
 units = {
-
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
+	division = {
+		location = 1098
+		division_template = "Earthbender Brigade"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 3939
+		division_template = "Earthbender Brigade"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 9042
+		division_template = "Militia Brigade"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 2527
+		division_template = "Earthbender Brigade"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 9089
+		division_template = "Militia Brigade"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 2732
+		division_template = "Earthbender Brigade"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 5327
+		division_template = "Town Guard"
+	}
+	division = {
 		location = 2321
 		division_template = "Town Guard"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
 	}
-
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 2529
-		division_template = "Town Guard"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
-	}
-
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
+	division = {
 		location = 8997
 		division_template = "Militia Brigade"
-		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
 	}
-
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 8851
+	division = {
+		location = 4478
 		division_template = "Militia Brigade"
-		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
 	}
-
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 5327
-		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
-	}
-
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 5429
-		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
-	}
-	
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 3225
-		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
-	}
-
 }

@@ -21,18 +21,30 @@ division_template = {
 }
 
 division_template = {
-	name = "Militia Brigade"
+	name = "Infantry Banner"
 	regiments = {
-		spearmen = {
+		pikemen = {
 			x = 0
 			y = 0
 		}
-		swordsmen = {
+		pikemen = {
+			x = 0
+			y = 1
+		}
+		pikemen = {
 			x = 1
 			y = 0
 		}
-		swordsmen = {
+		pikemen = {
 			x = 1
+			y = 1
+		}
+		archers = {
+			x = 2
+			y = 0
+		}
+		archers = {
+			x = 2
 			y = 1
 		}
 	}
@@ -50,152 +62,105 @@ division_template = {
 			y = 1
 		}
 		earthbender = {
-			x = 0
-			y = 2
+			x = 1
+			y = 0
+		}
+		earthbender = {
+			x = 1
+			y = 1
 		}
 	}
 }
 
-#############################################
+division_template = {
+	name = "Ostrich Cavalry Brigade"
+	regiments = { 
+		ostrich_horses = {
+			x = 0
+			y = 0
+		}
+		ostrich_horses = {
+			x = 0
+			y = 1
+		}
+		ranged_ostrich_horses = {
+			x = 1
+			y = 0
+		}
+		ranged_ostrich_horses = {
+			x = 1
+			y = 1
+		}
+	}
+	support = {
+		scout_ostrich_horses = {
+			x = 0
+			y = 0
+		}
+	}
+}
+division_template = {
+	name = "Bender Ostrich Cavalry Brigade"
+	regiments = {
+		bender_eel_hound = {
+			x = 0
+			y = 0
+		}
+		bender_eel_hound = {
+			x = 0
+			y = 1
+		}
+		bender_eel_hound = {
+			x = 1
+			y = 0
+		}
+		bender_eel_hound = {
+			x = 1
+			y = 1
+		}
+	}
+	support = {
+		scout_ostrich_horses = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
 units = {
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1741
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 2448
-		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3974
-		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 579
-		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6761
-		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 2606
-		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
 		location = 6436
 		division_template = "Town Guard"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 	}
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 5033
+		location = 3974
 		division_template = "Town Guard"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 	}
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 2095
+		location = 6799
+		division_template = "Bender Ostrich Cavalry Brigade"
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 3618
+		division_template = "Infantry Banner"
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 2288
+		division_template = "Ostrich Cavalry Brigade"
+		start_equipment_factor = 0.6
+	}
+	division = {
+		location = 7259
 		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 	}
 	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6199
-		division_template = "Town Guard"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 7249
+		location = 579
 		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1291
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 52
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6984
-		division_template = "Earthbender Brigade"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 	}
 }

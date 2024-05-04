@@ -1,6 +1,5 @@
 cabbage_corp_expansion = {
     icon = decision_cabbage
-    desc = cabbage_corp_expansion_desc
 
     picture = GFX_category_cabbage_expansion
 
@@ -9,7 +8,7 @@ cabbage_corp_expansion = {
 
 		has_country_flag = {
 			flag = cabbage_corp_expansion_active
-			value < 5
+			value < 3
 		}
 	}
 
