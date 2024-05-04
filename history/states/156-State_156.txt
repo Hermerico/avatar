@@ -2,6 +2,8 @@
 state={
 	id=156
 	name="STATE_156"
+	manpower=5552
+	state_category=rural
 
 	history = {
 		pop_growth = yes
@@ -12,20 +14,18 @@ state={
 		add_core_of = BHA
 
 		add_dynamic_modifier = { modifier = komodo_herd }
+
 		add_to_variable = {
 			var = forest
 			value = 5
-
 		}
 		add_to_variable = {
 			var = mountain
 			value = 0
-
 		}
 		add_to_variable = {
 			var = field
 			value = 4
-
 		}
 		add_to_variable = {
 			var = water
@@ -38,13 +38,10 @@ state={
 		add_to_variable = {
 			var = animal
 			value = 3
-
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
 
-		}
+		victory_points = { 8670 5 }
+		
 		12.1.1 = {
 			owner = FIR
 			controller = FIR
@@ -55,7 +52,7 @@ state={
 
 			}
 
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = FIR
@@ -82,7 +79,4 @@ state={
 	provinces = {
 		927 1168 1441 1981 5050 5365 8670 8688 8699 8715 8766 8776 8791 8804 
 	}
-	manpower=5500
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

@@ -20,7 +20,7 @@ ideas = {
 			}
 
 			modifier = {
-				weekly_centralisation = 0.1
+				#weekly_centralisation = 0.1
 
 				taxation = 0.1
 				stability_factor = -0.3
@@ -28,11 +28,12 @@ ideas = {
 				MONTHLY_POPULATION = -0.4
 				research_speed_factor = -0.1
 				production_speed_buildings_factor = -0.2
-				industry_free_repair_factor = -0.4
+				#industry_free_repair_factor = -0.4
 
 				peoples_initiative = -0.05
 				centralisation_target_modifier = 0.5
 
+				min_treasury_percentage = 0.5
 				money_capacity = 250
 			}
 			
@@ -55,7 +56,7 @@ ideas = {
 			}
 
 			modifier = {
-				weekly_centralisation = 0.075
+				#weekly_centralisation = 0.075
 
 				taxation = 0.08
 				stability_factor = -0.2
@@ -63,11 +64,12 @@ ideas = {
 				MONTHLY_POPULATION = -0.2
 				research_speed_factor = -0.075
 				production_speed_buildings_factor = -0.15
-				industry_free_repair_factor = -0.3
+				#industry_free_repair_factor = -0.3
 
 				peoples_initiative = -0.03
 				centralisation_target_modifier = 0.4
 
+				min_treasury_percentage = 0.4
 				money_capacity = 200
 			}
 			
@@ -97,18 +99,19 @@ ideas = {
 			}
 
 			modifier = {
-				weekly_centralisation = 0.05
+				#weekly_centralisation = 0.05
 
 				taxation = 0.06
 				stability_factor = -0.1
 				war_support_factor = -0.1
 				research_speed_factor = -0.05
 				production_speed_buildings_factor = -0.1
-				industry_free_repair_factor = -0.2
+				#industry_free_repair_factor = -0.2
 
 				#peoples_initiative = 0.01
 				centralisation_target_modifier = 0.3
 
+				min_treasury_percentage = 0.3
 				money_capacity = 150
 			}
 			
@@ -131,17 +134,18 @@ ideas = {
 			}
 
 			modifier = {
-				weekly_centralisation = 0.025
+				#weekly_centralisation = 0.025
 
 				taxation = 0.04
 				MONTHLY_POPULATION = 0.2
 				research_speed_factor = -0.025
 				production_speed_buildings_factor = -0.05
-				industry_free_repair_factor = -0.1
+				#industry_free_repair_factor = -0.1
 
 				peoples_initiative = 0.03
 				centralisation_target_modifier = 0.2
 
+				min_treasury_percentage = 0.2
 				money_capacity = 100
 			}
 			
@@ -175,6 +179,7 @@ ideas = {
 				peoples_initiative = 0.05
 				centralisation_target_modifier = 0.1
 
+				min_treasury_percentage = 0.1
 				money_capacity = 50
 			}
 			

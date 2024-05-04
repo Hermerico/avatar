@@ -2,6 +2,8 @@
 state={
 	id=387
 	name="STATE_387"
+	manpower=17716
+	state_category=city
 
 	history = {
 		pop_growth = yes
@@ -13,17 +15,14 @@ state={
 		add_to_variable = {
 			var = mountain
 			value = 0
-
 		}
 		add_to_variable = {
 			var = field
-			value = 6
-
+			value = 5
 		}
 		add_to_variable = {
 			var = water
 			value = 6
-
 		}
 		add_to_variable = {
 			var = stonefield
@@ -32,19 +31,15 @@ state={
 		add_to_variable = {
 			var = animal
 			value = 4
+		}
+		
+		victory_points = { 8154 20 }
+		victory_points = { 2270 5 }
 
-		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
-
-		}
-		victory_points = {
-			8154 20 
-		}
 		owner = FIR
 		controller = FIR
 		add_core_of = FIR
+
 		12.1.1 = {
 			owner = FIR
 			controller = FIR
@@ -64,13 +59,13 @@ state={
 				}
 				10510 = {
 					naval_base = 1
-
 				}
 
 			}
 
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
+
 		52.5.16 = {
 			owner = FIR
 			controller = FIR
@@ -96,8 +91,4 @@ state={
 	provinces = {
 		213 1136 1647 1762 2046 2099 2167 2270 2824 2890 4113 4129 4794 4821 4953 5051 8060 8070 8092 8113 8128 8135 8154 8155 8161 8176 10510 
 	}
-	manpower=17000
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
 }
