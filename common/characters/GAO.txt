@@ -13,6 +13,18 @@ characters={
 			id=-1
 		}
 	}
+	GAO_lao_beifong = {
+		name = "Lao Beifong"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GAO/Portrait_Gaoling_Lao.dds"
+			}
+		}
+		country_leader = {
+			ideology = constitutional_monarchy
+			id = -1
+		}
+	}
 	GAO_generic={
 		name="Generic"
 		portraits={
