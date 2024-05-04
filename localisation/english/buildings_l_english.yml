@@ -109,8 +109,8 @@
 
  crop_weaving:0 "£weaving|2  Crop Weaving Mill"
  crop_weaving_plural:0 "£weaving|2  Crop Weaving Mills"
- crop_weaving_desc:0 "A Weaving that uses cotton or silk to produce textile. \n\n£import_texticon  Requirements:£resources_strip|1 \n\n£export_texticon  Output: £resources_strip|3 "
- crop_weaving_extended:0 "§YCrop Weaving Mill§! \nA Weaving that uses cotton or silk to produce textile. \n\nMax Level: §Y[?crop_weaving_level]§! \nHealth: §Y4§! \nEmployees: §Y70§!\n\nRequirements: §R-6§!£resources_strip|1 \nOutput: §G+[?ROOT.crop_weaving_output]§! £resources_strip|3 \n\nCost: £civ_factory_output §Y4100§!"
+ crop_weaving_desc:0 "A weaving mill that uses cotton or silk to produce textile. \n\n£import_texticon  Requirements:£resources_strip|1 \n\n£export_texticon  Output: £resources_strip|3 "
+ crop_weaving_extended:0 "§YCrop Weaving Mill§! \nA weaving mill that uses cotton or silk to produce textile. \n\nMax Level: §Y[?crop_weaving_level]§! \nHealth: §Y4§! \nEmployees: §Y70§!\n\nRequirements: §R-6§!£resources_strip|1 \nOutput: §G+[?ROOT.crop_weaving_output]§! £resources_strip|3 \n\nCost: £civ_factory_output §Y4100§!"
 
  crop_weaving_ooo:0 "Abandoned Crop Weaving"
  crop_weaving_ooo_plural:0 "Abandoned Crop Weaving"
@@ -119,8 +119,8 @@
 
  animal_weaving:0 "£weaving|2  Animal Product Weaving Mill"
  animal_weaving_plural:0 "£weaving|2  Animal Product Weaving Mills"
- animal_weaving_desc:0 "A Weaving that uses hides or wool to produce textile. \n\n£import_texticon  Requirements:£resources_strip|2 \n\n£export_texticon  Output: £resources_strip|3 "
- animal_weaving_extended:0 "§YAnimal Product Weaving Mill§! \nA Weaving that uses hides or wool to produce textile. \n\nMax Level: §Y[?animal_weaving_level]§! \nHealth: §Y4§! \nEmployees: §Y70§!\n\nRequirements: §R-5§!£resources_strip|2 \nOutput: §G+[?ROOT.animal_weaving_output]§! £resources_strip|3 \n\nCost: £civ_factory_output §Y4100§!"
+ animal_weaving_desc:0 "A weaving millthat uses hides or wool to produce textile. \n\n£import_texticon  Requirements:£resources_strip|2 \n\n£export_texticon  Output: £resources_strip|3 "
+ animal_weaving_extended:0 "§YAnimal Product Weaving Mill§! \nA weaving mill that uses hides or wool to produce textile. \n\nMax Level: §Y[?animal_weaving_level]§! \nHealth: §Y4§! \nEmployees: §Y70§!\n\nRequirements: §R-5§!£resources_strip|2 \nOutput: §G+[?ROOT.animal_weaving_output]§! £resources_strip|3 \n\nCost: £civ_factory_output §Y4100§!"
 
  animal_weaving_ooo:0 "Abandoned Animal Weaving"
  animal_weaving_ooo_plural:0 "Abandoned Animal Weaving"

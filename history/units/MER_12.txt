@@ -124,7 +124,7 @@ units = {
 		division_template = "Earthbender Brigade"
 	}
 	division = {
-		location = 6687
+		location = 5570
 		division_template = "Earthbender Brigade"
 	}
 	division = {

@@ -690,6 +690,7 @@
  bender_glider_equipment_4:0 "Modern Airbender Glider"
  bender_glider_equipment_4_desc:0 "The modern glider is equipped with everything an airbender needs to fly without losing any flight momentum."
 
+ glider_equipment:0 "Glider Equipment"
  glider_equipment_1:0 "Glider Prototype"
  glider_equipment_1_desc:0 "For too long, only Airbenders have been able to experience the freedom of air travel, but with a clever use of modern technology, we can finally put ourselves on equal footing."
  glider_equipment_2:0 "War Glider"
