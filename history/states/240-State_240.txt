@@ -1,6 +1,6 @@
 state = {
 	id = 240
-	name = "STATE_447"
+	name = "STATE_240"
 	history = {
 		pop_growth = yes
 		
