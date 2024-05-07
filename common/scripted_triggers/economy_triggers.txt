@@ -46,46 +46,6 @@ is_valid_migration_target_low_calculation = {
 				}
 			}
 		}
-		### same country or faction, small harbour or path and friendly controller
-		AND = {
-			PREV.owner = {
-				NOT = {
-					has_war_with = var:PREV.controller
-				}
-			}
-			OR = {
-				controller = { tag = PREV.PREV.controller }
-				controller = {
-					is_in_faction_with = PREV.PREV.controller
-				}
-			}
-			OR = {
-				has_railway_connection = {
-					start_state = THIS
-					target_state = PREV
-				}
-				AND = {
-					any_province_building_level = {
-						province = {
-							all_provinces = yes
-							limit_to_coastal = yes
-						}
-						building = naval_base
-						level > 0
-					}
-					PREV = {
-						any_province_building_level = {
-							province = {
-								all_provinces = yes
-								limit_to_coastal = yes
-							}
-							building = naval_base
-							level > 0
-						}
-					}
-				}
-			}
-		}
 	}
 }
 

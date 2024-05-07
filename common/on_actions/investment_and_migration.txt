@@ -24,17 +24,9 @@ on_actions = {
 		effect = {
 			every_controlled_state = {
 
-				limit = {
-					check_variable = { modifier@monthly_migration_state < 0 }
-				}
-
-				add_to_variable = { THIS.migrant_check_state = 1 }
-				if = {
-					limit = {
-						check_variable = { THIS.migrant_check_state > states^num }
-					}
-					set_variable = { THIS.migrant_check_state = 1 }
-				}
+				#limit = {
+				#	check_variable = { modifier@monthly_migration_state < 0 }
+				#}
 
 				save_event_target_as = migration_origin
 
@@ -59,31 +51,18 @@ on_actions = {
 					}
 				}
 
-				var:migrant_check_state = {
 
-					if = {
-						limit = {
-							is_valid_migration_target = yes
-						}
-						if = {
-							limit = {
-								NOT = {
-									is_in_array = { PREV.available_migrant_states_array = THIS.id }
-								}
-							}
-							add_to_array = {
-								array = PREV.available_migrant_states_array
-								value = THIS.id
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							is_in_array = { PREV.available_migrant_states_array = THIS.id }
-						}
-						remove_from_array = { PREV.available_migrant_states_array = THIS.id }
-					}
-				}
+				### more of these kill performance, less increase it
+
+				migrant_per_state_recalc = yes
+				#migrant_per_state_recalc = yes
+				#migrant_per_state_recalc = yes
+				#migrant_per_state_recalc = yes
+				#migrant_per_state_recalc = yes
+				#migrant_per_state_recalc = yes
+				#migrant_per_state_recalc = yes
+
+				
 			}
 		}
 	}

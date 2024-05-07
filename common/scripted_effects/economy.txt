@@ -113,6 +113,44 @@
 #}
 
 
+
+migrant_per_state_recalc = {
+	add_to_variable = { THIS.migrant_check_state = 1 }
+	if = {
+		limit = {
+			check_variable = { THIS.migrant_check_state > states^num }
+		}
+		set_variable = { THIS.migrant_check_state = 1 }
+	}
+
+	var:migrant_check_state = {
+
+		if = {
+			limit = {
+				is_valid_migration_target = yes
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_in_array = { PREV.available_migrant_states_array = THIS.id }
+					}
+				}
+				add_to_array = {
+					array = PREV.available_migrant_states_array
+					value = THIS.id
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				is_in_array = { PREV.available_migrant_states_array = THIS.id }
+			}
+			remove_from_array = { PREV.available_migrant_states_array = THIS.id }
+		}
+	}
+}
+
+
 decrease_civ_buy_effect = {
 	add_to_variable = { civ_buy_factor = -0.01 }
 	recalc_civ_buy_clamp = yes
