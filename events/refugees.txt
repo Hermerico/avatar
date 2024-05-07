@@ -18,7 +18,7 @@ state_event = {
 
 			every_state = {
 				limit = {
-					is_valid_migration_target = yes
+					is_valid_migration_target_low_calculation = yes
 				}
 				
 				add_to_array = {

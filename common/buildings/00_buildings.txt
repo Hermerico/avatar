@@ -594,8 +594,8 @@ buildings = {
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
-		max_rations_building_k = 100.0 #k
-		max_grain_building_k = 150.0
+		max_rations_building_k = 1000 #1m
+		max_grain_building_k = 150 #150k
 		building_upkeep_cost = 2
 		local_supplies_for_controller = 0.1
 

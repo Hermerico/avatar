@@ -13,7 +13,7 @@ on_actions = {
 				country_event = {
 					id = refugee_calc.2
 					hours = 12
-					random_hours = 92
+					random_hours = 120
 				}
 			}
 
