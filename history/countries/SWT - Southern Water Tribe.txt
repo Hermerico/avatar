@@ -105,7 +105,7 @@ if = {
 		}
 	}
 }
-
+set_major = yes
 bender_conscription_effect = yes
 factory_output_calc = yes
 throughput_variable_calc = yes
@@ -126,7 +126,6 @@ permanent_spirits_and_modifiers = yes
 		var = SWT_unity_total
 		value = 100
 	}
-	set_major = yes
 	SWT_recalc_unity_icon_frames = yes
 	add_ideas = {
 		local_markets
