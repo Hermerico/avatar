@@ -49,7 +49,64 @@ THE_EARTHKINGDOM = {
 			}
 		}
 	}
-
+	abandon_mandate_of_heaven = {
+		icon = confront_the_firenation
+		allowed = {
+			tag = EAR
+		}
+		visible = {
+			has_war_with = FIR
+		}
+		available = {
+			has_war_with = FIR
+			is_neighbor_of = FIR
+			any_country = { #can't escape if encircled
+				is_in_faction_with = EAR
+				is_neighbor_of = EAR
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				surrender_progress = 0.4
+			}
+		}
+		complete_effect = {
+			add_ideas = EAR_idea_abandoned_capital
+		}
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = ear_release_states_tt
+			every_country = {
+				limit = {
+					is_subject_of = EAR
+				}
+				EAR = {
+					end_puppet = PREV
+				}
+				add_ideas = destroyed_morale_EAR
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = GAO
+						tag = OMS
+						tag = TAK
+						tag = NCB
+						tag = ISL
+						tag = FMB
+						tag = XIN
+						tag = MER
+						tag = ECB
+						tag = YUE
+					}
+				}
+				set_major = yes
+			}
+		}
+	}
 }
 
 EAR_firenation_hostility_category = {

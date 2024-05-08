@@ -427,6 +427,9 @@
  THE_EARTHKINGDOM:0 "§MThe Earth Kingdom§!"
  THE_EARTHKINGDOM_desc:0 "The §uEarth Kingdom§! is currently lead by §Y[?global.earth_kingdom_leader.GetName]§!. \n\nThe Earth Kingdom is one of the world's four nations. Spanning most of a continent as well as several subsidiary islands, it is the largest and most populated sovereignty in the world and encompasses much of the eastern hemisphere. \nThe kingdom operates as a monarchy under the rule of a king or queen, although their power has fluctuated throughout history. \n\nCurrently there are §Y[?global.earth_kingdom^num]§! States in the Kingdom:"
  earth_country_name:0 "[THIS.GetName]"
+ abandon_mandate_of_heaven:0 "Abandon the Mandate of Heaven"
+ abandon_mandate_of_heaven_desc:0 "The Mandate of Heaven is in an immense danger from the vile Fire Nation. If it falls, entire Earth Kingdom is doomed. We must give full autonomy to our subjects so that they might continue the fight against the Fire Nation while we are incapable of it."
+ ear_release_states_tt:0 "§GWe will release every Earth Kingdom State from our rule. They will be free to govern themselves and fight the Fire Nation as they see fit.§!§RThis will preserve the Earth Kingdom's ability to resist the Fire Nation, but will also reduce our power and influence, as well as giving the ability to our subjects to continue the fight against the Fire Nation in the event of fall of the Mandate of Heaven§!"
  ### Free Major
  free_major_suppress_puppets:0 "The Rule of §Y[ROOT.GetLeader]§!"
  free_major_suppress_puppets_desc:0 "May [ROOT.GetLeader.GetSheHe] guide our empire to last a thousand years."

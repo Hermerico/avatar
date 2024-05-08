@@ -164,5 +164,35 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+		EAR_idea_abandoned_capital = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_org_factor = -0.2
+				army_morale = -0.2
+				war_support_factor = -0.1
+				army_speed_factor = 0.05
+			}
+		}
+		destroyed_morale_EAR = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale = -0.1
+				war_support_factor = -0.05
+			}
+		}
 	}
 }
