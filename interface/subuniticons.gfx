@@ -501,7 +501,7 @@ spriteTypes = {
 	}
 	spriteType = { 
 	name = "GFX_unit_eel_hound_icon_medium_white"						
-	textureFile = "gfx/interface/counters/divisions_small/onmap_eel_hound_icon.dds"
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_eel_hound_icon.dds"
 	noOfFrames = 2
 	}
 	spriteType = { 

@@ -99,6 +99,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_war_weariness_texticon"
+		texturefile = "gfx/texticons/war_weariness_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_centralisation_weekly_texticon"
 		texturefile = "gfx/texticons/centralisation_weekly.dds"
 		legacy_lazy_load = no
@@ -963,6 +968,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_unit_air_airship_icon_small"
+		texturefile = "gfx/texticons/unit_air_airship_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
 		name = "GFX_unit_firebender_icon_small"
 		texturefile = "gfx/texticons/unit_firebender_icon_small.dds"
 		legacy_lazy_load = no
@@ -1094,15 +1105,32 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
-
 	spriteType = {
-		name = "GFX_unit_mongooze_icon_small_small"
+		name = "GFX_unit_eel_hound_icon_small"
+		texturefile = "gfx/texticons/unit_eel_hound_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_unit_bender_eel_hound_icon_small"
+		texturefile = "gfx/texticons/unit_bender_eel_hound_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_unit_mongooze_icon_small"
 		texturefile = "gfx/texticons/unit_mongooze_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
 	spriteType = {
-		name = "GFX_unit_komodo_icon_small_small"
+		name = "GFX_unit_bender_mongooze_icon_small"
+		texturefile = "gfx/texticons/unit_bender_mongooze_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_unit_komodo_icon_small"
 		texturefile = "gfx/texticons/unit_komodo_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2		
@@ -1113,6 +1141,24 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
+	spriteType = {
+		name = "GFX_unit_bender_ostrich_horses_icon_small"
+		texturefile = "gfx/texticons/unit_bender_ostrich_horses_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_unit_bender_polar_dogs_icon_small"
+		texturefile = "gfx/texticons/unit_bender_polar_dogs_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_unit_bender_walrus_yak_icon_small"
+		texturefile = "gfx/texticons/unit_bender_walrus_yak_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}	
 
 	########## ships
 
