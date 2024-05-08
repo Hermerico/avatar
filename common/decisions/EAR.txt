@@ -87,6 +87,7 @@ THE_EARTHKINGDOM = {
 					end_puppet = PREV
 				}
 				add_ideas = destroyed_morale_EAR
+				event = earthkingdom.2.t
 			}
 			every_country = {
 				limit = {

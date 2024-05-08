@@ -34,7 +34,21 @@ country_event = {
 	}
 }
 
-
+#
+country_event = {
+	id = earthkingdom.2
+	title = earthkingdom.2.t
+	desc = earthkingdom.2.d
+	option = {
+		name = earthkingdom.2.a
+		effect_tooltip = {
+			add_ideas = destroyed_morale_EAR
+			EAR = {
+				end_puppet = ROOT
+			}
+		}
+	}
+}
 
 add_namespace = ear_treaty
 
