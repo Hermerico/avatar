@@ -1,38 +1,30 @@
-
-
- ## #####  ##  ###  #####       #   ##
+## #####  ##  ###  #####       #   ##
 #     #   #  # #  #   #        ##  #  #
- #    #   #### ###    #       # #    #
-  #   #   #  # #  #   #         #   #
+#    #   #### ###    #       # #    #
+#   #   #  # #  #   #         #   #
 ##    #   #  # #  #   #         #  ####
-
-
 capital = 85
-
 set_country_flag = WAT_navy
- 
 set_country_flag = WATER_special_forces
-
 #set_cosmetic_tag = SWT_tribes
-
 OOB = "SWT_12"
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_naval_oob = "SWT_12_naval_mtg"
 	else = {
 		set_naval_oob = "SWT_12_naval_legacy"
 	}
-}	
-water_generic_starting_tech = yes
+}
 
+water_generic_starting_tech = yes
 set_technology = {
-                    water_training_1 = 1
-					}
+	water_training_1 = 1
+}
 
 #set_research_slots = 2
-
 set_convoys = 20
-
 set_politics = {
 	ruling_party = water_culture
 	last_election = "10.6.15"
@@ -50,26 +42,28 @@ set_popularities = {
 
 recruit_character = SWT_salota
 recruit_character = SWT_hakota
-
 recruit_character = SWT_head_of_intelligence_1
 recruit_character = SWT_head_of_intelligence_2
 recruit_character = SWT_head_of_intelligence_3
 recruit_character = SWT_head_of_intelligence_4
 recruit_character = SWT_head_of_intelligence_5
 recruit_character = SWT_head_of_intelligence_6
-
-set_stability = 0.4 
+set_stability = 0.4
 set_war_support = 0.4
+set_variable = {
+	var = SWT_unity_support
+	value = 15
+}
 
-set_variable = { var = SWT_unity_support value = 15 }
-set_variable = { var = SWT_unity_total value = 100 }
+set_variable = {
+	var = SWT_unity_total
+	value = 100
+}
+
 SWT_recalc_unity_icon_frames = yes
-
 add_ideas = {
-
 	remote_isolation
 	loose_confederation
-	
 	local_markets
 	water_volunteers
 	construction_efforts_law
@@ -78,10 +72,10 @@ add_ideas = {
 	tribal_education
 }
 
-
 if = {
-	limit = { has_dlc = "Man the Guns" }
-
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	create_equipment_variant = {
 		name = "Fisher Canoe"
 		type = watertribe_canoe_hull_1
@@ -89,9 +83,8 @@ if = {
 		modules = {
 			fixed_ship_crew_slot = boarding_crew_1
 			fixed_ship_oars_slot = oars_1
-    	}
+		}
 	}
-
 	create_equipment_variant = {
 		name = "Expedition Cutter"
 		type = watertribe_cutter_hull_1
@@ -101,41 +94,40 @@ if = {
 			fixed_ship_sails_slot = sails_1
 			fixed_ship_armor_slot = medium_hull_reinforcement_1
 			fixed_ship_storage_slot = supplies_1
-    	}
+		}
 	}
-
 	create_equipment_variant = {
 		name = "Transport Raft"
 		type = watertribe_raft_hull_1
 		#parent_version = 0
 		modules = {
 			fixed_ship_crew_slot = ship_waterbender_crew_1
-    	}
+		}
 	}
-
 }
+
 bender_conscription_effect = yes
 factory_output_calc = yes
 throughput_variable_calc = yes
 permanent_spirits_and_modifiers = yes
-
-
- ## #####  ##  ###  #####     ####   ##
+## #####  ##  ###  #####     ####   ##
 #     #   #  # #  #   #       #     #  #
- #    #   #### ###    #       ###     #
-  #   #   #  # #  #   #          #   #
+#    #   #### ###    #       ###     #
+#   #   #  # #  #   #          #   #
 ##    #   #  # #  #   #       ###   #### 
-
-
-52.5.16 ={
-
+52.5.16 = {
 	OOB = "SWT_52"
 	set_naval_oob = "empty"
-
-	set_variable = { var = SWT_unity_support value = 38 }
-	set_variable = { var = SWT_unity_total value = 100 }
+	set_variable = {
+		var = SWT_unity_support
+		value = 38
+	}
+	set_variable = {
+		var = SWT_unity_total
+		value = 100
+	}
+	set_major = yes
 	SWT_recalc_unity_icon_frames = yes
-	
 	add_ideas = {
 		local_markets
 		water_exceptional
@@ -143,7 +135,6 @@ permanent_spirits_and_modifiers = yes
 		limited_water_conscription
 		family_support_3
 		tribal_education
-	
 		united_confederation
 	}
 	remove_ideas = {
@@ -155,25 +146,24 @@ permanent_spirits_and_modifiers = yes
 		medium_cavalry_1 = 1
 		heavy_cavalry_1 = 1
 	}
-
 }
 
-
- ## #####  ##  ###  #####       #  ##    #
+## #####  ##  ###  #####       #  ##    #
 #     #   #  # #  #   #        ## #  #  #
- #    #   #### ###    #       # # #  # #  #
-  #   #   #  # #  #   #         # #  # #  #
+#    #   #### ###    #       # # #  # #  #
+#   #   #  # #  #   #         # #  # #  #
 ##    #   #  # #  #   #         #  ##   ##
-
-
-
-106.2.4 ={
+106.2.4 = {
 	OOB = "SWT_106"
-	set_variable = { var = SWT_unity_support value = 24 }
-	set_variable = { var = SWT_unity_total value = 100 }
+	set_variable = {
+		var = SWT_unity_support
+		value = 24
+	}
+	set_variable = {
+		var = SWT_unity_total
+		value = 100
+	}
 	SWT_recalc_unity_icon_frames = yes
-
-
 	add_ideas = {
 		local_markets
 		extensive_conscription
@@ -181,22 +171,18 @@ permanent_spirits_and_modifiers = yes
 		water_indiscriminate
 		family_support_5
 		tribal_education
-
 		water_raids_100
 	}
-
 	retire_character = SWT_salota
-
 	set_technology = {
-
 	}
-
 	if = {
 		limit = {
-			NOT = { has_dlc = "Man the Guns" }
+			NOT = {
+				has_dlc = "Man the Guns"
+			}
 		}
 		set_technology = {
-
 		}
 	}
 	if = {
@@ -204,12 +190,8 @@ permanent_spirits_and_modifiers = yes
 			has_dlc = "Man the Guns"
 		}
 		set_technology = {
-
 		}
-
 	}
-
-
 }
 
 # Different Ideology Leaders
