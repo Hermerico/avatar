@@ -418,7 +418,12 @@ ideas = {
 
 
 			ai_will_do = {
-				factor = 1
+				base = 0
+				modifier = {
+					check_variable = { modifier@peasant_opinion < 0 }
+					add = 10	
+				}
+				
 			}
 			
 			cancel_if_invalid = no
