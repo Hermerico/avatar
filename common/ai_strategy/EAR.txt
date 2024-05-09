@@ -214,13 +214,6 @@ EARTH_decentralised_warfare = {
 		#has_war_with = FIR
 	}
 	abort_when_not_enabled = yes
-	abort = {
-		EAR = {
-			any_allied_country = {
-				has_capitulated = yes	
-			}	
-		}
-	}	
 
 	ai_strategy = {
 		type = spare_unit_factor
