@@ -190,7 +190,7 @@ ideas = {
 							AND = {
 								has_country_flag = AIR_special_forces
 								stockpile_ratio = {
-									archetype = airebender_equipment
+									archetype = airbender_equipment
 									ratio < -0.2
 								}
 							}																					
