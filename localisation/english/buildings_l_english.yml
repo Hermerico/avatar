@@ -100,7 +100,7 @@
  quarry:0 "£quarry|2  Quarry"
  quarry_plural:0 "£quarry|2  Quarries"
  quarry_desc:0 "Quarries are the most basic mineral source. \n\n£import_texticon  Requirements:£resource_deposites|5 \n\n£export_texticon  Output: £resources_strip|5 "
- quarry_extended:0 "§YQuarry§! \nQuarries are the most basic mineral source. They can be buit alost everywhere. \n\nMax Level: §Y[?quarry_level]§! \nHealth: §Y16§! \nEmployees: §Y120§!\n\nRequirements: §R-1§!£resource_deposites|5 \nOutput: §G+[?ROOT.quarry_output]§! £resources_strip|5 \n\nCost: £civ_factory_output §Y5800§!"
+ quarry_extended:0 "§YQuarry§! \nQuarries are the most basic mineral source. They can be buit almost everywhere. \n\nMax Level: §Y[?quarry_level]§! \nHealth: §Y16§! \nEmployees: §Y120§!\n\nRequirements: §R-1§!£resource_deposites|5 \nOutput: §G+[?ROOT.quarry_output]§! £resources_strip|5 \n\nCost: £civ_factory_output §Y5800§!"
 
  quarry_mill_ooo:0 "Abandoned Quarry"
  quarry_mill_ooo_plural:0 "Abandoned Quarry"
@@ -119,7 +119,7 @@
 
  animal_weaving:0 "£weaving|2  Animal Product Weaving Mill"
  animal_weaving_plural:0 "£weaving|2  Animal Product Weaving Mills"
- animal_weaving_desc:0 "A weaving millthat uses hides or wool to produce textile. \n\n£import_texticon  Requirements:£resources_strip|2 \n\n£export_texticon  Output: £resources_strip|3 "
+ animal_weaving_desc:0 "A weaving mill that uses hides or wool to produce textile. \n\n£import_texticon  Requirements:£resources_strip|2 \n\n£export_texticon  Output: £resources_strip|3 "
  animal_weaving_extended:0 "§YAnimal Product Weaving Mill§! \nA weaving mill that uses hides or wool to produce textile. \n\nMax Level: §Y[?animal_weaving_level]§! \nHealth: §Y4§! \nEmployees: §Y70§!\n\nRequirements: §R-5§!£resources_strip|2 \nOutput: §G+[?ROOT.animal_weaving_output]§! £resources_strip|3 \n\nCost: £civ_factory_output §Y4100§!"
 
  animal_weaving_ooo:0 "Abandoned Animal Weaving"
