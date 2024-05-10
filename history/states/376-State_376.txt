@@ -1,10 +1,12 @@
-
-state={
-	id=376
-	name="STATE_376"
+state = {
+	id = 376
+	name = "STATE_376"
+	manpower = 13000
+	state_category = town
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
 	history = {
 		pop_growth = yes
-		
 		add_to_variable = {
 			var = forest
 			value = 5
@@ -29,7 +31,9 @@ state={
 			var = animal
 			value = 2
 		}
-
+		victory_points = {
+			8653 5
+		}
 		owner = FIR
 		controller = FIR
 		add_core_of = FIR
@@ -44,39 +48,27 @@ state={
 				mine = 5
 				carpentry = 1
 				masonry = 1
-
 			}
-
 			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = FIR
 			controller = FIR
-
-		
 			instant_resource_calc = yes
 		}
 		106.2.4 = {
 			owner = FIR
 			controller = FIR
-
 			instant_resource_calc = yes
 		}
 		111.10.30 = {
 			owner = FIR
 			controller = FIR
-
 			instant_resource_calc = yes
 			instant_resource_calc = yes
 		}
-
 	}
-
 	provinces = {
 		11 216 1071 2332 2544 2581 2767 3394 3827 8528 8548 8575 8628 8642 8653 
 	}
-	manpower=13000
-	state_category=town
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
 }

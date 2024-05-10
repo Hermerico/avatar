@@ -4,9 +4,11 @@ state = {
 	provinces = {
 		10483
 	}
+	manpower = 97
+	buildings_max_level_factor = 1
+	state_category = tiny_island
 	history = {
 		pop_growth = yes
-		
 		add_to_variable = {
 			var = forest
 			value = 1		}
@@ -32,6 +34,9 @@ state = {
 			var = resource_deposites
 			value = 6
 		}
+		victory_points = {
+			10483 1
+		}
 		owner = FIR
 		controller = FIR
 		add_core_of = FIR
@@ -48,14 +53,13 @@ state = {
 					naval_base = 1
 				}
 			}
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = FIR
 			controller = FIR
 			add_core_of = FIR
 			add_core_of = HEB
-		
 			instant_resource_calc = yes
 		}
 		106.2.4 = {
@@ -72,7 +76,4 @@ state = {
 			add_core_of = HEB
 		}
 	}
-	manpower = 97
-	buildings_max_level_factor = 1
-	state_category = tiny_island
 }
