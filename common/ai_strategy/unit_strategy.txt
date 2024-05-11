@@ -5,12 +5,24 @@ RECRUITMENT_bender_only = {
 		always = yes
 	}
 	enable = {
+		stockpile_ratio = {
+			archetype = earthbender_equipment
+			ratio = 0.01
+		}
 		OR = {
 			has_idea = fire_benders_only
 			has_idea = earth_benders_only
 			has_idea = water_benders_only
 			has_idea = air_benders_only
 		}
+		OR = {
+			has_at_least_31_of_own_bender_equipment = yes
+			check_variable = {
+				var = ROOT.amount_manpower_in_deployment_queue
+				value = 110
+				compare = less_than_or_equals
+			}
+		}	
 	}
 	abort_when_not_enabled = yes
 
@@ -45,10 +57,14 @@ RECRUITMENT_exceptional = {
 		always = yes
 	}
 	enable = {
-		has_idea = fire_exceptional
-		has_idea = earth_exceptional
-		has_idea = water_exceptional
+		OR = {
+			has_idea = fire_exceptional
+			has_idea = earth_exceptional
+			has_idea = water_exceptional
+		}
+		has_at_least_120_of_own_bender_equipment = yes	
 	}
+	
 	abort_when_not_enabled = yes
 
 	ai_strategy = {

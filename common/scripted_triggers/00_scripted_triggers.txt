@@ -100,3 +100,51 @@ has_large_ally_not_pick_local_markets = {
 		num_of_military_factories > 30
 	}
 }
+has_at_least_31_of_own_bender_equipment = {
+	OR = {
+		AND = {
+			has_country_flag = AIR_special_forces
+			has_equipment = {airbender_equipment > 31}
+		}
+		AND = {
+			has_country_flag = EARTH_special_forces
+			has_equipment = {earthbender_equipment > 31}
+		}
+		AND = {
+			has_country_flag = FIR_special_forces
+			has_equipment = {firebender_equipment > 31}
+		}
+		AND = {
+			has_country_flag = WATER_special_forces
+			has_equipment = {waterbender_equipment > 31}
+		}
+		AND = {
+			has_country_flag = SAND_special_forces
+			has_equipment = {sandbender_equipment > 31}
+		}
+	}
+}
+has_at_least_120_of_own_bender_equipment = {
+	OR = {
+		AND = {
+			has_country_flag = AIR_special_forces
+			has_equipment = {airbender_equipment > 119}
+		}
+		AND = {
+			has_country_flag = EARTH_special_forces
+			has_equipment = {earthbender_equipment > 119}
+		}
+		AND = {
+			has_country_flag = FIR_special_forces
+			has_equipment = {firebender_equipment > 119}
+		}
+		AND = {
+			has_country_flag = WATER_special_forces
+			has_equipment = {waterbender_equipment > 119}
+		}
+		AND = {
+			has_country_flag = SAND_special_forces
+			has_equipment = {sandbender_equipment > 119}
+		}
+	}
+}
