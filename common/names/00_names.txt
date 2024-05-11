@@ -88,9 +88,21 @@ NAT = {
 WAT = {
 	female = {
 		names = { Iio Jesa Yangchen Choekyi Akar Amala Assam Amrita Dawa Diki Ikki Jinora Jinpa Opame Gyaltsen Gewa Ngawang Pema Popo Passang Popo Sashi }
+		surnames = { "" }
+		callsigns = { "" }
 	}
-	surnames = { "" }
-	callsigns = { "" }
+	male = {
+		names = {
+			Tihoka Eletos Yochuren Hemuto Domyoga Revisto Seglubi Nasayas Senhentis Astogav
+			Newetsu Oyaki Towubor Renteki Ahonopi Vigota Chetu Burado Lbesako Anboga
+			Wocuka Nargopi Senvo Axut Hegeke Xuyago Ponhobi Wadeku Nikore Miporisi
+			Suyake Benimeto Yiropatsu Weydekegi Antoriza Sakohito Yanagetsu Bino Retuda Mikutora
+			Geyego Datepa Awaremo Figutoha Rebo Niseke Kemufage Ahotsopi Yesuboka Alikitsu
+			Buda Yezege Anopi Nemuto Biku
+		} 
+		surnames = { "" }
+		callsigns = { "" }
+	}
 }
 
 EAT = {

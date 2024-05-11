@@ -21,6 +21,7 @@ scripted_gui = {
 					set_state_controller = PREV
 					if = {
 						limit = {
+							has_tech =  ranged_weapons
 							NOT = { has_template = "Skirmisher Partisans" }
 						}
 						division_template = {
@@ -34,6 +35,8 @@ scripted_gui = {
 					}
 					if = {
 						limit = {
+							has_tech = basic_spear_1
+							has_tech = basic_sword_1
 							NOT = { has_template = "Partisans" }
 						}
 						division_template = {
@@ -96,7 +99,16 @@ scripted_gui = {
 					modifier = recent_rebel_activity
 					days = 280
 				}
-				add_resistance = -30
+				if = {
+					limit = {
+						check_variable = {
+							var = resistance_factor
+							value = 1
+							compare = greater_than
+						}
+					}
+					add_resistance = -30
+				}
 
 				create_partisan_units = yes
 				var:original_controller = {

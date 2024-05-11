@@ -313,7 +313,7 @@ scripted_gui = {
 
 		######## ai behaviour
 
-		ai_test_interval = 1200    #50 days
+		ai_test_interval = 3
 		ai_test_variance = 0.5
 		
 		ai_enabled = {
@@ -418,7 +418,74 @@ scripted_gui = {
                 	factor = 100
                 }
 			}
-
+			increase_civ_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						check_variable = {
+							var = ROOT.civ_buy_factor
+							value = 0.99
+							compare = less_than
+						}
+						add = 100
+					}
+					modifier = {
+						check_variable = {
+							var = ROOT.tax_balance
+							value = 0
+							compare = less_than_or_equals
+						}
+						factor = 0
+					}
+				}
+			}
+			decrease_civ_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						check_variable = {
+							var = ROOT.tax_balance
+							value = 0
+							compare = lesser_than_or_equals
+						}
+						factor = 0
+					}
+				}
+			}
+			increase_factory_percentage_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						ROOT = {
+							num_of_civilian_factories_available_for_projects > 15
+						}
+						add = 80
+					}
+				}
+			}
+			decrease_factory_percentage_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						ROOT = {
+						num_of_civilian_factories_available_for_projects < 15
+						}
+						add = 80
+					}
+				}
+			}
+			cancel_deposit_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						ROOT = {
+							has_dynamic_modifier = { modifier = extreme_wealth }
+							has_idea = global_trade
+						}
+					add = 85	
+					}
+				}
+			}
 		}
 
 	}

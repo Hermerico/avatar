@@ -32,7 +32,6 @@ gfx/texticons/unit_category_air_balloon_icon_small
 gfx/texticons/unit_category_light_airship_icon_small
 gfx/texticons/unit_category_heavy_airship_icon_small
 
-gfx/texticons/weatherpenalty_texticon
 gfx/texticons/no_order_texticon
 
 gfx/interface/counters/divisions_small/onmap_unit_buffalo_yaks_icon.dds
@@ -47,7 +46,6 @@ gfx/leaders/TEJ/Portrait_Chin_fire_tribes.dds
 Ideas
 
 gfx/interface/ideas/spirit/cavalry_tradition
-gfx/interface/ideas/spirit/waterbender_ice_construction
 
 kyoshi_benders_only
 kyoshi_exceptional
@@ -132,6 +130,8 @@ wat_quartermaster_3
 wat_quartermaster_4
 wat_quartermaster_5
 wat_quartermaster_6
+
+GFX_seized_equipment_item
 
 watermtgnavalfolder
 	warship_strength_tech_1_tree

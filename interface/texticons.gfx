@@ -974,13 +974,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
-
-	spriteType = {
-		name = "GFX_unit_air_airship_icon_small"
-		texturefile = "gfx/texticons/unit_air_airship_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2		
-	}
 	spriteType = {
 		name = "GFX_unit_airbender_icon_small"
 		texturefile = "gfx/texticons/unit_airbender_icon_small.dds"
@@ -1127,8 +1120,8 @@ spriteTypes = {
 		noOfFrames = 2		
 	}
 	spriteType = {
-		name = "GFX_unit_dai_li_icon_small"
-		texturefile = "gfx/texticons/unit_dai_li_icon_small.dds"
+		name = "GFX_unit_dai_li_units_icon_small"
+		texturefile = "gfx/texticons/unit_dai_li_units_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
@@ -1385,59 +1378,42 @@ spriteTypes = {
 		noOfFrames = 2		
 	}
 	spriteType = {
-		name = "GFX_unit_eel_hound_icon_small"
-		texturefile = "gfx/texticons/unit_eel_hound_icon_small.dds"
+		name = "GFX_unit_swordsmen_icon_small"
+		texturefile = "gfx/texticons/unit_swordsmen_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_unit_trebuchet_icon_small"
+		texturefile = "gfx/texticons/unit_trebuchet_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
 	spriteType = {
-		name = "GFX_unit_bender_eel_hound_icon_small"
-		texturefile = "gfx/texticons/unit_bender_eel_hound_icon_small.dds"
+		name = "GFX_unit_tundra_tank_icon_small"
+		texturefile = "gfx/texticons/unit_tundra_tank_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
 	spriteType = {
-		name = "GFX_unit_mongooze_icon_small"
-		texturefile = "gfx/texticons/unit_mongooze_icon_small.dds"
+		name = "GFX_unit_walrus_yak_icon_small"
+		texturefile = "gfx/texticons/unit_walrus_yak_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
 	spriteType = {
-		name = "GFX_unit_bender_mongooze_icon_small"
-		texturefile = "gfx/texticons/unit_bender_mongooze_icon_small.dds"
+		name = "GFX_unit_waterbender_icon_small"
+		texturefile = "gfx/texticons/unit_waterbender_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
 	spriteType = {
-		name = "GFX_unit_komodo_icon_small"
-		texturefile = "gfx/texticons/unit_komodo_icon_small.dds"
+		name = "GFX_unit_waterbender_healer_icon_small"
+		texturefile = "gfx/texticons/unit_waterbender_healer_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
-	spriteType = {
-		name = "GFX_unit_ostrich_icon_small_small"
-		texturefile = "gfx/texticons/unit_ostrich_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2		
-	}
-	spriteType = {
-		name = "GFX_unit_bender_ostrich_horses_icon_small"
-		texturefile = "gfx/texticons/unit_bender_ostrich_horses_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2		
-	}
-	spriteType = {
-		name = "GFX_unit_bender_polar_dogs_icon_small"
-		texturefile = "gfx/texticons/unit_bender_polar_dogs_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2		
-	}
-	spriteType = {
-		name = "GFX_unit_bender_walrus_yak_icon_small"
-		texturefile = "gfx/texticons/unit_bender_walrus_yak_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2		
-	}	
 
 	########## ships
 

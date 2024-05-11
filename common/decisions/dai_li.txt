@@ -250,33 +250,13 @@ EAR_dai_li_category = {
 		
 		ai_will_do = {
 			base = 10 
-			modifier = {
-				factor = 10
-				check_variable = { SWI_militia_division_cap < 20 }
-			}
-			modifier = {
-				factor = 0 
-				check_variable = { SWI_militia_template_level > 40 }
-			}
 		}
 		ai_will_do = {
 			base = 25 
-			modifier = {
-				factor = 3 
-				SWI_is_historical_ai = yes 
-			}
-			modifier = {
-				factor = 5
-				SWI_MR_full = yes 
-			}
-			modifier = {
-				add = 150 
-				check_variable = {
-					SWI_militia_division_cap < 50
-				}
-			}
 		}
 	}
+	
+
 
 #	under_new_management = {
 #
@@ -1289,5 +1269,4 @@ EAR_dai_li_category = {
 		}
 
 	}
-
 }
