@@ -107,3 +107,154 @@ do_not_waste_pp_if_saving_for_manpower_laws = {
 		value = -9999
 	}
 }
+obtain_relation_research_slot = {
+	allowed = {
+		NOT = {
+			tag = EBA
+		}
+	}
+	enable = {
+		NOT = {
+			has_country_flag = has_relation_tech_slot
+			any_other_country = {
+				has_opinion = {
+					target = ROOT
+					value > 84
+				}
+			}
+		}
+	}
+	abort = {
+		has_country_flag = has_relation_tech_slot
+		any_other_country = {
+			has_opinion = {
+				target = ROOT
+				value = 100
+			}
+		}
+	}	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = guarantee
+		value = 60
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = 90
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = 95
+	}
+	
+}
+EBA_befriend_EAR = {
+	allowed = {tag = EBA}
+	enable = {always = yes}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = befriend
+		id = EAR
+		value = 70
+	}
+	ai_strategy = {
+		type = pp_spend_amount
+		id = guarantee
+		value = 60
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = 90
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = 95
+	}
+}
+DIN_befriend_EBA = {
+	allowed = {tag = DIN}
+	enable = {always = yes}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = befriend
+		id = EBA
+		value = 70
+	}
+	ai_strategy = {
+		type = pp_spend_amount
+		id = guarantee
+		value = 60
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = 90
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = 95
+	}
+}
+ECB_befriend_EBA = {
+	allowed = {tag = ECB}
+	enable = {always = yes}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = befriend
+		id = EBA
+		value = 70
+	}
+	ai_strategy = {
+		type = pp_spend_amount
+		id = guarantee
+		value = 60
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = 90
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = 95
+	}
+}	
+	EAR_befriend_DAW = {
+		allowed = {tag = EAR}
+		enable = {always = yes}
+		abort = {
+			always = no
+		}
+		ai_strategy = {
+			type = befriend
+			id = DAW
+			value = 70
+		}
+		ai_strategy = {
+			type = pp_spend_amount
+			id = guarantee
+			value = 60
+		}
+		ai_strategy = {
+			type = pp_spend_priority
+			id = relation
+			value = 90
+		}
+		ai_strategy = {
+			type = pp_spend_priority
+			id = guarantee
+			value = 95
+		}	
+}
