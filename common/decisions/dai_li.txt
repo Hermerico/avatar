@@ -253,9 +253,10 @@ EAR_dai_li_category = {
 		}
 		ai_will_do = {
 			base = 25 
-			}
 		}
 	}
+	
+
 
 #	under_new_management = {
 #
@@ -1268,5 +1269,4 @@ EAR_dai_li_category = {
 		}
 
 	}
-
 }
