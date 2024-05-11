@@ -131,6 +131,8 @@ wat_quartermaster_4
 wat_quartermaster_5
 wat_quartermaster_6
 
+GFX_seized_equipment_item
+
 watermtgnavalfolder
 	warship_strength_tech_1_tree
 	warship_strength_tech_2_tree
