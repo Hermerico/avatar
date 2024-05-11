@@ -211,7 +211,9 @@ EARTH_decentralised_warfare = {
 			has_dynamic_modifier = { modifier = earth_nation }
 			tag = SWA
 		}
-		#has_war_with = FIR
+		any_allied_country = {
+			has_capitulated = no
+		}
 	}
 	abort_when_not_enabled = yes
 
@@ -380,7 +382,30 @@ EARTH_decentralised_warfare = {
 		value = 10
 	}
 }
-
+EARTH_slightly_less_decentralised_warfare = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		OR = {
+			has_dynamic_modifier = { modifier = earth_nation }
+			tag = SWA
+		}
+		#has_war_with = FIR
+		any_allied_country = {
+			has_capitulated = yes
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = garrison
+		value = 8
+	}
+	ai_strategy = {
+		type = spare_unit_factor
+		value = 2
+	}
+}
 EARTH_help_defend_neighbours = {
 
 	allowed = {
