@@ -41,6 +41,7 @@ state={
 			controller = HAN
 			add_core_of = HAN
 			buildings = {
+				air_base = 1
 				infrastructure = 3
 				lumber_mill = 1
 				quarry = 1
