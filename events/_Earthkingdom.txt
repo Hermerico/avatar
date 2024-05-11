@@ -34,11 +34,13 @@ country_event = {
 	}
 }
 
-#
+#On Our Own
 country_event = {
-	id = earthkingdom.2
+	id = earthkingdom.2	
 	title = earthkingdom.2.t
 	desc = earthkingdom.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = earthkingdom.2.a
 		effect_tooltip = {
