@@ -490,6 +490,8 @@ FIR_royal_family_category = {
 
 		icon = fire_azulon_coronation
 
+		priority = 100
+
 		allowed = {
 			tag = FIR
 		}
@@ -500,7 +502,9 @@ FIR_royal_family_category = {
 			}
 			FIR_azulon = {
 				has_character_flag = FIR_character_born
+				is_available_for_coronation = yes
 			}
+			has_character = FIR_azulon
 		}
 		available = {
 			has_country_leader = {
@@ -514,7 +518,10 @@ FIR_royal_family_category = {
 
 		complete_effect = {
 			promote_character = FIR_azulon
-			add_country_leader_trait = firelord
+			add_trait = {
+				character = FIR_azulon
+				trait = firelord
+			}
 			remove_ideas = spirit_prince_azulon
 
 			set_variable = { azulon_x = 90 }
@@ -872,6 +879,55 @@ FIR_royal_family_category = {
 	}
 
 
+	crown_iroh = {
+
+		icon = fire_iroh_coronation
+
+		priority = 100
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_country_leader = {
+				character = FIR_empty_throne
+				ruling_only = yes
+			}
+			FIR_iroh = {
+				has_character_flag = FIR_character_born
+			}
+			has_character = FIR_iroh
+		}
+		available = {
+			has_country_leader = {
+				character = FIR_empty_throne
+				ruling_only = yes
+			}
+			FIR_iroh = {
+				has_character_flag = FIR_character_born
+				is_available_for_coronation = yes
+			}
+		}
+
+		complete_effect = {
+			promote_character = FIR_iroh
+			add_trait = {
+				character = FIR_iroh
+				trait = firelord
+			}
+			remove_ideas = spirit_prince_iroh
+
+			set_variable = { iroh_x = 90 }
+		}
+
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+
 	 ###   ####  ###  #      #   ### #   # ### #      #   # ### 
 	#   #     # #   # #      #   #   #   # #   #      #   # #  #
 	#   #    #  ##### #      #   ##  #   # ##  #      #   # ### 
@@ -1208,6 +1264,89 @@ FIR_royal_family_category = {
 			factor = 110
 		}
 
+	}
+
+
+	ozai_request_to_become_firelord = {
+
+		icon = fire_ozai_coronation
+
+		priority = 90
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_ozai
+			has_character = FIR_iroh
+		}
+
+		available = {
+			FIR_iroh = {
+				has_character_flag = no_heir
+			}
+		}
+
+		cost = 100
+
+		complete_effect = {
+			country_event = { id = fir_character.ozai.4 days = 2 }
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+
+	}
+
+	crown_ozai = {
+
+		icon = fire_ozai_coronation
+
+		priority = 80
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_country_leader = {
+				character = FIR_empty_throne
+				ruling_only = yes
+			}
+			FIR_ozai = {
+				has_character_flag = FIR_character_born
+			}
+			has_character = FIR_ozai
+		}
+		available = {
+			has_country_leader = {
+				character = FIR_empty_throne
+				ruling_only = yes
+			}
+			FIR_ozai = {
+				has_character_flag = FIR_character_born
+				is_available_for_coronation = yes
+			}
+		}
+
+		complete_effect = {
+			promote_character = FIR_ozai
+			add_trait = {
+				character = FIR_ozai
+				trait = firelord
+			}
+			remove_ideas = spirit_prince_ozai
+
+			set_variable = { ozai_x = 90 }
+		}
+
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 110
+		}
 	}
 
 

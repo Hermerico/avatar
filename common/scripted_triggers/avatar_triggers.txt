@@ -10,6 +10,14 @@ is_southern_league_member = {
 	}
 }
 
+is_available_for_coronation = {
+	has_character_flag = claim_to_the_throne
+	NOT = {
+		has_character_flag = away_from_home
+		has_character_flag = in_exile
+	}
+}
+
 has_earth_start_tag = {
 	OR = {
 		TAG = EAR

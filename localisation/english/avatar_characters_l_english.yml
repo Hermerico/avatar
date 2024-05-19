@@ -34,6 +34,7 @@
  FIR_ursa:0 "Ursa"
  ursa_ttp:0 "§YUrsa§! \nAge: [?mtth:ursa_age|Y0]"
  ursa_ttp_delayed:0 ""
+ ursa_dies_ttp:0 "§YUrsa§! dies"
  FIR_lu_ten:0 "Lu Ten"
  lu_ten_ttp:0 "§YLu Ten§! \nAge: [?mtth:lu_ten_age|Y0]"
  lu_ten_ttp_delayed:0 ""

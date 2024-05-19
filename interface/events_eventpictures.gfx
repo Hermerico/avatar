@@ -1,11 +1,6 @@
 spriteTypes = {
 	
 	spriteType = {
-		name = "GFX_Lu_Ten_Died"
-		texturefile = "gfx/event_pictures/Lu_Ten_Died.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_Iroh_Decided_To_Withdraw"
 		texturefile = "gfx/event_pictures/Iroh_Decided_To_Withdraw.dds"
 	}
@@ -53,6 +48,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_fire_operation.dds"
 	}
 	spriteType = {
+		name = "GFX_report_event_fire_supremacy"
+		texturefile = "gfx/event_pictures/report_event_fire_supremacy.dds"
+	}
+	spriteType = {
 		name = "GFX_report_event_fir_birth"
 		texturefile = "gfx/event_pictures/report_event_fir_birth.dds"
 	}
@@ -69,6 +68,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_read_a_book.dds"
 	}
 	spriteType = {
+		name = "GFX_report_event_fire_training"
+		texturefile = "gfx/event_pictures/report_event_fire_training.dds"
+	}
+	spriteType = {
 		name = "GFX_report_event_fire_death"
 		texturefile = "gfx/event_pictures/report_event_fire_death.dds"
 	}
@@ -79,6 +82,31 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_fire_wedding"
 		texturefile = "gfx/event_pictures/report_event_fire_wedding.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ozais_request"
+		texturefile = "gfx/event_pictures/report_event_ozais_request.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ursas_conspiracy"
+		texturefile = "gfx/event_pictures/report_event_ursas_conspiracy.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ursas_conspiracy_2"
+		texturefile = "gfx/event_pictures/report_event_ursas_conspiracy_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_lu_ten_death"
+		texturefile = "gfx/event_pictures/report_event_lu_ten_death.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_zukos_war_meeting"
+		texturefile = "gfx/event_pictures/report_event_zukos_war_meeting.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_zukos_agni_kai"
+		texturefile = "gfx/event_pictures/report_event_zukos_agni_kai.dds"
 	}
 
 	spriteType = {
@@ -308,6 +336,10 @@ spriteTypes = {
 		name = "GFX_report_event_fir_approach_field"
 		texturefile = "gfx/event_pictures/battles/report_event_fir_approach_field.dds"
 	}
+	spriteType = {
+		name = "GFX_report_event_fir_approach_ba_sing_se"
+		texturefile = "gfx/event_pictures/battles/report_event_fir_approach_ba_sing_se.dds"
+	}
 
 	spriteType = {
 		name = "GFX_far_news_event_001"
@@ -376,6 +408,58 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_far_news_event_017"
 		texturefile = "gfx/event_pictures/battles/far_news_event_017.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_018"
+		texturefile = "gfx/event_pictures/battles/far_news_event_018.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_019"
+		texturefile = "gfx/event_pictures/battles/far_news_event_019.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_020"
+		texturefile = "gfx/event_pictures/battles/far_news_event_020.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_021"
+		texturefile = "gfx/event_pictures/battles/far_news_event_021.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_022"
+		texturefile = "gfx/event_pictures/battles/far_news_event_022.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_023"
+		texturefile = "gfx/event_pictures/battles/far_news_event_023.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_024"
+		texturefile = "gfx/event_pictures/battles/far_news_event_024.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_025"
+		texturefile = "gfx/event_pictures/battles/far_news_event_025.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_026"
+		texturefile = "gfx/event_pictures/battles/far_news_event_026.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_027"
+		texturefile = "gfx/event_pictures/battles/far_news_event_027.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_028"
+		texturefile = "gfx/event_pictures/battles/far_news_event_028.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_029"
+		texturefile = "gfx/event_pictures/battles/far_news_event_029.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_030"
+		texturefile = "gfx/event_pictures/battles/far_news_event_030.dds"
 	}
 
 	spriteType = {

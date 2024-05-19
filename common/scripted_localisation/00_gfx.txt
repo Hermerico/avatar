@@ -411,8 +411,29 @@ defined_text = {
 					ruling_only = yes
 				}
 			}
+			FIR_zuko = {
+				NOT = {
+					has_character_flag = burned_face
+				}
+			}
 		}
 		localization_key = "GFX_zuko_young_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:zuko_age > 13 }
+			check_variable = { mtth:zuko_age < 29 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_zuko
+					ruling_only = yes
+				}
+			}
+			FIR_zuko = {
+				has_character_flag = burned_face
+			}
+		}
+		localization_key = "GFX_zuko_young_alt_portrait"
 	}
 	text = {
 		trigger = {

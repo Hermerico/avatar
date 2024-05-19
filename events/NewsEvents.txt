@@ -281,30 +281,6 @@ news_event = {
 	}
 }
 
-#Sozin dies News
-news_event = {
-	id = news.6
-	title = news.6.t
-	desc = news.6.d
-	picture = GFX_avatar_news_event_006
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = news.6.a
-		trigger = {
-			NOT = {
-				TAG = FIR
-			}
-		}
-	}
-	option = {
-		name = news.6.b
-		trigger = {
-			TAG = FIR
-		}
-	}
-}
-
 news_event = {
 	id = news.7
 	title = news.7.t
@@ -505,30 +481,6 @@ news_event = {
 			NOT = {
 				TAG = FIR
 			}
-		}
-	}
-}
-
-#Azulon dies News
-news_event = {
-	id = news.11
-	title = news.11.t
-	desc = news.11.d
-	picture = GFX_avatar_news_event_011
-	is_triggered_only = yes
-	major = yes
-	option = {
-		name = news.11.a
-		trigger = {
-			NOT = {
-				TAG = FIR
-			}
-		}
-	}
-	option = {
-		name = news.11.b
-		trigger = {
-			TAG = FIR
 		}
 	}
 }

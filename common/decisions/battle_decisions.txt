@@ -137,8 +137,17 @@ firenation_battle_category = {
 		}
 
 		cancel_trigger = {
-			OR = {
-				NOT = { ba_sing_se_approached = yes }
+			custom_trigger_tooltip = {
+				tooltip = no_divisions_around_ba_sing_se
+				num_divisions_in_states = {
+					count < 1
+					states = { 138 369 99 80 116 217 231 365 138 369 99 80 116 217 231 365 150 161 189 187 162 173 174 179 }
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = iroh_besieges_ba_sing_se
+				}
 				has_country_flag = iroh_returns_home
 			}
 		}
@@ -164,7 +173,10 @@ firenation_battle_category = {
 				}
 				subtract_from_variable = { FIR.ba_sing_se_siege_days = days_mission_timeout@ba_sing_se_conquest_expectations }
 				FIR = {
-					add_ideas = FIR_600_days_siege
+					add_timed_idea = {
+						idea = FIR_600_days_siege
+						days = 400
+					}
 				}
 			}
 		}
@@ -206,9 +218,7 @@ firenation_battle_category = {
 		}
 
 		remove_trigger = {
-			FIR = {
-				ba_sing_se_encircled = yes
-			}
+			ba_sing_se_encircled = yes
 		}
 
 		remove_effect = {
@@ -305,9 +315,7 @@ firenation_battle_category = {
 		}
 
 		remove_trigger = {
-			FIR = {
-				breached_outer_wall = yes
-			}
+			breached_outer_wall = yes
 		}
 
 		remove_effect = {
@@ -316,6 +324,8 @@ firenation_battle_category = {
 				days = 365
 			}
 			add_to_variable = { FIR.ba_sing_se_siege_days = 365 }
+
+			news_event = { id = far_news.22 days = 3 }
 
 			if = {
 				limit = {
@@ -333,4 +343,49 @@ firenation_battle_category = {
 		}
 	}
 
+
+	retreat_from_ba_sing_se = {
+
+		allowed = { always = no }
+
+		icon = retreat
+
+		selectable_mission = no
+
+		days_mission_timeout = 200
+		is_good = no
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = no_divisions_around_ba_sing_se
+				num_divisions_in_states = {
+					count < 1
+					states = { 138 369 99 80 116 217 231 365 138 369 99 80 116 217 231 365 150 161 189 187 162 173 174 179 }
+				}
+			}
+		}
+
+		cancel_trigger = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+			modify_timed_idea = {
+				idea = FIR_600_days_siege
+				days = -400
+			}
+		}
+
+		timeout_effect = {
+			
+		}
+	}
 }

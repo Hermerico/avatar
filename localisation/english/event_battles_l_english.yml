@@ -168,3 +168,10 @@
 
  far_news..t:0 "Flamecrest Union Declares Independence"
  far_news..d:0 "In a move few saw coming, the Flamecrest Union has denounced its colonial status and has declared independence against the Fire Nation."
+
+ far_news.22.t:0 "Breaking the Outer Wall"
+ far_news.22.desc:0 "We learned that the outer walls of the great city of ba sing se were breached. It was thought to be impossible."
+ far_news.22.a:0 "We are Doomed"
+ far_news.22.b:0 "Ba Sing Se is ours"
+ far_news.22.c:0 "Very concerning..."
+ far_news.22.d:0 "Iroh is truly a hero"

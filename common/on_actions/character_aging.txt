@@ -113,6 +113,66 @@ on_actions = {
 				}
 			}
 
+			################### zuko
+			if = {
+				limit = {
+					has_variable = zuko_birth_event
+					check_variable = { mtth:zuko_age < 55 }
+					FIR_zuko = {
+						NOT = {
+							has_character_flag = burned_face
+							has_character_flag = in_exile
+						}
+					}
+				}
+				set_portraits = {
+					character = FIR_zuko
+					army = { large = "GFX_Portrait_Zuko_alt" }
+					civilian = { large = "GFX_Portrait_Zuko_alt" }
+				}
+			}
+			if = {
+				limit = {
+					has_variable = zuko_birth_event
+					check_variable = { mtth:zuko_age < 55 }
+					FIR_zuko = {
+						has_character_flag = burned_face
+						has_character_flag = in_exile
+					}
+				}
+				set_portraits = {
+					character = FIR_zuko
+					army = { large = "GFX_Portrait_Zuko_banished" }
+					civilian = { large = "GFX_Portrait_Zuko_banished" }
+				}
+			}
+			if = {
+				limit = {
+					has_variable = zuko_birth_event
+					check_variable = { mtth:zuko_age < 55 }
+					FIR_zuko = {
+						has_character_flag = burned_face
+						NOT = { has_character_flag = in_exile }
+					}
+				}
+				set_portraits = {
+					character = FIR_zuko
+					army = { large = "GFX_Portrait_Zuko" }
+					civilian = { large = "GFX_Portrait_Zuko" }
+				}
+			}
+			if = {
+				limit = {
+					has_variable = zuko_birth_event
+					check_variable = { mtth:zuko_age > 54 }
+				}
+				set_portraits = {
+					character = FIR_zuko
+					army = { large = "GFX_Portrait_Zuko_old" }
+					civilian = { large = "GFX_Portrait_Zuko_old" }
+				}
+			}
+
 
 			###### crowded family 1
 

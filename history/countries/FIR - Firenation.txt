@@ -546,6 +546,26 @@ permanent_spirits_and_modifiers = yes
 
 
 
+
+	###### irohs siege
+
+	activate_mission = ba_sing_se_conquest_expectations
+	activate_decision = encircle_ba_sing_se
+	activate_decision = breach_the_outer_wall
+
+	set_variable = { FIR.ba_sing_se_siege_days = 365 }
+
+	add_days_mission_timeout = {
+		mission = ba_sing_se_conquest_expectations
+		days = -300
+	}
+	set_country_flag = iroh_besieges_ba_sing_se
+	FIR_iroh = {
+		set_character_flag = away_from_home
+	}
+
+
+
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FIR_106_naval_mtg"
@@ -606,6 +626,11 @@ permanent_spirits_and_modifiers = yes
 	set_variable = { ozai_y = 6 }
 
 	FIR_ursa = {
+		set_character_flag = in_exile
+	}
+
+	FIR_zuko = {
+		set_character_flag = burned_face
 		set_character_flag = in_exile
 	}
 

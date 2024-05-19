@@ -829,10 +829,26 @@ FIR_conquest_category = {
 			add_to_variable = { war_meetings_var = 1 }
 			set_variable = { war_meeting_value = war_meetings_var }
 			multiply_variable = { war_meeting_value = 3 }
+
+
+			#### zuko joins the meeting
+			if = {
+				limit = {
+					FIR_iroh = {
+						has_trait = consumed_by_grief
+						NOT = {
+							has_character_flag = away_from_home
+							has_character_flag = in_exile
+						}
+					}
+					check_variable = { mtth:zuko_age > 12 }
+				}
+				country_event = { id = fir_character.zuko.4 days = 3 }
+			}
 		}
 
 		remove_effect = {
-			
+
 		}
 
 		ai_will_do = {

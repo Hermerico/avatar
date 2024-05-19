@@ -140,6 +140,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zuko.dds"
 	}
 	spriteType = {
+		name = "GFX_Portrait_Zuko_alt"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zuko_alt.dds"
+	}
+	spriteType = {
 		name = "GFX_Portrait_Zuko_banished"
 		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zuko_banished.dds"
 	}

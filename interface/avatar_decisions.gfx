@@ -197,8 +197,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/fire_family/zuko_young.dds"
 	}
 	spriteType = {
+		name = "GFX_zuko_young_alt_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/zuko_young_alt.dds"
+	}
+	spriteType = {
 		name = "GFX_zuko_adult_portrait"
 		texturefile = "gfx/interface/decisions/fire_family/zuko_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_zuko_adult_alt_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/zuko_adult_alt.dds"
 	}
 	spriteType = {
 		name = "GFX_zuko_adult_firelord_portrait"
@@ -595,6 +603,10 @@ spriteTypes = {
 	spriteType = {
 		name = "fire_azulon_coronation"
 		texturefile = "gfx/interface/decisions/decision_fire_azulon_coronation.dds"
+	}
+	spriteType = {
+		name = "fire_ozai_coronation"
+		texturefile = "gfx/interface/decisions/decision_fire_ozai_coronation.dds"
 	}
 	spriteType = {
 		name = "fire_marriage"

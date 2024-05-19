@@ -613,7 +613,7 @@ country_event = {
 	id = fir_battle.11
 	title = fir_battle.11.t
 	desc = fir_battle.11.desc
-	picture = GFX_report_event_fir_approach_city
+	picture = GFX_report_event_fir_approach_ba_sing_se
 	
 	fire_only_once = yes
 	
@@ -624,6 +624,7 @@ country_event = {
 		FIR = { has_war_with = 179.OWNER }
 
 		NOT = { has_global_flag = fall_of_ba_sing_se }
+		NOT = { has_active_mission = ba_sing_se_conquest_expectations }
 	}
 
 	immediate = {
@@ -649,11 +650,13 @@ country_event = {
 		FIR = { 
 			activate_mission = ba_sing_se_conquest_expectations
 			set_variable = { FIR.ba_sing_se_siege_days = 365 }
-			
 			activate_decision = encircle_ba_sing_se
 			activate_decision = breach_the_outer_wall
 
 			set_country_flag = iroh_besieges_ba_sing_se
+			FIR_iroh = {
+				set_character_flag = away_from_home
+			}
 		}
 	}
 
@@ -674,6 +677,7 @@ country_event = {
 		FIR = { 
 			activate_mission = ba_sing_se_conquest_expectations
 			activate_decision = encircle_ba_sing_se
+			activate_decision = breach_the_outer_wall
 
 			set_country_flag = ozai_besieges_ba_sing_se
 		}
@@ -691,6 +695,7 @@ country_event = {
 		FIR = { 
 			activate_mission = ba_sing_se_conquest_expectations
 			activate_decision = encircle_ba_sing_se
+			activate_decision = breach_the_outer_wall
 		}
 	}
 
@@ -758,6 +763,51 @@ news_event = {
 		name = far_news.10.c
 		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
 	}
+}
+
+news_event = {
+	id = far_news.22
+	title = far_news.22.t
+	desc = far_news.22.desc
+	picture = GFX_far_news_event_022
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			
+		}
+ 	}
+
+	
+	option = {
+		name = far_news.22.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.22.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.22.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+
+	option = {
+		name = far_news.22.d
+		trigger = { 
+			TAG = FIR 
+			has_country_flag = iroh_besieges_ba_sing_se
+		}
+	}
+
 }
 
 news_event = {

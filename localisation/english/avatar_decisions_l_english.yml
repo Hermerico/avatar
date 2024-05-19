@@ -433,7 +433,15 @@
  garsai_conquest_expectations:0 "Expectation to capture Garsai"
 
  ba_sing_se_conquest_expectations:0 "The Siege of Ba Sing Se"
- ba_sing_se_conquest_expectations_desc:0 "Expectation to capture Garsai"
+ ba_sing_se_conquest_expectations_desc:0 "We started to besiege Ba Sing Se, the great capitol of the Earthkingdom."
+ encircle_ba_sing_se:0 "Encircle Ba Sing Se"
+ encircle_ba_sing_se_desc:0 ""
+ rebuild_siege_camp:0 "Rebuild Siege Camp in [FROM.GetName]"
+ rebuild_siege_camp_desc:0 ""
+ breach_the_outer_wall:0 "Breach the Outer Wall"
+ breach_the_outer_wall_desc:0 ""
+ retreat_from_ba_sing_se:0 "Retreat from Ba Sing Se"
+ retreat_from_ba_sing_se_desc:0 ""
 
  ### Chin
 
