@@ -410,6 +410,48 @@ ideas = {
 			}
 		}
 
+		spirit_prince_zuko = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_zuko
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_zuko
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		spirit_princess_azula = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_azula
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_azula
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
 
 		
 		FIR_first_invasion = {
@@ -734,29 +776,6 @@ ideas = {
 			modifier = {
 				max_command_power = 25	
 			}
-		}
-
-		FIR_Lu_Tens_Death_Effects = {
-			allowed = {
-				original_tag = FIR
-			}
-
-			removal_cost = -1
-
-			picture = anti_soviet_pact
-
-			targeted_modifier = {
-				tag = EAR
-				defense_bonus_against = -0.4
-			}
-			targeted_modifier = {
-				tag = EAR
-				attack_bonus_against = -0.4
-			}
-			modifier = {
-				army_morale_factor = -0.5
-			}
-			
 		}
 
 		FIR_guiding_wind_opposition = {

@@ -102,82 +102,121 @@ spriteTypes = {
 	#minor
 	SpriteType = {
 		name = "GFX_idea_national_prosperity"
-		texturefile = "gfx/interface/ideas/spirit/idea_national_prosperity_1.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_national_prosperity_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_legacy_of_roku_and_sozin"
-		texturefile = "gfx/interface/ideas/spirit/idea_legacy_of_roku_and_sozin.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_legacy_of_roku_and_sozin.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_guiding_wind_opposition"
-		texturefile = "gfx/interface/ideas/spirit/idea_FIR_guiding_wind_opposition.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_guiding_wind_opposition.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_ruthless_expansionism"
-		texturefile = "gfx/interface/ideas/spirit/idea_ruthless_expansionism.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_ruthless_expansionism.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_spirit_prince_azulon"
-		texturefile = "gfx/interface/ideas/spirit/idea_prince_azulon.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_prince_azulon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_princess_rhya"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_princess_rhya.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_prince_ozai"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_prince_ozai.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_ozai_representative_prince"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_ozai_representative_prince.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_prince_iroh"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_prince_iroh.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_prince_lu_ten"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_prince_lu_ten.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_prince_zuko"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_prince_zuko.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_princess_azula"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_princess_azula.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_first_invasion"
-		texturefile = "gfx/interface/ideas/spirit/idea_FIR_first_invasion.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_first_invasion.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_northern_plan"
-		texturefile = "gfx/interface/ideas/spirit/idea_northern_attack_plan.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_northern_attack_plan.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_central_plan"
-		texturefile = "gfx/interface/ideas/spirit/idea_central_attack_plan.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_central_attack_plan.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_southern_plan"
-		texturefile = "gfx/interface/ideas/spirit/idea_southern_attack_plan.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_southern_attack_plan.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_promote_war_support"
-		texturefile = "gfx/interface/ideas/spirit/promote_war_support.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/promote_war_support.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_modern_agriculture"
-		texturefile = "gfx/interface/ideas/spirit/idea_FIR_modern_agriculture.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_modern_agriculture.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_guiding_wind_opposition"
-		texturefile = "gfx/interface/ideas/spirit/idea_FIR_guiding_wind_opposition.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_guiding_wind_opposition.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_private_investors"
-		texturefile = "gfx/interface/ideas/spirit/idea_FIR_private_investors.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_private_investors.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_cultural_change"
-		texturefile = "gfx/interface/ideas/spirit/idea_FIR_cultural_change.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_cultural_change.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_earthkingdom_operation_bases"
-		texturefile = "gfx/interface/ideas/spirit/idea_earthkingdom_operation_bases.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_earthkingdom_operation_bases.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_evacuation_expenses"
-		texturefile = "gfx/interface/ideas/spirit/evacuation_expenses.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/evacuation_expenses.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_dragon_hunt_poacher"
-		texturefile = "gfx/interface/ideas/spirit/FIR_dragon_hunt_poacher.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_dragon_hunt_poacher.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_dragon_hunt_neutral"
-		texturefile = "gfx/interface/ideas/spirit/FIR_dragon_hunt_neutral.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_dragon_hunt_neutral.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_FIR_dragon_hunt_noble"
-		texturefile = "gfx/interface/ideas/spirit/FIR_dragon_hunt_noble.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_dragon_hunt_noble.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_600_days_siege"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_600_days_siege.dds"
 	}
 
-
+	spriteType = {
+		name = "GFX_idea_FIR_firebending_origins"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_firebending_origins.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FIR_banned_poaching"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_banned_poaching.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_ran_and_shaw"
@@ -187,21 +226,13 @@ spriteTypes = {
 		name = "GFX_idea_dragon_army"
 		texturefile = "gfx/interface/ideas/spirit/dragon_army.dds"
 	}
-	spriteType = {
-		name = "GFX_idea_FIR_firebending_origins"
-		texturefile = "gfx/interface/ideas/spirit/FIR_firebending_origins.dds"
-	}
-		spriteType = {
-		name = "GFX_idea_FIR_banned_poaching"
-		texturefile = "gfx/interface/ideas/spirit/FIR_banned_poaching.dds"
-	}
 
 
 	#fir colonies
 
 	spriteType = {
 		name = "GFX_idea_victories_western_ek"
-		texturefile = "gfx/interface/ideas/spirit/idea_victories_western_ek.dds"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_victories_western_ek.dds"
 	}
 
 	spriteType = {
@@ -310,6 +341,22 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_earth_defensive_measures"
 		texturefile = "gfx/interface/ideas/spirit/idea_earth_defensive_measures.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_our_lives_for_freedom"
+		texturefile = "gfx/interface/ideas/spirit/idea_our_lives_for_freedom.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_stolen_resources"
+		texturefile = "gfx/interface/ideas/spirit/idea_stolen_resources.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_idea_bss_advisors"
+		texturefile = "gfx/interface/ideas/spirit/idea_bss_advisors.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_cavalry_tradition"
+		texturefile = "gfx/interface/ideas/spirit/cavalry_tradition.dds"
 	}
 
 	### chin

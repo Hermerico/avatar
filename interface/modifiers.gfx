@@ -86,6 +86,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/state_modifiers/fields_of_ba_sing_se.dds"
 	}
 	spriteType = {
+		name = "GFX_modifiers_firenation_war_camp"
+		textureFile = "gfx/interface/state_modifiers/firenation_war_camp.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_organised_retreat"
+		textureFile = "gfx/interface/state_modifiers/organised_retreat.dds"
+	}
+	spriteType = {
 		name = "GFX_modifiers_volcano"
 		textureFile = "gfx/interface/state_modifiers/volcano.dds"
 	}

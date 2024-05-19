@@ -277,7 +277,7 @@ organised_retreat = {
 		}
 	}
 
-	icon = GFX_modifiers_firenation_war_camp
+	icon = GFX_modifiers_organised_retreat
 
 	army_speed_factor = 1
 	max_dig_in_factor = -1
