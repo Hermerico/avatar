@@ -11,7 +11,7 @@ music = {
 }
 
 music = {
-	name = "firebending_training"
+	name = "firebending_training_music"
 	file = "firebending_training.ogg"
 	volume = 0.7
 }

@@ -256,6 +256,7 @@ FIR_royal_family_category = {
 			check_variable = { mtth:azulon_age < 16 }
 			FIR_azulon = {
 				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = literate }
 			}
 		}
 		available = {
@@ -610,6 +611,7 @@ FIR_royal_family_category = {
 			check_variable = { mtth:iroh_age < 16 }
 			FIR_iroh = {
 				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = literate }
 			}
 		}
 		available = {
@@ -949,6 +951,7 @@ FIR_royal_family_category = {
 			check_variable = { mtth:ozai_age < 16 }
 			FIR_ozai = {
 				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = literate }
 			}
 		}
 		available = {
@@ -1371,6 +1374,7 @@ FIR_royal_family_category = {
 			check_variable = { mtth:zuko_age < 16 }
 			FIR_zuko = {
 				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = literate }
 			}
 		}
 		available = {
@@ -1573,6 +1577,7 @@ FIR_royal_family_category = {
 			check_variable = { mtth:azula_age < 16 }
 			FIR_azula = {
 				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = literate }
 			}
 		}
 		available = {

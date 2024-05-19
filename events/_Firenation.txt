@@ -2053,6 +2053,10 @@ country_event = {
 			factor = 100
 		}
 
+		FIR_ozai = {
+			set_character_flag = claim_to_the_throne
+		}
+
 		country_event = { id = fir_character.azulon.5 days = 2 }
 	}
 

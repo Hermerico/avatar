@@ -1,8 +1,5 @@
 ﻿l_english:
  #Firenation
- FIR_character_born:0 "Was born"
- FIR_character_general:0 "Appointed as General"
- FIR_character_death:0 "Dead £attrition_texticon"
  FIR_sozin:0 "Sozin"
  sozin_ttp:0 "§YSozin§! \nAge: [?mtth:sozin_age|Y0]"
  sozin_ttp_delayed:0 ""

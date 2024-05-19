@@ -17,6 +17,13 @@ on_actions = {
 				set_global_flag = fall_of_yi
 			}
 
+			if = {
+				limit = {
+					has_start_date > 52.1.1
+				}
+				set_global_flag = fall_of_gaipan
+			}
+
 		}
 	}
 

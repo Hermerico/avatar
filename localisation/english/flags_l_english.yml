@@ -31,3 +31,11 @@
  fall_of_garsai:0 "Garsai was conquered"
  fall_of_ba_sing_se:0 "Ba Sing Se was conquered"
  iroh_returns_home:0 "Iroh returns Home"
+
+ claim_to_the_throne:0 "Has a claim to the throne"
+ no_heir:0 "Has no Heir"
+ firebending_training:0 "Has basic Firebending Training"
+ literate:0 "Is literate"
+ FIR_character_born:0 "Was born"
+ FIR_character_general:0 "Appointed as General"
+ FIR_character_death:0 "Dead £attrition_texticon"

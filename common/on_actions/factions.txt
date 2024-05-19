@@ -69,8 +69,35 @@ on_actions = {
 						}
 					}
 				}
+
+				every_country = {
+					limit = {
+						has_guaranteed = PREV.FROM
+					}
+					add_to_temp_array = { guaranteed_saved = THIS.id }
+				}
+				every_country = {
+					limit = {
+						is_guaranteed_by = PREV.FROM
+					}
+					add_to_temp_array = { guaranteed_saved_give = THIS.id }
+				}
 				var:global.earth_kingdom_leader = {
 					create_faction = Earth_Kingdom
+				}
+				every_country = {
+					limit = {
+						is_in_array = { guaranteed_saved = THIS.id }
+					}
+					PREV.FROM = {
+						give_guarantee = PREV
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_array = { guaranteed_saved_give = THIS.id }
+					}
+					give_guarantee = PREV.FROM
 				}
 				every_country = {
 					limit = {
