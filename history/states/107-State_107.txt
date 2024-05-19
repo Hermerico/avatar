@@ -2,7 +2,7 @@ state = {
 	id = 107
 	name = "STATE_107"
 	manpower = 6670
-	buildings_max_level_factor = 1.000
+	
 	state_category = town
 	history = {
 		pop_growth = yes

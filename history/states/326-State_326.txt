@@ -2,7 +2,7 @@ state = {
 	id = 326
 	name = "STATE_326"
 	manpower = 2800
-	buildings_max_level_factor = 1.000
+	
 	state_category = barren_wasteland
 	history = {
 		victory_points = {

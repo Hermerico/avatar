@@ -83,7 +83,6 @@ state = {
 		9226
 	}
 	manpower = 600
-	buildings_max_level_factor = 1
+	
 	state_category = pastoral
-	 = 0
 }

@@ -2,7 +2,6 @@ state = {
 	id = 108
 	name = "STATE_108"
 	manpower = 1180
-	buildings_max_level_factor = 1.000
 	state_category = pastoral
 	history = {
 		pop_growth = yes

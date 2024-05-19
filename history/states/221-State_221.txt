@@ -2,7 +2,7 @@ state = {
 	id = 221
 	name = "STATE_221"
 	manpower = 5700
-	buildings_max_level_factor = 1.000
+	
 	state_category = pastoral
 	history = {
 		victory_points = {

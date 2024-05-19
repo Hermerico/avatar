@@ -3,7 +3,6 @@ state = {
 	name = "STATE_271"
 	manpower = 1300
 	state_category = rural
-	 = 0.000
 	history = {
 		pop_growth = yes
 		add_dynamic_modifier = {

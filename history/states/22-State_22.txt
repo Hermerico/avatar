@@ -1,13 +1,13 @@
 state = {
 	id = 22
 	name = "STATE_22"
+	manpower = 2100
+	state_category = rural	
 	history = {
 		pop_growth = yes
 		owner = EAT
 		controller = EAT
 		add_core_of = EAT
-		manpower = 2100
-		state_category = rural	
 		add_dynamic_modifier = {
 			modifier = bison_herd
 		}

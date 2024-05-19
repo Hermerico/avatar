@@ -105,7 +105,6 @@ state = {
 		10465
 	}
 	manpower = 6600
-	buildings_max_level_factor = 1
+	
 	state_category = large_town
-	 = 0
 }

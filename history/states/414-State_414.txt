@@ -2,9 +2,7 @@ state = {
 	id = 414
 	name = "STATE_414"
 	manpower = 2500
-	buildings_max_level_factor = 1.000
 	state_category = pastoral
-	 = 0.000
 	history = {
 		pop_growth = yes
 		add_dynamic_modifier = { modifier = mongooze_herd }

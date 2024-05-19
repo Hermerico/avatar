@@ -2,7 +2,7 @@ state = {
 	id = 309
 	name = "STATE_309"
 	manpower = 9400
-	buildings_max_level_factor = 1
+	
 	state_category = town
 	history = {
 		victory_points = {
