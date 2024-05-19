@@ -73,6 +73,6 @@ state={
 		420 430 1505 1527 2356 3178 3463 4681 5070 6417 6505 6587 6752 
 	}
 	manpower=5460
-	buildings_max_level_factor=1.000
+	
 	state_category=rural
 }

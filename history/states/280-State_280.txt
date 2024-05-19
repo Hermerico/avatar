@@ -85,6 +85,6 @@ state={
 		1011 1830 3387 7400 7428 7439 7451 7487 7504 7523 
 	}
 	manpower=8000
-	buildings_max_level_factor=1.000
+	
 	state_category=enclave
 }

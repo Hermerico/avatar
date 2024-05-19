@@ -94,6 +94,6 @@ state={
 		573 990 1093 1635 2265 2601 2710 3841 8927 8948 8963 9013 9015 9028 9038 
 	}
 	manpower=15350
-	buildings_max_level_factor=1.000
+	
 	state_category=large_town
 }

@@ -92,7 +92,7 @@ state={
 		132 720 1145 1480 1681 2173 2204 2997 3302 3486 3852 3973 5357 5420 7721 7811 7829 7848 7875 7888 7911 
 	}
 	manpower=3700
-	buildings_max_level_factor=1.000
+	
 	state_category=rural
-	local_supplies=0.000
+	
 }

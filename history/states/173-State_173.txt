@@ -106,7 +106,7 @@ state={
 		3683 5587 6748 6762 6775 6788 6841 6861 10458 
 	}
 	manpower=68000
-	buildings_max_level_factor=1.000
+	
 	state_category=megalopolis
-	local_supplies=0.000
+	
 }

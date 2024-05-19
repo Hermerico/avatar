@@ -1,11 +1,10 @@
-
-state={
-	id=445
-	name="STATE_445"
-
+state = {
+	id = 445
+	name = "STATE_445"
+	manpower = 4450
+	state_category = rural
 	history = {
 		pop_growth = yes
-		
 		add_to_variable = {
 			var = forest
 			value = 2
@@ -13,17 +12,14 @@ state={
 		add_to_variable = {
 			var = mountain
 			value = 0
-
 		}
 		add_to_variable = {
 			var = field
 			value = 4
-
 		}
 		add_to_variable = {
 			var = water
 			value = 5
-
 		}
 		add_to_variable = {
 			var = stonefield
@@ -32,12 +28,6 @@ state={
 		add_to_variable = {
 			var = animal
 			value = 3
-
-		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
-
 		}
 		victory_points = {
 			8416 10 
@@ -51,38 +41,26 @@ state={
 			add_core_of = NCB
 			buildings = {
 				infrastructure = 3
-
 			}
-
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = NCB
 			controller = NCB
-
-		
 			instant_resource_calc = yes
 		}
 		106.2.4 = {
 			owner = NCB
 			controller = NCB
-
 			instant_resource_calc = yes
 		}
 		111.10.30 = {
 			owner = NCB
 			controller = NCB
-
 			instant_resource_calc = yes
 		}
-
 	}
-
 	provinces = {
 		261 675 2025 2424 3318 3966 4050 4482 4901 5374 8367 8370 8416 8448 8463 
-	}
-	manpower=4450
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	}	
 }

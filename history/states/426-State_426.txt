@@ -89,7 +89,7 @@ state={
 		1033 1250 1627 1729 1982 3047 3095 3524 3957 4242 9151 9173 9198 9202 9216 9218 9233 9241 9250 9256 9260 
 	}
 	manpower=16880
-	buildings_max_level_factor=1.000
+	
 	state_category=city
-	local_supplies=0.000
+	
 }

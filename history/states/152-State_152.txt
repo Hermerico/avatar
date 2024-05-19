@@ -96,6 +96,6 @@ state={
 		173 230 387 707 3000 3172 3397 5513 6719 6784 6785 6823 6851 
 	}
 	manpower=12900
-	buildings_max_level_factor=1.000
+	
 	state_category=town
 }

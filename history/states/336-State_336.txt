@@ -80,7 +80,7 @@ state={
 		29 223 370 446 470 782 786 1197 1241 1354 1506 2350 3064 3106 3448 3483 3489 3653 4721 5082 5512 7858 7886 7909 7926 7936 7947 7967 7985 8003 8036 
 	}
 	manpower=1120
-	buildings_max_level_factor=1.000
+	
 	state_category=barren_wasteland
-	local_supplies=0.000
+	
 }

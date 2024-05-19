@@ -86,6 +86,6 @@ state={
 		2219 2572 3851 5484 6739 6751 6764 6772 6779 6780 6783 6806 6807 6816 6837 6844 6869 
 	}
 	manpower=26780
-	buildings_max_level_factor=1.000
+	
 	state_category=metropolis
 }

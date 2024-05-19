@@ -93,7 +93,7 @@ state={
 		253 633 646 1225 1671 1915 2148 2283 3474 3490 4027 4088 4625 5089 8187 8300 8330 8355 8390 8418 
 	}
 	manpower=1960
-	buildings_max_level_factor=1.000
+	
 	state_category=pastoral
-	local_supplies=0.000
+	
 }

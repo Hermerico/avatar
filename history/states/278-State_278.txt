@@ -108,7 +108,7 @@ state={
 		904 982 1777 2003 3253 3922 5355 5496 7345 7363 7372 7374 7385 7393 7440 7486 
 	}
 	manpower=5850
-	buildings_max_level_factor=1.000
+	
 	state_category=town
-	local_supplies=0.000
+	
 }

@@ -111,7 +111,7 @@ state={
 		22 423 820 1180 1288 1328 1517 1583 2035 2306 2510 3628 3824 4175 4274 5041 5502 9284 9291 9314 9325 9344 9368 9371 9384 9410 
 	}
 	manpower=12870
-	buildings_max_level_factor=1.000
+	
 	state_category=town
-	local_supplies=0.000
+	
 }

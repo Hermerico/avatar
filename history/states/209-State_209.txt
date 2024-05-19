@@ -87,7 +87,7 @@ state={
 		211 545 1304 2687 3566 4613 8684 8792 8798 8837 
 	}
 	manpower=7600
-	buildings_max_level_factor=1.000
+	
 	state_category=large_town
-	local_supplies=0.000
+	
 }

@@ -94,6 +94,6 @@ state={
 		38 709 943 1530 1880 2795 3143 4032 9209 9229 9248 9251 9277 
 	}
 	manpower=15560
-	buildings_max_level_factor=1.000
+	
 	state_category=city
 }

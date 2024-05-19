@@ -1,15 +1,14 @@
-
-state={
-	id=108
-	name="STATE_108"
-
+state = {
+	id = 108
+	name = "STATE_108"
+	manpower = 1180
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
 	history = {
 		pop_growth = yes
-		
 		owner = XIN
 		controller = XIN
 		add_core_of = XIN
-		
 		add_dynamic_modifier = { modifier = eel_herd }
 		add_to_variable = {
 			var = forest
@@ -18,31 +17,25 @@ state={
 		add_to_variable = {
 			var = mountain
 			value = 10
-
 		}
 		add_to_variable = {
 			var = field
 			value = 1
-
 		}
 		add_to_variable = {
 			var = water
 			value = 4
-
 		}
 		add_to_variable = {
 			var = stonefield
 			value = 7
-
 		}
 		add_to_variable = {
 			var = animal
 			value = 3
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
-
+		victory_points = {
+			1021 5
 		}
 		12.1.1 = {
 			owner = XIN
@@ -53,10 +46,8 @@ state={
 				arms_factory = 0
 				quarry = 1
 				mine = 1
-
 			}
-
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			controller = FIR
@@ -69,10 +60,7 @@ state={
 				set_province_controller = 6595
 				set_province_controller = 5442
 				set_province_controller = 3722
-
 			}
-
-		
 			instant_resource_calc = yes
 		}
 		106.2.4 = {
@@ -80,19 +68,13 @@ state={
 			controller = GFC
 			add_core_of = GFC
 		}
-
 		111.10.30 = {
 			owner = GFC
 			controller = GFC
 			instant_resource_calc = yes
 		}
-
 	}
-
 	provinces = {
 		124 283 701 1021 1229 1652 2033 2905 3722 4049 4243 4316 4700 4896 5298 5442 6355 6394 6454 6471 6496 6570 6595 6681 
 	}
-	manpower=1180
-	buildings_max_level_factor=1.000
-	state_category=pastoral
 }

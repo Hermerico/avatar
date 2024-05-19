@@ -81,6 +81,6 @@ state={
 		632 1494 1657 3555 3934 4248 5311 5588 7841 7954 7961 
 	}
 	manpower=9000
-	buildings_max_level_factor=1.000
+	
 	state_category=large_town
 }

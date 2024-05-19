@@ -76,6 +76,6 @@ state={
 		611 728 1267 2839 3997 4699 8953 8958 9004 9031 
 	}
 	manpower=3560
-	buildings_max_level_factor=1.000
+	
 	state_category=barren_wasteland
 }

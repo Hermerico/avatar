@@ -92,7 +92,7 @@ state={
 		984 1409 1634 1951 2988 3620 3845 4039 7901 7924 7945 7966 7992 
 	}
 	manpower=11000
-	buildings_max_level_factor=1.000
+	
 	state_category=town
-	local_supplies=0.000
+	
 }

@@ -95,6 +95,6 @@ state={
 		563 2483 2523 3414 3646 4221 4614 4820 5104 5608 6850 6894 6901 6924 6972 6987 7017 7056 
 	}
 	manpower=23560
-	buildings_max_level_factor=1.000
+	
 	state_category=large_city
 }

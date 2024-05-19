@@ -85,6 +85,6 @@ state={
 		112 1669 2043 2091 2112 2626 3662 4574 4727 5332 7407 7419 7422 7424 7429 7442 7455 7462 7469 7490 7514 
 	}
 	manpower=9780
-	buildings_max_level_factor=1.000
+	
 	state_category=large_town
 }

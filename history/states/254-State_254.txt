@@ -104,7 +104,7 @@ state={
 		547 708 1066 1077 2729 3156 4026 4163 4370 4661 5017 7465 7527 7529 
 	}
 	manpower=8700
-	buildings_max_level_factor=1.000
+	
 	state_category=town
-	local_supplies=0.000
+	
 }

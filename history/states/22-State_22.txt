@@ -1,25 +1,26 @@
-
-state={
-	id=22
-	name="STATE_22"
+state = {
+	id = 22
+	name = "STATE_22"
 	history = {
 		pop_growth = yes
-		
 		owner = EAT
-			controller = EAT
-			add_core_of = EAT
-
-		add_dynamic_modifier = { modifier = bison_herd }
-		add_dynamic_modifier = { modifier = cat_herd }
+		controller = EAT
+		add_core_of = EAT
+		manpower = 2100
+		state_category = rural	
+		add_dynamic_modifier = {
+			modifier = bison_herd
+		}
+		add_dynamic_modifier = {
+			modifier = cat_herd
+		}
 		add_to_variable = {
 			var = forest
 			value = 4
-
 		}
 		add_to_variable = {
 			var = mountain
 			value = 4
-
 		}
 		add_to_variable = {
 			var = field
@@ -32,17 +33,13 @@ state={
 		add_to_variable = {
 			var = stonefield
 			value = 6
-
 		}
 		add_to_variable = {
 			var = animal
 			value = 3
-
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
-
+		victory_points = {
+			152 1
 		}
 		12.1.1 = {
 			owner = EAT
@@ -54,36 +51,26 @@ state={
 				arms_factory = 1
 				farm = 2
 				lumber_mill = 1
-				}
-
+			}
 			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = EAT
 			controller = EAT
-
-		
 			instant_resource_calc = yes
 		}
 		106.2.4 = {
 			owner = EAT
 			controller = EAT
-
 			instant_resource_calc = yes
 		}
 		111.10.30 = {
 			owner = EAT
 			controller = EAT
-
 			instant_resource_calc = yes
 		}
-
 	}
-
 	provinces = {
 		152 1326 1628 2017 3296 3571 4092 4590 5214 5336 5603 8971 8983 8985 8988 8990 8992 8995 8998 8999 9003 9020 9024 9032 9049 9053 9059 9067 9068 
 	}
-	manpower=2100
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

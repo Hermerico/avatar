@@ -74,6 +74,6 @@ state={
 		206 249 3588 3608 3893 6106 6109 6111 
 	}
 	manpower=1700
-	buildings_max_level_factor=1.000
+	
 	state_category=pastoral
 }

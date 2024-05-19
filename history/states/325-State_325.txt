@@ -83,7 +83,7 @@ state={
 		980 1565 1716 3093 3112 3726 3758 4227 4326 9051 9064 9078 
 	}
 	manpower=10300
-	buildings_max_level_factor=1.000
+	
 	state_category=town
-	local_supplies=0.000
+	
 }

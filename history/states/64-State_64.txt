@@ -82,6 +82,6 @@ state={
 		201 1539 2874 3232 3383 3900 4126 5158 10119 10136 10139 10157 10168 10208 10229 10240 
 	}
 	manpower=3000
-	buildings_max_level_factor=1.000
+	
 	state_category=barren_wasteland
 }

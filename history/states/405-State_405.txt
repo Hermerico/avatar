@@ -82,7 +82,7 @@ state={
 		4622 6065 6066 6069 6074 6079 
 	}
 	manpower=3000
-	buildings_max_level_factor=1.000
+	
 	state_category=town
-	local_supplies=0.000
+	
 }

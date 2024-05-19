@@ -87,6 +87,6 @@ state={
 		698 1047 1182 1622 1721 2106 2164 3559 4244 4734 5234 8993 9005 9006 9044 9056 9061 9071 9085 9091 
 	}
 	manpower=8570
-	buildings_max_level_factor=1.000
+	
 	state_category=rural
 }

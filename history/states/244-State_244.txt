@@ -99,7 +99,7 @@ state={
 		334 564 628 1482 1586 1774 1972 2245 3659 4450 7262 7273 7317 7348 7349 7379 
 	}
 	manpower=18800
-	buildings_max_level_factor=1.000
+	
 	state_category=large_city
-	local_supplies=0.000
+	
 }

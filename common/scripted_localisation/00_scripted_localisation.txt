@@ -436,7 +436,6 @@ defined_text = {
 	name = hi
 	text = {
 		trigger = {
-			#check_variable = { resource_deposites > 1 }
 			check_variable = { mountain_position = 56 }
 		}
 		localization_key = [?mountain_position]

@@ -74,6 +74,6 @@ state={
 		1400 1812 2195 2760 2773 2817 3543 3550 4052 5343 6253 6258 
 	}
 	manpower=6400
-	buildings_max_level_factor=1.000
+	
 	state_category=rural
 }

@@ -74,6 +74,6 @@ state={
 		119 158 664 1511 1872 1971 2036 4342 4601 4704 5107 5130 7261 7282 7302 7338 
 	}
 	manpower=10780
-	buildings_max_level_factor=1.000
+	
 	state_category=town
 }

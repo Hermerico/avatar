@@ -84,6 +84,6 @@ state={
 		1287 1392 2009 4598 4831 5025 9881 9915 9929 9942 
 	}
 	manpower=2125
-	buildings_max_level_factor=1.000
+	
 	state_category=pastoral
 }
