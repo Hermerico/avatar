@@ -387,6 +387,8 @@ TRIGGER_HAS_WAR_WITH_WARGOAL_AGAINST:0 "Has a war with active war goal against @
  TRIGGER_IS_NOT_MAJOR:1 "Is not considered a Major Country"
  TRIGGER_MORE_THAN_X_IRRATIONALITY:0 "Is more irrational than $IRRATIONALITY|Y$"
  TRIGGER_LESS_THAN_X_IRRATIONALITY:0 "Is less irrational than $IRRATIONALITY|Y$"
+ TRIGGER_MORE_THAN_X_WAR_LENGTH: "Has been at war for more than $MONTHS|Y$ months"
+ TRIGGER_LESS_THAN_X_WAR_LENGTH: "Has been at war for less than $MONTHS|Y$ months"
  TRIGGER_IS_IN_HOME_AREA:0 "Is connected to the owner's capital"
  TRIGGER_MORE_THAN_X_POPULATION:0 "Has more than $POPULATION$ state population"
  TRIGGER_LESS_THAN_X_POPULATION:0 "Has less than $POPULATION$ state population"

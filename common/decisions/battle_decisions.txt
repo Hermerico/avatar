@@ -115,4 +115,222 @@ firenation_battle_category = {
 		}
 	}
 
+	ba_sing_se_conquest_expectations = {
+
+		allowed = { always = no }
+
+		icon = battle
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 179
+			}
+		}
+
+		selectable_mission = no
+
+		days_mission_timeout = 365
+		is_good = no
+
+		available = {
+			has_global_flag = fall_of_ba_sing_se
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { ba_sing_se_approached = yes }
+				has_country_flag = iroh_returns_home
+			}
+		}
+
+		cancel_effect = {
+			
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+			subtract_from_variable = { FIR.ba_sing_se_siege_days = days_mission_timeout@ba_sing_se_conquest_expectations }
+		}
+
+		timeout_effect = {
+			#country_event = { id = fir_battle.9 } 
+
+			if = {
+				limit = {
+					NOT = { has_idea = FIR_600_days_siege }
+				}
+				subtract_from_variable = { FIR.ba_sing_se_siege_days = days_mission_timeout@ba_sing_se_conquest_expectations }
+				FIR = {
+					add_ideas = FIR_600_days_siege
+				}
+			}
+		}
+	}
+
+	encircle_ba_sing_se = {
+
+		icon = battle
+
+		allowed = { tag = FIR }
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 138
+				state = 369
+				state = 99
+				state = 80
+				state = 116
+				state = 217
+				state = 231
+				state = 365
+			}
+		}
+
+		visible = {
+			has_active_mission = ba_sing_se_conquest_expectations
+			has_decision = encircle_ba_sing_se
+		}
+		available = {
+			
+		}
+
+		days_remove = -1
+
+		cancel_trigger = {
+			NOT = {
+				has_active_mission = ba_sing_se_conquest_expectations
+			}
+		}
+
+		remove_trigger = {
+			FIR = {
+				ba_sing_se_encircled = yes
+			}
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = ba_sing_se_conquest_expectations
+				days = 365
+			}
+			add_to_variable = { FIR.ba_sing_se_siege_days = 365 }
+
+			if = {
+				limit = {
+					has_country_flag = iroh_besieges_ba_sing_se
+				}
+				138 = { add_dynamic_modifier = { modifier = firenation_war_camp }}
+				369 = { add_dynamic_modifier = { modifier = firenation_war_camp }}
+				99 = { add_dynamic_modifier = { modifier = firenation_war_camp }}
+				80 = { add_dynamic_modifier = { modifier = firenation_war_camp }}
+				116 = { add_dynamic_modifier = { modifier = firenation_war_camp }}
+				217 = { add_dynamic_modifier = { modifier = firenation_war_camp }}
+				231 = { add_dynamic_modifier = { modifier = firenation_war_camp }}
+				365 = { add_dynamic_modifier = { modifier = firenation_war_camp }}
+			}
+		}
+
+		complete_effect = {
+			
+		}
+	}
+
+	rebuild_siege_camp = {
+
+		icon = siege_camp
+
+		allowed = {
+			always = no
+		}
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = yes
+
+		days_remove = 30
+
+		complete_effect = {
+			hidden_effect = { hidden_effect = { scoped_sound_effect  = "lose_gold" } }
+			subtract_from_variable = { var = money_variable value = 50 }
+		}
+		
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
+		}
+		custom_cost_text = expenses_50
+
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = { modifier = firenation_war_camp }
+			}
+		}
+	}
+
+	breach_the_outer_wall = {
+
+		icon = battle
+
+		allowed = { tag = FIR }
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 145
+				state = 193
+				state = 213
+				state = 178
+				state = 149
+				state = 129
+				state = 126
+			}
+		}
+
+		visible = {
+			has_active_mission = ba_sing_se_conquest_expectations
+			has_decision = encircle_ba_sing_se
+		}
+		available = {
+			
+		}
+
+		days_remove = -1
+
+		cancel_trigger = {
+			NOT = {
+				has_active_mission = ba_sing_se_conquest_expectations
+			}
+		}
+
+		remove_trigger = {
+			FIR = {
+				breached_outer_wall = yes
+			}
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = ba_sing_se_conquest_expectations
+				days = 365
+			}
+			add_to_variable = { FIR.ba_sing_se_siege_days = 365 }
+
+			if = {
+				limit = {
+					has_country_flag = iroh_besieges_ba_sing_se
+				}
+				
+				hidden_effect = {
+					set_country_flag = lu_ten_can_die
+				}
+			}
+		}
+
+		complete_effect = {
+			
+		}
+	}
+
 }

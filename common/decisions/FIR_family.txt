@@ -209,7 +209,15 @@ FIR_royal_family_category = {
 		}
 
 
+		#cost = 20
+		custom_cost_trigger = {
+			check_variable = { var = knowledge_variable compare = greater_than_or_equals value = 20 }
+		}
+		custom_cost_text = knowledge_cost_20
+
 		complete_effect = {
+			subtract_from_variable = { var = knowledge_variable value = 20 }
+
 			hidden_effect = { scoped_sound_effect  = "turning_page" }
 			country_event = {
 				id = fir_character.1
@@ -225,6 +233,15 @@ FIR_royal_family_category = {
 			factor = 10
 		}
 	}
+
+
+	 ###  #### #   # #     ###  #   #        #   ### #   # ### #      #   # ### 
+	#   #    # #   # #    #   # ##  #        #   #   #   # #   #      #   # #  #
+	#####   #  #   # #    #   # # # #        #   ##  #   # ##  #      #   # ### 
+	#   #  #   #   # #    #   # #  ##        #   #    # #  #   #      #   # #   
+	#   # ####  ###  ####  ###  #   #        ### ###   #   ### ###     ###  #  
+
+
 
 	elua_teach_azulon_reading = {
 
@@ -264,6 +281,8 @@ FIR_royal_family_category = {
 		remove_effect = {
 			FIR_azulon = {
 				set_character_flag = literate
+				add_planning = 1
+				add_logistics = 1
 			}
 			every_unit_leader = {
 				limit = {
@@ -313,6 +332,14 @@ FIR_royal_family_category = {
 		complete_effect = {
 			FIR_azulon = {
 				add_attack = 1
+				add_defense = 1
+				set_character_flag = firebending_training
+			}
+			every_unit_leader = {
+				limit = {
+					is_character = FIR_azulon
+				}
+				add_skill_level = 1
 			}
 		}
 
@@ -321,6 +348,48 @@ FIR_royal_family_category = {
 
 		ai_will_do = {
 			factor = 110
+		}
+	}
+
+	azulon_workout = {
+
+		icon = fire_violence
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_azulon
+			FIR_azulon = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = firebending_training
+				NOT = {
+					is_country_leader = yes
+					has_character_flag = FIR_character_general
+				}
+			}
+		}
+		available = {
+			has_character = FIR_azulon
+			FIR_azulon = {
+				has_character_flag = firebending_training
+			}
+		}
+
+		cost = 20
+		
+		complete_effect = {
+			country_event = {
+				id = fir_character.azulon.3
+				days = 12
+			}
+		}
+
+		days_re_enable = 365
+
+		ai_will_do = {
+			factor = 10
 		}
 	}
 
@@ -346,16 +415,21 @@ FIR_royal_family_category = {
 			}
 		}
 
+		#cost = 20
+		custom_cost_trigger = {
+			check_variable = { var = knowledge_variable compare = greater_than_or_equals value = 20 }
+		}
+		custom_cost_text = knowledge_cost_20
 
 		complete_effect = {
+			subtract_from_variable = { var = knowledge_variable value = 20 }
+
 			hidden_effect = { scoped_sound_effect  = "turning_page" }
 			country_event = {
-				id = fir_character.2
+				id = fir_character.azulon.2
 				days = 12
 			}
 		}
-
-		cost = 20
 
 		days_re_enable = 365
 
@@ -440,6 +514,7 @@ FIR_royal_family_category = {
 
 		complete_effect = {
 			promote_character = FIR_azulon
+			add_country_leader_trait = firelord
 			remove_ideas = spirit_prince_azulon
 
 			set_variable = { azulon_x = 90 }
@@ -505,6 +580,1046 @@ FIR_royal_family_category = {
 			factor = 110
 		}
 	}
+
+
+	# ###   ###  #   #      #   ### #   # ### #      #   # ### 
+	# #  # #   # #   #      #   #   #   # #   #      #   # #  #
+	# ###  #   # #####      #   ##  #   # ##  #      #   # ### 
+	# #  # #   # #   #      #   #    # #  #   #      #   # #   
+	# #  #  ###  #   #      ### ###   #   ### ###     ###  #  
+
+
+
+	ilah_teach_iroh_reading = {
+
+		icon = book
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_ilah
+			check_variable = { mtth:iroh_age > 3 }
+			check_variable = { mtth:iroh_age < 16 }
+			FIR_iroh = {
+				has_character_flag = FIR_character_born
+			}
+		}
+		available = {
+			has_character = FIR_ilah
+			FIR_iroh = {
+				custom_trigger_tooltip = {
+					tooltip = age_4_tt
+					check_variable = { mtth:iroh_age > 3 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = age_16_max_tt
+					check_variable = { mtth:iroh_age < 16 }
+				}
+			}
+		}
+
+		days_remove = 15#0
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
+		}
+
+		remove_effect = {
+			FIR_iroh = {
+				set_character_flag = literate
+				add_planning = 1
+				add_logistics = 1
+			}
+			every_unit_leader = {
+				limit = {
+					is_character = FIR_iroh
+				}
+				add_skill_level = 1
+			}
+
+			#### todo: add skill effect doesnt work on character and crashes
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	iroh_firebending_training = {
+
+		icon = fire_violence
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			FIR_iroh = {
+				has_character_flag = FIR_character_born
+			}
+			check_variable = { mtth:iroh_age > 3 }
+			check_variable = { mtth:iroh_age < 16 }
+		}
+		available = {
+			FIR_iroh = {
+				custom_trigger_tooltip = {
+					tooltip = age_4_tt
+					check_variable = { mtth:iroh_age > 3 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = age_16_max_tt
+					check_variable = { mtth:iroh_age < 16 }
+				}
+			}
+		}
+
+		complete_effect = {
+			FIR_iroh = {
+				add_attack = 1
+				add_defense = 1
+				set_character_flag = firebending_training
+			}
+			every_unit_leader = {
+				limit = {
+					is_character = FIR_iroh
+				}
+				add_skill_level = 1
+			}
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	iroh_workout = {
+
+		icon = fire_violence
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_iroh
+			FIR_iroh = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = firebending_training
+				NOT = {
+					is_country_leader = yes
+					has_character_flag = FIR_character_general
+				}
+			}
+		}
+		available = {
+			has_character = FIR_iroh
+			FIR_iroh = {
+				has_character_flag = firebending_training
+			}
+		}
+
+		cost = 20
+		
+		complete_effect = {
+			country_event = {
+				id = fir_character.iroh.3
+				days = 12
+			}
+		}
+
+		days_re_enable = 365
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	iroh_reading = {
+
+		icon = book
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_iroh
+			FIR_iroh = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = literate
+			}
+		}
+		available = {
+			has_character = FIR_iroh
+			FIR_iroh = {
+				has_character_flag = literate
+			}
+		}
+
+		#cost = 20
+		custom_cost_trigger = {
+			check_variable = { var = knowledge_variable compare = greater_than_or_equals value = 20 }
+		}
+		custom_cost_text = knowledge_cost_20
+
+		complete_effect = {
+			subtract_from_variable = { var = knowledge_variable value = 20 }
+
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
+			country_event = {
+				id = fir_character.iroh.2
+				days = 12
+			}
+		}
+
+		days_re_enable = 365
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+	iroh_general = {
+
+		icon = general
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_iroh
+			FIR_iroh = {
+				has_character_flag = FIR_character_born
+				NOT = {
+					has_character_flag = FIR_character_general
+				}
+			}
+		}
+		available = {
+			FIR_iroh = {
+				custom_trigger_tooltip = {
+					tooltip = age_16_tt
+					check_variable = { mtth:iroh_age > 15 }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+
+			FIR_iroh = {
+				set_character_flag = FIR_character_general
+				custom_effect_tooltip = becomes_general
+			}
+		}
+
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = honour_cost_50
+		#fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+
+	}
+
+	arrange_marriage_for_iroh = {
+
+		icon = fire_marriage
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_iroh
+			has_character = FIR_michi
+			check_variable = { mtth:iroh_age > 16 }
+			check_variable = { mtth:michi_age > 16 }
+			FIR_michi = {
+				NOT = {
+					has_character_flag = married_to_iroh
+				}
+			}
+		}
+
+		available = {
+			
+		}
+
+		cost = 100
+
+		complete_effect = {
+			country_event = { id = fir_character.9 days = 10 }
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+
+	}
+
+
+	 ###   ####  ###  #      #   ### #   # ### #      #   # ### 
+	#   #     # #   # #      #   #   #   # #   #      #   # #  #
+	#   #    #  ##### #      #   ##  #   # ##  #      #   # ### 
+	#   #   #   #   # #      #   #    # #  #   #      #   # #   
+	 ###   #### #   # #      ### ###   #   ### ###     ###  #  
+
+
+
+	ilah_teach_ozai_reading = {
+
+		icon = book
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_ilah
+			check_variable = { mtth:ozai_age > 3 }
+			check_variable = { mtth:ozai_age < 16 }
+			FIR_ozai = {
+				has_character_flag = FIR_character_born
+			}
+		}
+		available = {
+			has_character = FIR_ilah
+			FIR_ozai = {
+				custom_trigger_tooltip = {
+					tooltip = age_4_tt
+					check_variable = { mtth:ozai_age > 3 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = age_16_max_tt
+					check_variable = { mtth:ozai_age < 16 }
+				}
+			}
+		}
+
+		days_remove = 15#0
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
+		}
+
+		remove_effect = {
+			FIR_ozai = {
+				set_character_flag = literate
+				add_planning = 1
+				add_logistics = 1
+			}
+			every_unit_leader = {
+				limit = {
+					is_character = FIR_ozai
+				}
+				add_skill_level = 1
+			}
+
+			#### todo: add skill effect doesnt work on character and crashes
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	ozai_firebending_training = {
+
+		icon = fire_violence
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			FIR_ozai = {
+				has_character_flag = FIR_character_born
+			}
+			check_variable = { mtth:ozai_age > 3 }
+			check_variable = { mtth:ozai_age < 16 }
+		}
+		available = {
+			FIR_ozai = {
+				custom_trigger_tooltip = {
+					tooltip = age_4_tt
+					check_variable = { mtth:ozai_age > 3 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = age_16_max_tt
+					check_variable = { mtth:ozai_age < 16 }
+				}
+			}
+		}
+
+		complete_effect = {
+			FIR_ozai = {
+				add_attack = 1
+				add_defense = 1
+				set_character_flag = firebending_training
+			}
+			every_unit_leader = {
+				limit = {
+					is_character = FIR_ozai
+				}
+				add_skill_level = 1
+			}
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	ozai_workout = {
+
+		icon = fire_violence
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_ozai
+			FIR_ozai = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = firebending_training
+				NOT = {
+					is_country_leader = yes
+					has_character_flag = FIR_character_general
+				}
+			}
+		}
+		available = {
+			has_character = FIR_ozai
+			FIR_ozai = {
+				has_character_flag = firebending_training
+			}
+		}
+
+		cost = 20
+		
+		complete_effect = {
+			country_event = {
+				id = fir_character.ozai.3
+				days = 12
+			}
+		}
+
+		days_re_enable = 365
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	ozai_reading = {
+
+		icon = book
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_ozai
+			FIR_ozai = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = literate
+			}
+		}
+		available = {
+			has_character = FIR_ozai
+			FIR_ozai = {
+				has_character_flag = literate
+			}
+		}
+
+		#cost = 20
+		custom_cost_trigger = {
+			check_variable = { var = knowledge_variable compare = greater_than_or_equals value = 20 }
+		}
+		custom_cost_text = knowledge_cost_20
+
+		complete_effect = {
+			subtract_from_variable = { var = knowledge_variable value = 20 }
+
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
+			country_event = {
+				id = fir_character.ozai.2
+				days = 12
+			}
+		}
+
+		days_re_enable = 365
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+	ozai_general = {
+
+		icon = general
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_ozai
+			FIR_ozai = {
+				has_character_flag = FIR_character_born
+				NOT = {
+					has_character_flag = FIR_character_general
+					is_country_leader = yes
+				}
+			}
+			NOT = {
+				has_idea = spirit_ozai_representative_prince
+			}
+		}
+		available = {
+			FIR_ozai = {
+				custom_trigger_tooltip = {
+					tooltip = age_16_tt
+					check_variable = { mtth:ozai_age > 15 }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+
+			set_country_flag = FIR_ozai_general
+
+			FIR_ozai = {
+				set_character_flag = FIR_character_general
+				custom_effect_tooltip = becomes_general
+			}
+		}
+
+		custom_cost_trigger = {
+			command_power > 50
+		}
+		custom_cost_text = honour_cost_50
+		#fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+
+	}
+
+	ozai_home_representative = {
+
+		icon = general
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_ozai
+			FIR_ozai = {
+				has_character_flag = FIR_character_born
+				NOT = {
+					has_character_flag = FIR_character_general
+					is_country_leader = yes
+				}
+			}
+			NOT = {
+				has_idea = spirit_ozai_representative_prince
+			}
+		}
+		available = {
+			FIR_ozai = {
+				custom_trigger_tooltip = {
+					tooltip = age_16_tt
+					check_variable = { mtth:ozai_age > 15 }
+				}
+			}
+		}
+
+		complete_effect = {
+
+			set_country_flag = FIR_ozai_home_representative
+
+			add_ideas = { spirit_ozai_representative_prince }
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	arrange_marriage_for_ozai = {
+
+		icon = fire_marriage
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_ozai
+			has_character = FIR_ursa
+			check_variable = { mtth:ozai_age > 16 }
+			check_variable = { mtth:ursa_age > 16 }
+			FIR_ursa = {
+				NOT = {
+					has_character_flag = married_to_ozai
+				}
+			}
+		}
+
+		available = {
+			
+		}
+
+		cost = 100
+
+		complete_effect = {
+			country_event = { id = fir_character.10 days = 10 }
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+
+	}
+
+
+	#### #   # #  #  ###      #   ### #   # ### #      #   # ### 
+	   # #   # # #  #   #     #   #   #   # #   #      #   # #  #
+	  #  #   # ##   #   #     #   ##  #   # ##  #      #   # ### 
+	 #   #   # # #  #   #     #   #    # #  #   #      #   # #   
+	####  ###  #  #  ###      ### ###   #   ### ###     ###  #  
+
+
+
+	ursa_teach_zuko_reading = {
+
+		icon = book
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_ursa
+			check_variable = { mtth:zuko_age > 3 }
+			check_variable = { mtth:zuko_age < 16 }
+			FIR_zuko = {
+				has_character_flag = FIR_character_born
+			}
+		}
+		available = {
+			has_character = FIR_ursa
+			FIR_zuko = {
+				custom_trigger_tooltip = {
+					tooltip = age_4_tt
+					check_variable = { mtth:zuko_age > 3 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = age_16_max_tt
+					check_variable = { mtth:zuko_age < 16 }
+				}
+			}
+		}
+
+		days_remove = 15#0
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
+		}
+
+		remove_effect = {
+			FIR_zuko = {
+				set_character_flag = literate
+				add_planning = 1
+				add_logistics = 1
+			}
+			every_unit_leader = {
+				limit = {
+					is_character = FIR_zuko
+				}
+				add_skill_level = 1
+			}
+
+			#### todo: add skill effect doesnt work on character and crashes
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	zuko_firebending_training = {
+
+		icon = fire_violence
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			FIR_zuko = {
+				has_character_flag = FIR_character_born
+			}
+			check_variable = { mtth:zuko_age > 3 }
+			check_variable = { mtth:zuko_age < 16 }
+		}
+		available = {
+			FIR_zuko = {
+				custom_trigger_tooltip = {
+					tooltip = age_4_tt
+					check_variable = { mtth:zuko_age > 3 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = age_16_max_tt
+					check_variable = { mtth:zuko_age < 16 }
+				}
+			}
+		}
+
+		complete_effect = {
+			FIR_zuko = {
+				add_attack = 1
+				add_defense = 1
+				set_character_flag = firebending_training
+			}
+			every_unit_leader = {
+				limit = {
+					is_character = FIR_zuko
+				}
+				add_skill_level = 1
+			}
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	zuko_workout = {
+
+		icon = fire_violence
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_zuko
+			FIR_zuko = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = firebending_training
+				NOT = {
+					is_country_leader = yes
+					has_character_flag = FIR_character_general
+				}
+			}
+		}
+		available = {
+			has_character = FIR_zuko
+			FIR_zuko = {
+				has_character_flag = firebending_training
+			}
+		}
+
+		cost = 20
+		
+		complete_effect = {
+			country_event = {
+				id = fir_character.zuko.3
+				days = 12
+			}
+		}
+
+		days_re_enable = 365
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	zuko_reading = {
+
+		icon = book
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_zuko
+			FIR_zuko = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = literate
+			}
+		}
+		available = {
+			has_character = FIR_zuko
+			FIR_zuko = {
+				has_character_flag = literate
+			}
+		}
+
+		#cost = 20
+		custom_cost_trigger = {
+			check_variable = { var = knowledge_variable compare = greater_than_or_equals value = 20 }
+		}
+		custom_cost_text = knowledge_cost_20
+
+		complete_effect = {
+			subtract_from_variable = { var = knowledge_variable value = 20 }
+
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
+			country_event = {
+				id = fir_character.zuko.2
+				days = 12
+			}
+		}
+
+		days_re_enable = 365
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	 ###  #### #   # #     ###         #   ### #   # ### #      #   # ### 
+	#   #    # #   # #    #   #        #   #   #   # #   #      #   # #  #
+	#####   #  #   # #    #####        #   ##  #   # ##  #      #   # ### 
+	#   #  #   #   # #    #   #        #   #    # #  #   #      #   # #   
+	#   # ####  ###  #### #   #        ### ###   #   ### ###     ###  #  
+
+
+	ursa_teach_azula_reading = {
+
+		icon = book
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_ursa
+			check_variable = { mtth:azula_age > 3 }
+			check_variable = { mtth:azula_age < 16 }
+			FIR_azula = {
+				has_character_flag = FIR_character_born
+			}
+		}
+		available = {
+			has_character = FIR_ursa
+			FIR_azula = {
+				custom_trigger_tooltip = {
+					tooltip = age_4_tt
+					check_variable = { mtth:azula_age > 3 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = age_16_max_tt
+					check_variable = { mtth:azula_age < 16 }
+				}
+			}
+		}
+
+		days_remove = 15#0
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
+		}
+
+		remove_effect = {
+			FIR_azula = {
+				set_character_flag = literate
+				add_planning = 1
+				add_logistics = 1
+			}
+			every_unit_leader = {
+				limit = {
+					is_character = FIR_azula
+				}
+				add_skill_level = 1
+			}
+
+			#### todo: add skill effect doesnt work on character and crashes
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	azula_firebending_training = {
+
+		icon = fire_violence
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			FIR_azula = {
+				has_character_flag = FIR_character_born
+			}
+			check_variable = { mtth:azula_age > 3 }
+			check_variable = { mtth:azula_age < 16 }
+		}
+		available = {
+			FIR_azula = {
+				custom_trigger_tooltip = {
+					tooltip = age_4_tt
+					check_variable = { mtth:azula_age > 3 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = age_16_max_tt
+					check_variable = { mtth:azula_age < 16 }
+				}
+			}
+		}
+
+		complete_effect = {
+			FIR_azula = {
+				add_attack = 1
+				add_defense = 1
+				set_character_flag = firebending_training
+			}
+			every_unit_leader = {
+				limit = {
+					is_character = FIR_azula
+				}
+				add_skill_level = 1
+			}
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	azula_workout = {
+
+		icon = fire_violence
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_azula
+			FIR_azula = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = firebending_training
+				NOT = {
+					is_country_leader = yes
+					has_character_flag = FIR_character_general
+				}
+			}
+		}
+		available = {
+			has_character = FIR_azula
+			FIR_azula = {
+				has_character_flag = firebending_training
+			}
+		}
+
+		cost = 20
+		
+		complete_effect = {
+			country_event = {
+				id = fir_character.azula.3
+				days = 12
+			}
+		}
+
+		days_re_enable = 365
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	azula_reading = {
+
+		icon = book
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {	
+			has_character = FIR_azula
+			FIR_azula = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = literate
+			}
+		}
+		available = {
+			has_character = FIR_azula
+			FIR_azula = {
+				has_character_flag = literate
+			}
+		}
+
+		#cost = 20
+		custom_cost_trigger = {
+			check_variable = { var = knowledge_variable compare = greater_than_or_equals value = 20 }
+		}
+		custom_cost_text = knowledge_cost_20
+
+		complete_effect = {
+			subtract_from_variable = { var = knowledge_variable value = 20 }
+
+			hidden_effect = { scoped_sound_effect  = "turning_page" }
+			country_event = {
+				id = fir_character.azula.2
+				days = 12
+			}
+		}
+
+		days_re_enable = 365
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+
+
+
+
 
 	divine_firelord = {
 

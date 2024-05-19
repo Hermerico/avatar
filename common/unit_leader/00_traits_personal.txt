@@ -127,6 +127,18 @@ leader_traits = {
 			}
 		}
 	}
+	lightning_bender_trait = { 
+		type = land
+		trait_type = personality_trait
+
+		non_shared_modifier = {
+			breakthrough_factor = 0.1
+		}
+
+		new_commander_weight = {
+			base = 0
+		}
+	}
 
 	waterbender_trait = { 
 		type = land

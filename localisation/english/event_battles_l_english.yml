@@ -32,6 +32,13 @@
  fir_battle.9.t:0 "Failiure at Garsai"
  fir_battle.9.d:0 "Our Generals failed to take Garsai, despite our population demanding a victory. This is a catastrophy to the war effort."
  fir_battle.9.a:0 "And yet we must continue..."
+ 
+ fir_battle.11.t:0 "Approaching Ba Sing Se"
+ fir_battle.11.desc:0 "After months of logistical preparations, or armies finally marched towards the heart of the earthkingdom, the great city of Ba Sing Se. They already reached the outer wall and set up camp there."
+ fir_battle.11.a:0 "Give the command to General Iroh"
+ fir_battle.11.b:0 "Give the command to General Ozai"
+ fir_battle.11.c:0 "Let the Siege Begin"
+ fir_battle.11.d:0 "Ba Sing Se? Never heard of it."
 
 
  #fall and retake news

@@ -25,10 +25,13 @@
 @expenses75 = -7.5
 @expenses100 = -10
 @expenses150 = -15
+
 leader_traits = {
+
 	###################################	
 	###########	country leaders
 	##################################
+
 	firelord = {
 		random = no
 		stability_factor = 0.15
@@ -153,9 +156,13 @@ leader_traits = {
 		navy_intel_to_others = -100
 		army_intel_to_others = -100
 	}
+
+
+
 	##############################################
 	###### spirits
 	##############################################
+
 	loose_confederation_trait = {
 		random = no
 		sprite = 1
@@ -246,9 +253,13 @@ leader_traits = {
 			factor = -1
 		}
 	}
+
+
+
 	#####################################################
 	##############	ministers
 	#####################################################
+
 	generic_minister = {
 		random = no
 	}

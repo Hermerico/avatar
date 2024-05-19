@@ -60,9 +60,8 @@ THE_EARTHKINGDOM = {
 		available = {
 			has_war_with = FIR
 			is_neighbor_of = FIR
-			any_country = { #can't escape if encircled
-				is_in_faction_with = EAR
-				is_neighbor_of = EAR
+			NOT = { #can't escape if encircled
+				ba_sing_se_encircled = yes
 			}
 		}
 		fire_only_once = yes

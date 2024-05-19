@@ -13,23 +13,17 @@ country_event = {
 	
 	trigger = {
 		TAG = FIR
-		if = {
-			limit = {
-				has_game_rule = { rule = earthkingdom_fragmentation_status option = EARTHKINGDOM_UNITED }
-			}
-			NOT = {
-				EAR = { has_full_control_of_state = 154 }
-			}
-			else = {
+
+		154 = {
+			OWNER = {
 				NOT = {
-					TAK = { has_full_control_of_state = 154 }
+					has_full_control_of_state = 154
 				}
 			}
 		}
-		OR = {
-			FIR = { has_war_with = TAK }
-			FIR = { has_war_with = EAR }
-		}
+
+		FIR = { has_war_with = 154.OWNER }
+	
 		NOT = { has_global_flag = fall_of_taku }
 	}
 
@@ -292,33 +286,26 @@ country_event = {
 	
 	trigger = {
 		TAG = FIR
-		if = {
-			limit = {
-				has_game_rule = { rule = earthkingdom_fragmentation_status option = EARTHKINGDOM_UNITED }
-			}
-			OR = {
-				NOT = {
-					EAR = { has_full_control_of_state = 230 }
-				}
-				NOT = {
-					EAR = { has_full_control_of_state = 212 }
-				}
-			}
-		}
-		else = {
-			OR = {
-				NOT = {
-					WUL = { has_full_control_of_state = 230 }
-				}
-				NOT = {
-					WUL = { has_full_control_of_state = 212 }
-				}
-			}
-		}
+
 		OR = {
-			FIR = { has_war_with = WUL }
-			FIR = { has_war_with = EAR }
+			230 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 230
+					}
+				}
+			}
+			212 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 212
+					}
+				}
+			}
 		}
+		
+		FIR = { has_war_with = 230.OWNER }
+
 		NOT = { has_global_flag = fall_of_yudao }
 	}
 
@@ -508,33 +495,25 @@ country_event = {
 	
 	trigger = {
 		TAG = FIR
-		if = {
-			limit = {
-				has_game_rule = { rule = earthkingdom_fragmentation_status option = EARTHKINGDOM_UNITED }
-			}
-			OR = {
-				NOT = {
-					EAR = { has_full_control_of_state = 164 }
-				}
-				NOT = {
-					EAR = { has_full_control_of_state = 124 }
-				}
-			}
-		}
-		else = {
-			OR = {
-				NOT = {
-					XIN = { has_full_control_of_state = 164 }
-				}
-				NOT = {
-					XIN = { has_full_control_of_state = 124 }
-				}
-			}
-		}
 		OR = {
-			FIR = { has_war_with = XIN }
-			FIR = { has_war_with = EAR }
+			164 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 164
+					}
+				}
+			}
+			124 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 124
+					}
+				}
+			}
 		}
+		
+		FIR = { has_war_with = 124.OWNER }
+
 		NOT = { has_global_flag = fall_of_garsai }
 	}
 
@@ -627,6 +606,158 @@ country_event = {
 		
 	}
 	
+}
+
+### ba sing se siege starts battle
+country_event = {
+	id = fir_battle.11
+	title = fir_battle.11.t
+	desc = fir_battle.11.desc
+	picture = GFX_report_event_fir_approach_city
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = FIR
+		ba_sing_se_approached = yes
+		
+		FIR = { has_war_with = 179.OWNER }
+
+		NOT = { has_global_flag = fall_of_ba_sing_se }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+			
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.11.a
+
+		### general irohs siege
+
+		trigger = {
+			has_character = FIR_iroh
+			FIR_iroh = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = FIR_character_general
+			}
+		}
+
+		FIR = { 
+			activate_mission = ba_sing_se_conquest_expectations
+			set_variable = { FIR.ba_sing_se_siege_days = 365 }
+			
+			activate_decision = encircle_ba_sing_se
+			activate_decision = breach_the_outer_wall
+
+			set_country_flag = iroh_besieges_ba_sing_se
+		}
+	}
+
+	option = {
+		name = fir_battle.11.b
+
+		### general ozais siege
+
+		trigger = {
+			has_character = FIR_ozai
+			FIR_ozai = {
+				has_character_flag = FIR_character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = FIR_character_general
+			}
+		}
+
+		FIR = { 
+			activate_mission = ba_sing_se_conquest_expectations
+			activate_decision = encircle_ba_sing_se
+
+			set_country_flag = ozai_besieges_ba_sing_se
+		}
+	}
+
+	option = {
+		name = fir_battle.11.c
+
+		### random general siege
+
+		trigger = {
+			
+		}
+
+		FIR = { 
+			activate_mission = ba_sing_se_conquest_expectations
+			activate_decision = encircle_ba_sing_se
+		}
+	}
+
+	option = {
+		name = fir_battle.11.d
+
+		### no siege
+
+		trigger = {
+			
+		}
+
+		
+	}
+	
+}
+
+
+news_event = {
+	id = far_news.10
+	title = far_news.10.t
+	desc = far_news.10.d
+	picture = GFX_far_news_event_010
+	
+	major = yes
+	
+	trigger = {
+		179 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		179 = { is_owned_by = EAR }
+		FIR = { has_war_with = EAR }
+		NOT = { has_global_flag = fall_of_ba_sing_se }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_ba_sing_se
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.10.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.10.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.10.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
 }
 
 news_event = {
@@ -1050,56 +1181,6 @@ news_event = {
 	}
 	option = {
 		name = far_news.9.c
-		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
-	}
-}
-news_event = {
-	id = far_news.10
-	title = far_news.10.t
-	desc = far_news.10.d
-	picture = GFX_far_news_event_010
-	
-	major = yes
-	
-	trigger = {
-		179 = {
-			controller = {
-				OR = {
-					tag = FIR
-					is_puppet_of = FIR
-				}
-			}
-		}
-		179 = { is_owned_by = EAR }
-		FIR = { has_war_with = EAR }
-		NOT = { has_global_flag = fall_of_basingse }
-	}
-
-	immediate = {
- 		hidden_effect = {
- 			set_global_flag = fall_of_basingse
-		}
- 	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = far_news.10.a
-		trigger = {
-			NOT = {
-				TAG = FIR
-				has_dynamic_modifier = { modifier = earth_nation }
-			}
-		}
-	}
-	option = {
-		name = far_news.10.b
-		trigger = { TAG = FIR }
-	}
-	option = {
-		name = far_news.10.c
 		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
 	}
 }

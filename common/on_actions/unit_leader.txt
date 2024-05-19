@@ -259,9 +259,11 @@ on_actions = {
 
 	on_army_leader_lost_combat = {
 
-		# Killed in battle
 
 		effect = {
+
+			# Killed in battle
+
 			if = {
 				limit = {
 					has_trait = generic
@@ -279,6 +281,25 @@ on_actions = {
 				}
 				unit_leader_event = { id = unit_leader.20 }
 				remove_unit_leader = yes
+			}
+
+			if = {
+				limit = {
+					has_unit_leader_flag = lu_ten
+					FROM = {
+						has_country_flag = lu_ten_can_die
+					}
+
+					##### 25% chance 
+					set_temp_variable = { chance = 0.25 }
+					set_temp_variable_to_random = trigger_var
+					check_variable = { trigger_var < chance }
+				}
+
+				add_unit_leader_trait = mortally_wounded
+				
+				FROM = { country_event = { id = fir_character.lu_ten.4 days = 15 } }
+				
 			}
 
 			# wounded in battle

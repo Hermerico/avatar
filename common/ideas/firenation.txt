@@ -324,6 +324,93 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+
+		spirit_prince_ozai = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_ozai
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_ozai
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		spirit_ozai_representative_prince = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_ozai
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_ozai
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				peasant_opinion = 10
+			}
+		}
+
+		spirit_prince_iroh = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_iroh
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_iroh
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		spirit_prince_lu_ten = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_lu_ten
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_lu_ten
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+
 		
 		FIR_first_invasion = {
 
@@ -470,6 +557,22 @@ ideas = {
 				attack_bonus_against = 0.10
 				naval_invasion_prep_speed = 0.75
 			}
+		}
+
+		FIR_600_days_siege = {
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = EAR
+				attack_bonus_against = -1
+				defense_bonus_against = -1
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_weariness_factor = 0.2
+			}
+
 		}
 
 		FIR_earthkingdom_operation_bases_1 = {

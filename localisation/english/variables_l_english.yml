@@ -26,6 +26,8 @@
  var_money_printing_set_tooltip:0 "Set Inflation: $RIGHT|-=2%$"
  var_money_printing_add_tooltip:0 "Add Inflation: $RIGHT|-=2%$"
 
+ add_treasury_extension_tooltip:0 "Add £income_texticon  Treasury Capacity: $RIGHT|+=0$"
+
  workless_tooltip:0 "Add Unemployed: $RIGHT|-=3$"
 
  unit_quality_set_tooltip:0 "Set §YUnit Quality§!: $RIGHT|%+2$"

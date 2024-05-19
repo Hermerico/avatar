@@ -537,6 +537,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_fire_violence.dds"
 	}
 	spriteType = {
+		name = "fire_defense"
+		texturefile = "gfx/interface/decisions/decision_fire_defense.dds"
+	}
+	spriteType = {
 		name = "fir_occupy"
 		texturefile = "gfx/interface/decisions/decision_fir_occupy.dds"
 	}

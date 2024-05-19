@@ -99,6 +99,195 @@ is_earth_kingdom = {
 	}
 }
 
+ba_sing_se_approached = {
+	custom_trigger_tooltip = {
+		tooltip = ba_sing_se_approached_tt
+		OR = {
+			138 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 138
+					}
+				}
+			}
+			369 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 369
+					}
+				}
+			}
+			99 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 99
+					}
+				}
+			}
+			80 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 80
+					}
+				}
+			}
+			116 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 116
+					}
+				}
+			}
+			217 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 217
+					}
+				}
+			}
+			231 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 231
+					}
+				}
+			}
+			365 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 365
+					}
+				}
+			}
+		}
+	}
+}
+
+ba_sing_se_encircled = {
+	custom_trigger_tooltip = {
+		tooltip = ba_sing_se_encircled_tt
+		AND = {
+			### could be done with provinces for more accuracy, but is nervewrecking and performance heavier
+
+			138 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 138
+					}
+				}
+			}
+			369 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 369
+					}
+				}
+			}
+			99 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 99
+					}
+				}
+			}
+			80 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 80
+					}
+				}
+			}
+			116 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 116
+					}
+				}
+			}
+			217 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 217
+					}
+				}
+			}
+			231 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 231
+					}
+				}
+			}
+			365 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 365
+					}
+				}
+			}
+		}
+	}
+}
+
+breached_outer_wall = {
+	custom_trigger_tooltip = {
+		tooltip = breached_outer_wall_tt
+		OR = {
+			### could be done with provinces for more accuracy, but is nervewrecking and performance heavier
+
+			145 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 145
+					}
+				}
+			}
+			193 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 193
+					}
+				}
+			}
+			213 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 213
+					}
+				}
+			}
+			178 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 178
+					}
+				}
+			}
+			149 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 149
+					}
+				}
+			}
+			129 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 129
+					}
+				}
+			}
+			126 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 126
+					}
+				}
+			}
+		}
+	}
+}
+
 state_conflict_attacker_can_pressure_claim = {
 	custom_trigger_tooltip = {
 		tooltip = state_conflict_attacker_can_pressure_claim_tt

@@ -2,12 +2,15 @@
 state={
 	id=136
 	name="STATE_136"
+	manpower=7000
+	state_category=pastoral
 
 	history={
 		pop_growth = yes
 		owner = SWA
 		controller = SWA
 		add_core_of = SWA
+		
 		add_to_variable = {
 			var = forest
 			value = 8
@@ -73,10 +76,6 @@ state={
 	}
 
 	provinces={
-		774 1790 2308 2324 2353 3619 4268 4757 4852 4859 5001 5042 5505 8655 8660 8668 8674 8685 8706 8729 8732 8742 8754 8761 8765 8768 8771 
+		774 1790 2308 2324 3619 4268 4757 4852 4859 5001 5042 5505 8655 8660 8668 8674 8685 8706 8729 8732 8742 8754 8761 8765 8768 8771 
 	}
-	manpower=7000
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
 }

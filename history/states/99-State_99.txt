@@ -2,6 +2,8 @@
 state={
 	id=99
 	name="STATE_99"
+	manpower=1587
+	state_category=rural
 
 	history = {
 		pop_growth = yes
@@ -17,7 +19,6 @@ state={
 		add_to_variable = {
 			var = mountain
 			value = 0
-
 		}
 		add_to_variable = {
 			var = field
@@ -26,7 +27,6 @@ state={
 		add_to_variable = {
 			var = water
 			value = 2
-
 		}
 		add_to_variable = {
 			var = stonefield
@@ -35,13 +35,10 @@ state={
 		add_to_variable = {
 			var = animal
 			value = 4
-
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
+		
+		victory_points = { 2274 10 }
 
-		}
 		12.1.1 = {
 			owner = DIN
 			controller = DIN
@@ -99,7 +96,4 @@ state={
 	provinces = {
 		39 553 991 1153 1638 1841 2125 2273 2274 2526 2827 3091 3795 3818 4767 4960 5447 5594 6219 6291 6313 6321 6342 6347 6348 6352 6356 6364 10378 
 	}
-	manpower=1600
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

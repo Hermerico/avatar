@@ -103,6 +103,37 @@ spriteTypes = {
 		name = "GFX_Portrait_Azula"
 		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Azula.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Azula_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_azula.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ukano"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ukano.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ukano_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_ukano.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Mai"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Mai.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Mai_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_mai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ty_Lee"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ty_Lee.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ty_Lee_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_ty_lee.dds"
+	}
 
 	spriteType = {
 		name = "GFX_Portrait_Zuko"

@@ -36,6 +36,7 @@ get_emergencies = {
 			has_active_mission = taku_conquest_expectations
 			has_active_mission = yudao_conquest_expectations
 			has_active_mission = garsai_conquest_expectations
+			has_active_mission = ba_sing_se_conquest_expectations
 		}
 		add = 1
 	}

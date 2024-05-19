@@ -2,6 +2,8 @@
 state={
 	id=116
 	name="STATE_116"
+	manpower=1211
+	state_category=rural
 
 	history = {
 		pop_growth = yes
@@ -17,17 +19,14 @@ state={
 		add_to_variable = {
 			var = mountain
 			value = 0
-
 		}
 		add_to_variable = {
 			var = field
 			value = 3
-
 		}
 		add_to_variable = {
 			var = water
 			value = 2
-
 		}
 		add_to_variable = {
 			var = stonefield
@@ -36,13 +35,11 @@ state={
 		add_to_variable = {
 			var = animal
 			value = 5
-
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
+		
+		victory_points = { 6678 10 }
+		victory_points = { 346 1 }
 
-		}
 		12.1.1 = {
 			owner = EBA
 			controller = EBA
@@ -99,7 +96,4 @@ state={
 	provinces = {
 		311 335 346 648 1019 1120 1442 1621 1980 2563 2564 3456 3613 4080 4431 4863 5117 5197 5237 6584 6628 6636 6637 6678 6679 6689 6693 6730 6736 6776 6825 6879 6885 6927 6939 
 	}
-	manpower=1200
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

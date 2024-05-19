@@ -250,3 +250,35 @@ omashu_delivery_system = {
 	prosperity = 0.1
 	urbanisation_factor = 0.1
 }
+
+firenation_war_camp = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		NOT = {
+			is_controlled_by = FIR
+		}
+	}
+
+	icon = GFX_modifiers_firenation_war_camp
+
+	#local_non_core_supply_impact_factor = -0.5
+	local_supplies_for_controller = 0.25
+}
+
+organised_retreat = {
+	enable = { always = yes }
+
+	attacker_modifier = yes
+
+	remove_trigger = {
+		THIS.OWNER = {
+			has_full_control_of_state = PREV.THIS
+		}
+	}
+
+	icon = GFX_modifiers_firenation_war_camp
+
+	army_speed_factor = 1
+	max_dig_in_factor = -1
+}

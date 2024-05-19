@@ -148,6 +148,9 @@
  idea_dragon_hunts_desc:0 "Killing dragons is seen as a highly prestigious act for sport. To bring about a dragon is to bring about a monster."
  banned_poaching:0 "Outlawed Poaching"
  banned_poaching_desc:0 "Dragons are incredible creatures that require freedom. Annihilating them and hindering their ability to grow as a species is counterintuitive towards our development. Outlawing poaching will allow us to expand our services to that of the Dragon."
+ FIR_600_days_siege:0 "The [?FIR.ba_sing_se_siege_days|0] days Siege of Ba Sing Se"
+ FIR_600_days_siege_desc:0 ""
+
  kyoshi_constitution:0 "Kyoshi Constitution"
  kyoshi_constitution_desc:0 "The Peasant Uprising in Ba Sing Se threw the capital into chaos, and only when Avatar Kyoshi forced the 46th Earth King to accept a new constitution that limited his power while empowering the common people, the uprising dispersed."
  weak_legitimacy:0 "Low Legitimacy"

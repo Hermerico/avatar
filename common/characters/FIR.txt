@@ -1,4 +1,5 @@
 characters={
+
 	FIR_empty_throne = {
 		name = FIR_empty_throne
 		portraits = {
@@ -8,6 +9,13 @@ characters={
 		}
 		
 	}
+
+
+	###   ###  #   #  ###  #       #####  ###  #   # # #    #   #
+	#  # #   #  # #  #   # #         #   #   # ## ## # #     # # 
+	###  #   #   #   ##### #        ###  ##### # # # # #      #  
+	#  # #   #   #   #   # #         #   #   # #   # # #      #  
+	#  #  ###    #   #   # ####      #   #   # #   # # ####   #  
 
 
 	FIR_sozin = {
@@ -52,81 +60,39 @@ characters={
 			}
 		}
 	}
-
-	FIR_ozai = {
-		name = FIR_ozai
+	FIR_elua = {
+		name = FIR_elua
 		portraits={
 			civilian = {
-				large = "GFX_Portrait_Ozai_young"
+				large = "GFX_Portrait_Elua"
 			}
 			army = {
-				large = "GFX_Portrait_Ozai_young"
-				small = "GFX_Portrait_Ozai_young_small"
+				large = "GFX_Portrait_Elua"
+				small = "GFX_Portrait_Elua_small"
 			}
 		}
-		country_leader = {
-			ideology = colonialism
-			expire = "138.1.1"
-			id = -1
-		}
-		field_marshal = {
-			visible = { 
-				has_character_flag = FIR_character_born
-				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
+		
+		advisor = {
+			slot = minister_of_culture
+			idea_token = FIR_elua
+			cost = 100
+			allowed = {
+				original_tag = FIR
 			}
-		}
-	}
-
-	FIR_iroh = {
-		name = FIR_iroh
-		portraits={
-			civilian = {
-				large = "GFX_Portrait_Iroh_young"
+			available = {
+				
 			}
-			army = {
-				large = "GFX_Portrait_Iroh_young"
-				small = "GFX_Portrait_Iroh_young_small"
+			visible = {
+				has_character_flag = character_available
 			}
-		}
-		field_marshal = {
-			visible = { 
-				has_character_flag = FIR_character_born
-				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
-			}
-		}
-	}
-
-	FIR_azulon = {
-		name = FIR_azulon
-		portraits={
-			civilian = {
-				large = "GFX_Portrait_Azulon_young"
-			}
-			army = {
-				large = "GFX_Portrait_Azulon_young"
-				small = "GFX_Portrait_Azulon_young_small"
-			}
-		}
-		country_leader = {
-			ideology = colonialism
-			traits = {
-				firelord
-			}
-			expire = "110.1.1"
-			id = -1
-		}
-		field_marshal = {
-			visible = { 
-				has_character_flag = FIR_character_born
-				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
-			}
+			
+			
+			traits = { icon_of_the_firenation }
 		}
 	}
 
 
+	### sozin sister
 	FIR_zeisan = {
 		name = FIR_zeisan
 		portraits={
@@ -167,37 +133,71 @@ characters={
 		}
 	}
 
-	FIR_elua = {
-		name = FIR_elua
+	### sozins daughter
+	FIR_rhya = {
+		name = FIR_rhya
 		portraits={
 			civilian = {
-				large = "GFX_Portrait_Elua"
+				large = "GFX_Portrait_Rhya"
 			}
 			army = {
-				large = "GFX_Portrait_Elua"
-				small = "GFX_Portrait_Elua_small"
+				large = "GFX_Portrait_Rhya"
+				small = "GFX_Portrait_Rhya_small"
 			}
 		}
-		
-		advisor = {
-			slot = minister_of_culture
-			idea_token = FIR_elua
-			cost = 100
-			allowed = {
-				original_tag = FIR
+		country_leader = {
+			ideology = colonialism
+			traits = {
+
 			}
-			available = {
+			expire = "132.4.7"
+			id = -1
+		}
+		field_marshal = {
+			traits = { 
 				
 			}
-			visible = {
-				has_character_flag = character_available
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+
+			visible = { 
+				has_character_flag = FIR_character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
 			}
-			
-			
-			traits = { icon_of_the_firenation }
 		}
 	}
 
+
+
+	FIR_azulon = {
+		name = FIR_azulon
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Azulon_young"
+			}
+			army = {
+				large = "GFX_Portrait_Azulon_young"
+				small = "GFX_Portrait_Azulon_young_small"
+			}
+		}
+		country_leader = {
+			ideology = colonialism
+			expire = "110.1.1"
+			id = -1
+		}
+		field_marshal = {
+			visible = { 
+				has_character_flag = FIR_character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
+	}
 	FIR_ilah = {
 		name = FIR_ilah
 		portraits={
@@ -209,26 +209,79 @@ characters={
 				small = "GFX_Portrait_Ilah_small"
 			}
 		}
-		
-		advisor = {
-			slot = minister_of_culture
-			idea_token = FIR_ilah
-			cost = 100
-			allowed = {
-				original_tag = FIR
+	}
+
+
+	FIR_iroh = {
+		name = FIR_iroh
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Iroh_young"
 			}
-			available = {
-				
+			army = {
+				large = "GFX_Portrait_Iroh_young"
+				small = "GFX_Portrait_Iroh_young_small"
 			}
-			visible = {
-				has_character_flag = character_available
+		}
+		field_marshal = {
+			visible = { 
+				has_character_flag = FIR_character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
 			}
-			
-			
-			traits = { icon_of_the_firenation }
+		}
+	}
+	FIR_michi = {
+		name = FIR_michi
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Michi"
+			}
+			army = {
+				large = "GFX_Portrait_Michi"
+				small = "GFX_Portrait_Michi_small"
+			}
 		}
 	}
 
+	FIR_lu_ten = {
+		name = FIR_lu_ten
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Lu_Ten"
+			}
+			army = {
+				large = "GFX_Portrait_Lu_Ten"
+				small = "GFX_Portrait_Lu_Ten_small"
+			}
+		}
+	
+	}
+
+	FIR_ozai = {
+		name = FIR_ozai
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Ozai_young"
+			}
+			army = {
+				large = "GFX_Portrait_Ozai_young"
+				small = "GFX_Portrait_Ozai_young_small"
+			}
+		}
+		country_leader = {
+			ideology = colonialism
+			expire = "138.1.1"
+			id = -1
+		}
+		field_marshal = {
+			visible = { 
+				has_character_flag = FIR_character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
+	}
 	FIR_ursa = {
 		name = FIR_ursa
 		portraits={
@@ -260,20 +313,6 @@ characters={
 		}
 	}
 
-	FIR_lu_ten = {
-		name = FIR_lu_ten
-		portraits={
-			civilian = {
-				large = "GFX_Portrait_Lu_Ten"
-			}
-			army = {
-				large = "GFX_Portrait_Lu_Ten"
-				small = "GFX_Portrait_Lu_Ten_small"
-			}
-		}
-	
-	}
-
 	FIR_zuko = {
 		name = FIR_zuko
 		portraits={
@@ -302,43 +341,83 @@ characters={
 	
 	}
 
-	FIR_rhya = {
-		name = FIR_rhya
+
+
+
+	############ other
+
+
+	### mais father
+
+	FIR_ukano = {
+		name = FIR_ukano
 		portraits={
 			civilian = {
-				large = "GFX_Portrait_Rhya"
+				large = "GFX_Portrait_Ukano"
 			}
 			army = {
-				large = "GFX_Portrait_Rhya"
-				small = "GFX_Portrait_Rhya_small"
+				large = "GFX_Portrait_Ukano"
+				small = "GFX_Portrait_Ukano_small"
 			}
 		}
-		country_leader = {
-			ideology = colonialism
-			traits = {
-
+		
+		advisor = {
+			slot = minister_of_culture
+			idea_token = FIR_ukano
+			cost = 100
+			allowed = {
+				original_tag = FIR
 			}
-			expire = "32.4.7"
-			id = -1
-		}
-		field_marshal = {
-			traits = { 
+			available = {
 				
 			}
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 2
-			legacy_id = -1
+			visible = {
+				date < 73.02.06
+				has_character_flag = character_available
+			}
+			
+			
+			traits = { colonial_activist }
+		}
+	}
 
-			visible = { 
-				has_character_flag = FIR_character_born
-				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
+	FIR_mai = {
+		name = FIR_mai
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Mai"
+			}
+			army = {
+				large = "GFX_Portrait_Mai"
+				small = "GFX_Portrait_Mai_small"
 			}
 		}
 	}
+
+
+	FIR_ty_lee = {
+		name = FIR_ty_lee
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Ty_Lee"
+			}
+			army = {
+				large = "GFX_Portrait_Ty_Lee"
+				small = "GFX_Portrait_Ty_Lee_small"
+			}
+		}
+		
+	}
+
+
+
+	################################
+
+
+	###  generald
+
+
+	###################
 
 	FIR_shaozu = {
 		name = "Shaozu"

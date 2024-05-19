@@ -96,6 +96,7 @@ recruit_character = FIR_sozin
 FIR_sozin = {
 	set_character_flag = FIR_character_born
 	set_character_flag = FIR_character_general
+	set_character_flag = firebending_training
 	set_character_flag = literate
 }
 recruit_character = FIR_elua
@@ -124,13 +125,21 @@ recruit_character = FIR_azulon
 recruit_character = FIR_ilah
 
 recruit_character = FIR_iroh
+recruit_character = FIR_michi
+set_variable = { FIR.michi_birth_event = 57 }
+
 recruit_character = FIR_ozai
 recruit_character = FIR_ursa
+set_variable = { FIR.ursa_birth_event = 76 }
 
 recruit_character = FIR_lu_ten
 
 recruit_character = FIR_zuko
 recruit_character = FIR_azula
+
+recruit_character = FIR_ukano
+recruit_character = FIR_mai
+recruit_character = FIR_ty_lee
 
 
 if = {
@@ -238,6 +247,13 @@ permanent_spirits_and_modifiers = yes
 		flag = colonies_category_active
 		value = 1
 	}
+	set_country_flag = {
+		flag = conquest_category_active
+		value = 1
+	}
+	set_variable = { war_meetings_var = 163 }
+	set_variable = { war_meeting_value = war_meetings_var }
+	multiply_variable = { war_meeting_value = 3 }
 
 	set_country_flag = hunting_dragons
 	clr_country_flag = arrival_of_the_great_comet_mission
@@ -312,10 +328,13 @@ permanent_spirits_and_modifiers = yes
 		character = FIR_azulon
 		ideology = colonialism
 	}
+	add_country_leader_trait = firelord
+	add_country_leader_trait = personality_cult
 
 	FIR_azulon = {
 		set_character_flag = FIR_character_born
 		set_character_flag = FIR_character_general
+		set_character_flag = firebending_training
 		set_character_flag = literate
 
 		add_field_marshal_role = {
@@ -375,14 +394,21 @@ permanent_spirits_and_modifiers = yes
 
 	FIR_starting_tech_106 = yes
 
-	add_political_power = 1198
+	set_political_power = 250
 
 	set_variable = { weekly_accumulated_exhaustion = 4 }
 	set_variable = { casualty_accumulated_exhaustion = 12 }
 	set_variable = { occupation_accumulated_exhaustion = 17 }
 
 
+	set_variable = { war_meetings_var = 357 }
+	set_variable = { war_meeting_value = war_meetings_var }
+	multiply_variable = { war_meeting_value = 3 }
+
+
 	add_ideas = {
+
+		spirit_ozai_representative_prince
 
 		extensive_conscription
 		fire_volunteers
@@ -397,23 +423,35 @@ permanent_spirits_and_modifiers = yes
 	}
 
 
-	set_variable = { azulon_x = 60 }
+	set_variable = { azulon_x = 180 }
 	set_variable = { azulon_y = 6 }
+	set_portraits = {
+		character = FIR_azulon
+		army = { large = "GFX_Portrait_Azulon_old" }
+		civilian = { large = "GFX_Portrait_Azulon_old" }
+	}
 
-	set_variable = { ozai_x = 140 }
+	set_variable = { ozai_x = 40 }
 	set_variable = { ozai_y = 6 }
-
-	set_variable = { iroh_x = 240 }
-	set_variable = { iroh_y = 6 }
 
 	FIR_ilah = {
 		set_character_flag = married_to_azulon
 	}
 	retire_character = FIR_ilah
 
+	set_variable = { iroh_x = 320 }
+	set_variable = { iroh_y = 6 }
+
+	set_portraits = {
+		character = FIR_iroh
+		army = { large = "GFX_Portrait_Iroh_old" }
+		civilian = { large = "GFX_Portrait_Iroh_old" }
+	}
+
 	FIR_iroh = {
 		set_character_flag = FIR_character_born
 		set_character_flag = FIR_character_general
+		set_character_flag = firebending_training
 		set_character_flag = literate
 
 		add_field_marshal_role = {
@@ -442,10 +480,18 @@ permanent_spirits_and_modifiers = yes
 	}
 	set_variable = { FIR.iroh_birth_event = 51 }
 
+	retire_character = FIR_michi
+
+	set_variable = { lu_ten_x = 360 }
+	set_variable = { lu_ten_y = 6 }
+
 	FIR_lu_ten = {
 		set_character_flag = FIR_character_born
 		set_character_flag = FIR_character_general
+		set_character_flag = firebending_training
 		set_character_flag = literate
+
+		set_unit_leader_flag = lu_ten
 
 		add_corps_commander_role = {
 			traits = { 
@@ -471,21 +517,30 @@ permanent_spirits_and_modifiers = yes
 
 	FIR_ozai = {
 		set_character_flag = FIR_character_born
+		set_character_flag = firebending_training
+		set_character_flag = literate
 	}
 	set_variable = { FIR.ozai_birth_event = 71 }
 
 	FIR_ursa = {
 		set_character_flag = married_to_ozai
 	}
-	set_variable = { FIR.ursa_birth_event = 76 }
+
+	set_variable = { zuko_x = 100 }
+	set_variable = { zuko_y = 6 }
 
 	FIR_zuko = {
 		set_character_flag = FIR_character_born
+		set_character_flag = literate
 	}
 	set_variable = { FIR.zuko_birth_event = 95 }
 
+	set_variable = { azula_x = 10 }
+	set_variable = { azula_y = 6 }
+
 	FIR_azula = {
 		set_character_flag = FIR_character_born
+		set_character_flag = literate
 	}
 	set_variable = { FIR.azula_birth_event = 97 }
 
@@ -516,12 +571,6 @@ permanent_spirits_and_modifiers = yes
 		#obsolete = yes
 	}
 
-	set_portraits = {
-		character = FIR_azulon
-		army = { large = "GFX_Portrait_Azulon_old" }
-		civilian = { large = "GFX_Portrait_Azulon_old" }
-	}
-
 }
 
 
@@ -541,7 +590,7 @@ permanent_spirits_and_modifiers = yes
 	
 	FIR_starting_tech_111 = yes
 
-	add_political_power = 1198
+	set_political_power = 300
 
 	retire_character = FIR_azulon
 	retire_character = FIR_lu_ten
@@ -550,6 +599,9 @@ permanent_spirits_and_modifiers = yes
 		character = FIR_ozai
 		ideology = colonialism
 	}
+	add_country_leader_trait = firelord
+	add_country_leader_trait = personality_cult
+
 	set_variable = { ozai_x = 160 }
 	set_variable = { ozai_y = 6 }
 

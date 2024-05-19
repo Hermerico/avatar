@@ -5,6 +5,8 @@ taxation_category = {
 
 		icon = replace
 
+		priority = -1000
+
 		available = {
 			has_country_flag = public_funding
         }
@@ -65,12 +67,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_5
-			check_variable = {
-				var = income_variable
-				value = 0.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -85,8 +81,15 @@ taxation_category = {
 			income = -0.5
         }
 
+
+		cancel_trigger = {
+			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.05 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
 		custom_cost_text = expenses_50
 		
@@ -106,12 +109,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_5
-			check_variable = {
-				var = income_variable
-				value = 0.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -128,8 +125,14 @@ taxation_category = {
 			income = -0.5
         }
 
+		cancel_trigger = {
+			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.05 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
 		custom_cost_text = expenses_50
 
@@ -149,12 +152,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_5
-			check_variable = {
-				var = income_variable
-				value = 0.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -174,8 +171,14 @@ taxation_category = {
 			income = -0.5
         }
 
+		cancel_trigger = {
+			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.05 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
 		custom_cost_text = expenses_50
 
@@ -205,12 +208,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_5
-			check_variable = {
-				var = income_variable
-				value = 0.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -225,8 +222,14 @@ taxation_category = {
 			income = -0.5
         }
 
+		cancel_trigger = {
+			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.05 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
 		custom_cost_text = expenses_50
 
@@ -252,12 +255,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_5
-			check_variable = {
-				var = income_variable
-				value = 0.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -272,8 +269,14 @@ taxation_category = {
         	income = -0.5
         }
 
+		cancel_trigger = {
+			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.05 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
 		custom_cost_text = expenses_50
 
@@ -293,12 +296,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_5
-			check_variable = {
-				var = income_variable
-				value = 0.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -314,8 +311,14 @@ taxation_category = {
 			income = -0.5
         }
 
+		cancel_trigger = {
+			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
 		custom_cost_trigger = {
-			check_variable = { tax_balance > 0.05 }
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
 		}
 		custom_cost_text = expenses_50
 
@@ -343,12 +346,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_4
-			check_variable = {
-				var = income_variable
-				value = 1.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -365,6 +362,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
@@ -387,12 +387,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_4
-			check_variable = {
-				var = income_variable
-				value = 1.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -411,6 +405,9 @@ taxation_category = {
 		
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
@@ -433,12 +430,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_4
-			check_variable = {
-				var = income_variable
-				value = 1.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -456,6 +447,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
@@ -488,12 +482,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_4
-			check_variable = {
-				var = income_variable
-				value = 1.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -510,6 +498,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
@@ -538,12 +529,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_4
-			check_variable = {
-				var = income_variable
-				value = 1.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -560,6 +545,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
@@ -582,12 +570,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_4
-			check_variable = {
-				var = income_variable
-				value = 1.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -605,6 +587,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
@@ -635,12 +620,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_3
-			check_variable = {
-				var = income_variable
-				value = 1.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -657,6 +636,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
@@ -679,12 +661,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_3
-			check_variable = {
-				var = income_variable
-				value = 1.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -703,6 +679,9 @@ taxation_category = {
 		
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
@@ -725,12 +704,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_3
-			check_variable = {
-				var = income_variable
-				value = 1.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -749,6 +722,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
@@ -781,12 +757,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_3
-			check_variable = {
-				var = income_variable
-				value = 1.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -803,6 +773,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
@@ -831,12 +804,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_3
-			check_variable = {
-				var = income_variable
-				value = 1.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -853,6 +820,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
@@ -875,12 +845,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_3
-			check_variable = {
-				var = income_variable
-				value = 1.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -898,6 +862,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
@@ -928,12 +895,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_2
-			check_variable = {
-				var = income_variable
-				value = 2.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -950,6 +911,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
@@ -972,12 +936,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_2
-			check_variable = {
-				var = income_variable
-				value = 2.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -996,6 +954,9 @@ taxation_category = {
 		
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
@@ -1018,12 +979,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_2
-			check_variable = {
-				var = income_variable
-				value = 2.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -1041,6 +996,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
@@ -1073,12 +1031,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_2
-			check_variable = {
-				var = income_variable
-				value = 2.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -1095,6 +1047,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
@@ -1123,12 +1078,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_2
-			check_variable = {
-				var = income_variable
-				value = 2.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -1145,6 +1094,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
@@ -1167,12 +1119,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_2
-			check_variable = {
-				var = income_variable
-				value = 2.0
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -1190,6 +1136,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
@@ -1220,12 +1169,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_1
-			check_variable = {
-				var = income_variable
-				value = 2.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -1242,6 +1185,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
@@ -1264,12 +1210,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_1
-			check_variable = {
-				var = income_variable
-				value = 2.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -1288,6 +1228,9 @@ taxation_category = {
 		
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
@@ -1310,12 +1253,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_1
-			check_variable = {
-				var = income_variable
-				value = 2.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -1333,6 +1270,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
@@ -1365,12 +1305,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_1
-			check_variable = {
-				var = income_variable
-				value = 2.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -1387,6 +1321,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
@@ -1415,12 +1352,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_1
-			check_variable = {
-				var = income_variable
-				value = 2.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -1437,6 +1368,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
@@ -1459,12 +1393,6 @@ taxation_category = {
 
 		available = {
 			has_idea = family_support_1
-			check_variable = {
-				var = income_variable
-				value = 2.5
-				compare = greater_than
-				tooltip = daily_money_check
-			}
 			NOT = { has_country_flag = public_funding }
         }
 		visible = {
@@ -1483,6 +1411,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
 		}
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
@@ -1514,6 +1445,52 @@ taxation_category = {
 	###  #   # # # # #   #  ##       #   #####   #   ###   ##   
 	#  # #   # #  ## #   #    #      #   #   #  # #  #       #  
 	###   ###  #   #  ###  ###       #   #   # #   # #### ###   
+
+	increase_treasury_capacity = {
+
+		icon = treasury
+
+		visible = {
+			
+		}
+		available = {
+			
+		}
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		cost = 50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "gain_gold" }
+
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = treasury_extension }
+					}
+				}
+				add_dynamic_modifier = { modifier = treasury_extension }
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = var_treasury_extension
+				value = 50
+				tooltip = add_treasury_extension_tooltip
+			}
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+
 
 	print_money_for_deficit = {
 

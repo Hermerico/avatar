@@ -5,6 +5,12 @@ money_printing = {
 	currency_amount = var_money_printing
 }
 
+treasury_extension = {
+	enable = { always = yes }
+
+	money_capacity = var_treasury_extension
+}
+
 
 
 famine = {

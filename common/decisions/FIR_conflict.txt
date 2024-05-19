@@ -662,6 +662,7 @@ FIR_conquest_category = {
 		}
 		visible = {
 			has_war_with = EAR
+			has_start_date < 13.1.1
 		}
 
 		available = {
@@ -671,8 +672,6 @@ FIR_conquest_category = {
 		complete_effect = {
 			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 100 }
-			
-			
 		}
 
 		remove_effect = {
@@ -719,7 +718,6 @@ FIR_conquest_category = {
 		complete_effect = {
 			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 			subtract_from_variable = { var = money_variable value = 100 }
-			
 			
 		}
 
@@ -801,6 +799,48 @@ FIR_conquest_category = {
 			}
 		}
 	}
+
+
+	FIR_summon_war_council = {
+
+		icon = war
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_war = yes
+		}
+
+		available = {
+			meta_trigger = {
+				text = {
+					longest_war_length > [war_length]
+				}
+				war_length = "[?war_meeting_value]"
+			}
+		}
+
+		cost = 50
+		days_re_enable = 30
+		
+
+		complete_effect = {
+			add_to_variable = { war_meetings_var = 1 }
+			set_variable = { war_meeting_value = war_meetings_var }
+			multiply_variable = { war_meeting_value = 3 }
+		}
+
+		remove_effect = {
+			
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+
 
 	war_with_northern_watertribe = {
 

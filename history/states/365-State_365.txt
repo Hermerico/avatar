@@ -2,6 +2,8 @@
 state={
 	id=365
 	name="STATE_365"
+	manpower=3171
+	state_category=rural
 
 	history = {
 		pop_growth = yes
@@ -9,12 +11,10 @@ state={
 		add_to_variable = {
 			var = forest
 			value = 0
-
 		}
 		add_to_variable = {
 			var = mountain
 			value = 0
-
 		}
 		add_to_variable = {
 			var = field
@@ -23,7 +23,6 @@ state={
 		add_to_variable = {
 			var = water
 			value = 0
-
 		}
 		add_to_variable = {
 			var = stonefield
@@ -32,16 +31,14 @@ state={
 		add_to_variable = {
 			var = animal
 			value = 3
-
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
 
-		}
+		victory_points = { 2120 5 }
+		
 		owner = WBA
 		controller = WBA
 		add_core_of = WBA
+
 		12.1.1 = {
 			owner = WBA
 			controller = WBA
@@ -51,7 +48,7 @@ state={
 
 			}
 
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = WBA
@@ -88,8 +85,4 @@ state={
 	provinces = {
 		131 1464 1496 1588 1836 2006 2120 2450 2588 2750 3582 3699 4055 4470 4509 4836 6909 6950 6951 6954 7020 7060 7118 7174 
 	}
-	manpower=3100
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

@@ -2173,6 +2173,7 @@ technologies = {
 				add_ideas = command_economy_law
 			}
 		}
+		show_effect_as_desc = yes
 		
 		research_cost = 2.5
 		#start_year = 72
@@ -2362,6 +2363,7 @@ technologies = {
 				add_ideas = free_economy_law
 			}
 		}
+		show_effect_as_desc = yes
 		
 		research_cost = 2.5
 		#start_year = 72

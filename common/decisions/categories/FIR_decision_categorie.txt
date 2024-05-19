@@ -23,7 +23,7 @@ FIR_royal_family_category = {
 	}
 
 	priority = {
-		base = 1150
+		base = 115000
 		modifier = {
 			factor = 100
 			has_country_leader = {
