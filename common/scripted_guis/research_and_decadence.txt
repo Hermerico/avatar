@@ -289,11 +289,11 @@ scripted_gui = {
 			magnetism_2_visible = { not = { has_tech = magnetism } }
 			magnetism_3_visible = { has_tech = magnetism }
 
-			bronze_alloy_1_visible = { AND = { not = { has_tech = bronze_alloy } check_variable = { tech_age < 4 } } }
+			bronze_alloy_1_visible = { AND = { not = { has_tech = bronze_alloy } check_variable = { tech_age < 3 } } }
 			bronze_alloy_2_click_enabled = { not = { has_tech = bronze_alloy } 
 				check_variable = { 
 					var = knowledge_variable 
-					value = @AGE_4_COST 
+					value = @AGE_3_COST 
 					compare = greater_than_or_equals
 				}
 			}

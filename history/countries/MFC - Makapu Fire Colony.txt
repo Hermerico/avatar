@@ -10,6 +10,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+FIR_starting_tech_12 = yes
+
 set_popularities = {
 	water_culture = 0
 	pluralist_culture = 0
