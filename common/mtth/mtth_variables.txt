@@ -189,7 +189,7 @@ legitimacy_war_support = {
 	modifier = {
 		set_temp_variable = { war_support = 50 }
 		subtract_from_temp_variable = { war_support = centralisation_variable }
-		divide_temp_variable = { war_support = 100 }
+		divide_temp_variable = { war_support = 250 }
 		#clamp_temp_variable = { var = war_support min = 0 }
 		
 		add = war_support
@@ -201,7 +201,7 @@ legitimacy_stability = {
 	modifier = {
 		set_temp_variable = { stability = -50 }
 		add_to_temp_variable = { stability = centralisation_variable }
-		divide_temp_variable = { stability = 100 }
+		divide_temp_variable = { stability = 250 }
 		#clamp_temp_variable = { var = stability min = 0 }
 		
 		add = stability

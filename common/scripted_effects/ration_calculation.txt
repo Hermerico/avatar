@@ -104,7 +104,7 @@ ration_calculation = {
 
 	# base gain
 	set_variable = { resource_gain = resource@food_resource }
-	divide_variable = { resource_gain = 5 }
+	divide_variable = { resource_gain = 20 }
 	add_to_variable = { ration_daily = resource_gain }
 
 	# factor
@@ -345,7 +345,7 @@ ratio_effects_and_interface = {
 	}
 	clamp_variable = { 
 		var = ration_penalty 
-		min = -0.5 
+		min = -0.5
 		max = 0
 	}
 	set_variable = { soldier_penalty = 1 }
@@ -354,21 +354,28 @@ ratio_effects_and_interface = {
 	clamp_variable = { 
 		var = soldier_penalty_good 
 		min = 0 
-		max = 0.5
+		max = 1
 	}
-	multiply_variable = { soldier_penalty = -1 }
+	multiply_variable = { soldier_penalty = -0.25 }
 	clamp_variable = { 
 		var = soldier_penalty 
-		min = -0.5 
+		min = -0.25 
 		max = 0
 	}
 
 	set_variable = { family_penalty = 1 }
 	subtract_from_variable = { family_penalty = family_ratio_percent }
-	multiply_variable = { family_penalty = -1 }
+	set_variable = { family_penalty_2 = family_penalty }
+	multiply_variable = { family_penalty = -0.3 }
 	clamp_variable = { 
 		var = family_penalty 
-		min = -0.5 
+		min = -0.3 
+		max = 0
+	}
+	multiply_variable = { family_penalty_2 = -2 }
+	clamp_variable = { 
+		var = family_penalty_2 
+		min = -2
 		max = 0
 	}
 
@@ -377,13 +384,13 @@ ratio_effects_and_interface = {
 	multiply_variable = { working_penalty = -1 }
 	clamp_variable = { 
 		var = working_penalty 
-		min = -0.5 
+		min = -1
 		max = 0
 	}
 
 	set_variable = { occupied_penalty = 1 }
 	subtract_from_variable = { occupied_penalty = occupied_ratio_percent }
-	#multiply_variable = { occupied_penalty = -1 }
+	multiply_variable = { occupied_penalty = 0.5 }
 	clamp_variable = { 
 		var = occupied_penalty 
 		min = 0 
