@@ -116,6 +116,7 @@ permanent_spirits_and_modifiers = yes
 	#	targeted_alliance = FIR
 	#	enemy = EAR
 	#}
+	OOB="KFC_52"
 }
 
 
