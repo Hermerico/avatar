@@ -59,21 +59,7 @@ state={
 		}
 		106.2.4 = {
 			owner = DIN
-			controller = DIN
-			FIR = {
-				set_province_controller = 2021
-				set_province_controller = 6363
-				set_province_controller = 3725
-				set_province_controller = 6448
-				set_province_controller = 6473
-				set_province_controller = 6406
-				set_province_controller = 4201
-				set_province_controller = 326
-				set_province_controller = 4231
-				set_province_controller = 6376
-				set_province_controller = 6337
-
-			}
+			controller = FIR
 
 			instant_resource_calc = yes
 		}

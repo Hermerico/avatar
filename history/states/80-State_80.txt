@@ -84,6 +84,7 @@ state={
 				set_province_controller = 6602
 				set_province_controller = 30
 				set_province_controller = 6438
+				set_province_controller = 1394
 			}
 
 			build_railway = {

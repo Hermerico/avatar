@@ -2,6 +2,8 @@
 state={
 	id=54
 	name="STATE_54"
+	manpower=4500
+	state_category=town
 
 	history = {
 		pop_growth = yes
@@ -17,7 +19,6 @@ state={
 		add_to_variable = {
 			var = mountain
 			value = 0
-
 		}
 		add_to_variable = {
 			var = field
@@ -26,22 +27,16 @@ state={
 		add_to_variable = {
 			var = water
 			value = 2
-
 		}
 		add_to_variable = {
 			var = stonefield
 			value = 0
-
 		}
 		add_to_variable = {
 			var = animal
 			value = 3
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
-
-		}
+		
 		12.1.1 = {
 			owner = DIN
 			controller = DIN
@@ -53,7 +48,7 @@ state={
 
 			}
 
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = DIN
@@ -64,7 +59,7 @@ state={
 		}
 		106.2.4 = {
 			owner = DIN
-			controller = DIN
+			controller = FIR
 
 			instant_resource_calc = yes
 		}
@@ -80,7 +75,4 @@ state={
 	provinces = {
 		155 290 1147 1493 2464 2472 2990 3204 3473 4110 5360 6145 6154 6173 6211 6237 
 	}
-	manpower=4500
-	
-	state_category=town
 }
