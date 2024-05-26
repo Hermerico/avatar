@@ -169,3 +169,23 @@ is_valid_migration_target = {
 		}
 	}
 }
+adding_10_percent_taxation_will_make_ROOTs_tax_balance_positive = {
+	set_temp_variable = {
+		var = taxation_with_10_percent_increase
+		value = 0
+	}
+	add_to_temp_variable = {
+		var = taxation_with_10_percent_increase
+		value = ROOT.taxation_var
+	}
+	multiply_temp_variable = {
+		var = taxation_with_10_percent_increase
+		value = 1.1
+	}
+	subtract_from_temp_variable = {
+		var = taxation_with_10_percent_increase
+		value = ROOT.tax_balance
+	}
+	check_variable = {taxation_with_10_percent_increase > 0}
+			
+}

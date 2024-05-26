@@ -52,7 +52,7 @@ NWT_construction_before_unification = {
 	}
 	ai_strategy = {
 		type = building_target
-		id = masonry
+		id = ranch
 		value = 5
 	}
 }
@@ -94,4 +94,24 @@ NWT_drop_reserves_once_you_are_unified = {
 		type = equipment_stockpile_surplus_ratio
 		value = 2
 	}
-}
+}	
+NWT_naval_production = {
+	allowed = {tag = NWT}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}	
+	ai_strategy = {
+		type = role_ratio
+		id = canoe
+		value = 3
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = raft
+		value = 4
+	}
+	
+}	

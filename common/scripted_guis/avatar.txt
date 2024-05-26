@@ -45,6 +45,11 @@ scripted_gui = {
 		triggers = {
 			aang_portrait_visible = {
 				has_global_flag = avatar_aang
+				NOT = {has_global_flag = avatar_unknown}
+			}
+			aang_missing_portrait_visible = {
+				has_global_flag = avatar_aang
+				has_global_flag = avatar_unknown
 			}
 			aang_name_visible = {
 				has_global_flag = avatar_aang

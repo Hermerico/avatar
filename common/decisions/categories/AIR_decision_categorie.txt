@@ -7,7 +7,7 @@ AIR_council_category = {
 	allowed = {
 		ROOT = { has_country_flag = air_council_active }
 	}
-	visible_when_empty = yes
+	visible_when_empty = no
 	
 	scripted_gui = air_council_ui
 	

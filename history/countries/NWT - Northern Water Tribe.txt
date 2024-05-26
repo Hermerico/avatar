@@ -92,6 +92,8 @@ recruit_character = NWT_head_of_intelligence_4
 recruit_character = NWT_head_of_intelligence_5
 recruit_character = NWT_head_of_intelligence_6
 
+recruit_character = NWT_unification_minister
+
 recruit_character = NWT_buthaka
 recruit_character = NWT_sangok
 

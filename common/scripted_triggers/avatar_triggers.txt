@@ -331,3 +331,15 @@ state_conflict_defender_can_force_fight = {
 		}
 	}
 }
+is_SAT_on_historical_and_Aang_had_not_escaped_yet = {
+	custom_trigger_tooltip = { 
+		tooltip = you_should_not_be_seeing_this_tt
+	}
+	tag = SAT
+	is_historical_focus_on = yes
+	has_global_flag = avatar_aang
+	NOT = {
+		has_global_flag = aang_ran_away
+	}
+
+}

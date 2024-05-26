@@ -32,7 +32,7 @@ gfx/texticons/unit_category_air_balloon_icon_small
 gfx/texticons/unit_category_light_airship_icon_small
 gfx/texticons/unit_category_heavy_airship_icon_small
 
-gfx/texticons/no_order_texticon
+gfx/texticons/war_score
 
 gfx/interface/counters/divisions_small/onmap_unit_buffalo_yaks_icon.dds
 gfx/interface/counters/divisions_small/onmap_eel_hound_icon.dds

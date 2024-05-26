@@ -33,7 +33,7 @@ AVATAR_JET_TOOLTIP:0 "§YJet§! \nA tough warrior!\n§YStrength:§! §+[?global.
 AVATAR_IROH_TOOLTIP:0 "§YIroh§! \nIt is time that you look inwards and ask yourself the big questions!\n§YStrength:§! §+[?global.iroh_strength]§!"
 AVATAR_SOKKA_TOOLTIP:0 "§YSokka§! \nSneak Attack!\n§YStrength:§! §+[?global.sokka_strength]§!"
 AVATAR_SUKI_TOOLTIP:0 "§YSuki§! \nI am a warrior!\n§YStrength:§! §+[?global.suki_strength]§!"
-
+AVATAR_AANG_MISSING_TOOLTIP:0 "§YAang?§!"
 MISU:0 "Misu"
 AVATAR_MISU_TOOLTIP:0 "§YMisu§!"
 
@@ -53,7 +53,7 @@ AVATAR_ICEBERG:0 "Unknown"
 AVATAR_SWT:0 "Southern Watertribe"
 AVATAR_OPINION:0 "Opinion:"
 AVATAR_OPINION_TOOLTIP:0 "The avatar´s feelings and thoughts towards us."
-AVATAR_OPINION_FRIENDLY_TOOLTIP:0 "The Avatar is §Gfriendly§! towards our Nation."
+AVATAR_OPINION_FRIENDLY_TOOLTIP:0 "[AvatarOpinionMissingChecker]"
 AVATAR_OPINION_HOSTILE_TOOLTIP:0 "The Avatar is §Rhostile§! towards our Nation."
 AVATAR_TEAM:0 "Friends & Masters"
 AVATAR_MASTERY:0 "Mastery & Skill"

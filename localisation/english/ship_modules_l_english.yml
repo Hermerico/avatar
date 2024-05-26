@@ -14,6 +14,7 @@
  EQ_MOD_CAT_ship_mine_warfare_TITLE:0 "Mine Warfare"
  EQ_MOD_CAT_storage_room_TITLE:0 "Storage Room"
  EQ_MOD_CAT_bridge_TITLE:0 "Bridge"
+ EQ_MOD_CAT_supplies_TITLE:0 "Supplies"
  EQ_MOD_CAT_steam_engine_TITLE:0 "Steam Engines"
  EQ_MOD_CAT_heavy_steam_engine_TITLE:0 "Heavy Steam Engines"
  EQ_MOD_CAT_ship_catapult_TITLE:0 "Catapults"
@@ -26,6 +27,7 @@
  EQ_MOD_CAT_medium_armor_plates_TITLE:0 "§YMedium§! Armor Plates"
  EQ_MOD_CAT_heavy_armor_plates_TITLE:0 "§YHeavy§! Armor Plates"
  EQ_MOD_CAT_super_heavy_armor_plates_TITLE:0 "§YSuper Heavy§! Armor Plates"
+ EQ_MOD_CAT_oars_TITLE:0 "Oars"
  
  ### EQUIPMENT MODULE SLOTS ###
  EQ_MOD_SLOT_fixed_ship_armor_slot_TITLE:0 "Armor"
@@ -34,7 +36,10 @@
  EQ_MOD_SLOT_fixed_ship_artillery_slot_TITLE:0 "Weaponry"
  EQ_MOD_SLOT_fixed_ship_bridge_slot_TITLE:0 "Bridge"
  EQ_MOD_SLOT_fixed_ship_storage_slot_TITLE:0 "Storage"
+ EQ_MOD_SLOT_fixed_ship_oars_slot_TITLE:0 "Oars"
  EQ_MOD_SLOT_fixed_ship_engine_slot_TITLE:0 "Engine"
+ EQ_MOD_SLOT_fixed_ship_mast_slot_TITLE:0 "Mast" 
+ EQ_MOD_SLOT_fixed_ship_sails_slot_TITLE:0 "Sails"
  EQ_MOD_SLOT_deck_1_custom_slot_TITLE:0 "Custom Deck I"
  EQ_MOD_SLOT_deck_2_custom_slot_TITLE:0 "Custom Deck II"
  EQ_MOD_SLOT_deck_3_custom_slot_TITLE:0 "Custom Deck III"

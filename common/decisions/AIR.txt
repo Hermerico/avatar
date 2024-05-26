@@ -121,6 +121,7 @@ AIR_council_category = {
 			add_manpower = 100
 			remove_from_array = { air_current_missions = 1}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr2 = {
@@ -154,6 +155,7 @@ AIR_council_category = {
 			army_experience  = 40
 			remove_from_array = { air_current_missions = 2}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr3 = {
@@ -187,6 +189,7 @@ AIR_council_category = {
 			remove_from_array = { air_current_missions = 3}
 			army_experience = 15
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr4_start = {
@@ -227,6 +230,7 @@ AIR_council_category = {
 			}
 			remove_from_array = { air_current_missions = 4 }
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr4_NAT_1 = {
@@ -279,6 +283,7 @@ AIR_council_category = {
 			}
 			army_experience = 15
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr4_NAT_2 = {
@@ -331,6 +336,7 @@ AIR_council_category = {
 			}
 			army_experience = 15
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr4_SAT_1 = {
@@ -383,6 +389,7 @@ AIR_council_category = {
 			}
 			army_experience = 15
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr4_SAT_2 = {
@@ -435,6 +442,7 @@ AIR_council_category = {
 			}
 			army_experience = 15
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr4_EAT_1 = {
@@ -487,6 +495,7 @@ AIR_council_category = {
 			}
 			army_experience = 15
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr4_EAT_2 = {
@@ -539,6 +548,7 @@ AIR_council_category = {
 			}
 			army_experience = 15
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr4_WAT_1 = {
@@ -591,6 +601,7 @@ AIR_council_category = {
 			}
 			army_experience = 15
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr4_WAT_2 = {
@@ -643,6 +654,7 @@ AIR_council_category = {
 			}
 			army_experience = 15
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr5 = {
@@ -676,6 +688,7 @@ AIR_council_category = {
 			add_manpower = 20
 			remove_from_array = { air_current_missions = 5}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr6 = {
@@ -709,6 +722,7 @@ AIR_council_category = {
 			navy_experience = 25
 			remove_from_array = { air_current_missions = 6}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr7 = {
@@ -739,6 +753,7 @@ AIR_council_category = {
 			remove_from_array = { air_current_missions = 7}
 			army_experience = 10
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr8 = {
@@ -916,6 +931,7 @@ AIR_council_category = {
 				}
 			}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr9 = {
@@ -949,6 +965,7 @@ AIR_council_category = {
 			navy_experience = 10
 			remove_from_array = { air_current_missions = 9}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr11 = {
@@ -982,6 +999,7 @@ AIR_council_category = {
 			air_experience = 20
 			remove_from_array = { air_current_missions = 11}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr12 = {
@@ -1022,6 +1040,7 @@ AIR_council_category = {
 			}
 			remove_from_array = { air_current_missions = 12}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr13 = {
@@ -1055,6 +1074,7 @@ AIR_council_category = {
 			add_manpower = 20
 			remove_from_array = { air_current_missions = 13}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr16 = {
@@ -1093,6 +1113,7 @@ AIR_council_category = {
 			}
 			remove_from_array = { air_current_missions = 16}
 		}
+		ai_will_do = {base = 100}	
 	}
 
     AIR_mission_nr17 = {
@@ -1138,6 +1159,7 @@ AIR_council_category = {
 			#}
 			remove_from_array = { air_current_missions = 17 }
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr18 = {
@@ -1175,6 +1197,7 @@ AIR_council_category = {
 			}
 			remove_from_array = { air_current_missions = 18}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr21 = {
@@ -1208,6 +1231,7 @@ AIR_council_category = {
 			
 			remove_from_array = { air_current_missions = 21}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr26 = {
@@ -1241,6 +1265,7 @@ AIR_council_category = {
 			add_command_power = -30
 			remove_from_array = { air_current_missions = 26}
 		}
+		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr27 = {
@@ -1274,6 +1299,7 @@ AIR_council_category = {
 			add_stability = 0.05
 			remove_from_array = { air_current_missions = 27}
 		}
+		ai_will_do = {base = 100}	
 	}
 
 	AIR_mission_nr28 = {
@@ -1311,6 +1337,7 @@ AIR_council_category = {
     		add_war_support = 0.1
     		remove_from_array = { air_current_missions = 28}
     	}
+		ai_will_do = {base = 100}	
     }
 
 	AIR_mission_nr29 = {
@@ -1341,5 +1368,6 @@ AIR_council_category = {
 			add_command_power = 30
 			remove_from_array = { air_current_missions = 29}
 		}
+	ai_will_do = {base = 100}	
 	}
 }

@@ -124,11 +124,7 @@ leader_traits = {
 		send_volunteer_divisions_required = -0.9
 		send_volunteer_size = 4
 		air_volunteer_cap = 2
-		ROOT.GetCountry = {
-			rule = {
-				can_send_volunteer_forces = yes
-			}
-		}
+	
 	}
 	extinguished_population = {
 		random = no
@@ -271,6 +267,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	prime_minister = {
@@ -289,6 +289,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	administrator = {
@@ -306,6 +310,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	lawgiver = {
@@ -323,6 +331,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	gifted_speaker = {
@@ -339,6 +351,10 @@ leader_traits = {
 				}
 				add = 5		
 			}
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	close_to_the_people_1 = {
@@ -349,7 +365,12 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
+		
 	}
 	close_to_the_people_2 = {
 		random = no
@@ -359,6 +380,10 @@ leader_traits = {
 		political_power_cost = @adv2
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	cruel_overseer = {
@@ -368,6 +393,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	fiscal_conservative = {
@@ -377,6 +406,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	money_wizard = {
@@ -386,6 +419,10 @@ leader_traits = {
 		political_power_cost = @adv2
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	regulation_proponent = {
@@ -397,6 +434,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	architect = {
@@ -407,6 +448,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	experienced_architect = {
@@ -416,6 +461,10 @@ leader_traits = {
 		political_power_cost = @adv2
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	local_investor = {
@@ -426,6 +475,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	national_investor = {
@@ -436,6 +489,10 @@ leader_traits = {
 		political_power_cost = @adv2
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	experienced_merchant = {
@@ -447,6 +504,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	thrifty_oil_baron = {
@@ -457,6 +518,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	corrupt_spymaster = {
@@ -467,6 +532,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	chauvinist = {
@@ -531,6 +600,10 @@ leader_traits = {
 				}
 				factor = 0
 			}
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	extreme_royalist = {
@@ -579,6 +652,11 @@ leader_traits = {
 					has_government = air_culture
 				}
 				factor = 0
+				
+			}
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
 			}
 		}
 	}
@@ -595,7 +673,7 @@ leader_traits = {
 					has_government = pluralist_culture
 				}
 				factor = 0
-			}
+			}			
 		}
 	}
 	personality_cultist = {
@@ -606,6 +684,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	unification_minister = {
@@ -632,6 +714,10 @@ leader_traits = {
 		political_power_cost = @adv2
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	neutral_judge = {
@@ -641,6 +727,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}
 		}
 	}
 	dai_li_judge = {
@@ -660,6 +750,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	tough_on_crime = {
@@ -670,6 +764,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	non_bender_activist = {
@@ -700,6 +798,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	colonial_activist = {
@@ -710,6 +812,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	cruel_supervisor = {
@@ -721,6 +827,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	workers_syndicat = {
@@ -733,6 +843,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	motivated_pioneer = {
@@ -742,6 +856,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	low_standards = {
@@ -769,6 +887,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	outsourcer = {
@@ -781,6 +903,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	unemployment_benefits = {
@@ -792,6 +918,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	agrarian_reformer = {
@@ -803,6 +933,10 @@ leader_traits = {
 		political_power_cost = @adv1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	warrior_culture = {
@@ -2728,6 +2862,10 @@ leader_traits = {
 		political_power_cost = @inst1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	circle_walking = {
@@ -2737,6 +2875,10 @@ leader_traits = {
 		political_power_cost = @inst1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	research_academia = {
@@ -2747,6 +2889,10 @@ leader_traits = {
 		political_power_cost = @inst1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	officer_academia = {
@@ -2758,6 +2904,10 @@ leader_traits = {
 		political_power_cost = @inst1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	special_forces_academia = {
@@ -2768,6 +2918,10 @@ leader_traits = {
 		political_power_cost = @inst1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	recruit_drilling = {
@@ -2777,6 +2931,10 @@ leader_traits = {
 		political_power_cost = @inst1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	alms_and_pacification = {
@@ -2789,6 +2947,10 @@ leader_traits = {
 		political_power_cost = @inst1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	philosophical_principles = {
@@ -2806,6 +2968,10 @@ leader_traits = {
 				}
 				factor = 0
 			}
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	indoctrinal_service = {
@@ -2817,6 +2983,10 @@ leader_traits = {
 		political_power_cost = @inst1
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+				factor = 0
+			}	
 		}
 	}
 	service_to_the_avatar = {
@@ -2831,6 +3001,10 @@ leader_traits = {
 				NOT = {
 					has_government = air_culture
 				}
+				factor = 0
+			}
+			modifier = {
+				is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
 				factor = 0
 			}
 		}

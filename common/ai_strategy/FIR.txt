@@ -37,6 +37,20 @@ FIR_area_priority = {
 
 }
 
+FIR_keep_up_with_firebender_demands = {
+	allowed = {tag = FIR}
+	enable = {
+		NOT = {
+			has_global_flag = sozins_comet_first
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = firebender_equipment
+		value = 14
+	}
+}
 
 FIR_far_waters = {
 	allowed = {
