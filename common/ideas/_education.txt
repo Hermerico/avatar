@@ -86,7 +86,10 @@ ideas = {
 			ai_will_do = {
 				base = 0
 				modifier = {
-					has_idea = average_education
+					OR = {
+						has_idea = average_education
+						has_idea = tribal_education
+					}
 					num_of_civilian_factories > 20
 					add = 50
 				}
