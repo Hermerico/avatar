@@ -465,6 +465,13 @@ ratio_effects_and_interface = {
 	set_variable = { ration_need_m = daily_ration_need }
 	divide_variable = { ration_need_m = 1000 }
 
+	set_variable = {daily_ration_need_in_food = daily_ration_need}
+	divide_variable = {daily_ration_need_in_food = 0.05}
+	round_variable = daily_ration_need_in_food
+	add_to_variable = {
+		var = daily_ration_need_in_food
+		value = 1
+	}
 	set_variable = { ration_max_h = ration_max }
 	multiply_variable = { ration_max_h = 1000 }
 

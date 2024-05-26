@@ -63,8 +63,12 @@ country_event = { #We survived the  Genocide! Feel the pain, Fire Nation!
 				value = 500
 			}
 			add_country_leader_trait = icon_of_resistance
-		}	
-	}
+			set_rule = {
+				desc = airbenders_wish_to_fight_against_aggressors
+				can_send_volunteers = yes
+			}
+		}
+	}	
 }
 country_event = { #We survived the  Genocide! Feel the pain, Ba Sing Se!
 	id = western.3
@@ -89,6 +93,10 @@ country_event = { #We survived the  Genocide! Feel the pain, Ba Sing Se!
 				value = 200
 			}
 			add_country_leader_trait = icon_of_resistance
-		}	
+			set_rule = {
+				desc = airbenders_wish_to_fight_against_aggressors
+				can_send_volunteers = yes
+			}
+		}
 	}
 }

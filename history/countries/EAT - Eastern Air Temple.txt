@@ -12,7 +12,7 @@ set_convoys = 100
 
 set_country_flag = AIR_special_forces
 set_country_flag = AIR_air_techs
-set_country_flag = air_council_active
+set_country_flag = air_council_waiting_for_players_decision
 
 
 set_politics = {
