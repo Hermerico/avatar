@@ -194,6 +194,8 @@
  #custom
  garrison_factor_modifier:0 "Required Garrisons"
  nonbender_factor:0 "Nonbenders in Army"
+ conscription_factor_new:0 "£manpower_texticon  Recruitable Population"
+ conscription_factor_new_descDESC:0 "Modifies how much your manpower you can access from states."
 
  bender_target:0 "Nonbenders in Army"
  bender_unit_factor:0 "Bender Units"
@@ -547,6 +549,8 @@
  animal_weaving_upgrade:0 "Cloth Anmial Weaving"
  ranch_upgrade:0 "Breeding Ranch"
  industrial_zone:0 "Industrial Sector"
+
+ nobility_joined_revolt_tt:0 "An Elite Nobility Division will rise up in every revolting state in case of war."
 
  earthkingdom_operation_bases_false:0 "§RSpecial effect deactivated due to lack of operation bases.§!"
  earthkingdom_operation_bases_true:0 "Operation Bases: [?ROOT.earth_bases_var|0Y]"

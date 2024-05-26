@@ -118,6 +118,7 @@ bender_conscription_effect = {
 	multiply_variable = { var_nonbender_factor = nonbender_modifier }
 
 	add_dynamic_modifier = { modifier = dynamic_bender_capacity }
+	add_dynamic_modifier = { modifier = dynamic_conscription_factor }
 }
 
 hemisphere_setup = {

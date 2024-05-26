@@ -78,6 +78,7 @@ taxation_category = {
         modifier = {
         	research_speed_factor = 0.025
 			political_power_factor = 0.025
+			academics_opinion = 1
 			income = -0.5
         }
 
@@ -120,7 +121,7 @@ taxation_category = {
         modifier = {
         	MONTHLY_POPULATION = 0.2
 			sickness_chance = -0.1
-			#casualty_trickleback = 0.04
+			clergy_opinion = 1
 			experience_loss_factor = -0.05
 			income = -0.5
         }
@@ -168,6 +169,7 @@ taxation_category = {
         	weekly_war_weariness = -0.01
 			stability_factor = 0.02
 			society_reforms_research_bonus = 0.05
+			peasant_opinion = 1
 			income = -0.5
         }
 
@@ -219,6 +221,7 @@ taxation_category = {
         modifier = {
         	production_speed_buildings_factor = 0.05
 			industry_repair_factor = 0.05
+			labourers_opinion = 1
 			income = -0.5
         }
 
@@ -266,6 +269,7 @@ taxation_category = {
         modifier = {
         	local_resources_factor = 0.05
         	fuel_gain_factor_from_states = 0.05
+        	industrialist_opinion = 1
         	income = -0.5
         }
 
@@ -308,6 +312,7 @@ taxation_category = {
         	industrial_capacity_factory = 0.025
 			industrial_capacity_dockyard = 0.025
 			war_support_factor = 0.03
+			nobility_opinion = 1
 			income = -0.5
         }
 
@@ -357,6 +362,7 @@ taxation_category = {
         modifier = {
         	research_speed_factor = 0.075
 			political_power_factor = 0.05
+			academics_opinion = 2
 			income = -1
         }
 
@@ -399,7 +405,7 @@ taxation_category = {
         	MONTHLY_POPULATION = 0.5
 			sickness_chance = -0.2
 			experience_loss_factor = -0.1
-			#casualty_trickleback = 0.08
+			clergy_opinion = 2
 			income = -1
         }
 		
@@ -442,6 +448,7 @@ taxation_category = {
         	weekly_war_weariness = -0.01
 			stability_factor = 0.06
 			society_reforms_research_bonus = 0.10
+			peasant_opinion = 2
 			income = -1
         }
 
@@ -493,6 +500,7 @@ taxation_category = {
         modifier = {
         	production_speed_buildings_factor = 0.1
 			industry_repair_factor = 0.1
+			labourers_opinion = 2
 			income = -1
         }
 
@@ -540,6 +548,7 @@ taxation_category = {
         modifier = {
         	local_resources_factor = 0.1
         	fuel_gain_factor_from_states = 0.1
+        	industrialist_opinion = 2
         	income = -1
         }
 
@@ -582,6 +591,7 @@ taxation_category = {
         	industrial_capacity_factory = 0.05
 			industrial_capacity_dockyard = 0.05
 			war_support_factor = 0.06
+			nobility_opinion = 2
 			income = -1
         }
 
@@ -631,6 +641,7 @@ taxation_category = {
         modifier = {
         	research_speed_factor = 0.15
 			political_power_factor = 0.1
+			academics_opinion = 3
 			income = -1.5
         }
 
@@ -673,7 +684,7 @@ taxation_category = {
         	MONTHLY_POPULATION = 0.8
 			sickness_chance = -0.3
 			experience_loss_factor = -0.15
-			#casualty_trickleback = 0.12
+			clergy_opinion = 3
 			income = -1.5
         }
 		
@@ -716,6 +727,7 @@ taxation_category = {
         	weekly_war_weariness = -0.02
 			stability_factor = 0.1
 			society_reforms_research_bonus = 0.15
+			peasant_opinion = 3
 			income = -1.5
 			
         }
@@ -768,6 +780,7 @@ taxation_category = {
         modifier = {
         	production_speed_buildings_factor = 0.2
 			industry_repair_factor = 0.2
+			labourers_opinion = 3
 			income = -1.5
         }
 
@@ -815,6 +828,7 @@ taxation_category = {
         modifier = {
         	local_resources_factor = 0.15
         	fuel_gain_factor_from_states = 0.15
+        	industrialist_opinion = 3
         	income = -1.5
         }
 
@@ -857,6 +871,7 @@ taxation_category = {
         	industrial_capacity_factory = 0.1
 			industrial_capacity_dockyard = 0.1
 			war_support_factor = 0.09
+			nobility_opinion = 3
 			income = -1.5
         }
 
@@ -906,6 +921,7 @@ taxation_category = {
         modifier = {
         	research_speed_factor = 0.225
 			political_power_factor = 0.15
+			academics_opinion = 4
 			income = -2
         }
 
@@ -948,7 +964,7 @@ taxation_category = {
         	MONTHLY_POPULATION = 1.1
 			sickness_chance = -0.4
 			experience_loss_factor = -0.2
-			#casualty_trickleback = 0.16
+			clergy_opinion = 4
 			income = -2
         }
 		
@@ -991,6 +1007,7 @@ taxation_category = {
         	weekly_war_weariness = -0.03
 			stability_factor = 0.14
 			society_reforms_research_bonus = 0.2
+			peasant_opinion = 4
 			income = -2
         }
 
@@ -1042,6 +1059,7 @@ taxation_category = {
         modifier = {
         	production_speed_buildings_factor = 0.3
 			industry_repair_factor = 0.3
+			labourers_opinion = 4
 			income = -2
         }
 
@@ -1089,6 +1107,7 @@ taxation_category = {
         modifier = {
         	local_resources_factor = 0.2
         	fuel_gain_factor_from_states = 0.2
+        	industrialist_opinion = 4
         	income = -2
         }
 
@@ -1131,6 +1150,7 @@ taxation_category = {
         	industrial_capacity_factory = 0.15
 			industrial_capacity_dockyard = 0.15
 			war_support_factor = 0.12
+			nobility_opinion = 4
 			income = -2
         }
 
@@ -1180,6 +1200,7 @@ taxation_category = {
         modifier = {
         	research_speed_factor = 0.3
 			political_power_factor = 0.2
+			academics_opinion = 5
 			income = -2.5
         }
 
@@ -1222,7 +1243,7 @@ taxation_category = {
         	MONTHLY_POPULATION = 1.4
 			sickness_chance = -0.5
 			experience_loss_factor = -0.25
-			#casualty_trickleback = 0.2
+			clergy_opinion = 5
 			income = -2.5
         }
 		
@@ -1265,6 +1286,7 @@ taxation_category = {
         	weekly_war_weariness = -0.05
 			stability_factor = 0.18
 			society_reforms_research_bonus = 0.25
+			peasant_opinion = 5
 			income = -2.5
         }
 
@@ -1316,6 +1338,7 @@ taxation_category = {
         modifier = {
         	production_speed_buildings_factor = 0.4
 			industry_repair_factor = 0.4
+			labourers_opinion = 5
 			income = -2.5
         }
 
@@ -1363,6 +1386,7 @@ taxation_category = {
         modifier = {
         	local_resources_factor = 0.3
         	fuel_gain_factor_from_states = 0.3
+        	industrialist_opinion = 5
         	income = -2.5
         }
 
@@ -1406,6 +1430,7 @@ taxation_category = {
         	industrial_capacity_factory = 0.2
 			industrial_capacity_dockyard = 0.2
 			war_support_factor = 0.15
+			nobility_opinion = 5
 			income = -2.5
 		}
 

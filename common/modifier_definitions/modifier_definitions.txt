@@ -275,6 +275,13 @@ nonbender_factor = {								#### amount of nonbenders in army. only used in bend
 	postfix = none
 }
 
+conscription_factor_new = {								#### factor on conscription in country. new to account for bender law
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+
 bender_unit_factor = {								#### factor on bender unit amount
 	color_type = good 
 	value_type = percentage

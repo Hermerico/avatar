@@ -2,7 +2,13 @@ ideas = {
 
 	hidden_ideas = {
 
-		peasant_distrust = {
+		
+
+	}
+
+	country = {
+		
+		revolt_distrust_modifier = {
 			allowed = {
 				always = no
 			}
@@ -16,7 +22,51 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				peasant_opinion = -50
+				peasant_opinion = -30
+				labourers_opinion = -30
+			}
+		}
+
+
+		nobility_joined_revolt = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				NOT = {
+					has_country_flag = active_peasant_revolt
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				revolt_risk = 0.2
+				nobility_opinion = -10
+				custom_modifier_tooltip = nobility_joined_revolt_tt
+			}
+		}
+
+
+
+		tax_relief = {
+
+			removal_cost = -1
+
+			modifier = {
+				peasant_opinion = 10
+				taxation = -0.03
+			}
+		}
+		imprison_peasant_leaders = {
+
+			removal_cost = -1
+
+			modifier = {
+				revolt_risk = -0.2
+				stability_factor = 0.05
+				peasant_opinion = -10
 			}
 		}
 

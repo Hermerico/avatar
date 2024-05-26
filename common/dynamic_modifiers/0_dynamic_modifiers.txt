@@ -57,6 +57,14 @@ dynamic_bender_capacity = {
 	conscription_factor = mtth:nonbender_factor
 
 }
+dynamic_conscription_factor = {
+	enable = { always = yes }
+
+	#icon = GFX_fall
+
+	conscription_factor = mtth:additional_conscription_factor
+
+}
 fast_manpower = {
 	enable = { always = yes }
 

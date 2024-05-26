@@ -10,7 +10,7 @@ peasant_dynamic_modifier = {
 
 	#stability_factor = mtth:peasant_stability
 	peasant_output_factor = mtth:peasant_output
-	revolt_risk = mtth:peasant_revolt_risk
+	stability_factor = mtth:peasant_stability
 }
 
 labourers_dynamic_modifier = {
@@ -23,7 +23,7 @@ labourers_dynamic_modifier = {
 		}
 	}
 
-	stability_factor = mtth:labourers_stability
+	prosperity = mtth:labourers_prosperity
 	local_resources_factor = mtth:labourers_output
 }
 
