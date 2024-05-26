@@ -248,7 +248,11 @@ spriteTypes = {
 		texturefile = "gfx/texticons/dai_li.dds"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_no_order_texticon"
+		texturefile = "gfx/texticons/no_order_texticon.dds"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_coordination_army_texticon"
 		texturefile = "gfx/texticons/coordination_army.dds"
@@ -1326,6 +1330,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_scout_icon_small"
 		texturefile = "gfx/texticons/unit_scout_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_unit_scout_buffalo_yaks_icon_small"
+		texturefile = "gfx/texticons/unit_scout_buffalo_yaks_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_unit_scout_cat_deer_icon_small"
+		texturefile = "gfx/texticons/unit_scout_cat_deer_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
