@@ -21,10 +21,25 @@ core_state_cost = {
 
 }
 
+colonise_state_pp_cost = {
+	base = 100
+	modifier = {
+		set_temp_variable = { modifier_factor = 1 }
+		add_to_temp_variable = { modifier_factor = modifier@colonise_state_cost_factor }
+		clamp_temp_variable = {
+			var = modifier_factor
+			min = 0
+		}
+		
+		factor = modifier_factor
+	}
+
+}
+
 colonise_state_cost = {
 	base = 0
 	modifier = {
-		set_temp_variable = { distance_cost = distance_to@ROOT.capital }
+		set_temp_variable = { distance_cost = PREV.distance_to@ROOT.capital }
 		divide_temp_variable = { distance_cost = 5 }
 		round_temp_variable = distance_cost
 		

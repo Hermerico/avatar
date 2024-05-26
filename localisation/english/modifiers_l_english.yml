@@ -225,6 +225,7 @@
  avatar_opinion_modifier:0 "Can influnce the Avatar´s opinion of us"
  women_recruitment_modifier:0 "Women are empowered"
  tech_share_modifier:0 "§YInventions§! can not be stolen or shared"
+ allow_colony_modifier:0 "Can colonise uninhabited lands"
  ministry_advisor_cost:0 "Ministry Advisor Cost"
  institution_cost:0 "Institution Cost"
  law_change_cost:0 "Change Law Cost"
@@ -303,6 +304,8 @@
 
  available_missions:0 "£missions_texticon  Available Missions"
  available_missions_desc:0 "Number of allowed missions at the same time"
+ active_missions:0 "£missions_texticon  Active Missions"
+ active_emergencies:0 "£emergency_texticon  Active Emergencies"
 
  weekly_centralisation:0 "£centralisation_weekly_texticon  Weekly Centralisation"
  centralisation_target_modifier:0 "£centralisation_target_texticon  Centralisation Target"

@@ -136,7 +136,7 @@ NEW_MINISTER_OF_WORKS:0 "Recruit a new §YMinister of Works§! \nCost (£pol_pow
 NEW_MINISTER_OF_RITES:0 "Recruit a new §YMinister of Rites§! \nCost (£pol_power ): [?mtth:minister_cost|R0]"
 
 
-intel_tooltip:0 "£text_infiltrate_civilian_token  Civil Intel: [?ROOT:civilian_intel@FROM|Y0%*] \n£text_infiltrate_army_token  Army Intel: [?ROOT:army_intel@FROM|Y0%*] \n£text_infiltrate_navy_token  Navy Intel: [?ROOT:navy_intel@FROM|Y0%*] \n£text_infiltrate_air_token  Air Intel: [?ROOT:air_intel@FROM|Y0%*] \n\nCypher advantage: [?mtth:cypher_advantage|+=0%]"
+intel_tooltip:0 "£text_infiltrate_civilian_token  Civil Intel: [?ROOT:civilian_intel@FROM|Y0%%] \n£text_infiltrate_army_token  Army Intel: [?ROOT:army_intel@FROM|Y0%%] \n£text_infiltrate_navy_token  Navy Intel: [?ROOT:navy_intel@FROM|Y0%%] \n£text_infiltrate_air_token  Air Intel: [?ROOT:air_intel@FROM|Y0%%] \n\nCypher advantage: [?mtth:cypher_advantage|+=0%]"
 intel_tooltip_delayed:0 "§LData about the country we have access to.§!"
 network_strength:0 "£spy_network_growth_texticon  [?ROOT.local_network_growth_in_@THIS|1+=%]"
 encription_decription:0 "Encrypion: [?modifier@encryption|Y0] \nDecryption: [?modifier@decryption|Y0]"
@@ -253,7 +253,7 @@ clergy_tooltip_delayed:0 "§LThe Religious institution responsible for the conne
 # clergy
 
 
-state_culture_tooltip:0 "§YState Culture§! \n£fire_texticon Fire Dominance: [?fire_pop|*Y2%] ([?fire_pop_new|%*=]) \n£earth_texticon Earth Dominance: [?earth_pop|*Y2%] ([?earth_pop_new|%*=]) \n£water_texticon Water Dominance: [?water_pop|*Y2%] ([?water_pop_new|%*=]) \n£air_texticon Air Dominance: [?air_pop|*Y2%] ([?air_pop_new|%*=]) \n£pluralist_texticon Pluralist Dominance: [?nonbender_pop|*Y2%] ([?nonbender_pop_new|%*=]) \n\nModified by:\n[]"
+state_culture_tooltip:0 "§YState Culture§! \n£fire_texticon Fire Dominance: [?fire_pop|*Y2%] ([?fire_pop_new|%%=]) \n£earth_texticon Earth Dominance: [?earth_pop|*Y2%] ([?earth_pop_new|%%=]) \n£water_texticon Water Dominance: [?water_pop|*Y2%] ([?water_pop_new|%%=]) \n£air_texticon Air Dominance: [?air_pop|*Y2%] ([?air_pop_new|%%=]) \n£pluralist_texticon Pluralist Dominance: [?nonbender_pop|*Y2%] ([?nonbender_pop_new|%%=]) \n\nModified by:\n[]"
 add_cultural_advisor_tooltip:0 "Boost [ROOT.GetElement] [[ROOT.GetElementTextColor]Culture§! in §Y[From.GetName]§!"
 remove_cultural_advisor_tooltip:0 "Stop Culture boosting"
 establishing_a_colony:0 "Is already establishing a colony."
