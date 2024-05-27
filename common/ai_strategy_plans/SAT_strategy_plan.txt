@@ -1,0 +1,38 @@
+SAT_get_aang_from_the_temple = {
+	desc = "Aang needs to leave. Don't worry about anything else until he does."
+	allowed = {tag = SAT}
+	weight = {
+		base = 4
+	}
+	enable = {
+		is_SAT_on_historical_and_Aang_had_not_escaped_yet = yes
+	}
+	abort = {
+		is_SAT_on_historical_and_Aang_had_not_escaped_yet = no		
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = 0
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = 0
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = 0
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = idea
+		value = 0
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = decision
+		value = 100
+	}
+}
