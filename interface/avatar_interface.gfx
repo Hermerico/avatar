@@ -113,6 +113,10 @@ spriteTypes = {
 		textureFile = "gfx/leaders/SAT/Portrait_Southernairtemple_Aang.dds"
 	}
 	spriteType = {
+		name = "GFX_avatar_aang_missing"
+		textureFile = "gfx/leaders/SAT/Portrait_Southernairtemple_Aang_missing.dds"
+	}
+	spriteType = {
 		name = "GFX_avatar_misu"
 		textureFile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Misu.dds"
 	}

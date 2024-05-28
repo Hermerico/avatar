@@ -230,12 +230,48 @@ ideologies = {
 		types = {
 			
 			absolute_pacifism = {
+				rules = {
+					can_create_collaboration_government = no
+					can_declare_war_on_same_ideology = no
+					can_force_government = no
+					can_send_volunteers = no
+					can_puppet = no
+					can_lower_tension = yes
+					can_only_justify_war_on_threat_country = no
+					can_guarantee_other_ideologies = no
+					can_join_factions = no
+					can_create_factions = no
+				}
 			}
 		
 			active_pacifism = {
+				rules = {
+					can_create_collaboration_government = no
+					can_declare_war_on_same_ideology = no
+					can_force_government = no
+					can_send_volunteers = no
+					can_puppet = no
+					can_lower_tension = yes
+					can_only_justify_war_on_threat_country = no
+					can_guarantee_other_ideologies = no
+					can_join_factions = no
+					can_create_factions = no
+				}
 			}
 
 			spiritual_interventionism = {
+				rules = {
+					can_create_collaboration_government = no
+					can_declare_war_on_same_ideology = no
+					can_force_government = no
+					can_send_volunteers = yes
+					can_puppet = no
+					can_lower_tension = yes
+					can_only_justify_war_on_threat_country = yes
+					can_guarantee_other_ideologies = yes
+					can_join_factions = yes
+					can_create_factions = no
+				}
 			}
 		}
 		
@@ -250,18 +286,7 @@ ideologies = {
 		
 		color = { 210 140 0 }
 		
-		rules = {
-			can_create_collaboration_government = no
-			can_declare_war_on_same_ideology = no
-			can_force_government = no
-			can_send_volunteers = no
-			can_puppet = no
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = no
-			can_guarantee_other_ideologies = no
-			can_join_factions = no
-			can_create_factions = no
-		}
+
 
 		can_host_government_in_exile = yes
 		

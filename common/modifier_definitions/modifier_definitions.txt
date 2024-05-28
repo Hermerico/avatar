@@ -164,6 +164,19 @@ available_missions = {								#### mission decision categories available at the 
 	precision = 0
 	postfix = none
 }
+active_missions = {								#### active missions
+	color_type = neutral 
+	value_type = number
+	precision = 0
+	postfix = none
+}
+
+active_emergencies = {								#### active emergencies
+	color_type = bad 
+	value_type = number
+	precision = 0
+	postfix = none
+}
 
 garrison_factor_modifier = {						#### required garrison size in occupied territories (needed to account for population size)
 	color_type = bad 
@@ -275,6 +288,13 @@ nonbender_factor = {								#### amount of nonbenders in army. only used in bend
 	postfix = none
 }
 
+conscription_factor_new = {								#### factor on conscription in country. new to account for bender law
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+
 bender_unit_factor = {								#### factor on bender unit amount
 	color_type = good 
 	value_type = percentage
@@ -315,6 +335,12 @@ women_recruitment_modifier = {						#### feminism decisions currently used in a 
 	postfix = none
 }
 tech_share_modifier = {								#### disable spreading inventions currently unused
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+}
+allow_colony_modifier = {							#### allows to colonise uninhabited states
 	color_type = good
 	value_type = yes_no
 	precision = 0

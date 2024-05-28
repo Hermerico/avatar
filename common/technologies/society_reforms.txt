@@ -241,7 +241,7 @@ technologies = {
 			writing = 1
 		}
 
-		stability_factor = -0.1
+		stability_factor = -0.05
 		political_power_gain = 0.1
 		research_speed_factor = 0.08
 		knowledge = 0.06
@@ -421,7 +421,7 @@ technologies = {
 	}
 	conservative_education_0 = {
 		
-		stability_factor = 0.1
+		stability_factor = 0.05
 		weekly_casualty_war_weariness = -0.015
 		research_speed_factor = 0.04
 		knowledge = 0.04
@@ -476,7 +476,7 @@ technologies = {
 		
 		monthly_population = 0.08
 		clergy_opinion = 2
-		stability_factor = 0.05
+		stability_factor = 0.02
 		
 		research_cost = 2.5
 		#start_year = 64
@@ -1197,7 +1197,7 @@ technologies = {
 		}
 
 		party_popularity_stability_factor = -0.1
-		stability_factor = 0.15
+		stability_factor = 0.1
 		settler_defiance = -0.1
 		migration_attraction = 0.1
 
@@ -2082,7 +2082,7 @@ technologies = {
 		}
 		
 		prosperity_factor = 0.05
-		stability_factor = 0.15
+		stability_factor = 0.1
 		refit_ic_cost = -0.5
 		labourers_opinion = 3
 		industrialist_opinion = 3
@@ -2238,7 +2238,7 @@ technologies = {
 		urbanisation_country_factor = 0.08
 		centralisation_target_modifier = 0.06
 		research_speed_factor = 0.15
-		stability_factor = -0.2
+		stability_factor = -0.15
 
 		research_cost = 2.5
 		#start_year = 12

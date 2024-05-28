@@ -278,6 +278,7 @@ permanent_spirits_and_modifiers = yes
 		FIR_modern_agriculture
 		FIR_private_investors
 		FIR_earthkingdom_operation_bases_3
+		FIR_colonial_administration
 	}
 
 	remove_ideas = {

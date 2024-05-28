@@ -4366,7 +4366,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				has_tech = mine_1
+				any_owned_state = {
+					OR = {	
+						check_variable = {mountain > 0}
+						mine > 0
+					}
+				}
+				add = 4
+			}
 		}
 		
 		categories = {

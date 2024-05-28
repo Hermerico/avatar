@@ -2,15 +2,15 @@
  fire_people_in_ek_tooltip:0 "£population_texticon  Fire Citizen in the Earthkingdom: $RIGHT|-=0$"
  fire_people_in_ek_bad_tooltip:0 "£population_texticon  Fire Citizen in the Earthkingdom: $RIGHT|-0$"
  
- war_weariness_set_tooltip:0 "Set £war_weariness_texticon  §YWar Weariness§! from Politics and Decisions: $RIGHT|%*-=2$"
- war_weariness_add_tooltip:0 "Add £war_weariness_texticon  §YWar Weariness§! from Politics and Decisions: $RIGHT|%*-=2$"
- war_weariness_remove_tooltip:0 "Remove £war_weariness_texticon  §YWar Weariness§! from Politics and Decisions: $RIGHT|%*-2$"
- occupation_war_weariness_set_tooltip:0 "Set £war_weariness_texticon  §YWar Weariness§! from Occupied States: $RIGHT|%*-=2$"
- occupation_war_weariness_add_tooltip:0 "Add £war_weariness_texticon  §YWar Weariness§! from Occupied States: $RIGHT|%*-=2$"
- occupation_war_weariness_remove_tooltip:0 "Remove £war_weariness_texticon  §YWar Weariness§! from Occupied States: $RIGHT|%*-2$"
- casualty_war_weariness_set_tooltip:0 "Set £war_weariness_texticon  §YWar Weariness§! from Fallen Soldiers: $RIGHT|%*-=2$"
- casualty_war_weariness_add_tooltip:0 "Add £war_weariness_texticon  §YWar Weariness§! from Fallen Soldiers: $RIGHT|%*-=2$"
- casualty_war_weariness_remove_tooltip:0 "Remove £war_weariness_texticon  §YWar Weariness§! from Fallen Soldiers: $RIGHT|%*-2$"
+ war_weariness_set_tooltip:0 "Set £war_weariness_texticon  §YWar Weariness§! from Politics and Decisions: $RIGHT|%%-=2$"
+ war_weariness_add_tooltip:0 "Add £war_weariness_texticon  §YWar Weariness§! from Politics and Decisions: $RIGHT|%%-=2$"
+ war_weariness_remove_tooltip:0 "Remove £war_weariness_texticon  §YWar Weariness§! from Politics and Decisions: $RIGHT|%%-2$"
+ occupation_war_weariness_set_tooltip:0 "Set £war_weariness_texticon  §YWar Weariness§! from Occupied States: $RIGHT|%%-=2$"
+ occupation_war_weariness_add_tooltip:0 "Add £war_weariness_texticon  §YWar Weariness§! from Occupied States: $RIGHT|%%-=2$"
+ occupation_war_weariness_remove_tooltip:0 "Remove £war_weariness_texticon  §YWar Weariness§! from Occupied States: $RIGHT|%%-2$"
+ casualty_war_weariness_set_tooltip:0 "Set £war_weariness_texticon  §YWar Weariness§! from Fallen Soldiers: $RIGHT|%%-=2$"
+ casualty_war_weariness_add_tooltip:0 "Add £war_weariness_texticon  §YWar Weariness§! from Fallen Soldiers: $RIGHT|%%-=2$"
+ casualty_war_weariness_remove_tooltip:0 "Remove £war_weariness_texticon  §YWar Weariness§! from Fallen Soldiers: $RIGHT|%%-2$"
  
  peasant_anger_add_tooltip:0 "Add Peasant Anger: $RIGHT|-=0$"
  peasant_anger_remove_tooltip:0 "Remove Peasant Anger: $RIGHT|-0$"
@@ -27,6 +27,9 @@
  var_money_printing_add_tooltip:0 "Add Inflation: $RIGHT|-=2%$"
 
  add_treasury_extension_tooltip:0 "Add £income_texticon  Treasury Capacity: $RIGHT|+=0$"
+ money_set_tooltip:0 "Set £income_texticon  §YTreasury§!: $RIGHT|+=0$"
+ money_add_tooltip:0 "Add £income_texticon  §YTreasury§!: $RIGHT|+=0$"
+ check_money_tooltip:0 "More £income_texticon  §YTreasury§! than: $RIGHT|Y0$"
 
  workless_tooltip:0 "Add Unemployed: $RIGHT|-=3$"
 
@@ -40,17 +43,17 @@
 
  chin_support_tt:0 "Add §uChin supporters§!: $RIGHT|=Y0%%$"
 
- set_fire_pop_tt:0 "Set £fire_texticon  Fire Culture: $RIGHT|Y2%$ \n"
- set_earth_pop_tt:0 "Set £earth_texticon  Earth Culture: $RIGHT|Y2%$ \n"
- set_water_pop_tt:0 "Set £water_texticon  Water Culture: $RIGHT|Y2%$ \n"
- set_air_pop_tt:0 "Set £air_texticon  Air Culture: $RIGHT|Y2%$ \n"
- set_nonbender_pop_tt:0 "Set £pluralist_texticon  Pluralist Culture: $RIGHT|Y2%$ \n"
+ set_fire_pop_tt:0 "Set £fire_texticon  Fire Culture: $RIGHT|Y2%%$ \n"
+ set_earth_pop_tt:0 "Set £earth_texticon  Earth Culture: $RIGHT|Y2%%$ \n"
+ set_water_pop_tt:0 "Set £water_texticon  Water Culture: $RIGHT|Y2%%$ \n"
+ set_air_pop_tt:0 "Set £air_texticon  Air Culture: $RIGHT|Y2%%$ \n"
+ set_nonbender_pop_tt:0 "Set £pluralist_texticon  Pluralist Culture: $RIGHT|Y2%%$ \n"
 
- add_fire_pop_100_tt:0 "£fire_texticon  Fire Culture: $RIGHT|+=2%*$ \n"
- add_earth_pop_100_tt:0 "£earth_texticon  Earth Culture: $RIGHT|+=2%*$ \n"
- add_water_pop_100_tt:0 "£water_texticon  Water Culture: $RIGHT|+=2%*$ \n"
- add_air_pop_100_tt:0 "£air_texticon  Air Culture: $RIGHT|+=2%*$ \n"
- add_nonbender_pop_100_tt:0 "£pluralist_texticon  Pluralist Culture: $RIGHT|+=2%*$ \n"
+ add_fire_pop_100_tt:0 "£fire_texticon  Fire Culture: $RIGHT|+=2%%$ \n"
+ add_earth_pop_100_tt:0 "£earth_texticon  Earth Culture: $RIGHT|+=2%%$ \n"
+ add_water_pop_100_tt:0 "£water_texticon  Water Culture: $RIGHT|+=2%%$ \n"
+ add_air_pop_100_tt:0 "£air_texticon  Air Culture: $RIGHT|+=2%%$ \n"
+ add_nonbender_pop_100_tt:0 "£pluralist_texticon  Pluralist Culture: $RIGHT|+=2%%$ \n"
 
  add_mission_ttp:0 "Add Missions: $RIGHT|+0$"
 

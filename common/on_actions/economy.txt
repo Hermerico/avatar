@@ -183,6 +183,8 @@ on_actions = {
 
 			money_calculation = yes
 
+			resource_storage_calculation = yes
+
 		}
 	}
 

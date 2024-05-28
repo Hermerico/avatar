@@ -64,7 +64,7 @@ peasant_output = {
 	}
 }
 
-peasant_revolt_risk = {
+peasant_stability = {
 	base = 0
 	modifier = {
 		check_variable = { modifier@peasant_opinion > 9 }
@@ -163,7 +163,7 @@ nobility_unit_quality = {
 ###############################
 
 
-labourers_stability = {
+labourers_prosperity = {
 	base = 0
 	modifier = {
 		check_variable = { modifier@labourers_opinion > 9 }
@@ -171,11 +171,11 @@ labourers_stability = {
 	}
 	modifier = {
 		check_variable = { modifier@labourers_opinion > 14 }
-		add = 0.1
+		add = 0.05
 	}
 	modifier = {
 		check_variable = { modifier@labourers_opinion > 24 }
-		add = 0.1
+		add = 0.05
 	}
 
 	modifier = {
@@ -184,11 +184,11 @@ labourers_stability = {
 	}
 	modifier = {
 		check_variable = { modifier@labourers_opinion < -14 }
-		add = -0.1
+		add = -0.05
 	}
 	modifier = {
 		check_variable = { modifier@labourers_opinion < -24 }
-		add = -0.1
+		add = -0.05
 	}
 }
 

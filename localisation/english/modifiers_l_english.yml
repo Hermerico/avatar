@@ -194,6 +194,8 @@
  #custom
  garrison_factor_modifier:0 "Required Garrisons"
  nonbender_factor:0 "Nonbenders in Army"
+ conscription_factor_new:0 "£manpower_texticon  Recruitable Population"
+ conscription_factor_new_descDESC:0 "Modifies how much your manpower you can access from states."
 
  bender_target:0 "Nonbenders in Army"
  bender_unit_factor:0 "Bender Units"
@@ -223,6 +225,7 @@
  avatar_opinion_modifier:0 "Can influnce the Avatar´s opinion of us"
  women_recruitment_modifier:0 "Women are empowered"
  tech_share_modifier:0 "§YInventions§! can not be stolen or shared"
+ allow_colony_modifier:0 "Can colonise uninhabited lands"
  ministry_advisor_cost:0 "Ministry Advisor Cost"
  institution_cost:0 "Institution Cost"
  law_change_cost:0 "Change Law Cost"
@@ -301,6 +304,8 @@
 
  available_missions:0 "£missions_texticon  Available Missions"
  available_missions_desc:0 "Number of allowed missions at the same time"
+ active_missions:0 "£missions_texticon  Active Missions"
+ active_emergencies:0 "£emergency_texticon  Active Emergencies"
 
  weekly_centralisation:0 "£centralisation_weekly_texticon  Weekly Centralisation"
  centralisation_target_modifier:0 "£centralisation_target_texticon  Centralisation Target"
@@ -462,6 +467,17 @@
  max_rations_building_k:0 "£ration_texticon|1  Ration Capacity (K)"
  max_grain_building_k:0 "£resources_texticons|1  Grain Capacity (K)"
  grain_capacity_factor:0 "£resources_texticons|1  Grain Capacity"
+ max_animal_products_building_k:0 "£resources_texticons|2  Animal Products Capacity (K)"
+ max_textile_building_k:0 "£resources_texticons|3  Textile Capacity (K)"
+ max_wood_building_k:0 "£resources_texticons|4  Wood Capacity (K)"
+ max_stone_building_k:0 "£resources_texticons|5  Mineral Capacity (K)"
+ max_iron_building_k:0 "£resources_texticons|7  Iron Capacity (K)"
+ max_steel_building_k:0 "£resources_texticons|8  Steel Capacity (K)"
+ max_consumer_goods_building_k:0 "£economy_resources_texticons|2  Consumer Goods Capacity (K)"
+ max_luxury_goods_building_k:0 "£economy_resources_texticons|3  Luxury Goods Capacity (K)"
+ max_planks_building_k:0 "£economy_resources_texticons|4  Planks Capacity (K)"
+ max_bricks_building_k:0 "£economy_resources_texticons|5  Bricks Capacity (K)"
+ max_steel_beams_building_k:0 "£economy_resources_texticons|6  Steel Beams Capacity (K)"
 
  prosperity:0 "£prosperity_texticon  Prosperity Growth"
  prosperity_factor:0 "£prosperity_texticon  Max Prosperity"
@@ -547,6 +563,8 @@
  animal_weaving_upgrade:0 "Cloth Anmial Weaving"
  ranch_upgrade:0 "Breeding Ranch"
  industrial_zone:0 "Industrial Sector"
+
+ nobility_joined_revolt_tt:0 "An Elite Nobility Division will rise up in every revolting state in case of war."
 
  earthkingdom_operation_bases_false:0 "§RSpecial effect deactivated due to lack of operation bases.§!"
  earthkingdom_operation_bases_true:0 "Operation Bases: [?ROOT.earth_bases_var|0Y]"

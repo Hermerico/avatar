@@ -34,16 +34,6 @@ ideas = {
 			}
 		}
 
-		tax_relief = {
-
-			removal_cost = -1
-
-			modifier = {
-				peasant_opinion = 10
-				taxation = -0.05
-			}
-		}
-
 		child_labour = {
 
 			removal_cost = -1

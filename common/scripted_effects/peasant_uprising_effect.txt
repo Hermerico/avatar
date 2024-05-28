@@ -329,6 +329,72 @@ peasant_uprising_effect = {
 
 }
 
+decide_revolt_concern = {
+	custom_effect_tooltip = peasants_decide_concern_ttp
+	hidden_effect = {
+		random_list = {
+			0 = {
+				modifier = {
+					has_idea = family_support_1
+					add = 20
+				}
+				modifier = {
+					has_idea = family_support_2
+					add = 10
+				}
+				modifier = {
+					has_idea = tax_relief
+					factor = 0
+				}
+				country_event = { 
+					id = generic_peasant.14
+					days = 4
+					random_days = 4 
+				}
+			}
+			0 = {
+				modifier = {
+					has_idea = scraping_the_barrel
+					add = 40
+				}
+				modifier = {
+					has_idea = all_adults_serve
+					add = 30
+				}
+				modifier = {
+					has_idea = service_by_requirement
+					add = 20
+				}
+				modifier = {
+					has_idea = extensive_conscription
+					add = 10
+				}
+				modifier = {
+					check_variable = { 
+						var = war_exhaustion_variable
+						value = 20
+						compare = less_than
+					}
+					factor = 0
+				}
+				country_event = { 
+					id = generic_peasant.15
+					days = 4
+					random_days = 4 
+				}
+			}
+			1 = {
+				
+				country_event = { 
+					id = generic_peasant.16
+					days = 4
+					random_days = 4 
+				}
+			}
+		}
+	}
+}
+
 peasant_war_effect = {
 
 	every_state = {
@@ -356,6 +422,12 @@ peasant_war_effect = {
 				is_in_array = { PREV.PREV.revolt_states = THIS }
 			}
 			five_peasant_units = yes
+			if = {
+				limit = {
+					PREV.PREV = { has_idea = nobility_joined_revolt }
+				}
+				nobility_unit = yes
+			}
 		}
 		every_country = {
 			limit = {
@@ -396,6 +468,114 @@ tech_and_template = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			has_government = air_culture
+			PREV = {
+				has_idea = nobility_joined_revolt
+			}
+		}
+		set_technology = {
+			airbender_equipment_1 = 1
+		}
+		if = {
+			limit = {
+				NOT = { has_template = "Angry Nobles" }
+			}
+			division_template = {
+				name = "Angry Nobles"
+				#is_locked = yes
+				priority = 0
+				regiments = {
+					airbender = { x = 0 y = 0 }
+					airbender = { x = 0 y = 1 }
+					airbender = { x = 1 y = 0 }
+					airbender = { x = 1 y = 1 }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_government = earth_culture
+			PREV = {
+				has_idea = nobility_joined_revolt
+			}
+		}
+		set_technology = {
+			earthbender_equipment_1 = 1
+		}
+		if = {
+			limit = {
+				NOT = { has_template = "Angry Nobles" }
+			}
+			division_template = {
+				name = "Angry Nobles"
+				#is_locked = yes
+				priority = 0
+				regiments = {
+					earthbender = { x = 0 y = 0 }
+					earthbender = { x = 0 y = 1 }
+					earthbender = { x = 1 y = 0 }
+					earthbender = { x = 1 y = 1 }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_government = water_culture
+			PREV = {
+				has_idea = nobility_joined_revolt
+			}
+		}
+		set_technology = {
+			waterbender_equipment_1 = 1
+		}
+		if = {
+			limit = {
+				NOT = { has_template = "Angry Nobles" }
+			}
+			division_template = {
+				name = "Angry Nobles"
+				#is_locked = yes
+				priority = 0
+				regiments = {
+					waterbender = { x = 0 y = 0 }
+					waterbender = { x = 0 y = 1 }
+					waterbender = { x = 1 y = 0 }
+					waterbender = { x = 1 y = 1 }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_government = fire_culture
+			PREV = {
+				has_idea = nobility_joined_revolt
+			}
+		}
+		set_technology = {
+			firebender_equipment_1 = 1
+		}
+		if = {
+			limit = {
+				NOT = { has_template = "Angry Nobles" }
+			}
+			division_template = {
+				name = "Angry Nobles"
+				#is_locked = yes
+				priority = 0
+				regiments = {
+					firebender = { x = 0 y = 0 }
+					firebender = { x = 0 y = 1 }
+					firebender = { x = 1 y = 0 }
+					firebender = { x = 1 y = 1 }
+				}
+			}
+		}
+	}
 }
 
 five_peasant_units = {
@@ -417,6 +597,12 @@ five_peasant_units = {
 	}
 	create_unit = {
 		division = "name = \"Peasants\" division_template = \"Angry Peasants\" 	start_experience_factor = 0.0" 
+		owner = PREV
+	}
+}
+nobility_unit = {
+	create_unit = {
+		division = "name = \"Nobles\" division_template = \"Angry Nobles\" 	start_experience_factor = 1.0" 
 		owner = PREV
 	}
 }
@@ -456,5 +642,67 @@ peasant_victory_without_tag_switch = {
 				set_state_owner_to = PREV.PREV
 			}
 		}
+	}
+}
+
+
+calculate_revolt_risk_var = {
+	##### revolt risk base
+
+	set_variable = { peasant_revolt_risk_var = modifier@peasant_opinion }
+	multiply_variable = { peasant_revolt_risk_var = -0.01 }
+	multiply_variable = { peasant_revolt_risk_var = unepmployed_percentage }
+
+	set_variable = { labourers_revolt_risk_var = modifier@labourers_opinion }
+	multiply_variable = { labourers_revolt_risk_var = -0.01 }
+	multiply_variable = { labourers_revolt_risk_var = epmployed_percentage }
+
+	set_variable = { peasant_revolt_risk_variable = peasant_revolt_risk_var }
+	add_to_variable = { peasant_revolt_risk_variable = labourers_revolt_risk_var }
+	multiply_variable = { peasant_revolt_risk_variable = 100 }
+
+	##### authority factor
+
+	set_variable = { authority_revolt_factor = current_authority }
+	multiply_variable = { authority_revolt_factor = 0.01 }
+
+	multiply_variable = { peasant_revolt_risk_variable = authority_revolt_factor }
+
+	### literacy factor
+
+	set_variable = { literacy_revolt_factor = 50 }
+	add_to_variable = { literacy_revolt_factor = literacy_variable }
+	multiply_variable = { literacy_revolt_factor = 0.01 }
+
+	multiply_variable = { peasant_revolt_risk_variable = literacy_revolt_factor }
+
+	### stability factor
+
+	set_variable = { stability_revolt_factor = 1 }
+	subtract_from_variable = { stability_revolt_factor = var:stability@ROOT }
+	clamp_variable = {
+		var = stability_revolt_factor
+		min = 0
+	}
+	multiply_variable = { stability_revolt_factor = 2 }
+	multiply_variable = { stability_revolt_factor = stability_revolt_factor }
+	
+	multiply_variable = { peasant_revolt_risk_variable = stability_revolt_factor }
+
+	### modifier factor
+
+	set_variable = { revolt_factor_modifier = 1 }
+	add_to_variable = { revolt_factor_modifier = modifier@revolt_risk }
+	clamp_variable = {
+		var = revolt_factor_modifier
+		min = 0
+	}
+
+	multiply_variable = { peasant_revolt_risk_variable = revolt_factor_modifier }
+
+	clamp_variable = {
+		var = peasant_revolt_risk_variable
+		min = 0
+		max = 100
 	}
 }

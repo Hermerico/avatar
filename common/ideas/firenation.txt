@@ -690,6 +690,16 @@ ideas = {
 
 		}
 
+		FIR_colonial_administration = {
+			
+			removal_cost = -1
+
+			modifier = {
+				allow_colony_modifier = 1
+			}
+
+		}
+
 		FIR_private_investors = {
 			
 			removal_cost = -1

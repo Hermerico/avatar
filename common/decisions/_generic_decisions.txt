@@ -127,27 +127,27 @@ reoccupy_category = {
 			FROM = {
 				set_variable = {
 					var = fire_pop
-					value = ROOT.party_popularity@fire_culture
+					value = ROOT.party_popularity_100@fire_culture
 					tooltip = set_fire_pop_tt
 				}
 				set_variable = {
 					var = earth_pop
-					value = ROOT.party_popularity@earth_culture
+					value = ROOT.party_popularity_100@earth_culture
 					tooltip = set_earth_pop_tt
 				}
 				set_variable = {
 					var = water_pop
-					value = ROOT.party_popularity@water_culture
+					value = ROOT.party_popularity_100@water_culture
 					tooltip = set_water_pop_tt
 				}
 				set_variable = {
 					var = air_pop
-					value = ROOT.party_popularity@air_culture
+					value = ROOT.party_popularity_100@air_culture
 					tooltip = set_air_pop_tt
 				}
 				set_variable = {
 					var = nonbender_pop
-					value = ROOT.party_popularity@pluralist_culture
+					value = ROOT.party_popularity_100@pluralist_culture
 					tooltip = set_nonbender_pop_tt
 				}
 

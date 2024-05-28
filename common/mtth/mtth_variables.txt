@@ -21,10 +21,25 @@ core_state_cost = {
 
 }
 
+colonise_state_pp_cost = {
+	base = 100
+	modifier = {
+		set_temp_variable = { modifier_factor = 1 }
+		add_to_temp_variable = { modifier_factor = modifier@colonise_state_cost_factor }
+		clamp_temp_variable = {
+			var = modifier_factor
+			min = 0
+		}
+		
+		factor = modifier_factor
+	}
+
+}
+
 colonise_state_cost = {
 	base = 0
 	modifier = {
-		set_temp_variable = { distance_cost = distance_to@ROOT.capital }
+		set_temp_variable = { distance_cost = PREV.distance_to@ROOT.capital }
 		divide_temp_variable = { distance_cost = 5 }
 		round_temp_variable = distance_cost
 		
@@ -189,7 +204,7 @@ legitimacy_war_support = {
 	modifier = {
 		set_temp_variable = { war_support = 50 }
 		subtract_from_temp_variable = { war_support = centralisation_variable }
-		divide_temp_variable = { war_support = 100 }
+		divide_temp_variable = { war_support = 250 }
 		#clamp_temp_variable = { var = war_support min = 0 }
 		
 		add = war_support
@@ -201,7 +216,7 @@ legitimacy_stability = {
 	modifier = {
 		set_temp_variable = { stability = -50 }
 		add_to_temp_variable = { stability = centralisation_variable }
-		divide_temp_variable = { stability = 100 }
+		divide_temp_variable = { stability = 250 }
 		#clamp_temp_variable = { var = stability min = 0 }
 		
 		add = stability
@@ -240,6 +255,15 @@ unit_quality_1 = {
 	base = 0
 	modifier = {
 		set_temp_variable = { unit_quality = unit_quality_variable }
+		add_to_temp_variable = { unit_quality = 0.5 }
+		
+		add = unit_quality
+	}
+}
+unit_quality_2 = {
+	base = 0
+	modifier = {
+		set_temp_variable = { unit_quality = modifier@unit_quality_target }
 		add_to_temp_variable = { unit_quality = 0.5 }
 		
 		add = unit_quality
@@ -405,6 +429,46 @@ nonbender_factor = {
 		
 		add = nonbender_modifier
 	}
+
+}
+
+additional_conscription_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { nonbender_modifier = -1 }
+		add_to_temp_variable = { nonbender_modifier = bender_percentage }
+
+		set_temp_variable = { nonbender_factor = modifier@nonbender_factor }
+		multiply_temp_variable = { nonbender_factor = -1 }
+		clamp_temp_variable = {
+			var = nonbender_factor
+			min = 0
+			max = 1
+		}
+
+		multiply_temp_variable = { nonbender_modifier = nonbender_factor }
+
+
+		set_temp_variable = { conscription_factor_reduction = 1 }
+		add_to_temp_variable = { conscription_factor_reduction = nonbender_modifier }
+
+		set_temp_variable = { conscription_factor = 1 }
+		add_to_temp_variable = { conscription_factor = modifier@conscription_factor_new }
+
+		clamp_temp_variable = {
+			var = conscription_factor
+			min = 0
+		}
+
+		multiply_temp_variable = { conscription_factor_reduction = conscription_factor }
+
+		set_temp_variable = { extra_conscription_factor = -1 }
+		add_to_temp_variable = { extra_conscription_factor = conscription_factor_reduction }
+		subtract_from_temp_variable = { extra_conscription_factor = nonbender_modifier }
+		
+		add = extra_conscription_factor
+	}
+
 }
 
 

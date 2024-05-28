@@ -35,7 +35,7 @@ scripted_gui = {
 						}
 					}
 					ROOT = {
-					set_variable = { show_construction = 1 }
+						set_variable = { show_construction = 1 }
 					}
 				}
 			}
@@ -44,6 +44,14 @@ scripted_gui = {
 
 				ROOT = {
 					transfer_state = PREV
+
+					set_temp_variable = { pp_cost_colony = mtth:colonise_state_pp_cost }
+					multiply_temp_variable = { pp_cost_colony = -1 }
+					add_political_power = var:pp_cost_colony
+
+					set_temp_variable = { money_cost_colony = mtth:colonise_state_cost }
+					multiply_temp_variable = { money_cost_colony = -1 }
+					subtract_from_variable = { var = money_variable value = money_cost_colony tooltip = money_add_tooltip }
 
 					add_timed_idea = { idea = colonial_investments  days = 365 }
 
@@ -121,12 +129,22 @@ scripted_gui = {
 					NOT = {
 						has_idea = colonial_investments
 					}
-					has_political_power > THIS.mtth:colonise_state_cost
+					has_political_power > mtth:colonise_state_pp_cost
+					check_variable = {
+						var = money_variable
+						value = mtth:colonise_state_cost
+						compare = greater_than_or_equals
+						tooltip = check_money_tooltip
+					}
+					check_variable = {
+						var = modifier@allow_colony_modifier
+						value = 0
+						compare = greater_than
+						tooltip = allow_colony_modifier
+					}
 				}
 
 				NOT = {
-					is_core_of = ROOT
-					is_controlled_by = ROOT
 					has_dynamic_modifier = { modifier = new_settlement }
 				}
 
@@ -143,13 +161,16 @@ scripted_gui = {
 						is_controlled_by = ROOT
 					}
 				}
-				has_dynamic_modifier = { modifier = genocide_state }
 			}
 
 			send_settlers_visible = {
 				NOT = {
 					is_core_of = ROOT
 					is_controlled_by = ROOT
+				}
+				OR = {
+					has_dynamic_modifier = { modifier = genocide_state }
+					state_population < 1
 				}
 			}
 

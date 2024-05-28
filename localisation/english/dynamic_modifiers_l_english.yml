@@ -15,9 +15,9 @@
  harvesting_factor:0 "Harvesting Earnings"
 
 
- peasants_dynamic_modifier:0 "Peasants"
+ peasant_dynamic_modifier:0 "Peasants"
  
- #peasants_dynamic_modifier:0 "[GetPeasantMood]"
+ #peasant_dynamic_modifier:0 "[GetPeasantMood]"
  integrated_peasants:0 "Integrated Peasants"
  happy_peasants:0 "Happy Peasants"
  pleased_peasants:0 "Pleased Peasants"
@@ -72,6 +72,7 @@
  civs_from_conversion:0 "£mil_civ  Militaries used in Civil Sector"
  mils_and_dockyards_extra:0 "£mil_factory  £dockyard_texticon  Military and Naval Capacities"
  dynamic_bender_capacity:0 "Bender recruitment Law"
+ dynamic_conscription_factor:0 "$conscription_factor_new$"
  farm_scripted_resources:0 "$farm_plural$"
  ranch_scripted_resources:0 "$ranch_plural$"
  fishing_stand_scripted_resources:0 "$fishing_stand_plural$"

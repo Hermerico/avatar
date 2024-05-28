@@ -110,7 +110,12 @@ build_steelworks = {
 
 build_food = {
 	allowed = {
-		always = yes
+		NOT = {
+			OR = {
+				tag = NWT
+				tag = SWT
+			}
+		}
 	}
 	enable = {
 		OR = {
@@ -136,7 +141,23 @@ build_food = {
 		value = 1000
 	}
 }
-
+water_tribes_build_food = {
+	allowed = {
+		OR = {
+			tag = NWT
+			tag = SWT
+		}
+	}
+	enable = {
+		compare_variable = {FROM.ration_balance < 0}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = fishing_stand
+		value = 10
+	}
+}
 build_consumer = {
 	allowed = {
 		always = yes

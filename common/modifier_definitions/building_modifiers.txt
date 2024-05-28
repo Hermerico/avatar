@@ -171,6 +171,74 @@ max_grain_building_k = {					#### grain storage
 	precision = 2
 	postfix = none
 }
+max_animal_products_building_k = {					#### animal products storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_textile_building_k = {					#### textile storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_wood_building_k = {					#### wood storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_stone_building_k = {					#### stone storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_iron_building_k = {					#### iron storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_steel_building_k = {					#### steel storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+
+max_consumer_goods_building_k = {					#### consumer goods storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_luxury_goods_building_k = {					#### luxury goods storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_planks_building_k = {					#### planks storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_bricks_building_k = {					#### bricks storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_steel_beams_building_k = {					#### steel beams storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+
 
 
 farm_output = {								#### base grain output of farms

@@ -95,6 +95,12 @@ guiTypes = {
 				pdx_tooltip = "AVATAR_AANG_TOOLTIP"
 			}
 			iconType = {
+				name ="aang_missing_portrait"
+				spriteType = "GFX_avatar_aang_missing"
+				position = { x= 80 y = 74 }
+				pdx_tooltip = "AVATAR_AANG_MISSING_TOOLTIP"
+			}
+			iconType = {
 				name ="misu_portrait"
 				spriteType = "GFX_avatar_misu"
 				position = { x= 80 y = 74 }

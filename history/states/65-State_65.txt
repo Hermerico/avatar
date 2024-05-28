@@ -2,6 +2,8 @@
 state={
 	id=65
 	name="STATE_65"
+	manpower=5000
+	state_category=town
 
 	history = {
 		pop_growth = yes
@@ -25,7 +27,6 @@ state={
 		add_to_variable = {
 			var = water
 			value = 2
-
 		}
 		add_to_variable = {
 			var = stonefield
@@ -35,11 +36,7 @@ state={
 			var = animal
 			value = 3
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
-
-		}
+		
 		victory_points = {
 			6199 15 
 		}
@@ -57,7 +54,7 @@ state={
 				}
 			}
 
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = DIN
@@ -68,11 +65,7 @@ state={
 		}
 		106.2.4 = {
 			owner = DIN
-			controller = DIN
-			FIR = {
-				set_province_controller = 1394
-
-			}
+			controller = FIR
 
 			instant_resource_calc = yes
 		}
@@ -88,7 +81,4 @@ state={
 	provinces = {
 		361 892 920 1198 1275 1741 2557 3855 4278 4930 6161 6177 6183 6199 6202 6214 
 	}
-	manpower=5000
-	
-	state_category=town
 }

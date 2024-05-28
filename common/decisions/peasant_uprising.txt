@@ -1,5 +1,15 @@
 peasant_uprising_category = {
 
+
+
+
+	 #### #####  ###   ###  ###    ###
+	#       #   #   # #     #       # 
+	 ###    #   ##### #  ## ##      # 
+	    #   #   #   # #   # #       # 
+	####    #   #   #  ###  ###    ###
+
+
 	
 	peasant_initiate_uprising = {
 
@@ -25,7 +35,7 @@ peasant_uprising_category = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = pleased_peasants_ttp
-				check_variable = { modifier@peasant_opinion > 0 }
+				check_variable = { peasant_revolt_risk_variable = 0 }
 			}
 		}
 
@@ -42,9 +52,76 @@ peasant_uprising_category = {
 		}
 
 		timeout_effect = {
+			decide_revolt_concern = yes
 			activate_mission = peasants_in_revolt
 		}
 	}
+
+	peasant_uprising_tax_relief = {
+
+		icon = peasant_tax_relief
+
+		visible = {
+			has_active_mission = peasant_initiate_uprising
+			NOT = {
+				has_idea = tax_relief
+			}
+		}
+		available = {
+			
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = tax_relief
+				days = 365
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+
+	}
+
+	peasant_uprising_imprison_peasant_leaders = {
+
+		icon = imprison_peasant_leaders
+
+		visible = {
+			has_active_mission = peasant_initiate_uprising
+			NOT = {
+				has_idea = imprison_peasant_leaders
+			}
+		}
+		available = {
+			
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = imprison_peasant_leaders
+				days = 365
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+
+	}
+
+
+
+	 #### #####  ###   ###  ###    ### ###
+	#       #   #   # #     #       #   # 
+	 ###    #   ##### #  ## ##      #   # 
+	    #   #   #   # #   # #       #   # 
+	####    #   #   #  ###  ###    ### ###
+
+
 
 	peasants_in_revolt = {
 
@@ -80,6 +157,252 @@ peasant_uprising_category = {
 		}
 	}
 
+	lower_taxation_demand = {
+
+		icon = peasant_uprising
+
+		allowed = {
+			always = no
+		}
+
+		activation = {
+			always = no
+		}
+
+		days_mission_timeout = 120
+		is_good = no
+
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = active_peasant_revolt
+			}
+			has_active_mission = peasants_at_war
+		}
+
+		available = {
+			if = {
+				limit = { has_country_flag = revolt_family_support_1 }
+				OR = {
+					has_idea = family_support_2
+					has_idea = family_support_3
+					has_idea = family_support_4
+					has_idea = family_support_5
+				}
+			}
+			if = {
+				limit = { has_country_flag = revolt_family_support_2 }
+				OR = {
+					has_idea = family_support_3
+					has_idea = family_support_4
+					has_idea = family_support_5
+				}
+			}
+			if = {
+				limit = { has_country_flag = revolt_family_support_3 }
+				OR = {
+					has_idea = family_support_4
+					has_idea = family_support_5
+				}
+			}
+		}
+
+		complete_effect = {
+			clr_country_flag = revolt_family_support_1
+			clr_country_flag = revolt_family_support_2
+			clr_country_flag = revolt_family_support_3
+
+			add_to_variable = {
+				var = peasant_appeasement_variable
+				value = 20
+				tooltip = peasant_appeasement_add_tooltip
+			}
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				var = peasant_anger_variable
+				value = 15
+				tooltip = peasant_anger_add_tooltip
+			}
+			decide_revolt_concern = yes
+		}
+	}
+
+	lower_conscription_demand = {
+
+		icon = peasant_uprising
+
+		allowed = {
+			always = no
+		}
+
+		activation = {
+			always = no
+		}
+
+		days_mission_timeout = 120
+		is_good = no
+
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = active_peasant_revolt
+			}
+			has_active_mission = peasants_at_war
+		}
+
+		available = {
+			if = {
+				limit = { has_country_flag = revolt_scraping_the_barrel }
+				OR = {
+					has_idea = all_adults_serve
+					has_idea = service_by_requirement
+					has_idea = extensive_conscription
+					has_idea = limited_air_conscription
+					has_idea = limited_fire_conscription
+					has_idea = limited_earth_conscription
+					has_idea = limited_water_conscription
+				}
+			}
+			if = {
+				limit = { has_country_flag = revolt_all_adults_serve }
+				OR = {
+					has_idea = service_by_requirement
+					has_idea = extensive_conscription
+					has_idea = limited_air_conscription
+					has_idea = limited_fire_conscription
+					has_idea = limited_earth_conscription
+					has_idea = limited_water_conscription
+				}
+			}
+			if = {
+				limit = { has_country_flag = revolt_service_by_requirement }
+				OR = {
+					has_idea = extensive_conscription
+					has_idea = limited_air_conscription
+					has_idea = limited_fire_conscription
+					has_idea = limited_earth_conscription
+					has_idea = limited_water_conscription
+				}
+			}
+			if = {
+				limit = { has_country_flag = revolt_extensive_conscription }
+				OR = {
+					has_idea = limited_air_conscription
+					has_idea = limited_fire_conscription
+					has_idea = limited_earth_conscription
+					has_idea = limited_water_conscription
+				}
+			}
+		}
+
+		complete_effect = {
+			clr_country_flag = revolt_scraping_the_barrel
+			clr_country_flag = revolt_all_adults_serve
+			clr_country_flag = revolt_service_by_requirement
+			clr_country_flag = revolt_extensive_conscription
+
+			add_to_variable = {
+				var = peasant_appeasement_variable
+				value = 20
+				tooltip = peasant_appeasement_add_tooltip
+			}
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				var = peasant_anger_variable
+				value = 15
+				tooltip = peasant_anger_add_tooltip
+			}
+			decide_revolt_concern = yes
+		}
+	}
+
+	lower_centralisation_demand = {
+
+		icon = peasant_uprising
+
+		allowed = {
+			always = no
+		}
+
+		activation = {
+			always = no
+		}
+
+		days_mission_timeout = 120
+		is_good = no
+
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = active_peasant_revolt
+			}
+			has_active_mission = peasants_at_war
+		}
+
+		available = {
+			check_variable = {
+				var = current_authority
+				value = authority_target
+				compare = less_than_or_equals
+				tooltip = check_liberty_tooltip
+			}
+		}
+
+		complete_effect = {
+			clear_variable = authority_target
+
+			add_to_variable = {
+				var = peasant_appeasement_variable
+				value = 20
+				tooltip = peasant_appeasement_add_tooltip
+			}
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				var = peasant_anger_variable
+				value = 15
+				tooltip = peasant_anger_add_tooltip
+			}
+			decide_revolt_concern = yes
+		}
+	}
+
+	peasant_uprising_appeasing_words = {
+
+		icon = peasant_speech
+
+		visible = {
+			has_active_mission = peasants_in_revolt
+		}
+		days_re_enable = 120
+
+		cost = 10
+
+		complete_effect = {
+			add_to_variable = {
+				var = peasant_appeasement_variable
+				value = 5
+				tooltip = peasant_appeasement_add_tooltip
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+	}
+
+
+	 #### #####  ###   ###  ###    ### ### ###
+	#       #   #   # #     #       #   #   # 
+	 ###    #   ##### #  ## ##      #   #   # 
+	    #   #   #   # #   # #       #   #   # 
+	####    #   #   #  ###  ###    ### ### ###
+
+	
+
 	peasants_at_war = {
 
 		icon = peasant_uprising
@@ -110,10 +433,19 @@ peasant_uprising_category = {
 		}
 
 		timeout_effect = {
-			country_event = generic_peasant.4
+			country_event = { id = generic_peasant.4 }
 			activate_mission = peasants_war_progress
 		}
 	}
+
+
+	###  ###  ###   ####  ###  #   # #####    #   #   #  ###  ###  
+	#  # #   #   # #     #   # ##  #   #      #   #   # #   # #  # 
+	###  ##  #####  ###  ##### # # #   #      #   #   # ##### ###  
+	#    #   #   #     # #   # #  ##   #       # # # #  #   # #  # 
+	#    ### #   # ####  #   # #   #   #        #   #   #   # #  # 
+
+
 
 	peasants_war_progress = {
 
@@ -139,17 +471,17 @@ peasant_uprising_category = {
 
 		available = {
 			all_core_state = {
-				is_in_array = { ROOT.revolt_states = THIS }
+				is_in_array = { ROOT.revolt_states = THIS.id }
 				is_controlled_by = ROOT
 			}
 		}
 
 		complete_effect = {
-			country_event = generic_peasant.9
+			country_event = { id = generic_peasant.9 }
 		}
 
 		timeout_effect = {
-			country_event = generic_peasant.10
+			country_event = { id = generic_peasant.10 }
 		}
 
 		ai_will_do = {
@@ -187,64 +519,12 @@ peasant_uprising_category = {
 		}
 
 		complete_effect = {
-			country_event = generic_peasant.11
+			country_event = { id = generic_peasant.11 }
 		}
 
 		timeout_effect = {
-			country_event = generic_peasant.12
+			country_event = { id = generic_peasant.12 }
 		}
-	}
-
-	peasant_uprising_tax_relief = {
-
-		icon = peasant_tax_relief
-
-		visible = {
-			has_active_mission = peasant_initiate_uprising
-		}
-		available = {
-			NOT = {
-				has_idea = tax_relief
-			}
-		}
-
-		cost = 50
-
-		complete_effect = {
-			add_timed_idea = {
-				idea = tax_relief
-				days = 365
-			}
-		}
-		ai_will_do = {
-			base = 100
-		}
-
-	}
-
-	peasant_uprising_appeasing_words = {
-
-		icon = peasant_speech
-
-		visible = {
-			has_active_mission = peasants_in_revolt
-		}
-		days_re_enable = 120
-
-		cost = 10
-
-		complete_effect = {
-			add_to_variable = {
-				var = peasant_appeasement_variable
-				value = 2
-				tooltip = peasant_appeasement_add_tooltip
-			}
-		}
-
-		ai_will_do = {
-			base = 100
-		}
-
 	}
 
 

@@ -25,14 +25,21 @@ famine = {
 			check_variable = { ration_penalty > -0.5 }
 		}
 	}
-	MONTHLY_POPULATION = -2
-	stability_factor = -1
+	MONTHLY_POPULATION = family_penalty_2
 
-	army_org_factor = -0.25
-	navy_org_factor = -0.25
-	supply_consumption_factor = 1
-	production_factory_max_efficiency_factor = -1
-	resistance_target = 0.5
+	#### army
+	army_org_factor = soldier_penalty
+	navy_org_factor  = soldier_penalty
+	supply_consumption_factor = soldier_penalty_good
+
+	#### population
+	stability_factor = family_penalty
+
+	#### workers
+	production_factory_max_efficiency_factor = working_penalty
+
+	#### occupied
+	resistance_target = occupied_penalty
 }
 food_shortages = {
 	enable = { always = yes }
@@ -44,7 +51,7 @@ food_shortages = {
 			check_variable = { famine_check < -0.5 }
 		}
 	}
-	MONTHLY_POPULATION = ration_penalty
+	MONTHLY_POPULATION = family_penalty_2
 
 	#### army
 	army_org_factor = soldier_penalty

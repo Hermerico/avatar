@@ -40,17 +40,20 @@ country_event = {
 				max = 100
 			}
 
-			add_ideas = peasant_distrust
-			#peasant_opinion_recalc = yes   ###outdated opinion mechanic
+			add_ideas = revolt_distrust_modifier
+			calculate_revolt_risk_var = yes
+			activate_mission = peasant_initiate_uprising
 			
 			if = {
 				limit = {
-					custom_trigger_tooltip = {
-						tooltip = angry_peasants_ttp
-						check_variable = { modifier@peasant_opinion < 0 }
-					}
+					check_variable = { modifier@nobility_opinion < 0 }
+					has_dynamic_modifier = { modifier = nobility_dynamic_modifier }
 				}
-				activate_mission = peasant_initiate_uprising
+				country_event = { 
+					id = generic_peasant.13
+					days = 4
+					random_days = 4 
+				}
 			}
 		}
 	}
@@ -389,6 +392,143 @@ country_event = {
 		name = generic_peasant.12.a
 
 		peasant_victory_without_tag_switch = yes
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+
+
+### nobility joins the peasants
+country_event = {
+	id = generic_peasant.13
+	title = generic_peasant.13.t
+	desc = generic_peasant.13.d
+
+	picture = GFX_peasant_generic_13
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = nobility_joined_revolt
+		}
+	}
+
+	option = {
+		name = generic_peasant.13.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### demands to lower taxes
+country_event = {
+	id = generic_peasant.14
+	title = generic_peasant.14.t
+	desc = generic_peasant.14.d
+
+	picture = GFX_peasant_generic_14
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_idea = family_support_1 }
+				set_country_flag = revolt_family_support_1
+			}
+			else_if = {
+				limit = { has_idea = family_support_2 }
+				set_country_flag = revolt_family_support_2
+			}
+			else_if = {
+				limit = { has_idea = family_support_3 }
+				set_country_flag = revolt_family_support_3
+			}
+			activate_mission = lower_taxation_demand
+		}
+	}
+
+	option = {
+		name = generic_peasant.14.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### demands to lower conscription
+country_event = {
+	id = generic_peasant.15
+	title = generic_peasant.15.t
+	desc = generic_peasant.15.d
+
+	picture = GFX_peasant_generic_15
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_idea = scraping_the_barrel }
+				set_country_flag = revolt_scraping_the_barrel
+			}
+			else_if = {
+				limit = { has_idea = all_adults_serve }
+				set_country_flag = revolt_all_adults_serve
+			}
+			else_if = {
+				limit = { has_idea = service_by_requirement }
+				set_country_flag = revolt_service_by_requirement
+			}
+			else_if = {
+				limit = { has_idea = extensive_conscription }
+				set_country_flag = revolt_extensive_conscription
+			}
+			activate_mission = lower_conscription_demand
+		}
+	}
+
+	option = {
+		name = generic_peasant.15.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### demands to lower centralisation
+country_event = {
+	id = generic_peasant.16
+	title = generic_peasant.16.t
+	desc = generic_peasant.16.d
+
+	picture = GFX_peasant_generic_16
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_variable = { authority_target = current_authority }
+			subtract_from_variable = { authority_target = 2.5 }
+
+			activate_mission = lower_centralisation_demand
+		}
+	}
+
+	option = {
+		name = generic_peasant.16.a
 		
 		ai_chance = {
 			base = 1

@@ -1297,3 +1297,14 @@ defined_text = {
 		localization_key = air_mission_reward_1
 	}
 }
+defined_text = {
+	name = AvatarOpinionMissingChecker
+	text = {
+		trigger = {NOT = {has_global_flag = avatar_unknown}}
+		localization_key = "The Avatar is §Gfriendly§! towards our Nation."
+	}
+	text = {
+		trigger =  {has_global_flag = avatar_unknown}
+		localization_key = "The Avatar was §Gfriendly§! towards our Nation. Not that it matters now, anyway."
+	}
+}

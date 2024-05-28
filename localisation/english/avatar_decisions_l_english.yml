@@ -143,10 +143,18 @@
  peasant_uprising_category_undefined:0 "Peasant Unrests"
  peasant_uprising_category_defined:0 "§e[?ROOT.give_state_name.GetName] Revolt§!"
  peasant_uprising_category_desc:0 ""
- revolt_risk_tooltip:0 "§YRevolt Risk§! \n£centralisation_weekly_texticon  Base from Authority: [?current_authority|Y%%2] \n£stability_texticon  Stability multiplier: §Yx§![?stability_revolt_factor|Y2] \n£knowledge_texticon  Literacy multiplier: §Yx§![?literacy_revolt_factor|Y2] \n£revolt_texticon  Modifier multiplier: [?modifier@revolt_risk|-=%2]"
+ revolt_risk_tooltip:0 "§YRevolt Risk§! \n£peasant_texticon  From Peasant Opinion: [?peasant_revolt_risk_var|-=%2] \n£labourers_texticon  From Labourers Opinion: [?labourers_revolt_risk_var|-=%2]  \n\n£centralisation_weekly_texticon  Authority multiplier: §Yx§![?authority_revolt_factor|Y2] \n£stability_texticon  Stability multiplier: §Yx§![?stability_revolt_factor|Y2] \n£knowledge_texticon  Literacy multiplier: §Yx§![?literacy_revolt_factor|Y2] \n£revolt_texticon  Modifier multiplier: §Yx§![?revolt_factor_modifier|Y2]"
  revolt_risk_tooltip_delayed:0 ""
+ peasant_ttp:0 "§Y[GetPeasantMood]§!  \nOpinion: [?modifier@peasant_opinion|0+]"
+ peasant_ttp_delayed:0 ""
  peasant_initiate_uprising:0 "Peasant Movement formation"
- peasant_initiate_uprising_desc:0 "Peasant Movement formation"
+ peasant_initiate_uprising_desc:0 "The peasants are forming a movement to enforce their demands."
+ peasants_decide_concern_ttp:0 "The Movement will state its §edemands§!."
+ peasant_uprising_tax_relief:0 "Temporary Tax relief"
+ peasant_uprising_tax_relief_desc:0 "Grant tax exemptions and ensure everyone knows who is responsible for it."
+ peasant_uprising_imprison_peasant_leaders:0 "Imprison Movement Leaders"
+ peasant_uprising_imprison_peasant_leaders_desc:0 "Cut off the head of the snake and the body will die."
+
  peasants_in_revolt:0 "Peasant Revolt formation"
  peasants_in_revolt_desc:0 "Peasant Revolt formation"
  peasants_at_war:0 "Peasant Uprising formation"
@@ -155,10 +163,8 @@
  peasants_war_progress_desc:0 "Peasant War"
  peasants_war_progress_2:0 "Prolonged Peasant War"
  peasants_war_progress_2_desc:0 "Prolonged Peasant War"
- peasant_uprising_tax_relief:0 "Temporary Tax relief"
- peasant_uprising_tax_relief_desc:0 "Temporary Tax relief"
  peasant_uprising_appeasing_words:0 "Speak to the peasants"
- peasant_uprising_appeasing_words_desc:0 "Speak to the peasants"
+ peasant_uprising_appeasing_words_desc:0 "Maybe they will see reason."
 
  
  #token_variable_test:0 "[?give_state_name.GetName]"
@@ -665,7 +671,7 @@
  set_equipment_standards_desc:0 "For our arms and armor, we must strike a harmonious balance between quanity and quality."
  
  EAR_defense_category:0 "§mPrepare Defenses§!"
- EAR_defense_category_desc:0 "War is inevitable. Now we have to fortify our Kingdom as well as possible. Behind our walls we are save. The enemy can not win a war of atrittion."
+ EAR_defense_category_desc:0 "War is inevitable. Now we have to fortify our Kingdom as well as possible. Behind our walls we are safe. The enemy can not win a war of atrittion."
  
  HEB_fongs_base:0 "§wFong´s Base§!"
  HEB_fongs_base_desc:0 ""
@@ -812,7 +818,7 @@
  keep_avatar_aang_here:0 "Keep Avatar Aang here"
  keep_avatar_aang_here_desc:0 "Despite their initial protests, Monk Gyatso was able to convince the remaining council elders that maintaining Aang's freedom and fun is the most effective method of completing his training, as the happiness his friends companionship brings him will help alleviate the stress that being the Avatar has on a child."
  gyatso_and_aang:0 "Gyatso and Aang"
- gyatso_and_aang_desc:0 "Aangs close friend and mentor Monk Gyatso secretly plans to leave the temple with him. He knows what burden Aang has to carry and wants to support him as well as possible.\nThe night falls and Gyatso aproaches Aangs room..."
+ gyatso_and_aang_desc:0 "Aang's's close friend and mentor Monk Gyatso secretly plans to leave the temple with him. He knows what burden Aang has to carry and wants to support him as well as possible.\nThe night falls and Gyatso aproaches Aang's room..."
 
  arrival_of_the_great_comet:0 "Arrival of the Great Comet"
  arrival_of_the_great_comet_desc:0 "Every 100 years, a comet passes by the Earth. Upon its closest approach, firebenders are able to harness its energy, granting them the power of a hundred suns."

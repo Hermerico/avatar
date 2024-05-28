@@ -232,16 +232,19 @@ scripted_gui = {
 			leverage_2_visible = { not = { has_tech = leverage } }
 			leverage_3_visible = { has_tech = leverage }
 
-			alchemy_1_visible = { AND = { not = { has_tech = alchemy } check_variable = { tech_age < 3 } } }
-			alchemy_2_click_enabled = { not = { has_tech = alchemy } 
+
+
+			bronze_alloy_1_visible = { AND = { not = { has_tech = bronze_alloy } check_variable = { tech_age < 4 } } }
+			bronze_alloy_2_click_enabled = { not = { has_tech = bronze_alloy } 
 				check_variable = { 
 					var = knowledge_variable 
 					value = @AGE_3_COST 
 					compare = greater_than_or_equals
 				}
 			}
-			alchemy_2_visible = { not = { has_tech = alchemy } }
-			alchemy_3_visible = { has_tech = alchemy }
+			bronze_alloy_2_visible = { not = { has_tech = bronze_alloy } }
+			bronze_alloy_3_visible = { has_tech = bronze_alloy }
+
 
 			surgery_1_visible = { AND = { not = { has_tech = surgery } check_variable = { tech_age < 3 } } }
 			surgery_2_click_enabled = { not = { has_tech = surgery } 
@@ -266,7 +269,6 @@ scripted_gui = {
 			natural_philosophy_3_visible = { has_tech = natural_philosophy }
 
 
-
 			statistics_1_visible = { AND = { not = { has_tech = statistics } check_variable = { tech_age < 4 } } }
 			statistics_2_click_enabled = { not = { has_tech = statistics } 
 				check_variable = { 
@@ -289,16 +291,16 @@ scripted_gui = {
 			magnetism_2_visible = { not = { has_tech = magnetism } }
 			magnetism_3_visible = { has_tech = magnetism }
 
-			bronze_alloy_1_visible = { AND = { not = { has_tech = bronze_alloy } check_variable = { tech_age < 3 } } }
-			bronze_alloy_2_click_enabled = { not = { has_tech = bronze_alloy } 
+			alchemy_1_visible = { AND = { not = { has_tech = alchemy } check_variable = { tech_age < 3 } } }
+			alchemy_2_click_enabled = { not = { has_tech = alchemy } 
 				check_variable = { 
 					var = knowledge_variable 
 					value = @AGE_3_COST 
 					compare = greater_than_or_equals
 				}
 			}
-			bronze_alloy_2_visible = { not = { has_tech = bronze_alloy } }
-			bronze_alloy_3_visible = { has_tech = bronze_alloy }
+			alchemy_2_visible = { not = { has_tech = alchemy } }
+			alchemy_3_visible = { has_tech = alchemy }
 
 			botanics_1_visible = { AND = { not = { has_tech = botanics } check_variable = { tech_age < 4 } } }
 			botanics_2_click_enabled = { not = { has_tech = botanics } 
