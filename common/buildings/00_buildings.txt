@@ -78,7 +78,7 @@ buildings = {
 		farmer_k = 0.60
 		building_upkeep_cost = 1
 		local_supplies_for_controller = 0.05
-		max_grain_building_k = 10
+		max_grain_building_k = 0.5
 
 		urbanisation = -0.1
 	}
@@ -99,7 +99,7 @@ buildings = {
 		rancher_k = 0.10
 		building_upkeep_cost = 1
 		local_supplies_for_controller = 0.025
-		max_grain_building_k = 20
+		max_grain_building_k = 0.2
 
 		urbanisation = -0.1
 	}
@@ -221,6 +221,9 @@ buildings = {
 		army_speed_factor_for_controller = 0.1
 
 		urbanisation_factor = 0.02
+		max_planks_building_k = 0.1
+		max_bricks_building_k = 0.1
+		max_steel_beams_building_k = 0.1
 	}
 	rail_way = {
 		base_cost = 200
@@ -486,6 +489,7 @@ buildings = {
 		show_modifier = yes
 		shopkeeper_k = 0.120
 		building_upkeep_cost = 2
+		max_consumer_goods_building_k = 0.1
 
 		urbanisation = 0.8
 	}
@@ -505,6 +509,7 @@ buildings = {
 		show_modifier = yes
 		shopkeeper_k = 0.080
 		building_upkeep_cost = 2
+		max_luxury_goods_building_k = 0.1
 
 		urbanisation = 1.2
 	}
@@ -580,7 +585,16 @@ buildings = {
 		max_fuel_building = 100.0 #k
 		building_upkeep_cost = 2
 
-		urbanisation = 0.2
+		max_animal_products_building_k = 0.2
+		max_textile_building_k = 0.2
+		max_wood_building_k = 0.2
+		max_stone_building_k = 0.2
+		max_iron_building_k = 0.2
+		max_steel_building_k = 0.2
+
+		prosperity = 0.05
+
+		urbanisation_factor = 0.03
 	}
 
 	granary = {
@@ -595,11 +609,11 @@ buildings = {
 		
 		show_modifier = yes
 		max_rations_building_k = 1000 #1m
-		max_grain_building_k = 150 #150k
+		max_grain_building_k = 1
 		building_upkeep_cost = 2
 		local_supplies_for_controller = 0.1
 
-		urbanisation_factor = 0.05
+		urbanisation_factor = 0.03
 	}
 
 	scout_tower = {
@@ -646,7 +660,7 @@ buildings = {
 
 		show_modifier = yes
 		building_upkeep_cost = 1
-		max_grain_building_k = 5
+		max_grain_building_k = 0.1
 	}
 
 	#trainingscamp = {

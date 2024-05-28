@@ -46,6 +46,14 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {
+						has_dynamic_modifier = { modifier = stored_scripted_resources }
+					}
+				}
+				add_dynamic_modifier = { modifier = stored_scripted_resources }
+			}
+			if = {
+				limit = {
+					NOT = {
 						has_dynamic_modifier = { modifier = population_resource_bought_on_market }
 					}
 				}

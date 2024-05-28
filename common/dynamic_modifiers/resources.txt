@@ -96,6 +96,21 @@ additional_scripted_resources = {
 	state_resource_food_resource = mtth:self_employed_food_supply
 }
 
+stored_scripted_resources = {
+	enable = { always = yes }
+
+	country_resource_oil = grain_in_store
+	country_resource_chromium = animal_product_in_store
+	country_resource_stone = minerals_in_store
+	country_resource_iron = iron_in_store
+	country_resource_aluminium = wood_in_store
+	country_resource_tungsten = textile_in_store
+	country_resource_consumer_goods_resource = consumer_good_in_store
+	country_resource_planks_resource = plank_in_store
+	country_resource_bricks_resource = brick_in_store
+	country_resource_steel_beam_resource = steel_beam_in_store
+}
+
 factory_resource_consumption = {
 	enable = { always = yes }
 

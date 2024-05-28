@@ -1751,6 +1751,14 @@ ration_distribution = {
 	}
 }
 
+resource_storage_calculation = {
+
+	
+
+
+
+}
+
 
 
 

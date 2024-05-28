@@ -15,7 +15,7 @@
  brick_count:0 "[?resource@bricks_resource|+0*]"
  steel_beam_count:0 "[?resource@steel_beams_resource|+0*]"
 
- grain_tooltip:0 "§YGrain§! \nBalance: [?resource@oil|+0] \n\nProduced: [?resource_produced@oil|+=0] \nConsumed in Buildings: [?mtth:crop_cost|-2] \nImports: [?resource_imported@oil|+=2] \nExports: [?resource_exported@oil|=Y2] \n\nFrom Self Employed: [?self_employed_grain_supply|+2] \nBought by Population: [?grain_demand|-2] \nMarket Price: [?grain_price|-=Y2]"
+ grain_tooltip:0 "§YGrain§! \nBalance: [?resource@oil|+0] \n\nProduced: [?resource_produced@oil|+=0] \nConsumed in Buildings: [?mtth:crop_cost|-2] \nImports: [?resource_imported@oil|+=2] \nExports: [?resource_exported@oil|=Y2] \n\nFrom Self Employed: [?self_employed_grain_supply|+2] \nBought by Population: [?grain_demand|-2] \nMarket Price: [?grain_price|-=Y2] \n\n£stockpile_texticon  Stored: [?grain_variable|+0]/[?grain_max|Y0]"
  grain_tooltip_delayed:0 "§LCrops of any kind to eat, feed to animals or use in production.§!"
  animal_products_tooltip:0 "§YAnimal Products§! \nBalance: [?resource@chromium|+0] \n\nProduced: [?resource_produced@chromium|+=2] \nConsumed in Buildings: [?mtth:leather_cost|-2] \nImports: [?resource_imported@tungsten|+=2] \nExports: [?resource_exported@tungsten|=Y2] \n\nFrom Self Employed: [?self_animal_products_supply|+2] \nBought by Population: [?animal_products_demand|-2] \nMarket Price: [?animal_products_price|-=Y2]"
  animal_products_tooltip_delayed:0 "§LA primitive production material.§!"
