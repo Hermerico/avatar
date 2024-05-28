@@ -1,7 +1,7 @@
 state = {
 	id = 1
 	name = "STATE_1"
-	manpower = 1207
+	manpower = 6035
 	state_category = pastoral
 	history = {
 		pop_growth = yes

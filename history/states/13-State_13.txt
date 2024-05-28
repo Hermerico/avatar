@@ -49,7 +49,6 @@ state={
 				ranch = 1
 				harbour = 1
 				fishing_stand = 1
-				consumer_good_factory = 1
 				5810 = {
 					naval_base = 2
 				}

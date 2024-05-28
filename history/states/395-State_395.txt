@@ -48,8 +48,6 @@ state={
 				infrastructure = 3
 				ranch = 1
 				fishing_stand = 1
-				consumer_good_factory = 2
-				carpentry = 1
 				quarry = 1
 
 			}

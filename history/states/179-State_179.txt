@@ -47,7 +47,7 @@ state={
 
 			buildings = {
 				infrastructure = 10
-				luxury_good_factory = 2
+				luxury_good_factory = 3
 				
 				6801 = {
 					wall = 10

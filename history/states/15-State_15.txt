@@ -40,10 +40,8 @@ state={
 			add_core_of = NWT
 			buildings = {
 				infrastructure = 1
-				arms_factory = 1
+				arms_factory = 3
 				fishing_stand = 1
-				quarry = 1
-				masonry = 1
 				6049 = {
 					naval_base = 2
 				}
