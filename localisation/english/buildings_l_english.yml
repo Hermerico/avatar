@@ -38,10 +38,10 @@
  granary_plural:0 "Granaries"
  granary_desc:0 "This building increases the storage capacity for rations."
 
- fuel_repository:0 "Fuel Storage"
- fuel_repository_plural:0 "Fuel Storages"
+ fuel_repository:0 "Storage"
+ fuel_repository_plural:0 "Storages"
  fuel_repository_desc:0 "This building increases the storage capacity for fuel."
- fuel_repository_extended:0 "§YFuel Storage§! \nScouts allow you to gain intel on enemy troops in nearby states.\nA higher scout level in a state increases the effective range of the scouts.\nScouts also provides the state with better detection of enemy air forces, giving your air forces a better chance to engage them.\nIn addition the scouts are increasing detection of enemy fleets at sea."
+ fuel_repository_extended:0 "§YStorage§! \nScouts allow you to gain intel on enemy troops in nearby states.\nA higher scout level in a state increases the effective range of the scouts.\nScouts also provides the state with better detection of enemy air forces, giving your air forces a better chance to engage them.\nIn addition the scouts are increasing detection of enemy fleets at sea."
 
  air_base:0 "Air Base"
  air_base_plural:0 "Air Bases"

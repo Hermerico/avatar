@@ -1753,7 +1753,527 @@ ration_distribution = {
 
 resource_storage_calculation = {
 
+	set_variable = { grain_produced_total = resource_produced@oil }
+	add_to_variable = { grain_produced_total = grain_demand }
+	add_to_variable = { grain_produced_total = mtth:crop_cost }
+	add_to_variable = { grain_produced_total = grain_use }
+
+
+
+
+	##### animal products 
+
+	set_variable = { animal_products_produced_total = resource_produced@chromium }
+	add_to_variable = { animal_products_produced_total = animal_products_demand }
+	add_to_variable = { animal_products_produced_total = mtth:leather_cost }
+	add_to_variable = { animal_products_produced_total = local_animal_product_upkeep_cost }
+
+	set_variable = { animal_products_in_store = resource@chromium }
+	multiply_variable = { animal_products_in_store = -1 }
+	subtract_from_variable = { animal_products_in_store = resource@chromium }
+	multiply_variable = { animal_products_in_store = 0.5 }
+	add_to_variable = { animal_products_in_store = prev_day_animal_products_in_store }
+
+	clamp_variable = {
+		var = animal_products_in_store
+		min = 0
+		max = animal_products_variable
+	}
+	set_variable = { prev_day_animal_products_in_store = animal_products_in_store }
+
+	subtract_from_variable = { animal_products_variable = animal_products_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@chromium > 0 }
+		}
+		add_to_variable = { animal_products_variable = resource@chromium }
+	}
+
+	### capacity
+
+	set_variable = { animal_products_max = 100 }
+	set_temp_variable = { animal_products_storage = modifier@max_animal_products_building_k }
+	multiply_temp_variable = { animal_products_storage = 1000 }
+	add_to_variable = { animal_products_max = animal_products_storage }
+
+	clamp_variable = { 
+		var = animal_products_variable
+		min = 0 
+		max = animal_products_max
+	}
+
+	set_variable = { animal_products_ratio_percent = animal_products_variable }
+	divide_variable = { animal_products_ratio_percent = animal_products_max }
+	multiply_variable = { animal_products_ratio_percent = 100 }
+
+
+
+	##### textile
+
+	set_variable = { textile_produced_total = resource_produced@tungsten }
+	add_to_variable = { textile_produced_total = textile_demand }
+	add_to_variable = { textile_produced_total = mtth:textile_cost }
+
+	set_variable = { textile_in_store = resource@tungsten }
+	multiply_variable = { textile_in_store = -1 }
+	subtract_from_variable = { textile_in_store = resource@tungsten }
+	multiply_variable = { textile_in_store = 0.5 }
+	add_to_variable = { textile_in_store = prev_day_textile_in_store }
+
+	clamp_variable = {
+		var = textile_in_store
+		min = 0
+		max = textile_variable
+	}
+	set_variable = { prev_day_textile_in_store = textile_in_store }
+
+	subtract_from_variable = { textile_variable = textile_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@tungsten > 0 }
+		}
+		add_to_variable = { textile_variable = resource@tungsten }
+	}
+
+	### capacity
+
+	set_variable = { textile_max = 100 }
+	set_temp_variable = { textile_storage = modifier@max_textile_building_k }
+	multiply_temp_variable = { textile_storage = 1000 }
+	add_to_variable = { textile_max = textile_storage }
+
+	clamp_variable = { 
+		var = textile_variable
+		min = 0 
+		max = textile_max
+	}
+
+	set_variable = { textile_ratio_percent = textile_variable }
+	divide_variable = { textile_ratio_percent = textile_max }
+	multiply_variable = { textile_ratio_percent = 100 }
+
+
+
+	##### wood
+
+	set_variable = { wood_produced_total = resource_produced@aluminium }
+	add_to_variable = { wood_produced_total = wood_demand }
+	add_to_variable = { wood_produced_total = mtth:wood_cost }
 	
+	set_variable = { wood_in_store = resource@aluminium }
+	multiply_variable = { wood_in_store = -1 }
+	subtract_from_variable = { wood_in_store = resource@aluminium }
+	multiply_variable = { wood_in_store = 0.5 }
+	add_to_variable = { wood_in_store = prev_day_wood_in_store }
+
+	clamp_variable = {
+		var = wood_in_store
+		min = 0
+		max = wood_variable
+	}
+	set_variable = { prev_day_wood_in_store = wood_in_store }
+
+	subtract_from_variable = { wood_variable = wood_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@aluminium > 0 }
+		}
+		add_to_variable = { wood_variable = resource@aluminium }
+	}
+
+	### capacity
+
+	set_variable = { wood_max = 100 }
+	set_temp_variable = { wood_storage = modifier@max_wood_building_k }
+	multiply_temp_variable = { wood_storage = 1000 }
+	add_to_variable = { wood_max = wood_storage }
+
+	clamp_variable = { 
+		var = wood_variable
+		min = 0 
+		max = wood_max
+	}
+
+	set_variable = { wood_ratio_percent = wood_variable }
+	divide_variable = { wood_ratio_percent = wood_max }
+	multiply_variable = { wood_ratio_percent = 100 }
+
+
+
+	##### minerals
+
+	set_variable = { minerals_produced_total = resource_produced@stone }
+	add_to_variable = { minerals_produced_total = minerals_demand }
+	add_to_variable = { minerals_produced_total = mtth:stone_cost }
+	
+	set_variable = { minerals_in_store = resource@stone }
+	multiply_variable = { minerals_in_store = -1 }
+	subtract_from_variable = { minerals_in_store = resource@stone }
+	multiply_variable = { minerals_in_store = 0.5 }
+	add_to_variable = { minerals_in_store = prev_day_minerals_in_store }
+
+	clamp_variable = {
+		var = minerals_in_store
+		min = 0
+		max = minerals_variable
+	}
+	set_variable = { prev_day_minerals_in_store = minerals_in_store }
+
+	subtract_from_variable = { minerals_variable = minerals_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@stone > 0 }
+		}
+		add_to_variable = { minerals_variable = resource@stone }
+	}
+
+	### capacity
+
+	set_variable = { minerals_max = 100 }
+	set_temp_variable = { minerals_storage = modifier@max_stone_building_k }
+	multiply_temp_variable = { minerals_storage = 1000 }
+	add_to_variable = { minerals_max = minerals_storage }
+
+	clamp_variable = { 
+		var = minerals_variable
+		min = 0 
+		max = minerals_max
+	}
+
+	set_variable = { minerals_ratio_percent = minerals_variable }
+	divide_variable = { minerals_ratio_percent = minerals_max }
+	multiply_variable = { minerals_ratio_percent = 100 }
+
+
+
+	##### fossile fuels / fuel
+
+	set_variable = { fossile_fuels_produced_total = resource_produced@rubber }
+	add_to_variable = { fossile_fuels_produced_total = fossile_fuels_demand }
+
+
+	##### iron
+
+	set_variable = { iron_produced_total = resource_produced@iron }
+	add_to_variable = { iron_produced_total = iron_demand }
+	add_to_variable = { iron_produced_total = mtth:iron_cost }
+	
+	set_variable = { iron_in_store = resource@iron }
+	multiply_variable = { iron_in_store = -1 }
+	subtract_from_variable = { iron_in_store = resource@iron }
+	multiply_variable = { iron_in_store = 0.5 }
+	add_to_variable = { iron_in_store = prev_day_iron_in_store }
+
+	clamp_variable = {
+		var = iron_in_store
+		min = 0
+		max = iron_variable
+	}
+	set_variable = { prev_day_iron_in_store = iron_in_store }
+
+	subtract_from_variable = { iron_variable = iron_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@iron > 0 }
+		}
+		add_to_variable = { iron_variable = resource@iron }
+	}
+
+	### capacity
+
+	set_variable = { iron_max = 100 }
+	set_temp_variable = { iron_storage = modifier@max_iron_building_k }
+	multiply_temp_variable = { iron_storage = 1000 }
+	add_to_variable = { iron_max = iron_storage }
+
+	clamp_variable = { 
+		var = iron_variable
+		min = 0 
+		max = iron_max
+	}
+
+	set_variable = { iron_ratio_percent = iron_variable }
+	divide_variable = { iron_ratio_percent = iron_max }
+	multiply_variable = { iron_ratio_percent = 100 }
+
+
+
+	##### steel
+
+	set_variable = { steel_produced_total = resource_produced@steel }
+	add_to_variable = { steel_produced_total = steel_demand }
+	add_to_variable = { steel_produced_total = mtth:steel_cost }
+	
+	set_variable = { steel_in_store = resource@steel }
+	multiply_variable = { steel_in_store = -1 }
+	subtract_from_variable = { steel_in_store = resource@steel }
+	multiply_variable = { steel_in_store = 0.5 }
+	add_to_variable = { steel_in_store = prev_day_steel_in_store }
+
+	clamp_variable = {
+		var = steel_in_store
+		min = 0
+		max = steel_variable
+	}
+	set_variable = { prev_day_steel_in_store = steel_in_store }
+
+	subtract_from_variable = { steel_variable = steel_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@steel > 0 }
+		}
+		add_to_variable = { steel_variable = resource@steel }
+	}
+
+	### capacity
+
+	set_variable = { steel_max = 100 }
+	set_temp_variable = { steel_storage = modifier@max_steel_building_k }
+	multiply_temp_variable = { steel_storage = 1000 }
+	add_to_variable = { steel_max = steel_storage }
+
+	clamp_variable = { 
+		var = steel_variable
+		min = 0 
+		max = steel_max
+	}
+
+	set_variable = { steel_ratio_percent = steel_variable }
+	divide_variable = { steel_ratio_percent = steel_max }
+	multiply_variable = { steel_ratio_percent = 100 }
+
+
+
+	##### consumer_goods
+
+	set_variable = { consumer_goods_produced_total = resource_produced@consumer_goods_resource }
+	add_to_variable = { consumer_goods_produced_total = consumer_goods_demand }
+	add_to_variable = { consumer_goods_produced_total = mtth:consumer_goods_cost }
+	
+	set_variable = { consumer_goods_in_store = resource@consumer_goods_resource }
+	multiply_variable = { consumer_goods_in_store = -1 }
+	subtract_from_variable = { consumer_goods_in_store = resource@consumer_goods_resource }
+	multiply_variable = { consumer_goods_in_store = 0.5 }
+	add_to_variable = { consumer_goods_in_store = prev_day_consumer_goods_in_store }
+
+	clamp_variable = {
+		var = consumer_goods_in_store
+		min = 0
+		max = consumer_goods_variable
+	}
+	set_variable = { prev_day_consumer_goods_in_store = consumer_goods_in_store }
+
+	subtract_from_variable = { consumer_goods_variable = consumer_goods_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@consumer_goods_resource > 0 }
+		}
+		add_to_variable = { consumer_goods_variable = resource@consumer_goods_resource }
+	}
+
+	### capacity
+
+	set_variable = { consumer_goods_max = 100 }
+	set_temp_variable = { consumer_goods_storage = modifier@max_consumer_goods_building_k }
+	multiply_temp_variable = { consumer_goods_storage = 1000 }
+	add_to_variable = { consumer_goods_max = consumer_goods_storage }
+
+	clamp_variable = { 
+		var = consumer_goods_variable
+		min = 0 
+		max = consumer_goods_max
+	}
+
+	set_variable = { consumer_goods_ratio_percent = consumer_goods_variable }
+	divide_variable = { consumer_goods_ratio_percent = consumer_goods_max }
+	multiply_variable = { consumer_goods_ratio_percent = 100 }
+
+
+
+	##### luxury_goods
+
+	set_variable = { luxury_goods_produced_total = resource_produced@luxury_goods_resource }
+	add_to_variable = { luxury_goods_produced_total = luxury_goods_demand }
+	add_to_variable = { luxury_goods_produced_total = mtth:luxury_goods_cost }
+	
+	set_variable = { luxury_goods_in_store = resource@luxury_goods_resource }
+	multiply_variable = { luxury_goods_in_store = -1 }
+	subtract_from_variable = { luxury_goods_in_store = resource@luxury_goods_resource }
+	multiply_variable = { luxury_goods_in_store = 0.5 }
+	add_to_variable = { luxury_goods_in_store = prev_day_luxury_goods_in_store }
+
+	clamp_variable = {
+		var = luxury_goods_in_store
+		min = 0
+		max = luxury_goods_variable
+	}
+	set_variable = { prev_day_luxury_goods_in_store = luxury_goods_in_store }
+
+	subtract_from_variable = { luxury_goods_variable = luxury_goods_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@luxury_goods_resource > 0 }
+		}
+		add_to_variable = { luxury_goods_variable = resource@luxury_goods_resource }
+	}
+
+	### capacity
+
+	set_variable = { luxury_goods_max = 100 }
+	set_temp_variable = { luxury_goods_storage = modifier@max_luxury_goods_building_k }
+	multiply_temp_variable = { luxury_goods_storage = 1000 }
+	add_to_variable = { luxury_goods_max = luxury_goods_storage }
+
+	clamp_variable = { 
+		var = luxury_goods_variable
+		min = 0 
+		max = luxury_goods_max
+	}
+
+	set_variable = { luxury_goods_ratio_percent = luxury_goods_variable }
+	divide_variable = { luxury_goods_ratio_percent = luxury_goods_max }
+	multiply_variable = { luxury_goods_ratio_percent = 100 }
+
+
+
+	##### planks
+
+	set_variable = { planks_produced_total = resource_produced@planks_resource }
+	add_to_variable = { planks_produced_total = planks_demand }
+	add_to_variable = { planks_produced_total = mtth:planks_cost }
+	add_to_variable = { planks_produced_total = local_plank_upkeep_cost }
+	
+	set_variable = { planks_in_store = resource@planks_resource }
+	multiply_variable = { planks_in_store = -1 }
+	subtract_from_variable = { planks_in_store = resource@planks_resource }
+	multiply_variable = { planks_in_store = 0.5 }
+	add_to_variable = { planks_in_store = prev_day_planks_in_store }
+
+	clamp_variable = {
+		var = planks_in_store
+		min = 0
+		max = planks_variable
+	}
+	set_variable = { prev_day_planks_in_store = planks_in_store }
+
+	subtract_from_variable = { planks_variable = planks_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@planks_resource > 0 }
+		}
+		add_to_variable = { planks_variable = resource@planks_resource }
+	}
+
+	### capacity
+
+	set_variable = { planks_max = 100 }
+	set_temp_variable = { planks_storage = modifier@max_planks_building_k }
+	multiply_temp_variable = { planks_storage = 1000 }
+	add_to_variable = { planks_max = planks_storage }
+
+	clamp_variable = { 
+		var = planks_variable
+		min = 0 
+		max = planks_max
+	}
+
+	set_variable = { planks_ratio_percent = planks_variable }
+	divide_variable = { planks_ratio_percent = planks_max }
+	multiply_variable = { planks_ratio_percent = 100 }
+
+
+
+	##### bricks
+
+	set_variable = { bricks_produced_total = resource_produced@bricks_resource }
+	add_to_variable = { bricks_produced_total = bricks_demand }
+	add_to_variable = { bricks_produced_total = mtth:bricks_cost }
+	add_to_variable = { bricks_produced_total = local_brick_upkeep_cost }
+	
+	set_variable = { bricks_in_store = resource@bricks_resource }
+	multiply_variable = { bricks_in_store = -1 }
+	subtract_from_variable = { bricks_in_store = resource@bricks_resource }
+	multiply_variable = { bricks_in_store = 0.5 }
+	add_to_variable = { bricks_in_store = prev_day_bricks_in_store }
+
+	clamp_variable = {
+		var = bricks_in_store
+		min = 0
+		max = bricks_variable
+	}
+	set_variable = { prev_day_bricks_in_store = bricks_in_store }
+
+	subtract_from_variable = { bricks_variable = bricks_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@bricks_resource > 0 }
+		}
+		add_to_variable = { bricks_variable = resource@bricks_resource }
+	}
+
+	### capacity
+
+	set_variable = { bricks_max = 100 }
+	set_temp_variable = { bricks_storage = modifier@max_bricks_building_k }
+	multiply_temp_variable = { bricks_storage = 1000 }
+	add_to_variable = { bricks_max = bricks_storage }
+
+	clamp_variable = { 
+		var = bricks_variable
+		min = 0 
+		max = bricks_max
+	}
+
+	set_variable = { bricks_ratio_percent = bricks_variable }
+	divide_variable = { bricks_ratio_percent = bricks_max }
+	multiply_variable = { bricks_ratio_percent = 100 }
+
+
+
+	##### steel_beams
+
+	set_variable = { steel_beams_produced_total = resource_produced@steel_beams_resource }
+	add_to_variable = { steel_beams_produced_total = steel_beams_demand }
+	add_to_variable = { steel_beams_produced_total = mtth:steel_beams_cost }
+	add_to_variable = { steel_beams_produced_total = local_steel_beam_upkeep_cost }
+	
+	set_variable = { steel_beams_in_store = resource@steel_beams_resource }
+	multiply_variable = { steel_beams_in_store = -1 }
+	subtract_from_variable = { steel_beams_in_store = resource@steel_beams_resource }
+	multiply_variable = { steel_beams_in_store = 0.5 }
+	add_to_variable = { steel_beams_in_store = prev_day_steel_beams_in_store }
+
+	clamp_variable = {
+		var = steel_beams_in_store
+		min = 0
+		max = steel_beams_variable
+	}
+	set_variable = { prev_day_steel_beams_in_store = steel_beams_in_store }
+
+	subtract_from_variable = { steel_beams_variable = steel_beams_in_store }
+	if = {
+		limit = {
+			check_variable = { resource@steel_beams_resource > 0 }
+		}
+		add_to_variable = { steel_beams_variable = resource@steel_beams_resource }
+	}
+
+	### capacity
+
+	set_variable = { steel_beams_max = 100 }
+	set_temp_variable = { steel_beams_storage = modifier@max_steel_beams_building_k }
+	multiply_temp_variable = { steel_beams_storage = 1000 }
+	add_to_variable = { steel_beams_max = steel_beams_storage }
+
+	clamp_variable = { 
+		var = steel_beams_variable
+		min = 0 
+		max = steel_beams_max
+	}
+
+	set_variable = { steel_beams_ratio_percent = steel_beams_variable }
+	divide_variable = { steel_beams_ratio_percent = steel_beams_max }
+	multiply_variable = { steel_beams_ratio_percent = 100 }
 
 
 

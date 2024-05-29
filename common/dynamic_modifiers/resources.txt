@@ -111,6 +111,12 @@ stored_scripted_resources = {
 	country_resource_steel_beam_resource = steel_beam_in_store
 }
 
+animal_resource_consumption = {
+	enable = { always = yes }
+
+	country_resource_cost_oil = grain_use
+}
+
 factory_resource_consumption = {
 	enable = { always = yes }
 

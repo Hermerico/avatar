@@ -10,7 +10,7 @@ ration_calculation = {
 	set_variable = { daily_ration_need = 0 }
 
 	set_variable = { soldier_demand_k = deployed_army_manpower_k }
-	divide_variable = { soldier_demand_k = 2 }
+	divide_variable = { soldier_demand_k = 200 }
 	set_variable = { soldier_demand_factor = 1 }
 	add_to_variable = { soldier_demand_factor = modifier@military_ration_need_factor }
 	multiply_variable = { soldier_demand_k = soldier_demand_factor }
@@ -21,14 +21,14 @@ ration_calculation = {
 
 	set_variable = { family_demand_k = core_population_k }
 	multiply_variable = { family_demand_k = not_working_temp }
-	divide_variable = { family_demand_k = 30 }
+	divide_variable = { family_demand_k = 3000 }
 	set_variable = { family_demand_factor = 1 }
 	add_to_variable = { family_demand_factor = modifier@population_ration_need_factor }
 	multiply_variable = { family_demand_k = family_demand_factor }
 	add_to_variable = { daily_ration_need = family_demand_k }
 
 	set_variable = { working_demand_k = working_population_k }
-	divide_variable = { working_demand_k = 25 }
+	divide_variable = { working_demand_k = 2500 }
 	set_variable = { working_demand_factor = 1 }
 	add_to_variable = { working_demand_factor = modifier@workers_ration_need_factor }
 	multiply_variable = { working_demand_k = working_demand_factor }
@@ -36,7 +36,7 @@ ration_calculation = {
 
 	set_variable = { occupied_demand_k = occupied_population_k }
 	multiply_variable = { occupied_demand_k = not_working_temp }
-	divide_variable = { occupied_demand_k = 30 }
+	divide_variable = { occupied_demand_k = 3000 }
 	set_variable = { occupied_demand_factor = 1 }
 	add_to_variable = { occupied_demand_factor = modifier@occupied_ration_need_factor }
 	multiply_variable = { occupied_demand_k = occupied_demand_factor }
@@ -104,7 +104,7 @@ ration_calculation = {
 
 	# base gain
 	set_variable = { resource_gain = resource@food_resource }
-	divide_variable = { resource_gain = 20 }
+	divide_variable = { resource_gain = 2000 }
 	add_to_variable = { ration_daily = resource_gain }
 
 	# factor
@@ -116,6 +116,10 @@ ration_calculation = {
 	}
 
 	multiply_variable = { ration_daily = ration_factor_calc }
+
+	set_variable = { daily_ration_need_in_food = daily_ration_need }
+	multiply_variable = { daily_ration_need_in_food = 2000 }
+	round_variable = daily_ration_need_in_food
 
 	################## end daily addition
 
@@ -299,13 +303,13 @@ ration_calculation = {
 
 	set_variable = { ration_max = 0 }
 	add_to_variable = { ration_max = owned_controlled_states }
-	multiply_variable = { ration_max = 200 }
+	multiply_variable = { ration_max = 2 }
 	if = {
 		limit = {
 			has_capitulated = yes
 		}
 		add_to_variable = { ration_max = num_core_states }
-		multiply_variable = { ration_max = 20 }
+		multiply_variable = { ration_max = 0.2 }
 	}
 	set_temp_variable = { ration_storage = modifier@max_rations_building_k }
 	add_to_variable = { ration_max = ration_storage }
@@ -472,13 +476,6 @@ ratio_effects_and_interface = {
 	set_variable = { ration_need_m = daily_ration_need }
 	divide_variable = { ration_need_m = 1000 }
 
-	set_variable = {daily_ration_need_in_food = daily_ration_need}
-	divide_variable = {daily_ration_need_in_food = 0.05}
-	round_variable = daily_ration_need_in_food
-	add_to_variable = {
-		var = daily_ration_need_in_food
-		value = 1
-	}
 	set_variable = { ration_max_h = ration_max }
 	multiply_variable = { ration_max_h = 1000 }
 

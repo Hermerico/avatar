@@ -221,9 +221,9 @@ buildings = {
 		army_speed_factor_for_controller = 0.1
 
 		urbanisation_factor = 0.02
-		max_planks_building_k = 0.1
-		max_bricks_building_k = 0.1
-		max_steel_beams_building_k = 0.1
+		max_planks_building_k = 0.01
+		max_bricks_building_k = 0.01
+		max_steel_beams_building_k = 0.01
 	}
 	rail_way = {
 		base_cost = 200
@@ -608,8 +608,8 @@ buildings = {
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
-		max_rations_building_k = 1000 #1m
-		max_grain_building_k = 1
+		max_rations_building_k = 10 #1m
+		max_grain_building_k = 2
 		building_upkeep_cost = 2
 		local_supplies_for_controller = 0.1
 

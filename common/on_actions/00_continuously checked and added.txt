@@ -38,6 +38,14 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {
+						has_dynamic_modifier = { modifier = animal_resource_consumption }
+					}
+				}
+				add_dynamic_modifier = { modifier = animal_resource_consumption }
+			}
+			if = {
+				limit = {
+					NOT = {
 						has_dynamic_modifier = { modifier = factory_resource_consumption }
 					}
 				}

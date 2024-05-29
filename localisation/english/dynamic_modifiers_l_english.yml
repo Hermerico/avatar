@@ -65,6 +65,7 @@
 
  additional_scripted_resources:0 "£self_employed_texticon  Self Sufficient Output"
  population_resource_bought_on_market:0 "£consumer_goods_texticon  Population need"
+ animal_resource_consumption:0 "£animal_growth_texticon  Animal Consumption"
  factory_resource_consumption:0 "£factory_consumption  Factory Consumption"
  building_upkeep_resources:0 "£construction_material_texticon  Construction Resources"
  civs_from_tax_buy:0 "£taxes_texticon  Bought with Taxation"

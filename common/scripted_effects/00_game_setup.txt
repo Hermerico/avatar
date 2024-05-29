@@ -38,6 +38,7 @@ permanent_spirits_and_modifiers = {
 		strategic_redeployment_blocker
 	}
 	add_dynamic_modifier = { modifier = stored_scripted_resources }
+	add_dynamic_modifier = { modifier = animal_resource_consumption }
 	add_dynamic_modifier = { modifier = factory_resource_consumption }
 	add_dynamic_modifier = { modifier = population_resource_bought_on_market }
 	add_dynamic_modifier = { modifier = building_upkeep_resources }
