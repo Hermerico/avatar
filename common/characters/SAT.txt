@@ -5,6 +5,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/SAT/Portrait_Southernairtemple_Pasang.dds"
+				small = "gfx/interface/ideas/leader_small/SAT/Portrait_Southernairtemple_Pasang_small.dds"
 			}
 		}
 		country_leader={
