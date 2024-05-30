@@ -119,14 +119,17 @@ units = {
 	division = {
 		location = 4871
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 2126
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 2655
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 7745

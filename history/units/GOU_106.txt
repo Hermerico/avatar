@@ -102,38 +102,47 @@ units = {
 	division = {
 		location = 7912
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 1937
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 790
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 47
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 8069
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 8105
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 8120
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 8163
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 1803
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 	division = {
 		location = 1803
@@ -142,5 +151,6 @@ units = {
 	division = {
 		location = 7933
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 	}
 }

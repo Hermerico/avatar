@@ -60,91 +60,97 @@ units = {
 	division = {
 		location = 3243
 		division_template = "Militia Brigade"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 5164
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 3790
 		division_template = "Militia Brigade"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 7269
 		division_template = "Militia Brigade"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 134
 		division_template = "Militia Brigade"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 3274
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 4532
 		division_template = "Militia Brigade"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 333
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 3614
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 2603
 		division_template = "Militia Brigade"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 7289
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 7304
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 7306
 		division_template = "Militia Brigade"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 3677
 		division_template = "Town Guard"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 7473
 		division_template = "Town Guard"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 }

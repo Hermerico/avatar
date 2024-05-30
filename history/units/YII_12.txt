@@ -39,8 +39,9 @@ units = {
 		}
 		location = 9170
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	
 	division= {	
@@ -50,8 +51,9 @@ units = {
 		}
 		location = 1557
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division= {	
 		division_name = {
@@ -60,8 +62,9 @@ units = {
 		}
 		location = 4209
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division= {	
 		division_name = {
@@ -70,8 +73,9 @@ units = {
 		}
 		location = 9096
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division= {	
 		division_name = {
@@ -81,7 +85,7 @@ units = {
 		location = 2243
 		division_template = "Town Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 
 	division= {	
@@ -92,7 +96,7 @@ units = {
 		location = 922
 		division_template = "Town Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division= {	
 		division_name = {
@@ -102,7 +106,7 @@ units = {
 		location = 1240
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 	division= {	
 		division_name = {
@@ -112,7 +116,7 @@ units = {
 		location = 1834
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 
 }

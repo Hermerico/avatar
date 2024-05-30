@@ -43,7 +43,7 @@ units = {
 		location = 2757
 		division_template = "Town Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1
+		start_equipment_factor = 1  #1
 	}
 
 	division= {	
@@ -54,7 +54,7 @@ units = {
 		location = 5547
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 
 	division= {	
@@ -65,7 +65,7 @@ units = {
 		location = 3093
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 
 

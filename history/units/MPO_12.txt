@@ -76,7 +76,7 @@ units = {
 		location = 2921
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 	division = {
 		division_name = {
@@ -86,7 +86,7 @@ units = {
 		location = 8775
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 	division = {
 		division_name = {
@@ -96,7 +96,7 @@ units = {
 		location = 3853
 		division_template = "Desert Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -106,7 +106,7 @@ units = {
 		location = 7926
 		division_template = "Desert Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -116,7 +116,7 @@ units = {
 		location = 8003
 		division_template = "Desert Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -126,7 +126,7 @@ units = {
 		location = 453
 		division_template = "Sandbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -136,7 +136,7 @@ units = {
 		location = 1593
 		division_template = "Sandbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -146,7 +146,7 @@ units = {
 		location = 1696
 		division_template = "Sandbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -156,7 +156,7 @@ units = {
 		location = 351
 		division_template = "Sandbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -166,7 +166,7 @@ units = {
 		location = 1528
 		division_template = "Sandbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -176,7 +176,7 @@ units = {
 		location = 8714
 		division_template = "Sandbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -186,6 +186,6 @@ units = {
 		location = 8529
 		division_template = "Sandbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 }

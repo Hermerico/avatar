@@ -102,21 +102,22 @@ units = {
 	division = {
 		location = 4847
 		division_template = "Bender Elephant Camel Brigade"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1  #0.7
 	}
 	division = {
 		location = 2809
 		division_template = "Elephant Camel Brigade"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1  #0.7
 	}
 	division = {
 		location = 199
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.7
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.7
 	}
 	division = {
 		location = 1420
 		division_template = "Militia Brigade"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1  #0.7
 	}
 }

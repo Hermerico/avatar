@@ -144,85 +144,90 @@ units = {
 	division = {
 		location = 3395
 		division_template = "Earthbender Cavalry Brigade"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 7186
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 2606
 		division_template = "Ostrich Cavalry Brigade"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 3332
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 2032
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 3435
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 2972
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 7104
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 4054
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 3048
 		division_template = "Ostrich Cavalry Brigade"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 7078
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 7098
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 7129
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.8
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 3974
 		division_template = "Town Guard"
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
 }

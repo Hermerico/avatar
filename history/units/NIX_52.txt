@@ -64,8 +64,9 @@ units = {
 		}
 		location = 3472
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -75,7 +76,7 @@ units = {
 		location = 5376
 		division_template = "Town Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -85,7 +86,7 @@ units = {
 		location = 653
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 	division = {
 		division_name = {
@@ -94,8 +95,9 @@ units = {
 		}
 		location = 5220
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -105,7 +107,7 @@ units = {
 		location = 2111
 		division_template = "Town Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -115,7 +117,7 @@ units = {
 		location = 6252
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 	division = {
 		division_name = {
@@ -124,8 +126,9 @@ units = {
 		}
 		location = 6239
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -135,7 +138,7 @@ units = {
 		location = 6220
 		division_template = "Town Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -145,6 +148,6 @@ units = {
 		location = 4265
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 }

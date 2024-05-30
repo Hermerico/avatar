@@ -102,7 +102,7 @@ units = {
 		location = 5933
 		division_template = "Waterbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -112,7 +112,7 @@ units = {
 		location = 5867
 		division_template = "Waterbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -122,7 +122,7 @@ units = {
 		location = 5834
 		division_template = "Waterbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -132,7 +132,7 @@ units = {
 		location = 5887
 		division_template = "Waterbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -142,7 +142,7 @@ units = {
 		location = 4428
 		division_template = "Waterbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -152,7 +152,7 @@ units = {
 		location = 5923
 		division_template = "Waterbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -162,7 +162,7 @@ units = {
 		location = 5810
 		division_template = "Waterbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -172,7 +172,7 @@ units = {
 		location = 5774
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -182,7 +182,7 @@ units = {
 		location = 5407
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -192,7 +192,7 @@ units = {
 		location = 5770
 		division_template = "Tribal Warriors"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -202,7 +202,7 @@ units = {
 		location = 4714
 		division_template = "Tribal Warriors"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -212,7 +212,7 @@ units = {
 		location = 5823
 		division_template = "City Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 	division = {
 		division_name = {
@@ -222,7 +222,7 @@ units = {
 		location = 5865
 		division_template = "City Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 	division = {
 		division_name = {
@@ -232,7 +232,7 @@ units = {
 		location = 5957
 		division_template = "City Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 	division = {
 		division_name = {
@@ -242,7 +242,7 @@ units = {
 		location = 5930
 		division_template = "Tribal Warriors"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -252,7 +252,7 @@ units = {
 		location = 5963
 		division_template = "Tribal Warriors"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -262,7 +262,7 @@ units = {
 		location = 5972
 		division_template = "Waterbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -272,7 +272,7 @@ units = {
 		location = 2418
 		division_template = "Tribal Warriors"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -282,7 +282,7 @@ units = {
 		location = 5898
 		division_template = "City Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.75
+		start_equipment_factor = 1  #0.75
 	}
 	division = {
 		division_name = {
@@ -292,7 +292,7 @@ units = {
 		location = 5733
 		division_template = "Waterbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -302,7 +302,7 @@ units = {
 		location = 5391
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -312,7 +312,7 @@ units = {
 		location = 5944
 		division_template = "Tribal Warriors"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -322,7 +322,7 @@ units = {
 		location = 5937
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -332,7 +332,7 @@ units = {
 		location = 5915
 		division_template = "Waterbender Brigade"
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	division = {
 		division_name = {
@@ -342,7 +342,7 @@ units = {
 		location = 5885
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -352,7 +352,7 @@ units = {
 		location = 5133
 		division_template = "Buffalo Yak Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -362,7 +362,7 @@ units = {
 		location = 6014
 		division_template = "Buffalo Yak Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -372,7 +372,7 @@ units = {
 		location = 1125
 		division_template = "Buffalo Yak Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -382,7 +382,7 @@ units = {
 		location = 800
 		division_template = "Buffalo Yak Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -392,7 +392,7 @@ units = {
 		location = 4628
 		division_template = "Buffalo Yak Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -402,7 +402,7 @@ units = {
 		location = 1554
 		division_template = "Buffalo Yak Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -412,7 +412,7 @@ units = {
 		location = 5731
 		division_template = "Buffalo Yak Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -422,6 +422,6 @@ units = {
 		location = 6049
 		division_template = "Buffalo Yak Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 }

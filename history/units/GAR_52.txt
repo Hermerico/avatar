@@ -106,8 +106,9 @@ units = {
 		}
 		location = 9247
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -116,8 +117,9 @@ units = {
 		}
 		location = 1530
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -126,8 +128,9 @@ units = {
 		}
 		location = 9184
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -136,8 +139,9 @@ units = {
 		}
 		location = 1211
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		division_name = {
@@ -147,7 +151,7 @@ units = {
 		location = 9251
 		division_template = "Town Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	division = {
 		division_name = {
@@ -157,7 +161,7 @@ units = {
 		location = 9251
 		division_template = "Archer Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	division = {
 		division_name = {
@@ -167,7 +171,7 @@ units = {
 		location = 2154
 		division_template = "Archer Brigade"
 		start_experience_factor = 0.08
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	division = {
 		division_name = {
@@ -177,6 +181,6 @@ units = {
 		location = 2154
 		division_template = "Infantry Banner"
 		start_experience_factor = 0.15
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 }

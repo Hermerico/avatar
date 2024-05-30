@@ -20,7 +20,7 @@ units = {
 		location = 2592
 		division_template = "Swampbender Group"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -31,7 +31,7 @@ units = {
 		location = 2592
 		division_template = "Swampbender Group"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -42,7 +42,7 @@ units = {
 		location = 2592
 		division_template = "Swampbender Group"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	
