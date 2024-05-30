@@ -52,8 +52,9 @@ units = {
 		}
 		location = 4003
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -63,8 +64,9 @@ units = {
 		}
 		location = 851
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -74,8 +76,9 @@ units = {
 		}
 		location = 1130
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -85,8 +88,9 @@ units = {
 		}
 		location = 840
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -96,8 +100,9 @@ units = {
 		}
 		location = 3369
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -107,8 +112,9 @@ units = {
 		}
 		location = 2942
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -118,8 +124,9 @@ units = {
 		}
 		location = 7721
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -129,8 +136,9 @@ units = {
 		}
 		location = 2204
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -140,8 +148,9 @@ units = {
 		}
 		location = 5420
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -151,8 +160,9 @@ units = {
 		}
 		location = 2810
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -162,8 +172,9 @@ units = {
 		}
 		location = 4632
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -173,8 +184,9 @@ units = {
 		}
 		location = 7585
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -184,8 +196,9 @@ units = {
 		}
 		location = 1605
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -195,8 +208,9 @@ units = {
 		}
 		location = 4193
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -206,8 +220,9 @@ units = {
 		}
 		location = 908
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	division= {	
 		division_name = {
@@ -216,8 +231,9 @@ units = {
 		}
 		location = 7613
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	division= {	
 		division_name = {
@@ -226,8 +242,9 @@ units = {
 		}
 		location = 7649
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -237,8 +254,9 @@ units = {
 		}
 		location = 4850
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -248,8 +266,9 @@ units = {
 		}
 		location = 5504
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -259,8 +278,9 @@ units = {
 		}
 		location = 4446
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -270,8 +290,9 @@ units = {
 		}
 		location = 851
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -281,8 +302,9 @@ units = {
 		}
 		location = 3369
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -292,8 +314,9 @@ units = {
 		}
 		location = 2942
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -303,8 +326,9 @@ units = {
 		}
 		location = 7721
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -314,8 +338,9 @@ units = {
 		}
 		location = 4632
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -325,8 +350,9 @@ units = {
 		}
 		location = 7585
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -336,8 +362,9 @@ units = {
 		}
 		location = 4193
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -347,8 +374,9 @@ units = {
 		}
 		location = 908
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	division= {	
 		division_name = {
@@ -357,8 +385,9 @@ units = {
 		}
 		location = 7613
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	division= {	
 		division_name = {
@@ -367,8 +396,9 @@ units = {
 		}
 		location = 7649
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	division= {	
@@ -378,8 +408,9 @@ units = {
 		}
 		location = 4446
 		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1  #0.6
 	}
 	
 	
@@ -398,7 +429,7 @@ units = {
 		location = 8182
 		division_template = "Town Guard"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1  #0.7
 	}
 	
 	division= {	
@@ -409,7 +440,7 @@ units = {
 		location = 8182
 		division_template = "Town Guard"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1  #0.7
 	}
 	
 	division= {	
@@ -420,7 +451,7 @@ units = {
 		location = 4186
 		division_template = "Town Guard"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1  #0.7
 	}
 	
 	division= {	
@@ -431,7 +462,7 @@ units = {
 		location = 3573
 		division_template = "Town Guard"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1  #0.7
 	}
 	
 	division= {	
@@ -442,7 +473,7 @@ units = {
 		location = 4433
 		division_template = "Town Guard"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1  #0.7
 	}
 	
 	division= {	
@@ -453,7 +484,7 @@ units = {
 		location = 7915
 		division_template = "Town Guard"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1  #0.7
 	}
 
 

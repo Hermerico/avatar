@@ -43,9 +43,9 @@ state={
 			add_core_of = EAR
 			buildings = {
 				infrastructure = 8
-				farm = 5
+				farm = 7
 				mill = 1
-
+				lumber_mill = 2	
 				10418 = {
 					wall = 40
 

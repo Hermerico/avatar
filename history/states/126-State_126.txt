@@ -46,10 +46,10 @@ state={
 
 			buildings = {
 				infrastructure = 7
-				farm = 2
+				farm = 4
 				masonry = 1
 				mill = 1
-				quarry = 4
+				quarry = 2
 				mine = 3
 				
 				10363 = {

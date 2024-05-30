@@ -101,36 +101,37 @@ units = {
 	division = {
 		location = 3439
 		division_template = "Town Guard"
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		location = 1803
 		division_template = "Town Guard"
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		location = 8014
 		division_template = "Town Guard"
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		location = 47
 		division_template = "Earthbender Brigade"
-		start_equipment_factor = 0.5
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		location = 7933
 		division_template = "Bender Eel Hound Brigade"
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		location = 177
 		division_template = "Eel Hound Brigade"
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 	division = {
 		location = 7912
 		division_template = "Militia Brigade"
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 }

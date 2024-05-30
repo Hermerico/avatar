@@ -12,6 +12,7 @@
  autonomy_collaboration_government:0 "Collaboration Government"
 
  EK_united:0 "United Earthkingdom"
+ EK_feast:0 "Executed.... a feast"
 
  AUTONOMY_CAN_TAKE_DESC:1 "$OWNER|UH$ can become a $NEXTLEVEL|H$"
  AUTONOMY_CANT_TAKE_DESC:1 "$OWNER|UH$ can not become a $NEXTLEVEL|H$ yet"

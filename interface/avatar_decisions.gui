@@ -468,6 +468,35 @@ guiTypes = {
 
 	}
 
+	############# dai_li ##############
+
+	containerWindowType = {
+		name = "dai_li_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 140 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_dai_li_bg"
+		}
+
+		iconType = {
+			name ="connection_1"
+			spriteType = "GFX_connection_1"
+			position = { x= 25 y = 10 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="dai_li_headquaters_icon"
+			spriteType = "GFX_dai_li_headquaters_large"
+			position = { x= 25 y = 10 }
+			pdx_tooltip = "dai_li_headquaters_ttp"
+			pdx_tooltip_delayed = "dai_li_headquaters_desc"
+		}
+
+	}
+
 	############# water unity ##############
 
 	containerWindowType = {

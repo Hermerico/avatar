@@ -1,0 +1,31 @@
+ideas = {
+
+	hidden_ideas = {
+
+		dai_li_headquaters = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 1
+				monthly_dai_li_influence = 1
+			}
+		}
+
+		
+	}
+
+	country = {
+		
+	}
+
+
+}

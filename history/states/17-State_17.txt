@@ -47,22 +47,24 @@ state = {
 			add_core_of = NWT
 			buildings = {
 				infrastructure = 6
-				arms_factory = 3
+				arms_factory = 4
 				harbour = 2
-				fishing_stand = 1
+				fishing_stand = 3
 				animal_weaving = 3
 				mine = 1
 				consumer_good_factory = 2
-				luxury_good_factory = 2
+				luxury_good_factory = 1
 				5957 = {
 					naval_base = 4
-					wall = 10
+					coastal_fortress = 10
 				}
 				5937 = {
-					wall = 10
+					naval_base = 4
+					coastal_fortress = 10
 				}
 				5970 = {
-					wall = 10
+					naval_base = 4
+					coastal_fortress = 10
 				}
 			}
 			instant_resource_calc = yes

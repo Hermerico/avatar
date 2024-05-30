@@ -206,109 +206,109 @@ units = {
 	division = {
 		location = 1998
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 498
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 2898
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 9133
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 3478
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 3479
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 712
 		division_template = "Infantry Banner"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 3127
 		division_template = "Earthbender Guard"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 4306
 		division_template = "Archer Brigade"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 626
 		division_template = "Earthbender Militia"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 8980
 		division_template = "Bender Ostrich Cavalry Brigade"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 4306
 		division_template = "Ostrich Cavalry Brigade"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 1575
 		division_template = "Ostrich Cavalry Brigade"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 1575
 		division_template = "Archer Brigade"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 3127
 		division_template = "City Guard"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 3162
 		division_template = "Militia Brigade"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 620
 		division_template = "City Guard"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 	division = {
 		location = 620
 		division_template = "Earthbender Guard"
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 		start_experience_factor = 0.4
 	}
 }

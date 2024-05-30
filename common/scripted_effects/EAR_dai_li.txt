@@ -108,13 +108,13 @@ EAR_upgrade_dai_li = {
 	}
 }
 
-EAR_increase_spearmen_cap = { 
+EAR_increase_militia_cap = { 
 	effect_tooltip = {
-		set_temp_variable = { EAR_new_spearmen_cap_for_tooltip = EAR_dai_li_cap }
-		add_to_temp_variable = { EAR_new_spearmen_cap_for_tooltip = 1 }
+		set_temp_variable = { EAR_new_militia_cap_for_tooltip = EAR_dai_li_cap }
+		add_to_temp_variable = { EAR_new_militia_cap_for_tooltip = 1 }
 		set_division_template_cap = { 
 			division_template = "Dai Li Unit" 
-			division_cap = EAR_new_spearmen_cap_for_tooltip   
+			division_cap = EAR_new_militia_cap_for_tooltip   
 		}
 	}
 	hidden_effect = {

@@ -46,6 +46,7 @@ state={
 			controller = NWT
 			add_core_of = NWT
 			buildings = {
+				lumber_mill = 2
 				infrastructure = 2
 
 			}

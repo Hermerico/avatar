@@ -7,18 +7,18 @@ on_actions = {
 
 			### grain consumption ###
 
-			set_variable = { komodo_consumed = 0.7 }
-			set_variable = { mongooze_consumed = 0.2 }
-			set_variable = { polar_consumed = 0.3 }
-			set_variable = { buffalo_consumed = 0.3 }
-			set_variable = { cat_consumed = 0.2 }
-			set_variable = { walrus_consumed = 0.6 }
-			set_variable = { ostrich_consumed = 0.4 }
-			set_variable = { eel_consumed = 0.2 }
-			set_variable = { elephant_consumed = 1.2 }
-			set_variable = { desert_consumed = 0.1 }
-			set_variable = { dragon_moose_consumed = 0.2 }
-			set_variable = { bison_consumed = 0.8 }
+			set_variable = { komodo_consumed = 0.07 }
+			set_variable = { mongooze_consumed = 0.02 }
+			set_variable = { polar_consumed = 0.03 }
+			set_variable = { buffalo_consumed = 0.03 }
+			set_variable = { cat_consumed = 0.02 }
+			set_variable = { walrus_consumed = 0.06 }
+			set_variable = { ostrich_consumed = 0.04 }
+			set_variable = { eel_consumed = 0.02 }
+			set_variable = { elephant_consumed = 0.12 }
+			set_variable = { desert_consumed = 0.01 }
+			set_variable = { dragon_moose_consumed = 0.02 }
+			set_variable = { bison_consumed = 0.08 }
 			set_variable = { small_bird_consumed = 0.001 }
 			set_variable = { medium_bird_consumed = 0.002 }
 			set_variable = { heavy_bird_consumed = 0.003 }
@@ -78,14 +78,6 @@ on_actions = {
 			multiply_variable = { heavy_bird_grain = heavy_bird_consumed }
 
 
-			set_variable = { grain_supply = resource@oil }
-			multiply_variable = { grain_supply = 10 }
-			clamp_variable = {
-				var = grain_supply
-				min = 0.001
-			}
-
-
 			set_variable = { grain_use = 0 }
 			add_to_variable = { grain_use = komodo_grain }
 			add_to_variable = { grain_use = mongooze_grain }
@@ -104,25 +96,48 @@ on_actions = {
 			add_to_variable = { grain_use = heavy_bird_grain }
 
 
-			set_variable = { grain_balance = grain_supply }
-			subtract_from_variable = { grain_balance = grain_use }
+			##### grain 
 
-			add_to_variable = { grain_variable = grain_balance }
+			set_variable = { grain_supply = resource@oil }
+			clamp_variable = {
+				var = grain_supply
+				min = 0.001
+			}
+
+			set_variable = { grain_in_store = resource@oil }
+			multiply_variable = { grain_in_store = -1 }
+			subtract_from_variable = { grain_in_store = resource@oil }
+			multiply_variable = { grain_in_store = 0.5 }
+			add_to_variable = { grain_in_store = prev_day_grain_in_store }
+
+			clamp_variable = {
+				var = grain_in_store
+				min = 0
+				max = grain_variable
+			}
+			set_variable = { prev_day_grain_in_store = grain_in_store }
+
+			subtract_from_variable = { grain_variable = grain_in_store }
+			if = {
+				limit = {
+					check_variable = { resource@oil > 0 }
+				}
+				add_to_variable = { grain_variable = resource@oil }
+			}
 
 
 			### capacity
 
-			set_variable = { grain_max = 0 }
-			add_to_variable = { grain_max = owned_controlled_states }
-			multiply_variable = { grain_max = 100 }
+			set_variable = { grain_max = 100 }
 			set_temp_variable = { grain_storage = modifier@max_grain_building_k }
+			multiply_temp_variable = { grain_storage = 1000 }
 			add_to_variable = { grain_max = grain_storage }
 			set_temp_variable = { grain_capacity_factor = 1 }
 			add_to_temp_variable = { grain_capacity_factor = modifier@grain_capacity_factor }
 			multiply_variable = { grain_max = grain_capacity_factor }
 
 			clamp_variable = { 
-				var = grain_variable 
+				var = grain_variable
 				min = 0 
 				max = grain_max
 			}
@@ -196,22 +211,7 @@ on_actions = {
 			divide_variable = { small_bird_cap = small_bird_consumed }
 			divide_variable = { medium_bird_cap = medium_bird_consumed }
 			divide_variable = { heavy_bird_cap = heavy_bird_consumed }
-
-			divide_variable = { komodo_cap = 15 }
-			divide_variable = { mongooze_cap = 15 }
-			divide_variable = { polar_cap = 15 }
-			divide_variable = { buffalo_cap = 15 }
-			divide_variable = { cat_cap = 15 }
-			divide_variable = { walrus_cap = 15 }
-			divide_variable = { ostrich_cap = 15 }
-			divide_variable = { eel_cap = 15 }
-			divide_variable = { elephant_cap = 15 }
-			divide_variable = { desert_cap = 15 }
-			divide_variable = { dragon_moose_cap = 15 }
-			divide_variable = { bison_cap = 15 }
-			divide_variable = { small_bird_cap = 15 }
-			divide_variable = { medium_bird_cap = 15 }
-			divide_variable = { heavy_bird_cap = 15 }
+			
 
 			add_to_variable = { komodo_cap = num_equipment_in_armies@komodo_rhino_animal }
 			add_to_variable = { mongooze_cap = num_equipment_in_armies@mongooze_lizard_animal }

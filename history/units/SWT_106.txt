@@ -39,7 +39,7 @@ units = {
 		location = 10122
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 	
 	division= {	
@@ -50,7 +50,7 @@ units = {
 		location = 10122
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1  #0.3
 	}
 
 	division= {	
@@ -61,7 +61,7 @@ units = {
 		location = 10122
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1  #0.7
 	}
 
 	division= {	
@@ -72,7 +72,7 @@ units = {
 		location = 10122
 		division_template = "Tribal Warriors"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1  #0.5
 	}
 
 }

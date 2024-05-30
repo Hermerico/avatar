@@ -69,10 +69,9 @@ country_event = {
 			base = 100
 		}
 
-		add_to_variable = {
-			var = autonomy_var
+		add_autonomy_score = {
 			value = -100
-			tooltip = autonomy_change_ttp
+			localization = EK_united
 		}
 		EAR = {
 			add_political_power = 50

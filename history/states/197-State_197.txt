@@ -1,11 +1,8 @@
-
-state={
-	id=197
-	name="STATE_197"
-	manpower=4500
+state = {
+	id = 197
+	name = "STATE_197"
+	manpower = 4500
 	state_category=rural
-	
-
 	history = {
 		pop_growth = yes
 		
@@ -51,18 +48,13 @@ state={
 				ranch = 1
 				3974 = {
 					naval_base = 2
-
 				}
-
 			}
-
 			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = WBA
 			controller = WBA
-
-		
 			instant_resource_calc = yes
 		}
 		106.2.4 = {
@@ -79,25 +71,15 @@ state={
 				set_province_controller = 7210
 				set_province_controller = 4041
 				set_province_controller = 1261
-				set_province_controller = 3427
-				set_province_controller = 7146
-				set_province_controller = 2606
-				set_province_controller = 1205
-				set_province_controller = 7186
-
 			}
-
 			instant_resource_calc = yes
 		}
 		111.10.30 = {
 			owner = WBA
 			controller = WBA
-
 			instant_resource_calc = yes
 		}
-
 	}
-
 	provinces = {
 		60 1191 1205 1261 1630 2032 2266 2606 2972 3332 3395 3427 3435 3974 4041 7102 7146 7186 7210 7227 7232 7251 7257 
 	}

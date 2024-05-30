@@ -22,7 +22,7 @@ units = {
 		location = 8218
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 	}
 
 	division= {	
@@ -33,7 +33,7 @@ units = {
 		location = 8218
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 	}
 	
 	division= {	
@@ -44,7 +44,7 @@ units = {
 		location = 8218
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 	}
 
 	division= {	
@@ -55,7 +55,7 @@ units = {
 		location = 4986
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1  #0.9
 	}
 	
 	division= {	
@@ -66,7 +66,7 @@ units = {
 		location = 4986
 		division_template = "Wolf Warriors"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	

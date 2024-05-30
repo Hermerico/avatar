@@ -47,6 +47,20 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_dai_li_bg"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_headquaters_large"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_headquaters.dds"
+	}
+
+	spriteType = {
+		name = "GFX_connection_1"
+		texturefile = "gfx/interface/decisions/dai_li/head_connection_1.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decision_category_chin_support_ui"
 		texturefile = "gfx/interface/decisions/decision_category_chin_support_ui.dds"
 		noOfFrames = 10

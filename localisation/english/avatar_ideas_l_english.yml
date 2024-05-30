@@ -163,6 +163,10 @@
  destroyed_morale_EAR:0 "Destroyed Morale"
  destroyed_morale_EAR_desc:0 "With fall of the Mandate of Heaven, it had become clear that the Earth Kingdom was no longer the unbreakable fortress it once was. The Fire Nation's relentless advance has left the Earth Kingdom in a state of disarray, with the Unconquerable City getting conquered, what chance do we have to resist?"
  
+ dai_li_headquaters:0 "Dai Li Headquaters"
+ dai_li_headquaters_ttp:0 "§YDai Li Headquaters§! \n£spy_slots_texticon  Available Spies: §G+1§! \nMonthly £dai_li_texticon  §DDai Li§! Influence: §G+1§!"
+ dai_li_headquaters_desc:0 ""
+
  merchant_tradition:0 "Merchant Tradition"
  merchant_tradition_desc:0 "Generations of trading overseas made the navy part of our culture."
  pirate_traders:0 "High Risk Traders"

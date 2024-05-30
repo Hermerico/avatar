@@ -37,7 +37,7 @@ units = {
 		location = 4857
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -48,7 +48,7 @@ units = {
 		location = 4857
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -59,7 +59,7 @@ units = {
 		location = 4857
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -70,7 +70,7 @@ units = {
 		location = 5868
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -81,7 +81,7 @@ units = {
 		location = 5028
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -92,7 +92,7 @@ units = {
 		location = 2692
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -103,7 +103,7 @@ units = {
 		location = 2539
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -114,7 +114,7 @@ units = {
 		location = 5869
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 		division= {	
@@ -125,7 +125,7 @@ units = {
 		location = 800
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -136,7 +136,7 @@ units = {
 		location = 5896
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -147,7 +147,7 @@ units = {
 		location = 5916
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -158,7 +158,7 @@ units = {
 		location = 5886
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -169,7 +169,7 @@ units = {
 		location = 5923
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -180,7 +180,7 @@ units = {
 		location = 3053
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -191,7 +191,7 @@ units = {
 		location = 5952
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -202,7 +202,7 @@ units = {
 		location = 5958
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -213,7 +213,7 @@ units = {
 		location = 800
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -224,7 +224,7 @@ units = {
 		location = 5896
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -235,7 +235,7 @@ units = {
 		location = 5916
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -246,7 +246,7 @@ units = {
 		location = 5886
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -257,7 +257,7 @@ units = {
 		location = 5923
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -268,7 +268,7 @@ units = {
 		location = 3053
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -279,7 +279,7 @@ units = {
 		location = 5952
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -290,7 +290,7 @@ units = {
 		location = 5958
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -301,7 +301,7 @@ units = {
 		location = 5923
 		division_template = "Fire Nation Spearmen"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 	division= {	
@@ -312,7 +312,7 @@ units = {
 		location = 5923
 		division_template = "Firebenders"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1  #0.8
 	}
 	
 }

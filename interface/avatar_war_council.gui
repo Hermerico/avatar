@@ -73,6 +73,17 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			position = { x=164 y=166 }	
 		}
+		instantTextboxType = {
+			name = "spies_available"
+			position = {x= 174 y= 172 }
+			font = "hoi_18mbs"
+			maxWidth = 110
+			maxHeight = 23
+			format = left
+			text = "spy_modifier"
+			pdx_tooltip = spy_modifier_tooltip
+			pdx_tooltip_delayed = MODIFIER_OPERATIVE_SLOT_DESC
+		}
 
 		iconType =	{
 			name = "modifier_bg_4"

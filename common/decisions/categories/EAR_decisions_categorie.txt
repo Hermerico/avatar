@@ -62,6 +62,8 @@ earth_factions_category = {
 EAR_dai_li_category = {
     icon = dai_li
 
+    scripted_gui = dai_li_ui
+
     picture = GFX_decision_cat_ear_dai_li
 
 	visible = {
