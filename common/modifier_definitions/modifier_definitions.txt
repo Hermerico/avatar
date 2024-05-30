@@ -365,12 +365,6 @@ law_change_cost = {									#### cost of changing the laws. does nothing
 	precision = 0
 	postfix = none
 }
-monthly_unification = {								#### monthly tribal unification for nwt and swt
-	color_type = good
-	value_type = number
-	precision = 0
-	postfix = none
-}
 
 taxation = {										#### percentage of tax extracted from populations prosperity in country
 	color_type = neutral

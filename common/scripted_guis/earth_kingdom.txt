@@ -37,6 +37,24 @@ scripted_gui = {
 			}
 		}
 	}
+
+
+	dai_li_ui = {
+		context_type = decision_category
+		window_name = "dai_li_ui_window"
+
+
+		triggers = {
+			dai_li_headquaters_icon_visible = {
+				has_idea = dai_li_headquaters
+			}
+		}
+
+		properties = {
+			
+		}
+
+	}
 	
 }
 

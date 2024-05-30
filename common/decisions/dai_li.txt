@@ -11,6 +11,12 @@ THE_EARTHKINGDOM = {
 		visible = {
 			tag = EAR
 			has_start_date < 50.1.1
+			NOT = {
+				has_country_flag = {
+					flag = dai_li_category_active
+					value < 2
+				}
+			}
 		}
 
 		available = {
@@ -45,7 +51,7 @@ THE_EARTHKINGDOM = {
 					level = 2
 				}
 			}
-			set_country_flag = dai_li_headquater_expansion
+			add_ideas = dai_li_headquaters
 			add_to_variable = { 
 				var = dai_li_influence
 				value = 10
@@ -56,6 +62,59 @@ THE_EARTHKINGDOM = {
 }
 
 EAR_dai_li_category = {
+	
+	expand_the_headquaters_2 = {
+
+		icon = dai_li_headquater
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			has_start_date < 50.1.1
+			NOT = {
+				has_country_flag = dai_li_headquater_expansion
+				has_decision = expand_the_headquaters
+			}
+		}
+
+		available = {
+			
+		}
+		
+		days_remove = 6 #0
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
+		}
+		custom_cost_text = expenses_50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 50 }
+
+		}
+
+		remove_effect = {
+
+			178 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			add_ideas = dai_li_headquaters
+			add_to_variable = { 
+				var = dai_li_influence
+				value = 10
+				tooltip = dai_li_influence
+			}
+		}
+	}
+
 	encourage_extremism = {
 
 		priority = 100
@@ -180,9 +239,9 @@ EAR_dai_li_category = {
 			}
 			EAR_clamp_dli = yes
 			add_to_variable = { 
-				var = dai_li_disloyalty
-				value = -0.05
-				tooltip = dai_li_disloyalty
+				var = dai_li_loyalty
+				value = 0.05
+				tooltip = dai_li_loyalty
 			}
 		}
 	}
@@ -243,6 +302,13 @@ EAR_dai_li_category = {
 
 		custom_cost_text = EAR_decision_cost_medium_DLI
 
+		complete_effect = {
+			add_to_variable = { 
+				var = dai_li_influence
+				value = -25
+				tooltip = dai_li_influence
+			}
+		}
 
 		remove_effect = {
 			EAR_increase_militia_cap = yes 
@@ -250,9 +316,6 @@ EAR_dai_li_category = {
 		
 		ai_will_do = {
 			base = 10 
-		}
-		ai_will_do = {
-			base = 25 
 		}
 	}
 	

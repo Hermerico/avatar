@@ -285,6 +285,31 @@ ration_calculation = {
 	set_variable = { occupied_ratio_percent = occupied_ratio_hundred }
 	multiply_variable = { occupied_ratio_hundred = 100 }
 
+	set_variable = { soldier_get = soldier_get_k }
+	multiply_variable = { soldier_get = 1000 }
+
+	set_variable = { family_get = family_get_k }
+	multiply_variable = { family_get = 1000 }
+
+	set_variable = { working_get = working_get_k }
+	multiply_variable = { working_get = 1000 }
+
+	set_variable = { occupied_get = occupied_get_k }
+	multiply_variable = { occupied_get = 1000 }
+
+	set_variable = { soldier_demand = soldier_demand_k }
+	multiply_variable = { soldier_demand = 1000 }
+
+	set_variable = { family_demand = family_demand_k }
+	multiply_variable = { family_demand = 1000 }
+
+	set_variable = { working_demand = working_demand_k }
+	multiply_variable = { working_demand = 1000 }
+
+	set_variable = { occupied_demand = occupied_demand_k }
+	multiply_variable = { occupied_demand = 1000 }
+
+
 
 
 	set_variable = { ration_balance = ration_daily }
@@ -424,7 +449,8 @@ ratio_effects_and_interface = {
 
 
 	set_variable = { ratio_buff_expected_storage = daily_ration_need }
-	multiply_variable = { ratio_buff_expected_storage = 3650 }
+	multiply_variable = { ratio_buff_expected_storage = 365 }
+	multiply_variable = { ratio_buff_expected_storage = 2 }   ### 2 years
 
 	set_variable = { ration_buff = ration_variable }
 	divide_variable = { ration_buff = ratio_buff_expected_storage }

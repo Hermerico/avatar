@@ -129,7 +129,7 @@ permanent_spirits_and_modifiers = yes
 
 	retire_character = EAR_zaifeng
 
-	set_country_flag = dai_li_headquater_expansion
+	add_ideas = dai_li_headquaters
 	set_country_flag = extremist_dai_li
 	set_country_flag = dai_li_ministers
 
@@ -147,7 +147,7 @@ permanent_spirits_and_modifiers = yes
 	add_ideas = {
 		extensive_conscription
 		earth_exceptional
-		modifier = dai_li_government
+		dai_li_government
 		heart_of_the_kingdom_idea
 	}
 

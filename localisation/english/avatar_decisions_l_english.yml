@@ -534,7 +534,7 @@
 
 
  EAR_dai_li_category:0 "§mDai Li§!"
- EAR_dai_li_category_desc:0 "The §DDai Li§! is the secretive and elite police force of Ba Sing Se, founded by Avatar Kyoshi with the aim of "protecting the cultural heritage of Ba Sing Se", effectively protecting the Earth King's interest against subversive individuals and groups. \n\n£dai_li_texticon  §YInfluence§!: [?dai_li_influence|D0]\n£dai_li_texticon  §YDisloyalty§!: [?dai_li_loyalty|+%0]"
+ EAR_dai_li_category_desc:0 "The §DDai Li§! is the secretive and elite police force of Ba Sing Se, founded by Avatar Kyoshi with the aim of "protecting the cultural heritage of Ba Sing Se", effectively protecting the Earth King's interest against subversive individuals and groups. \n\n£dai_li_texticon  §YInfluence§!: [?dai_li_influence|D0]/[?EAR_max_dai_li_influence|Y0]\n£dai_li_texticon  §YLoyalty§!: [?dai_li_loyalty|+%0]"
  
  EAR_decision_cost_small_DLI:0 "£dai_li_texticon  [?dai_li_small_influence_cost|0]"
  EAR_decision_cost_small_DLI_blocked:0 "£dai_li_texticon  §R[?dai_li_small_influence_cost|0]§!"
@@ -548,6 +548,8 @@
 
  expand_the_headquaters:0 "Expand the Headquarters"
  expand_the_headquaters_desc:0 "Giving the Dai Li more space to plan and practice their operations will allow them to serve the king better."
+ expand_the_headquaters_2:0 "Expand the Headquarters"
+ expand_the_headquaters_2_desc:0 "Giving the Dai Li more space to plan and practice their operations will allow them to serve the king better."
  agents_in_the_government:0 "Agents in the Government"
  agents_in_the_government_desc:0 "The aristocracy of the city has failed. Now it is time for younger and more ambitious men to lead the way."
  encourage_extremism:0 "Encourage Extremism"

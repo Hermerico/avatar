@@ -4506,11 +4506,6 @@ technologies = {
 		}
 		
 		on_research_complete = {
-			modify_building_resources = {
-				building = mine
-				resource = rubber
-				amount = 1
-			}
 			add_to_variable = { mine_output2 = 1 }
 		}
 		

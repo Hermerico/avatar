@@ -163,6 +163,8 @@ encryption_modifier:0 "£encryption_texticon  [?mtth:encription_combined|+1]"
 encryption_modifier_tooltip:0 "£encryption_texticon  §YEncryption§! \nBase value: §Y0§! \n\nModifiers: [?modifier@encryption|+0]\nFactor: [?modifier@encryption_factor|+0%]"
 decryption_modifier:0 "£decryption_texticon  [?mtth:decription_combined|+1]"
 decryption_modifier_tooltip:0 "£decryption_texticon  §YDecryption§! \nBase value: §Y0§! \n\nModifiers: [?modifier@decryption|+0]\nFactor: [?modifier@decryption_factor|+0%]"
+spy_modifier:0 "£spy_slots_texticon  [?modifier@operative_slot|+0]"
+spy_modifier_tooltip:0 "£spy_slots_texticon  §YAvailable Spies§! \nSpies: [?modifier@operative_slot|+0]"
 
 logistics_spirit_text:0 "Logistics Level: [?logistic_spirit_var|Y0]"
 logistic_name_1:0 "Supply Gathering"

@@ -1,0 +1,13 @@
+
+monthly_unification = {								#### monthly tribal unification for nwt and swt
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+}
+monthly_dai_li_influence = {								#### monthly dai li influence for ear
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+}

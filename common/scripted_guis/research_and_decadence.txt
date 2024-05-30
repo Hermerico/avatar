@@ -548,10 +548,10 @@ scripted_gui = {
 				#country_event = invention.1
 				recalculate_age = yes
 			}
-			alchemy_2_click = {
+			bronze_alloy_2_click = {
 				subtract_from_variable = { knowledge_variable = @AGE_3_COST }
 				set_technology = {
-					alchemy = 1
+					bronze_alloy = 1
 				}
 				#country_event = invention.1
 				recalculate_age = yes
@@ -590,10 +590,10 @@ scripted_gui = {
 				#country_event = invention.1
 				recalculate_age = yes
 			}
-			bronze_alloy_2_click = {
+			alchemy_2_click = {
 				subtract_from_variable = { knowledge_variable = @AGE_4_COST }
 				set_technology = {
-					bronze_alloy = 1
+					alchemy = 1
 				}
 				#country_event = invention.1
 				recalculate_age = yes

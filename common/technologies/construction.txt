@@ -5,14 +5,14 @@ technologies = {
 			agriculture = 1
 		}
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			farm_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = farm
-			level = 2
-		}
+		#enable_building = {
+		#	building = farm
+		#	level = 2
+		#}
 
 		on_research_complete = {
 			set_variable = { farm_level = 2 }
@@ -66,20 +66,20 @@ technologies = {
 			custom_effect_tooltip = farm_upgrade_2_tt
 		}
 
-		enable_building = {
-			building = farm
-			level = 4
-		}
+		#enable_building = {
+		#	building = farm
+		#	level = 4
+		#}
 
-		enable_building = {
-			building = ranch
-			level = 4
-		}
+		#enable_building = {
+		#	building = ranch
+		#	level = 4
+		#}
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			ranch_level_max = 2
 			farm_level_max = 2
-		}
+		#}
 		
 		path = {
 			leads_to_tech = farm_2
@@ -114,10 +114,10 @@ technologies = {
 		}
 		production_cost_farm_factor = -0.1
 
-		enable_building = {
-			building = farm
-			level = 6
-		}
+		#enable_building = {
+		#	building = farm
+		#	level = 6
+		#}
 
 		on_research_complete = {
 			set_variable = { farm_level = 6 }
@@ -125,9 +125,9 @@ technologies = {
 			custom_effect_tooltip = farm_upgrade_1_tt
 		}
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			farm_level_max = 2
-		}
+		#}
 
 		path = {
 			leads_to_tech = farm_3
@@ -163,18 +163,18 @@ technologies = {
 		}
 		production_cost_farm_factor = -0.15
 
-		enable_building = {
-			building = farm
-			level = 10
-		}
+		#enable_building = {
+		#	building = farm
+		#	level = 10
+		#}
 
 		on_research_complete = {
 			set_variable = { farm_level = 10 }
 		}
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			farm_level_max = 4
-		}
+		#}
 
 		research_cost = 1.25
 		folder = {
@@ -204,14 +204,14 @@ technologies = {
 			domestication = 1
 		}
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			ranch_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = ranch
-			level = 2
-		}
+		#enable_building = {
+		#	building = ranch
+		#	level = 2
+		#}
 
 		on_research_complete = {
 			set_variable = { ranch_level = 2 }
@@ -263,14 +263,14 @@ technologies = {
 			custom_effect_tooltip = ranch_upgrade_1_tt
 		}
 
-		enable_building = {
-			building = ranch
-			level = 6
-		}
+		#enable_building = {
+		#	building = ranch
+		#	level = 6
+		#}
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			ranch_level_max = 2
-		}
+		#}
 
 
 		production_cost_ranch_factor = -0.1
@@ -307,13 +307,13 @@ technologies = {
 			custom_effect_tooltip = ranch_upgrade_2_tt
 		}
 
-		enable_building = {
-			building = ranch
-			level = 10
-		}
-		hidden_modifier = {
+		#enable_building = {
+		#	building = ranch
+		#	level = 10
+		#}
+		#hidden_modifier = {
 			ranch_level_max = 4
-		}
+		#}
 
 		production_cost_ranch_factor = -0.15
 		
@@ -780,14 +780,14 @@ technologies = {
 
 	fishing_stand_1 = {
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			fishing_stand_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = fishing_stand
-			level = 2
-		}
+		#enable_building = {
+		#	building = fishing_stand
+		#	level = 2
+		#}
 
 		on_research_complete = {
 			set_variable = { fishing_stand_level = 2 }
@@ -819,14 +819,14 @@ technologies = {
 			astronomy = 1
 		}
 		
-		hidden_modifier = {
+		#hidden_modifier = {
 			fishing_stand_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = fishing_stand
-			level = 4
-		}
+		#enable_building = {
+		#	building = fishing_stand
+		#	level = 4
+		#}
 
 		on_research_complete = {
 			set_variable = { fishing_stand_level = 4 }
@@ -859,14 +859,14 @@ technologies = {
 			leverage = 1
 		}
 		
-		hidden_modifier = {
+		#hidden_modifier = {
 			fishing_stand_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = fishing_stand
-			level = 5
-		}
+		#enable_building = {
+		#	building = fishing_stand
+		#	level = 5
+		#}
 
 		on_research_complete = {
 			set_variable = { fishing_stand_level = 5 }
@@ -901,14 +901,14 @@ technologies = {
 			genetics = 1
 		}
 		
-		hidden_modifier = {
+		#hidden_modifier = {
 			fishing_stand_level_max = 4
-		}
+		#}
 
-		enable_building = {
-			building = fishing_stand
-			level = 10
-		}
+		#enable_building = {
+		#	building = fishing_stand
+		#	level = 10
+		#}
 
 		on_research_complete = {
 			set_variable = { fishing_stand_level = 10 }
@@ -943,14 +943,14 @@ technologies = {
 			kinectics = 1
 		}
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			lumber_mill_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = lumber_mill
-			level = 2
-		}
+		#enable_building = {
+		#	building = lumber_mill
+		#	level = 2
+		#}
 
 		on_research_complete = {
 			set_variable = { lumber_mill_level = 2 }
@@ -995,14 +995,14 @@ technologies = {
 			smelting = 1
 		}
 		
-		hidden_modifier = {
+		#hidden_modifier = {
 			lumber_mill_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = lumber_mill
-			level = 4
-		}
+		#enable_building = {
+		#	building = lumber_mill
+		#	level = 4
+		#}
 
 		on_research_complete = {
 			set_variable = { lumber_mill_level = 4 }
@@ -1036,14 +1036,14 @@ technologies = {
 		}
 		production_cost_lumber_mill_factor = -0.1
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			lumber_mill_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = lumber_mill
-			level = 6
-		}
+		#enable_building = {
+		#	building = lumber_mill
+		#	level = 6
+		#}
 
 		on_research_complete = {
 			set_variable = { lumber_mill_level = 6 }
@@ -1079,14 +1079,14 @@ technologies = {
 		}
 		production_cost_lumber_mill_factor = -0.15
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			lumber_mill_level_max = 4
-		}
+		#}
 
-		enable_building = {
-			building = lumber_mill
-			level = 10
-		}
+		#enable_building = {
+		#	building = lumber_mill
+		#	level = 10
+		#}
 
 		on_research_complete = {
 			set_variable = { lumber_mill_level = 10 }
@@ -1382,14 +1382,14 @@ technologies = {
 			kinectics = 1
 		}
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			quarry_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = quarry
-			level = 2
-		}
+		#enable_building = {
+		#	building = quarry
+		#	level = 2
+		#}
 
 		on_research_complete = {
 			set_variable = { quarry_level = 2 }
@@ -1442,14 +1442,14 @@ technologies = {
 		dependencies = {
 			leverage = 1
 		}
-		hidden_modifier = {
+		#hidden_modifier = {
 			quarry_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = quarry
-			level = 4
-		}
+		#enable_building = {
+		#	building = quarry
+		#	level = 4
+		#}
 
 		on_research_complete = {
 			set_variable = { quarry_level = 4 }
@@ -1482,14 +1482,14 @@ technologies = {
 			magnetism = 1
 		}
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			quarry_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = quarry
-			level = 6
-		}
+		#enable_building = {
+		#	building = quarry
+		#	level = 6
+		#}
 
 		on_research_complete = {
 			set_variable = { quarry_level = 6 }
@@ -1525,14 +1525,14 @@ technologies = {
 			gas_turbine = 1
 		}
 		
-		hidden_modifier = {
+		#hidden_modifier = {
 			quarry_level_max = 4
-		}
+		#}
 
-		enable_building = {
-			building = quarry
-			level = 10
-		}
+		#enable_building = {
+		#	building = quarry
+		#	level = 10
+		#}
 
 		on_research_complete = {
 			set_variable = { quarry_level = 10 }
@@ -1704,14 +1704,14 @@ technologies = {
 			smelting = 1
 		}
 
-		hidden_modifier = {
+		#hidden_modifier = {
 			mine_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = mine
-			level = 2
-		}
+		#enable_building = {
+		#	building = mine
+		#	level = 2
+		#}
 
 		on_research_complete = {
 			set_variable = { mine_level = 2 }
@@ -1751,14 +1751,14 @@ technologies = {
 			architecture = 1
 		}
 		
-		hidden_modifier = {
+		#hidden_modifier = {
 			mine_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = mine
-			level = 4
-		}
+		#enable_building = {
+		#	building = mine
+		#	level = 4
+		#}
 
 		on_research_complete = {
 			set_variable = { mine_level = 4 }
@@ -1790,14 +1790,14 @@ technologies = {
 			alchemy = 1
 		}
 		
-		hidden_modifier = {
+		#hidden_modifier = {
 			mine_level_max = 2
-		}
+		#}
 
-		enable_building = {
-			building = mine
-			level = 6
-		}
+		#enable_building = {
+		#	building = mine
+		#	level = 6
+		#}
 
 		on_research_complete = {
 			set_variable = { mine_level = 6 }
@@ -1833,14 +1833,14 @@ technologies = {
 			gas_turbine = 1
 		}
 		
-		hidden_modifier = {
+		#hidden_modifier = {
 			mine_level_max = 4
-		}
+		#}
 
-		enable_building = {
-			building = mine
-			level = 10
-		}
+		#enable_building = {
+		#	building = mine
+		#	level = 10
+		#}
 
 		on_research_complete = {
 			set_variable = { mine_level = 10 }
@@ -2639,7 +2639,7 @@ technologies = {
 		}
 		enable_building = {
 			building = fuel_repository
-			level = 50
+			level = 5
 		}
 
 		#path = {
