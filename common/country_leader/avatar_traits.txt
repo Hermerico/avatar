@@ -51,6 +51,12 @@ leader_traits = {
 		centralisation_target_modifier = 0.2
 		available_missions = 1
 	}
+	shadow_king = {
+		random = no
+		stability_factor = 0.15
+		available_missions = 1
+		political_power_factor = -0.2
+	}
 	king = {
 		random = no
 		stability_factor = 0.05

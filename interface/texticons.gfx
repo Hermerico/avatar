@@ -235,6 +235,11 @@ spriteTypes = {
 		texturefile = "gfx/texticons/spy_network_growth.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_prison_texticon"
+		texturefile = "gfx/texticons/prison_texticon.dds"
+		legacy_lazy_load = no
+	}
 
 
 

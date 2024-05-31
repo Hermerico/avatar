@@ -68,8 +68,8 @@ EAR_ba_sing_se_expansion = {
 			
 		}
 
-		days_remove = 1#00
-		days_re_enable = 5#0
+		days_remove = 100
+		days_re_enable = 50
 
 		custom_cost_trigger = {
 			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
@@ -118,7 +118,7 @@ EAR_ba_sing_se_expansion = {
 		
 		fire_only_once = yes
 
-		days_remove = 3#65
+		days_remove = 365
 
 		modifier = {
 			building_upkeep_factor = 0.25

@@ -68,11 +68,22 @@ EAR_dai_li_category = {
 
 	visible = {
 		TAG = EAR
-		NOT = { has_country_flag = hide_mission_decisions }
-
-		has_country_flag = {
-			flag = dai_li_category_active
-			value < 2
+		OR = {
+			NOT = { 
+				has_country_flag = dai_li_country_decision
+				has_country_flag = hide_mission_decisions 
+			}
+			AND = {
+				has_country_flag = dai_li_country_decision
+				NOT = { has_country_flag = hide_country_decisions }
+			}
+		}
+		OR = {
+			has_country_flag = {
+				flag = dai_li_category_active
+				value < 2
+			}
+			has_country_flag = dai_li_country_decision
 		}
 	}
 	#visible_when_empty = yes

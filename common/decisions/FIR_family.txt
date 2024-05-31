@@ -273,7 +273,7 @@ FIR_royal_family_category = {
 			}
 		}
 
-		days_remove = 15#0
+		days_remove = 150
 
 		complete_effect = {
 			hidden_effect = { scoped_sound_effect  = "turning_page" }
@@ -628,7 +628,7 @@ FIR_royal_family_category = {
 			}
 		}
 
-		days_remove = 15#0
+		days_remove = 150
 
 		complete_effect = {
 			hidden_effect = { scoped_sound_effect  = "turning_page" }
@@ -968,7 +968,7 @@ FIR_royal_family_category = {
 			}
 		}
 
-		days_remove = 15#0
+		days_remove = 150
 
 		complete_effect = {
 			hidden_effect = { scoped_sound_effect  = "turning_page" }
@@ -1391,7 +1391,7 @@ FIR_royal_family_category = {
 			}
 		}
 
-		days_remove = 15#0
+		days_remove = 150
 
 		complete_effect = {
 			hidden_effect = { scoped_sound_effect  = "turning_page" }
@@ -1594,7 +1594,7 @@ FIR_royal_family_category = {
 			}
 		}
 
-		days_remove = 15#0
+		days_remove = 150
 
 		complete_effect = {
 			hidden_effect = { scoped_sound_effect  = "turning_page" }

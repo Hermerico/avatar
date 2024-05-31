@@ -21,7 +21,10 @@ country_event = {
 		}
 
 		unlock_decision_category_tooltip = EAR_dai_li_category
-		set_country_flag = dai_li_category_active
+		set_country_flag = {
+			flag = dai_li_category_active
+			value = 1
+		}
 
 		custom_effect_tooltip = air_genocide_decisions
 		add_to_variable = { 
