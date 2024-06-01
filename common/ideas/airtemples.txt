@@ -9,8 +9,10 @@ ideas = {
 
 		council_harsh_opposition = {
 			cancel = {
-				has_country_flag = air_council_dissolved
-				{ check_variable = { AIR_council_support = 1 }}
+				OR = {
+					has_country_flag = air_council_dissolved
+					NOT = {  check_variable = { AIR_council_support = 1 }}
+				}
 			}
 			
 			modifier = {
@@ -22,13 +24,17 @@ ideas = {
 				max_planning_factor = -0.5
 				training_time_factor = 0.5
 				income = -0.3
+
+				bender_target = 0.5
 			}
 		}
 		
 		council_opposition = {
 			cancel = {
-				has_country_flag = air_council_dissolved
-				{ check_variable = { AIR_council_support = 2 }}
+				OR = {
+					has_country_flag = air_council_dissolved
+					NOT = {  check_variable = { AIR_council_support = 2 }}
+				}
 			}
 			
 			modifier = {
@@ -40,20 +46,31 @@ ideas = {
 				max_planning_factor = -0.25
 				training_time_factor = 0.25
 				income = -0.15
+
+				bender_target = 0.5
 			}
 		}
 		
 		council_neutral = {
 			cancel = {
-				has_country_flag = air_council_dissolved
-				{ check_variable = { AIR_council_support = 3 }}
+				OR = {
+					has_country_flag = air_council_dissolved
+					NOT = {  check_variable = { AIR_council_support = 3 }}
+				}
+			}
+
+			modifier = {
+
+				bender_target = 0.5
 			}
 		}
 		
 		council_support = {
 			cancel = {
-				has_country_flag = air_council_dissolved
-				{ check_variable = { AIR_council_support = 4 }}
+				OR = {
+					has_country_flag = air_council_dissolved
+					NOT = {  check_variable = { AIR_council_support = 4 }}
+				}
 			}
 			
 			modifier = {
@@ -63,13 +80,17 @@ ideas = {
 				command_power_gain_mult = 0.25
 				max_planning_factor = 0.25
 				income = 0.05
+
+				bender_target = 0.5
 			}
 		}
 		
 		council_substancial_support = {
 			cancel = {
-				has_country_flag = air_council_dissolved
-				NOT = { check_variable = { AIR_council_support = 5 }}
+				OR = {
+					has_country_flag = air_council_dissolved
+					NOT = {  check_variable = { AIR_council_support = 5 }}
+				}
 			}
 			
 			modifier = {
@@ -79,6 +100,8 @@ ideas = {
 				command_power_gain_mult = 0.5
 				max_planning_factor = 0.5
 				income = 0.1
+
+				bender_target = 0.5
 			}
 		}
 

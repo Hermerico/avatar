@@ -851,131 +851,166 @@ guiTypes = {
 			name = "sat_council_member_1"
 			spriteType = "GFX_air_council_member_1"
 			position = { x = 105 y = 70}
+			pdx_tooltip = "council_member_1_tooltip"
 		}
 		iconType = {
 			name = "sat_council_member_2"
 			spriteType = "GFX_air_council_member_2"
 			position = { x = 175 y = 60}
+			pdx_tooltip = "council_member_2_tooltip"
 		}
 		iconType = {
 			name = "sat_council_member_3"
 			spriteType = "GFX_air_council_member_3"
 			position = { x = 255 y = 50}
+			pdx_tooltip = "council_member_3_tooltip"
 		}
 		iconType = {
 			name = "sat_council_member_4"
 			spriteType = "GFX_air_council_member_4"
 			position = { x = 330 y = 60}
+			pdx_tooltip = "council_member_4_tooltip"
 		}
 		iconType = {
 			name = "sat_council_member_5"
 			spriteType = "GFX_air_council_member_5"
 			position = { x = 405 y = 70}
+			pdx_tooltip = "council_member_5_tooltip"
 		}
 		iconType = {
 			name = "nat_council_member_1"
 			spriteType = "GFX_air_council_member_1"
 			position = { x = 105 y = 70}
+			pdx_tooltip = "council_member_1_tooltip"
 		}
 		iconType = {
 			name = "nat_council_member_2"
 			spriteType = "GFX_air_council_member_2"
 			position = { x = 175 y = 60}
+			pdx_tooltip = "council_member_2_tooltip"
 		}
 		iconType = {
 			name = "nat_council_member_3"
 			spriteType = "GFX_air_council_member_3"
 			position = { x = 255 y = 50}
+			pdx_tooltip = "council_member_3_tooltip"
 		}
 		iconType = {
 			name = "nat_council_member_4"
 			spriteType = "GFX_air_council_member_4"
 			position = { x = 330 y = 60}
+			pdx_tooltip = "council_member_4_tooltip"
 		}
 		iconType = {
 			name = "nat_council_member_5"
 			spriteType = "GFX_air_council_member_5"
 			position = { x = 405 y = 70}
+			pdx_tooltip = "council_member_5_tooltip"
 		}
 		iconType = {
 			name = "wat_council_member_1"
 			spriteType = "GFX_air_council_member_1"
 			position = { x = 105 y = 70}
+			pdx_tooltip = "council_member_1_tooltip"
 		}
 		iconType = {
 			name = "wat_council_member_2"
 			spriteType = "GFX_air_council_member_2"
 			position = { x = 175 y = 60}
+			pdx_tooltip = "council_member_2_tooltip"
 		}
 		iconType = {
 			name = "wat_council_member_3"
 			spriteType = "GFX_air_council_member_3"
 			position = { x = 255 y = 50}
+			pdx_tooltip = "council_member_3_tooltip"
 		}
 		iconType = {
 			name = "wat_council_member_4"
 			spriteType = "GFX_air_council_member_4"
 			position = { x = 330 y = 60}
+			pdx_tooltip = "council_member_4_tooltip"
 		}
 		iconType = {
 			name = "wat_council_member_5"
 			spriteType = "GFX_air_council_member_5"
 			position = { x = 405 y = 70}
+			pdx_tooltip = "council_member_5_tooltip"
 		}
 		iconType = {
 			name = "eat_council_member_1"
 			spriteType = "GFX_air_council_member_1"
 			position = { x = 105 y = 70}
+			pdx_tooltip = "council_member_1_tooltip"
 		}
 		iconType = {
 			name = "eat_council_member_2"
 			spriteType = "GFX_air_council_member_2"
 			position = { x = 175 y = 60}
+			pdx_tooltip = "council_member_2_tooltip"
 		}
 		iconType = {
 			name = "eat_council_member_3"
 			spriteType = "GFX_air_council_member_3"
 			position = { x = 255 y = 50}
+			pdx_tooltip = "council_member_3_tooltip"
 		}
 		iconType = {
 			name = "eat_council_member_4"
 			spriteType = "GFX_air_council_member_4"
 			position = { x = 330 y = 60}
+			pdx_tooltip = "council_member_4_tooltip"
 		}
 		iconType = {
 			name = "eat_council_member_5"
 			spriteType = "GFX_air_council_member_5"
 			position = { x = 405 y = 70}
+			pdx_tooltip = "council_member_5_tooltip"
 		}
 		instantTextBoxType = {
 			name ="member_1_name"
-			position = { x = 132 y = 35 }
-			font = "hoi_24header"
+			position = { x = 102 y = 35 }
+			font = "hoi_18mbs"
 			text = "air_council_member_1"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
 		}
 		instantTextBoxType = {
 			name ="member_2_name"
-			position = { x = 200 y = 25 }
-			font = "hoi_24header"
+			position = { x = 170 y = 25 }
+			font = "hoi_18mbs"
 			text = "air_council_member_2"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
 		}
 		instantTextBoxType = {
 			name ="member_3_name"
-			position = { x = 281 y = 15 }
-			font = "hoi_24header"
+			position = { x = 251 y = 15 }
+			font = "hoi_18mbs"
 			text = "air_council_member_3"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
 		}
 		instantTextBoxType = {
 			name ="member_4_name"
-			position = { x = 357 y = 25 }
-			font = "hoi_24header"
+			position = { x = 327 y = 25 }
+			font = "hoi_18mbs"
 			text = "air_council_member_4"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
 		}
 		instantTextBoxType = {
 			name ="member_5_name"
-			position = { x = 431 y = 35 }
-			font = "hoi_24header"
+			position = { x = 401 y = 35 }
+			font = "hoi_18mbs"
 			text = "air_council_member_5"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
 		}
 
 		containerWindowType = {

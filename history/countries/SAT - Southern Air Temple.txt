@@ -31,11 +31,11 @@ set_popularities = {
 set_stability = 0.8 
 set_war_support = 0.8
 
-set_variable = { AIR_council_member_1 = 1 }
-set_variable = { AIR_council_member_2 = 3 }
-set_variable = { AIR_council_member_3 = 4 }
-set_variable = { AIR_council_member_4 = 1 }
-set_variable = { AIR_council_member_5 = 5 }
+set_variable = { council_name_1:harmony = 1 }
+set_variable = { council_name_2:harmony = 3 }
+set_variable = { council_name_3:harmony = 4 }
+set_variable = { council_name_4:harmony = 1 }
+set_variable = { council_name_5:harmony = 5 }
 set_variable = { AIR_council_army = 50 }
 set_variable = { AIR_council_navy = 25 }
 set_variable = { AIR_council_air = 175 }

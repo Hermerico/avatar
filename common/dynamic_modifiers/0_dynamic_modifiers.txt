@@ -126,7 +126,7 @@ air_nation = {
 
 	enable = { always = yes }
 
-	bender_target = 1
+	bender_target = 0.5
 	bender_growth = 0.005
 
 	stability_factor = mtth:bender_pop_bonus

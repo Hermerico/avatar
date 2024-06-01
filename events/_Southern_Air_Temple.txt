@@ -92,6 +92,8 @@ country_event = {
  		hidden_effect = {
  			AIR_generate_missions = yes
  			AIR_recalc_council_support = yes
+
+ 			activate_mission = upcoming_meeting
  		}
 	}
 	
@@ -101,7 +103,8 @@ country_event = {
 			factor = 100
 		}
 
-		activate_mission = upcoming_meeting
+		AIR_choose_council_members = yes
+
 	}
 	option = {
 		name = AIR_council.0.b

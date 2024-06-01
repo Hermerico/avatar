@@ -220,13 +220,43 @@ scripted_gui = {
 
 
 			state_indicator_visible = {
-				NOT = { TAG = SAT TAG = WAT TAG = EAT TAG = NAT }
+				NOT = {
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
+				}
 			}
 			state_target_visible = {
-				NOT = { TAG = SAT TAG = WAT TAG = EAT TAG = NAT }
+				NOT = {
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
+				}
 			}
 			legitimacy_level_visible = {
-				NOT = { TAG = SAT TAG = WAT TAG = EAT TAG = NAT }
+				NOT = {
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
+				}
 			}
 
 			fir_legit_bg_visible = {
@@ -262,93 +292,115 @@ scripted_gui = {
 			air_legit_bg_visible = {
 				has_government = air_culture
 				NOT = {
-					TAG = SAT
-					TAG = WAT
-					TAG = EAT
-					TAG = NAT
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
 				}
 			}
 			air_high_legitimacy_visible = {
 				has_government = air_culture
 				NOT = {
-					TAG = SAT
-					TAG = WAT
-					TAG = EAT
-					TAG = NAT
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
 				}
 			}
 			air_low_legitimacy_visible = {
 				has_government = air_culture
 				NOT = {
-					TAG = SAT
-					TAG = WAT
-					TAG = EAT
-					TAG = NAT
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
 				}
 			}
 
 			air_spirit_bg_visible = {
 				has_government = air_culture
 				OR = {
-					TAG = SAT
-					TAG = WAT
-					TAG = EAT
-					TAG = NAT
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
 				}
+				NOT = { has_country_flag = air_council_dissolved }
 			}
 			air_council_visible = {
 				has_government = air_culture
 				OR = {
-					TAG = SAT
-					TAG = WAT
-					TAG = EAT
-					TAG = NAT
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
 				}
+				NOT = { has_country_flag = air_council_dissolved }
 			}
 			air_1_visible = {
 				has_government = air_culture
 				OR = {
-					TAG = SAT
-					TAG = WAT
-					TAG = EAT
-					TAG = NAT
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
 				}
+				NOT = { has_country_flag = air_council_dissolved }
 			}
 			air_2_visible = {
 				has_government = air_culture
 				OR = {
-					TAG = SAT
-					TAG = WAT
-					TAG = EAT
-					TAG = NAT
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
 				}
+				NOT = { has_country_flag = air_council_dissolved }
 			}
 			air_3_visible = {
 				has_government = air_culture
 				OR = {
-					TAG = SAT
-					TAG = WAT
-					TAG = EAT
-					TAG = NAT
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
 				}
+				NOT = { has_country_flag = air_council_dissolved }
 			}
 			air_4_visible = {
 				has_government = air_culture
 				OR = {
-					TAG = SAT
-					TAG = WAT
-					TAG = EAT
-					TAG = NAT
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
 				}
+				NOT = { has_country_flag = air_council_dissolved }
 			}
 			air_5_visible = {
 				has_government = air_culture
 				OR = {
-					TAG = SAT
-					TAG = WAT
-					TAG = EAT
-					TAG = NAT
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
 				}
+				NOT = { has_country_flag = air_council_dissolved }
 			}
 		}
 		

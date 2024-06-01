@@ -105,7 +105,7 @@ SAT_upcoming_war_category = {
 			set_global_flag = send_aang_away
 
 			custom_effect_tooltip = gyatso_angry_tt
-			set_variable = { AIR_council_member_2 = 1 }
+			set_variable = { council_name_2:harmony = 1 }
 			hidden_effect = {
 				AIR_recalc_council_support = yes
 			}
@@ -163,10 +163,10 @@ SAT_upcoming_war_category = {
 			add_ideas = protecting_the_avatar
 
 			custom_effect_tooltip = keep_avatar_aang_here_tt
-			set_variable = { AIR_council_member_1 = 2 }
-			set_variable = { AIR_council_member_3 = 2 }
-			set_variable = { AIR_council_member_4 = 2 }
-			set_variable = { AIR_council_member_5 = 2 }
+			set_variable = { council_name_1:harmony = 2 }
+			set_variable = { council_name_3:harmony = 2 }
+			set_variable = { council_name_4:harmony = 2 }
+			set_variable = { council_name_5:harmony = 2 }
 			AIR_recalc_council_support = yes
 		}
 
