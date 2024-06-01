@@ -4,6 +4,28 @@ autonomy_state_recalc = {
 	
 }
 
+annexation_accepted = {
+	THIS = {
+		ROOT = {
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+annexation_rejected = {
+	ROOT = {
+		end_puppet = PREV.THIS
+		remove_from_faction = PREV.THIS
+		declare_war_on = {
+			target = PREV.THIS
+			type = annex_everything
+		}
+	}	
+}
+
 
 increase_puppet_tax_effect = {
 
@@ -21,7 +43,9 @@ increase_puppet_tax_effect = {
 		}
 		THIS = {
 			add_ideas = low_vassal_taxes
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 		}
+		ROOT = { hidden_effect = { scoped_sound_effect  = "gain_gold" } }
 	}
 	else_if = {
 		limit = {
@@ -34,7 +58,9 @@ increase_puppet_tax_effect = {
 				remove_idea = low_vassal_taxes
 				add_idea = medium_vassal_taxes
 			}
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 		}
+		ROOT = { hidden_effect = { scoped_sound_effect  = "gain_gold" } }
 	}
 	else_if = {
 		limit = {
@@ -47,7 +73,9 @@ increase_puppet_tax_effect = {
 				remove_idea = medium_vassal_taxes
 				add_idea = high_vassal_taxes
 			}
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
 		}
+		ROOT = { hidden_effect = { scoped_sound_effect  = "gain_gold" } }
 	}
 	
 }

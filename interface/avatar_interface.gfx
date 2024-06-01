@@ -356,6 +356,31 @@ spriteTypes = {
 		noOfFrames = 5
 	}
 	spriteType = {
+		name = "GFX_air_council_member_1"
+		texturefile = "gfx/interface/decisions/air_council/member_1.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_member_2"
+		texturefile = "gfx/interface/decisions/air_council/member_2.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_member_3"
+		texturefile = "gfx/interface/decisions/air_council/member_3.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_member_4"
+		texturefile = "gfx/interface/decisions/air_council/member_4.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_member_5"
+		texturefile = "gfx/interface/decisions/air_council/member_5.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
 		name = "GFX_air_council_symbol"
 		texturefile = "gfx/interface/decisions/air_council/symbols.dds"
 		noOfFrames = 5

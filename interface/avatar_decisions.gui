@@ -837,114 +837,114 @@ guiTypes = {
 			pdx_tooltip = air_council_support
 			spriteType = "GFX_air_council_symbol"
 		}
-		iconType = {
-			name = "air_council_support_bar"
-			spriteType = "GFX_air_council_support_bar"
-			position = { x = 470 y = 0}
-		}
+		#iconType = {
+		#	name = "air_council_support_bar"
+		#	spriteType = "GFX_air_council_support_bar"
+		#	position = { x = 470 y = 0}
+		#}
 		iconType = {
 			name = "air_council_probability_bar"
 			spriteType = "GFX_air_council_probability_bar"
-			position = { x = 0 y = 141}
+			position = { x = 10 y = 136}
 		}
 		iconType = {
 			name = "sat_council_member_1"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_1"
 			position = { x = 105 y = 70}
 		}
 		iconType = {
 			name = "sat_council_member_2"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_2"
 			position = { x = 175 y = 60}
 		}
 		iconType = {
 			name = "sat_council_member_3"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_3"
 			position = { x = 255 y = 50}
 		}
 		iconType = {
 			name = "sat_council_member_4"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_4"
 			position = { x = 330 y = 60}
 		}
 		iconType = {
 			name = "sat_council_member_5"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_5"
 			position = { x = 405 y = 70}
 		}
 		iconType = {
 			name = "nat_council_member_1"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_1"
 			position = { x = 105 y = 70}
 		}
 		iconType = {
 			name = "nat_council_member_2"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_2"
 			position = { x = 175 y = 60}
 		}
 		iconType = {
 			name = "nat_council_member_3"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_3"
 			position = { x = 255 y = 50}
 		}
 		iconType = {
 			name = "nat_council_member_4"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_4"
 			position = { x = 330 y = 60}
 		}
 		iconType = {
 			name = "nat_council_member_5"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_5"
 			position = { x = 405 y = 70}
 		}
 		iconType = {
 			name = "wat_council_member_1"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_1"
 			position = { x = 105 y = 70}
 		}
 		iconType = {
 			name = "wat_council_member_2"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_2"
 			position = { x = 175 y = 60}
 		}
 		iconType = {
 			name = "wat_council_member_3"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_3"
 			position = { x = 255 y = 50}
 		}
 		iconType = {
 			name = "wat_council_member_4"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_4"
 			position = { x = 330 y = 60}
 		}
 		iconType = {
 			name = "wat_council_member_5"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_5"
 			position = { x = 405 y = 70}
 		}
 		iconType = {
 			name = "eat_council_member_1"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_1"
 			position = { x = 105 y = 70}
 		}
 		iconType = {
 			name = "eat_council_member_2"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_2"
 			position = { x = 175 y = 60}
 		}
 		iconType = {
 			name = "eat_council_member_3"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_3"
 			position = { x = 255 y = 50}
 		}
 		iconType = {
 			name = "eat_council_member_4"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_4"
 			position = { x = 330 y = 60}
 		}
 		iconType = {
 			name = "eat_council_member_5"
-			spriteType = "GFX_air_council_member"
+			spriteType = "GFX_air_council_member_5"
 			position = { x = 405 y = 70}
 		}
 		instantTextBoxType = {
@@ -977,77 +977,209 @@ guiTypes = {
 			font = "hoi_24header"
 			text = "air_council_member_5"
 		}
-		iconType = {
-			name = "council_army_mission"
-			pdx_tooltip = army_icon_tooltip
-			spriteType = "council_army_mission_small"
-			position = { x = 20 y = 150 }
+
+		containerWindowType = {
+			name = "army_container"
+			position = { x = 20 y = 140 }
+
+			iconType = {
+				name = "council_army_mission"
+				spriteType = "council_army_mission_small"
+				position = { x = 35 y = 0 }
+				pdx_tooltip = "army_icon_tooltip"
+			}
+			instantTextBoxType = {
+				name ="air_council_army"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_army"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = "army_icon_tooltip"
+			}
+			buttonType = {
+				name = "decrease_army"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "army_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_army"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "army_increase_tooltip"
+			}
+
 		}
-		instantTextBoxType = {
-			name ="air_council_army"
-			position = { x = 55 y = 150 }
-			font = "hoi_24header"
-			text = "air_council_army"
+
+		containerWindowType = {
+			name = "air_container"
+			position = { x = 175 y = 140 }
+
+			iconType = {
+				name = "council_air_mission"
+				spriteType = "council_air_mission_small"
+				position = { x = 35 y = 0}
+				pdx_tooltip = air_icon_tooltip
+			}
+			instantTextBoxType = {
+				name ="air_council_air"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_air"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = air_icon_tooltip
+			}
+			buttonType = {
+				name = "decrease_air"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "air_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_air"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "air_increase_tooltip"
+			}
+
 		}
-		iconType = {
-			name = "council_air_mission"
-			pdx_tooltip = air_icon_tooltip
-			spriteType = "council_air_mission_small"
-			position = { x = 160 y = 150}
+		
+		containerWindowType = {
+			name = "industry_container"
+			position = { x = 330 y = 140 }
+
+			iconType = {
+				name = "council_industry_mission"
+				spriteType = "council_industry_mission_small"
+				position = { x = 35 y = 0 }
+				pdx_tooltip = "industry_icon_tooltip"
+			}
+			instantTextBoxType = {
+				name ="air_council_industry"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_construction"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = "industry_icon_tooltip"
+			}
+			buttonType = {
+				name = "decrease_industry"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "industry_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_industry"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "industry_increase_tooltip"
+			}
+
 		}
-		instantTextBoxType = {
-			name ="air_council_air"
-			position = { x = 195 y = 150 }
-			font = "hoi_24header"
-			text = "air_council_air"
+
+		containerWindowType = {
+			name = "navy_container"
+			position = { x = 20 y = 170 }
+
+			iconType = {
+				name = "council_navy_mission"
+				spriteType = "council_navy_mission_small"
+				position = { x = 35 y = 0 }
+				pdx_tooltip = "navy_icon_tooltip"
+			}
+			instantTextBoxType = {
+				name ="air_council_navy"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_navy"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = "navy_icon_tooltip"
+			}
+			buttonType = {
+				name = "decrease_navy"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "navy_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_navy"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "navy_increase_tooltip"
+			}
+
 		}
-		iconType = {
-			name = "council_industry_mission"
-			pdx_tooltip = industry_icon_tooltip
-			spriteType = "council_industry_mission_small"
-			position = { x = 300 y = 150}
+		
+		containerWindowType = {
+			name = "research_container"
+			position = { x = 175 y = 170 }
+
+			iconType = {
+				name = "council_research_mission"
+				spriteType = "council_research_mission_small"
+				position = { x = 35 y = 0 }
+				pdx_tooltip = "research_icon_tooltip"
+			}
+			instantTextBoxType = {
+				name ="air_council_research"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_research"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = "research_icon_tooltip"
+			}
+			buttonType = {
+				name = "decrease_research"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "research_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_research"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "research_increase_tooltip"
+			}
+
 		}
-		instantTextBoxType = {
-			name ="air_council_construction"
-			position = { x = 335 y = 150 }
-			font = "hoi_24header"
-			text = "air_council_construction"
-		}
-		iconType = {
-			name = "council_navy_mission"
-			pdx_tooltip = navy_icon_tooltip
-			spriteType = "council_navy_mission_small"
-			position = { x = 95 y = 173}
-		}
-		instantTextBoxType = {
-			name ="air_council_navy"
-			position = { x = 130 y = 174 }
-			font = "hoi_24header"
-			text = "air_council_navy"
-		}
-		iconType = {
-			name = "council_research_mission"
-			pdx_tooltip = research_icon_tooltip
-			spriteType = "council_research_mission_small"
-			position = { x = 235 y = 173}
-		}
-		instantTextBoxType = {
-			name ="air_council_research"
-			position = { x = 270 y = 174 }
-			font = "hoi_24header"
-			text = "air_council_research"
-		}
-		iconType = {
-			name = "council_politics_mission"
-			pdx_tooltip = politics_icon_tooltip
-			spriteType = "council_politics_mission_small"
-			position = { x = 375 y = 173}
-		}
-		instantTextBoxType = {
-			name ="air_council_politics"
-			position = { x = 410 y = 174 }
-			font = "hoi_24header"
-			text = "air_council_politics"
+		
+		containerWindowType = {
+			name = "politics_container"
+			position = { x = 330 y = 170 }
+
+			iconType = {
+				name = "council_politics_mission"
+				spriteType = "council_politics_mission_small"
+				position = { x = 35 y = 0 }
+				pdx_tooltip = "politics_icon_tooltip"
+			}
+			instantTextBoxType = {
+				name ="air_council_politics"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_politics"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = "politics_icon_tooltip"
+			}
+			buttonType = {
+				name = "decrease_politics"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "politics_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_politics"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "politics_increase_tooltip"
+			}
+
 		}
 	}
 

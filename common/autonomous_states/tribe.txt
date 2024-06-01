@@ -39,7 +39,7 @@ autonomy_state = {
 	}
 	
 	can_take_level = {
-		#trigger here
+		always = no
 	}
 
 	can_lose_level = {
@@ -150,6 +150,6 @@ autonomy_state = {
 	}
 
 	can_lose_level = {
-		#trigger here
+		always = no
 	}
 }

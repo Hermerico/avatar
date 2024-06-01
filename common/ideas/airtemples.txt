@@ -1,0 +1,87 @@
+ideas = {
+
+	hidden_ideas = {
+
+
+	}
+
+	country = {
+
+		council_harsh_opposition = {
+			cancel = {
+				has_country_flag = air_council_dissolved
+				{ check_variable = { AIR_council_support = 1 }}
+			}
+			
+			modifier = {
+				political_power_factor = -0.60
+				political_power_cap = -50
+				stability_factor = -0.5
+				war_support_factor = -0.2
+				command_power_gain_mult = -0.5
+				max_planning_factor = -0.5
+				training_time_factor = 0.5
+				income = -0.3
+			}
+		}
+		
+		council_opposition = {
+			cancel = {
+				has_country_flag = air_council_dissolved
+				{ check_variable = { AIR_council_support = 2 }}
+			}
+			
+			modifier = {
+				political_power_factor = -0.30
+				political_power_cap = -25
+				stability_factor = -0.25
+				war_support_factor = -0.1
+				command_power_gain_mult = -0.25
+				max_planning_factor = -0.25
+				training_time_factor = 0.25
+				income = -0.15
+			}
+		}
+		
+		council_neutral = {
+			cancel = {
+				has_country_flag = air_council_dissolved
+				{ check_variable = { AIR_council_support = 3 }}
+			}
+		}
+		
+		council_support = {
+			cancel = {
+				has_country_flag = air_council_dissolved
+				{ check_variable = { AIR_council_support = 4 }}
+			}
+			
+			modifier = {
+				political_power_factor = 0.25
+				political_power_cap = 50
+				stability_factor = 0.2
+				command_power_gain_mult = 0.25
+				max_planning_factor = 0.25
+				income = 0.05
+			}
+		}
+		
+		council_substancial_support = {
+			cancel = {
+				has_country_flag = air_council_dissolved
+				NOT = { check_variable = { AIR_council_support = 5 }}
+			}
+			
+			modifier = {
+				political_power_factor = 0.5
+				political_power_cap = 100
+				stability_factor = 0.4
+				command_power_gain_mult = 0.5
+				max_planning_factor = 0.5
+				income = 0.1
+			}
+		}
+
+
+	}
+}

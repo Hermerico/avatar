@@ -696,6 +696,7 @@ ideas = {
 
 			modifier = {
 				allow_colony_modifier = 1
+				overlord_influence = 0.25
 			}
 
 		}

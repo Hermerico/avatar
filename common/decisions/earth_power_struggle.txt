@@ -44,7 +44,7 @@ THE_EARTHKINGDOM = {
 		days_re_enable = 160
 
 		modifier = {
-			subjects_autonomy_gain = -0.5
+			overlord_influence = 0.5
 		}
 
 		complete_effect = { 
@@ -406,7 +406,7 @@ THE_EARTHKINGDOM = {
 
 		modifier = {
 			political_power_factor = -0.1
-			autonomy_gain = 0.1
+			subject_influence = 0.1
 		}
 
 		complete_effect = { 
@@ -1191,6 +1191,8 @@ THE_EARTHKINGDOM = {
 	
 }
 
+
+##### TODO: make a diplo action
 earth_factions_category = {
 	
 	join_the_ek = {

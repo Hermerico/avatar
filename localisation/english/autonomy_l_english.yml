@@ -1,4 +1,20 @@
 ﻿l_english:
+ autonomy_kingdom:0 "Kingdom"
+ autonomy_county:0 "County"
+ autonomy_vassalage:0 "Vassalage"
+ autonomy_royal_domain:0 "Royal Domain"
+ autonomy_tributary:0 "Tributary"
+ autonomy_satelit_state:0 "Satelite"
+ autonomy_imperial_dominion:0 "Dominion"
+ autonomy_imperial_colony:0 "Colony"
+ autonomy_military_state:0 "Military State"
+ autonomy_territorial_fief:0 "Territorial Fief"
+ autonomy_spiritual_acolyte:0 "Spiritual Acolyte"
+ autonomy_tribal_colony:0 "Tribal Colony"
+ autonomy_tribal_protectorate:0 "Tribal Protectorate"
+ autonomy_tribal_puppet:0 "Tribal Puppet"
+
+
  autonomy_annex:0 "Annexed"
  autonomy_free:0 "Free"
  autonomy_puppet:0 "Puppet State"
@@ -13,6 +29,15 @@
 
  EK_united:0 "United Earthkingdom"
  EK_feast:0 "Executed.... a feast"
+ master_influence:0 "£influence_texticon  Master Influence"
+
+ autonomy_tooltip:0 "Current Autonomy Progress: [?autonomy_ratio|0%Y] \nOverlord Influence: [?mtth:overlord_influence|Y2=%] \n\nDaily Autonomy change: \nFrom Subject: [?modifier@autonomy_gain|+2=] \nFrom Overlord: [?OVERLORD:modifier@subjects_autonomy_gain|+2=]"
+ autonomy_text:0 "§Y[GetAutonomy]§!"
+ autonomy_ttp:0 "[GetAutonomy] of §Y[FROM.OVERLORD.GetName]§!"
+ overlord_influence_check:0 "Has Influence: $RIGHT|Y=2%$"
+ vassal_tax_tooltip:0 "§Y[GetVassalTax]§!"
+ vassal_war_tribute_tooltip:0 "§Y[GetVassalWar]§!"
+ vassal_territorial_integration_tooltip:0 "§Y[GetVassalTerritory]§!"
 
  AUTONOMY_CAN_TAKE_DESC:1 "$OWNER|UH$ can become a $NEXTLEVEL|H$"
  AUTONOMY_CANT_TAKE_DESC:1 "$OWNER|UH$ can not become a $NEXTLEVEL|H$ yet"

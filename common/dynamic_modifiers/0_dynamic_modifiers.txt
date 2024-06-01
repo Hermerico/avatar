@@ -13,10 +13,22 @@ political_power_cap = {
 legitimacy_effects = {
 	enable = { always = yes }
 
+	remove_trigger = {
+		AND = {
+			OR = {
+				original_tag = SAT
+				original_tag = EAT
+				original_tag = NAT
+				original_tag = WAT
+			}
+			NOT = { has_country_flag = air_council_dissolved }
+		}
+	}
+
 	#icon = GFX_fall
 
 
-	subjects_autonomy_gain = mtth:legitimacy_autonomy
+	overlord_influence = mtth:legitimacy_autonomy
 
 	### high centralisation
 	political_power_cap = mtth:legitimacy_pp_cap

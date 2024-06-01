@@ -44,6 +44,8 @@ set_variable = { AIR_council_construction = 100 }
 set_variable = { AIR_council_research = 75 }
 set_variable = { AIR_council_politics = 125 }
 
+AIR_recalc_council_support = yes
+
 add_ideas = {
 	NAT_bison_polo
 	pacifist_detachment

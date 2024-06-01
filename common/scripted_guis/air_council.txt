@@ -34,6 +34,57 @@ scripted_gui = {
 			
 			
 		}
+
+		effects = {
+			decrease_army_click = {
+				add_to_variable = { AIR_council_army = -5 }
+				clamp_variable = { var = AIR_council_army min = 0 max = 200 }
+			}
+			increase_army_click = {
+				add_to_variable = { AIR_council_army = 5 }
+				clamp_variable = { var = AIR_council_army min = 0 max = 200 }
+			}
+			decrease_air_click = {
+				add_to_variable = { AIR_council_air = -5 }
+				clamp_variable = { var = AIR_council_air min = 0 max = 200 }
+			}
+			increase_air_click = {
+				add_to_variable = { AIR_council_air = 5 }
+				clamp_variable = { var = AIR_council_air min = 0 max = 200 }
+			}
+			decrease_industry_click = {
+				add_to_variable = { AIR_council_construction = -5 }
+				clamp_variable = { var = AIR_council_construction min = 0 max = 200 }
+			}
+			increase_industry_click = {
+				add_to_variable = { AIR_council_construction = 5 }
+				clamp_variable = { var = AIR_council_construction min = 0 max = 200 }
+			}
+			decrease_navy_click = {
+				add_to_variable = { AIR_council_navy = -5 }
+				clamp_variable = { var = AIR_council_navy min = 0 max = 200 }
+			}
+			increase_navy_click = {
+				add_to_variable = { AIR_council_navy = 5 }
+				clamp_variable = { var = AIR_council_navy min = 0 max = 200 }
+			}
+			decrease_research_click = {
+				add_to_variable = { AIR_council_research = -5 }
+				clamp_variable = { var = AIR_council_research min = 0 max = 200 }
+			}
+			increase_research_click = {
+				add_to_variable = { AIR_council_research = 5 }
+				clamp_variable = { var = AIR_council_research min = 0 max = 200 }
+			}
+			decrease_politics_click = {
+				add_to_variable = { AIR_council_politics = -5 }
+				clamp_variable = { var = AIR_council_politics min = 0 max = 200 }
+			}
+			increase_politics_click = {
+				add_to_variable = { AIR_council_politics = 5 }
+				clamp_variable = { var = AIR_council_politics min = 0 max = 200 }
+			}
+		}
 		
 		properties = {
 			sat_council_symbol = { frame = sat_current_council_symbol_frame }

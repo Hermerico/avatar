@@ -324,6 +324,9 @@
  weekly_centralisation:0 "£centralisation_weekly_texticon  Weekly Centralisation"
  centralisation_target_modifier:0 "£centralisation_target_texticon  Centralisation Target"
 
+ overlord_influence:0 "£influence_texticon Influence on Subjects"
+ subject_influence:0 "£influence_texticon  Influence as Subject"
+
  monthly_unit_quality:0 "Monthly £unit_quality_texticon  Unit Quality"
  unit_quality_target:0 "£unit_quality_texticon  Unit Quality Target"
 

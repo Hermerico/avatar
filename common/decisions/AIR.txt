@@ -3,9 +3,8 @@ AIR_council_category = {
 	
 		icon = council_will_meet_again
 
-		activation = {
-			has_country_flag = air_council_active
-		}
+		allowed = { always = no }
+
 		available = {
 			has_country_flag = meetings_disrupted
 		}
@@ -19,79 +18,7 @@ AIR_council_category = {
 			ROOT = { country_event = { id = AIR_council.1 } }
 		}
 	}
-	
-	# increase / decrease decisions
-	increase_military_priorities = {
-		icon = council_increase_priority
-		visible = { has_country_flag = air_council_active }
-		cost = 50
-		days_re_enable = 0
-		days_remove = 0
-		
-		complete_effect = {
-			ROOT = { country_event = { id = AIR_council.2}}
-		}
-	}
-	increase_civilian_priorities = {
-		icon = council_increase_priority
-		visible = { has_country_flag = air_council_active }
-		cost = 50
-		days_re_enable = 0
-		days_remove = 0
-		
-		complete_effect = {
-			ROOT = { country_event = { id = AIR_council.3}}
-		}
-	}
-	decrease_military_priorities = {
-		icon = council_decrease_priority
-		visible = { has_country_flag = air_council_active }
-		cost = 50
-		days_re_enable = 0
-		days_remove = 0
-		
-		complete_effect = {
-			ROOT = { country_event = { id = AIR_council.4}}
-		}
-	}
-	decrease_civilian_priorities = {
-		icon = council_decrease_priority
-		visible = { has_country_flag = air_council_active }
-		cost = 50
-		days_re_enable = 0
-		days_remove = 0
-		
-		complete_effect = {
-			ROOT = { country_event = { id = AIR_council.5}}
-		}
-	}
-	#add_harmony = {
-	#	available = {
-	#		always = yes
-	#	}
-	#	complete_effect = {
-	#		AIR_council_extreme_support = yes
-	#	}
-	#}
-	#substract_harmony = {
-	#	available = {
-	#		always = yes
-	#	}
-	#	days_re_enable = 0
-	#	complete_effect = {
-	#		AIR_council_extreme_opposition = yes
-	#	}
-	#}
-	
-	#debug_mission_generator = {
-	#	allowed = yes
-	#	available = {
-	#		always = yes
-	#	}
-	#	complete_effect = {
-	#		pp = 100
-	#	}
-	#}
+
 	
 	AIR_mission_nr1 = {
 		icon = council_army_mission

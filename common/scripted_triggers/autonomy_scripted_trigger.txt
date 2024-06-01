@@ -14,13 +14,11 @@ increase_puppet_tax_trigger = {
 				}
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = autonomy_750
-			check_variable = {
-				var = THIS.autonomy_var
-				value = 750
-				compare = less_than_or_equals
-			}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.05
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
 		}
 	}
 	else_if = {
@@ -29,13 +27,11 @@ increase_puppet_tax_trigger = {
 				has_idea = low_vassal_taxes
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = autonomy_500
-			check_variable = {
-				var = THIS.autonomy_var
-				value = 500
-				compare = less_than_or_equals
-			}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.1
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
 		}
 	}
 	else_if = {
@@ -44,13 +40,11 @@ increase_puppet_tax_trigger = {
 				has_idea = medium_vassal_taxes
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = autonomy_250
-			check_variable = {
-				var = THIS.autonomy_var
-				value = 250
-				compare = less_than_or_equals
-			}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.15
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
 		}
 	}
 	else = {
@@ -73,13 +67,11 @@ increase_puppet_war_tributes_trigger = {
 				}
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = autonomy_750
-			check_variable = {
-				var = THIS.autonomy_var
-				value = 750
-				compare = less_than_or_equals
-			}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.05
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
 		}
 	}
 	else_if = {
@@ -88,13 +80,11 @@ increase_puppet_war_tributes_trigger = {
 				has_idea = low_war_tributes
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = autonomy_500
-			check_variable = {
-				var = THIS.autonomy_var
-				value = 500
-				compare = less_than_or_equals
-			}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.1
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
 		}
 	}
 	else_if = {
@@ -103,13 +93,11 @@ increase_puppet_war_tributes_trigger = {
 				has_idea = medium_war_tributes
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = autonomy_250
-			check_variable = {
-				var = THIS.autonomy_var
-				value = 250
-				compare = less_than_or_equals
-			}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.15
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
 		}
 	}
 	else = {
@@ -132,13 +120,11 @@ increase_puppet_territorial_integration_trigger = {
 				}
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = autonomy_750
-			check_variable = {
-				var = THIS.autonomy_var
-				value = 750
-				compare = less_than_or_equals
-			}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.2
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
 		}
 	}
 	else_if = {
@@ -147,13 +133,11 @@ increase_puppet_territorial_integration_trigger = {
 				has_idea = low_territorial_integration
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = autonomy_500
-			check_variable = {
-				var = THIS.autonomy_var
-				value = 500
-				compare = less_than_or_equals
-			}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.4
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
 		}
 	}
 	else_if = {
@@ -162,13 +146,11 @@ increase_puppet_territorial_integration_trigger = {
 				has_idea = medium_territorial_integration
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = autonomy_250
-			check_variable = {
-				var = THIS.autonomy_var
-				value = 250
-				compare = less_than_or_equals
-			}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.5
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
 		}
 	}
 	else_if = {
@@ -177,13 +159,11 @@ increase_puppet_territorial_integration_trigger = {
 				has_idea = high_territorial_integration
 			}
 		}
-		custom_trigger_tooltip = {
-			tooltip = autonomy_100
-			check_variable = {
-				var = THIS.autonomy_var
-				value = 100
-				compare = less_than_or_equals
-			}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.75
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
 		}
 		#THIS = {
 		#	NOT = {

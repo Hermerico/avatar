@@ -39,6 +39,8 @@ WESTERN_ALLIANCE = {
 	}
 }
 
+
+##### TODO: make a diplo action
 earth_factions_category = {
     icon = earth_kingdom
 

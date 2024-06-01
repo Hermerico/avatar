@@ -466,8 +466,5 @@ spriteTypes = {
 		name = "GFX_Sun_Warriors_Revealed"
 		texturefile = "gfx/event_pictures/Sun_Warriors_Revealed.dds"
 	}
-	spriteType = {
-		name = "GFX_council_meeting"
-		texturefile = "gfx/event_pictures/council_meeting.dds"
-	}
+
 }

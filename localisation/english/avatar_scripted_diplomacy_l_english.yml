@@ -13,10 +13,15 @@
  claimed_states:0 "Claimed States"
  claim_state_receive:0 ""[ROOT.GetName] claims ownership of our some of our states. Shall we accept?"
 
+ ANNEX_PUPPET_TITLE:0 "£annex_puppet_icon  Annex Puppet"
+ ANNEX_PUPPET_ACTION_DESC:0 "Annex all states of this Country and integrate its armies."
+ ANNEX_PUPPET_WINDOW_DESC:0 "Annex all states of this Country and integrate its armies."
+
  base_reluctance:0 "Base Reluctance"
  neighbour:0 "Proximity"
  feels_threatened:0 "Feels Threatened"
  opinion:0 "Opinion"
+ masters_influence:0 "Master Influence"
 
  INCREASE_PUPPET_TAX_TITLE:0 "£increase_tax_icon  Increase Tax"
  INCREASE_PUPPET_TAX_ACTION_DESC:0 "Increase the taxes paid by your puppet to you"

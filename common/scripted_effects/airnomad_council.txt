@@ -62,68 +62,23 @@ AIR_recalc_council_support = {
 AIR_recalc_council_spirit = {
 	if = {
 		limit = { check_variable = { AIR_council_support = 1 }}
-		swap_ideas = {
-			remove_idea = council_opposition
-			add_idea = council_harsh_opposition
-		}
+		add_ideas = council_harsh_opposition
 	}
 	if = {
 		limit = { check_variable = { AIR_council_support = 2 }}
-		if = {
-			limit = { has_idea = council_harsh_opposition }
-			swap_ideas = {
-				remove_idea = council_harsh_opposition
-				add_idea = council_opposition
-			}
-		}
-		if = {
-			limit = { has_idea = council_neutral}
-			swap_ideas = {
-				remove_idea = council_neutral
-				add_idea = council_opposition
-			}
-		}
+		add_ideas = council_opposition
 	}
 	if = {
 		limit = { check_variable = { AIR_council_support = 3 }}
-		if = {
-			limit = { has_idea = council_opposition }
-			swap_ideas = {
-				remove_idea = council_opposition
-				add_idea = council_neutral
-			}
-		}
-		if = {
-			limit = { has_idea = council_support}
-			swap_ideas = {
-				remove_idea = council_support
-				add_idea = council_neutral
-			}
-		}
+		add_ideas = council_neutral
 	}
 	if = {
 		limit = { check_variable = { AIR_council_support = 4 }}
-		if = {
-			limit = { has_idea = council_neutral }
-			swap_ideas = {
-				remove_idea = council_neutral
-				add_idea = council_support
-			}
-		}
-		if = {
-			limit = { has_idea = council_substancial_support}
-			swap_ideas = {
-				remove_idea = council_substancial_support
-				add_idea = council_support
-			}
-		}
+		add_ideas = council_support
 	}
 	if = {
 		limit = { check_variable = { AIR_council_support = 5 }}
-		swap_ideas = {
-			remove_idea = council_support
-			add_idea = council_substancial_support
-		}
+		add_ideas = council_substancial_support
 	}
 }
 

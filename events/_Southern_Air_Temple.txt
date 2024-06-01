@@ -86,9 +86,8 @@ country_event = {
 	picture = GFX_council_meeting
 	
 	is_triggered_only = yes
-	trigger = {
-		has_country_flag = air_council_active
-	}
+	
+
 	immediate = {
  		hidden_effect = {
  			AIR_generate_missions = yes
@@ -98,28 +97,38 @@ country_event = {
 	
 	option = {
 		name = AIR_council.0.a
-		#activate_mission = upcoming_meeting
-		#add_days_mission_timeout = {
-		#	mission = upcoming_meeting
-		#	days = -50
-		#}
+		ai_chance = {
+			factor = 100
+		}
+
+		activate_mission = upcoming_meeting
 	}
 	option = {
 		name = AIR_council.0.b
 		ai_chance = {
-			factor = 100
+			factor = 0
 		}
-		clr_country_flag = air_council_active
+
+		### add mission path to slowly dissolve the council
+
+		### flag can be used to disable mechanic
+		#set_country_flag = air_council_dissolved
 	}
 }
 # council meeting
 country_event = {
 	id = AIR_council.1
 	title = AIR_council.1.t
-	desc = AIR_council.1.d
+	desc = AIR_council.1.desc
 	picture = GFX_council_meeting
 	
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			activate_mission = upcoming_meeting
+		}
+	}
 	
 	option = {
 		name = AIR_council.1.a
@@ -137,141 +146,8 @@ country_event = {
 		AIR_start_mission = yes
 	}
 	option = {
-		name = AIR_council.1.e
+		name = AIR_council.1.d
 		set_variable = { AIR_choosen_mission = 4 }
 		AIR_start_mission = yes
-	}
-}
-
-# increase and decrease of priority
-country_event = {
-	id = AIR_council.2
-	title = AIR_council.2.t
-	desc = AIR_council.2.d
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = AIR_council.2.a
-		
-		trigger = {
-				check_variable = { AIR_council_army < 200 }
-		}
-		add_to_variable = { AIR_council_army = 25 }
-	}
-	option = {
-		name = AIR_council.2.b
-		
-		trigger = {
-				check_variable = { AIR_council_navy < 200 }
-		}
-		add_to_variable = { AIR_council_navy = 25 }
-	}
-	option = {
-		name = AIR_council.2.c
-		
-		trigger = {
-				check_variable = { AIR_council_air < 200 }
-		}
-		add_to_variable = { AIR_council_air = 25 }
-	}
-}
-
-country_event = {
-	id = AIR_council.3
-	title = AIR_council.3.t
-	desc = AIR_council.3.d
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = AIR_council.3.a
-		
-		trigger = {
-				check_variable = { AIR_council_research < 200 }
-		}
-		add_to_variable = { AIR_council_research = 25 }
-	}
-	option = {
-		name = AIR_council.3.b
-		
-		trigger = {
-				check_variable = { AIR_council_contsruction < 200 }
-		}
-		add_to_variable = { AIR_council_contsruction = 25 }
-	}
-	option = {
-		name = AIR_council.3.c
-		
-		trigger = {
-				check_variable = { AIR_council_politics < 200 }
-		}
-		add_to_variable = { AIR_council_politics = 25 }
-	}
-}
-
-country_event = {
-	id = AIR_council.4
-	title = AIR_council.4.t
-	desc = AIR_council.4.d
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = AIR_council.4.a
-		
-		trigger = {
-				check_variable = { AIR_council_army > 25 }
-		}
-		add_to_variable = { AIR_council_army = -25 }
-	}
-	option = {
-		name = AIR_council.4.b
-		
-		trigger = {
-				check_variable = { AIR_council_navy > 25 }
-		}
-		add_to_variable = { AIR_council_navy = -25 }
-	}
-	option = {
-		name = AIR_council.4.c
-		
-		trigger = {
-				check_variable = { AIR_council_air > 25 }
-		}
-		add_to_variable = { AIR_council_air = -25 }
-	}
-}
-
-country_event = {
-	id = AIR_council.5
-	title = AIR_council.5.t
-	desc = AIR_council.5.d
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = AIR_council.5.a
-		
-		trigger = {
-				check_variable = { AIR_council_research > 25 }
-		}
-		add_to_variable = { AIR_council_research = -25 }
-	}
-	option = {
-		name = AIR_council.5.b
-		
-		trigger = {
-				check_variable = { AIR_council_construction > 25 }
-		}
-		add_to_variable = { AIR_council_construction = -25 }
-	}
-	option = {
-		name = AIR_council.5.c
-		
-		trigger = {
-				check_variable = { AIR_council_politics > 25 }
-		}
-		add_to_variable = { AIR_council_politics = -25 }
 	}
 }
