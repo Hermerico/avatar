@@ -582,6 +582,12 @@ expand_cabbage_opinion:0 "Promote the Cabbage Corporation to Industrial Investor
  state_conflict.2.diplomatic:0 "Let us talk this through"
  state_conflict.2.military:0 "Only force can resolve this"
 
+ state_conflict.3.t:0 "Resolve [From.From.GetName] State conflict"
+ state_conflict.3.d_a:0 "We've made a claim on [From.From.GetName]"
+ state_conflict.3.d_d:0 "[From.From.attacker.GetName] made a claim on [From.From.GetName]"
+ state_conflict.3.diplomatic:0 "Let us talk this through"
+ state_conflict.3.military:0 "Only force can resolve this"
+
 
  #calendar
 

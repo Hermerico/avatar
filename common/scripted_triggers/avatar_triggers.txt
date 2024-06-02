@@ -299,36 +299,28 @@ breached_outer_wall = {
 state_conflict_attacker_can_pressure_claim = {
 	custom_trigger_tooltip = {
 		tooltip = state_conflict_attacker_can_pressure_claim_tt
-		FROM = {
-			check_variable = { attacker_points > 99 }
-		}
+		check_variable = { attacker_points > 99 }
 	}
 }
 
 state_conflict_defender_can_pressure_claim = {
 	custom_trigger_tooltip = {
 		tooltip = state_conflict_defender_can_pressure_claim_tt
-		FROM = {
-			check_variable = { defender_points > 99 }
-		}
+		check_variable = { defender_points > 99 }
 	}
 }
 
 state_conflict_attacker_can_force_fight = {
 	custom_trigger_tooltip = {
 		tooltip = state_conflict_attacker_can_force_fight_tt
-		FROM = {
-			check_variable = { attacker_strength > attacker_strength_min }
-		}
+		check_variable = { attacker_strength > attacker_strength_min }
 	}
 }
 
 state_conflict_defender_can_force_fight = {
 	custom_trigger_tooltip = {
 		tooltip = state_conflict_defender_can_force_fight_tt
-		FROM = {
-			check_variable = { defender_strength > defender_strength_min }
-		}
+		check_variable = { defender_strength > defender_strength_min }
 	}
 }
 is_SAT_on_historical_and_Aang_had_not_escaped_yet = {

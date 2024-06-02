@@ -39,4 +39,16 @@ opinion_modifiers = {
 		months = 12
 		decay = 2
 	}
+
+
+	state_conflict = {
+		value = -25
+		months = 24
+		decay = 1
+	}
+	is_stealing_our_wood = {  ### :o
+		value = -69
+		months = 24
+		decay = 1
+	}
 }

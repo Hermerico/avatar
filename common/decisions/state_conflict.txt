@@ -17,9 +17,11 @@ state_conflict_category = {
 		}
 
 		available = {
-			OR = {
-				state_conflict_attacker_can_pressure_claim = yes
-				state_conflict_attacker_can_force_fight = yes
+			FROM = {
+				OR = {
+					state_conflict_attacker_can_pressure_claim = yes
+					state_conflict_attacker_can_force_fight = yes
+				}
 			}
 		}
 
@@ -37,9 +39,12 @@ state_conflict_category = {
 
 
 		complete_effect = {
-			state_event = { 
-				id = state_conflict.2
-				trigger_for = ROOT
+			FROM = {
+				save_event_target_as = state_conflict_state
+				state_event = { 
+					id = state_conflict.2
+					trigger_for = ROOT
+				}
 			}
 		}
 
@@ -207,9 +212,11 @@ state_conflict_category = {
 		}
 
 		available = {
-			OR = {
-				state_conflict_defender_can_pressure_claim = yes
-				state_conflict_defender_can_force_fight = yes
+			FROM = {
+				OR = {
+					state_conflict_defender_can_pressure_claim = yes
+					state_conflict_defender_can_force_fight = yes
+				}
 			}
 		}
 
@@ -227,9 +234,12 @@ state_conflict_category = {
 
 
 		complete_effect = {
-			state_event = { 
-				id = state_conflict.2
-				trigger_for = ROOT
+			FROM = {
+				save_event_target_as = state_conflict_state
+				state_event = { 
+					id = state_conflict.3
+					trigger_for = ROOT
+				}
 			}
 		}
 

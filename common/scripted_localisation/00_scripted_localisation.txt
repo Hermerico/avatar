@@ -1205,10 +1205,10 @@ defined_text = {
 	name = AvatarOpinionMissingChecker
 	text = {
 		trigger = {NOT = {has_global_flag = avatar_unknown}}
-		localization_key = "The Avatar is §Gfriendly§! towards our Nation."
+		localization_key = AVATAR_OPINION_1_TOOLTIP
 	}
 	text = {
 		trigger =  {has_global_flag = avatar_unknown}
-		localization_key = "The Avatar was §Gfriendly§! towards our Nation. Not that it matters now, anyway."
+		localization_key = AVATAR_OPINION_2_TOOLTIP
 	}
 }

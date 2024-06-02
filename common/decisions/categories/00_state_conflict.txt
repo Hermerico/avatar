@@ -1,7 +1,7 @@
 state_conflict_category = {
 	icon = peasant
 
-	scripted_gui = state_conflict_ui
+	#scripted_gui = state_conflict_ui
 	
 	priority = 100099
 
