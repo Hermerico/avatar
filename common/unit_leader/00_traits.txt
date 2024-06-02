@@ -3221,6 +3221,14 @@ leader_traits = {
 			factor = 0
 		}
 	}
+	not_a_real_airbender = { 
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 
 	sick = { 
 		type = all

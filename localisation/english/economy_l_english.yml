@@ -95,7 +95,7 @@
  consumer_goods_supply_ttp_delayed:0 "§LThe National wealth determines the economic capacity of a nation. The wealthier your citizens, the more you can tax them, the more you can spend again in return. However, a wealthy society also has a high request for consumer goods and luxury goods, so pay attention to how the consumption behaviour changes.§!"
  
  standartd_of_living:0 "§YNational Wealth§!"
- sol_tooltip:0 "[GetSol] \n£consumer_goods_texticon  Consumer Demand: [?mtth:prosperity_consumer_demand_factor|Y=%] \n£economy_resources_texticons|3  Luxury Goods Demand: [?mtth:prosperity_luxury_demand|Y=%]\n£prosperity_texticon  Max Prosperity: [?mtth:prosperity_wealthy_factor|+=%] \n£stability_texticon  Stability: [?mtth:sol_base_impact_factor|+=%] \n£research_speed_texticon  Research Speed: [?mtth:sol_base_impact_factor|+=%]"
+ sol_tooltip:0 "[GetSol] \n£consumer_goods_texticon  Consumer Demand: [?mtth:prosperity_consumer_demand_factor|Y=%] \n£economy_resources_texticons|3  Luxury Goods Demand: [?mtth:prosperity_luxury_demand|Y=%] \n£stability_texticon  Stability: [?mtth:sol_base_impact_factor|+=%] \n£research_speed_texticon  Research Speed: [?mtth:sol_base_impact_factor|+=%]"
  sol_tooltip_delayed:0 "[GetSolTooltip]"
 
  extreme_poverty_extended:0 "§YExtreme Poverty§!"

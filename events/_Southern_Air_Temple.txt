@@ -103,8 +103,6 @@ country_event = {
 			factor = 100
 		}
 
-		AIR_choose_council_members = yes
-
 	}
 	option = {
 		name = AIR_council.0.b
@@ -135,22 +133,22 @@ country_event = {
 	
 	option = {
 		name = AIR_council.1.a
-		set_variable = { AIR_choosen_mission = 1 }
+		set_temp_variable = { AIR_choosen_mission = 1 }
 		AIR_start_mission = yes
 	}
 	option = {
 		name = AIR_council.1.b
-		set_variable = { AIR_choosen_mission = 2 }
+		set_temp_variable = { AIR_choosen_mission = 2 }
 		AIR_start_mission = yes
 	}
 	option = {
 		name = AIR_council.1.c
-		set_variable = { AIR_choosen_mission = 3 }
+		set_temp_variable = { AIR_choosen_mission = 3 }
 		AIR_start_mission = yes
 	}
 	option = {
 		name = AIR_council.1.d
-		set_variable = { AIR_choosen_mission = 4 }
+		set_temp_variable = { AIR_choosen_mission = 4 }
 		AIR_start_mission = yes
 	}
 }

@@ -106,5 +106,39 @@ ideas = {
 		}
 
 
+
+
+		pacifist_detachment = {
+			removal_cost = -1
+			
+			cancel = {
+				has_country_leader_with_trait = extinguished_population
+			}
+			
+			modifier = {
+				enemy_declare_war_tension = 0.5
+				enemy_justify_war_goal_time = 0.5
+				mobilization_laws_cost_factor = 1
+				war_support_factor = -0.75
+				offensive_war_stability_factor = -0.6
+				defensive_war_stability_factor = -0.2
+			}
+		}
+
+
+		nomadic_lifestyle = {
+			removal_cost = -1
+			
+			cancel = {
+				has_country_leader_with_trait = extinguished_population
+			}
+			
+			modifier = {
+				consumer_demand = -0.8
+				consumer_cost = -0.25
+			}
+		}
+
+
 	}
 }

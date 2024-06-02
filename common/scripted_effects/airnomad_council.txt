@@ -7,10 +7,12 @@ AIR_choose_council_members = {
 		}
 		random_character = {
 			limit = {
-				NOT = { has_character_flag = appointed_to_council_1 }
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
 			}
 			set_variable = { PREV.council_name_1 = THIS.id }
 			set_character_flag = appointed_to_council_1
+			set_character_flag = appointed_to_council
 		}
 	}
 	if = {
@@ -19,10 +21,12 @@ AIR_choose_council_members = {
 		}
 		random_character = {
 			limit = {
-				NOT = { has_character_flag = appointed_to_council_2 }
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
 			}
 			set_variable = { PREV.council_name_2 = THIS.id }
 			set_character_flag = appointed_to_council_2
+			set_character_flag = appointed_to_council
 		}
 	}
 	if = {
@@ -31,10 +35,12 @@ AIR_choose_council_members = {
 		}
 		random_character = {
 			limit = {
-				NOT = { has_character_flag = appointed_to_council_3 }
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
 			}
 			set_variable = { PREV.council_name_3 = THIS.id }
 			set_character_flag = appointed_to_council_3
+			set_character_flag = appointed_to_council
 		}
 	}
 	if = {
@@ -43,10 +49,12 @@ AIR_choose_council_members = {
 		}
 		random_character = {
 			limit = {
-				NOT = { has_character_flag = appointed_to_council_4 }
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
 			}
 			set_variable = { PREV.council_name_4 = THIS.id }
 			set_character_flag = appointed_to_council_4
+			set_character_flag = appointed_to_council
 		}
 	}
 	if = {
@@ -55,10 +63,12 @@ AIR_choose_council_members = {
 		}
 		random_character = {
 			limit = {
-				NOT = { has_character_flag = appointed_to_council_5 }
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
 			}
 			set_variable = { PREV.council_name_5 = THIS.id }
 			set_character_flag = appointed_to_council_5
+			set_character_flag = appointed_to_council
 		}
 	}
 }
@@ -209,28 +219,28 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 1 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr1 }}
 				}}
 				set_variable = { air_specific_mission = 1 }
 			}
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 2 }
-					Not = { is_in_array = { air_current_missions = 2 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr2 }}
 				}}
 				set_variable = { air_specific_mission = 2 }
 			}
 			if = {
             	limit = { AND = {
             		check_variable = { specific_mission = 3 }
-            		Not = { is_in_array = { air_current_missions = 3 }}
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr3 }}
             	}}
             	set_variable = { air_specific_mission = 3 }
             }
 			if = {
             	limit = { AND = {
             		check_variable = { specific_mission = 4 }
-            		Not = { is_in_array = { air_current_missions = 4 }}
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr4 }}
             	}}
             	set_variable = { air_specific_mission = 4 }
             }
@@ -239,10 +249,10 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3}
 					AND = {
-						is_in_array = { air_current_missions = 1 }
-						is_in_array = { air_current_missions = 2 }
-						is_in_array = { air_current_missions = 3 }
-						is_in_array = { air_current_missions = 4 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr1 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr2 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr3 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr4 }
 					}
 				}
 				}
@@ -262,14 +272,14 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 6 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr6 }}
 				}}
 				set_variable = { air_specific_mission = 6 }
 			}
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 2 }
-					Not = { is_in_array = { air_current_missions = 8 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr8 }}
 				}}
 				set_variable = { air_specific_mission = 8 }
 			}
@@ -278,8 +288,8 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3}
 					AND = {
-						is_in_array = { air_current_missions = 6 }
-						is_in_array = { air_current_missions = 8 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr6 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr8 }
 					}
 				}
 				}
@@ -299,14 +309,14 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 11 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr11 }}
 				}}
 				set_variable = { air_specific_mission = 11 }
 			}
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 2 }
-					Not = { is_in_array = { air_current_missions = 12 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr12 }}
 				}}
 				set_variable = { air_specific_mission = 12 }
 			}
@@ -315,8 +325,8 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3}
 					AND = {
-						is_in_array = { air_current_missions = 11 }
-						is_in_array = { air_current_missions = 12 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr11 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr12 }
 					}
 				}
 				}
@@ -336,14 +346,14 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 16 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr16 }}
 				}}
 				set_variable = { air_specific_mission = 16 }
 			}
             if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 2 }
-					Not = { is_in_array = { air_current_missions = 17 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr17 }}
 				}}
 				set_variable = { air_specific_mission = 17 }
 			}
@@ -352,8 +362,8 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3 }
 					AND = {
-						is_in_array = { air_current_missions = 16 }
-						is_in_array = { air_current_missions = 17 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr16 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr17 }
 					}
 				}
 				}
@@ -373,7 +383,7 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 21 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr21 }}
 				}}
 				set_variable = { air_specific_mission = 21 }
 			}
@@ -382,7 +392,7 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3}
 					AND = {
-						is_in_array = { air_current_missions = 21 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr21 }
 					}
 				}
 				}
@@ -402,21 +412,21 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 26 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr26 }}
 				}}
 				set_variable = { air_specific_mission = 26 }
 			}
 			if = {
             	limit = { AND = {
             		check_variable = { specific_mission = 2 }
-            		Not = { is_in_array = { air_current_missions = 28 }}
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr28 }}
             	}}
             	set_variable = { air_specific_mission = 28 }
             }
             if = {
             	limit = { AND = {
             		check_variable = { specific_mission = 3 }
-            		Not = { is_in_array = { air_current_missions = 29 }}
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr29 }}
             	}}
             	set_variable = { air_specific_mission = 29 }
             }
@@ -425,9 +435,9 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3}
 					AND = {
-						is_in_array = { air_current_missions = 26 }
-						is_in_array = { air_current_missions = 28 }
-						is_in_array = { air_current_missions = 29 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr26 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr28 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr29 }
 					}
 				}
 				}
@@ -486,75 +496,93 @@ AIR_start_mission = {
 	
 	if = {
 		limit = { check_variable = { air_new_mission = 1 }}
-		add_to_array = { air_current_missions = 1 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr1 }
+		activate_mission = AIR_mission_nr1
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 2 }}
-		add_to_array = { air_current_missions = 2 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr2 }
+		activate_mission = AIR_mission_nr2
 	}
 	if = {
     	limit = { check_variable = { air_new_mission = 3 }}
-    	add_to_array = { air_current_missions = 3 }
+    	add_to_array = { air_current_missions = token:AIR_mission_nr3 }
+		activate_mission = AIR_mission_nr3
     }
 	if = {
     	limit = { check_variable = { air_new_mission = 4 }}
-    	add_to_array = { air_current_missions = 4 }
+    	add_to_array = { air_current_missions = token:AIR_mission_nr4 }
+		activate_mission = air_mission_nr4
     }
 	if = {
     	limit = { check_variable = { air_new_mission = 5 }}
-    	add_to_array = { air_current_missions = 5 }
+    	add_to_array = { air_current_missions = token:AIR_mission_nr5 }
+		activate_mission = AIR_mission_nr5
     }
 	if = {
 		limit = { check_variable = { air_new_mission = 6 }}
-		add_to_array = { air_current_missions = 6 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr6 }
+		activate_mission = AIR_mission_nr6
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 8 }}
-		add_to_array = { air_current_missions = 8 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr8 }
+		activate_mission = AIR_mission_nr8
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 9 }}
-		add_to_array = { air_current_missions = 9 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr9 }
+		activate_mission = AIR_mission_nr9
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 11 }}
-		add_to_array = { air_current_missions = 11 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr11 }
+		activate_mission = AIR_mission_nr11
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 12 }}
-		add_to_array = { air_current_missions = 12 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr12 }
+		activate_mission = AIR_mission_nr12
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 13 }}
-		add_to_array = { air_current_missions = 13 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr13 }
+		activate_mission = AIR_mission_nr13
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 16 }}
-		add_to_array = { air_current_missions = 16 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr16 }
+		activate_mission = AIR_mission_nr16
 	}
     if = {
 		limit = { check_variable = { air_new_mission = 17 }}
-		add_to_array = { air_current_missions = 17 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr17 }
+		activate_mission = AIR_mission_nr17
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 18 }}
-		add_to_array = { air_current_missions = 18 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr18 }
+		activate_mission = AIR_mission_nr18
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 21 }}
-		add_to_array = { air_current_missions = 21 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr21 }
+		activate_mission = AIR_mission_nr21
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 26 }}
-		add_to_array = { air_current_missions = 26 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr26 }
+		activate_mission = AIR_mission_nr26
 	}
 	if = {
     	limit = { check_variable = { air_new_mission = 28 }}
-    	add_to_array = { air_current_missions = 28 }
+    	add_to_array = { air_current_missions = token:AIR_mission_nr28 }
+		activate_mission = AIR_mission_nr28
     }
     if = {
        limit = { check_variable = { air_new_mission = 29 }}
-       add_to_array = { air_current_missions = 29 }
+       add_to_array = { air_current_missions = token:AIR_mission_nr29 }
+	   activate_mission = AIR_mission_nr29
     }
 }
 

@@ -21,7 +21,7 @@ every_possible_country = {
 		
 		
 		corps_commander = {
-			traits = { not_a_real_officer }
+			traits = { not_a_real_airbender }
 			visible = { always = no }
 		}
 		portraits = {
@@ -39,7 +39,7 @@ every_possible_country = {
 		
 
 		corps_commander = {
-			traits = { not_a_real_officer }
+			traits = { not_a_real_airbender }
 			visible = { always = no }
 		}
 		portraits = {
@@ -57,7 +57,7 @@ every_possible_country = {
 		
 
 		corps_commander = {
-			traits = { not_a_real_officer }
+			traits = { not_a_real_airbender }
 			visible = { always = no }
 		}
 		portraits = {
@@ -76,7 +76,7 @@ every_possible_country = {
 		
 
 		corps_commander = {
-			traits = { not_a_real_officer }
+			traits = { not_a_real_airbender }
 			visible = { always = no }
 		}
 		portraits = {
@@ -95,7 +95,7 @@ every_possible_country = {
 		
 
 		corps_commander = {
-			traits = { not_a_real_officer }
+			traits = { not_a_real_airbender }
 			visible = { always = no }
 		}
 		portraits = {
@@ -114,7 +114,7 @@ every_possible_country = {
 		
 
 		corps_commander = {
-			traits = { not_a_real_officer }
+			traits = { not_a_real_airbender }
 			visible = { always = no }
 		}
 		portraits = {

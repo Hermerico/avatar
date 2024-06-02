@@ -1,5 +1,5 @@
 AIR_council_category = {
-	icon = council_decision_tab
+	icon = air_council
 
 	allowed = {
 		OR = {
@@ -10,15 +10,15 @@ AIR_council_category = {
 		}
 	}
 	visible = {
-		visible = {
-			OR = {
-				original_tag = SAT
-				original_tag = EAT
-				original_tag = NAT
-				original_tag = WAT
-			}
-			NOT = { has_country_flag = hide_country_decisions }
-			NOT = { has_country_flag = air_council_dissolved }
+		OR = {
+			original_tag = SAT
+			original_tag = EAT
+			original_tag = NAT
+			original_tag = WAT
+		}
+		NOT = {
+			has_country_flag = hide_country_decisions
+			has_country_flag = air_council_dissolved
 		}
 	}
 

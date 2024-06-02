@@ -4,6 +4,23 @@ on_actions = {
 		effect = {
 
 			every_country = {
+				limit = {
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
+				}
+				every_character = {
+					limit = {
+						has_trait = not_a_real_airbender
+					}
+					remove_unit_leader_role = yes
+					set_character_flag = generic_advisor
+					set_character_flag = airbender_monk
+				}
+			}
+
+			every_country = {
 
 				every_character = {
 					limit = {
@@ -14,6 +31,14 @@ on_actions = {
 				}
 				
 				generic_minister_recalc = yes
+			}
+
+			SAT = {
+				set_variable = { council_name_1:harmony = 1 }
+				set_variable = { council_name_2:harmony = 3 }
+				set_variable = { council_name_3:harmony = 4 }
+				set_variable = { council_name_4:harmony = 1 }
+				set_variable = { council_name_5:harmony = 5 }
 			}
 		}
 	}

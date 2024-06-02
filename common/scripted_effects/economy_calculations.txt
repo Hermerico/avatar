@@ -1397,7 +1397,11 @@ taxation_state_calc = {
 		limit = {
 			THIS = { is_core_of = controller }
 		}
-		add_to_variable = { ROOT.national_prosperity_cap = THIS.local_prosperity_cap_base }
+		
+		### use actual cap since wealth no longer increases cap, which snowballs it up or down
+		###add_to_variable = { ROOT.national_prosperity_cap = THIS.local_prosperity_cap_base }
+
+		add_to_variable = { ROOT.national_prosperity_cap = THIS.local_prosperity_cap }
 	}
 
 
