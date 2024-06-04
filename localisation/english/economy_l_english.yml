@@ -91,7 +91,7 @@
  RATION_HIGH_PRIORITY_DESC:0 "High Ration Priority"
  consumer_goods_title:0 "National Wealth:"
  consumer_goods_supply:0 "[?average_gdp_netto|3Y] / [?cost_of_living|3Y]"
- consumer_goods_supply_ttp:0 "§YNational Wealth§! \n\n£prosperity_texticon  Prosperity: [?national_prosperity|2Y]/[?national_prosperity_cap|2Y]\n£construction_capacity_texticon  Population Productivity: [?prosperity_productivity|3Y]"
+ consumer_goods_supply_ttp:0 "§YNational Wealth§! \n\n£prosperity_texticon  Prosperity: [?national_prosperity_percent|2Y%] \n£consumer_goods_texticon  Expected Wealth: [?national_prosperity|0Y]/[?national_prosperity_cap|0Y]"
  consumer_goods_supply_ttp_delayed:0 "§LThe National wealth determines the economic capacity of a nation. The wealthier your citizens, the more you can tax them, the more you can spend again in return. However, a wealthy society also has a high request for consumer goods and luxury goods, so pay attention to how the consumption behaviour changes.§!"
  
  standartd_of_living:0 "§YNational Wealth§!"
@@ -134,7 +134,7 @@
  workless:0 "§YUnemployed§! \nWeekly Unemployment change: [?modifier@#weekly_workless_people|-=3%%] ([?workless_to_self|+3]) \n£stability_texticon  §YStability§! impact: [?workless_malus|+%2]"
  workless_tooltip_delayed:0 "§LUnemployed Workers have lost their job and are unproductive in your economy. If not employed soon they will decrease the Stability, until they find work again.§!"
  building_number:0 "[?building_count|0]"
- buildings_tooltip:0 "§YBuildings§! \n\n£farming|2 Farms: [?farm_count|Y0] \n£milling|2 Mills: [?mill_count|Y0] \n£ranch|2 Ranches: [?ranch_count|Y0] \n£fishing|2 Fishing Stands: [?fishing_stand_count|Y0] \n£weaving|2 Crop Weavings: [?crop_weaving_count|Y0] \n£weaving|2 Animal Weavings: [?animal_weaving_count|Y0] \n£lumberjack|2 Lumber Mills: [?lumber_mill_count|Y0] \n£quarry|2 Quarries: [?quarry_count|Y0] \n£mine|2 Mines: [?mine_count|Y0] \n£smelting|2 Smeltings: [?steelworks_count|Y0] \n\n£smithy|2 Smithies: [?smithy_count|Y0] \n£factory|2 Factories: [?factory_count|Y0] \n£harbour|2 Harbours: [?harbour_count|Y0] \n£dockyard_factory|2 Dockyards: [?dockyard_count|Y0] \n£store|2 Shops: [?consumer_good_factory_count|Y0] \n£luxury_store|2 Luxury Stores: [?luxury_good_factory_count|Y0] \n£carpentry|2 Carpentries: [?carpentry_count|Y0] \n£masonry|2 Masonries: [?masonry_count|Y0] \n£steel_beam_factory|2 Steel Beam Factories: [?steel_beam_factory_count|Y0] \n\nIncome to Buildings ratio effect on civil capacity cost: [?building_income_ratio|2%=-]"
+ buildings_tooltip:0 "§YBuildings§! \n\n£farming|2 Farms: [?farm_count|Y0] \n£milling|2 Mills: [?mill_count|Y0] \n£ranch|2 Ranches: [?ranch_count|Y0] \n£fishing|2 Fishing Stands: [?fishing_stand_count|Y0] \n£weaving|2 Crop Weavings: [?crop_weaving_count|Y0] \n£weaving|2 Animal Weavings: [?animal_weaving_count|Y0] \n£lumberjack|2 Lumber Mills: [?lumber_mill_count|Y0] \n£quarry|2 Quarries: [?quarry_count|Y0] \n£mine|2 Mines: [?mine_count|Y0] \n£smelting|2 Smeltings: [?steelworks_count|Y0] \n\n£smithy|2 Smithies: [?smithy_count|Y0] \n£factory|2 Factories: [?factory_count|Y0] \n£harbour|2 Harbours: [?harbour_count|Y0] \n£dockyard_factory|2 Dockyards: [?dockyard_count|Y0] \n£store|2 Shops: [?consumer_good_factory_count|Y0] \n£luxury_store|2 Luxury Stores: [?luxury_good_factory_count|Y0] \n£carpentry|2 Carpentries: [?carpentry_count|Y0] \n£masonry|2 Masonries: [?masonry_count|Y0] \n£steel_beam_factory|2 Steel Beam Factories: [?steel_beam_factory_count|Y0]"
  buildings_tooltip_delayed:0 "§LThere is a variety of buildings, each specialised in one or more production methods. This allows the population to increase the productivity and wealth.§!"
  construction_resource_buff:0 "[?construction_material|+=%1]"
  construction_resource_ttp:0 "§YConstruction Resource Bonus§! \n[?factories_bought|Y] £civ_factory  * [?construction_material_factor|Y] "
@@ -267,11 +267,11 @@
  working_soldiers_delayed:0 "§LFor precise construction in this state.§!"
 
  tax_number:0 "[?var_local_tax|Y3]"
- tax_tooltip:0 "§YLocal Taxation§!: [?var_local_tax|3] / [?tax_reduction_inverted|Y3] \n\nTaxes Efficiency: [?mtth:local_tax_efficiency|+Y%]\nTaxes Wasted: [?mtth:local_tax_waste|=+Y3]"
+ tax_tooltip:0 "§YLocal Taxation§!: [?var_local_tax|3] / [?tax_reduction_positive|Y3] \n\nTaxes Efficiency: [?mtth:local_tax_efficiency|+Y%]\nTaxes Wasted: [?mtth:local_tax_waste|=+Y3]"
  tax_tooltip_delayed:0 "§LTaxation effects§!"
 
  prosperity_number:0 "[?local_prosperity|Y1]"
- prosperity_tooltip:0 "§YLocal Prosperity§!: [?local_prosperity|3] / [?mtth:local_prosperity_cap|Y3] \n\n£tax_efficiency_texticon  Taxation Efficiency: [?mtth:prosperity_taxation_efficiency|=+%2] \n£migration_texticon  Migration attraction: [?mtth:prosperity_attraction|=+%2]\n\nWeekly change: [?real_prosp_growth|=+3] \nCaused by:\n -£construction_capacity_texticon  Productivity: [?var_local_prosperity_growth|+=Y3] \n -£population_texticon  Population need: [?var_local_goods_bought|+=Y3] \n -£taxes_texticon  Taxation: [?var_local_tax_reduction|Y3] \n -£inflation_texticon  Minting: [?var_local_inflation_steal|+=Y3] \n\nContribution to £peoples_initiative_texticon  People's Initiative: [?var_local_investment|+=3]"
+ prosperity_tooltip:0 "§YLocal Prosperity§!: [?local_prosperity|1] / [?local_prosperity_cap|Y1] \n\n£migration_texticon  Migration attraction: [?mtth:prosperity_attraction|=+%2]\n\nBase from £consumer_goods_texticon  Consumer Demand: [?var_local_goods_expected_positive|Y1] \n£prosperity_texticon  Max Prosperity: [?prosperity_factor|+=%2] \n\nProsperity Target: [?prosperity_target|1Y%] §L(Productivity/Costs)§! \n\nCaused by:\n -£construction_capacity_texticon  Productivity: [?var_local_prosperity_growth|+=Y1] \n -£population_texticon  Population need: [?var_local_goods_bought|+=Y1] \n -£taxes_texticon  Taxation: [?var_local_tax_reduction|Y1] \n -£inflation_texticon  Minting: [?var_local_inflation_steal|+=Y1] \n\nWeekly change: [?real_prosp_growth|=+3] \n\nContribution to £peoples_initiative_texticon  People's Initiative: [?var_local_investment|+=1]"
  prosperity_tooltip_delayed:0 "§LProsperity is an indicator for how wealthy a state is. It influences the consumer behaviour and how much taxes are paid.§!"
 
  urbanisation_number:0 "[?actual_urbanisation|0]/[?urbanisation_cap|0]"

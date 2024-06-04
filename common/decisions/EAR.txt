@@ -67,7 +67,8 @@ THE_EARTHKINGDOM = {
 			base = 0
 			modifier = {
 				add = 200
-				surrender_progress = 0.4
+				
+				ROOT = { surrender_progress = 0.4 }
 			}
 		}
 		complete_effect = {
@@ -84,7 +85,7 @@ THE_EARTHKINGDOM = {
 					end_puppet = PREV
 				}
 				add_ideas = destroyed_morale_EAR
-				event = earthkingdom.2
+				country_event = earthkingdom.2
 			}
 			every_country = {
 				limit = {

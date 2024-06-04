@@ -457,8 +457,8 @@ country_event = {
 					}
 				}
 				OR = {
-					has_idea = autonomy_kingdom
-					has_idea = autonomy_county
+					has_autonomy_state = autonomy_kingdom
+					has_autonomy_state = autonomy_county
 					is_subject = no
 				}
 			}
@@ -530,8 +530,8 @@ country_event = {
 					every_country = {
 						limit = {
 							OR = {
-								has_idea = autonomy_kingdom
-								has_idea = autonomy_county
+								has_autonomy_state = autonomy_kingdom
+								has_autonomy_state = autonomy_county
 								is_subject = no
 							}
 							capital_scope = {

@@ -336,7 +336,7 @@ THE_EARTHKINGDOM = {
 		}
 
 		available = {
-			has_idea = autonomy_kingdom
+			has_autonomy_state = autonomy_kingdom
 			NOT = {
 				has_country_flag = demand_to_overlord
 			}
@@ -349,7 +349,7 @@ THE_EARTHKINGDOM = {
 					value = THIS.id
 				}
 				is_subject = yes
-				has_idea = autonomy_kingdom
+				has_autonomy_state = autonomy_kingdom
 			}
 			NOT = {
 				has_country_leader_with_trait = king
@@ -395,7 +395,7 @@ THE_EARTHKINGDOM = {
 					value = THIS.id
 				}
 				is_subject = yes
-				has_idea = autonomy_kingdom
+				has_autonomy_state = autonomy_kingdom
 			}
 		}
 
@@ -442,7 +442,7 @@ THE_EARTHKINGDOM = {
 					value = THIS.id
 				}
 				is_subject = yes
-				has_idea = autonomy_kingdom
+				has_autonomy_state = autonomy_kingdom
 			}
 		}
 
@@ -465,9 +465,9 @@ THE_EARTHKINGDOM = {
 				limit = {
 					is_neighbor_of = ROOT
 					OR = {
-						has_idea = autonomy_county
-						has_idea = autonomy_vassalage
-						has_idea = autonomy_royal_domain
+						has_autonomy_state = autonomy_county
+						has_autonomy_state = autonomy_vassalage
+						has_autonomy_state = autonomy_royal_domain
 					}
 				}
 				country_event = {

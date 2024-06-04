@@ -179,7 +179,6 @@ urbanisation_modifiers = {
 prosperity_modifiers = {
 	enable = { always = yes }
 
-	taxation_efficiency = mtth:prosperity_taxation_efficiency
 	migration_attraction = mtth:prosperity_attraction
 
 }

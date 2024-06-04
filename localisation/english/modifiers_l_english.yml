@@ -233,6 +233,7 @@
  weekly_casualty_war_weariness_desc:0 "Modifies the gain of War Weariness."
  war_weariness_factor:0 "£war_weariness_texticon   §YWar Weariness§! gain"
  war_weariness_factor_desc:0 "Modifies the gain of War Weariness."
+ war_weariness_stability_impact:0 "£war_weariness_texticon   §YWar Weariness§! Stability Impact"
 
  avatar_opinion_modifier:0 "Can influnce the Avatar´s opinion of us"
  women_recruitment_modifier:0 "Women are empowered"
@@ -441,7 +442,7 @@
 
 
  consumer_demand:0 "£consumer_goods_texticon  Consumer Demand"
- consumer_cost:0 "£consumer_goods_texticon  Cost for Consumer Demand"
+ consumer_cost:0 "£consumer_goods_texticon  Consumer Prices"
  grain_demand:0 "£resources_texticons|1  Grain Demand"
  animal_products_demand:0 "£resources_texticons|2  Animal Products Demand"
  textile_demand:0 "£resources_texticons|3  Textile Demand"
@@ -503,7 +504,7 @@
  max_bricks_building_k:0 "£economy_resources_texticons|5  Bricks Capacity (K)"
  max_steel_beams_building_k:0 "£economy_resources_texticons|6  Steel Beams Capacity (K)"
 
- prosperity:0 "£prosperity_texticon  Prosperity Growth"
+ prosperity:0 "£prosperity_texticon  Prosperity"
  prosperity_factor:0 "£prosperity_texticon  Max Prosperity"
 
 #trait

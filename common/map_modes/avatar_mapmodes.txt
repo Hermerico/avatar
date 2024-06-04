@@ -650,14 +650,12 @@ scripted_map_modes = {
 						divide_temp_variable = { sol = global.max_local_prosperity }
 					}
 
+					set_temp_variable = { sol_inverted = 1 }
+					subtract_from_temp_variable = { sol_inverted = sol }
+					multiply_temp_variable = { sol_inverted = 0.2 }
+
 					subtract_from_temp_variable = { red = sol }
-					if = {
-						limit = {
-							check_variable = { local_prosperity = 0 }
-						}
-						set_temp_variable = { decline = real_prosp_growth }
-						add_to_temp_variable = { green = decline }
-					}
+					subtract_from_temp_variable = { green = sol_inverted }
 				}
 				
 			}
