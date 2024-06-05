@@ -1427,10 +1427,13 @@ taxation_state_calc = {
 		min = 0.001
 	}
 
-	set_variable = { real_prosp_growth =  THIS.prosperity_target }
-	divide_variable = { real_prosp_growth =  THIS.local_prosperity_ratio }
-	subtract_from_variable = { real_prosp_growth = 1 }
-	multiply_variable = { real_prosp_growth = 10 }
+	set_variable = { prosp_growth = THIS.prosperity_target }
+	divide_variable = { prosp_growth = THIS.local_prosperity_ratio }
+	subtract_from_variable = { prosp_growth = 1 }
+	multiply_variable = { prosp_growth = 10 }
+
+	set_variable = { real_prosp_growth = THIS.prosperity_target }
+	divide_variable = { real_prosp_growth = THIS.prosp_growth }
 
 	add_to_variable = { local_prosperity = THIS.real_prosp_growth }
 
