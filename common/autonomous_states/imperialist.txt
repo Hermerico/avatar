@@ -23,6 +23,7 @@ autonomy_state = {
 		mic_to_overlord_factor = 0.2
 		autonomy_gain_global_factor = -0.1
 		master_ideology_drift = 0.01
+		subject_influence = -0.1
 	}
 	
 	ai_subject_wants_higher = {
@@ -44,6 +45,7 @@ autonomy_state = {
 	}
 	
 	can_take_level = {
+		always = no
 	}
 
 	can_lose_level = {
@@ -80,6 +82,7 @@ autonomy_state = {
 		mic_to_overlord_factor = 0.5
 		autonomy_gain_global_factor = -0.2
 		master_ideology_drift = 0.02
+		subject_influence = -0.2
 	}
 	
 	ai_subject_wants_higher = {
@@ -141,6 +144,7 @@ autonomy_state = {
 		mic_to_overlord_factor = 0.75
 		autonomy_gain_global_factor = -0.3
 		master_ideology_drift = 0.03
+		subject_influence = -0.3
 	}
 	
 	ai_subject_wants_higher = {
@@ -168,6 +172,6 @@ autonomy_state = {
 	}
 
 	can_lose_level = {
-		#trigger here
+		always = no
 	}
 }

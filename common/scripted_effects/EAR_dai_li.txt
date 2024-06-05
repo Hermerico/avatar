@@ -8,6 +8,25 @@ EAR_clamp_dli = {
 	}
 }
 
+EAR_clamp_dld = {
+	clamp_variable = {
+		var = dai_li_disloyalty
+		min = 0 
+		max = 100
+	}
+
+	if = {
+		limit = {
+			check_variable =  { 
+				var = dai_li_disloyalty
+				value = 90 
+				compare = greater_than_or_equals
+			}
+		}
+		activate_mission = EAR_dai_li_coup
+	}
+}
+
 #### Upgrading Force ####
 
 EAR_upgrade_dai_li = {
@@ -279,4 +298,20 @@ EAR_level_up_citizen_militia_active_modifier = {
 	add_to_variable = { EAR_citizen_militia_civ_factory_use = 1 } 
 	add_to_variable = { EAR_citizen_militia_training_time_factor = EAR_citizen_militia_modifier_change }  
 	add_to_variable = { EAR_citizen_militia_active_level = 1 }
+}
+
+
+	###  #### #     #  ###  #   # ###   ### 
+	#  # #    ##   ## #   # ##  # #  # #    
+	#  # ###  # # # # ##### # # # #  #  ##  
+	#  # #    #  #  # #   # #  ## #  #    # 
+	###  #### #     # #   # #   # ###  ###  
+
+
+dai_li_demands = {
+	random = {
+		chance = dai_li_disloyalty
+		
+		activate_mission = EAR_dai_li_demands
+	}
 }

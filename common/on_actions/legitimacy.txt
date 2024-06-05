@@ -92,8 +92,19 @@ on_actions = {
 
 			if = {
 				limit = {
-					NOT = {
-						has_dynamic_modifier = { modifier = legitimacy_effects }
+					OR = {
+						NOT = {
+							has_dynamic_modifier = { modifier = legitimacy_effects }
+						}
+						AND = {
+							OR = {
+								original_tag = SAT
+								original_tag = EAT
+								original_tag = NAT
+								original_tag = WAT
+							}
+							NOT = { has_country_flag = air_council_dissolved }
+						}
 					}
 				}
 				add_dynamic_modifier = { modifier = legitimacy_effects }

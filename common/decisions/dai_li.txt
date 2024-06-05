@@ -10,12 +10,12 @@ THE_EARTHKINGDOM = {
 		
 		visible = {
 			tag = EAR
-			has_start_date < 50.1.1
 			NOT = {
 				has_country_flag = {
 					flag = dai_li_category_active
 					value < 2
 				}
+				has_idea = dai_li_headquaters
 			}
 		}
 
@@ -26,7 +26,7 @@ THE_EARTHKINGDOM = {
 			}
 		}
 		
-		days_remove = 6 #0
+		days_remove = 60
 		fire_only_once = yes
 
 		custom_cost_trigger = {
@@ -39,8 +39,10 @@ THE_EARTHKINGDOM = {
 			subtract_from_variable = { var = money_variable value = 50 }
 
 			unlock_decision_category_tooltip = EAR_dai_li_category
-			set_country_flag = dai_li_category_active
-
+			set_country_flag = {
+				flag = dai_li_category_active
+				value = 1
+			}
 		}
 
 		remove_effect = {
@@ -57,11 +59,65 @@ THE_EARTHKINGDOM = {
 				value = 10
 				tooltip = dai_li_influence
 			}
+			EAR_clamp_dli = yes
 		}
 	}
 }
 
 EAR_dai_li_category = {
+
+	no_war_in_ba_sing_se_decision = {
+
+		icon = no_war_in_ba_sing
+
+		priority = 100
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_grand_secretary_office
+		}
+
+		available = {
+			has_war = yes
+			has_idea = dai_li_jo_dee
+			has_idea = dai_li_surveillance
+			has_idea = dai_li_brainwashing_room
+			has_idea = dai_li_government
+		}
+		
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			check_variable = {
+				var = dai_li_influence 
+				value = EAR_max_dai_li_influence
+				compare = greater_than_or_equals
+			}
+		}
+
+		custom_cost_text = EAR_decision_cost_max_DLI
+
+		complete_effect = {
+			set_temp_variable = { cost = EAR_max_dai_li_influence }
+			multiply_temp_variable = { cost = -1 }
+			add_to_variable = { 
+				var = dai_li_influence
+				value = cost
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+
+			add_ideas = heart_of_the_kingdom_idea
+			add_ideas = no_war_in_ba_sing_se_spirit
+
+			set_country_flag = dai_li_country_decision
+			set_country_flag = {
+				flag = dai_li_category_active
+				value = 2
+			}
+			custom_effect_tooltip = make_this_category_country_decision
+		}
+	}
 	
 	expand_the_headquaters_2 = {
 
@@ -73,10 +129,10 @@ EAR_dai_li_category = {
 		
 		visible = {
 			tag = EAR
-			has_start_date < 50.1.1
 			NOT = {
 				has_country_flag = dai_li_headquater_expansion
 				has_decision = expand_the_headquaters
+				has_idea = dai_li_headquaters
 			}
 		}
 
@@ -84,7 +140,7 @@ EAR_dai_li_category = {
 			
 		}
 		
-		days_remove = 6 #0
+		days_remove = 60
 		fire_only_once = yes
 
 		custom_cost_trigger = {
@@ -112,6 +168,516 @@ EAR_dai_li_category = {
 				value = 10
 				tooltip = dai_li_influence
 			}
+			EAR_clamp_dli = yes
+		}
+	}
+
+	expand_the_training_rooms = {
+
+		icon = dai_li_headquater
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_headquaters
+			NOT = {
+				has_idea = dai_li_training_rooms
+			}
+		}
+
+		available = {
+			
+		}
+		
+		days_remove = 60
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 75 }
+		}
+		custom_cost_text = expenses_75
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 75 }
+
+		}
+
+		remove_effect = {
+			add_ideas = dai_li_training_rooms
+			add_to_variable = { 
+				var = dai_li_influence
+				value = 10
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+
+			unlock_decision_tooltip = expand_the_dai_li_units
+		}
+	}
+
+	expand_the_dai_li_units = {
+
+		priority = 20
+
+		icon = dai_li_units
+
+		allowed = { original_tag = EAR }
+		
+		visible = {
+			has_idea = dai_li_training_rooms
+		}
+
+		fire_only_once = no 
+		
+		days_remove = 90 
+
+		custom_cost_trigger = {
+			check_variable = {
+				var = dai_li_influence 
+				value = 25
+				compare = greater_than_or_equals
+			}
+		}
+
+		custom_cost_text = EAR_decision_cost_medium_DLI
+
+		complete_effect = {
+			add_to_variable = { 
+				var = dai_li_influence
+				value = -25
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+		}
+
+		remove_effect = {
+			EAR_increase_militia_cap = yes 
+		}
+		
+		ai_will_do = {
+			base = 10 
+		}
+	}
+
+	expand_the_prisons = {
+
+		icon = dai_li_headquater
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_headquaters
+			NOT = {
+				has_idea = dai_li_prisons
+			}
+		}
+
+		available = {
+			
+		}
+		
+		days_remove = 60
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 75 }
+		}
+		custom_cost_text = expenses_75
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 75 }
+
+		}
+
+		remove_effect = {
+			add_ideas = dai_li_prisons
+			add_to_variable = { 
+				var = dai_li_influence
+				value = 10
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+		}
+	}
+
+	expand_jo_dee_room = {
+
+		icon = dai_li_headquater
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_headquaters
+			NOT = {
+				has_idea = dai_li_jo_dee
+			}
+		}
+
+		available = {
+			OR = {
+				has_idea = dai_li_training_rooms
+				has_idea = dai_li_prisons
+			}
+		}
+		
+		days_remove = 60
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 125 }
+		}
+		custom_cost_text = expenses_125
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 125 }
+
+		}
+
+		remove_effect = {
+			add_ideas = dai_li_jo_dee
+			add_to_variable = { 
+				var = dai_li_influence
+				value = 10
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+		}
+	}
+
+	expand_surveillance_department = {
+
+		icon = dai_li_headquater
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_headquaters
+			NOT = {
+				has_idea = dai_li_surveillance
+			}
+		}
+
+		available = {
+			OR = {
+				has_idea = dai_li_training_rooms
+				has_idea = dai_li_prisons
+			}
+		}
+		
+		days_remove = 60
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+
+		}
+
+		remove_effect = {
+			add_ideas = dai_li_surveillance
+			add_to_variable = { 
+				var = dai_li_influence
+				value = 10
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+		}
+	}
+
+	expand_brainwashing_room = {
+
+		icon = dai_li_headquater
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_headquaters
+			NOT = {
+				has_idea = dai_li_brainwashing_room
+			}
+		}
+
+		available = {
+			OR = {
+				has_idea = dai_li_jo_dee
+				has_idea = dai_li_surveillance
+			}
+		}
+		
+		days_remove = 60
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
+		}
+		custom_cost_text = expenses_200
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 200 }
+
+		}
+
+		remove_effect = {
+			add_ideas = dai_li_brainwashing_room
+			add_to_variable = { 
+				var = dai_li_influence
+				value = 10
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+		}
+	}
+
+	brainwash_notable_nobles = {
+
+		icon = dai_li_brainwash
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_brainwashing_room
+			NOT = {
+				has_idea = brainwashed_nobles
+			}
+		}
+
+		available = {
+			
+		}
+		
+		days_remove = 60
+		days_re_enable = 365
+
+		custom_cost_trigger = {
+			check_variable = {
+				var = dai_li_influence 
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+
+		custom_cost_text = EAR_decision_cost_large_DLI
+
+		complete_effect = {
+			add_to_variable = { 
+				var = dai_li_influence
+				value = -50
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+		}
+
+		remove_effect = {
+			add_timed_idea = {
+				idea = brainwashed_nobles
+				days = 180
+			}
+		}
+	}
+
+	brainwash_academics = {
+
+		icon = dai_li_brainwash
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_brainwashing_room
+			NOT = {
+				has_idea = brainwashed_academics
+			}
+		}
+
+		available = {
+			
+		}
+		
+		days_remove = 60
+		days_re_enable = 365
+
+		custom_cost_trigger = {
+			check_variable = {
+				var = dai_li_influence 
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+
+		custom_cost_text = EAR_decision_cost_large_DLI
+
+		complete_effect = {
+			add_to_variable = { 
+				var = dai_li_influence
+				value = -50
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+		}
+
+		remove_effect = {
+			add_timed_idea = {
+				idea = brainwashed_academics
+				days = 180
+			}
+		}
+	}
+
+
+	expand_politics_department = {
+
+		icon = dai_li_headquater
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_headquaters
+			NOT = {
+				has_idea = dai_li_politics_department
+			}
+		}
+
+		available = {
+			OR = {
+				has_idea = dai_li_jo_dee
+				has_idea = dai_li_surveillance
+			}
+		}
+		
+		days_remove = 60
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
+		}
+		custom_cost_text = expenses_150
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 150 }
+
+		}
+
+		remove_effect = {
+			add_ideas = dai_li_politics_department
+			add_to_variable = { 
+				var = dai_li_influence
+				value = 10
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+		}
+	}
+
+	agents_in_the_government = {
+
+		icon = dai_li_government
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_politics_department
+			NOT = {
+				has_country_flag = dai_li_ministers
+			}
+		}
+
+		available = {
+			
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			custom_effect_tooltip = dai_li_ministers_ttp
+			set_country_flag = dai_li_ministers
+			add_to_variable = { 
+				var = dai_li_influence
+				value = 5
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
+		}
+	}
+
+	expand_grand_secretary_office = {
+
+		icon = dai_li_headquater
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			has_idea = dai_li_headquaters
+			NOT = {
+				has_idea = dai_li_grand_secretary_office
+			}
+		}
+
+		available = {
+			OR = {
+				has_idea = dai_li_brainwashing_room
+				has_idea = dai_li_politics_department
+			}
+		}
+		
+		days_remove = 60
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 300 }
+		}
+		custom_cost_text = expenses_300
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 300 }
+
+		}
+
+		remove_effect = {
+			add_ideas = dai_li_grand_secretary_office
+			add_to_variable = { 
+				var = dai_li_influence
+				value = 10
+				tooltip = dai_li_influence
+			}
+			EAR_clamp_dli = yes
 		}
 	}
 
@@ -123,7 +689,7 @@ EAR_dai_li_category = {
 		
 		visible = {
 			tag = EAR
-			has_country_flag = dai_li_headquater_expansion
+			has_idea = dai_li_headquaters
 			NOT = {
 				has_country_flag = loyalist_dai_li
 			}
@@ -149,9 +715,10 @@ EAR_dai_li_category = {
 			EAR_clamp_dli = yes
 			add_to_variable = { 
 				var = dai_li_disloyalty
-				value = 0.05
+				value = 5
 				tooltip = dai_li_disloyalty
 			}
+			EAR_clamp_dld = yes
 		}
 	}
 
@@ -215,7 +782,7 @@ EAR_dai_li_category = {
 		
 		visible = {
 			tag = EAR
-			has_country_flag = dai_li_headquater_expansion
+			has_idea = dai_li_headquaters
 			NOT = {
 				has_country_flag = extremist_dai_li
 			}
@@ -239,83 +806,11 @@ EAR_dai_li_category = {
 			}
 			EAR_clamp_dli = yes
 			add_to_variable = { 
-				var = dai_li_loyalty
-				value = 0.05
-				tooltip = dai_li_loyalty
+				var = dai_li_disloyalty
+				value = -5
+				tooltip = dai_li_disloyalty
 			}
-		}
-	}
-
-	agents_in_the_government = {
-
-		icon = dai_li_government
-		
-		visible = {
-			tag = EAR
-			has_country_flag = dai_li_headquater_expansion
-			has_start_date < 100.1.1
-		}
-
-		available = {
-			
-		}
-		
-		fire_only_once = yes
-
-		cost = 100
-
-		complete_effect = {
-			custom_effect_tooltip = dai_li_ministers_ttp
-			set_country_flag = dai_li_ministers
-			add_to_variable = { 
-				var = dai_li_influence
-				value = 5
-				tooltip = dai_li_influence
-			}
-			EAR_clamp_dli = yes
-		}
-	}
-
-	expand_the_dai_li_units = {
-
-		priority = 20
-
-		icon = GFX_decision_POL_looming_peasants_strike
-
-		allowed = { original_tag = EAR }
-		
-		visible = {
-			
-		}
-
-		fire_only_once = no 
-		
-		days_remove = 90 
-
-		custom_cost_trigger = {
-			check_variable = {
-				var = dai_li_influence 
-				value = 25
-				compare = greater_than_or_equals
-			}
-		}
-
-		custom_cost_text = EAR_decision_cost_medium_DLI
-
-		complete_effect = {
-			add_to_variable = { 
-				var = dai_li_influence
-				value = -25
-				tooltip = dai_li_influence
-			}
-		}
-
-		remove_effect = {
-			EAR_increase_militia_cap = yes 
-		}
-		
-		ai_will_do = {
-			base = 10 
+			EAR_clamp_dld = yes
 		}
 	}
 	
@@ -397,7 +892,7 @@ EAR_dai_li_category = {
 #	}
 
 
-	EAR_dai_li_coup = {
+	EAR_dai_li_demands = {
 
 		icon = dai_li_coup
 
@@ -406,10 +901,8 @@ EAR_dai_li_category = {
 		}
 
 		available = {
-			GIF = {
-				controls_state = 208
-			}
-        }
+			always = no
+		}
 
 
 		days_mission_timeout = 200
@@ -422,19 +915,72 @@ EAR_dai_li_category = {
 		is_good = no
 
 		complete_effect = {
-			EAR = {
-				country_event = { id = air_gen.3 days = 7 }
-			}
-			set_global_flag = west_temple_fallen
+			
 		}
 
+		timeout_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+
+	EAR_dai_li_coup = {
+
+		icon = dai_li_coup
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			any_character = {
+				is_character_slot = minister_of_culture
+				has_trait = cunning_schemer
+				is_hired_as_advisor = yes
+			}
+		}
+
+
+		days_mission_timeout = 200
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+
+		### dai li keeps shadow king
+		complete_effect = {
+			remove_ideas = corrupt_bureaucracy
+			swap_ideas = {
+				remove_idea = the_dai_li
+				add_idea = dai_li_government
+			}
+			every_character = {
+				limit = {
+					is_country_leader = yes
+				}
+				swap_country_leader_traits = { 
+					remove = earthking
+					add = shadow_king
+				}
+			}
+		}
+
+		### dai li full takeover
 		timeout_effect = {
 			EAR_dai_li_government = {
 				promote_character = yes
 			}
 		}
 
-        ai_will_do = {
+		ai_will_do = {
 			factor = 100
 		}
 
@@ -527,10 +1073,11 @@ EAR_dai_li_category = {
 
 		complete_effect = {
 			add_to_variable = { 
-				var = dai_li_loyalty
-				value = -0.05
-				tooltip = dai_li_loyalty
+				var = dai_li_disloyalty
+				value = 5
+				tooltip = dai_li_disloyalty
 			}
+			EAR_clamp_dld = yes
 
 			set_country_flag = duplicate_units
 			custom_effect_tooltip = EAR_duplicate_genocide_units

@@ -21,7 +21,10 @@ country_event = {
 		}
 
 		unlock_decision_category_tooltip = EAR_dai_li_category
-		set_country_flag = dai_li_category_active
+		set_country_flag = {
+			flag = dai_li_category_active
+			value = 1
+		}
 
 		custom_effect_tooltip = air_genocide_decisions
 		add_to_variable = { 
@@ -457,11 +460,16 @@ country_event = {
 				clr_country_flag = air_council_active
 				white_peace = GIF
 				leave_faction = yes
-				kill_country_leader = yes
+				every_character = {
+					limit = {
+						has_character_flag = airbender_monk
+					}
+					retire = yes
+				}
 				promote_character = WAT_extinct_nation
+				set_country_flag = air_council_dissolved
 				country_lock_all_division_template = yes
 				add_ideas = no_ruler
-				remove_ideas = pacifist_detachment
 				every_state = {
 					limit = {
 						is_core_of = WAT
@@ -600,10 +608,15 @@ country_event = {
 				set_cosmetic_tag = SAT_exterminated
 				white_peace = GIF
 				clr_country_flag = air_council_active
-				kill_country_leader = yes
+				every_character = {
+					limit = {
+						has_character_flag = airbender_monk
+					}
+					retire = yes
+				}
 				promote_character = SAT_extinct_nation
+				set_country_flag = air_council_dissolved
 				add_ideas = no_ruler
-				remove_ideas = pacifist_detachment
 				country_lock_all_division_template = yes
 				every_state = {
 					limit = {
@@ -810,9 +823,14 @@ country_event = {
 				white_peace = GIF
 				clr_country_flag = air_council_active
 				leave_faction = yes
-				remove_ideas = pacifist_detachment
-				kill_country_leader = yes
+				every_character = {
+					limit = {
+						has_character_flag = airbender_monk
+					}
+					retire = yes
+				}
 				promote_character = NAT_extinct_nation
+				set_country_flag = air_council_dissolved
 				add_ideas = no_ruler
 				country_lock_all_division_template = yes
 				every_state = {
@@ -954,10 +972,15 @@ country_event = {
 				white_peace = GIF
 				clr_country_flag = air_council_active
 				leave_faction = yes
-				kill_country_leader = yes
+				every_character = {
+					limit = {
+						has_character_flag = airbender_monk
+					}
+					retire = yes
+				}
 				promote_character = EAT_extinct_nation
+				set_country_flag = air_council_dissolved
 				add_ideas = no_ruler
-				remove_ideas = pacifist_detachment
 				country_lock_all_division_template = yes
 				every_state = {
 					limit = {

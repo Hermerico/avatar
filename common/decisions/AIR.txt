@@ -3,9 +3,8 @@ AIR_council_category = {
 	
 		icon = council_will_meet_again
 
-		activation = {
-			has_country_flag = air_council_active
-		}
+		allowed = { always = no }
+
 		available = {
 			has_country_flag = meetings_disrupted
 		}
@@ -19,85 +18,12 @@ AIR_council_category = {
 			ROOT = { country_event = { id = AIR_council.1 } }
 		}
 	}
-	
-	# increase / decrease decisions
-	increase_military_priorities = {
-		icon = council_increase_priority
-		visible = { has_country_flag = air_council_active }
-		cost = 50
-		days_re_enable = 0
-		days_remove = 0
-		
-		complete_effect = {
-			ROOT = { country_event = { id = AIR_council.2}}
-		}
-	}
-	increase_civilian_priorities = {
-		icon = council_increase_priority
-		visible = { has_country_flag = air_council_active }
-		cost = 50
-		days_re_enable = 0
-		days_remove = 0
-		
-		complete_effect = {
-			ROOT = { country_event = { id = AIR_council.3}}
-		}
-	}
-	decrease_military_priorities = {
-		icon = council_decrease_priority
-		visible = { has_country_flag = air_council_active }
-		cost = 50
-		days_re_enable = 0
-		days_remove = 0
-		
-		complete_effect = {
-			ROOT = { country_event = { id = AIR_council.4}}
-		}
-	}
-	decrease_civilian_priorities = {
-		icon = council_decrease_priority
-		visible = { has_country_flag = air_council_active }
-		cost = 50
-		days_re_enable = 0
-		days_remove = 0
-		
-		complete_effect = {
-			ROOT = { country_event = { id = AIR_council.5}}
-		}
-	}
-	#add_harmony = {
-	#	available = {
-	#		always = yes
-	#	}
-	#	complete_effect = {
-	#		AIR_council_extreme_support = yes
-	#	}
-	#}
-	#substract_harmony = {
-	#	available = {
-	#		always = yes
-	#	}
-	#	days_re_enable = 0
-	#	complete_effect = {
-	#		AIR_council_extreme_opposition = yes
-	#	}
-	#}
-	
-	#debug_mission_generator = {
-	#	allowed = yes
-	#	available = {
-	#		always = yes
-	#	}
-	#	complete_effect = {
-	#		pp = 100
-	#	}
-	#}
+
 	
 	AIR_mission_nr1 = {
 		icon = council_army_mission
-		activation = {
-			is_in_array = { air_current_missions = 1 }
-		}
+		
+		allowed = { always = no }
 		
 		is_good = yes
 		cost = 50
@@ -110,7 +36,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_medium_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 1}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr1 }
 		}
 		
 		complete_effect = {
@@ -119,16 +45,16 @@ AIR_council_category = {
 				AIR_council_small_support = yes
 			}
 			add_manpower = 100
-			remove_from_array = { air_current_missions = 1}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr1 }
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr2 = {
 		icon = council_army_mission
-		activation = {
-			is_in_array = { air_current_missions = 2 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			command_power > 40
 		}
@@ -143,7 +69,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_medium_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 2}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr2 }
 		}
 		
 		complete_effect = {
@@ -153,16 +79,16 @@ AIR_council_category = {
 			}
 			add_command_power = -40
 			army_experience  = 40
-			remove_from_array = { air_current_missions = 2}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr2 }
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr3 = {
 		icon = council_army_mission
-		activation = {
-			is_in_array = { air_current_missions = 3 }
-		}
+
+		allowed = { always = no }
+
 		available = {
 			always = yes
 		}
@@ -178,7 +104,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_medium_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 3 }
+			remove_from_array = { air_current_missions = token:AIR_mission_nr3 }
 		}
 		
 		complete_effect = {
@@ -186,19 +112,19 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
-			remove_from_array = { air_current_missions = 3}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr3 }
 			army_experience = 15
 		}
 		ai_will_do = {base = 100}	
 	}
 	
-	AIR_mission_nr4_start = {
+	AIR_mission_nr4 = {
 		icon = council_army_mission
-		activation = {
-			is_in_array = { air_current_missions = 4 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
-            is_in_array = { air_current_missions = 4 }
+			always = yes
 		}
 		is_good = no
 		days_mission_timeout = 30
@@ -210,7 +136,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_medium_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 4 }
+			remove_from_array = { air_current_missions = token:AIR_mission_nr4 }
 		}
 		
 		complete_effect = {
@@ -228,440 +154,16 @@ AIR_council_category = {
 				}
 				set_state_flag = air_mission_4
 			}
-			remove_from_array = { air_current_missions = 4 }
-		}
-		ai_will_do = {base = 100}	
-	}
-	
-	AIR_mission_nr4_NAT_1 = {
-		icon = council_army_mission
-		visible = {
-			34 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		activation = {
-			34 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		available = {
-				divisions_in_state = {
-					size > 0
-					state = 34
-				}
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 34
-			}
-		}
-		is_good = no
-		days_mission_timeout = 90
-		days_remove = 0
-		selectable_mission = yes
-		
-		timeout_effect = {
-			custom_effect_tooltip  = mission_nr4_timeout
-			hidden_effect = {
-				AIR_council_medium_opposition = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-		}
-		
-		complete_effect = {
-			custom_effect_tooltip = mission_nr4_success
-			hidden_effect = {
-				AIR_council_small_support = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-			army_experience = 15
-		}
-		ai_will_do = {base = 100}	
-	}
-	
-	AIR_mission_nr4_NAT_2 = {
-		icon = council_army_mission
-		visible = {
-			316 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		activation = {
-			316 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		available = {
-				divisions_in_state = {
-					size > 0
-					state = 316
-				}
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 316
-			}
-		}
-		is_good = no
-		days_mission_timeout = 90
-		days_remove = 0
-		selectable_mission = yes
-		
-		timeout_effect = {
-			custom_effect_tooltip  = mission_nr4_timeout
-			hidden_effect = {
-				AIR_council_medium_opposition = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-		}
-		
-		complete_effect = {
-			custom_effect_tooltip = mission_nr4_success
-			hidden_effect = {
-				AIR_council_small_support = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-			army_experience = 15
-		}
-		ai_will_do = {base = 100}	
-	}
-	
-	AIR_mission_nr4_SAT_1 = {
-		icon = council_army_mission
-		visible = {
-			134 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		activation = {
-			134 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		available = {
-				divisions_in_state = {
-					size > 0
-					state = 134
-				}
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 134
-			}
-		}
-		is_good = no
-		days_mission_timeout = 90
-		days_remove = 0
-		selectable_mission = yes
-		
-		timeout_effect = {
-			custom_effect_tooltip  = mission_nr4_timeout
-			hidden_effect = {
-				AIR_council_medium_opposition = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-		}
-		
-		complete_effect = {
-			custom_effect_tooltip = mission_nr4_success
-			hidden_effect = {
-				AIR_council_small_support = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-			army_experience = 15
-		}
-		ai_will_do = {base = 100}	
-	}
-	
-	AIR_mission_nr4_SAT_2 = {
-		icon = council_army_mission
-		visible = {
-			258 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		activation = {
-			258 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		available = {
-				divisions_in_state = {
-					size > 0
-					state = 258
-				}
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 258
-			}
-		}
-		is_good = no
-		days_mission_timeout = 90
-		days_remove = 0
-		selectable_mission = yes
-		
-		timeout_effect = {
-			custom_effect_tooltip  = mission_nr4_timeout
-			hidden_effect = {
-				AIR_council_medium_opposition = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-		}
-		
-		complete_effect = {
-			custom_effect_tooltip = mission_nr4_success
-			hidden_effect = {
-				AIR_council_small_support = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-			army_experience = 15
-		}
-		ai_will_do = {base = 100}	
-	}
-	
-	AIR_mission_nr4_EAT_1 = {
-		icon = council_army_mission
-		visible = {
-			320 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		activation = {
-			320 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		available = {
-				divisions_in_state = {
-					size > 0
-					state = 320
-				}
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 320
-			}
-		}
-		is_good = no
-		days_mission_timeout = 90
-		days_remove = 0
-		selectable_mission = yes
-		
-		timeout_effect = {
-			custom_effect_tooltip  = mission_nr4_timeout
-			hidden_effect = {
-				AIR_council_medium_opposition = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-		}
-		
-		complete_effect = {
-			custom_effect_tooltip = mission_nr4_success
-			hidden_effect = {
-				AIR_council_small_support = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-			army_experience = 15
-		}
-		ai_will_do = {base = 100}	
-	}
-	
-	AIR_mission_nr4_EAT_2 = {
-		icon = council_army_mission
-		visible = {
-			106 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		activation = {
-			106 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		available = {
-				divisions_in_state = {
-					size > 0
-					state = 106
-				}
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 106
-			}
-		}
-		is_good = no
-		days_mission_timeout = 90
-		days_remove = 0
-		selectable_mission = yes
-		
-		timeout_effect = {
-			custom_effect_tooltip  = mission_nr4_timeout
-			hidden_effect = {
-				AIR_council_medium_opposition = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-		}
-		
-		complete_effect = {
-			custom_effect_tooltip = mission_nr4_success
-			hidden_effect = {
-				AIR_council_small_support = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-			army_experience = 15
-		}
-		ai_will_do = {base = 100}	
-	}
-	
-	AIR_mission_nr4_WAT_1 = {
-		icon = council_army_mission
-		visible = {
-			167 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		activation = {
-			167 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		available = {
-				divisions_in_state = {
-					size > 0
-					state = 167
-				}
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 167
-			}
-		}
-		is_good = no
-		days_mission_timeout = 90
-		days_remove = 0
-		selectable_mission = yes
-		
-		timeout_effect = {
-			custom_effect_tooltip  = mission_nr4_timeout
-			hidden_effect = {
-				AIR_council_medium_opposition = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-		}
-		
-		complete_effect = {
-			custom_effect_tooltip = mission_nr4_success
-			hidden_effect = {
-				AIR_council_small_support = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-			army_experience = 15
-		}
-		ai_will_do = {base = 100}	
-	}
-	
-	AIR_mission_nr4_WAT_2 = {
-		icon = council_army_mission
-		visible = {
-			111 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		activation = {
-			111 = {
-                has_state_flag = air_mission_4
-            }
-		}
-		available = {
-				divisions_in_state = {
-					size > 0
-					state = 111
-				}
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 111
-			}
-		}
-		is_good = no
-		days_mission_timeout = 90
-		days_remove = 0
-		selectable_mission = yes
-		
-		timeout_effect = {
-			custom_effect_tooltip  = mission_nr4_timeout
-			hidden_effect = {
-				AIR_council_medium_opposition = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-		}
-		
-		complete_effect = {
-			custom_effect_tooltip = mission_nr4_success
-			hidden_effect = {
-				AIR_council_small_support = yes
-			}
-			random_owned_state = {
-				limit = { has_state_flag = air_mission_4 }
-				clr_state_flag = air_mission_4
-			}
-			army_experience = 15
+			remove_from_array = { air_current_missions = token:AIR_mission_nr4 }
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr5 = {
 		icon = council_army_mission
-		activation = {
-			is_in_array = { air_current_missions = 5 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			always = yes
 		}
@@ -677,7 +179,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 5}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr5 }
 		}
 		
 		complete_effect = {
@@ -686,16 +188,16 @@ AIR_council_category = {
 				AIR_council_small_support = yes
 			}
 			add_manpower = 20
-			remove_from_array = { air_current_missions = 5}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr5 }
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr6 = {
 		icon = council_navy_mission
-		activation = {
-			is_in_array = { air_current_missions = 6 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			always = yes
 		}
@@ -711,7 +213,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 6}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr6 }
 		}
 		
 		complete_effect = {
@@ -720,17 +222,16 @@ AIR_council_category = {
 				AIR_council_small_support = yes
 			}
 			navy_experience = 25
-			remove_from_array = { air_current_missions = 6}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr6 }
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr7 = {
 		icon = council_army_mission
-		activation = {
-			is_in_array = { air_current_missions = 7 }
-		}
 		
+		allowed = { always = no }
+
 		is_good = yes
 		days_mission_timeout = 100
 		days_remove = 0
@@ -742,7 +243,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 7}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr7 }
 		}
 		
 		complete_effect = {
@@ -750,7 +251,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
-			remove_from_array = { air_current_missions = 7}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr7 }
 			army_experience = 10
 		}
 		ai_will_do = {base = 100}	
@@ -758,10 +259,9 @@ AIR_council_category = {
 	
 	AIR_mission_nr8 = {
 		icon = council_navy_mission
-		activation = {
-			is_in_array = { air_current_missions = 8 }
-		}
 		
+		allowed = { always = no }
+
 		is_good = yes
 		days_mission_timeout = 100
 		days_remove = 0
@@ -936,9 +436,9 @@ AIR_council_category = {
 	
 	AIR_mission_nr9 = {
 		icon = council_navy_mission
-		activation = {
-			is_in_array = { air_current_missions = 9 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			always = yes
 		}
@@ -954,7 +454,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 9}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr9}
 		}
 		
 		complete_effect = {
@@ -963,16 +463,16 @@ AIR_council_category = {
 				AIR_council_small_support = yes
 			}
 			navy_experience = 10
-			remove_from_array = { air_current_missions = 9}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr9}
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr11 = {
 		icon = council_air_mission
-		activation = {
-			is_in_array = { air_current_missions = 11 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			always = yes
 		}
@@ -988,7 +488,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 11}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr11}
 		}
 		
 		complete_effect = {
@@ -997,16 +497,16 @@ AIR_council_category = {
 				AIR_council_small_support = yes
 			}
 			air_experience = 20
-			remove_from_array = { air_current_missions = 11}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr11}
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr12 = {
 		icon = council_air_mission
-		activation = {
-			is_in_array = { air_current_missions = 12 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			always = yes
 		}
@@ -1022,7 +522,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 12}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr12}
 		}
 		
 		complete_effect = {
@@ -1038,16 +538,16 @@ AIR_council_category = {
 					instant_build = yes
 				}
 			}
-			remove_from_array = { air_current_missions = 12}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr12}
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr13 = {
 		icon = council_air_mission
-		activation = {
-			is_in_array = { air_current_missions = 13 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			always = yes
 		}
@@ -1063,7 +563,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 13}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr13}
 		}
 		
 		complete_effect = {
@@ -1072,16 +572,16 @@ AIR_council_category = {
 				AIR_council_small_support = yes
 			}
 			add_manpower = 20
-			remove_from_array = { air_current_missions = 13}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr13}
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr16 = {
 		icon = council_research_mission
-		activation = {
-			is_in_array = { air_current_missions = 16 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			has_army_experience > 40
 		}
@@ -1096,7 +596,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 16}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr16}
 		}
 
 		complete_effect = {
@@ -1111,16 +611,16 @@ AIR_council_category = {
 				uses = 1
 				category = basic_weapons
 			}
-			remove_from_array = { air_current_missions = 16}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr16}
 		}
 		ai_will_do = {base = 100}	
 	}
 
     AIR_mission_nr17 = {
 		icon = council_research_mission
-		activation = {
-			is_in_array = { air_current_missions = 17 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			has_navy_experience > 30
 		}
@@ -1135,7 +635,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 17}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr17}
 		}
 
 		complete_effect = {
@@ -1157,16 +657,16 @@ AIR_council_category = {
             #        nav_ironclad
 			#	}
 			#}
-			remove_from_array = { air_current_missions = 17 }
+			remove_from_array = { air_current_missions = token:AIR_mission_nr17 }
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr18 = {
 		icon = council_research_mission
-		activation = {
-			is_in_array = { air_current_missions = 18 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			always = yes
 		}
@@ -1182,7 +682,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 18}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr18}
 		}
 		
 		complete_effect = {
@@ -1195,16 +695,16 @@ AIR_council_category = {
 				bonus = 0.5
 				uses = 2
 			}
-			remove_from_array = { air_current_missions = 18}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr18}
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr21 = {
 		icon = council_industry_mission
-		activation = {
-			is_in_array = { air_current_missions = 21 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			always = yes
 		}
@@ -1220,7 +720,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 21}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr21}
 		}
 		
 		complete_effect = {
@@ -1229,16 +729,16 @@ AIR_council_category = {
 				AIR_council_small_support = yes
 			}
 			
-			remove_from_array = { air_current_missions = 21}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr21}
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr26 = {
 		icon = council_politics_mission
-		activation = {
-			is_in_array = { air_current_missions = 26 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			command_power > 30
 		}
@@ -1253,7 +753,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 26}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr26}
 		}
 		
 		complete_effect = {
@@ -1263,16 +763,16 @@ AIR_council_category = {
 			}
 			add_political_power  = 60
 			add_command_power = -30
-			remove_from_array = { air_current_missions = 26}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr26}
 		}
 		ai_will_do = {base = 100}	
 	}
 	
 	AIR_mission_nr27 = {
 		icon = council_politics_mission
-		activation = {
-			is_in_array = { air_current_missions = 27 }
-		}
+		
+		allowed = { always = no }
+
 		available = {
 			always = yes
 		}
@@ -1288,7 +788,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 27}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr27}
 		}
 		
 		complete_effect = {
@@ -1297,16 +797,16 @@ AIR_council_category = {
 				AIR_council_small_support = yes
 			}
 			add_stability = 0.05
-			remove_from_array = { air_current_missions = 27}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr27}
 		}
 		ai_will_do = {base = 100}	
 	}
 
 	AIR_mission_nr28 = {
 		icon = council_politics_mission
-   		activation = {
-   			is_in_array = { air_current_missions = 28 }
-   		}
+   		
+		allowed = { always = no }
+
    		available = {
    			has_army_experience > 10
    			has_navy_experience > 10
@@ -1323,7 +823,7 @@ AIR_council_category = {
    			hidden_effect = {
    				AIR_council_small_opposition = yes
    			}
-   			remove_from_array = { air_current_missions = 28}
+   			remove_from_array = { air_current_missions = token:AIR_mission_nr28}
    		}
 
     	complete_effect = {
@@ -1335,16 +835,15 @@ AIR_council_category = {
     		navy_experience = -10
     		air_experience = -10
     		add_war_support = 0.1
-    		remove_from_array = { air_current_missions = 28}
+    		remove_from_array = { air_current_missions = token:AIR_mission_nr28}
     	}
 		ai_will_do = {base = 100}	
     }
 
 	AIR_mission_nr29 = {
 		icon = council_politics_mission
-		activation = {
-			is_in_array = { air_current_missions = 29 }
-		}
+		
+		allowed = { always = no }
 
 		is_good = yes
 		days_mission_timeout = 90
@@ -1357,7 +856,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 29}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr29}
 		}
 
 		complete_effect = {
@@ -1366,7 +865,7 @@ AIR_council_category = {
 				AIR_council_small_support = yes
 			}
 			add_command_power = 30
-			remove_from_array = { air_current_missions = 29}
+			remove_from_array = { air_current_missions = token:AIR_mission_nr29}
 		}
 	ai_will_do = {base = 100}	
 	}

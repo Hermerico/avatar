@@ -75,3 +75,85 @@ defined_text = {
 		localization_key = autonomy_imperial_colony
 	}
 }
+
+defined_text = {
+	name = GetVassalTax
+	text = {
+		trigger = {
+			has_idea = low_vassal_taxes
+		}
+		localization_key = low_vassal_taxes
+	}
+	text = {
+		trigger = {
+			has_idea = medium_vassal_taxes
+		}
+		localization_key = medium_vassal_taxes
+	}
+	text = {
+		trigger = {
+			has_idea = high_vassal_taxes
+		}
+		localization_key = high_vassal_taxes
+	}
+	text = {
+		
+		localization_key = no_vassal_tax
+	}
+
+}
+
+defined_text = {
+	name = GetVassalWar
+	text = {
+		trigger = {
+			has_idea = low_war_tributes
+		}
+		localization_key = low_war_tributes
+	}
+	text = {
+		trigger = {
+			has_idea = medium_war_tributes
+		}
+		localization_key = medium_war_tributes
+	}
+	text = {
+		trigger = {
+			has_idea = high_war_tributes
+		}
+		localization_key = high_war_tributes
+	}
+	text = {
+		
+		localization_key = no_vassal_war
+	}
+
+}
+
+defined_text = {
+	name = GetVassalTerritory
+	text = {
+		trigger = {
+			has_idea = low_territorial_integration
+		}
+		localization_key = low_territorial_integration
+	}
+	text = {
+		trigger = {
+			has_idea = medium_territorial_integration
+		}
+		localization_key = medium_territorial_integration
+	}
+	text = {
+		trigger = {
+			has_idea = high_territorial_integration
+		}
+		localization_key = high_territorial_integration
+	}
+	text = {
+		
+		localization_key = no_vassal_territorial_integration
+	}
+
+}
+

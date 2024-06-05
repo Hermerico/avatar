@@ -19,7 +19,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.1
-				autonomy_gain = 0.5
+				subject_influence = 0.5
 				income = 0.05
 			}
 		}

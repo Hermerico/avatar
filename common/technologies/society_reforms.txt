@@ -1661,7 +1661,7 @@ technologies = {
 		}
 		production_factory_start_efficiency_factor = 0.02
 		line_change_production_efficiency_factor = 0.04
-		currency_amount = 0.05
+		currency_amount = 0.02
 		industrialist_opinion = -5
 		
 		research_cost = 2.5
@@ -1842,7 +1842,7 @@ technologies = {
 		
 		production_factory_efficiency_gain_factor = 0.04
 		production_factory_max_efficiency_factor = 0.025
-		currency_amount = -0.05
+		currency_amount = -0.01
 		industrialist_opinion = 5
 		
 		research_cost = 2.5

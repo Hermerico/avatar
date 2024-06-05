@@ -161,7 +161,7 @@ legitimacy_autonomy = {
 	modifier = {
 		set_temp_variable = { autonomy = centralisation_variable }
 		subtract_from_temp_variable = { autonomy = 50 }
-		divide_temp_variable = { autonomy = 50 }
+		divide_temp_variable = { autonomy = -50 }
 		
 		add = autonomy
 	}
@@ -790,6 +790,17 @@ autonomy_frame = {
 		multiply_temp_variable = { autonomy = 100 }
 		
 		add = autonomy
+	}
+}
+
+overlord_influence = {
+	base = 0
+	modifier = {
+		set_temp_variable = { influence = modifier@subject_influence }
+		multiply_temp_variable = { influence = -1 }
+		add_to_temp_variable = { influence = overlord:modifier@overlord_influence }
+		
+		add = influence
 	}
 }
 

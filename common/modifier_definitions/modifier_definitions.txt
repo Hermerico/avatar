@@ -106,6 +106,19 @@ centralisation_target_modifier = {					#### desired target for centralisation
 	postfix = none
 }
 
+overlord_influence = {					#### overlords influence of overlord in subjects
+	color_type = neutral 
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+subject_influence = {					#### subjects influence of overlord in subjects
+	color_type = neutral 
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+
 revolt_risk = {										#### chance of peasant uprisings happening
 	color_type = bad 
 	value_type = percentage
@@ -366,7 +379,7 @@ law_change_cost = {									#### cost of changing the laws. does nothing
 	postfix = none
 }
 
-taxation = {										#### percentage of tax extracted from populations prosperity in country
+taxation = {										#### percentage of tax extracted from populations prosperity in country or state
 	color_type = neutral
 	value_type = percentage
 	precision = 1

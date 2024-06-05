@@ -1,0 +1,144 @@
+ideas = {
+
+	hidden_ideas = {
+
+
+	}
+
+	country = {
+
+		council_harsh_opposition = {
+			cancel = {
+				OR = {
+					has_country_flag = air_council_dissolved
+					NOT = {  check_variable = { AIR_council_support = 1 }}
+				}
+			}
+			
+			modifier = {
+				political_power_factor = -0.60
+				political_power_cap = -50
+				stability_factor = -0.5
+				war_support_factor = -0.2
+				command_power_gain_mult = -0.5
+				max_planning_factor = -0.5
+				training_time_factor = 0.5
+				income = -0.3
+
+				bender_target = 0.5
+			}
+		}
+		
+		council_opposition = {
+			cancel = {
+				OR = {
+					has_country_flag = air_council_dissolved
+					NOT = {  check_variable = { AIR_council_support = 2 }}
+				}
+			}
+			
+			modifier = {
+				political_power_factor = -0.30
+				political_power_cap = -25
+				stability_factor = -0.25
+				war_support_factor = -0.1
+				command_power_gain_mult = -0.25
+				max_planning_factor = -0.25
+				training_time_factor = 0.25
+				income = -0.15
+
+				bender_target = 0.5
+			}
+		}
+		
+		council_neutral = {
+			cancel = {
+				OR = {
+					has_country_flag = air_council_dissolved
+					NOT = {  check_variable = { AIR_council_support = 3 }}
+				}
+			}
+
+			modifier = {
+
+				bender_target = 0.5
+			}
+		}
+		
+		council_support = {
+			cancel = {
+				OR = {
+					has_country_flag = air_council_dissolved
+					NOT = {  check_variable = { AIR_council_support = 4 }}
+				}
+			}
+			
+			modifier = {
+				political_power_factor = 0.25
+				political_power_cap = 50
+				stability_factor = 0.2
+				command_power_gain_mult = 0.25
+				max_planning_factor = 0.25
+				income = 0.05
+
+				bender_target = 0.5
+			}
+		}
+		
+		council_substancial_support = {
+			cancel = {
+				OR = {
+					has_country_flag = air_council_dissolved
+					NOT = {  check_variable = { AIR_council_support = 5 }}
+				}
+			}
+			
+			modifier = {
+				political_power_factor = 0.5
+				political_power_cap = 100
+				stability_factor = 0.4
+				command_power_gain_mult = 0.5
+				max_planning_factor = 0.5
+				income = 0.1
+
+				bender_target = 0.5
+			}
+		}
+
+
+
+
+		pacifist_detachment = {
+			removal_cost = -1
+			
+			cancel = {
+				has_country_leader_with_trait = extinguished_population
+			}
+			
+			modifier = {
+				enemy_declare_war_tension = 0.5
+				enemy_justify_war_goal_time = 0.5
+				mobilization_laws_cost_factor = 1
+				war_support_factor = -0.75
+				offensive_war_stability_factor = -0.6
+				defensive_war_stability_factor = -0.2
+			}
+		}
+
+
+		nomadic_lifestyle = {
+			removal_cost = -1
+			
+			cancel = {
+				has_country_leader_with_trait = extinguished_population
+			}
+			
+			modifier = {
+				consumer_demand = -0.8
+				consumer_cost = -0.25
+			}
+		}
+
+
+	}
+}

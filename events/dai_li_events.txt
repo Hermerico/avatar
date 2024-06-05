@@ -4,11 +4,7 @@
 
 add_namespace = dai_li
 
- ####  #     #  #####
-#      #  #  #    #
- ###   #  #  #    #
-    #  #  #  #    #
-####    ## ##     #
+
 
 country_event = {
 	id = dai_li.1
@@ -18,14 +14,38 @@ country_event = {
 
 	is_triggered_only = yes
 
-	#fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			dai_li_demands = yes
+		}
+	}
 
 	option = {
 		name = dai_li.1.a
 		ai_chance = { 
 			factor = 100
 		}
+
+		trigger = {
+			has_political_power > 25
+		}
+
+		add_political_power = -25
 		
+	}
+
+	option = {
+		name = dai_li.1.b
+		ai_chance = { 
+			factor = 0
+		}
+		
+		add_to_variable = { 
+			var = dai_li_disloyalty
+			value = 5
+			tooltip = dai_li_disloyalty
+		}
+
 	}
 
 }

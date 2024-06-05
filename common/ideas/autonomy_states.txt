@@ -2,330 +2,6 @@ ideas = {
 
 	hidden_ideas = {
 
-		autonomy_generic_puppet = {
-			removal_cost = -1
-
-			cancel = {
-				is_puppet = no
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
-			}
-
-			rule = {
-				can_not_declare_war = no
-				can_decline_call_to_war = yes
-				can_be_spymaster = yes
-				contributes_operatives = yes
-			}
-			
-			modifier = {
-				
-			}
-		}
-		
-		autonomy_kingdom = {
-			
-			removal_cost = -1
-
-			cancel = {
-				OR = {
-					NOT = {
-						OVERLORD = {
-							has_government = earth_culture
-						}
-					}
-					is_puppet = no
-					OR = {
-						has_idea = low_vassal_taxes
-						has_idea = medium_vassal_taxes
-						has_idea = high_vassal_taxes
-						has_idea = low_war_tributes
-						has_idea = medium_war_tributes
-						has_idea = high_war_tributes
-						has_idea = low_territorial_integration
-						has_idea = medium_territorial_integration
-						has_idea = high_territorial_integration
-					}
-				}
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
-			}
-
-			rule = {
-				can_not_declare_war = no
-				can_decline_call_to_war = yes
-				can_be_spymaster = yes
-				contributes_operatives = yes
-			}
-			
-			modifier = {
-				
-			}
-		}
-
-		autonomy_county = {
-			
-			removal_cost = -1
-
-			cancel = {
-				OR = {
-					NOT = {
-						OVERLORD = {
-							has_government = earth_culture
-						}
-					}
-					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 750
-							compare = less_than_or_equals
-						}
-					}
-					OR = {
-						has_idea = medium_vassal_taxes
-						has_idea = high_vassal_taxes
-						has_idea = medium_war_tributes
-						has_idea = high_war_tributes
-						has_idea = medium_territorial_integration
-						has_idea = high_territorial_integration
-					}
-				}
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
-			}
-
-			rule = {
-				
-			}
-			
-			modifier = {
-				
-			}
-		}
-
-		autonomy_vassalage = {
-			
-			removal_cost = -1
-
-			cancel = {
-				OR = {
-					NOT = {
-						OVERLORD = {
-							has_government = earth_culture
-						}
-					}
-					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 500
-							compare = less_than_or_equals
-						}
-					}
-					OR = {
-						has_idea = high_vassal_taxes
-						has_idea = high_war_tributes
-						has_idea = high_territorial_integration
-					}
-				}
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
-			}
-
-			rule = {
-				
-			}
-			
-			modifier = {
-				
-			}
-		}
-
-		autonomy_royal_domain = {
-			
-			removal_cost = -1
-
-			cancel = {
-				OR = {
-					NOT = {
-						OVERLORD = {
-							has_government = earth_culture
-						}
-					}
-					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 250
-							compare = less_than_or_equals
-						}
-					}
-				}
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
-			}
-
-			rule = {
-				
-			}
-			
-			modifier = {
-				
-			}
-		}
-
-
-
-		autonomy_tributary = {
-			
-			removal_cost = -1
-
-			cancel = {
-				OR = {
-					is_puppet = no
-					OR = {
-						has_idea = low_war_tributes
-						has_idea = medium_war_tributes
-						has_idea = high_war_tributes
-						has_idea = low_territorial_integration
-						has_idea = medium_territorial_integration
-						has_idea = high_territorial_integration
-					}
-				}
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
-			}
-
-			rule = {
-				
-			}
-			
-			modifier = {
-				
-			}
-		}
-
-		autonomy_satelit_state = {
-			
-			removal_cost = -1
-
-			cancel = {
-				OR = {
-					NOT = {
-						OVERLORD = {
-							has_government = fire_culture
-						}
-					}
-					is_puppet = no
-					check_variable = {
-						var = THIS.autonomy_var
-						value = 750
-						compare = less_than_or_equals
-					}
-				}
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
-			}
-
-			rule = {
-				
-			}
-			
-			modifier = {
-				
-			}
-		}
-
-		autonomy_imperial_dominion = {
-			
-			removal_cost = -1
-
-			cancel = {
-				OR = {
-					NOT = {
-						OVERLORD = {
-							has_government = fire_culture
-						}
-					}
-					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 750
-							compare = less_than_or_equals
-						}
-					}
-				}
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
-			}
-
-			rule = {
-				
-			}
-			
-			modifier = {
-				
-			}
-		}
-
-		autonomy_imperial_colony = {
-			
-			removal_cost = -1
-
-			cancel = {
-				OR = {
-					NOT = {
-						OVERLORD = {
-							has_government = fire_culture
-						}
-					}
-					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 500
-							compare = less_than_or_equals
-						}
-					}
-				}
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
-			}
-
-			rule = {
-				
-			}
-			
-			modifier = {
-				
-			}
-		}
-
-
-
-
-
-		
 
 		low_vassal_taxes = {
 			
@@ -334,26 +10,12 @@ ideas = {
 			cancel = {
 				OR = {
 					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 750
-							compare = less_than_or_equals
-						}
-					}
 				}
-			}
-
-			on_add = {
-				autonomy_state_recalc = yes
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
 			}
 			
 			modifier = {
-				cic_to_overlord_factor = 0.25
+				cic_to_overlord_factor = 0.05
+				subject_influence = 0.05
 			}
 		}
 		medium_vassal_taxes = {
@@ -363,32 +25,12 @@ ideas = {
 			cancel = {
 				OR = {
 					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 500
-							compare = less_than_or_equals
-						}
-					}
 				}
-			}
-
-			on_add = {
-				autonomy_state_recalc = yes
-			}
-
-			on_remove = {
-				if = {
-					limit = {
-						is_puppet = yes
-					}
-					add_ideas = low_vassal_taxes
-				}
-				autonomy_state_recalc = yes
 			}
 			
 			modifier = {
-				cic_to_overlord_factor = 0.5
+				cic_to_overlord_factor = 0.1
+				subject_influence = 0.1
 			}
 		}
 		high_vassal_taxes = {
@@ -398,32 +40,12 @@ ideas = {
 			cancel = {
 				OR = {
 					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 250
-							compare = less_than_or_equals
-						}
-					}
 				}
-			}
-
-			on_add = {
-				autonomy_state_recalc = yes
-			}
-
-			on_remove = {
-				if = {
-					limit = {
-						is_puppet = yes
-					}
-					add_ideas = medium_vassal_taxes
-				}
-				autonomy_state_recalc = yes
 			}
 			
 			modifier = {
-				cic_to_overlord_factor = 0.75
+				cic_to_overlord_factor = 0.15
+				subject_influence = 0.15
 			}
 		}
 
@@ -435,27 +57,13 @@ ideas = {
 			cancel = {
 				OR = {
 					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 750
-							compare = less_than_or_equals
-						}
-					}
 				}
-			}
-
-			on_add = {
-				autonomy_state_recalc = yes
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
 			}
 			
 			modifier = {
 				mic_to_overlord_factor = 0.25
 				autonomy_manpower_share = 0.25
+				subject_influence = 0.05
 			}
 		}
 		medium_war_tributes = {
@@ -465,33 +73,13 @@ ideas = {
 			cancel = {
 				OR = {
 					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 500
-							compare = less_than_or_equals
-						}
-					}
 				}
-			}
-
-			on_add = {
-				autonomy_state_recalc = yes
-			}
-			
-			on_remove = {
-				if = {
-					limit = {
-						is_puppet = yes
-					}
-					add_ideas = low_war_tributes
-				}
-				autonomy_state_recalc = yes
 			}
 
 			modifier = {
 				mic_to_overlord_factor = 0.5
 				autonomy_manpower_share = 0.5
+				subject_influence = 0.1
 			}
 		}
 		high_war_tributes = {
@@ -501,33 +89,13 @@ ideas = {
 			cancel = {
 				OR = {
 					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 250
-							compare = less_than_or_equals
-						}
-					}
 				}
-			}
-
-			on_add = {
-				autonomy_state_recalc = yes
-			}
-
-			on_remove = {
-				if = {
-					limit = {
-						is_puppet = yes
-					}
-					add_ideas = medium_war_tributes
-				}
-				autonomy_state_recalc = yes
 			}
 			
 			modifier = {
 				mic_to_overlord_factor = 0.75
 				autonomy_manpower_share = 0.75
+				subject_influence = 0.15
 			}
 		}
 
@@ -540,26 +108,12 @@ ideas = {
 			cancel = {
 				OR = {
 					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 750
-							compare = less_than_or_equals
-						}
-					}
 				}
-			}
-
-			on_add = {
-				autonomy_state_recalc = yes
-			}
-
-			on_remove = {
-				autonomy_state_recalc = yes
 			}
 			
 			modifier = {
 				can_master_build_for_us = 1
+				subject_influence = 0.2
 			}
 		}
 		medium_territorial_integration = {
@@ -569,33 +123,13 @@ ideas = {
 			cancel = {
 				OR = {
 					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 500
-							compare = less_than_or_equals
-						}
-					}
 				}
-			}
-
-			on_add = {
-				autonomy_state_recalc = yes
-			}
-
-			on_remove = {
-				if = {
-					limit = {
-						is_puppet = yes
-					}
-					add_ideas = low_territorial_integration
-				}
-				autonomy_state_recalc = yes
 			}
 			
 			modifier = {
 				extra_trade_to_overlord_factor = 0.25
 				overlord_trade_cost_factor = -0.25
+				subject_influence = 0.4
 			}
 		}
 		high_territorial_integration = {
@@ -605,33 +139,13 @@ ideas = {
 			cancel = {
 				OR = {
 					is_puppet = no
-					NOT = {
-						check_variable = {
-							var = THIS.autonomy_var
-							value = 250
-							compare = less_than_or_equals
-						}
-					}
 				}
-			}
-
-			on_add = {
-				autonomy_state_recalc = yes
-			}
-
-			on_remove = {
-				if = {
-					limit = {
-						is_puppet = yes
-					}
-					add_ideas = medium_territorial_integration
-				}
-				autonomy_state_recalc = yes
 			}
 			
 			modifier = {
 				extra_trade_to_overlord_factor = 0.5
 				overlord_trade_cost_factor = -0.5
+				subject_influence = 0.6
 			}
 		}
 

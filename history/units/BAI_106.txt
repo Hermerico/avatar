@@ -119,4 +119,17 @@ units = {
 		start_equipment_factor = 1  #0.6
 		start_experience_factor = 0.15
 	}
+	division = {
+		location = 2513
+		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		start_equipment_factor = 1  #0.6
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 6141
+		division_template = "Militia Brigade"
+		start_equipment_factor = 1  #0.6
+		start_experience_factor = 0.15
+	}
 }

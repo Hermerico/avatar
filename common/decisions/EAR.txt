@@ -60,16 +60,15 @@ THE_EARTHKINGDOM = {
 		available = {
 			has_war_with = FIR
 			is_neighbor_of = FIR
-			NOT = { #can't escape if encircled
-				ba_sing_se_encircled = yes
-			}
+			ba_sing_se_encircled = yes
 		}
 		fire_only_once = yes
 		ai_will_do = {
 			base = 0
 			modifier = {
 				add = 200
-				surrender_progress = 0.4
+				
+				ROOT = { surrender_progress = 0.4 }
 			}
 		}
 		complete_effect = {
@@ -86,7 +85,7 @@ THE_EARTHKINGDOM = {
 					end_puppet = PREV
 				}
 				add_ideas = destroyed_morale_EAR
-				event = earthkingdom.2
+				country_event = earthkingdom.2
 			}
 			every_country = {
 				limit = {

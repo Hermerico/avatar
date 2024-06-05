@@ -17,6 +17,10 @@ start_state_conflict = {
 				decision = state_conflict_show_defender
 			}
 		}
+		add_opinion_modifier = {
+			target = ROOT
+			modifier = state_conflict
+		}
 	}
 
 	FROM = {
@@ -202,6 +206,29 @@ battle_calculation = {
 		}
 	}
 
+	if = {
+		limit = {
+			check_variable = { FROM.defender_strength < FROM.attacker_strength }
+		}
+		FROM = {
+			attacker_won_conflict = yes
+		}
+	}
+
+}
+
+attacker_won_conflict = {
+	for_each_scope_loop = {
+		array = attackers
+		
+		PREV = {
+			set_state_flag = {
+				flag = won_state_conflict_@PREV
+				days = 180
+				value = 1
+			}
+		}
+	}
 }
 
 diplomatic_plays = {

@@ -216,7 +216,7 @@ compliance_effect_base = {
 compliance_effect = {
 	local_factories = 0.5
 	local_non_core_manpower = 0.18
-	local_resources = 0.5
+	taxation_efficiency = 0.5
 	local_supplies = 0.2
 	core_state_cost_factor = -0.75
 }
@@ -235,7 +235,7 @@ non_core_controller = {
 	#local_factories = -1
 	
 	#### not as harsh because of culture
-	local_resources = -0.5
+	taxation_efficiency = -0.9
 	local_supplies_for_controller = -0.1
 }
 

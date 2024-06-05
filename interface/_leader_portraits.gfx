@@ -204,11 +204,25 @@ spriteTypes = {
 		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Yonrha.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Firenation_Yonrha"
+		name = "GFX_Portrait_Firenation_Yonrha_small"
 		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_yonrha.dds"
 	}
 
 
+	############# SAT
+
+
+	spriteType = {
+		name = "GFX_Portrait_Southernairtemple_Pasang"
+		texturefile = "gfx/leaders/SAT/Portrait_Southernairtemple_Pasang.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Southernairtemple_Pasang_small"
+		texturefile = "gfx/interface/ideas/leader_small/male_airtemples/Portrait_Southernairtemple_Pasang_small.dds"
+	}
+
+
+	############# KYI
 
 	spriteType = {
 		name = "GFX_Portrait_Kyoshi_Oyaji"

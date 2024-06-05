@@ -524,23 +524,23 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_idea_council_harsh_opposition"
-		texturefile = "gfx/interface/ideas/spirit/council_harsh_opposition.dds"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_5.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_council_opposition"
-		texturefile = "gfx/interface/ideas/spirit/council_opposition.dds"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_4.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_council_neutral"
-		texturefile = "gfx/interface/ideas/spirit/council_neutral.dds"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_council_support"
-		texturefile = "gfx/interface/ideas/spirit/council_support.dds"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_council_substancial_support"
-		texturefile = "gfx/interface/ideas/spirit/council_substancial_support.dds"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_1.dds"
 	}
 
 	######## calendar

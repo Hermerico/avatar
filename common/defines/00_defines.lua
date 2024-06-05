@@ -196,17 +196,17 @@ NDiplomacy = {
 	PEACE_ACTION_MAX_COST = 9999,					-- Max value for a peace action cost (after all modifiers)
 
 	RESOURCE_SENT_AUTONOMY_DAILY_BASE = 0.0,		-- If puppet provides resources to its master they increasy their autonomy by at least this amount
-	RESOURCE_SENT_AUTONOMY_DAILY_FACTOR = -0.005,	-- If puppet provides resources to its master they increasy their autonomy by the resources factored by this
+	RESOURCE_SENT_AUTONOMY_DAILY_FACTOR = 0.005,	-- If puppet provides resources to its master they increasy their autonomy by the resources factored by this
 	WAR_SCORE_AUTONOMY_BASE = 0.0,					-- Value added if any war score is contributed by puppet
-	WAR_SCORE_AUTONOMY_FACTOR = 0.6,				-- If puppet generates war score it get a boost to independence 
+	WAR_SCORE_AUTONOMY_FACTOR = 0.6,				-- If puppet generates war score it get a boost to independence
 	LL_TO_OVERLORD_AUTONOMY_DAILY_BASE = 0.0,		-- If puppet lend leases equipment to overlord of at least same tech level as they have, they gain autonomy
-	LL_TO_OVERLORD_AUTONOMY_DAILY_FACTOR = -0.01,	-- If puppet lend leases equipment to overlord of at least same tech level as they have, they gain autonomy
+	LL_TO_OVERLORD_AUTONOMY_DAILY_FACTOR = 0.05,	-- If puppet lend leases equipment to overlord of at least same tech level as they have, they gain autonomy
 	LL_TO_PUPPET_AUTONOMY_DAILY_BASE = 0.0,			-- If overlord lend leases equipment to puppet of higher tech level as they have, puppet losses autonomy
-	LL_TO_PUPPET_AUTONOMY_DAILY_FACTOR = -0.05,		-- If overlord lend leases equipment to puppet of higher tech level as they have, puppet losses autonomy
+	LL_TO_PUPPET_AUTONOMY_DAILY_FACTOR = -0.01,		-- If overlord lend leases equipment to puppet of higher tech level as they have, puppet losses autonomy
 	AUTONOMY_FREEDOM_FROM_CAPITULATE = 0.5,         -- if overlord capitulate you get this
 	ATTACHE_TO_SUBJECT_EFFECT = -0.05,				-- If overlord sent attaches to the subject it losses autonomy
 	ATTACHE_TO_OVERLORD_EFFECT = 0.05,				-- If subject sent attaches to the overlord it gains autonomy
-	
+		
 	AUTONOMY_LEVEL_CHANGE_PP_COST_BASE = 50.0,		-- Base cost of changing level of autonomy
 	AUTONOMY_LEVEL_CHANGE_PP_ANNEX = 300,			-- Annexation cost
 	AUTONOMY_LEVEL_CHANGE_PP_FREE = 300,			-- Break free cost
@@ -355,7 +355,7 @@ NCountry = {
 	STATE_VALUE_MANPOWER_FACTOR = 10,               -- State cost increases with this for every 10k population (so 3.1M becomes 310 and then multiplied by this)
 	INVASION_REPORT_EXPERATION_DAYS = 30,			-- Invasion experation days
 	MIN_FOCUSES_FOR_CONTINUOUS = 0,					-- Focuses needed to unlock continuous focuses
-	AUTONOMOUS_TOTAL_SCORE = 10000,						-- Total score for autonomous scale
+	AUTONOMOUS_TOTAL_SCORE = 50000,				-- Total score for autonomous scale
 	AUTONOMOUS_SPILLOVER = 0.1,						-- Total score that can be saved to reach next level
 	CIVIL_WAR_INVOLVEMENT_MIN_TENSION = 0.5,		-- base value of world tension to involve other sides to the civil war
 	UNCAPITULATE_LEVEL = 0.1,                       -- if we reclaim this much and our capital we reset capitulate status

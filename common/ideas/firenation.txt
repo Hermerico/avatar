@@ -156,8 +156,8 @@ ideas = {
 				#good
 				#research_speed_factor = 0.15
 				#currency_amount = -0.2
-				prosperity = 0.3
-				prosperity_factor = 0.75
+				prosperity = 0.1
+				prosperity_factor = 0.1
 				income = 1
 				#production_speed_infrastructure_factor = 0.15
 				#production_speed_consumer_good_factory_factor = 0.15
@@ -191,8 +191,8 @@ ideas = {
 
 				#good
 				#currency_amount = -0.1
-				prosperity = 0.2
-				prosperity_factor = 0.5
+				prosperity = 0.075
+				prosperity_factor = 0.075
 				income = 0.5
 				#production_speed_infrastructure_factor = 0.1
 				#production_speed_consumer_good_factory_factor = 0.1
@@ -226,8 +226,8 @@ ideas = {
 
 				#good
 				#currency_amount = -0.05
-				prosperity = 0.1
-				prosperity_factor = 0.25
+				prosperity = 0.05
+				prosperity_factor = 0.05
 				income = 0.2
 				#production_speed_infrastructure_factor = 0.05
 				#production_speed_consumer_good_factory_factor = 0.05
@@ -696,6 +696,7 @@ ideas = {
 
 			modifier = {
 				allow_colony_modifier = 1
+				overlord_influence = 0.25
 			}
 
 		}

@@ -31,17 +31,6 @@ set_popularities = {
 set_stability = 0.8 
 set_war_support = 0.8
 
-set_variable = { AIR_council_member_1 = 3 }
-set_variable = { AIR_council_member_2 = 4 }
-set_variable = { AIR_council_member_3 = 5 }
-set_variable = { AIR_council_member_4 = 2 }
-set_variable = { AIR_council_member_5 = 5 }
-set_variable = { AIR_council_army = 25 }
-set_variable = { AIR_council_navy = 100 }
-set_variable = { AIR_council_air = 175 }
-set_variable = { AIR_council_construction = 125 }
-set_variable = { AIR_council_research = 50 }
-set_variable = { AIR_council_politics = 75 }
 
 add_ideas = {
 
@@ -56,7 +45,6 @@ add_ideas = {
 }
 
 recruit_character = WAT_western_monk
-recruit_character = WAT_extinct_nation
 recruit_character = WAT_generic
 
 recruit_character = WAT_head_of_intelligence_1
@@ -72,6 +60,32 @@ recruit_character = WAT_quartermaster_3
 recruit_character = WAT_quartermaster_4
 recruit_character = WAT_quartermaster_5
 recruit_character = WAT_quartermaster_6
+
+every_character = {
+	set_character_flag = airbender_monk
+}
+
+recruit_character = WAT_extinct_nation
+
+
+
+AIR_choose_council_members = yes
+
+set_variable = { council_name_1:harmony = 3 }
+set_variable = { council_name_2:harmony = 4 }
+set_variable = { council_name_3:harmony = 5 }
+set_variable = { council_name_4:harmony = 2 }
+set_variable = { council_name_5:harmony = 5 }
+set_variable = { AIR_council_army = 25 }
+set_variable = { AIR_council_navy = 100 }
+set_variable = { AIR_council_air = 175 }
+set_variable = { AIR_council_construction = 125 }
+set_variable = { AIR_council_research = 50 }
+set_variable = { AIR_council_politics = 75 }
+
+AIR_recalc_council_support = yes
+
+
 
 bender_conscription_effect = yes
 factory_output_calc = yes

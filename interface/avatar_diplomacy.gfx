@@ -11,6 +11,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_annex_puppet_icon"
+		textureFile = "gfx/interface/diplo_actions/annex_puppet.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_break_free_icon"
 		textureFile = "gfx/interface/diplo_actions/break_free.dds"
 		legacy_lazy_load = no

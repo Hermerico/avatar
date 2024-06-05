@@ -243,29 +243,26 @@ spriteTypes = {
 
 
 
-	spriteType = {
-		name = "GFX_Portrait_airnomad_generic_1_small"
-		texturefile = "gfx/interface/ideas/leader_small/EAT/idea_airnomad_generic_1.dds"
-	}
+	############# SAT
+
 
 	spriteType = {
 		name = "GFX_Portrait_airnomad_generic_1"
 		texturefile = "gfx/leaders/EAT/Portrait_airnomad_generic_1.dds"
 	}
-
 	spriteType = {
-		name = "GFX_Portrait_airnomad_generic_2_small"
-		texturefile = "gfx/interface/ideas/leader_small/EAT/idea_airnomad_generic_2.dds"
+		name = "GFX_Portrait_airnomad_generic_1_small"
+		texturefile = "gfx/interface/ideas/leader_small/airtemples/Portrait_airnomad_generic_1_small.dds"
 	}
+
 
 	spriteType = {
 		name = "GFX_Portrait_airnomad_generic_2"
 		texturefile = "gfx/leaders/EAT/Portrait_airnomad_generic_2.dds"
 	}
-
 	spriteType = {
-		name = "GFX_Portrait_airnomad_generic_3_small"
-		texturefile = "gfx/interface/ideas/leader_small/EAT/idea_airnomad_generic_3.dds"
+		name = "GFX_Portrait_airnomad_generic_2_small"
+		texturefile = "gfx/interface/ideas/leader_small/airtemples/Portrait_airnomad_generic_2_small.dds"
 	}
 
 	spriteType = {
@@ -273,8 +270,8 @@ spriteTypes = {
 		texturefile = "gfx/leaders/EAT/Portrait_airnomad_generic_3.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_airnomad_generic_4_small"
-		texturefile = "gfx/interface/ideas/leader_small/EAT/idea_airnomad_generic_4.dds"
+		name = "GFX_Portrait_airnomad_generic_3_small"
+		texturefile = "gfx/interface/ideas/leader_small/airtemples/Portrait_airnomad_generic_3_small.dds"
 	}
 
 	spriteType = {
@@ -282,13 +279,62 @@ spriteTypes = {
 		texturefile = "gfx/leaders/EAT/Portrait_airnomad_generic_4.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_airnomad_generic_5_small"
-		texturefile = "gfx/interface/ideas/leader_small/EAT/idea_airnomad_generic_5.dds"
+		name = "GFX_Portrait_airnomad_generic_4_small"
+		texturefile = "gfx/interface/ideas/leader_small/airtemples/Portrait_airnomad_generic_4_small.dds"
 	}
 
 	spriteType = {
 		name = "GFX_Portrait_airnomad_generic_5"
 		texturefile = "gfx/leaders/EAT/Portrait_airnomad_generic_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_5_small"
+		texturefile = "gfx/interface/ideas/leader_small/airtemples/Portrait_airnomad_generic_5_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_6"
+		texturefile = "gfx/leaders/EAT/Portrait_airnomad_generic_6.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_6_small"
+		texturefile = "gfx/interface/ideas/leader_small/airtemples/Portrait_airnomad_generic_6_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_7"
+		texturefile = "gfx/leaders/EAT/Portrait_airnomad_generic_7.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_7_small"
+		texturefile = "gfx/interface/ideas/leader_small/airtemples/Portrait_airnomad_generic_7_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_8"
+		texturefile = "gfx/leaders/EAT/Portrait_airnomad_generic_8.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_8_small"
+		texturefile = "gfx/interface/ideas/leader_small/airtemples/Portrait_airnomad_generic_8_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_9"
+		texturefile = "gfx/leaders/EAT/Portrait_airnomad_generic_9.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_9_small"
+		texturefile = "gfx/interface/ideas/leader_small/airtemples/Portrait_airnomad_generic_9_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_10"
+		texturefile = "gfx/leaders/EAT/Portrait_airnomad_generic_10.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_airnomad_generic_10_small"
+		texturefile = "gfx/interface/ideas/leader_small/airtemples/Portrait_airnomad_generic_10_small.dds"
 	}
 
 	

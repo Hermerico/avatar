@@ -114,6 +114,20 @@ permanent_spirits_and_modifiers = yes
 	remove_ideas = humiliated_in_battle
 
 
+	set_country_flag = {
+		flag = dai_li_category_active
+		value = 1
+	}
+	add_ideas = {
+		dai_li_headquaters
+		dai_li_training_rooms
+		dai_li_prisons
+	}
+
+	set_country_flag = extremist_dai_li
+	set_country_flag = dai_li_ministers
+
+
 }
 
 106.2.4 = {
@@ -129,9 +143,6 @@ permanent_spirits_and_modifiers = yes
 
 	retire_character = EAR_zaifeng
 
-	add_ideas = dai_li_headquaters
-	set_country_flag = extremist_dai_li
-	set_country_flag = dai_li_ministers
 
 	activate_advisor = ear_quon
 	activate_advisor = ear_hiroshi
@@ -152,8 +163,16 @@ permanent_spirits_and_modifiers = yes
 	}
 
 
+	add_ideas = {
+		dai_li_jo_dee
+		dai_li_surveillance
+		dai_li_brainwashing_room
+		dai_li_politics_department
+		dai_li_grand_secretary_office
+	}
 	add_to_variable = {
-		dai_li_influence = 20
+		dai_li_influence = 50
+		dai_li_disloyalty = 95
 	}
 	178 = {
 		add_building_construction = {

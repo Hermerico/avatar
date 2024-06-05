@@ -54,10 +54,41 @@ spriteTypes = {
 		name = "GFX_dai_li_headquaters_large"
 		texturefile = "gfx/interface/decisions/dai_li/dai_li_headquaters.dds"
 	}
-
 	spriteType = {
 		name = "GFX_connection_1"
 		texturefile = "gfx/interface/decisions/dai_li/head_connection_1.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_training_rooms"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_training_rooms.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_prisons"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_prisons.dds"
+	}
+	spriteType = {
+		name = "GFX_connection_2"
+		texturefile = "gfx/interface/decisions/dai_li/head_connection_2.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_jo_dee"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_jo_dee.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_surveillance"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_surveillance.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_brainwashing_room"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_brainwashing_room.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_politics_department"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_politics_department.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_grand_secretary_office"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_grand_secretary_office.dds"
 	}
 
 	spriteType = {
@@ -322,6 +353,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_category_royal_family"
 		texturefile = "gfx/interface/decisions/categories/decision_category_royal_family.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_air_council"
+		texturefile = "gfx/interface/decisions/categories/decision_category_air_council.dds"
 	}
 
 	
@@ -862,6 +897,14 @@ spriteTypes = {
 		name = "dai_li_minister"
 		texturefile = "gfx/interface/decisions/decision_dai_li_minister.dds"
 	}
+	spriteType = {
+		name = "dai_li_brainwash"
+		texturefile = "gfx/interface/decisions/decision_dai_li_brainwash.dds"
+	}
+	spriteType = {
+		name = "no_war_in_ba_sing"
+		texturefile = "gfx/interface/decisions/decision_no_war_in_ba_sing.dds"
+	}
 
 	spriteType = {
 		name = "earth_royal_guard"
@@ -993,10 +1036,6 @@ spriteTypes = {
 	spriteType = {
 		name = "council_decrease_priority"
 		texturefile = "gfx/interface/decisions/air_council/decrease_priority.dds"
-	}
-	spriteType = {
-		name = "council_decision_tab"
-		texturefile = "gfx/interface/decisions/air_council/air_council_decision_tab.dds"
 	}
 	spriteType = {
 		name = "council_will_meet_again"

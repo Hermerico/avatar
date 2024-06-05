@@ -60,52 +60,70 @@ units = {
 	division = {
 		location = 1394
 		division_template = "Earthbender Brigade"
-		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
-		start_equipment_factor = 1  #0.6
+		force_equipment_variants = {
+			earthbender_equipment_1 = {
+				owner = "EAR"
+			}
+		}
+		start_equipment_factor = 1		#0.6
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 2639
 		division_template = "Militia Brigade"
-		start_equipment_factor = 1  #0.6
+		start_equipment_factor = 1		#0.6
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 1734
 		division_template = "Militia Brigade"
-		start_equipment_factor = 1  #0.6
+		start_equipment_factor = 1		#0.6
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 162
 		division_template = "Earthbender Brigade"
-		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
-		start_equipment_factor = 1  #0.6
+		force_equipment_variants = {
+			earthbender_equipment_1 = {
+				owner = "EAR"
+			}
+		}
+		start_equipment_factor = 1		#0.6
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 4142
 		division_template = "Militia Brigade"
-		start_equipment_factor = 1  #0.6
+		start_equipment_factor = 1		#0.6
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 6367
 		division_template = "Militia Brigade"
-		start_equipment_factor = 1  #0.6
+		start_equipment_factor = 1		#0.6
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 3714
 		division_template = "Earthbender Brigade"
-		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
-		start_equipment_factor = 1  #0.6
+		force_equipment_variants = {
+			earthbender_equipment_1 = {
+				owner = "EAR"
+			}
+		}
+		start_equipment_factor = 1		#0.6
 		start_experience_factor = 0.15
 	}
 	division = {
 		location = 181
 		division_template = "Militia Brigade"
-		start_equipment_factor = 1  #0.6
+		start_equipment_factor = 1		#0.6
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 2240
+		division_template = "Militia Brigade"
+		start_equipment_factor = 1		#0.6
 		start_experience_factor = 0.15
 	}
 }

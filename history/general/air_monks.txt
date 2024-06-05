@@ -1,0 +1,146 @@
+
+
+#############################################################
+
+###################### male monks ######################
+
+#############################################################
+
+
+every_possible_country = {
+	limit = {
+		OR = {
+			original_tag = SAT
+			original_tag = NAT
+		}
+	}
+
+
+	generate_character = {
+		token_base = random_monk_1
+		
+		
+		corps_commander = {
+			traits = { not_a_real_airbender }
+			visible = { always = no }
+		}
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_airnomad_generic_1"
+			}
+			army = {
+				large = "GFX_Portrait_airnomad_generic_1"
+				small = "GFX_Portrait_airnomad_generic_1_small"
+			}
+		}
+	}
+	generate_character = {
+		token_base = random_monk_2
+		
+
+		corps_commander = {
+			traits = { not_a_real_airbender }
+			visible = { always = no }
+		}
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_airnomad_generic_3"
+			}
+			army = {
+				large = "GFX_Portrait_airnomad_generic_3"
+				small = "GFX_Portrait_airnomad_generic_3_small"
+			}
+		}
+	}
+	generate_character = {
+		token_base = random_monk_3
+		
+
+		corps_commander = {
+			traits = { not_a_real_airbender }
+			visible = { always = no }
+		}
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_airnomad_generic_4"
+			}
+			army = {
+				large = "GFX_Portrait_airnomad_generic_4"
+				small = "GFX_Portrait_airnomad_generic_4_small"
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = random_monk_4
+		
+
+		corps_commander = {
+			traits = { not_a_real_airbender }
+			visible = { always = no }
+		}
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_airnomad_generic_5"
+			}
+			army = {
+				large = "GFX_Portrait_airnomad_generic_5"
+				small = "GFX_Portrait_airnomad_generic_5_small"
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = random_monk_5
+		
+
+		corps_commander = {
+			traits = { not_a_real_airbender }
+			visible = { always = no }
+		}
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_airnomad_generic_7"
+			}
+			army = {
+				large = "GFX_Portrait_airnomad_generic_7"
+				small = "GFX_Portrait_airnomad_generic_7_small"
+			}
+		}
+	}
+
+	generate_character = {
+		token_base = random_monk_6
+		
+
+		corps_commander = {
+			traits = { not_a_real_airbender }
+			visible = { always = no }
+		}
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_airnomad_generic_8"
+			}
+			army = {
+				large = "GFX_Portrait_airnomad_generic_8"
+				small = "GFX_Portrait_airnomad_generic_8_small"
+			}
+		}
+	}
+	
+}
+
+
+
+
+######################################################################
+
+###################  female monks  ########################
+
+######################################################################
+
+every_possible_country = {
+	limit = {
+		is_earth_kingdom = yes
+	}
+}

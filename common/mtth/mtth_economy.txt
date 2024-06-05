@@ -1998,20 +1998,8 @@ local_prosperity_growth = {
 		add_to_temp_variable = { local_prosperity = 2_dockyard_value }
 
 
-		multiply_temp_variable = { local_prosperity = 0.03 }
+		multiply_temp_variable = { local_prosperity = 0.2 }
 
-		set_temp_variable = { prosperity_growth = 1 }
-		add_to_temp_variable = { prosperity_growth = modifier@prosperity }
-		controller = {
-			add_to_temp_variable = { prosperity_growth = modifier@prosperity }
-		}
-
-		clamp_temp_variable = {
-			var = prosperity_growth
-			min = 0
-		}
-
-		multiply_temp_variable = { local_prosperity = prosperity_growth }
 
 		add = local_prosperity
 	}
@@ -2052,68 +2040,6 @@ local_inflation_steal = {
 		multiply_temp_variable = { local_inflation = -1 }
 
 		add = local_inflation
-	}
-}
-
-local_prosperity_cap_base = {
-	base = 0
-	modifier = {
-		
-		set_temp_variable = { local_prosperity_cap_base = var_local_prosperity_growth }
-		set_temp_variable = { prosperity_divider = state_population_k }
-		clamp_temp_variable = { var = prosperity_divider  min = 0.001 }
-		divide_temp_variable = { local_prosperity_cap_base = prosperity_divider }
-		multiply_temp_variable = { local_prosperity_cap_base = 100 }
-
-		clamp_temp_variable = {
-			var = local_prosperity_cap_base
-			min = 1
-		}
-
-		add = local_prosperity_cap_base
-	}
-}
-
-local_prosperity_cap = {
-	base = 0
-	modifier = {
-		
-		set_temp_variable = { local_prosperity_cap = var_local_prosperity_growth }
-		set_temp_variable = { prosperity_divider = state_population_k }
-		clamp_temp_variable = { var = prosperity_divider  min = 0.001 }
-		divide_temp_variable = { local_prosperity_cap = prosperity_divider }
-		multiply_temp_variable = { local_prosperity_cap = 100 }
-
-		set_temp_variable = { prosperity_factor = 1 }
-		add_to_temp_variable = { prosperity_factor = modifier@prosperity_factor }
-		controller = {
-			add_to_temp_variable = { prosperity_factor = modifier@prosperity_factor }
-		}
-
-		clamp_temp_variable = {
-			var = prosperity_factor
-			min = 0
-		}
-
-		multiply_temp_variable = { local_prosperity_cap = prosperity_factor }
-
-		clamp_temp_variable = {
-			var = local_prosperity_cap
-			min = 1
-		}
-
-		add = local_prosperity_cap
-	}
-}
-
-prosperity_taxation_efficiency = {
-	base = 0
-	modifier = {
-		set_temp_variable = { taxation_efficiency = lp_frame }
-
-		multiply_temp_variable = { taxation_efficiency = 0.001 }  ## 10% max
-
-		add = taxation_efficiency
 	}
 }
 
@@ -2166,18 +2092,16 @@ local_tax_waste = {
 local_tax_reduction = {
 	base = 0
 	modifier = {
-		set_temp_variable = { local_tax = THIS.state_population_k }
+		set_temp_variable = { local_tax = THIS.local_prosperity }
 
-		set_temp_variable = { tax_prosperity_effect = 1 }
-		add_to_temp_variable = { tax_prosperity_effect = THIS.local_prosperity }
-		multiply_temp_variable = { tax_prosperity_effect = 0.25 }
-
-
-		multiply_temp_variable = { local_tax = tax_prosperity_effect }
-		multiply_temp_variable = { local_tax = 0.1 }
-
+		set_temp_variable = { local_tax_rate = modifier@taxation }
 		controller = {
-			multiply_temp_variable = { local_tax = modifier@taxation }
+			add_to_temp_variable = { local_tax_rate = modifier@taxation }
+			multiply_temp_variable = { local_tax = local_tax_rate }
+		}
+		clamp_temp_variable = {
+			var = local_tax
+			min = 0
 		}
 
 		multiply_temp_variable = { local_tax = -1 }
@@ -2189,18 +2113,18 @@ local_tax_reduction = {
 local_tax = {
 	base = 0
 	modifier = {
-		set_temp_variable = { local_tax = THIS.state_population_k }
+		set_temp_variable = { local_tax = THIS.local_prosperity }
 
-		set_temp_variable = { tax_prosperity_effect = 1 }
-		add_to_temp_variable = { tax_prosperity_effect = THIS.local_prosperity }
-		multiply_temp_variable = { tax_prosperity_effect = 0.25 }
-
-		multiply_temp_variable = { local_tax = tax_prosperity_effect }
-		multiply_temp_variable = { local_tax = 0.1 }
-
+		set_temp_variable = { local_tax_rate = modifier@taxation }
 		controller = {
-			multiply_temp_variable = { local_tax = modifier@taxation }
+			add_to_temp_variable = { local_tax_rate = modifier@taxation }
+			multiply_temp_variable = { local_tax = local_tax_rate }
+
 			set_temp_variable = { taxation_efficiency = modifier@taxation_efficiency }
+		}
+		clamp_temp_variable = {
+			var = local_tax
+			min = 0
 		}
 		add_to_temp_variable = { taxation_efficiency = modifier@taxation_efficiency }
 		clamp_temp_variable = {
@@ -2217,22 +2141,166 @@ local_tax = {
 local_goods_bought = {
 	base = 0
 	modifier = {
-		set_temp_variable = { local_goods_bought = state_population_k }
-		set_temp_variable = { local_goods_bought_2 = state_population_k }
-
+		
 		controller = {
-			multiply_temp_variable = { local_goods_bought_2 = ROOT.total_need_factor }
+			set_temp_variable = { 2_steel_price = 1 }
+			set_temp_variable = { 2_animal_products_price = 1 }
+			set_temp_variable = { 2_wood_price = 1 }
+			set_temp_variable = { 2_iron_price = 1 }
+			set_temp_variable = { 2_textile_price = 1 }
+			set_temp_variable = { 2_minerals_price = 1 }
+			set_temp_variable = { 2_grain_price = 1 }
+			set_temp_variable = { 2_fossile_fuels_price = 1 }
+			set_temp_variable = { 2_consumer_goods_price = 1 }
+			set_temp_variable = { 2_luxury_goods_price = 1 }
+			set_temp_variable = { 2_planks_price = 1 }
+			set_temp_variable = { 2_bricks_price = 1 }
+			set_temp_variable = { 2_steel_beams_price = 1 }
+			set_temp_variable = { 2_food_price = 1 }
+			add_to_temp_variable = { 2_steel_price = ROOT.steel_price }
+
+			add_to_temp_variable = { 2_steel_price = ROOT.steel_price }
+			add_to_temp_variable = { 2_animal_products_price = ROOT.animal_products_price }
+			add_to_temp_variable = { 2_wood_price = ROOT.wood_price }
+			add_to_temp_variable = { 2_iron_price = ROOT.iron_price }
+			add_to_temp_variable = { 2_textile_price = ROOT.textile_price }
+			add_to_temp_variable = { 2_minerals_price = ROOT.minerals_price }
+			add_to_temp_variable = { 2_grain_price = ROOT.grain_price }
+			add_to_temp_variable = { 2_fossile_fuels_price = ROOT.fossile_fuels_price }
+			add_to_temp_variable = { 2_consumer_goods_price = ROOT.consumer_goods_price }
+			add_to_temp_variable = { 2_luxury_goods_price = ROOT.luxury_goods_price }
+			add_to_temp_variable = { 2_planks_price = ROOT.planks_price }
+			add_to_temp_variable = { 2_bricks_price = ROOT.bricks_price }
+			add_to_temp_variable = { 2_steel_beams_price = ROOT.steel_beams_price }
+			subtract_from_temp_variable = { 2_food_price = ROOT.famine_check }
+
+			set_temp_variable = { steel_need_local = ROOT.steel_need }
+			set_temp_variable = { animal_products_need_local = ROOT.animal_products_need }
+			set_temp_variable = { wood_need_local = ROOT.wood_need }
+			set_temp_variable = { iron_need_local = ROOT.iron_need }
+			set_temp_variable = { textile_need_local = ROOT.textile_need }
+			set_temp_variable = { minerals_need_local = ROOT.minerals_need }
+			set_temp_variable = { grain_need_local = ROOT.grain_need }
+			set_temp_variable = { fossile_fuels_need_local = ROOT.fossile_fuels_need }
+			set_temp_variable = { consumer_goods_need_local = ROOT.consumer_goods_need }
+			set_temp_variable = { luxury_goods_need_local = ROOT.luxury_goods_need }
+			set_temp_variable = { planks_need_local = ROOT.planks_need }
+			set_temp_variable = { bricks_need_local = ROOT.bricks_need }
+			set_temp_variable = { steel_beams_need_local = ROOT.steel_beams_need }
+
 			set_temp_variable = { local_goods_price_factor = 1 }
 			add_to_temp_variable = { local_goods_price_factor = modifier@consumer_cost }
 		}
+
+		multiply_temp_variable = { steel_need_local = state_population_k }
+		multiply_temp_variable = { animal_products_need_local = state_population_k }
+		multiply_temp_variable = { wood_need_local = state_population_k }
+		multiply_temp_variable = { iron_need_local = state_population_k }
+		multiply_temp_variable = { textile_need_local = state_population_k }
+		multiply_temp_variable = { minerals_need_local = state_population_k }
+		multiply_temp_variable = { grain_need_local = state_population_k }
+		multiply_temp_variable = { fossile_fuels_need_local = state_population_k }
+		multiply_temp_variable = { consumer_goods_need_local = state_population_k }
+		multiply_temp_variable = { luxury_goods_need_local = state_population_k }
+		multiply_temp_variable = { planks_need_local = state_population_k }
+		multiply_temp_variable = { bricks_need_local = state_population_k }
+		multiply_temp_variable = { steel_beams_need_local = state_population_k }
+
+		multiply_temp_variable = { steel_need_local = 2_steel_price }
+		multiply_temp_variable = { animal_products_need_local = 2_animal_products_price }
+		multiply_temp_variable = { wood_need_local = 2_wood_price }
+		multiply_temp_variable = { iron_need_local = 2_iron_price }
+		multiply_temp_variable = { textile_need_local = 2_textile_price }
+		multiply_temp_variable = { minerals_need_local = 2_minerals_price }
+		multiply_temp_variable = { grain_need_local = 2_grain_price }
+		multiply_temp_variable = { fossile_fuels_need_local = 2_fossile_fuels_price }
+		multiply_temp_variable = { consumer_goods_need_local = 2_consumer_goods_price }
+		multiply_temp_variable = { luxury_goods_need_local = 2_luxury_goods_price }
+		multiply_temp_variable = { planks_need_local = 2_planks_price }
+		multiply_temp_variable = { bricks_need_local = 2_bricks_price }
+		multiply_temp_variable = { steel_beams_need_local = 2_steel_beams_price }
+
+
+		set_temp_variable = { local_goods_bought = 0 }
+		add_to_temp_variable = { local_goods_bought = steel_need_local }
+		add_to_temp_variable = { local_goods_bought = animal_products_need_local }
+		add_to_temp_variable = { local_goods_bought = wood_need_local }
+		add_to_temp_variable = { local_goods_bought = iron_need_local }
+		add_to_temp_variable = { local_goods_bought = textile_need_local }
+		add_to_temp_variable = { local_goods_bought = minerals_need_local }
+		add_to_temp_variable = { local_goods_bought = grain_need_local }
+		add_to_temp_variable = { local_goods_bought = fossile_fuels_need_local }
+		add_to_temp_variable = { local_goods_bought = consumer_goods_need_local }
+		add_to_temp_variable = { local_goods_bought = luxury_goods_need_local }
+		add_to_temp_variable = { local_goods_bought = planks_need_local }
+		add_to_temp_variable = { local_goods_bought = bricks_need_local }
+		add_to_temp_variable = { local_goods_bought = steel_beams_need_local }
+
 		add_to_temp_variable = { local_goods_price_factor = modifier@consumer_cost }
 		clamp_temp_variable = { var = local_goods_price_factor min = 0 }
 
-		add_to_temp_variable = { local_goods_bought = local_goods_bought_2 }
-
 		multiply_temp_variable = { local_goods_bought = local_goods_price_factor }
 
-		multiply_temp_variable = { local_goods_bought = -0.04 }
+		multiply_temp_variable = { local_goods_bought = -1 }
+
+		clamp_temp_variable = { var = local_goods_bought max = -0.001 }
+
+		add = local_goods_bought
+	}
+}
+
+local_goods_expected = {
+	base = 0
+	modifier = {
+		
+		controller = {
+			set_temp_variable = { steel_need_local = ROOT.steel_need }
+			set_temp_variable = { animal_products_need_local = ROOT.animal_products_need }
+			set_temp_variable = { wood_need_local = ROOT.wood_need }
+			set_temp_variable = { iron_need_local = ROOT.iron_need }
+			set_temp_variable = { textile_need_local = ROOT.textile_need }
+			set_temp_variable = { minerals_need_local = ROOT.minerals_need }
+			set_temp_variable = { grain_need_local = ROOT.grain_need }
+			set_temp_variable = { fossile_fuels_need_local = ROOT.fossile_fuels_need }
+			set_temp_variable = { consumer_goods_need_local = ROOT.consumer_goods_need }
+			set_temp_variable = { luxury_goods_need_local = ROOT.luxury_goods_need }
+			set_temp_variable = { planks_need_local = ROOT.planks_need }
+			set_temp_variable = { bricks_need_local = ROOT.bricks_need }
+			set_temp_variable = { steel_beams_need_local = ROOT.steel_beams_need }
+		}
+
+		multiply_temp_variable = { steel_need_local = state_population_k }
+		multiply_temp_variable = { animal_products_need_local = state_population_k }
+		multiply_temp_variable = { wood_need_local = state_population_k }
+		multiply_temp_variable = { iron_need_local = state_population_k }
+		multiply_temp_variable = { textile_need_local = state_population_k }
+		multiply_temp_variable = { minerals_need_local = state_population_k }
+		multiply_temp_variable = { grain_need_local = state_population_k }
+		multiply_temp_variable = { fossile_fuels_need_local = state_population_k }
+		multiply_temp_variable = { consumer_goods_need_local = state_population_k }
+		multiply_temp_variable = { luxury_goods_need_local = state_population_k }
+		multiply_temp_variable = { planks_need_local = state_population_k }
+		multiply_temp_variable = { bricks_need_local = state_population_k }
+		multiply_temp_variable = { steel_beams_need_local = state_population_k }
+
+		set_temp_variable = { local_goods_bought = 0 }
+		add_to_temp_variable = { local_goods_bought = steel_need_local }
+		add_to_temp_variable = { local_goods_bought = animal_products_need_local }
+		add_to_temp_variable = { local_goods_bought = wood_need_local }
+		add_to_temp_variable = { local_goods_bought = iron_need_local }
+		add_to_temp_variable = { local_goods_bought = textile_need_local }
+		add_to_temp_variable = { local_goods_bought = minerals_need_local }
+		add_to_temp_variable = { local_goods_bought = grain_need_local }
+		add_to_temp_variable = { local_goods_bought = fossile_fuels_need_local }
+		add_to_temp_variable = { local_goods_bought = consumer_goods_need_local }
+		add_to_temp_variable = { local_goods_bought = luxury_goods_need_local }
+		add_to_temp_variable = { local_goods_bought = planks_need_local }
+		add_to_temp_variable = { local_goods_bought = bricks_need_local }
+		add_to_temp_variable = { local_goods_bought = steel_beams_need_local }
+
+		multiply_temp_variable = { local_goods_bought = -1 }
+
+		clamp_temp_variable = { var = local_goods_bought max = -0.001 }
 
 		add = local_goods_bought
 	}
@@ -2373,7 +2441,7 @@ urbanisation_taxation_efficiency = {
 	modifier = {
 		set_temp_variable = { efficiency = urbanisation_cap }
 		multiply_temp_variable = { efficiency = 0.01 }  
-		multiply_temp_variable = { efficiency = 0.5 }   ## 0%-50% max
+		multiply_temp_variable = { efficiency = 0.25 }   ## 0%-25% max
 
 		multiply_temp_variable = { efficiency = urbanisation_percentage }
 		
@@ -2393,7 +2461,7 @@ urbanisation_prosperity_cap = {
 		set_temp_variable = { efficiency = 50 }
 		subtract_from_temp_variable = { efficiency = urbanisation_cap }
 		multiply_temp_variable = { efficiency = -0.01 }
-		multiply_temp_variable = { efficiency = 2 }  ## -100% - 100%
+		multiply_temp_variable = { efficiency = 1 }  ## -50% - 50%
 
 		multiply_temp_variable = { efficiency = urbanisation_percentage }
 		

@@ -166,4 +166,16 @@ units = {
 		start_equipment_factor = 1  #0.8
 		start_experience_factor = 0.15
 	}
+	division = {
+		location = 3427
+		division_template = "Infantry Banner"
+		start_equipment_factor = 1  #0.8
+		start_experience_factor = 0.15
+	}
+	division = {
+		location = 7146
+		division_template = "Infantry Banner"
+		start_equipment_factor = 1  #0.8
+		start_experience_factor = 0.15
+	}
 }

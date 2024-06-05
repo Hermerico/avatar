@@ -27,6 +27,17 @@ spriteTypes = {
 		texturefile = "gfx/texticons/age_5.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_age_6_texticon"
+		texturefile = "gfx/texticons/age_6.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_influence_texticon"
+		texturefile = "gfx/texticons/influence_texticon.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_stockpile_texticon"
@@ -62,12 +73,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_clergy_texticon"
 		texturefile = "gfx/texticons/clergy_texticon.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_age_6_texticon"
-		texturefile = "gfx/texticons/age_6.dds"
 		legacy_lazy_load = no
 	}
 
@@ -233,6 +238,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_spy_network_growth_texticon"
 		texturefile = "gfx/texticons/spy_network_growth.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_prison_texticon"
+		texturefile = "gfx/texticons/prison_texticon.dds"
 		legacy_lazy_load = no
 	}
 

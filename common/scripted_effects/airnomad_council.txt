@@ -1,12 +1,86 @@
 
+
+AIR_choose_council_members = {
+	if = {
+		limit = {
+			NOT = { any_character = { has_character_flag = appointed_to_council_1 } }
+		}
+		random_character = {
+			limit = {
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
+			}
+			set_variable = { PREV.council_name_1 = THIS.id }
+			set_character_flag = appointed_to_council_1
+			set_character_flag = appointed_to_council
+		}
+	}
+	if = {
+		limit = {
+			NOT = { any_character = { has_character_flag = appointed_to_council_2 } }
+		}
+		random_character = {
+			limit = {
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
+			}
+			set_variable = { PREV.council_name_2 = THIS.id }
+			set_character_flag = appointed_to_council_2
+			set_character_flag = appointed_to_council
+		}
+	}
+	if = {
+		limit = {
+			NOT = { any_character = { has_character_flag = appointed_to_council_3 } }
+		}
+		random_character = {
+			limit = {
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
+			}
+			set_variable = { PREV.council_name_3 = THIS.id }
+			set_character_flag = appointed_to_council_3
+			set_character_flag = appointed_to_council
+		}
+	}
+	if = {
+		limit = {
+			NOT = { any_character = { has_character_flag = appointed_to_council_4 } }
+		}
+		random_character = {
+			limit = {
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
+			}
+			set_variable = { PREV.council_name_4 = THIS.id }
+			set_character_flag = appointed_to_council_4
+			set_character_flag = appointed_to_council
+		}
+	}
+	if = {
+		limit = {
+			NOT = { any_character = { has_character_flag = appointed_to_council_5 } }
+		}
+		random_character = {
+			limit = {
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
+			}
+			set_variable = { PREV.council_name_5 = THIS.id }
+			set_character_flag = appointed_to_council_5
+			set_character_flag = appointed_to_council
+		}
+	}
+}
+
 ### recalc
 
 AIR_recalc_council_support = {
-	set_temp_variable = { support_temp = AIR_council_member_1 }
-	add_to_temp_variable = { support_temp = AIR_council_member_2 }
-	add_to_temp_variable = { support_temp = AIR_council_member_3 }
-	add_to_temp_variable = { support_temp = AIR_council_member_4 }
-	add_to_temp_variable = { support_temp = AIR_council_member_5 }
+	set_temp_variable = { support_temp = council_name_1:harmony }
+	add_to_temp_variable = { support_temp = council_name_2:harmony }
+	add_to_temp_variable = { support_temp = council_name_3:harmony }
+	add_to_temp_variable = { support_temp = council_name_4:harmony }
+	add_to_temp_variable = { support_temp = council_name_5:harmony }
 	divide_temp_variable = { support_temp = 5}
 	round_temp_variable = support_temp
 	if = {
@@ -23,38 +97,38 @@ AIR_recalc_council_support = {
 	if = {
 		limit = { tag = SAT }
 		set_variable = { sat_current_council_symbol_frame = AIR_council_support }
-		set_variable = { sat_current_member_1_frame = AIR_council_member_1 }
-		set_variable = { sat_current_member_2_frame = AIR_council_member_2 }
-		set_variable = { sat_current_member_3_frame = AIR_council_member_3 }
-		set_variable = { sat_current_member_4_frame = AIR_council_member_4 }
-		set_variable = { sat_current_member_5_frame = AIR_council_member_5 }
+		set_variable = { sat_current_member_1_frame = council_name_1:harmony }
+		set_variable = { sat_current_member_2_frame = council_name_2:harmony }
+		set_variable = { sat_current_member_3_frame = council_name_3:harmony }
+		set_variable = { sat_current_member_4_frame = council_name_4:harmony }
+		set_variable = { sat_current_member_5_frame = council_name_5:harmony }
 	}
 	if = {
 		limit = { tag = NAT }
 		set_variable = { nat_current_council_symbol_frame = AIR_council_support }
-		set_variable = { nat_current_member_1_frame = AIR_council_member_1 }
-		set_variable = { nat_current_member_2_frame = AIR_council_member_2 }
-		set_variable = { nat_current_member_3_frame = AIR_council_member_3 }
-		set_variable = { nat_current_member_4_frame = AIR_council_member_4 }
-		set_variable = { nat_current_member_5_frame = AIR_council_member_5 }
+		set_variable = { nat_current_member_1_frame = council_name_1:harmony }
+		set_variable = { nat_current_member_2_frame = council_name_2:harmony }
+		set_variable = { nat_current_member_3_frame = council_name_3:harmony }
+		set_variable = { nat_current_member_4_frame = council_name_4:harmony }
+		set_variable = { nat_current_member_5_frame = council_name_5:harmony }
 	}
 	if = {
 		limit = { tag = WAT }
 		set_variable = { wat_current_council_symbol_frame = AIR_council_support }
-		set_variable = { wat_current_member_1_frame = AIR_council_member_1 }
-		set_variable = { wat_current_member_2_frame = AIR_council_member_2 }
-		set_variable = { wat_current_member_3_frame = AIR_council_member_3 }
-		set_variable = { wat_current_member_4_frame = AIR_council_member_4 }
-		set_variable = { wat_current_member_5_frame = AIR_council_member_5 }
+		set_variable = { wat_current_member_1_frame = council_name_1:harmony }
+		set_variable = { wat_current_member_2_frame = council_name_2:harmony }
+		set_variable = { wat_current_member_3_frame = council_name_3:harmony }
+		set_variable = { wat_current_member_4_frame = council_name_4:harmony }
+		set_variable = { wat_current_member_5_frame = council_name_5:harmony }
 	}
 	if = {
 		limit = { tag = EAT }
 		set_variable = { eat_current_council_symbol_frame = AIR_council_support }
-		set_variable = { eat_current_member_1_frame = AIR_council_member_1 }
-		set_variable = { eat_current_member_2_frame = AIR_council_member_2 }
-		set_variable = { eat_current_member_3_frame = AIR_council_member_3 }
-		set_variable = { eat_current_member_4_frame = AIR_council_member_4 }
-		set_variable = { eat_current_member_5_frame = AIR_council_member_5 }
+		set_variable = { eat_current_member_1_frame = council_name_1:harmony }
+		set_variable = { eat_current_member_2_frame = council_name_2:harmony }
+		set_variable = { eat_current_member_3_frame = council_name_3:harmony }
+		set_variable = { eat_current_member_4_frame = council_name_4:harmony }
+		set_variable = { eat_current_member_5_frame = council_name_5:harmony }
 	}
 	AIR_recalc_council_spirit = yes
 }
@@ -62,68 +136,23 @@ AIR_recalc_council_support = {
 AIR_recalc_council_spirit = {
 	if = {
 		limit = { check_variable = { AIR_council_support = 1 }}
-		swap_ideas = {
-			remove_idea = council_opposition
-			add_idea = council_harsh_opposition
-		}
+		add_ideas = council_harsh_opposition
 	}
 	if = {
 		limit = { check_variable = { AIR_council_support = 2 }}
-		if = {
-			limit = { has_idea = council_harsh_opposition }
-			swap_ideas = {
-				remove_idea = council_harsh_opposition
-				add_idea = council_opposition
-			}
-		}
-		if = {
-			limit = { has_idea = council_neutral}
-			swap_ideas = {
-				remove_idea = council_neutral
-				add_idea = council_opposition
-			}
-		}
+		add_ideas = council_opposition
 	}
 	if = {
 		limit = { check_variable = { AIR_council_support = 3 }}
-		if = {
-			limit = { has_idea = council_opposition }
-			swap_ideas = {
-				remove_idea = council_opposition
-				add_idea = council_neutral
-			}
-		}
-		if = {
-			limit = { has_idea = council_support}
-			swap_ideas = {
-				remove_idea = council_support
-				add_idea = council_neutral
-			}
-		}
+		add_ideas = council_neutral
 	}
 	if = {
 		limit = { check_variable = { AIR_council_support = 4 }}
-		if = {
-			limit = { has_idea = council_neutral }
-			swap_ideas = {
-				remove_idea = council_neutral
-				add_idea = council_support
-			}
-		}
-		if = {
-			limit = { has_idea = council_substancial_support}
-			swap_ideas = {
-				remove_idea = council_substancial_support
-				add_idea = council_support
-			}
-		}
+		add_ideas = council_support
 	}
 	if = {
 		limit = { check_variable = { AIR_council_support = 5 }}
-		swap_ideas = {
-			remove_idea = council_support
-			add_idea = council_substancial_support
-		}
+		add_ideas = council_substancial_support
 	}
 }
 
@@ -190,28 +219,28 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 1 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr1 }}
 				}}
 				set_variable = { air_specific_mission = 1 }
 			}
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 2 }
-					Not = { is_in_array = { air_current_missions = 2 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr2 }}
 				}}
 				set_variable = { air_specific_mission = 2 }
 			}
 			if = {
             	limit = { AND = {
             		check_variable = { specific_mission = 3 }
-            		Not = { is_in_array = { air_current_missions = 3 }}
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr3 }}
             	}}
             	set_variable = { air_specific_mission = 3 }
             }
 			if = {
             	limit = { AND = {
             		check_variable = { specific_mission = 4 }
-            		Not = { is_in_array = { air_current_missions = 4 }}
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr4 }}
             	}}
             	set_variable = { air_specific_mission = 4 }
             }
@@ -220,10 +249,10 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3}
 					AND = {
-						is_in_array = { air_current_missions = 1 }
-						is_in_array = { air_current_missions = 2 }
-						is_in_array = { air_current_missions = 3 }
-						is_in_array = { air_current_missions = 4 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr1 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr2 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr3 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr4 }
 					}
 				}
 				}
@@ -243,14 +272,14 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 6 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr6 }}
 				}}
 				set_variable = { air_specific_mission = 6 }
 			}
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 2 }
-					Not = { is_in_array = { air_current_missions = 8 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr8 }}
 				}}
 				set_variable = { air_specific_mission = 8 }
 			}
@@ -259,8 +288,8 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3}
 					AND = {
-						is_in_array = { air_current_missions = 6 }
-						is_in_array = { air_current_missions = 8 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr6 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr8 }
 					}
 				}
 				}
@@ -280,14 +309,14 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 11 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr11 }}
 				}}
 				set_variable = { air_specific_mission = 11 }
 			}
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 2 }
-					Not = { is_in_array = { air_current_missions = 12 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr12 }}
 				}}
 				set_variable = { air_specific_mission = 12 }
 			}
@@ -296,8 +325,8 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3}
 					AND = {
-						is_in_array = { air_current_missions = 11 }
-						is_in_array = { air_current_missions = 12 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr11 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr12 }
 					}
 				}
 				}
@@ -317,14 +346,14 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 16 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr16 }}
 				}}
 				set_variable = { air_specific_mission = 16 }
 			}
             if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 2 }
-					Not = { is_in_array = { air_current_missions = 17 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr17 }}
 				}}
 				set_variable = { air_specific_mission = 17 }
 			}
@@ -333,8 +362,8 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3 }
 					AND = {
-						is_in_array = { air_current_missions = 16 }
-						is_in_array = { air_current_missions = 17 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr16 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr17 }
 					}
 				}
 				}
@@ -354,7 +383,7 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 21 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr21 }}
 				}}
 				set_variable = { air_specific_mission = 21 }
 			}
@@ -363,7 +392,7 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3}
 					AND = {
-						is_in_array = { air_current_missions = 21 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr21 }
 					}
 				}
 				}
@@ -383,21 +412,21 @@ AIR_generate_specific_mission = {
 			if = {
 				limit = { AND = {
 					check_variable = { specific_mission = 1 }
-					Not = { is_in_array = { air_current_missions = 26 }}
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr26 }}
 				}}
 				set_variable = { air_specific_mission = 26 }
 			}
 			if = {
             	limit = { AND = {
             		check_variable = { specific_mission = 2 }
-            		Not = { is_in_array = { air_current_missions = 28 }}
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr28 }}
             	}}
             	set_variable = { air_specific_mission = 28 }
             }
             if = {
             	limit = { AND = {
             		check_variable = { specific_mission = 3 }
-            		Not = { is_in_array = { air_current_missions = 29 }}
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr29 }}
             	}}
             	set_variable = { air_specific_mission = 29 }
             }
@@ -406,9 +435,9 @@ AIR_generate_specific_mission = {
 				OR = {
 					check_variable = { repeat = 3}
 					AND = {
-						is_in_array = { air_current_missions = 26 }
-						is_in_array = { air_current_missions = 28 }
-						is_in_array = { air_current_missions = 29 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr26 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr28 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr29 }
 					}
 				}
 				}
@@ -467,81 +496,99 @@ AIR_start_mission = {
 	
 	if = {
 		limit = { check_variable = { air_new_mission = 1 }}
-		add_to_array = { air_current_missions = 1 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr1 }
+		activate_mission = AIR_mission_nr1
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 2 }}
-		add_to_array = { air_current_missions = 2 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr2 }
+		activate_mission = AIR_mission_nr2
 	}
 	if = {
     	limit = { check_variable = { air_new_mission = 3 }}
-    	add_to_array = { air_current_missions = 3 }
+    	add_to_array = { air_current_missions = token:AIR_mission_nr3 }
+		activate_mission = AIR_mission_nr3
     }
 	if = {
     	limit = { check_variable = { air_new_mission = 4 }}
-    	add_to_array = { air_current_missions = 4 }
+    	add_to_array = { air_current_missions = token:AIR_mission_nr4 }
+		activate_mission = air_mission_nr4
     }
 	if = {
     	limit = { check_variable = { air_new_mission = 5 }}
-    	add_to_array = { air_current_missions = 5 }
+    	add_to_array = { air_current_missions = token:AIR_mission_nr5 }
+		activate_mission = AIR_mission_nr5
     }
 	if = {
 		limit = { check_variable = { air_new_mission = 6 }}
-		add_to_array = { air_current_missions = 6 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr6 }
+		activate_mission = AIR_mission_nr6
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 8 }}
-		add_to_array = { air_current_missions = 8 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr8 }
+		activate_mission = AIR_mission_nr8
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 9 }}
-		add_to_array = { air_current_missions = 9 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr9 }
+		activate_mission = AIR_mission_nr9
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 11 }}
-		add_to_array = { air_current_missions = 11 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr11 }
+		activate_mission = AIR_mission_nr11
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 12 }}
-		add_to_array = { air_current_missions = 12 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr12 }
+		activate_mission = AIR_mission_nr12
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 13 }}
-		add_to_array = { air_current_missions = 13 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr13 }
+		activate_mission = AIR_mission_nr13
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 16 }}
-		add_to_array = { air_current_missions = 16 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr16 }
+		activate_mission = AIR_mission_nr16
 	}
     if = {
 		limit = { check_variable = { air_new_mission = 17 }}
-		add_to_array = { air_current_missions = 17 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr17 }
+		activate_mission = AIR_mission_nr17
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 18 }}
-		add_to_array = { air_current_missions = 18 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr18 }
+		activate_mission = AIR_mission_nr18
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 21 }}
-		add_to_array = { air_current_missions = 21 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr21 }
+		activate_mission = AIR_mission_nr21
 	}
 	if = {
 		limit = { check_variable = { air_new_mission = 26 }}
-		add_to_array = { air_current_missions = 26 }
+		add_to_array = { air_current_missions = token:AIR_mission_nr26 }
+		activate_mission = AIR_mission_nr26
 	}
 	if = {
     	limit = { check_variable = { air_new_mission = 28 }}
-    	add_to_array = { air_current_missions = 28 }
+    	add_to_array = { air_current_missions = token:AIR_mission_nr28 }
+		activate_mission = AIR_mission_nr28
     }
     if = {
        limit = { check_variable = { air_new_mission = 29 }}
-       add_to_array = { air_current_missions = 29 }
+       add_to_array = { air_current_missions = token:AIR_mission_nr29 }
+	   activate_mission = AIR_mission_nr29
     }
 }
 
 ##### council support calculations
 
-AIR_council_small_support = {
+AIR_council_support_calc = {
 	randomize_temp_variable = {
 		var = temp_member
 		distribution = uniform
@@ -553,51 +600,50 @@ AIR_council_small_support = {
 		limit = { 
 			AND = {
 				check_variable = { temp_member = 1 }
-				check_variable = { AIR_council_member_1 < 5 }
+				check_variable = { council_name_1:harmony < 5 }
 				}
 			}
-		add_to_variable = { AIR_council_member_1 = 1 }
+		add_to_variable = { council_name_1:harmony = 1 }
 	}
 	if = {
 		limit = { 
 			AND = {
 				check_variable = { temp_member = 2 }
-				check_variable = { AIR_council_member_2 < 5 }
+				check_variable = { council_name_2:harmony < 5 }
 				}
 			}
-		add_to_variable = { AIR_council_member_2 = 1 }
+		add_to_variable = { council_name_2:harmony = 1 }
 	}
 	if = {
 		limit = { 
 			AND = {
 				check_variable = { temp_member = 3 }
-				check_variable = { AIR_council_member_3 < 5 }
+				check_variable = { council_name_3:harmony < 5 }
 				}
 			}
-		add_to_variable = { AIR_council_member_3 = 1 }
+		add_to_variable = { council_name_3:harmony = 1 }
 	}
 	if = {
 		limit = { 
 			AND = {
 				check_variable = { temp_member = 4 }
-				check_variable = { AIR_council_member_4 < 5 }
+				check_variable = { council_name_4:harmony < 5 }
 				}
 			}
-		add_to_variable = { AIR_council_member_4 = 1 }
+		add_to_variable = { council_name_4:harmony = 1 }
 	}
 	if = {
 		limit = { 
 			AND = {
 				check_variable = { temp_member = 5 }
-				check_variable = { AIR_council_member_5 < 5 }
+				check_variable = { council_name_5:harmony < 5 }
 				}
 			}
-		add_to_variable = { AIR_council_member_5 = 1 }
+		add_to_variable = { council_name_5:harmony = 1 }
 	}
-	AIR_recalc_council_support = yes
 }
 
-AIR_council_small_opposition = {
+AIR_council_opposition_calc = {
 	randomize_temp_variable = {
 		var = temp_member
 		distribution = uniform
@@ -609,118 +655,131 @@ AIR_council_small_opposition = {
 		limit = { 
 			AND = {
 				check_variable = { temp_member = 1 }
-				check_variable = { AIR_council_member_1 > 1 }
+				check_variable = { council_name_1:harmony > 1 }
 				}
 			}
-		subtract_from_variable = { AIR_council_member_1 = 1 }
+		subtract_from_variable = { council_name_1:harmony = 1 }
 	}
 	if = {
 		limit = { 
 			AND = {
 				check_variable = { temp_member = 2 }
-				check_variable = { AIR_council_member_2 > 1 }
+				check_variable = { council_name_2:harmony > 1 }
 				}
 			}
-		subtract_from_variable = { AIR_council_member_2 = 1 }
+		subtract_from_variable = { council_name_2:harmony = 1 }
 	}
 	if = {
 		limit = { 
 			AND = {
 				check_variable = { temp_member = 3 }
-				check_variable = { AIR_council_member_3 > 1 }
+				check_variable = { council_name_3:harmony > 1 }
 				}
 			}
-		subtract_from_variable = { AIR_council_member_3 = 1 }
+		subtract_from_variable = { council_name_3:harmony = 1 }
 	}
 	if = {
 		limit = { 
 			AND = {
 				check_variable = { temp_member = 4 }
-				check_variable = { AIR_council_member_4 > 1 }
+				check_variable = { council_name_4:harmony > 1 }
 				}
 			}
-		subtract_from_variable = { AIR_council_member_4 = 1 }
+		subtract_from_variable = { council_name_4:harmony = 1 }
 	}
 	if = {
 		limit = { 
 			AND = {
 				check_variable = { temp_member = 5 }
-				check_variable = { AIR_council_member_5 > 1 }
+				check_variable = { council_name_5:harmony > 1 }
 				}
 			}
-		subtract_from_variable = { AIR_council_member_5 = 1 }
+		subtract_from_variable = { council_name_5:harmony = 1 }
 	}
+}
+
+AIR_council_small_support = {
+	AIR_council_support_calc = yes
+	AIR_recalc_council_support = yes
+}
+
+AIR_council_small_opposition = {
+	AIR_council_opposition_calc = yes
 	AIR_recalc_council_support = yes
 }
 
 AIR_council_medium_support = {
-	AIR_council_small_support = yes
-	AIR_council_small_support = yes
+	AIR_council_support_calc = yes
+	AIR_council_support_calc = yes
+	AIR_recalc_council_support = yes
 }
 
 AIR_council_medium_opposition = {
-	AIR_council_small_opposition = yes
-	AIR_council_small_opposition = yes
+	AIR_council_opposition_calc = yes
+	AIR_council_opposition_calc = yes
+	AIR_recalc_council_support = yes
 }
 
 AIR_council_large_support = {
-	AIR_council_small_support = yes
-	AIR_council_small_support = yes
-	AIR_council_small_support = yes
-	AIR_council_small_support = yes
+	AIR_council_support_calc = yes
+	AIR_council_support_calc = yes
+	AIR_council_support_calc = yes
+	AIR_council_support_calc = yes
+	AIR_recalc_council_support = yes
 }
 
 AIR_council_large_opposition = {
-	AIR_council_small_opposition = yes
-	AIR_council_small_opposition = yes
-	AIR_council_small_opposition = yes
-	AIR_council_small_opposition = yes
+	AIR_council_opposition_calc = yes
+	AIR_council_opposition_calc = yes
+	AIR_council_opposition_calc = yes
+	AIR_council_opposition_calc = yes
+	AIR_recalc_council_support = yes
 }
 
 AIR_council_extreme_support = {
 	if = {
-		limit = { check_variable = { AIR_council_member_1 < 5 }}
-		add_to_variable = { AIR_council_member_1 = 1}
+		limit = { check_variable = { council_name_1:harmony < 5 }}
+		add_to_variable = { council_name_1:harmony = 1}
 	}
 	if = {
-		limit = { check_variable = { AIR_council_member_2 < 5 }}
-		add_to_variable = { AIR_council_member_2 = 1}
+		limit = { check_variable = { council_name_2:harmony < 5 }}
+		add_to_variable = { council_name_2:harmony = 1}
 	}
 	if = {
-		limit = { check_variable = { AIR_council_member_3 < 5 }}
-		add_to_variable = { AIR_council_member_3 = 1}
+		limit = { check_variable = { council_name_3:harmony < 5 }}
+		add_to_variable = { council_name_3:harmony = 1}
 	}
 	if = {
-		limit = { check_variable = { AIR_council_member_4 < 5 }}
-		add_to_variable = { AIR_council_member_4 = 1}
+		limit = { check_variable = { council_name_4:harmony < 5 }}
+		add_to_variable = { council_name_4:harmony = 1}
 	}
 	if = {
-		limit = { check_variable = { AIR_council_member_5 < 5 }}
-		add_to_variable = { AIR_council_member_5 = 1}
+		limit = { check_variable = { council_name_5:harmony < 5 }}
+		add_to_variable = { council_name_5:harmony = 1}
 	}
 	AIR_recalc_council_support = yes
 }
 
 AIR_council_extreme_opposition = {
 	if = {
-		limit = { check_variable = { AIR_council_member_1 > 1 }}
-		subtract_from_variable = { AIR_council_member_1 = 1}
+		limit = { check_variable = { council_name_1:harmony > 1 }}
+		subtract_from_variable = { council_name_1:harmony = 1}
 	}
 	if = {
-		limit = { check_variable = { AIR_council_member_2 > 1 }}
-		subtract_from_variable = { AIR_council_member_2 = 1}
+		limit = { check_variable = { council_name_2:harmony > 1 }}
+		subtract_from_variable = { council_name_2:harmony = 1}
 	}
 	if = {
-		limit = { check_variable = { AIR_council_member_3 > 1 }}
-		subtract_from_variable = { AIR_council_member_3 = 1}
+		limit = { check_variable = { council_name_3:harmony > 1 }}
+		subtract_from_variable = { council_name_3:harmony = 1}
 	}
 	if = {
-		limit = { check_variable = { AIR_council_member_4 > 1 }}
-		subtract_from_variable = { AIR_council_member_4 = 1}
+		limit = { check_variable = { council_name_4:harmony > 1 }}
+		subtract_from_variable = { council_name_4:harmony = 1}
 	}
 	if = {
-		limit = { check_variable = { AIR_council_member_5 > 1 }}
-		subtract_from_variable = { AIR_council_member_5 = 1}
+		limit = { check_variable = { council_name_5:harmony > 1 }}
+		subtract_from_variable = { council_name_5:harmony = 1}
 	}
 	AIR_recalc_council_support = yes
 }

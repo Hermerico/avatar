@@ -209,7 +209,6 @@ reset_var_to_zero = {
 	set_variable = { taxation_var = 0 }
 	set_variable = { inflation_money = 0 }
 	set_variable = { weekly_peoples_investment_ic = 0 }
-	set_variable = { prosperity_productivity = 0 }
 
 	set_variable = { national_prosperity = 0 }
 	set_variable = { national_prosperity_cap = 0 }
@@ -1217,21 +1216,21 @@ factory_calculations = {
 	set_variable = { factories_bought_price = 0.2 }
 	multiply_variable = { factories_bought_price = mtth:civilian_cost_factor }
 
-	set_variable = { building_income_ratio = building_count }
-	set_variable = { building_divider = state_income }
-	multiply_variable = { building_divider = 10 }
-	clamp_variable = { var = building_divider  min = 1 }
-	divide_variable = { building_income_ratio = building_divider }
-	subtract_from_variable = { building_income_ratio = 1 }
-	clamp_variable = { var = building_income_ratio  min = -0.9  max = 1 }
-	set_variable = { building_income_factor = 1 }
-	add_to_variable = { building_income_factor = building_income_ratio }
-
-	multiply_variable = { factories_bought_price = building_income_factor }
-
-	clamp_variable = { var = factories_bought_price  min = 0.005 }
-
-	divide_variable = { factories_bought = factories_bought_price }
+#	set_variable = { building_income_ratio = building_count }
+#	set_variable = { building_divider = state_income }
+#	multiply_variable = { building_divider = 10 }
+#	clamp_variable = { var = building_divider  min = 1 }
+#	divide_variable = { building_income_ratio = building_divider }
+#	subtract_from_variable = { building_income_ratio = 1 }
+#	clamp_variable = { var = building_income_ratio  min = -0.9  max = 1 }
+#	set_variable = { building_income_factor = 1 }
+#	add_to_variable = { building_income_factor = building_income_ratio }
+#
+#	multiply_variable = { factories_bought_price = building_income_factor }
+#
+#	clamp_variable = { var = factories_bought_price  min = 0.005 }
+#
+#	divide_variable = { factories_bought = factories_bought_price }
 
 	set_variable = { ic_factor = 1 }
 	add_to_variable = { ic_factor = modifier@civilian_capacity_factor }
@@ -1357,22 +1356,83 @@ taxation_state_calc = {
 
 	##### prosperity 
 
-	add_to_variable = { ROOT.prosperity_productivity = mtth:local_prosperity_growth }
 	set_variable = { var_local_tax = mtth:local_tax }
 	set_variable = { var_local_tax_reduction = mtth:local_tax_reduction }
-	set_variable = { tax_reduction_inverted = var_local_tax_reduction }
-	multiply_variable = { tax_reduction_inverted = -1 }
+	set_variable = { tax_reduction_positive = var_local_tax_reduction }
+	multiply_variable = { tax_reduction_positive = -1 }
 	set_variable = { var_local_inflation_steal = mtth:local_inflation_steal }
 	set_variable = { var_local_goods_bought = mtth:local_goods_bought }
+	set_variable = { var_local_goods_bought_positive = var_local_goods_bought }
+	multiply_variable = { var_local_goods_bought_positive = -1 }
+	set_variable = { var_local_goods_expected = mtth:local_goods_expected }
+	set_variable = { var_local_goods_expected_positive = var_local_goods_expected }
+	multiply_variable = { var_local_goods_expected_positive = -1 }
 	set_variable = { var_local_prosperity_growth = mtth:local_prosperity_growth }
-	set_variable = { real_prosp_growth = var_local_prosperity_growth }
-	add_to_variable = { real_prosp_growth = var_local_tax_reduction }
-	add_to_variable = { real_prosp_growth = var_local_inflation_steal }
-	add_to_variable = { real_prosp_growth = var_local_goods_bought }
 
-	set_variable = { local_prosperity_cap_base = mtth:local_prosperity_cap_base }
-	set_variable = { local_prosperity_cap = mtth:local_prosperity_cap }
+
+	#### target
 	
+	set_variable = { prosp_weekly_bad_influence = var_local_goods_bought_positive }
+	add_to_variable = { prosp_weekly_bad_influence = tax_reduction_positive }
+	subtract_from_variable = { prosp_weekly_bad_influence = var_local_inflation_steal }
+
+	set_variable = { prosperity_target = var_local_prosperity_growth }
+	divide_variable = { prosperity_target = prosp_weekly_bad_influence }
+
+	set_temp_variable = { temp_prosperity_growth = 1 }
+	add_to_temp_variable = { temp_prosperity_growth = modifier@prosperity }
+	controller = {
+		add_to_temp_variable = { temp_prosperity_growth = modifier@prosperity }
+	}
+
+	clamp_temp_variable = {
+		var = temp_prosperity_growth
+		min = 0
+	}
+
+	multiply_variable = { prosperity_target = temp_prosperity_growth }
+	clamp_temp_variable = {
+		var = prosperity_target
+		min = 0.001
+	}
+
+	#### cap
+
+	set_variable = { local_prosperity_cap_base = var_local_goods_expected_positive }
+	set_variable = { local_prosperity_cap = var_local_goods_expected_positive }
+
+	set_variable = { prosperity_factor = modifier@prosperity_factor }
+	add_to_variable = { prosperity_factor = controller:modifier@prosperity_factor }
+
+	clamp_variable = {
+		var = prosperity_factor
+		min = 0
+	}
+
+	set_temp_variable = { temp_prosperity_factor = 1 }
+	add_to_temp_variable = { temp_prosperity_factor = prosperity_factor }
+
+	multiply_variable = { local_prosperity_cap = temp_prosperity_factor }
+	clamp_variable = {
+		var = local_prosperity_cap
+		min = 0.001
+	}
+
+	#### growth
+
+	set_variable = { local_prosperity_ratio = THIS.local_prosperity }
+	divide_variable = { local_prosperity_ratio = THIS.local_prosperity_cap }
+	clamp_variable = {
+		var = local_prosperity_ratio
+		min = 0.001
+	}
+
+	set_variable = { real_prosp_growth = THIS.prosperity_target }
+	divide_variable = { real_prosp_growth = THIS.local_prosperity_ratio }
+	subtract_from_variable = { real_prosp_growth = 1 }
+	multiply_variable = { real_prosp_growth = THIS.local_prosperity_cap }
+	multiply_variable = { real_prosp_growth = 0.1 }
+
 	add_to_variable = { local_prosperity = THIS.real_prosp_growth }
 
 	clamp_variable = { 

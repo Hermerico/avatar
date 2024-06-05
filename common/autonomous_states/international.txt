@@ -4,7 +4,7 @@ autonomy_state = {
 	
 	is_puppet = yes
 	
-	min_freedom_level = 4.0
+	min_freedom_level = 0.8
 	
 	manpower_influence = 0.7
 	
@@ -39,7 +39,7 @@ autonomy_state = {
 	}
 	
 	can_take_level = {
-		#trigger here
+		always = no
 	}
 
 	can_lose_level = {
@@ -53,12 +53,12 @@ autonomy_state = {
 
 
 autonomy_state = {
-	id = autonomy_satelite_state
+	id = autonomy_satelite_country
 	
 	default = yes
 	is_puppet = yes
 	
-	min_freedom_level = 4.0
+	min_freedom_level = 0.6
 	
 	manpower_influence = 0.7
 	
@@ -111,7 +111,7 @@ autonomy_state = {
 	
 	is_puppet = yes
 	
-	min_freedom_level = 4.5
+	min_freedom_level = 0.4
 	
 	manpower_influence = 0.7
 	
@@ -163,7 +163,7 @@ autonomy_state = {
 	
 	is_puppet = yes
 	
-	min_freedom_level = 4.5
+	min_freedom_level = 0.2
 	
 	manpower_influence = 0.7
 	
@@ -202,6 +202,6 @@ autonomy_state = {
 	}
 
 	can_lose_level = {
-		#trigger here
+		always = no
 	}
 }

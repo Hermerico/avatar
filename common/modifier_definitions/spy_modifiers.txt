@@ -56,7 +56,7 @@ spy_destabilisation_chance = {					#### chance to succed in destabilasing a coun
 	precision = 0
 }
 
-spy_destabilisation = {							#### chance to succed in destabilising a country
+spy_destabilisation = {							#### how much destabilising a country
 	color_type = good
 	value_type = percentage
 	precision = 0
@@ -65,5 +65,11 @@ spy_destabilisation = {							#### chance to succed in destabilising a country
 spy_destabilisation_regain = {					#### countries destabilisation from spies recovery every month
 	color_type = good
 	value_type = percentage
+	precision = 0
+}
+
+imprisonment_modifier = {					#### allows imprisonment
+	color_type = good
+	value_type = yes_no
 	precision = 0
 }

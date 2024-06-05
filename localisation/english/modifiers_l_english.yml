@@ -41,18 +41,30 @@
  expenses_50:0"£income_texticon  §Y50§!"
  expenses_50_blocked:0"£income_texticon  §R50§!"
  expenses_50_tooltip:0"It costs £income_texticon  §Y50§! to take the decision"
+ expenses_75:0"£income_texticon  §Y75§!"
+ expenses_75_blocked:0"£income_texticon  §R75§!"
+ expenses_75_tooltip:0"It costs £income_texticon  §Y75§! to take the decision"
  expenses_100:0"£income_texticon  §Y100§!"
  expenses_100_blocked:0"£income_texticon  §R100§!"
  expenses_100_tooltip:0"It costs £income_texticon  §Y100§! to take the decision"
+ expenses_125:0"£income_texticon  §Y125§!"
+ expenses_125_blocked:0"£income_texticon  §R125§!"
+ expenses_125_tooltip:0"It costs £income_texticon  §Y125§! to take the decision"
  expenses_150:0"£income_texticon  §Y150§!"
  expenses_150_blocked:0"£income_texticon  §R150§!"
  expenses_150_tooltip:0"It costs £income_texticon  §Y150§! to take the decision"
+ expenses_175:0"£income_texticon  §Y175§!"
+ expenses_175_blocked:0"£income_texticon  §R175§!"
+ expenses_175_tooltip:0"It costs £income_texticon  §Y175§! to take the decision"
  expenses_200:0"£income_texticon  §Y200§!"
  expenses_200_blocked:0"£income_texticon  §R200§!"
  expenses_200_tooltip:0"It costs £income_texticon  §Y200§! to take the decision"
  expenses_250:0"£income_texticon  §Y250§!"
  expenses_250_blocked:0"£income_texticon  §R250§!"
  expenses_250_tooltip:0"It costs £income_texticon  §Y250§! to take the decision"
+ expenses_300:0"£income_texticon  §Y300§!"
+ expenses_300_blocked:0"£income_texticon  §R300§!"
+ expenses_300_tooltip:0"It costs £income_texticon  §Y300§! to take the decision"
  expenses_500:0"£income_texticon  §Y500§!"
  expenses_500_blocked:0"£income_texticon  §R500§!"
  expenses_500_tooltip:0"It costs £income_texticon  §Y500§! to take the decision"
@@ -221,6 +233,7 @@
  weekly_casualty_war_weariness_desc:0 "Modifies the gain of War Weariness."
  war_weariness_factor:0 "£war_weariness_texticon   §YWar Weariness§! gain"
  war_weariness_factor_desc:0 "Modifies the gain of War Weariness."
+ war_weariness_stability_impact:0 "£war_weariness_texticon   §YWar Weariness§! Stability Impact"
 
  avatar_opinion_modifier:0 "Can influnce the Avatar´s opinion of us"
  women_recruitment_modifier:0 "Women are empowered"
@@ -278,6 +291,8 @@
  spy_destabilisation_chance:0 "£instability_texticon  Chance to destabilise a country"
  spy_destabilisation:0 "£instability_max_texticon  Max destabilisation"
  spy_destabilisation_regain:0 "£instability_texticon  Destabilisation regain monthly"
+ imprisonment_modifier:0 "£prison_texticon  Allows imprisonments"
+ allows_brainwashing_ttp:0 "Unlocks §YBrainwashing Decisions§!"
 
  dragons_modifier:0 "Recruitable Dragons"
  dragons_modifier_desc:0 "The number of dragons willing to join our ranks"
@@ -309,6 +324,9 @@
 
  weekly_centralisation:0 "£centralisation_weekly_texticon  Weekly Centralisation"
  centralisation_target_modifier:0 "£centralisation_target_texticon  Centralisation Target"
+
+ overlord_influence:0 "£influence_texticon Influence on Subjects"
+ subject_influence:0 "£influence_texticon  Influence as Subject"
 
  monthly_unit_quality:0 "Monthly £unit_quality_texticon  Unit Quality"
  unit_quality_target:0 "£unit_quality_texticon  Unit Quality Target"
@@ -424,7 +442,7 @@
 
 
  consumer_demand:0 "£consumer_goods_texticon  Consumer Demand"
- consumer_cost:0 "£consumer_goods_texticon  Cost for Consumer Demand"
+ consumer_cost:0 "£consumer_goods_texticon  Consumer Prices"
  grain_demand:0 "£resources_texticons|1  Grain Demand"
  animal_products_demand:0 "£resources_texticons|2  Animal Products Demand"
  textile_demand:0 "£resources_texticons|3  Textile Demand"
@@ -486,7 +504,7 @@
  max_bricks_building_k:0 "£economy_resources_texticons|5  Bricks Capacity (K)"
  max_steel_beams_building_k:0 "£economy_resources_texticons|6  Steel Beams Capacity (K)"
 
- prosperity:0 "£prosperity_texticon  Prosperity Growth"
+ prosperity:0 "£prosperity_texticon  Prosperity"
  prosperity_factor:0 "£prosperity_texticon  Max Prosperity"
 
 #trait

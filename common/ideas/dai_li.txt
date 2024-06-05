@@ -3,20 +3,73 @@ ideas = {
 	hidden_ideas = {
 
 		dai_li_headquaters = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
 			modifier = {
 				operative_slot = 1
 				monthly_dai_li_influence = 1
+			}
+		}
+
+		dai_li_training_rooms = {
+			modifier = {
+				operative_slot = 4
+				civil_infiltration_factor = 10
+			}
+		}
+
+		dai_li_prisons = {
+			modifier = {
+				imprisonment_modifier = 1
+				monthly_dai_li_influence = 1
+			}
+		}
+
+		dai_li_jo_dee = {
+			modifier = {
+				stability_factor = 0.05
+				monthly_dai_li_influence = 2
+			}
+		}
+
+		dai_li_surveillance = {
+			modifier = {
+				enemy_operative_detection_chance_factor = 0.2
+				revolt_risk = -0.5
+			}
+		}
+
+		dai_li_brainwashing_room = {
+			modifier = {
+				stability_factor = 0.05
+				war_weariness_factor = -0.2
+				custom_modifier_tooltip = allows_brainwashing_ttp
+			}
+		}
+
+		dai_li_politics_department = {
+			modifier = {
+				political_power_factor = 0.1
+				weekly_centralisation = 0.5
+			}
+		}
+
+		dai_li_grand_secretary_office = {
+			modifier = {
+				centralisation_target_modifier = 0.1
+				political_power_cap = 75
+			}
+		}
+
+		brainwashed_nobles = {
+			modifier = {
+				nobility_opinion = 20
+				unit_quality_target = -0.25
+			}
+		}
+
+		brainwashed_academics = {
+			modifier = {
+				academics_opinion = 20
+				research_speed_factor = -0.25
 			}
 		}
 
