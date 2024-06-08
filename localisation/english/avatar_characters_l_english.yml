@@ -47,6 +47,13 @@
  FIR_zeisan:0 "Zeisan"
  FIR_elua:0 "Elua"
 
+ SAT_aang:0 "Aang"
+ SAT_aang_description:0 "Aang"
+ SAT_appa:0 "Appa"
+ SAT_appa_description:0 "Appa Description"
+ SAT_monk_gyatso:0 "Gyatso"
+ SAT_monk_gyatso_description:0 "Gyatso Description"
+
  #Earthkingdom
  EAR_zaifeng:0 "Zaifeng"
  EAR_quon:0 "Quon"

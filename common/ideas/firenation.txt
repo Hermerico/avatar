@@ -244,6 +244,7 @@ ideas = {
 				stability_factor = 0.1
 				generate_wargoal_tension = 0.5
 				justify_war_goal_time = 0.5
+				opinion_of_avatar_modifier = 0.2
 			}
 		}
 		ruthless_expansionism = {

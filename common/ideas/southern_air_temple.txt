@@ -1,6 +1,19 @@
 ideas = {
 
 	country = {
+		home_of_the_avatar = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				avatar_opinion_modifier = 1
+			}
+		}
+
+
 		protecting_the_avatar = {
 			removal_cost = -1
 			

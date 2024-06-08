@@ -88,6 +88,74 @@ scripted_map_modes = {
 		update_daily = no
 	}
 
+	avatar_map_mode = {
+		top = {
+			type = state
+			color = {
+				set_temp_variable = { red = 0.5 }
+				set_temp_variable = { blue = 0.0 }
+				set_temp_variable = { green = 0.5 }
+				set_temp_variable = { alpha = 0.5 }
+
+				FROM = {
+
+					set_temp_variable = { opinion = 0 }
+					owner = { add_to_temp_variable = { opinion = mtth:avatar_opinion_modifier } }
+					multiply_temp_variable = { opinion = 0.005 }
+
+					subtract_from_temp_variable = { red = opinion }
+					add_to_temp_variable = { green = opinion }
+
+					if = {
+						limit = {
+							check_variable = { global.avatar_location = THIS.id }
+						}
+						set_temp_variable = { red = 0.0 }
+						set_temp_variable = { blue = 1.0 }
+						set_temp_variable = { green = 1.0 }
+						set_temp_variable = { alpha = 0.9 }
+					}
+
+				}
+				
+				#set_temp_variable = { thickness = 10.0 }
+				
+				#set_temp_variable = { highlighted = 1.0 }
+				
+			}
+
+			targets = {
+				
+			}
+		}
+		bottom = {
+			type = country
+
+			color = {
+				set_temp_variable = { red = 1.0 }
+				set_temp_variable = { blue = 0.0 }
+				set_temp_variable = { green = 0.0 }
+				set_temp_variable = { alpha = 0.9 }
+
+				FROM = {
+
+					set_temp_variable = { opinion = 0 }
+					add_to_temp_variable = { opinion = mtth:opinion_of_avatar }
+					multiply_temp_variable = { opinion = 0.01 }
+
+					subtract_from_temp_variable = { red = opinion }
+					add_to_temp_variable = { green = opinion }
+
+
+				}
+				
+			}
+		}
+		far_text = country
+		near_text = state
+		update_daily = no
+	}
+
 	state_culture_map_mode = {
 		top = {
 			type = state

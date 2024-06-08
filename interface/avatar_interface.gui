@@ -53,19 +53,20 @@ guiTypes = {
 		iconType ={
 			name ="title_bg"
 			spriteType = "GFX_ink_1"
-			position = { x= -100 y = 16 }
+			position = { x= 100 y = 16 }
 			scale = 0.8
-			Orientation = "CENTER_UP"
+			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
 		instantTextboxType = {
 			name = "avatar_title"
-			position = { x = -50 y = 38 }
+			position = { x = 150 y = 38 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
-			Orientation = "CENTER_UP"
+			Orientation = "UPPER_LEFT"
 			text = "AVATAR_TITLE"
+			format = left
 			maxWidth = 400
 			maxHeight = 20
 			fixedsize = yes
@@ -85,26 +86,14 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "avatar_portrait_window"
-			position = { x=355 y=40}
+			position = { x=55 y=40}
 			size = { width = 535 height = 100%% }
 
 			iconType = {
-				name ="aang_portrait"
-				spriteType = "GFX_avatar_aang"
+				name ="avatar_portrait"
+				#spriteType = "GFX_avatar_aang"
 				position = { x= 80 y = 74 }
-				pdx_tooltip = "AVATAR_AANG_TOOLTIP"
-			}
-			iconType = {
-				name ="aang_missing_portrait"
-				spriteType = "GFX_avatar_aang_missing"
-				position = { x= 80 y = 74 }
-				pdx_tooltip = "AVATAR_AANG_MISSING_TOOLTIP"
-			}
-			iconType = {
-				name ="misu_portrait"
-				spriteType = "GFX_avatar_misu"
-				position = { x= 80 y = 74 }
-				pdx_tooltip = "AVATAR_MISU_TOOLTIP"
+				pdx_tooltip = "AVATAR_TOOLTIP"
 			}
 			iconType = {
 				name = "leader_frame2"
@@ -116,17 +105,7 @@ guiTypes = {
 				name = "aang_name"
 				position = { x = 80 y = 291 }
 				font = "hoi_18mbs"
-				text = "AANG"
-				maxWidth = 155
-				maxHeight = 20
-				format = center
-				vertical_alignment = center
-			}
-			instantTextboxType = {
-				name = "misu_name"
-				position = { x = 80 y = 291 }
-				font = "hoi_18mbs"
-				text = "MISU"
+				text = "AVATAR_NAME"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
@@ -137,7 +116,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "avatarstatistics"
-			position = { x=175 y=280}
+			position = { x=-125 y=280}
 			size = { width = 535 height = 100%% }
 
 	
@@ -169,7 +148,7 @@ guiTypes = {
 			iconType ={
 				name ="avatar_age_wax"
 				spriteType = "GFX_wax"
-				position = { x= 426 y = 92 }
+				position = { x= 326 y = 92 }
 				scale = 0.65
 				alwaystransparent = yes
 			}
@@ -186,10 +165,10 @@ guiTypes = {
 			}
 			instantTextboxType = {
 				name = "avatarage"
-				position = { x = 370 y = 96 }
+				position = { x = 270 y = 98 }
 				font = "hoi_18mbs"
-				text = "[?global.avatar_age]"
-				maxWidth = 155
+				text = "AVATAR_AGE_TEXT"
+				maxWidth = 150
 				maxHeight = 20
 				format = center
 				vertical_alignment = center
@@ -206,7 +185,7 @@ guiTypes = {
 			iconType ={
 				name ="avatar_homecountry_wax"
 				spriteType = "GFX_wax"
-				position = { x= 426 y = 129 }
+				position = { x= 326 y = 129 }
 				scale = 0.65
 				alwaystransparent = yes
 			}
@@ -224,7 +203,7 @@ guiTypes = {
 			iconType ={
 				name ="avatar_air_home"
 				spriteType = "GFX_avatar_air"
-				position = { x= 430 y = 126 }
+				position = { x= 330 y = 126 }
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "AVATAR_AIRNOMADS"
 				pdx_tooltip_delayed = "AVATAR_AIR_ELEMENT_TOOLTIP"
@@ -233,7 +212,7 @@ guiTypes = {
 			iconType ={
 				name ="avatar_water_home"
 				spriteType = "GFX_avatar_water"
-				position = { x= 430 y = 126 }
+				position = { x= 330 y = 126 }
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "AVATAR_WATERTRIBES"
 				pdx_tooltip_delayed = "AVATAR_WATER_ELEMENT_TOOLTIP"
@@ -242,7 +221,7 @@ guiTypes = {
 			iconType ={
 				name ="avatar_fire_home"
 				spriteType = "GFX_avatar_fire"
-				position = { x= 430 y = 126 }
+				position = { x= 330 y = 126 }
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "AVATAR_FIRENATION"
 				pdx_tooltip_delayed = "AVATAR_FIRE_ELEMENT_TOOLTIP"
@@ -251,7 +230,7 @@ guiTypes = {
 			iconType ={
 				name ="avatar_earth_home"
 				spriteType = "GFX_avatar_earth"
-				position = { x= 430 y = 126 }
+				position = { x= 330 y = 126 }
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = "AVATAR_EARTHKINGDOM"
 				pdx_tooltip_delayed = "AVATAR_EARTH_ELEMENT_TOOLTIP"
@@ -268,7 +247,7 @@ guiTypes = {
 			iconType ={
 				name ="avatar_influence_wax"
 				spriteType = "GFX_wax"
-				position = { x= 426 y = 166 }
+				position = { x= 326 y = 166 }
 				scale = 0.65
 				alwaystransparent = yes
 			}
@@ -285,96 +264,74 @@ guiTypes = {
 			}
 			instantTextboxType = {
 				name = "avatar_influence_value"
-				position = { x = 368 y = 171 }
+				position = { x = 268 y = 173 }
 				font = "hoi_16mbs"
-				text = "[?global.avatar_influence]%"
-				maxWidth = 160
+				text = "AVATAR_INFLUENCE_TEXT"
+				maxWidth = 155
 				maxHeight = 20
 				format = center
 				vertical_alignment = center
 				pdx_tooltip = "AVATAR_INFLUENCE_VALUE_TOOLTIP"
 			}
+
+			containerWindowType = {
+				name = "opinion_container"
+				position = { x=275 y=0}
+				size = { width = 535 height = 100%% }
+
+				iconType ={
+					name ="avatar_opinion_bg"
+					spriteType = "GFX_diplo_opinion_bg"
+					position = { x= 106 y = 98 }
+					alwaystransparent = yes
+				}
+
+				iconType ={
+					name ="avatar_icon"
+					spriteType = "GFX_avatar_icon"
+					position = { x= 150 y = 128 }
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "we"
+					position = { x = 44 y = 106 }
+					font = "hoi_16mbs"
+					text = "[ROOT.GetFlag]"
+					maxWidth = 160
+					maxHeight = 20
+					format = center
+				}
+				instantTextboxType = {
+					name = "avatar_opinion_value"
+					position = { x = 94 y = 142 }
+					font = "hoi_16mbs"
+					text = "AVATAR_OPINION_TEXT"
+					maxWidth = 60
+					maxHeight = 20
+					format = center
+					vertical_alignment = center
+					pdx_tooltip = "AVATAR_OPINION_TOOLTIP"
+				}
+				instantTextboxType = {
+					name = "our_opinion_value"
+					position = { x = 124 y = 96 }
+					font = "hoi_16mbs"
+					text = "AVATAR_SUPPORT_TEXT"
+					maxWidth = 60
+					maxHeight = 20
+					format = center
+					vertical_alignment = center
+					pdx_tooltip = "AVATAR_SUPPORT_TOOLTIP"
+				}
+			}
 	
 			iconType ={
-				name ="avatar_opinion_bg"
-				spriteType = "GFX_ink_2"
-				position = { x= 216 y = 198 }
-				scale = 0.45
-				alwaystransparent = yes
-			}
-			iconType ={
-				name ="avatar_opinion_wax"
-				spriteType = "GFX_wax"
-				position = { x= 426 y = 200 }
-				scale = 0.65
-				alwaystransparent = yes
-			}
-			instantTextboxType = {
-				name = "avatar_opinion"
-				position = { x = 176 y = 210 }
-				font = "hoi_16mbs"
-				text = "AVATAR_OPINION"
-				maxWidth = 160
-				maxHeight = 20
-				format = center
-				vertical_alignment = center
-				pdx_tooltip = "AVATAR_OPINION_TOOLTIP"
-			}
-			iconType ={
-				name ="avatar_friendly"
-				spriteType = "GFX_avatar_friendly"
-				position = { x= 436 y = 204 }
-				scale = 0.6
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "AVATAR_OPINION_FRIENDLY_TOOLTIP"
-			}
-			iconType ={
-				name ="avatar_hostile"
-				spriteType = "GFX_avatar_hostile"
-				position = { x= 436 y = 204 }
-				scale = 0.6
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "AVATAR_OPINION_HOSTILE_TOOLTIP"
-			}
-	
-			#instantTextboxType = {
-			#	name = "avatar_location"
-			#	position = { x = 176 y = 254 }
-			#	font = "hoi_16mbs"
-			#	text = "AVATAR_LOCATION"
-			#	maxWidth = 160
-			#	maxHeight = 20
-			#	format = center
-			#	vertical_alignment = center
-			#	pdx_tooltip = "AVATAR_LOCATION_TOOLTIP"
-			#}
-			iconType ={
-				name ="avatar_loc_unknown"
-				spriteType = "GFX_terrain_unknown"
-				position = { x= 200 y = -140 }
+				name ="avatar_location"
+				#spriteType = "GFX_terrain_unknown"
+				position = { x= 200 y = -160 }
 				Orientation = "LOWER_LEFT"
-				pdx_tooltip = "AVATAR_ICEBERG"
-			}
-			iconType ={
-				name ="avatar_loc_sat"
-				spriteType = "GFX_terrain_southern_air_temple"
-				position = { x= 200 y = -140 }
-				Orientation = "LOWER_LEFT"
-				pdx_tooltip = "AVATAR_SAT"
-			}
-			#iconType ={
-			#	name ="avatar_loc_iceberg"
-			#	spriteType = "GFX_terrain_unknown"
-			#	position = { x= 200 y = -150 }
-			#	Orientation = "LOWER_LEFT"
-			#	pdx_tooltip = "AVATAR_ICEBERG"
-			#}
-			iconType ={
-				name ="avatar_loc_swt"
-				spriteType = "GFX_terrain_harbour_city"
-				position = { x= 200 y = -140 }
-				Orientation = "LOWER_LEFT"
-				pdx_tooltip = "AVATAR_SWT"
+				pdx_tooltip = "AVATAR_LOCATION_NAME"
 			}
 
 		}
@@ -558,7 +515,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "team_avatar_entry"
-			position = { x = 120 y = 76 }
+			position = { x = 420 y = 76 }
 			size = { width = 550 height = 100%% }
 			verticalScrollbar = "right_vertical_slider"
 			clipping = no
@@ -590,200 +547,28 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "avatarteam"
-			position = { x=220 y=-160}
+			position = { x=420 y=-160}
 
 			iconType = {
-				name ="appa_portrait"
-				spriteType = "GFX_appa"
-				position = { x= -100 y = 390 }
-				pdx_tooltip = "AVATAR_APPA_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "animal1"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = -105 y = 386 }		
-				alwaystransparent = yes
-				scale = 0.50
+				name ="team_1_portrait"
+				#spriteType = "GFX_appa"
+				position = { x= -10 y = 390 }
+				pdx_tooltip = "AVATAR_TEAM_1_TOOLTIP"
 			}
 
 			iconType = {
-				name ="momo_portrait"
-				spriteType = "GFX_momo"
-				position = { x= -100 y = 480 }
-				pdx_tooltip = "AVATAR_MOMO_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "animal2"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = -105 y = 476 }		
-				alwaystransparent = yes
-				scale = 0.50
+				name ="team_2_portrait"
+				position = { x= 70 y = 390 }
+				pdx_tooltip = "AVATAR_TEAM_2_TOOLTIP"
 			}
 
 			iconType = {
-				name ="hawky_portrait"
-				spriteType = "GFX_hawky"
-				position = { x= -100 y = 570 }
-				pdx_tooltip = "AVATAR_HAWKY_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "animal3"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = -105 y = 566 }		
-				alwaystransparent = yes
-				scale = 0.50
+				name ="team_3_portrait"
+				position = { x= 150 y = 390 }
+				pdx_tooltip = "AVATAR_TEAM_3_TOOLTIP"
 			}
 
-
-
-			iconType = {
-				name ="sokka_portrait"
-				spriteType = "GFX_sokka"
-				position = { x= -26 y = 390 }
-				pdx_tooltip = "AVATAR_SOKKA_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "generic1"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = -31 y = 386 }		
-				alwaystransparent = yes
-				scale = 0.50
-			}
-
-			iconType = {
-				name ="suki_portrait"
-				spriteType = "GFX_suki"
-				position = { x= -26 y = 480 }
-				pdx_tooltip = "AVATAR_SUKI_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "generic2"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = -31 y = 476 }		
-				alwaystransparent = yes
-				scale = 0.50
-			}
-
-			iconType = {
-				name ="iroh_portrait"
-				spriteType = "GFX_iroh"
-				position = { x= -26 y = 570 }
-				pdx_tooltip = "AVATAR_IROH_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "generic3"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = -31 y = 566 }		
-				alwaystransparent = yes
-				scale = 0.50
-			}
-
-
-
-			iconType = {
-				name ="katara_portrait"
-				spriteType = "GFX_katara"
-				position = { x= 45 y = 390 }
-				pdx_tooltip = "AVATAR_KATARA_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "waterbender_teacher"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = 40 y = 386 }		
-				alwaystransparent = yes
-				scale = 0.50
-			}
-
-			iconType = {
-				name ="toph_portrait"
-				spriteType = "GFX_toph"
-				position = { x= 45 y = 480 }
-				pdx_tooltip = "AVATAR_TOPH_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "earthbender_teacher"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = 40 y = 476 }		
-				alwaystransparent = yes
-				scale = 0.50
-			}
-
-			iconType = {
-				name ="zuko_portrait"
-				spriteType = "GFX_zuko"
-				position = { x= 45 y = 570 }
-				pdx_tooltip = "AVATAR_ZUKO_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "firebender_teacher"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = 40 y = 566 }		
-				alwaystransparent = yes
-				scale = 0.50
-			}
-
-			iconType = {
-				name ="gyatso_portrait"
-				spriteType = "GFX_gyatso"
-				position = { x= 45 y = 660 }
-				pdx_tooltip = "AVATAR_GYATSO_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "airbender_teacher"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = 40 y = 656 }		
-				alwaystransparent = yes
-				scale = 0.50
-			}
 			
-			
-			
-			
-			iconType = {
-				name ="boulder_portrait"
-				spriteType = "GFX_Boulder"
-				position = { x= 45 y = 480 }
-				pdx_tooltip = "AVATAR_BOULDER_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name ="jet_portrait"
-				spriteType = "GFX_Jet"
-				position = { x= -26 y = 660 }
-				pdx_tooltip = "AVATAR_JET_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "jet_potential"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = -31 y = 656 }		
-				alwaystransparent = yes
-				scale = 0.50
-			}
-			iconType = {
-				name ="bumi_portrait"
-				spriteType = "GFX_Bumi"
-				position = { x= 45 y = 480 }
-				pdx_tooltip = "AVATAR_BUMI_TOOLTIP"
-				scale = 0.37
-			}
-			iconType = {
-				name = "bumi_potential"
-				spriteType = "GFX_diplo_leader_frame"
-				position = { x = -105 y = 656 }		
-				alwaystransparent = yes
-				scale = 0.50
-			}
 
 		}
 

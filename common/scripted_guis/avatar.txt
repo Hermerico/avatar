@@ -82,64 +82,29 @@ scripted_gui = {
 				has_country_flag = avatar_hostile
 			}
 
-			appa_portrait_visible = {
-				has_global_flag = avatar_team_appa
-			}
-			momo_portrait_visible = {
-				has_global_flag = avatar_team_momo
-			}
-			hawky_portrait_visible = {
-				has_global_flag = avatar_team_hawky
-			}
-
-			sokka_portrait_visible = {
-				has_global_flag = avatar_team_sokka
-			}
-			suki_portrait_visible = {
-				has_global_flag = avatar_team_suki
-			}
-			iroh_portrait_visible = {
-				has_global_flag = avatar_team_iroh
-			}
-
-			katara_portrait_visible = {
-				has_global_flag = avatar_team_katara
-			}
-			toph_portrait_visible = {
-				has_global_flag = avatar_team_toph
-			}
-			zuko_portrait_visible = {
-				has_global_flag = avatar_team_zuko
-			}
-			gyatso_portrait_visible = {
-				has_global_flag = avatar_team_gyatso
-			}
-			
-			boulder_portrait_visible = {
-				has_global_flag = avatar_team_boulder
-			}
-			jet_portrait_visible = {
-				has_global_flag = avatar_team_jet
-			}
-			bumi_portrait_visible = {
-				has_global_flag = avatar_team_bumi
-			}
-
-			avatar_loc_unknown_visible = {
-				has_global_flag = avatar_unknown
-			}
-			avatar_loc_sat_visible = {
-				has_global_flag = avatar_sat
-			}
-			#avatar_loc_iceberg_visible = {
-			#	has_global_flag = avatar_iceberg
-			#}
-			avatar_loc_swt_visible = {
-				has_global_flag = avatar_swt
-			}
 		}
 
 		properties = {
+			avatar_portrait = {
+				image = "GFX_Portrait_[?global.avatar.GetTokenKey]"
+			}
+			avatar_location = {
+				image = "GFX_terrain_[?global.avatar_location.GetID]"
+			}
+
+			team_1_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^1.GetTokenKey]_small"
+			}
+			team_2_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^2.GetTokenKey]_small"
+			}
+			team_3_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^3.GetTokenKey]_small"
+			}
+			team_4_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^4.GetTokenKey]_small"
+			}
+
 			spirituality = {
 				x = global.avatar_spirituality
 			}

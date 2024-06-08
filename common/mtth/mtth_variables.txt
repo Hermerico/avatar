@@ -804,6 +804,39 @@ overlord_influence = {
 	}
 }
 
+avatar_opinion = {
+	base = 0
+	modifier = {
+		set_temp_variable = { avatar_opinion = 50 }
+
+		set_temp_variable = { avatar_opinion_tension = ROOT.has_added_tension_amount }
+		multiply_temp_variable = { avatar_opinion_tension = -1 }
+
+		set_temp_variable = { avatar_opinion_modifier = modifier@avatar_opinion_modifier }
+		multiply_temp_variable = { avatar_opinion_modifier = 100 }
+
+		add_to_temp_variable = { avatar_opinion = avatar_opinion_tension }
+		add_to_temp_variable = { avatar_opinion = avatar_opinion_modifier }
+		
+		add = avatar_opinion
+	}
+}
+
+opinion_of_avatar = {
+	base = 0
+	modifier = {
+		set_temp_variable = { opinion_of_avatar = global.base_avatar_opinion }
+
+		set_temp_variable = { opinion_of_avatar_modifier = modifier@opinion_of_avatar_modifier }
+		multiply_temp_variable = { opinion_of_avatar_modifier = 100 }
+
+		add_to_temp_variable = { opinion_of_avatar = opinion_of_avatar_modifier }
+		
+		add = opinion_of_avatar
+	}
+}
+
+
 
 colonial_guards_effect = {
 	base = 0

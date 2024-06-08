@@ -1434,6 +1434,7 @@ industrial_zone_modifier_3 = {
 	modifier = {
 		set_temp_variable = { zone_size = 0 }
 		add_to_temp_variable = { zone_size = building_level@factory }
+		add_to_temp_variable = { zone_size = building_level@dockyard }
 		add_to_temp_variable = { zone_size = building_level@steel_beam_factory }
 		add_to_temp_variable = { zone_size = building_level@steelworks }
 
@@ -1998,7 +1999,7 @@ local_prosperity_growth = {
 		add_to_temp_variable = { local_prosperity = 2_dockyard_value }
 
 
-		multiply_temp_variable = { local_prosperity = 0.2 }
+		multiply_temp_variable = { local_prosperity = 0.1 }
 
 
 		add = local_prosperity

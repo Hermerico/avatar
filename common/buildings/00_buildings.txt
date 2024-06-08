@@ -599,7 +599,7 @@ buildings = {
 		max_iron_building_k = 0.5
 		max_steel_building_k = 0.5
 
-		prosperity = 0.05
+		prosperity_building = 0.05
 
 		urbanisation_factor = 0.03
 	}

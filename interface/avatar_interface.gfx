@@ -109,6 +109,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_avatar_icon"
+		textureFile = "gfx/interface/avatar/avatar_icon.dds"
+	}
+
+	spriteType = {
 		name = "GFX_avatar_aang"
 		textureFile = "gfx/leaders/SAT/Portrait_Southernairtemple_Aang.dds"
 	}

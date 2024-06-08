@@ -99,10 +99,15 @@ on_actions = {
 				set_variable = { global.max_refugees_accepted = 0 }
 				set_variable = { global.max_local_prosperity = 0 }
 
+				set_variable = { global.total_population_k = 0 }
+
 				### set_variable = { global.migrat_1 = 0 }
 				### set_variable = { global.migrat_2 = 0 }
 
 				every_state = {
+					add_to_variable = { global.total_population_k = state_population_k }
+
+					
 					### migration attraction
 					set_variable = { local_migration_attraction = mtth:urbanisation_migration_attraction }
 					add_to_variable = { local_migration_attraction = mtth:workers_needed }

@@ -267,6 +267,7 @@ farmer_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@farmer_factor }
+		add_to_temp_variable = { factor = modifier@farmer_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -276,6 +277,7 @@ miller_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@miller_factor }
+		add_to_temp_variable = { factor = modifier@miller_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -285,6 +287,7 @@ fisher_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@fisher_factor }
+		add_to_temp_variable = { factor = modifier@fisher_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -294,6 +297,7 @@ rancher_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@rancher_factor }
+		add_to_temp_variable = { factor = modifier@rancher_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -303,6 +307,7 @@ lumberjack_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@lumberjack_factor }
+		add_to_temp_variable = { factor = modifier@lumberjack_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -312,6 +317,7 @@ miner_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@miner_factor }
+		add_to_temp_variable = { factor = modifier@miner_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -321,6 +327,7 @@ weaver_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@weaver_factor }
+		add_to_temp_variable = { factor = modifier@weaver_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -330,6 +337,7 @@ smith_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@smith_factor }
+		add_to_temp_variable = { factor = modifier@smith_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -339,6 +347,7 @@ harbour_worker_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@harbour_worker_factor }
+		add_to_temp_variable = { factor = modifier@harbour_worker_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -348,6 +357,7 @@ shopkeeper_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@shopkeeper_factor }
+		add_to_temp_variable = { factor = modifier@shopkeeper_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -357,6 +367,7 @@ craftsman_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@craftsman_factor }
+		add_to_temp_variable = { factor = modifier@craftsman_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}
@@ -366,6 +377,7 @@ industrial_worker_factor = {
 	modifier = {
 		set_temp_variable = { factor = 1 }
 		add_to_temp_variable = { factor = controller:modifier@industrial_worker_factor }
+		add_to_temp_variable = { factor = modifier@industrial_worker_factor }
 		clamp_temp_variable = { var = factor min = 0.1 }
 		add = factor
 	}

@@ -1,6 +1,16 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			set_variable = { global.avatar_birth = 0 }
+			set_variable = { global.avatar = token:SAT_aang }
+			set_variable = { global.avatar_location = 329.id }
+
+			add_to_array = { global.avatar_team = token:SAT_aang }
+			
+			add_to_array = { global.avatar_team = token:SAT_appa }
+			add_to_array = { global.avatar_team = token:SAT_monk_gyatso }
+
+
 			if = {
 				limit = {
 					has_start_date < 13.1.1
@@ -12,7 +22,7 @@ on_actions = {
 				set_global_flag = avatar_team_gyatso
 
 				set_variable = { global.avatar_age = 12 }
-				set_variable = { global.avatar_influence = 50 }
+				set_variable = { global.base_avatar_opinion = 50 }
 				set_variable = { global.avatar_spirituality = 25 }
 				set_variable = { global.avatar_state = 0 }
 				set_variable = { global.avatar_airbender_skill = 80 }
@@ -33,27 +43,7 @@ on_actions = {
 				set_global_flag = avatar_unknown
 				set_global_flag = avatar_iceberg
 
-				if = {
-					limit = {
-						has_start_date < 60.01.01
-					}
-					set_variable = { global.avatar_age = 52 }
-				}
-				if = {
-					limit = {
-						has_start_date > 60.01.01
-						has_start_date < 3925.01.01
-					}
-					set_variable = { global.avatar_age = 106 }
-				}
-				if = {
-					limit = {
-						has_start_date > 3925.01.01
-						has_start_date < 113.01.01
-					}
-					set_variable = { global.avatar_age = 111 }
-				}
-				set_variable = { global.avatar_influence = 20 }
+				set_variable = { global.base_avatar_opinion = 20 }
 				set_variable = { global.avatar_airbender_skill = 100 }
 				set_variable = { global.avatar_waterbender_skill = 0 }
 				set_variable = { global.avatar_earthbender_skill = 0 }
@@ -85,40 +75,47 @@ on_actions = {
 
 	on_daily = {
 		effect = {
-			clamp_variable = {
-			    var = global.avatar_influence
-			    min = 0
-			    max = 100
-			}
-			clamp_variable = {
-			    var = global.avatar_spirituality
-			    min = 0
-			    max = 100
-			}
-			clamp_variable = {
-			    var = global.avatar_state
-			    min = 0
-			    max = 100
-			}
-			clamp_variable = {
-			    var = global.avatar_airbender_skill
-			    min = 0
-			    max = 100
-			}
-			clamp_variable = {
-			    var = global.avatar_waterbender_skill
-			    min = 0
-			    max = 100
-			}
-			clamp_variable = {
-			    var = global.avatar_earthbender_skill
-			    min = 0
-			    max = 100
-			}
-			clamp_variable = {
-			    var = global.avatar_firebender_skill
-			    min = 0
-			    max = 100
+			if = {
+				limit = {
+					has_country_flag = calculator
+				}
+
+				clamp_variable = {
+					var = global.avatar_influence
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_spirituality
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_state
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_airbender_skill
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_waterbender_skill
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_earthbender_skill
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_firebender_skill
+					min = 0
+					max = 100
+				}
+
 			}
 		}
 	}
@@ -129,6 +126,23 @@ on_actions = {
 				limit = {
 					has_country_flag = calculator
 				}
+
+
+				set_variable = { global.avatar_influence = 0 }
+
+				every_country = {
+					set_variable = { avatar_influence_impact = mtth:opinion_of_avatar }
+					set_variable = { population_of_global_percent = max_manpower_k }
+					multiply_variable = { population_of_global_percent = 1000 }
+					divide_variable = { population_of_global_percent = global.total_population_k }
+					multiply_variable = { avatar_influence_impact = population_of_global_percent }
+					multiply_variable = { avatar_influence_impact = 0.001 }
+					clamp_variable = { var = avatar_influence_impact min = 0 }
+
+					add_to_variable = { global.avatar_influence = avatar_influence_impact }
+				}
+
+
 				if = {
 					limit = {
 						OR = {

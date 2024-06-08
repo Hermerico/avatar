@@ -12,7 +12,7 @@ country_event = {
 				days = 0
 			}
 		}
-		set_global_flag = avatar_sat
+		set_global_flag = avatar_swt
 		clr_global_flag = avatar_unknown
 	}
 }

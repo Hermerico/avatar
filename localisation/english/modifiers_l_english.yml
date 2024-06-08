@@ -235,7 +235,8 @@
  war_weariness_factor_desc:0 "Modifies the gain of War Weariness."
  war_weariness_stability_impact:0 "£war_weariness_texticon   §YWar Weariness§! Stability Impact"
 
- avatar_opinion_modifier:0 "Can influnce the Avatar´s opinion of us"
+ avatar_opinion_modifier:0 "Avatar´s opinion of us"
+ opinion_of_avatar_modifier:0 "Countries Opinion of the Avatar"
  women_recruitment_modifier:0 "Women are empowered"
  tech_share_modifier:0 "§YInventions§! can not be stolen or shared"
  allow_colony_modifier:0 "Can colonise uninhabited lands"
@@ -505,6 +506,7 @@
  max_steel_beams_building_k:0 "£economy_resources_texticons|6  Steel Beams Capacity (K)"
 
  prosperity:0 "£prosperity_texticon  Prosperity"
+ prosperity_building:0 "£prosperity_texticon  Prosperity"
  prosperity_factor:0 "£prosperity_texticon  Max Prosperity"
 
 #trait
@@ -2631,7 +2633,7 @@
  coordination_bonus_desc:0 "Coordination increases the amount of damage dealt to the primary target in combat. Other damage is spread over all other targets."
  MODIFIER_COORDINATION_BONUS_DESC:0 "Coordination increases the amount of damage dealt to the primary target in combat. Other damage is spread over all other targets."
  MODIFIER_EMBARGO_THRESHOLD_FACTOR:0 "Embargo Tension Limit"
- MODIFIER_EMBARGO_THRESHOLD_FACTOR_DESC:0 "Modifies the world tension threshold that a target needs to have reached, in order to send an embargo."
+ MODIFIER_EMBARGO_THRESHOLD_FACTOR_DESC:0 "Modifies the spirit anger threshold that a target needs to have reached, in order to send an embargo."
  MODIFIER_EMBARGO_COST_FACTOR:0 "Embargo Cost Modifier"
  MODIFIER_EMBARGO_COST_FACTOR_DESC:0 "Modifies the cost to send an embargo."
  embargo_threshold_factor:0 "Embargo Tension Limit"

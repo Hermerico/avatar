@@ -219,7 +219,13 @@ migration_attraction = {							#### factor on migration attraction in state or c
 	postfix = none
 }
 
-prosperity = {										#### factor on productivity in a state or country
+prosperity = {										#### factor on productivity in a state or country (not buildings)
+	color_type = good 
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+prosperity_building = {										#### factor on productivity in a building
 	color_type = good 
 	value_type = percentage
 	precision = 2
@@ -335,9 +341,15 @@ bender_disabled = {									#### disables monthly bender growth
 
 
 
-avatar_opinion_modifier = {							#### avatar opinion currently unused
+avatar_opinion_modifier = {							#### avatar opinion of us
 	color_type = good
-	value_type = yes_no
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
+opinion_of_avatar_modifier = {							#### avatar opinion of us
+	color_type = neutral
+	value_type = percentage
 	precision = 0
 	postfix = none
 }

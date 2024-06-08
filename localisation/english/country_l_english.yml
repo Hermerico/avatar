@@ -12,7 +12,7 @@
  WAR_SUPPORT_EFFECT_TITLE:0 "\n§HEffects from our current Militarism:§!\n"
  WAR_SUPPORT_AT_OFFENSIVE_WAR:0 "Offensive war: $VALUE|+=2%$"
  WAR_SUPPORT_AT_DEFENSIVE_WAR:0 "Defensive war: $VALUE|+=2%$"
- WAR_SUPPORT_TENSION:0 "World Tension: $VALUE|+=2%$"
+ WAR_SUPPORT_TENSION:0 "Spirit Anger: $VALUE|+=2%$"
  WAR_SUPPORT_BEING_BOMBED:0 "Enemy bombing: $VALUE|+=2%$"
  WAR_SUPPORT_INTERCEPTION:0 "Interception: $VALUE|+=2%$"
  WAR_SUPPORT_HEROES_BEING_KILLED:1 "Combat Casualties: $VALUE|+=2%$"

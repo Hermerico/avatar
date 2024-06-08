@@ -2945,7 +2945,7 @@ leader_traits = {
 	}
 	alms_and_pacification = {
 		random = no
-		avatar_opinion_modifier = 0
+		avatar_opinion_modifier = 0.05
 		income = -0.1
 		weekly_war_weariness = -0.01
 		stability_factor = 0.05
@@ -2961,7 +2961,7 @@ leader_traits = {
 	}
 	philosophical_principles = {
 		random = no
-		avatar_opinion_modifier = 1
+		avatar_opinion_modifier = 0.1
 		air_culture_drift = 0.01
 		research_speed_factor = 0.1
 		academics_opinion = 5
@@ -2982,7 +2982,7 @@ leader_traits = {
 	}
 	indoctrinal_service = {
 		random = no
-		avatar_opinion_modifier = 0
+		avatar_opinion_modifier = -0.5
 		offensive_war_stability_factor = 0.1
 		political_power_factor = 0.1
 		drift_defence_factor = 0.25
@@ -2997,7 +2997,7 @@ leader_traits = {
 	}
 	service_to_the_avatar = {
 		random = no
-		avatar_opinion_modifier = 1
+		avatar_opinion_modifier = 0.25
 		air_culture_drift = 0.01
 		clergy_opinion = 10
 		political_power_cost = @inst1

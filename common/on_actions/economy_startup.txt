@@ -4,6 +4,18 @@ on_actions = {
 		effect = {
 			every_country = {
 
+				set_variable = { animal_products_variable = 0 }
+				set_variable = { textile_variable = 0 }
+				set_variable = { wood_variable = 0 }
+				set_variable = { minerals_variable = 0 }
+				set_variable = { iron_variable = 0 }
+				set_variable = { steel_variable = 0 }
+				set_variable = { consumer_goods_variable = 0 }
+				set_variable = { luxury_goods_variable = 0 }
+				set_variable = { planks_variable = 0 }
+				set_variable = { bricks_variable = 0 }
+				set_variable = { steel_beams_variable = 0 }
+
 				country_event = { id = population_calc.1 }
 
 				country_event = { id = economy.1 }

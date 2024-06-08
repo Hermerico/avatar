@@ -47,6 +47,36 @@ scripted_gui = {
 
 	}
 
+	terrain_anchor = {
+		context_type = selected_state_context
+		
+		window_name = "terrain_anchor_ui"
+		parent_window_name = terrain_anchor
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			
+		}
+
+		properties = {
+			special_icon = {
+				image = "GFX_terrain_[THIS.GetID]"
+			}
+		}
+
+		dynamic_lists = {
+			
+		}
+
+		triggers = {
+			
+		}
+
+	}
+
 	population_job_ui_window = {
 		context_type = selected_state_context
 		

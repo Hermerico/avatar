@@ -36,6 +36,7 @@ add_ideas = {
 
 	pacifist_detachment
 	nomadic_lifestyle
+	home_of_the_avatar
 
 	international_trade
 	construction_efforts_law
@@ -67,6 +68,10 @@ every_character = {
 }
 
 ### important to recruit non monks after this effect
+
+recruit_character = SAT_aang
+recruit_character = SAT_appa
+
 
 recruit_character = SAT_extinct_nation
 recruit_character = SAT_council

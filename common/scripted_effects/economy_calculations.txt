@@ -1376,11 +1376,12 @@ taxation_state_calc = {
 	add_to_variable = { prosp_weekly_bad_influence = tax_reduction_positive }
 	subtract_from_variable = { prosp_weekly_bad_influence = var_local_inflation_steal }
 
-	set_variable = { prosperity_target = var_local_prosperity_growth }
-	divide_variable = { prosperity_target = prosp_weekly_bad_influence }
+	set_variable = { prosperity_target_percent = var_local_prosperity_growth }
+	divide_variable = { prosperity_target_percent = prosp_weekly_bad_influence }
 
 	set_temp_variable = { temp_prosperity_growth = 1 }
 	add_to_temp_variable = { temp_prosperity_growth = modifier@prosperity }
+	add_to_temp_variable = { temp_prosperity_growth = modifier@prosperity_building }
 	controller = {
 		add_to_temp_variable = { temp_prosperity_growth = modifier@prosperity }
 	}
@@ -1390,9 +1391,9 @@ taxation_state_calc = {
 		min = 0
 	}
 
-	multiply_variable = { prosperity_target = temp_prosperity_growth }
+	multiply_variable = { prosperity_target_percent = temp_prosperity_growth }
 	clamp_temp_variable = {
-		var = prosperity_target
+		var = prosperity_target_percent
 		min = 0.001
 	}
 
@@ -1427,11 +1428,38 @@ taxation_state_calc = {
 		min = 0.001
 	}
 
-	set_variable = { real_prosp_growth = THIS.prosperity_target }
+	set_variable = { real_prosp_growth = THIS.prosperity_target_percent }
 	divide_variable = { real_prosp_growth = THIS.local_prosperity_ratio }
 	subtract_from_variable = { real_prosp_growth = 1 }
 	multiply_variable = { real_prosp_growth = THIS.local_prosperity_cap }
 	multiply_variable = { real_prosp_growth = 0.1 }
+
+	set_variable = { prosperity_target = THIS.local_prosperity_cap }
+	multiply_variable = { prosperity_target = THIS.prosperity_target_percent }
+	set_variable = { prosperity_change_max = THIS.prosperity_target }
+	subtract_from_variable = { prosperity_change_max = THIS.local_prosperity }
+	if = {
+		limit = {
+			check_variable = {
+				local_prosperity < prosperity_target
+			}
+		}
+		clamp_variable = {
+			var = real_prosp_growth
+			max = prosperity_change_max
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				local_prosperity > prosperity_target
+			}
+		}
+		clamp_variable = {
+			var = real_prosp_growth
+			min = prosperity_change_max
+		}
+	}
 
 	add_to_variable = { local_prosperity = THIS.real_prosp_growth }
 
@@ -1441,8 +1469,14 @@ taxation_state_calc = {
 		max = THIS.local_prosperity_cap
 	}
 
+
+	#### tax and inflation
+
 	add_to_variable = { ROOT.taxation_var = var_local_tax }
 	subtract_from_variable = { ROOT.inflation_money = var_local_inflation_steal }
+
+
+	#### peoples initiative 
 
 	set_variable = { var_local_investment = mtth:local_investment }
 	add_to_variable = { ROOT.weekly_peoples_investment_ic = var_local_investment }

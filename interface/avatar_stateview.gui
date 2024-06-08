@@ -1,6 +1,38 @@
 guiTypes = {
 
 	containerWindowType = {
+		name = "terrain_anchor_ui"
+		position = { x = 0 y = 0 }
+		Orientation = UPPER_LEFT
+
+		iconType = {
+			name = "special_icon"
+			spriteType = "GFX_terrain_default"
+			#position = { x = 156 y = -20 }
+			#scale = 0.5
+			alwaystransparent = yes
+		}
+
+#		iconType = {
+#			name = "province_header"
+#			position = { x = 0 y = -8 }
+#			spriteType = "GFX_province_header"
+#			Orientation = "UPPER_LEFT"
+#			alwaystransparent = yes
+#		}			
+#
+#		instantTextboxType = {
+#			name = "province"
+#			position = { x = 10 y= -4 }
+#			font = "hoi_18mbs"
+#			maxWidth = 120
+#			maxHeight = 30
+#			text = "[THIS.GetName]"
+#			format = left
+#		}
+	}
+
+	containerWindowType = {
 		name = "loyalty_state_ui_window"
 		position = { x = 254 y = -40 }
 		Orientation = UPPER_LEFT
@@ -11,6 +43,14 @@ guiTypes = {
 			centerPosition = yes
 			position = { x = -76 y = 43 }
 			pdx_tooltip = "loyalty_tooltip"
+		}
+
+		iconType = {
+			name = "bg"
+			spriteType = "GFX_uprising_bar_state_bg"
+			centerPosition = yes
+			position = { x = -11 y = 43 }
+			pdx_tooltip = "loyalty_and_revolt_tooltip"
 		}
 
 		iconType = {
