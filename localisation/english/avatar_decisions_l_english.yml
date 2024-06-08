@@ -432,7 +432,9 @@
  war_with_northern_watertribe:0 "War with the Northern Water Tribe"
  war_with_southern_watertribe:0 "War with the Southern Water Tribe"
 
- 
+ FIR_clan_category:0 "§tFire Clans§!"
+ FIR_clan_category_desc:0 "§YFire Clans§! have always been part of §OFire Nation§! history until now. The Fire Clans should be revived under the condition that they serve a new Fire Lord and if successful, will be given a substantial degree of §1autonomy§!. We must secure the support of these noble clans."
+
  ### firenation battle
  firenation_battle_category:0 "§eSieges and Battles§!"
  firenation_battle_category_desc:0 "The most devestating and impactfull events of a war are sieges and battles. During these our people and soldier experience what it means to engage in total war and their hearts and minds are shaped for victory or defeat."
