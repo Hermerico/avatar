@@ -7,8 +7,6 @@ ideas = {
 
 			on_add = {
 				set_variable = { victory_condition = token:northern_spirit_spirit }
-				set_variable = { victory_condition_description = token:northern_spirit_spirit_description }
-				set_variable = { victory_condition_delayed = token:northern_spirit_spirit_delayed }
 			}
 
 			cancel = {
@@ -23,12 +21,6 @@ ideas = {
 				acclimatization_cold_climate_gain_factor = 0.5
 				winter_attrition_factor = -0.5
 			}
-		}
-		northern_spirit_spirit_description = {
-			removal_cost = -1
-		}
-		northern_spirit_spirit_delayed = {
-			removal_cost = -1
 		}
 	}
 

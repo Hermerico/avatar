@@ -1,16 +1,28 @@
 on_actions = {
 
-	on_monthly = {
+	NWT_on_monthly = {
 		effect = {
-
 			#### tribal unity nwt swt
 
 			add_to_variable = { NWT_unity_support = modifier@monthly_unification }
 			clamp_variable = { var = NWT_unity_support max = NWT_unity_total min = 0 }
 			NWT_recalc_unity_icon_frames = yes
 			NWT_recalc_spirit = yes
+		}
+	}
+	SWT_on_monthly = {
+		effect = {
+			#### tribal unity nwt swt
 
+			add_to_variable = { NWT_unity_support = modifier@monthly_unification }
+			clamp_variable = { var = NWT_unity_support max = NWT_unity_total min = 0 }
+			NWT_recalc_unity_icon_frames = yes
+			NWT_recalc_spirit = yes
+		}
+	}
 
+	EAR_on_monthly = {
+		effect = {
 			#### dai li influence ear
 
 			if = {
@@ -23,6 +35,11 @@ on_actions = {
 				add_to_variable = { dai_li_influence = modifier@monthly_dai_li_influence }
 				EAR_clamp_dli = yes
 			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
 
 		}
 	}

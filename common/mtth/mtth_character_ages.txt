@@ -20,7 +20,26 @@ aang_age = {
 
 		add = aang_age
 	}
+}
+sokka_age = {
+	base = 0
+	modifier = {
+		set_temp_variable = { sokka_birth = SWT.sokka_birth_event }
+		set_temp_variable = { sokka_age = global.year }
+		subtract_from_temp_variable = { sokka_age = sokka_birth }
 
+		add = sokka_age
+	}
+}
+katara_age = {
+	base = 0
+	modifier = {
+		set_temp_variable = { katara_birth = SWT.katara_birth_event }
+		set_temp_variable = { katara_age = global.year }
+		subtract_from_temp_variable = { katara_age = katara_birth }
+
+		add = katara_age
+	}
 }
 
 sozin_age = {

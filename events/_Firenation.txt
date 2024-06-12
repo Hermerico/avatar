@@ -1210,7 +1210,7 @@ country_event = {
 		}
 		add_ideas = spirit_prince_azulon
 		FIR_azulon = {
-			set_character_flag = FIR_character_born
+			set_character_flag = character_born
 			set_character_flag = claim_to_the_throne
 		}
 		set_variable = { FIR.azulon_birth_event = global.year }
@@ -1234,7 +1234,7 @@ country_event = {
 			5 = {
 				add_ideas = spirit_prince_azulon
 				FIR_azulon = {
-					set_character_flag = FIR_character_born
+					set_character_flag = character_born
 				}
 				set_variable = { FIR.azulon_birth_event = global.year }
 				set_variable = { azulon_x = 190 }
@@ -1242,7 +1242,7 @@ country_event = {
 			95 = {
 				custom_effect_tooltip = azulon_dies_ttp
 				FIR_azulon = {
-					set_character_flag = FIR_character_born
+					set_character_flag = character_born
 					set_character_flag = claim_to_the_throne
 					set_character_flag = FIR_character_death
 				}
@@ -1263,7 +1263,7 @@ country_event = {
 			1 = {
 				add_ideas = spirit_prince_azulon
 				FIR_azulon = {
-					set_character_flag = FIR_character_born
+					set_character_flag = character_born
 					set_character_flag = claim_to_the_throne
 				}
 				set_variable = { FIR.azulon_birth_event = global.year }
@@ -1276,7 +1276,7 @@ country_event = {
 				}
 				custom_effect_tooltip = azulon_dies_ttp
 				FIR_azulon = {
-					set_character_flag = FIR_character_born
+					set_character_flag = character_born
 					set_character_flag = claim_to_the_throne
 					set_character_flag = FIR_character_death
 				}
@@ -1824,7 +1824,7 @@ country_event = {
 		}
 		add_ideas = spirit_prince_ozai
 		FIR_ozai = {
-			set_character_flag = FIR_character_born
+			set_character_flag = character_born
 		}
 		set_variable = { FIR.ozai_birth_event = global.year }
 		set_variable = { ozai_x = 300 }
@@ -2155,7 +2155,7 @@ country_event = {
 		}
 		add_ideas = spirit_prince_iroh
 		FIR_iroh = {
-			set_character_flag = FIR_character_born
+			set_character_flag = character_born
 			set_character_flag = claim_to_the_throne
 		}
 		set_variable = { FIR.iroh_birth_event = global.year }
@@ -2601,7 +2601,7 @@ country_event = {
 
 		add_ideas = spirit_prince_lu_ten
 		FIR_lu_ten = {
-			set_character_flag = FIR_character_born
+			set_character_flag = character_born
 			set_character_flag = claim_to_the_throne
 		}
 		set_variable = { FIR.lu_ten_birth_event = global.year }
@@ -2870,7 +2870,7 @@ country_event = {
 		}
 		add_ideas = spirit_prince_zuko
 		FIR_zuko = {
-			set_character_flag = FIR_character_born
+			set_character_flag = character_born
 			set_character_flag = claim_to_the_throne
 		}
 		set_variable = { FIR.zuko_birth_event = global.year }
@@ -3109,6 +3109,7 @@ country_event = {
 			set_character_flag = burned_face
 			set_character_flag = in_exile
 		}
+		add_ideas = banished_prince
 	}
 
 	option = {
@@ -3162,7 +3163,7 @@ country_event = {
 		}
 		add_ideas = spirit_prince_azula
 		FIR_azula = {
-			set_character_flag = FIR_character_born
+			set_character_flag = character_born
 		}
 		set_variable = { FIR.azula_birth_event = global.year }
 		set_variable = { azula_x = 300 }

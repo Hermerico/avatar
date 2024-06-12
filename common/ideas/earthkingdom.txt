@@ -7,8 +7,6 @@ ideas = {
 
 			on_add = {
 				set_variable = { victory_condition = token:heart_of_the_kingdom_spirit }
-				set_variable = { victory_condition_description = token:heart_of_the_kingdom_spirit_description }
-				set_variable = { victory_condition_delayed = token:heart_of_the_kingdom_spirit_delayed }
 			}
 
 			cancel = {
@@ -23,12 +21,6 @@ ideas = {
 				surrender_limit = 1
 			}
 		}
-		heart_of_the_kingdom_spirit_description = {
-			removal_cost = -1
-		}
-		heart_of_the_kingdom_spirit_delayed = {
-			removal_cost = -1
-		}
 
 		no_war_in_ba_sing_se_spirit = {
 
@@ -36,8 +28,6 @@ ideas = {
 
 			on_add = {
 				set_variable = { victory_condition = token:no_war_in_ba_sing_se_spirit }
-				set_variable = { victory_condition_description = token:no_war_in_ba_sing_se_spirit_description }
-				set_variable = { victory_condition_delayed = token:no_war_in_ba_sing_se_spirit_delayed }
 			}
 
 			cancel = {
@@ -52,12 +42,7 @@ ideas = {
 				stability_factor = 0.15
 			}
 		}
-		no_war_in_ba_sing_se_spirit_description = {
-			removal_cost = -1
-		}
-		no_war_in_ba_sing_se_spirit_delayed = {
-			removal_cost = -1
-		}
+
 	}
 
 	country = {

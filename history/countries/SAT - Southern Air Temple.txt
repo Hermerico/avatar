@@ -71,6 +71,7 @@ every_character = {
 
 recruit_character = SAT_aang
 recruit_character = SAT_appa
+recruit_character = SAT_momo
 
 
 recruit_character = SAT_extinct_nation

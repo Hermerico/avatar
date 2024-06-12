@@ -66,15 +66,8 @@ characters={
 				small = "GFX_Portrait_SAT_aang_small"
 			}
 		}
-		country_leader={
-			
-			ideology=active_pacifism
-			expire="35.2.14"
-			id=-1
-		}
 		
 	}
-
 	SAT_appa = {
 		name = SAT_appa
 		portraits={
@@ -86,13 +79,18 @@ characters={
 				small = "GFX_Portrait_SAT_appa_small"
 			}
 		}
-		country_leader={
-			
-			ideology=active_pacifism
-			expire="35.2.14"
-			id=-1
+	}
+	SAT_momo = {
+		name = SAT_momo
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_SAT_momo"
+			}
+			army = {
+				large = "GFX_Portrait_SAT_momo"
+				small = "GFX_Portrait_SAT_momo_small"
+			}
 		}
-		
 	}
 	
 	SAT_extinct_nation={

@@ -41,13 +41,19 @@ set_popularities = {
 }
 
 recruit_character = SWT_salota
-recruit_character = SWT_hakota
+recruit_character = SWT_hakoda
 recruit_character = SWT_head_of_intelligence_1
 recruit_character = SWT_head_of_intelligence_2
 recruit_character = SWT_head_of_intelligence_3
 recruit_character = SWT_head_of_intelligence_4
 recruit_character = SWT_head_of_intelligence_5
 recruit_character = SWT_head_of_intelligence_6
+
+recruit_character = SWT_generic
+
+recruit_character = SWT_sokka
+recruit_character = SWT_katara
+
 set_stability = 0.4
 set_war_support = 0.4
 set_variable = {
@@ -110,11 +116,15 @@ bender_conscription_effect = yes
 factory_output_calc = yes
 throughput_variable_calc = yes
 permanent_spirits_and_modifiers = yes
-## #####  ##  ###  #####     ####   ##
+
+
+ ## #####  ##  ###  #####     ####   ##
 #     #   #  # #  #   #       #     #  #
-#    #   #### ###    #       ###     #
-#   #   #  # #  #   #          #   #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
 ##    #   #  # #  #   #       ###   #### 
+
+
 52.5.16 = {
 	OOB = "SWT_52"
 	set_naval_oob = "empty"
@@ -147,12 +157,15 @@ permanent_spirits_and_modifiers = yes
 	}
 }
 
-## #####  ##  ###  #####       #  ##    #
+ ## #####  ##  ###  #####       #  ##    #
 #     #   #  # #  #   #        ## #  #  #
-#    #   #### ###    #       # # #  # #  #
-#   #   #  # #  #   #         # #  # #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
 ##    #   #  # #  #   #         #  ##   ##
+
+
 106.2.4 = {
+
 	OOB = "SWT_106"
 	set_variable = {
 		var = SWT_unity_support
@@ -172,7 +185,23 @@ permanent_spirits_and_modifiers = yes
 		tribal_education
 		water_raids_100
 	}
+
+
+
 	retire_character = SWT_salota
+
+
+	SWT_katara = {
+		set_character_flag = character_born
+	}
+	set_variable = { SWT.katara_birth_event = 97 }
+
+	SWT_sokka = {
+		set_character_flag = character_born
+	}
+	set_variable = { SWT.sokka_birth_event = 96 }
+
+
 	set_technology = {
 	}
 	if = {
@@ -192,6 +221,3 @@ permanent_spirits_and_modifiers = yes
 		}
 	}
 }
-
-# Different Ideology Leaders
-recruit_character = SWT_generic

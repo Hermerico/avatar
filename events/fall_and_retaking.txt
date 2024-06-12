@@ -641,7 +641,7 @@ country_event = {
 		trigger = {
 			has_character = FIR_iroh
 			FIR_iroh = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = FIR_character_general
 			}
@@ -668,7 +668,7 @@ country_event = {
 		trigger = {
 			has_character = FIR_ozai
 			FIR_ozai = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = FIR_character_general
 			}

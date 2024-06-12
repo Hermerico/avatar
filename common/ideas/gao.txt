@@ -7,8 +7,6 @@ ideas = {
 
 			on_add = {
 				set_variable = { victory_condition = token:pearl_of_the_south_spirit }
-				set_variable = { victory_condition_description = token:pearl_of_the_south_spirit_description }
-				set_variable = { victory_condition_delayed = token:pearl_of_the_south_spirit_delayed }
 			}
 
 			cancel = {
@@ -23,12 +21,7 @@ ideas = {
 				income = 0.05
 			}
 		}
-		pearl_of_the_south_spirit_description = {
-			removal_cost = -1
-		}
-		pearl_of_the_south_spirit_delayed = {
-			removal_cost = -1
-		}
+
 	}
 
 	# country = {

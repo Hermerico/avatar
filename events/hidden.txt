@@ -1,50 +1,62 @@
+
 add_namespace = avatar_hidden
+
 country_event = {
 	id = avatar_hidden.1
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		tag = SWT
+		SWT = {
+			SWT_katara = {
+				has_character_flag = character_born
+				check_variable = { mtth:katara_age > 13 }
+			}
+			SWT_sokka = {
+				has_character_flag = character_born
+				check_variable = { mtth:sokka_age > 14 }
+			}
+		}
+	}
+
+
+	immediate = {
+		hidden_effect = {
+			SWT = {
+				country_event = {
+					id = season_1.team.1
+					days = 0
+				}
+			}
+		}	
+	}
+
+	
+}
+
+country_event = {
+	id = avatar_hidden.2
 	is_triggered_only = yes
 	fire_only_once = yes
 	hidden = yes
+
 	immediate = {
-		#SWT event and Zuko's event:
-		FIR = {
-			country_event = {
-				id = quest.2
-				days = 0
+		hidden_effect = {
+			clr_global_flag = avatar_en_route
+			set_variable = { global.avatar_location = 329.id }
+
+			##### historical air temple
+			if = {
+				limit = {
+					has_global_flag = south_temple_fallen
+				}
+				add_to_array = { global.avatar_team = token:SAT_momo }
+				news_event = { id = season_1.news.1 hours = 48 }
 			}
 		}
-		set_global_flag = avatar_swt
-		clr_global_flag = avatar_unknown
 	}
 }
-
-# country_event = {
-# 	id = avatar_hidden.2
-# 	is_triggered_only = yes
-# 	fire_only_once = yes
-# 	hidden = yes
-# 	immediate = {
-# 		#Lu ten's death
-# 		if = {
-# 			limit = {
-# 				FIR = {
-# 					OR = {
-# 						controls_state = 138
-# 						controls_state = 231
-# 						controls_state = 116
-# 						controls_state = 80
-# 						controls_state = 99
-# 					}
-# 				}
-# 			}
-# 			FIR = {
-# 				country_event = {
-# 					id = firenation.13
-# 					days = 0
-# 				}
-# 			}
-# 		}
-# 	}
-# }
 
 country_event = {
 	id = avatar_hidden.3

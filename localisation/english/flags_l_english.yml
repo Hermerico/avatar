@@ -36,6 +36,6 @@
  no_heir:0 "Has no Heir"
  firebending_training:0 "Has basic Firebending Training"
  literate:0 "Is literate"
- FIR_character_born:0 "Was born"
+ character_born:0 "Was born"
  FIR_character_general:0 "Appointed as General"
  FIR_character_death:0 "Dead £attrition_texticon"

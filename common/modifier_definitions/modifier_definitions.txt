@@ -343,11 +343,17 @@ bender_disabled = {									#### disables monthly bender growth
 
 avatar_opinion_modifier = {							#### avatar opinion of us
 	color_type = good
-	value_type = percentage
+	value_type = number
 	precision = 0
 	postfix = none
 }
 opinion_of_avatar_modifier = {							#### avatar opinion of us
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+}
+avatar_influence_modifier = {							#### avatar opinion of us
 	color_type = neutral
 	value_type = percentage
 	precision = 0

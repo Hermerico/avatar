@@ -7,8 +7,6 @@ ideas = {
 
 			on_add = {
 				set_variable = { victory_condition = token:fire_supremacy_spirit }
-				set_variable = { victory_condition_description = token:fire_supremacy_spirit_description }
-				set_variable = { victory_condition_delayed = token:fire_supremacy_spirit_delayed }
 			}
 
 			cancel = {
@@ -25,12 +23,7 @@ ideas = {
 			}
 			
 		}
-		fire_supremacy_spirit_description = {
-			removal_cost = -1
-		}
-		fire_supremacy_spirit_delayed = {
-			removal_cost = -1
-		}
+
 		fire_supremacy_spirit_hidden= {
 			removal_cost = -1
 
@@ -49,8 +42,6 @@ ideas = {
 
 			on_add = {
 				set_variable = { victory_condition = token:fire_imperialism_spirit }
-				set_variable = { victory_condition_description = token:fire_imperialism_spirit_description }
-				set_variable = { victory_condition_delayed = token:fire_imperialism_spirit_delayed }
 			}
 
 			cancel = {
@@ -60,12 +51,7 @@ ideas = {
 			}
 			
 		}
-		fire_imperialism_spirit_description = {
-			removal_cost = -1
-		}
-		fire_imperialism_spirit_delayed = {
-			removal_cost = -1
-		}
+
 		fire_imperialism_spirit_hidden= {
 			removal_cost = -1
 
@@ -244,7 +230,7 @@ ideas = {
 				stability_factor = 0.1
 				generate_wargoal_tension = 0.5
 				justify_war_goal_time = 0.5
-				opinion_of_avatar_modifier = 0.2
+				opinion_of_avatar_modifier = 20
 			}
 		}
 		ruthless_expansionism = {
@@ -698,6 +684,18 @@ ideas = {
 			modifier = {
 				allow_colony_modifier = 1
 				overlord_influence = 0.25
+			}
+
+		}
+
+		banished_prince = {
+			
+			removal_cost = -1
+
+			modifier = {
+				avatar_influence_modifier = 0.05
+				opinion_of_avatar_modifier = -10
+				avatar_opinion_modifier = -50
 			}
 
 		}

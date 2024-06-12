@@ -34,7 +34,7 @@ scripted_gui = {
 			azulon_visible = {
 				has_character = FIR_azulon
 				FIR_azulon = {
-					has_character_flag = FIR_character_born
+					has_character_flag = character_born
 					NOT = { has_character_flag = FIR_character_death }
 				}
 			}
@@ -53,7 +53,7 @@ scripted_gui = {
 			iroh_visible = {
 				has_character = FIR_iroh
 				FIR_iroh = {
-					has_character_flag = FIR_character_born
+					has_character_flag = character_born
 					NOT = { has_character_flag = FIR_character_death }
 				}
 			}
@@ -61,7 +61,7 @@ scripted_gui = {
 			ozai_visible = {
 				has_character = FIR_ozai
 				FIR_ozai = {
-					has_character_flag = FIR_character_born
+					has_character_flag = character_born
 					NOT = { has_character_flag = FIR_character_death }
 				}
 			}
@@ -82,7 +82,7 @@ scripted_gui = {
 			lu_ten_visible = {
 				has_character = FIR_lu_ten
 				FIR_lu_ten = {
-					has_character_flag = FIR_character_born
+					has_character_flag = character_born
 					NOT = { has_character_flag = FIR_character_death }
 				}
 			}
@@ -90,7 +90,7 @@ scripted_gui = {
 			zuko_visible = {
 				has_character = FIR_zuko
 				FIR_zuko = {
-					has_character_flag = FIR_character_born
+					has_character_flag = character_born
 					NOT = { has_character_flag = FIR_character_death }
 				}
 			}
@@ -98,7 +98,7 @@ scripted_gui = {
 			azula_visible = {
 				has_character = FIR_azula
 				FIR_azula = {
-					has_character_flag = FIR_character_born
+					has_character_flag = character_born
 					NOT = { has_character_flag = FIR_character_death }
 				}
 			}

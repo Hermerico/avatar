@@ -1,4 +1,6 @@
 ﻿l_english:
  get_victory_condition:0 "GFX_idea_[?victory_condition.GetTokenKey]"
- victory_condition_desc:0 "[?victory_condition_description.GetTokenLocalizedKey]"
- victory_condition_delayed:0 "[?victory_condition_delayed.GetTokenLocalizedKey]"
+ victory_condition_desc:0 "[GetVictoryConditionDesc]"
+ victory_condition_delayed:0 "[GetVictoryConditionDelayed]"
+ victory_condition_description_ttp:0 "[?victory_condition_desc_temp.GetTokenLocalizedKey]"
+ victory_condition_delayed_ttp:0 "[?victory_condition_delayed_temp.GetTokenLocalizedKey]"

@@ -54,7 +54,7 @@ characters={
 			legacy_id=-1
 
 			visible = { 
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				has_character_flag = FIR_character_general
 				NOT = { has_character_flag = FIR_character_death } 
 			}
@@ -165,7 +165,7 @@ characters={
 			legacy_id = -1
 
 			visible = { 
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				has_character_flag = FIR_character_general
 				NOT = { has_character_flag = FIR_character_death } 
 			}
@@ -192,7 +192,7 @@ characters={
 		}
 		field_marshal = {
 			visible = { 
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				has_character_flag = FIR_character_general
 				NOT = { has_character_flag = FIR_character_death } 
 			}
@@ -225,7 +225,7 @@ characters={
 		}
 		field_marshal = {
 			visible = { 
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				has_character_flag = FIR_character_general
 				NOT = { has_character_flag = FIR_character_death } 
 			}
@@ -276,7 +276,7 @@ characters={
 		}
 		field_marshal = {
 			visible = { 
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				has_character_flag = FIR_character_general
 				NOT = { has_character_flag = FIR_character_death } 
 			}

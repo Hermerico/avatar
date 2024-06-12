@@ -5,6 +5,8 @@
 add_namespace = swt
 add_namespace = swt_unification
 add_namespace = swt_treaty
+add_namespace = swt_character.sokka
+add_namespace = swt_character.katara
 
 
  ####  #     #  #####
@@ -32,6 +34,73 @@ country_event = {
 		SWT_unity_small_opposition = yes
 		random_owned_state = {
 			add_dynamic_modifier = { modifier = watertribe_riots }
+		}
+	}
+
+}
+
+
+#### sokka is born
+country_event = {
+	id = swt_character.sokka.1
+	title = swt_character.sokka.1.t
+	desc = swt_character.sokka.1.d
+	picture = GFX_report_event_water_birth
+
+	trigger = {
+		date > 96.01.01
+		has_start_date < 96.01.01
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_variable = { SWT.sokka_birth_event = global.year }
+		}
+	}
+
+	option = {
+		name = swt_character.sokka.1.a
+		ai_chance = { 
+			factor = 100
+		}
+
+		SWT_sokka = {
+			set_character_flag = character_born
+		}
+	}
+
+}
+
+#### katara is born
+country_event = {
+	id = swt_character.katara.1
+	title = swt_character.katara.1.t
+	desc = swt_character.katara.1.d
+	picture = GFX_report_event_water_birth
+
+	trigger = {
+		date > 97.01.01
+		has_start_date < 97.01.01
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_variable = { SWT.katara_birth_event = global.year }
+		}
+	}
+
+	option = {
+		name = swt_character.katara.1.a
+		ai_chance = { 
+			factor = 100
+		}
+
+		SWT_katara = {
+			set_character_flag = character_born
 		}
 	}
 
