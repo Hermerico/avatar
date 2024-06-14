@@ -8,8 +8,6 @@ ideas = {
 
 			on_add = {
 				set_variable = { victory_condition = token:fractured_desert_spirit }
-				set_variable = { victory_condition_description = token:fractured_desert_spirit_description }
-				set_variable = { victory_condition_delayed = token:fractured_desert_spirit_delayed }
 			}
 
 			cancel = {
@@ -21,12 +19,6 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 			}
-		}
-		fractured_desert_spirit_description = {
-			removal_cost = -1
-		}
-		fractured_desert_spirit_delayed = {
-			removal_cost = -1
 		}
 
 	}

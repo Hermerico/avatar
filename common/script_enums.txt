@@ -1,9 +1,36 @@
 
 script_enum_token_localisation_desc = {
 	
+	_description
+
+	spiritless_nation_spirit
+ 	spiritless_nation_spirit_description
+ 	spiritless_nation_spirit_delayed
+
+	chin_legacy_spirit_description
+	chin_legacy_spirit_delayed
+	heart_of_the_kingdom_spirit_description
+	heart_of_the_kingdom_spirit_delayed
+	no_war_in_ba_sing_se_spirit_description
+	no_war_in_ba_sing_se_spirit_delayed
+	fire_supremacy_spirit_description
+	fire_supremacy_spirit_delayed
+	fire_imperialism_spirit_description
+	fire_imperialism_spirit_delayed
+	pearl_of_the_south_spirit_description
+	pearl_of_the_south_spirit_delayed
+	kyoshi_isolation_spirit_description
+	kyoshi_isolation_spirit_delayed
+	fractured_desert_spirit_description
+	fractured_desert_spirit_delayed
+	northern_spirit_spirit_description
+	northern_spirit_spirit_delayed
+
 	SAT_aang_description
 	SAT_appa_description
 	SAT_monk_gyatso_description
+	SWT_sokka_description
+	SWT_katara_description
 }
 
 

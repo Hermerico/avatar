@@ -1486,7 +1486,7 @@ FIR_colonies_category = {
 								ruling_only = yes
 							}
 							FIR_azula = {
-								has_character_flag = FIR_character_born
+								has_character_flag = character_born
 							}
 						}
 					}

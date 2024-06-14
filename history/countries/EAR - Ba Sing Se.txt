@@ -50,8 +50,6 @@ set_stability = 0.6
 set_war_support = 0.7
 
 set_variable = { victory_condition = token:heart_of_the_kingdom_spirit }
-set_variable = { victory_condition_description = token:heart_of_the_kingdom_spirit_description }
-set_variable = { victory_condition_delayed = token:heart_of_the_kingdom_spirit_delayed }
 
 add_ideas = {
 	kyoshi_constitution
@@ -137,9 +135,7 @@ permanent_spirits_and_modifiers = yes
 	add_political_power = 1198
 
 	set_variable = { victory_condition = token:no_war_in_ba_sing_se_spirit }
-	set_variable = { victory_condition_description = token:no_war_in_ba_sing_se_spirit_description }
-	set_variable = { victory_condition_delayed = token:no_war_in_ba_sing_se_spirit_delayed }
-
+	
 
 	retire_character = EAR_zaifeng
 

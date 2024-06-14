@@ -43,24 +43,6 @@ scripted_gui = {
 		}
 
 		triggers = {
-			aang_portrait_visible = {
-				has_global_flag = avatar_aang
-				NOT = {has_global_flag = avatar_unknown}
-			}
-			aang_missing_portrait_visible = {
-				has_global_flag = avatar_aang
-				has_global_flag = avatar_unknown
-			}
-			aang_name_visible = {
-				has_global_flag = avatar_aang
-			}
-
-			misu_portrait_visible = {
-				has_global_flag = avatar_misu
-			}
-			misu_name_visible = {
-				has_global_flag = avatar_misu
-			}
 
 			avatar_air_home_visible = {
 				has_global_flag = avatar_born_air
@@ -75,11 +57,34 @@ scripted_gui = {
 				has_global_flag = avatar_born_earth
 			}
 
-			avatar_friendly_visible = {
-				has_country_flag = avatar_friendly
+			avatar_location_unknown_visible = {
+				NOT = {
+					has_variable = global.avatar_location
+					has_global_flag = avatar_captured
+					has_global_flag = avatar_on_ship
+					has_global_flag = avatar_en_route
+				}
 			}
-			avatar_hostile_visible = {
-				has_country_flag = avatar_hostile
+			avatar_location_captured_visible = {
+				NOT = {
+					has_variable = global.avatar_location
+				}
+				has_global_flag = avatar_captured
+			}
+			avatar_location_ship_visible = {
+				NOT = {
+					has_variable = global.avatar_location
+				}
+				has_global_flag = avatar_on_ship
+			}
+			avatar_location_appa_visible = {
+				NOT = {
+					has_variable = global.avatar_location
+				}
+				has_global_flag = avatar_en_route
+			}
+			avatar_location_visible = {
+				has_variable = global.avatar_location
 			}
 
 		}
@@ -103,6 +108,12 @@ scripted_gui = {
 			}
 			team_4_portrait = {
 				image = "GFX_Portrait_[?global.avatar_team^4.GetTokenKey]_small"
+			}
+			team_5_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^5.GetTokenKey]_small"
+			}
+			team_6_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^6.GetTokenKey]_small"
 			}
 
 			spirituality = {

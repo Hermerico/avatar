@@ -208,6 +208,42 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_yonrha.dds"
 	}
 
+	############# SWT
+
+	spriteType = {
+		name = "GFX_Portrait_SWT_hakoda"
+		texturefile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Hakoda.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SWT_hakoda_small"
+		texturefile = "gfx/interface/ideas/leader_small/SWT/hakoda_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SWT_hakoda_general"
+		texturefile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Hakoda_general.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SWT_hakoda_general"
+		texturefile = "gfx/interface/ideas/leader_small/SWT/hakoda_general_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SWT_sokka"
+		texturefile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Sokka_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SWT_sokka_small"
+		texturefile = "gfx/interface/ideas/leader_small/SWT/sokka_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SWT_katara"
+		texturefile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Katara.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SWT_katara_small"
+		texturefile = "gfx/interface/ideas/leader_small/SWT/katara_small.dds"
+	}
 
 	############# SAT
 
@@ -235,6 +271,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_SAT_appa_small"
 		texturefile = "gfx/interface/ideas/leader_small/SAT/Appa_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SAT_momo"
+		texturefile = "gfx/leaders/SAT/Portrait_Southernairtemple_Momo.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SAT_momo_small"
+		texturefile = "gfx/interface/ideas/leader_small/SAT/momo_small.dds"
 	}
 	spriteType = {
 		name = "GFX_Portrait_SAT_monk_gyatso"

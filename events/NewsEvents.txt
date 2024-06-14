@@ -142,6 +142,9 @@ news_event = {
 			has_global_flag = west_temple_fallen
 			has_global_flag = west_temple_survived
 		}
+		NOT = {
+			has_global_flag = air_nomad_genocide
+		}
 	}
 	mean_time_to_happen = {
 		days = 30

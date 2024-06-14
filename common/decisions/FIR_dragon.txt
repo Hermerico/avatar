@@ -469,7 +469,7 @@ FIR_dragon_category = {
 			if = {
 				limit = {
 					FIR_iroh = {
-						has_character_flag = FIR_character_born
+						has_character_flag = character_born
 					}
 				}
 				FIR_iroh = {

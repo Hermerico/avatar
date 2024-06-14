@@ -50,9 +50,17 @@
  SAT_aang:0 "Aang"
  SAT_aang_description:0 "Aang"
  SAT_appa:0 "Appa"
- SAT_appa_description:0 "Appa Description"
+ SAT_appa_description:0 "Appa is Aangs most loyal companion and skybison. The ability to fly lets them travel large distances quickly."
  SAT_monk_gyatso:0 "Gyatso"
- SAT_monk_gyatso_description:0 "Gyatso Description"
+ SAT_monk_gyatso_description:0 "Gyatso is an Airbending master. By Training together the avatar gains \nDaily §YAirbending§!: §y+0.1%§!"
+ SWT_sokka:0 "Sokka"
+ SWT_sokka_description:0 "Sokka"
+ SWT_katara:0 "Katara"
+ SWT_katara_description:0 "Katara"
+ SAT_momo:0 "Momo"
+ SAT_momo_description:0 "Momo"
+
+ _description:0 "ERROR: Missing Token"
 
  #Earthkingdom
  EAR_zaifeng:0 "Zaifeng"

@@ -13,11 +13,15 @@ characters={
 			id=-1
 		}
 	}
-	SWT_hakota={
-		name="Hakoda"
+	SWT_hakoda={
+		name = SWT_hakoda
 		portraits={
 			civilian={
-				large="gfx/leaders/SWT/Portrait_Southernwatertribe_Hakoda.dds"
+				large="GFX_Portrait_SWT_hakoda"
+			}
+			army = {
+				large = "GFX_Portrait_SWT_hakoda_general"
+				small = "GFX_Portrait_SWT_hakoda_general_small"
 			}
 		}
 		country_leader={
@@ -44,6 +48,35 @@ characters={
 			}
 		}
 	}
+
+	SWT_sokka = {
+		name = SWT_sokka
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_SWT_sokka"
+			}
+			army = {
+				large = "GFX_Portrait_SWT_sokka"
+				small = "GFX_Portrait_SWT_sokka_small"
+			}
+		}
+		
+	}
+
+	SWT_katara = {
+		name = SWT_katara
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_SWT_katara"
+			}
+			army = {
+				large = "GFX_Portrait_SWT_katara"
+				small = "GFX_Portrait_SWT_katara_small"
+			}
+		}
+		
+	}
+
 	SWT_generic={
 		name="Generic"
 		portraits={

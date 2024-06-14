@@ -1,4 +1,24 @@
 ﻿l_english: 
+
+add_to_avatar_team_tooltip:0 "Add to the §YAvatar Team§!"
+
+season_1.team.1.title:0 "The boy in the Iceberg"
+season_1.team.1.desc:0 "Siblings Katara and Sokka discovered a young boy frozen in an iceberg. After freeing him and his flying bison he slowly opens his eyes to ask Katara the most important question: Will you go penguin sliding with me? "
+season_1.team.1.a:0 "Go penguin sliding with him"
+season_1.team.1.b:0 "Let's go back to the tribe first"
+season_1.zuko.1.title:0 "The Avatars Hideout"
+season_1.zuko.1.desc:0 "After years of traveling the world, prince zuko finally found the avatar at the southpole. He fights and the avatar offers to go with him if he lets the village unharmed."
+season_1.zuko.1.a:0 "Take him"
+season_1.zuko.1.b:0 "Burn the place to ash anyways"
+season_1.team.2.title:0 "Rescuing Aang"
+season_1.team.2.desc:0 "After meeting him aang was captured by zuko. Katara wants to save him, what will sokka do?"
+season_1.team.2.a:0 "Go With Katara And Aang"
+season_1.team.2.b:0 "Defend The Tribe"
+season_1.zuko.2.title:0 "The Avatar Escapes"
+season_1.zuko.2.desc:0 "the avatar manages to escape zukos ship"
+season_1.zuko.2.a:0 "Shoot him down"
+season_1.zuko.2.b:0 "Follow him"
+
 quest.0.title:0 "The Avatar's Quest Begins!"
 quest.0.desc:0 "Water. Earth. Fire. Air. My grandmother used to tell me stories about the old days, a time of peace when the Avatar kept balance between the Water Tribes, Earth Kingdom, Fire Nation, and Air Nomads. But that all changed when the Fire Nation attacked. Only the Avatar mastered all four elements. Only he could stop the ruthless firebenders, but when the world needed him most, he vanished. A hundred years have passed and the Fire Nation is nearing victory in the War. Two years ago, my father and the men of my tribe journeyed to the Earth Kingdom to help fight against the Fire Nation, leaving me and my brother to look after our tribe. Some people believe that the Avatar was never reborn into the Air Nomads, and that the cycle is broken. But I haven't lost hope. I still believe that somehow, the Avatar will return to save the world."
 quest.0.a:0 "Let's go!"

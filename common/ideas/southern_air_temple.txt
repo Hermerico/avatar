@@ -9,7 +9,7 @@ ideas = {
 			}
 
 			modifier = {
-				avatar_opinion_modifier = 1
+				avatar_opinion_modifier = 100
 			}
 		}
 

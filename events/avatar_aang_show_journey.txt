@@ -1,5 +1,253 @@
 add_namespace = quest
 
+add_namespace = season_1.team
+add_namespace = season_1.zuko
+add_namespace = season_1.news
+add_namespace = season_2.team
+add_namespace = season_2.zuko
+add_namespace = season_3.team
+add_namespace = season_3.zuko
+
+
+##Event: The boy in the Iceberg
+country_event = {
+	id = season_1.team.1
+	title = season_1.team.1.title
+	desc = season_1.team.1.desc
+	picture = GFX_report_event_quest_001
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_variable = { global.avatar_location = 85.id }
+
+			FIR = {
+				if = {
+					limit = {
+						has_idea = banished_prince
+					}
+					country_event = { id = season_1.zuko.1 days = 1 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = season_1.team.1.a
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.team.1.b
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+##Event: The Avatars Hideout
+country_event = {
+	id = season_1.zuko.1
+	title = season_1.zuko.1.title
+	desc = season_1.zuko.1.desc
+	picture = GFX_report_event_quest_002
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clear_variable = global.avatar_location
+			set_global_flag = avatar_captured
+			set_global_flag = avatar_on_ship
+
+
+			SWT = {
+				country_event = { id = season_1.team.2 days = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = season_1.zuko.1.a
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.zuko.1.b
+		trigger = {
+			85 = {
+				is_controlled_by = FIR
+			}
+		}
+
+		var:global.avatar_location = {
+			damage_building = {
+				type = infrastructure
+				damage = 10
+			}
+		}
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+}
+
+##Event: Rescuing Aang
+country_event = {
+	id = season_1.team.2
+	title = season_1.team.2.title
+	desc = season_1.team.2.desc
+	picture = GFX_report_event_quest_003
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			FIR = {
+				country_event = { id = season_1.zuko.2 days = 2 }
+			}
+		}
+	}
+
+	option = {
+		name = season_1.team.2.a
+		trigger = {
+			85 = {
+				is_controlled_by = owner
+			}
+		}
+
+		###add Sokka and Katara to the team, Update location
+		SWT_katara = {
+			add_to_array = { global.avatar_team = token:SWT_katara }
+			custom_effect_tooltip = add_to_avatar_team_tooltip
+		}
+		SWT_sokka = {
+			add_to_array = { global.avatar_team = token:SWT_sokka }
+			custom_effect_tooltip = add_to_avatar_team_tooltip
+		}
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.team.2.b
+
+		###add Katara to the team, Update location
+		SWT_katara = {
+			add_to_array = { global.avatar_team = token:SWT_katara }
+			custom_effect_tooltip = add_to_avatar_team_tooltip
+		}
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+##Event: Zukos ship is damaged
+country_event = {
+	id = season_1.zuko.2
+	title = season_1.zuko.2.title
+	desc = season_1.zuko.2.desc
+	picture = GFX_report_event_quest_004
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = avatar_captured
+			clr_global_flag = avatar_on_ship
+
+			set_global_flag = avatar_en_route
+			set_variable = { global.avatar_destination = 329.id }
+
+			SAT = {
+				country_event = { id = avatar_hidden.2 days = 2 }
+			}
+		}
+	}
+
+	option = {
+		name = season_1.zuko.2.a
+
+		damage_units = {
+			region = 157
+			limit = { tag = FIR }
+			org_damage = 0.5
+			str_damage = 0.1
+			ratio = yes
+			army = no
+			navy = yes
+		}
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.zuko.2.b
+		
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+
+##Event: The avatar returns
+news_event = {
+	id = season_1.news.1
+	title = season_1.news.1.title
+	desc = season_1.news.1.desc
+	picture = GFX_news_event_quest_001
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clear_variable = global.avatar_location
+			set_global_flag = avatar_en_route
+			set_variable = { global.avatar_destination = 347.id }
+		}
+	}
+
+	option = {
+		name = season_1.news.1.a
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.news.1.b
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+
+
+
+
+
 ###Event: The Avatar's Quest Begins! 
 country_event = {
 	id = quest.0

@@ -72,3 +72,21 @@ division_template = {
 	}
 }
 
+units = {
+	division = {
+		location = 7473
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 3677
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 7194
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 7500
+		division_template = "Infantry Banner"
+	}
+}

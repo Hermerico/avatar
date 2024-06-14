@@ -60,8 +60,6 @@ set_popularities = {
 }
 
 set_variable = { victory_condition = token:fire_supremacy_spirit }
-set_variable = { victory_condition_description = token:fire_supremacy_spirit_description }
-set_variable = { victory_condition_delayed = token:fire_supremacy_spirit_delayed }
 
 add_ideas = {
 	limited_fire_conscription
@@ -94,7 +92,7 @@ recruit_character = FIR_empty_throne
 
 recruit_character = FIR_sozin
 FIR_sozin = {
-	set_character_flag = FIR_character_born
+	set_character_flag = character_born
 	set_character_flag = FIR_character_general
 	set_character_flag = firebending_training
 	set_character_flag = literate
@@ -315,9 +313,7 @@ permanent_spirits_and_modifiers = yes
 
 
 	set_variable = { victory_condition = token:fire_imperialism_spirit }
-	set_variable = { victory_condition_description = token:fire_imperialism_spirit_description }
-	set_variable = { victory_condition_delayed = token:fire_imperialism_spirit_delayed }
-
+	
 
 
 	set_variable = { azulon_x = 90 }
@@ -333,7 +329,7 @@ permanent_spirits_and_modifiers = yes
 	add_country_leader_trait = personality_cult
 
 	FIR_azulon = {
-		set_character_flag = FIR_character_born
+		set_character_flag = character_born
 		set_character_flag = FIR_character_general
 		set_character_flag = firebending_training
 		set_character_flag = literate
@@ -354,7 +350,7 @@ permanent_spirits_and_modifiers = yes
 			legacy_id=-1
 
 			visible = { 
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				has_character_flag = FIR_character_general
 				NOT = { has_character_flag = FIR_character_death } 
 			}
@@ -366,7 +362,7 @@ permanent_spirits_and_modifiers = yes
 	}
 
 	FIR_iroh = {
-		set_character_flag = FIR_character_born
+		set_character_flag = character_born
 	}
 	set_variable = { FIR.iroh_birth_event = 51 }
 	set_variable = { iroh_x = 300 }
@@ -450,7 +446,7 @@ permanent_spirits_and_modifiers = yes
 	}
 
 	FIR_iroh = {
-		set_character_flag = FIR_character_born
+		set_character_flag = character_born
 		set_character_flag = FIR_character_general
 		set_character_flag = firebending_training
 		set_character_flag = literate
@@ -473,7 +469,7 @@ permanent_spirits_and_modifiers = yes
 			legacy_id=-1
 
 			visible = { 
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				has_character_flag = FIR_character_general
 				NOT = { has_character_flag = FIR_character_death } 
 			}
@@ -487,7 +483,7 @@ permanent_spirits_and_modifiers = yes
 	set_variable = { lu_ten_y = 6 }
 
 	FIR_lu_ten = {
-		set_character_flag = FIR_character_born
+		set_character_flag = character_born
 		set_character_flag = FIR_character_general
 		set_character_flag = firebending_training
 		set_character_flag = literate
@@ -508,7 +504,7 @@ permanent_spirits_and_modifiers = yes
 			legacy_id=-1
 
 			visible = { 
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				has_character_flag = FIR_character_general
 				NOT = { has_character_flag = FIR_character_death } 
 			}
@@ -517,7 +513,7 @@ permanent_spirits_and_modifiers = yes
 	set_variable = { FIR.lu_ten_birth_event = 88 }
 
 	FIR_ozai = {
-		set_character_flag = FIR_character_born
+		set_character_flag = character_born
 		set_character_flag = firebending_training
 		set_character_flag = literate
 	}
@@ -531,7 +527,7 @@ permanent_spirits_and_modifiers = yes
 	set_variable = { zuko_y = 6 }
 
 	FIR_zuko = {
-		set_character_flag = FIR_character_born
+		set_character_flag = character_born
 		set_character_flag = literate
 	}
 	set_variable = { FIR.zuko_birth_event = 95 }
@@ -540,7 +536,7 @@ permanent_spirits_and_modifiers = yes
 	set_variable = { azula_y = 6 }
 
 	FIR_azula = {
-		set_character_flag = FIR_character_born
+		set_character_flag = character_born
 		set_character_flag = literate
 	}
 	set_variable = { FIR.azula_birth_event = 97 }
@@ -612,6 +608,13 @@ permanent_spirits_and_modifiers = yes
 	FIR_starting_tech_111 = yes
 
 	set_political_power = 300
+
+	remove_mission = ba_sing_se_conquest_expectations
+
+	add_ideas = {
+		banished_prince
+
+	}
 
 	retire_character = FIR_azulon
 	retire_character = FIR_lu_ten

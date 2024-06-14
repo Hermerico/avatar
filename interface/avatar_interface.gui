@@ -327,11 +327,39 @@ guiTypes = {
 			}
 	
 			iconType ={
+				name ="avatar_location_unknown"
+				spriteType = "GFX_terrain_unknown"
+				position = { x= 200 y = -160 }
+				Orientation = "LOWER_LEFT"
+				pdx_tooltip = "AVATAR_ICEBERG"
+			}
+			iconType ={
+				name ="avatar_location_captured"
+				spriteType = "GFX_terrain_prison"
+				position = { x= 200 y = -160 }
+				Orientation = "LOWER_LEFT"
+				pdx_tooltip = "AVATAR_PRISON"
+			}
+			iconType ={
+				name ="avatar_location_ship"
+				spriteType = "GFX_terrain_fire_ship"
+				position = { x= 200 y = -160 }
+				Orientation = "LOWER_LEFT"
+				pdx_tooltip = "AVATAR_ON_BOAT"
+			}
+			iconType ={
 				name ="avatar_location"
 				#spriteType = "GFX_terrain_unknown"
 				position = { x= 200 y = -160 }
 				Orientation = "LOWER_LEFT"
 				pdx_tooltip = "AVATAR_LOCATION_NAME"
+			}
+			iconType ={
+				name ="avatar_location_appa"
+				spriteType = "GFX_terrain_airbison"
+				position = { x= 200 y = -160 }
+				Orientation = "LOWER_LEFT"
+				pdx_tooltip = "AVATAR_EN_ROUTE"
 			}
 
 		}
@@ -555,17 +583,31 @@ guiTypes = {
 				position = { x= -10 y = 390 }
 				pdx_tooltip = "AVATAR_TEAM_1_TOOLTIP"
 			}
-
 			iconType = {
 				name ="team_2_portrait"
 				position = { x= 70 y = 390 }
 				pdx_tooltip = "AVATAR_TEAM_2_TOOLTIP"
 			}
-
 			iconType = {
 				name ="team_3_portrait"
 				position = { x= 150 y = 390 }
 				pdx_tooltip = "AVATAR_TEAM_3_TOOLTIP"
+			}
+
+			iconType = {
+				name ="team_4_portrait"
+				position = { x= -10 y = 460 }
+				pdx_tooltip = "AVATAR_TEAM_4_TOOLTIP"
+			}
+			iconType = {
+				name ="team_5_portrait"
+				position = { x= 70 y = 460 }
+				pdx_tooltip = "AVATAR_TEAM_5_TOOLTIP"
+			}
+			iconType = {
+				name ="team_6_portrait"
+				position = { x= 150 y = 460 }
+				pdx_tooltip = "AVATAR_TEAM_6_TOOLTIP"
 			}
 
 			

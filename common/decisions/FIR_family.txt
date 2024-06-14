@@ -196,7 +196,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_sozin
 			FIR_sozin = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = literate
 			}
@@ -255,7 +255,7 @@ FIR_royal_family_category = {
 			check_variable = { mtth:azulon_age > 3 }
 			check_variable = { mtth:azulon_age < 16 }
 			FIR_azulon = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = literate }
 			}
 		}
@@ -312,7 +312,7 @@ FIR_royal_family_category = {
 		}
 		visible = {	
 			FIR_azulon = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 			}
 			check_variable = { mtth:azulon_age > 3 }
 			check_variable = { mtth:azulon_age < 16 }
@@ -362,7 +362,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_azulon
 			FIR_azulon = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = firebending_training
 				NOT = {
@@ -404,7 +404,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_azulon
 			FIR_azulon = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = literate
 			}
@@ -449,7 +449,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_azulon
 			FIR_azulon = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = {
 					has_character_flag = FIR_character_general
 				}
@@ -502,7 +502,7 @@ FIR_royal_family_category = {
 				ruling_only = yes
 			}
 			FIR_azulon = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				is_available_for_coronation = yes
 			}
 			has_character = FIR_azulon
@@ -513,7 +513,7 @@ FIR_royal_family_category = {
 				ruling_only = yes
 			}
 			FIR_azulon = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 			}
 		}
 
@@ -610,7 +610,7 @@ FIR_royal_family_category = {
 			check_variable = { mtth:iroh_age > 3 }
 			check_variable = { mtth:iroh_age < 16 }
 			FIR_iroh = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = literate }
 			}
 		}
@@ -667,7 +667,7 @@ FIR_royal_family_category = {
 		}
 		visible = {	
 			FIR_iroh = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 			}
 			check_variable = { mtth:iroh_age > 3 }
 			check_variable = { mtth:iroh_age < 16 }
@@ -717,7 +717,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_iroh
 			FIR_iroh = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = firebending_training
 				NOT = {
@@ -759,7 +759,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_iroh
 			FIR_iroh = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = literate
 			}
@@ -805,7 +805,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_iroh
 			FIR_iroh = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = {
 					has_character_flag = FIR_character_general
 				}
@@ -896,7 +896,7 @@ FIR_royal_family_category = {
 				ruling_only = yes
 			}
 			FIR_iroh = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 			}
 			has_character = FIR_iroh
 		}
@@ -906,7 +906,7 @@ FIR_royal_family_category = {
 				ruling_only = yes
 			}
 			FIR_iroh = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				is_available_for_coronation = yes
 			}
 		}
@@ -950,7 +950,7 @@ FIR_royal_family_category = {
 			check_variable = { mtth:ozai_age > 3 }
 			check_variable = { mtth:ozai_age < 16 }
 			FIR_ozai = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = literate }
 			}
 		}
@@ -1007,7 +1007,7 @@ FIR_royal_family_category = {
 		}
 		visible = {	
 			FIR_ozai = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 			}
 			check_variable = { mtth:ozai_age > 3 }
 			check_variable = { mtth:ozai_age < 16 }
@@ -1057,7 +1057,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_ozai
 			FIR_ozai = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = firebending_training
 				NOT = {
@@ -1099,7 +1099,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_ozai
 			FIR_ozai = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = literate
 			}
@@ -1145,7 +1145,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_ozai
 			FIR_ozai = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = {
 					has_character_flag = FIR_character_general
 					is_country_leader = yes
@@ -1199,7 +1199,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_ozai
 			FIR_ozai = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = {
 					has_character_flag = FIR_character_general
 					is_country_leader = yes
@@ -1319,7 +1319,7 @@ FIR_royal_family_category = {
 				ruling_only = yes
 			}
 			FIR_ozai = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 			}
 			has_character = FIR_ozai
 		}
@@ -1329,7 +1329,7 @@ FIR_royal_family_category = {
 				ruling_only = yes
 			}
 			FIR_ozai = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				is_available_for_coronation = yes
 			}
 		}
@@ -1373,7 +1373,7 @@ FIR_royal_family_category = {
 			check_variable = { mtth:zuko_age > 3 }
 			check_variable = { mtth:zuko_age < 16 }
 			FIR_zuko = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = literate }
 			}
 		}
@@ -1430,7 +1430,7 @@ FIR_royal_family_category = {
 		}
 		visible = {	
 			FIR_zuko = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 			}
 			check_variable = { mtth:zuko_age > 3 }
 			check_variable = { mtth:zuko_age < 16 }
@@ -1480,7 +1480,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_zuko
 			FIR_zuko = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = firebending_training
 				NOT = {
@@ -1522,7 +1522,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_zuko
 			FIR_zuko = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = literate
 			}
@@ -1576,7 +1576,7 @@ FIR_royal_family_category = {
 			check_variable = { mtth:azula_age > 3 }
 			check_variable = { mtth:azula_age < 16 }
 			FIR_azula = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = literate }
 			}
 		}
@@ -1633,7 +1633,7 @@ FIR_royal_family_category = {
 		}
 		visible = {	
 			FIR_azula = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 			}
 			check_variable = { mtth:azula_age > 3 }
 			check_variable = { mtth:azula_age < 16 }
@@ -1683,7 +1683,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_azula
 			FIR_azula = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = firebending_training
 				NOT = {
@@ -1725,7 +1725,7 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_azula
 			FIR_azula = {
-				has_character_flag = FIR_character_born
+				has_character_flag = character_born
 				NOT = { has_character_flag = FIR_character_death }
 				has_character_flag = literate
 			}

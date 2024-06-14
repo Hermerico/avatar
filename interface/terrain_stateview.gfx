@@ -4,6 +4,19 @@ spriteTypes = {
 		name = "GFX_terrain_unknown"
 		textureFile = "gfx/interface/terrains/terrain_unknown.dds"
 	}
+	spriteType = {
+		name = "GFX_terrain_prison"
+		textureFile = "gfx/interface/terrains/terrain_prison.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_fire_ship"
+		textureFile = "gfx/interface/terrains/terrain_fire_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_airbison"
+		textureFile = "gfx/interface/terrains/terrain_airbison.dds"
+	}
+
 
 	spriteType = { name = "GFX_terrain_1"  textureFile = "gfx/interface/terrains/terrain_1.dds" }
 	spriteType = { name = "GFX_terrain_2"  textureFile = "gfx/interface/terrains/terrain_2.dds" }

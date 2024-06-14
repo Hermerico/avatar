@@ -91,7 +91,13 @@ population_counter = {
 			set_temp_variable = { loyal_state_pop = state_population_k }
 			multiply_temp_variable = { loyal_state_pop = resistance }
 			multiply_temp_variable = { loyal_state_pop = 0.01 }
+
 			add_to_variable = { ROOT.loyalist_population_k = loyal_state_pop }
+
+			THIS.CONTROLLER = {
+				subtract_from_variable = { max_population_k = loyal_state_pop }
+				subtract_from_variable = { occupied_population_k = loyal_state_pop }
+			}
 		}
 	}
 	add_to_variable = { max_population_k = loyalist_population_k }
