@@ -143,11 +143,38 @@ country_event = {
 	option = {
 		name = earcas.4.b
 
-		chins_fortress_capital = yes
+		takus_fortress_capital = yes
 
 		ai_chance = {
 			base = 100
 		}
 	}
 
+}
+
+
+### gaoling wip
+country_event = {
+	id = earcas.5
+	title = earcas.5.t
+	desc = earcas.5.d
+	picture = GFX_report_event_chin_fortress
+
+	is_triggered_only = yes
+
+	option = {
+		name = earcas.5.a
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = earcas.5.b
+
+		gaolings_castle_capital = yes
+
+		ai_chance = {
+			base = 100
+		}
+	}
 }
