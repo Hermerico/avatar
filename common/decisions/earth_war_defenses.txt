@@ -139,6 +139,49 @@ THE_EARTHKINGDOM = {
 		}
 	}
 
+	TAK_takus_fortress = {
+			icon = chins_fortress
+
+			visible = {
+				has_dynamic_modifier = { modifier = earth_nation}
+				325 = {
+					is_owned_and_controlled_by = PREV
+				}
+				NOT = {
+					has_active_mission = castle_construction_mission
+					has_global_flag = takus_fortress_build
+				}
+			}
+			available + {
+				custom_trigger_tooltip {
+					tooltip = can_add_mission
+					check_variable + { mtth:get_missions < mtth: get_mission_cap }
+				}
+			}
+
+			cost = EARTH_castle_cost?0
+
+			complete_effect = {
+				add_to_variable = { EARTH_castle_cost = 10 }
+				set_variable = { castle_construction = token:TAK_takus_fortress }
+				set_variable = { castle_location = 563 }
+				set_variable = { castle_size = 10 } 
+				activate_mission = castle_construction_mission
+				set_variable =  { castle_reduction_factor = 0.5 } 
+
+				country_event = { id = earcas.1 }
+
+				unlock_decision_category_tooltip = EAR_defense_category
+				set_country_flag = {
+					flag = defense_category_active
+					value = 1
+				}
+			}
+
+		ai_will_do = { 
+			base = 0 
+		}
+	}
 }
 
 
