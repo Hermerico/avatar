@@ -100,7 +100,17 @@ scripted_gui = {
 		}
 
 		triggers = {
-			
+			self_employed_active_visible = {
+				check_variable = { mtth:workers_number < mtth:state_self_employed }
+			}
+			workers_active_visible = {
+				check_variable = { mtth:workers_number > mtth:state_self_employed }
+				NOT = { check_variable = { mtth:missing_workers_resource_modifier < 0 } }
+			}
+			workers_missing_visible = {
+				check_variable = { mtth:missing_workers_resource_modifier < 0 }
+			}
+
 		}
 
 	}

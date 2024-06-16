@@ -239,7 +239,7 @@ reset_var_to_zero = {
 
 worker_counting_states = {
 
-	set_variable = { missing_workers_factor  = 1 }
+	set_variable = { missing_workers_factor = 1 }
 	add_to_variable = { missing_workers_factor = mtth:missing_workers_resource_modifier }
 
 
