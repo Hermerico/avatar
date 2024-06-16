@@ -15,7 +15,6 @@ on_actions = {
 
 	on_daily = {
 		effect = {
-
 			set_variable = { knowledge_daily = 0 }
 
 			# base gain
@@ -36,6 +35,30 @@ on_actions = {
 			multiply_variable = { knowledge_daily = knowledge_factor_calc }
 
 			add_to_variable = { knowledge_variable = knowledge_daily }
+
+			if = {
+				limit = {
+					has_country_flag = calculator
+				}
+
+				set_variable = { global.shared_knowledge = 0 }
+				set_variable = { global.knowledge_sharing_countries = 0 }
+
+				every_country = {
+					limit = {
+						check_variable = { modifier@tech_share_modifier < 1 }
+					}
+					add_to_variable = { global.shared_knowledge = knowledge_daily }
+					add_to_variable = { global.knowledge_sharing_countries = 1 }
+				}
+
+				divide_variable = { global.shared_knowledge = global.knowledge_sharing_countries }
+			}
+
+			set_variable = { shared_knowledge = global.shared_knowledge }
+			multiply_variable = { shared_knowledge = modifier@knowledge_spread }
+
+			add_to_variable = { knowledge_variable = shared_knowledge }
 
 			set_variable = { knowledge_cap = modifier@knowledge_cap }
 			clamp_variable = { 

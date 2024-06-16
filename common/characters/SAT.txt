@@ -66,6 +66,22 @@ characters={
 				small = "GFX_Portrait_SAT_aang_small"
 			}
 		}
+		field_marshal = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = character_general
+				NOT = { has_character_flag = character_death } 
+			}
+		}
 		
 	}
 	SAT_appa = {
@@ -79,6 +95,22 @@ characters={
 				small = "GFX_Portrait_SAT_appa_small"
 			}
 		}
+		field_marshal = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = character_general
+				NOT = { has_character_flag = character_death } 
+			}
+		}
 	}
 	SAT_momo = {
 		name = SAT_momo
@@ -89,6 +121,22 @@ characters={
 			army = {
 				large = "GFX_Portrait_SAT_momo"
 				small = "GFX_Portrait_SAT_momo_small"
+			}
+		}
+		field_marshal = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = character_general
+				NOT = { has_character_flag = character_death } 
 			}
 		}
 	}

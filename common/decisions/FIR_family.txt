@@ -284,11 +284,6 @@ FIR_royal_family_category = {
 				set_character_flag = literate
 				add_planning = 1
 				add_logistics = 1
-			}
-			every_unit_leader = {
-				limit = {
-					is_character = FIR_azulon
-				}
 				add_skill_level = 1
 			}
 
@@ -334,13 +329,8 @@ FIR_royal_family_category = {
 			FIR_azulon = {
 				add_attack = 1
 				add_defense = 1
-				set_character_flag = firebending_training
-			}
-			every_unit_leader = {
-				limit = {
-					is_character = FIR_azulon
-				}
 				add_skill_level = 1
+				set_character_flag = firebending_training
 			}
 		}
 
@@ -639,11 +629,6 @@ FIR_royal_family_category = {
 				set_character_flag = literate
 				add_planning = 1
 				add_logistics = 1
-			}
-			every_unit_leader = {
-				limit = {
-					is_character = FIR_iroh
-				}
 				add_skill_level = 1
 			}
 
@@ -689,13 +674,8 @@ FIR_royal_family_category = {
 			FIR_iroh = {
 				add_attack = 1
 				add_defense = 1
-				set_character_flag = firebending_training
-			}
-			every_unit_leader = {
-				limit = {
-					is_character = FIR_iroh
-				}
 				add_skill_level = 1
+				set_character_flag = firebending_training
 			}
 		}
 
@@ -979,11 +959,6 @@ FIR_royal_family_category = {
 				set_character_flag = literate
 				add_planning = 1
 				add_logistics = 1
-			}
-			every_unit_leader = {
-				limit = {
-					is_character = FIR_ozai
-				}
 				add_skill_level = 1
 			}
 
@@ -1029,13 +1004,8 @@ FIR_royal_family_category = {
 			FIR_ozai = {
 				add_attack = 1
 				add_defense = 1
-				set_character_flag = firebending_training
-			}
-			every_unit_leader = {
-				limit = {
-					is_character = FIR_ozai
-				}
 				add_skill_level = 1
+				set_character_flag = firebending_training
 			}
 		}
 
@@ -1402,11 +1372,6 @@ FIR_royal_family_category = {
 				set_character_flag = literate
 				add_planning = 1
 				add_logistics = 1
-			}
-			every_unit_leader = {
-				limit = {
-					is_character = FIR_zuko
-				}
 				add_skill_level = 1
 			}
 
@@ -1452,13 +1417,8 @@ FIR_royal_family_category = {
 			FIR_zuko = {
 				add_attack = 1
 				add_defense = 1
-				set_character_flag = firebending_training
-			}
-			every_unit_leader = {
-				limit = {
-					is_character = FIR_zuko
-				}
 				add_skill_level = 1
+				set_character_flag = firebending_training
 			}
 		}
 
@@ -1605,11 +1565,6 @@ FIR_royal_family_category = {
 				set_character_flag = literate
 				add_planning = 1
 				add_logistics = 1
-			}
-			every_unit_leader = {
-				limit = {
-					is_character = FIR_azula
-				}
 				add_skill_level = 1
 			}
 
@@ -1655,13 +1610,8 @@ FIR_royal_family_category = {
 			FIR_azula = {
 				add_attack = 1
 				add_defense = 1
-				set_character_flag = firebending_training
-			}
-			every_unit_leader = {
-				limit = {
-					is_character = FIR_azula
-				}
 				add_skill_level = 1
+				set_character_flag = firebending_training
 			}
 		}
 

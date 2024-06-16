@@ -60,6 +60,16 @@ unit_quality_effects = {
 
 }
 
+avatar_effects = {
+	enable = { always = yes }
+
+	#icon = GFX_fall
+
+	army_morale_factor = mtth:avatar_effect_modifier
+	stability_factor = mtth:avatar_effect_modifier
+
+}
+
 dynamic_bender_capacity = {
 	enable = { always = yes }
 

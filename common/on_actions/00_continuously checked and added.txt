@@ -46,6 +46,14 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = {
+						has_dynamic_modifier = { modifier = exported_resources_dynamic }
+					}
+				}
+				add_dynamic_modifier = { modifier = exported_resources_dynamic }
+			}
+			if = {
+				limit = {
+					NOT = {
 						has_dynamic_modifier = { modifier = factory_resource_consumption }
 					}
 				}
@@ -115,6 +123,14 @@ on_actions = {
 					}
 				}
 				add_dynamic_modifier = { modifier = dynamic_conscription_factor }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = avatar_effects }
+					}
+				}
+				add_dynamic_modifier = { modifier = avatar_effects }
 			}
 
 

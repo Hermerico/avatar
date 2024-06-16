@@ -224,6 +224,7 @@ buildings = {
 		max_planks_building_k = 0.01
 		max_bricks_building_k = 0.01
 		max_steel_beams_building_k = 0.01
+		local_trade_network = 0.02
 	}
 	rail_way = {
 		base_cost = 200

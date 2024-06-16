@@ -150,6 +150,7 @@ ideas = {
 				refit_speed = 0.5
 				navy_max_range_factor = 1
 				naval_speed_factor = 0.1
+				national_trade_network = 0.05
 			}
 		}
 		MER_northern_passage_crisis_modifier = {

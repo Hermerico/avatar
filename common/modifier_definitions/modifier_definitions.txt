@@ -95,7 +95,7 @@ civil_leader_cost_factor = {						#### recruiting new advisors pp cost
 
 weekly_centralisation = {							#### weekly change in centralisation
 	color_type = neutral 
-	value_type = percentage_in_hundred
+	value_type = percentage
 	precision = 2
 	postfix = none
 }
@@ -263,6 +263,20 @@ urbanisation_cost = {								#### construction resource cost of urbanisation and
 	precision = 2
 	postfix = none
 	category = state
+}
+
+
+local_trade_network = {						#### state contribution to reach max export capacity
+	color_type = neutral 
+	value_type = percentage
+	precision = 2
+	postfix = none
+}
+national_trade_network = {						#### exported resources in country
+	color_type = neutral 
+	value_type = percentage
+	precision = 2
+	postfix = none
 }
 
 
@@ -984,6 +998,12 @@ knowledge_cap = {									#### maximal stored knowledge
 knowledge_gain = {									#### maximal literacy 0-100%
 	color_type = good
 	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+}
+knowledge_spread = {									#### globaly shared knowledge
+	color_type = good
+	value_type = percentage
 	precision = 2
 	postfix = none
 }

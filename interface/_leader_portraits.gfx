@@ -223,7 +223,7 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Hakoda_general.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_SWT_hakoda_general"
+		name = "GFX_Portrait_SWT_hakoda_general_small"
 		texturefile = "gfx/interface/ideas/leader_small/SWT/hakoda_general_small.dds"
 	}
 

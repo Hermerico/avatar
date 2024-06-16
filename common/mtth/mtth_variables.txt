@@ -846,6 +846,31 @@ opinion_of_avatar = {
 	}
 }
 
+avatar_effect_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { effect_modifier = global.base_avatar_opinion }
+
+		set_temp_variable = { opinion_of_avatar_modifier = modifier@opinion_of_avatar_modifier }
+
+		add_to_temp_variable = { effect_modifier = opinion_of_avatar_modifier }
+
+		multiply_temp_variable = { effect_modifier = 0.001 }
+
+		multiply_temp_variable = { effect_modifier = avatar_influence }
+
+		multiply_temp_variable = { effect_modifier = 0.05 }
+
+		clamp_temp_variable = {
+			var = effect_modifier
+			min = -0.25
+			max = 0.25
+		}
+		
+		add = effect_modifier
+	}
+}
+
 
 colonial_guards_effect = {
 	base = 0

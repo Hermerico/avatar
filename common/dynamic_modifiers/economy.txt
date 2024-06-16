@@ -11,6 +11,57 @@ treasury_extension = {
 	money_capacity = var_treasury_extension
 }
 
+exported_resources_dynamic = {
+	enable = { always = yes }
+
+	min_export = exports_reduction
+
+	civilian_intel_to_others = trade_intel_var
+	navy_intel_to_others = trade_intel_var
+
+	knowledge_spread = trade_knowledge_var
+	prosperity = trade_prosperity_var
+}
+
+
+impoverished_region = {
+	enable = { always = yes }
+	remove_trigger = {
+		check_variable = { local_prosperity_ratio > 0.05 }
+	}
+
+	icon = GFX_modifiers_impoverished_region
+	
+	monthly_migration_state = -0.01
+}
+
+trade_hub = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		NOT = {
+			check_variable = {
+				var = THIS.local_prosperity
+				value = 40
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = THIS.urbanisation_cap
+				value = 40
+				compare = greater_than_or_equals
+			}
+		}
+	}
+
+	icon = GFX_modifiers_trade_hub
+
+	migration_attraction = 0.5
+	state_resources_factor = 0.1
+	prosperity = 0.1
+	local_trade_network = 0.75
+}
+
+
 
 
 famine = {

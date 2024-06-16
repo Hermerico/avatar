@@ -274,6 +274,14 @@ guiTypes = {
 				pdx_tooltip = "AVATAR_INFLUENCE_VALUE_TOOLTIP"
 			}
 
+			iconType = {
+				name ="avatar_influence_icon"
+				spriteType = "GFX_avatar_influence_icon"
+				position = { x= 400 y = 170 }
+				pdx_tooltip = "AVATAR_EFFECTS_TOOLTIP"
+				pdx_tooltip_delayed = "AVATAR_EFFECTS_TOOLTIP_DELAYED"
+			}
+
 			containerWindowType = {
 				name = "opinion_container"
 				position = { x=275 y=0}

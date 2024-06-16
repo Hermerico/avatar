@@ -112,6 +112,11 @@ spriteTypes = {
 		name = "GFX_avatar_icon"
 		textureFile = "gfx/interface/avatar/avatar_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_avatar_influence_icon"
+		textureFile = "gfx/interface/avatar/avatar_influence.dds"
+		noOfFrames = 2
+	}
 
 	spriteType = {
 		name = "GFX_avatar_aang"

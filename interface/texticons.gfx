@@ -690,6 +690,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_trade_network_texticon"
+		texturefile = "gfx/texticons/trade_network.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_import_texticon"
 		texturefile = "gfx/texticons/import.dds"
 		legacy_lazy_load = no
@@ -758,6 +763,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_knowledge_texticon"
 		texturefile = "gfx/texticons/knowledge_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_knowledge_spread"
+		texturefile = "gfx/texticons/knowledge_spread.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {

@@ -142,6 +142,7 @@ technologies = {
 		
 		production_factory_efficiency_gain_factor = 0.1
 		production_factory_max_efficiency_factor = 0.025
+		national_trade_network = 0.02
 		
 		research_cost = 2.5
 		#start_year = 8
@@ -2395,6 +2396,7 @@ technologies = {
 		army_cost_factor = -0.1
 		navy_cost_factor = -0.1
 		local_resources_factor = 0.12
+		national_trade_network = 0.04
 
 		research_cost = 2.5
 		#start_year = 72

@@ -36,7 +36,6 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 2
-			legacy_id=-1
 			visible = {
 				date > 100.1.1
 			}
@@ -60,7 +59,22 @@ characters={
 				small = "GFX_Portrait_SWT_sokka_small"
 			}
 		}
-		
+		field_marshal = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = character_general
+				NOT = { has_character_flag = character_death } 
+			}
+		}
 	}
 
 	SWT_katara = {
@@ -74,7 +88,22 @@ characters={
 				small = "GFX_Portrait_SWT_katara_small"
 			}
 		}
-		
+		field_marshal = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = character_general
+				NOT = { has_character_flag = character_death } 
+			}
+		}
 	}
 
 	SWT_generic={

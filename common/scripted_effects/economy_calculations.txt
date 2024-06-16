@@ -210,8 +210,11 @@ reset_var_to_zero = {
 	set_variable = { inflation_money = 0 }
 	set_variable = { weekly_peoples_investment_ic = 0 }
 
+	clamp_variable = { var = national_prosperity_const min = 1 }
 	set_variable = { national_prosperity = 0 }
 	set_variable = { national_prosperity_cap = 0 }
+
+	set_variable = { state_export_influence = 0 }
 
 	set_variable = { worker_deficit_k = 0 }
 
@@ -813,6 +816,8 @@ national_wealth_calc = {
 		min = 0 
 		max = national_prosperity_cap
 	}
+
+	set_variable = { national_prosperity_const = national_prosperity }
 
 	set_variable = { national_prosperity_percent = national_prosperity }
 	divide_variable = { national_prosperity_percent = national_prosperity_cap }
@@ -1498,12 +1503,43 @@ taxation_state_calc = {
 	if = {
 		limit = {
 			check_variable = {
-				var = local_prosperity
-				value = 0
+				var = local_prosperity_ratio
+				value = 0.05
 				compare = less_than_or_equals
 			}
 		}
 		add_dynamic_modifier = { modifier = impoverished_region }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = THIS.local_prosperity
+					value = 50
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = THIS.urbanisation_cap
+					value = 50
+					compare = greater_than_or_equals
+				}
+				OR = {
+					any_province_building_level = {
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						building = naval_base
+						level > 9
+					}
+					has_railway_level = {
+						state = THIS
+						level = 5
+					}
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = trade_hub }
 	}
 
 
@@ -1560,6 +1596,89 @@ taxation_state_calc = {
 	else = {
 		set_variable = { urbanisation_percentage = 0 }
 	}
+}
+
+trade_state_calc = {
+	set_variable = { local_exports = local_prosperity }
+	divide_variable = { local_exports = ROOT.national_prosperity_const }
+	multiply_variable = { local_exports = modifier@local_trade_network }
+
+	add_to_variable = { ROOT.state_export_influence = local_exports }
+}
+
+trade_calculation = {
+
+	set_variable = { max_exports_factor = modifier@min_export }
+	subtract_from_variable = { max_exports_factor = exports_reduction }
+
+	set_variable = { max_exports_show = max_exports_factor }
+	clamp_variable = { 
+		var = max_exports_show
+		min = 0
+		max = 0.9
+	}
+
+	set_variable = { trade_network_stength = state_export_influence }
+	add_to_variable = { trade_network_stength = modifier@national_trade_network }
+
+	set_variable = { convoy_trade_network_stength = num_equipment@convoy }
+	divide_variable = { convoy_trade_network_stength = 50 }
+	divide_variable = { convoy_trade_network_stength = national_prosperity_const }
+	clamp_variable = { 
+		var = convoy_trade_network_stength
+		min = 0
+		max = 0.2
+	}
+
+	add_to_variable = { trade_network_stength = convoy_trade_network_stength }
+
+	set_variable = { exports_clamp = trade_network_stength }
+	if = {
+		limit = {
+			check_variable = { max_exports_factor > 0 }
+		}
+		clamp_variable = { 
+			var = exports_clamp
+			min = 0
+			max = max_exports_factor
+		}
+	}
+	clamp_variable = { 
+		var = exports_clamp
+		min = 0
+		max = 0.9
+	}
+
+	set_variable = { national_export_capacity = exports_clamp }
+	subtract_from_variable = { national_export_capacity = max_exports_factor }
+
+	set_variable = { exports_reduction = national_export_capacity }
+
+
+	set_variable = { trade_intel_var = modifier@min_export }
+	multiply_variable = { trade_intel_var = 50 }
+	set_variable = { trade_knowledge_var = modifier@min_export }
+	set_variable = { trade_prosperity_var = modifier@min_export }
+	multiply_variable = { trade_prosperity_var = 0.25 }
+
+	set_variable = { total_exported_resources = 0 }
+	add_to_variable = { total_exported_resources = resource_exported@oil }
+	add_to_variable = { total_exported_resources = resource_exported@chromium }
+	add_to_variable = { total_exported_resources = resource_exported@tungsten }
+	add_to_variable = { total_exported_resources = resource_exported@aluminium }
+	add_to_variable = { total_exported_resources = resource_exported@stone }
+	add_to_variable = { total_exported_resources = resource_exported@rubber }
+	add_to_variable = { total_exported_resources = resource_exported@iron }
+	add_to_variable = { total_exported_resources = resource_exported@steel }
+	add_to_variable = { total_exported_resources = resource_exported@food_resource }
+	add_to_variable = { total_exported_resources = resource_exported@consumer_goods_resource }
+	add_to_variable = { total_exported_resources = resource_exported@luxury_goods_resource }
+	add_to_variable = { total_exported_resources = resource_exported@planks_resource }
+	add_to_variable = { total_exported_resources = resource_exported@bricks_resource }
+	add_to_variable = { total_exported_resources = resource_exported@steel_beams_resource }
+
+	set_variable = { trade_income = total_exported_resources }
+	multiply_variable = { trade_income = 0.001 }
 }
 
 wages_and_taxes = {
@@ -1647,6 +1766,7 @@ money_calculation = {
 
 	set_variable = { income_variable = 1 }
 	add_to_variable = { income_variable = modifier@income }
+	add_to_variable = { income_variable = trade_income }
 
 	set_variable = { income_factor = tax_balance }
 	set_variable = { income_divideer = state_income }

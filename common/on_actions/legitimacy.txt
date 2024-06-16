@@ -28,35 +28,66 @@ on_actions = {
 	on_weekly = {
 		effect = {
 
-			if = {
-				limit = {
-					check_variable = { centralisation_variable < mtth:legitimacy_target_100 }
-					check_variable = { modifier@weekly_centralisation < 0 }
-				}
-				subtract_from_variable = { centralisation_variable = modifier@weekly_centralisation }
+			set_variable = { centralisation_target = mtth:legitimacy_target_100 }
+
+			set_variable = { centralisation_ratio = centralisation_variable }
+			divide_variable = { centralisation_ratio = 100 }
+			clamp_variable = {
+				var = centralisation_ratio
+				min = 0.001
 			}
-			if = {
-				limit = {
-					check_variable = { centralisation_variable < mtth:legitimacy_target_100 }
-					check_variable = { modifier@weekly_centralisation > 0 }
-				}
-				add_to_variable = { centralisation_variable = 0.05 }
+
+			set_variable = { centralisation_target_percent = centralisation_target }
+			divide_variable = { centralisation_target_percent = 100 }
+
+			set_variable = { weekly_centralisation_change = centralisation_target_percent }
+			divide_variable = { weekly_centralisation_change = centralisation_ratio }
+			subtract_from_variable = { weekly_centralisation_change = 1 }
+			multiply_variable = { weekly_centralisation_change = -1 }
+
+			set_variable = { weekly_centralisation_change_rate = 1 }
+			add_to_variable = { weekly_centralisation_change_rate = modifier@weekly_centralisation }
+			clamp_variable = {
+				var = weekly_centralisation_change_rate
+				min = 0.01
 			}
+			multiply_variable = { weekly_centralisation_change = weekly_centralisation_change_rate }
+
+			set_variable = { centralisation_change_max = centralisation_target }
+			subtract_from_variable = { centralisation_change_max = centralisation_variable }
+			multiply_variable = { centralisation_change_max = -1 }
 
 			if = {
 				limit = {
-					check_variable = { centralisation_variable > mtth:legitimacy_target_100 }
-					check_variable = { modifier@weekly_centralisation > 0 }
+					check_variable = {
+						centralisation_variable > centralisation_target
+					}
 				}
-				subtract_from_variable = { centralisation_variable = modifier@weekly_centralisation }
+				clamp_variable = {
+					var = weekly_centralisation_change
+					min = 0.1
+					max = centralisation_change_max
+				}
 			}
-			if = {
+			else_if = {
 				limit = {
-					check_variable = { centralisation_variable > mtth:legitimacy_target_100 }
-					check_variable = { modifier@weekly_centralisation < 0 }
+					check_variable = {
+						centralisation_variable < centralisation_target
+					}
 				}
-				subtract_from_variable = { centralisation_variable = 0.05 }
+				clamp_variable = {
+					var = weekly_centralisation_change
+					min = centralisation_change_max
+					max = -0.1
+				}
 			}
+			else = {
+				set_variable = { weekly_centralisation_change = 0 }
+			}
+
+			subtract_from_variable = { centralisation_variable = weekly_centralisation_change }
+
+			
 			clamp_variable = { var = centralisation_variable min = 0 max = 100 }
 			
 		}

@@ -39,6 +39,7 @@ permanent_spirits_and_modifiers = {
 	}
 	add_dynamic_modifier = { modifier = stored_scripted_resources }
 	add_dynamic_modifier = { modifier = animal_resource_consumption }
+	add_dynamic_modifier = { modifier = exported_resources_dynamic }
 	add_dynamic_modifier = { modifier = factory_resource_consumption }
 	add_dynamic_modifier = { modifier = population_resource_bought_on_market }
 	add_dynamic_modifier = { modifier = building_upkeep_resources }
@@ -49,6 +50,7 @@ permanent_spirits_and_modifiers = {
 	add_dynamic_modifier = { modifier = logistics_and_orga_spirit }
 	add_dynamic_modifier = { modifier = wages_and_professionalism_spirit }
 	add_dynamic_modifier = { modifier = unit_leader_spirit }
+	add_dynamic_modifier = { modifier = avatar_effects }
 	set_variable = { spirit_army_orga = logistic_spirit_var }
 	multiply_variable = { spirit_army_orga = 0.015 }
 	subtract_from_variable = { spirit_army_orga = 0.1 }

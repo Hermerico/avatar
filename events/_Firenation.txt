@@ -1080,10 +1080,7 @@ country_event = {
 		
 		random_list = {
 			90 = {
-				every_unit_leader = {
-					limit = {
-						is_character = FIR_sozin
-					}
+				FIR_sozin = {
 					add_skill_level = 1
 				}
 			}
@@ -1348,10 +1345,7 @@ country_event = {
 		
 		random_list = {
 			90 = {
-				every_unit_leader = {
-					limit = {
-						is_character = FIR_azulon
-					}
+				FIR_azulon = {
 					add_skill_level = 1
 				}
 			}
@@ -1894,10 +1888,7 @@ country_event = {
 		
 		random_list = {
 			90 = {
-				every_unit_leader = {
-					limit = {
-						is_character = FIR_ozai
-					}
+				FIR_ozai = {
 					add_skill_level = 1
 				}
 			}
@@ -2226,10 +2217,7 @@ country_event = {
 		
 		random_list = {
 			90 = {
-				every_unit_leader = {
-					limit = {
-						is_character = FIR_iroh
-					}
+				FIR_iroh = {
 					add_skill_level = 1
 				}
 			}
@@ -2672,10 +2660,7 @@ country_event = {
 		
 		random_list = {
 			90 = {
-				every_unit_leader = {
-					limit = {
-						is_character = FIR_lu_ten
-					}
+				FIR_lu_ten = {
 					add_skill_level = 1
 				}
 			}
@@ -2941,10 +2926,7 @@ country_event = {
 		
 		random_list = {
 			90 = {
-				every_unit_leader = {
-					limit = {
-						is_character = FIR_zuko
-					}
+				FIR_zuko = {
 					add_skill_level = 1
 				}
 			}
@@ -3233,10 +3215,7 @@ country_event = {
 		
 		random_list = {
 			90 = {
-				every_unit_leader = {
-					limit = {
-						is_character = FIR_azula
-					}
+				FIR_azula = {
 					add_skill_level = 1
 				}
 			}

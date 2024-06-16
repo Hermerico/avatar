@@ -267,6 +267,7 @@
  knowledge:0 "£knowledge_texticon  Daily Knowledge Gain"
  knowledge_cap:0 "£knowledge_texticon  Max Knowledge"
  knowledge_gain:0 "£knowledge_texticon  Literacy"
+ knowledge_spread:0 "£knowledge_spread  Global Knowledge Spread"
  peoples_initiative:0 "£peoples_initiative_texticon  People's Initiative"
  leader_battle_chance:0 "Chance to induce a Battle"
  leader_battle_chance_factor:0 "Chance to induce a Battle Factor"
@@ -324,7 +325,7 @@
  active_missions:0 "£missions_texticon  Active Missions"
  active_emergencies:0 "£emergency_texticon  Active Emergencies"
 
- weekly_centralisation:0 "£centralisation_weekly_texticon  Weekly Centralisation"
+ weekly_centralisation:0 "£centralisation_weekly_texticon  Centralisation Change rate"
  centralisation_target_modifier:0 "£centralisation_target_texticon  Centralisation Target"
 
  overlord_influence:0 "£influence_texticon Influence on Subjects"
@@ -1370,7 +1371,9 @@
  MODIFIER_INDUSTRY_REPAIR_FACTOR_DESC:1 "Modifies §HCivilian Factory§! output for all repairs."
  MODIFIER_PRODUCTION_OIL_FACTOR:0 "Synthetic Oil"
  MODIFIER_MAX_TRAINING_XP_FACTOR:0 "Max training"
- MODIFIER_MIN_EXPORT_FACTOR:0 "£resources_to_market_icon  Resources to Market"
+ MODIFIER_MIN_EXPORT_FACTOR:0 "£resources_to_market_icon  Maximal Exported Resources"
+ local_trade_network:0 "£trade_network_texticon  Local Trade Network"
+ national_trade_network:0 "£trade_network_texticon  National Trade Network"
  MODIFIER_CONSCRIPTION_FACTOR:0 "£manpower_texticon  Recruitable Population"
  MODIFIER_CONSCRIPTION_FACTOR_DESC:0 "Modifies how much your manpower you can access from states."
  MODIFIER_CONSCRIPTION_TOTAL_FACTOR:0 "£manpower_texticon  Recruitable Population Factor"

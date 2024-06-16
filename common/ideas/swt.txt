@@ -36,7 +36,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				
+				bender_target = -1
 				bender_disabled = 1
 				bender_unit_factor = -1
 			}

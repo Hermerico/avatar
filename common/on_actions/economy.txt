@@ -22,7 +22,8 @@ on_actions = {
 				#### taxation and prosperity
 				taxation_state_calc = yes
 
-
+				#### trade capacity
+				trade_state_calc = yes
 
 				set_temp_variable = { temp_worker_deficit = mtth:workers_needed }
 				subtract_from_temp_variable = { temp_worker_deficit = mtth:state_workforce_k }
@@ -104,12 +105,11 @@ on_actions = {
 			### calculats countries prosperity
 			national_wealth_calc = yes
 
-
-
 			### wages and taxes
 			wages_and_taxes = yes
 
-
+			### trade 
+			trade_calculation = yes
 
 			###view food
 			set_variable = { food_supply = resource@food_resource }
