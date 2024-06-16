@@ -114,12 +114,27 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "self_employed_active"
+			spriteType = "GFX_self_sufficient"
+			position = { x = 24 y = 12 }
+			pdx_tooltip = "workers_tootlip"
+			scale = 0.55
+		}
+		iconType = {
 			name = "workers_active"
 			spriteType = "GFX_employed"
 			position = { x = 24 y = 12 }
 			pdx_tooltip = "workers_tootlip"
 			scale = 0.55
 		}
+		iconType = {
+			name = "workers_missing"
+			spriteType = "GFX_warning_missing_workers"
+			position = { x = 24 y = 12 }
+			pdx_tooltip = "workers_tootlip"
+			scale = 0.55
+		}
+
 		instantTextBoxType = {
 			name ="workers_text"
 			position = { x = 64 y = 16 }

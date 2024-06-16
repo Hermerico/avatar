@@ -250,42 +250,6 @@ scripted_gui = {
 				}
 			}
 
-			forest_icon_visible = {
-				has_variable = forest
-			}
-			forest_visible = {
-				has_variable = forest
-			}
-			mountain_icon_visible = {
-				has_variable = mountain
-			}
-			mountain_visible = {
-				has_variable = mountain
-			}
-			field_icon_visible = {
-				has_variable = field
-			}
-			field_visible = {
-				has_variable = field
-			}
-			water_icon_visible = {
-				has_variable = water
-			}
-			water_visible = {
-				has_variable = water
-			}
-			stonefield_icon_visible = {
-				has_variable = stonefield
-			}
-			stonefield_visible = {
-				has_variable = stonefield
-			}
-			animal_icon_visible = {
-				has_variable = animal
-			}
-			animal_visible = {
-				has_variable = animal
-			}
 
 			farm_progress_visible = {
 				check_variable = { farm_construction_que > 0 }
