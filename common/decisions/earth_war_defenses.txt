@@ -70,7 +70,7 @@ THE_EARTHKINGDOM = {
 			}
 		}
 
-		cost = EARTH_castle_cost?0
+		cost = EARTH_castle_cost?5
 
 		complete_effect = {
 			add_to_variable = { EARTH_castle_cost = 10 }
@@ -154,9 +154,9 @@ THE_EARTHKINGDOM = {
 			}
 		}
 		available = {
-			custom_trigger_tooltip {
+			custom_trigger_tooltip = {
 				tooltip = can_add_mission
-				check_variable = { mtth:get_missions < mtth: get_mission_cap }
+				check_variable = { mtth:get_missions < mtth:get_mission_cap }
 			}
 		}
 
@@ -198,9 +198,9 @@ THE_EARTHKINGDOM = {
 			}
 		}
 		available = {
-			custom_trigger_tooltip {
+			custom_trigger_tooltip = {
 				tooltip = can_add_mission
-				check_variable = { mtth: get_missions < mtth: get_mission_cap }
+				check_variable = { mtth: get_missions < mtth:get_mission_cap }
 			}
 		}
 
