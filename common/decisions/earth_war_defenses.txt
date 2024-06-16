@@ -160,7 +160,7 @@ THE_EARTHKINGDOM = {
 			}
 		}
 
-		cost = EARTH_castle_cost?0
+		cost = EARTH_castle_cost?5
 
 		complete_effect = {
 			add_to_variable = { EARTH_castle_cost = 10 }
