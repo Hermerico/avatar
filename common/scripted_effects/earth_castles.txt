@@ -236,11 +236,11 @@ fong_base_harbour = {
 	}
 }
 
-### #   # # #   #  ###     ###  ###   ### ##### #    ####                        
+ ### #   # # #   #  ###     ###  ###   ### ##### #    ####                        
 #    #   # # ##  # #       #    #   # #      #   #    #          
 #    ##### # # # #  ##     #    #####  ##    #   #    ###                   
 #    #   # # #  ##    #    #    #   #    #   #   #    #           
-### #   # # #   # ###      ### #   # ###    #   #### ####                       
+ ### #   # # #   # ###      ### #   # ###    #   #### ####                       
 CHN_chins_fortress = {
 	chins_fortress = yes
 	chins_fortress_walls = yes
@@ -389,7 +389,7 @@ takus_fortress_walls = {
 }
 
 takus_fortress = {
-	154 {
+	154 = {
 		add_province_modifier {
 			static_modifiers = {
 				takus_fortress
@@ -403,7 +403,7 @@ takus_fortress = {
 
 takus_fortress_capital = {
 	set_capital = {
-		state = 6901
+		state = 154
 	}
 	6901 = {
 		add_victory_points = {

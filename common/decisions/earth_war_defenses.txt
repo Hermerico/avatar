@@ -153,9 +153,9 @@ THE_EARTHKINGDOM = {
 			}
 		}
 		available = {
-			custom_trigger_tooltip {
+			custom_trigger_tooltip = {
 				tooltip = can_add_mission
-				check_variable = { mtth:get_missions < mtth: get_mission_cap }
+				check_variable = { mtth:get_missions < mtth:get_mission_cap }
 			}
 		}
 
@@ -197,9 +197,9 @@ THE_EARTHKINGDOM = {
 			}
 		}
 		available = {
-			custom_trigger_tooltip {
+			custom_trigger_tooltip = {
 				tooltip = can_add_mission
-				check_variable = { mtth: get_missions < mtth: get_mission_cap }
+				check_variable = { mtth: get_missions < mtth:get_mission_cap }
 			}
 		}
 
