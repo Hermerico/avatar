@@ -125,7 +125,7 @@ country_event = {
 }
 
 
-### taku wip
+### taku done
 country_event = {
 	id = earcas.4
 	title = earcas.4.t
