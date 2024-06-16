@@ -383,7 +383,7 @@ ratio_effects_and_interface = {
 	clamp_variable = { 
 		var = soldier_penalty_good 
 		min = 0 
-		max = 1
+		max = 2
 	}
 	multiply_variable = { soldier_penalty = -0.25 }
 	clamp_variable = { 

@@ -2171,7 +2171,7 @@
  MODIFIER_AIRFORCE_INTEL_DECRYPTION_BONUS:0 "Decrypted Airforce Cipher Bonus: $VALUE$"
  country_is_at_war:0 "Country is at war"
  country_is_at_peace:0 "Country is at peace"
- MODIFIER_SUPPLY_FACTOR:1 "Supply Efficiency"
+ MODIFIER_SUPPLY_FACTOR:1 "£supply_texticon  Supply Efficiency"
  MODIFIER_SUPPLY_NODE_RANGE:0 "Supply Range"
  MODIFIER_FEMALE_OPERATIVE_CHANCE:0 "Added Female Operative Chance: $VALUE$"
  MODIFIER_FEMALE_ARMY_LEADER_CHANCE:0 "Added Female Army Leader Chance: $VALUE$"

@@ -255,7 +255,14 @@ characters={
 				small = "GFX_Portrait_Lu_Ten_small"
 			}
 		}
-	
+		
+		field_marshal = {
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
 	}
 
 	FIR_ozai = {
@@ -325,6 +332,13 @@ characters={
 			}
 		}
 	
+		field_marshal = {
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
 	}
 
 	FIR_azula = {
@@ -338,7 +352,14 @@ characters={
 				small = "GFX_Portrait_Azula_small"
 			}
 		}
-	
+		
+		field_marshal = {
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
 	}
 
 
