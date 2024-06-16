@@ -81,7 +81,14 @@ state={
 				set_province_controller = 2564
 
 			}
-
+			buildings = {
+				6678 = {
+					supply_node = 1
+				}
+				346 = {
+					supply_node = 1
+				}
+			}
 			instant_resource_calc = yes
 		}
 		111.10.30 = {
