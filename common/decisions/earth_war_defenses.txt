@@ -144,7 +144,7 @@ THE_EARTHKINGDOM = {
 
 		visible = {
 			has_dynamic_modifier = { modifier = earth_nation }
-			325 = {
+			154 = {
 				is_owned_and_controlled_by = PREV
 			}
 			NOT = {
@@ -164,7 +164,7 @@ THE_EARTHKINGDOM = {
 		complete_effect = {
 			add_to_variable = { EARTH_castle_cost = 10 }
 			set_variable = { castle_construction = token:TAK_takus_fortress }
-			set_variable = { castle_location = 563 }
+			set_variable = { castle_location = 6901 }
 			set_variable = { castle_size = 10 } 
 			activate_mission = castle_construction_mission
 			set_variable =  { castle_reduction_factor = 0.5 } 
