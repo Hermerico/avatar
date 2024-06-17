@@ -453,7 +453,7 @@ scripted_gui = {
 				set_technology = {
 					measurements = 1
 				}
-				#country_event = invention.1
+				measurements_spread = yes
 				recalculate_age = yes
 			}
 			kinectics_2_click = {
@@ -461,7 +461,7 @@ scripted_gui = {
 				set_technology = {
 					kinectics = 1
 				}
-				#country_event = invention.1
+				kinectics_spread = yes
 				recalculate_age = yes
 			}
 			wind_manipulation_2_click = {

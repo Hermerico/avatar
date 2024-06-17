@@ -179,3 +179,59 @@ recalculate_age = {
 		add_ideas = age_1_bonus
 	}
 }
+
+measurements_spread = {
+	if = {
+		limit = {
+			check_variable = { modifier@tech_share_modifier < 1 }
+		}
+		save_event_target_as = invention_origin
+
+		every_country = {
+			set_temp_variable = { invention_spread_chance = modifier@knowledge_spread }
+			multiply_temp_variable = { invention_spread_chance = 100 }
+
+			random = {
+				chance = invention_spread_chance
+				
+				country_event = { id = invention.1  random_days = 30 }
+			}
+		}
+	}
+	if = {
+		limit = {
+			all_country = {
+				has_tech = measurements
+			}
+		}
+		news_event = { id = invention_news.1  random_days = 30 }
+	}
+}
+
+kinectics_spread = {
+	if = {
+		limit = {
+			check_variable = { modifier@tech_share_modifier < 1 }
+		}
+		save_event_target_as = invention_origin
+
+		every_country = {
+			set_temp_variable = { invention_spread_chance = modifier@knowledge_spread }
+			multiply_temp_variable = { invention_spread_chance = 100 }
+
+			random = {
+				chance = invention_spread_chance
+				
+				country_event = { id = invention.2  random_days = 30 }
+			}
+		}
+	}
+	if = {
+		limit = {
+			all_country = {
+				has_tech = kinectics
+			}
+		}
+		news_event = { id = invention_news.2  random_days = 30 }
+	}
+}
