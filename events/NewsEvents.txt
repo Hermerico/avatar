@@ -73,24 +73,7 @@ news_event = {
 	picture = GFX_avatar_news_event_003
 	is_triggered_only = yes
 	major = yes
-	immediate = {
-		hidden_effect = {
-			set_global_flag = air_nomad_genocide
-			
-			SAT = {
-				dismantle_faction = yes
-			}
-			WAT = {
-				dismantle_faction = yes
-			}
-			NAT = {
-				dismantle_faction = yes
-			}
-			EAT = {
-				dismantle_faction = yes
-			}
-		}
-	}
+	
 	option = {
 		name = news.3.a
 		ai_chance = {
@@ -150,15 +133,23 @@ news_event = {
 		days = 30
 	}
 	immediate = {
-		random_list = {
-			100 = {
-				FIR = {
-					news_event = {
-						id = news.3
-					}
-				}
+		hidden_effect = {
+			set_global_flag = air_nomad_genocide
+			
+			SAT = {
+				dismantle_faction = yes
+			}
+			WAT = {
+				dismantle_faction = yes
+			}
+			NAT = {
+				dismantle_faction = yes
+			}
+			EAT = {
+				dismantle_faction = yes
 			}
 		}
+		news_event = { id = news.3 }
 	}
 	option = {
 		name = hidden.3.a
@@ -323,11 +314,7 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = avatar_cycle_broken
-			clr_global_flag = avatar_aang
 			clr_global_flag = avatar_born_air
-			clr_global_flag = avatar_team_appa
-			clr_global_flag = avatar_team_gyatso
-			clr_global_flag = avatar_sat
 			clear_variable = global.avatar_age
 			clear_variable = global.avatar_influence
 			clear_variable = global.avatar_spirituality
@@ -338,7 +325,6 @@ news_event = {
 			clear_variable = global.avatar_airbender_skill
 			every_country = {
 				clr_country_flag = avatar_friendly
-				clr_country_flag = avatar_hostile
 			}
 		}
 	}
@@ -371,11 +357,7 @@ news_event = {
 	major = yes
 	immediate = {
 		hidden_effect = {
-			clr_global_flag = avatar_aang
 			clr_global_flag = avatar_born_air
-			clr_global_flag = avatar_team_appa
-			clr_global_flag = avatar_team_gyatso
-			clr_global_flag = avatar_sat
 			clear_variable = global.avatar_age
 			clear_variable = global.avatar_spirituality
 			clear_variable = global.avatar_state
@@ -385,7 +367,6 @@ news_event = {
 			clear_variable = global.avatar_airbender_skill
 			every_country = {
 				set_country_flag = avatar_friendly
-				clr_country_flag = avatar_hostile
 			}
 			random_list = {
 				100 = {

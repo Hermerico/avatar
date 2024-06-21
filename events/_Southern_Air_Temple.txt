@@ -59,8 +59,8 @@ country_event = {
 		}
 		set_global_flag = gyatso_and_aang_flee
 
-		clr_global_flag = avatar_sat
-		set_global_flag = avatar_unknown
+		clear_variable = global.avatar_location
+		#remove_from_array = { global.avatar_team = token:SAT_monk_gyatso }
 
 	}
 

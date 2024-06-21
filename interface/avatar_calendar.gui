@@ -29,6 +29,16 @@ guiTypes = {
 			pdx_tooltip_delayed = "full_moon_tooltip_delayed"
 		}
 
+		iconType = {
+			name = "great_comet_icon_small"
+			position = {x=88 y=10}
+			spriteType = "GFX_great_comet_icon"
+			scale = 0.4
+
+			pdx_tooltip = "great_comet_effects_tooltip"
+			pdx_tooltip_delayed = "great_comet_tooltip_delayed"
+		}
+
 	}
 
 	containerWindowType = {

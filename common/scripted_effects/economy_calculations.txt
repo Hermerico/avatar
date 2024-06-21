@@ -180,12 +180,15 @@ reset_var_to_zero = {
 	set_variable = { employment_need_k = 0 }
 	set_variable = { employment_real_k = 0 }
 
+	set_variable = { resource_employed = 0 }
 	set_variable = { farm_employed = 0 }
 	set_variable = { mill_employed = 0 }
 	set_variable = { fishing_stand_employed = 0 }
 	set_variable = { ranch_employed = 0 }
 	set_variable = { lumber_mill_employed = 0 }
 	set_variable = { mine_employed = 0 }
+
+	set_variable = { production_employed = 0 }
 	set_variable = { weaving_employed = 0 }
 	set_variable = { smithy_employed = 0 }
 	set_variable = { factory_employed = 0 }
@@ -251,6 +254,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = farm_employed }
 	add_to_variable = { ROOT.farm_employed = farm_employed_real }
 	add_to_variable = { ROOT.employment_real_k = farm_employed_real }
+	add_to_variable = { ROOT.resource_employed = farm_employed_real }
 	
 	###view mill
 	set_variable = { mill_employed = modifier@miller_k }
@@ -260,6 +264,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = mill_employed }
 	add_to_variable = { ROOT.mill_employed = mill_employed_real }
 	add_to_variable = { ROOT.employment_real_k = mill_employed_real }
+	add_to_variable = { ROOT.production_employed = mill_employed_real }
 	
 	###view fishing_stand
 	set_variable = { fishing_stand_employed = modifier@fisher_k }
@@ -269,6 +274,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = fishing_stand_employed }
 	add_to_variable = { ROOT.fishing_stand_employed = fishing_stand_employed_real }
 	add_to_variable = { ROOT.employment_real_k = fishing_stand_employed_real }
+	add_to_variable = { ROOT.resource_employed = fishing_stand_employed_real }
 	
 	###view ranch
 	set_variable = { ranch_employed = modifier@rancher_k }
@@ -278,6 +284,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = ranch_employed }
 	add_to_variable = { ROOT.ranch_employed = ranch_employed_real }
 	add_to_variable = { ROOT.employment_real_k = ranch_employed_real }
+	add_to_variable = { ROOT.resource_employed = ranch_employed_real }
 	
 	###view lumber_mill
 	set_variable = { lumber_mill_employed = modifier@lumberjack_k }
@@ -287,6 +294,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = lumber_mill_employed }
 	add_to_variable = { ROOT.lumber_mill_employed = lumber_mill_employed_real }
 	add_to_variable = { ROOT.employment_real_k = lumber_mill_employed_real }
+	add_to_variable = { ROOT.resource_employed = lumber_mill_employed_real }
 	
 	###view mine
 	set_variable = { mine_employed = modifier@miner_k }
@@ -296,6 +304,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = mine_employed }
 	add_to_variable = { ROOT.mine_employed = mine_employed_real }
 	add_to_variable = { ROOT.employment_real_k = mine_employed_real }
+	add_to_variable = { ROOT.resource_employed = mine_employed_real }
 	
 	###view weaving
 	set_variable = { weaving_employed = modifier@weaver_k }
@@ -305,6 +314,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = weaving_employed }
 	add_to_variable = { ROOT.weaving_employed = weaving_employed_real }
 	add_to_variable = { ROOT.employment_real_k = weaving_employed_real }
+	add_to_variable = { ROOT.production_employed = weaving_employed_real }
 	
 	###view smithy
 	set_variable = { smithy_employed = modifier@smith_k }
@@ -314,6 +324,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = smithy_employed }
 	add_to_variable = { ROOT.smithy_employed = smithy_employed_real }
 	add_to_variable = { ROOT.employment_real_k = smithy_employed_real }
+	add_to_variable = { ROOT.production_employed = smithy_employed_real }
 	
 	###view factory
 	set_variable = { factory_employed = modifier@industrial_worker_k }
@@ -323,6 +334,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = factory_employed }
 	add_to_variable = { ROOT.factory_employed = factory_employed_real }
 	add_to_variable = { ROOT.employment_real_k = factory_employed_real }
+	add_to_variable = { ROOT.production_employed = factory_employed_real }
 	
 	###view shopkeeper
 	set_variable = { shopkeeper_employed = modifier@shopkeeper_k }
@@ -332,6 +344,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = shopkeeper_employed }
 	add_to_variable = { ROOT.shopkeeper_employed = shopkeeper_employed_real }
 	add_to_variable = { ROOT.employment_real_k = shopkeeper_employed_real }
+	add_to_variable = { ROOT.production_employed = shopkeeper_employed_real }
 	
 	###view harbour
 	set_variable = { harbour_employed = modifier@harbour_worker_k }
@@ -341,6 +354,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = harbour_employed }
 	add_to_variable = { ROOT.harbour_employed = harbour_employed_real }
 	add_to_variable = { ROOT.employment_real_k = harbour_employed_real }
+	add_to_variable = { ROOT.production_employed = harbour_employed_real }
 	
 	###view craftsman
 	set_variable = { craftsman_employed = modifier@craftsman_k }
@@ -350,6 +364,7 @@ worker_counting_states = {
 	add_to_variable = { ROOT.employment_need_k = craftsman_employed }
 	add_to_variable = { ROOT.craftsman_employed = craftsman_employed_real }
 	add_to_variable = { ROOT.employment_real_k = craftsman_employed_real }
+	add_to_variable = { ROOT.production_employed = craftsman_employed_real }
 }
 
 
@@ -1173,15 +1188,6 @@ employment_calculation_country = {
 	subtract_from_variable = { dependant_population_k = deployed_manpower_k }
 
 
-### might be redundant
-#	##### second employed calc for true value
-#
-#	set_variable = { employed_population_k = employment_need_k }
-#	clamp_variable = { 
-#		var = employment_real_k
-#		max = working_population_k 
-#	}
-
 	#####
 	
 	set_temp_variable = { temp_epmployed_percentage = employment_real_k }
@@ -1196,6 +1202,11 @@ employment_calculation_country = {
 	set_temp_variable = { temp_unepmployed_percentage = 1 }
 	subtract_from_temp_variable = { temp_unepmployed_percentage = epmployed_percentage }
 	set_variable = { unepmployed_percentage = temp_unepmployed_percentage }
+
+
+	set_variable = { resource_employed_constant = resource_employed }
+	add_to_variable = { resource_employed_constant = self_employed_k }
+	set_variable = { production_employed_constant = production_employed }
 
 
 	set_variable = { worker_deficit_ratio = worker_deficit_k }

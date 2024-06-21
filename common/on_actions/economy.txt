@@ -146,6 +146,10 @@ on_actions = {
 
 			employment_calculation_country = yes
 
+			set_temp_variable = { resource_employed_temp = resource_employed }
+			add_to_temp_variable = { resource_employed_temp = self_employed_k }
+			set_variable = { resource_employed_constant = resource_employed_temp }
+			set_variable = { production_employed_constant = production_employed }
 
 
 			### cost of maintaining buildings

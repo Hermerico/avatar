@@ -18,3 +18,22 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetFIR_industrialisation_categoryStatus
+	text = {
+		trigger = {
+			has_country_flag = industrialisation_country_decision
+		}
+		localization_key = country_category
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = industrialisation_country_decision
+			}
+		}
+		localization_key = mission_category
+	}
+}
+
+

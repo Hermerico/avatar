@@ -48,15 +48,10 @@ SAT_upcoming_war_category = {
 		}
 
 		visible = {
-			NOT = {
-				has_global_flag = monks_revealed_aang
-			}
+			check_variable = { global.avatar = token:SAT_aang }
 		}
 
 		available = {
-			AND = {
-				has_global_flag = avatar_aang
-			}
 			NOT = {
 				has_global_flag = monks_revealed_aang
 			}
@@ -119,9 +114,9 @@ SAT_upcoming_war_category = {
 						has_global_flag = gyatso_and_aang_flee
 					}
 				}
-				clr_global_flag = avatar_team_gyatso
-				clr_global_flag = avatar_sat
-				set_global_flag = avatar_iceberg
+				clear_variable = global.avatar_location
+				remove_from_array = { global.avatar_team = token:SAT_monk_gyatso }
+
 			}
 			custom_effect_tooltip = aang_travel_date_tt
 		}
@@ -129,7 +124,7 @@ SAT_upcoming_war_category = {
 		cost = 50
         fire_only_once = yes
         ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 	}
 
@@ -203,7 +198,7 @@ SAT_upcoming_war_category = {
         ai_will_do = {
 			base = 0
 			modifier = {
-				is_historical_focus_on = yes
+				is_historical_focus_on = no
 				add = 100
 			}
 		}

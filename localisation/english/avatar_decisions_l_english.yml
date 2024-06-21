@@ -290,7 +290,7 @@
  alliance_with_the_dragons:0 "Befriend the Dragons"
  alliance_with_the_dragons_desc:0 "The Dragon is a significant cultural and spiritual icon of the Fire Nation. We shall learn to live in harmony with these scaly beasts, and perhaps this cooperation can lead to further prosperity."
 
- FIR_industrialisation_category:0 "§mIndustrialisation§!"
+ FIR_industrialisation_category:0 "[GetFIR_industrialisation_categoryStatus]Industrialisation§!"
  FIR_industrialisation_category_desc:0 "Its geographic location and the fact, that some members of its society can bend Fire and by that create pure Energy, helped the Fire Nation to become the first industrialized country in the world.\nThis advantage is not to be neglected..."
  FIR_industrialisation_category_desc:0 "Its geographic location and the fact, that some members of its society can bend Fire and by that create pure Energy, helped the Firenation to become the first industrialized country in the world.\nThis advantage is not to be neglected..."
  agricultural_modernisation:0 "Agricultural Modernisation"
@@ -350,6 +350,9 @@
  FIR_southern_temple_attack:0 "Southern Temple Assault"
  FIR_southern_temple_attack_desc:0 ""Begin the attack on the Southern Air Temple. Our informant told us the Avatar is located here."
  
+ hunting_the_avatar_category:0 "§mHunt for the Avatar§!"
+ hunting_the_avatar_category_desc:0 "With Roku gone and the great comet returning, the timing was perfect to change the world. I knew the next Avatar would be born an Air Nomad, so I wiped out the air temples. But somehow, the new Avatar eluded me. I wasted the remainder of my life searching in vain. I know he's hiding out there somewhere. The Fire Nation's greatest threat ... the last airbender."
+
  FIR_colonies_category:0 "§mEstablish Colonies§!"
  FIR_colonies_category_desc:0 "Although the volcanic islands of the Fire Nation provide it with fertile earth, tropical rainforests and a seemingly endless supply of minerals and metals, the economy and population is growing too fast to maintain. \nColonies would not only be a good long term investment for our empire, but would also increase the influence of our culture around the world."
  rescue_fire_citizen_mission:0 "Rescue Mission for our Citizens"

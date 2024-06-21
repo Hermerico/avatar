@@ -1253,6 +1253,8 @@ EAR_dai_li_category = {
 					province = 522
 				}
 			}
+			custom_effect_tooltip = on_invasion_construction_ttp
+			set_country_flag = north_extra_construction
 		}
 
 		ai_will_do = {
@@ -1448,15 +1450,22 @@ EAR_dai_li_category = {
 			}
 		}
 		available = {
-			has_country_flag = genocide_active
-			has_country_flag = north_extra_construction
+			
 		}
 
 		fire_only_once = yes
 		days_remove = 20
-		modifier = {
-			income = -0.15
+		
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 10 }
 		}
+		custom_cost_text = expenses_10
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 10 }
+		}
+
 		remove_effect = {
 			custom_effect_tooltip = NAT_occupied_tt
 			NAT = {
@@ -1490,15 +1499,22 @@ EAR_dai_li_category = {
 			}
 		}
 		available = {
-			has_country_flag = genocide_active
-			has_country_flag = west_extra_construction
+			
 		}
 		
 		fire_only_once = yes
 		days_remove = 20
-		modifier = {
-			income = -0.15
+		
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 10 }
 		}
+		custom_cost_text = expenses_10
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 10 }
+		}
+
 		remove_effect = {
 			custom_effect_tooltip = WAT_occupied_tt
 			WAT = {
@@ -1532,15 +1548,22 @@ EAR_dai_li_category = {
 			}
 		}
 		available = {
-			has_country_flag = genocide_active
-			has_country_flag = south_extra_construction
+			
 		}
 	
 		fire_only_once = yes
 		days_remove = 20
-		modifier = {
-			income = -0.15
+		
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 10 }
 		}
+		custom_cost_text = expenses_10
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 10 }
+		}
+
 		remove_effect = {
 			custom_effect_tooltip = SAT_occupied_tt
 			SAT = {
@@ -1574,15 +1597,22 @@ EAR_dai_li_category = {
 			}
 		}
 		available = {
-			has_country_flag = genocide_active
-			has_country_flag = east_extra_construction
+			
 		}
 		
 		fire_only_once = yes
 		days_remove = 20
-		modifier = {
-			income = -0.15
+		
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 10 }
 		}
+		custom_cost_text = expenses_10
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 10 }
+		}
+
 		remove_effect = {
 			custom_effect_tooltip = EAT_occupied_tt
 			EAT = {

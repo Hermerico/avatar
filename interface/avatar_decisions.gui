@@ -698,7 +698,7 @@ guiTypes = {
 		iconType = {
 			name = "sozin"
 			spriteType = "GFX_sozin_portrait"
-			position = { x = 90 y = 6 }
+			position = { x = 100 y = 6 }
 			pdx_tooltip = "sozin_ttp"
 			pdx_tooltip_delayed = "sozin_ttp_delayed"
 		}
@@ -714,7 +714,7 @@ guiTypes = {
 		iconType = {
 			name = "rhya_young"
 			spriteType = "GFX_rhya_young_portrait"
-			position = { x = 220 y = 6 }
+			position = { x = 10 y = 6 }
 			pdx_tooltip = "rhya_ttp"
 			pdx_tooltip_delayed = "rhya_ttp_delayed"
 		}

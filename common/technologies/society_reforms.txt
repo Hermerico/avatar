@@ -742,7 +742,7 @@ technologies = {
 		}
 		
 		research_speed_factor = 0.08
-		knowledge_gain = 15
+		knowledge_spread = 0.15
 
 		path = {
 			leads_to_tech = progressive_medicine_1
@@ -1232,7 +1232,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			add_dynamic_modifier = { modifier = academics_dynamic_modifier }
+			#add_dynamic_modifier = { modifier = academics_dynamic_modifier }
 		}
 		
 		academia_cost_factor = -0.10
@@ -1417,7 +1417,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			add_dynamic_modifier = { modifier = clergy_dynamic_modifier }
+			#add_dynamic_modifier = { modifier = clergy_dynamic_modifier }
 		}
 		
 		clergy_cost_factor = -0.1
@@ -1520,6 +1520,7 @@ technologies = {
 		urbanisation_country_factor = 0.06
 		core_state_cost_factor = -0.1
 		colonise_state_cost_factor = -0.1
+		knowledge_spread = 0.1
 		
 		
 		research_cost = 2.5
@@ -1566,7 +1567,7 @@ technologies = {
 		}
 		
 		on_research_complete = {
-			remove_dynamic_modifier = { modifier = nobility_dynamic_modifier }
+			#remove_dynamic_modifier = { modifier = nobility_dynamic_modifier }
 		}
 		
 		peasant_opinion = 5
@@ -1761,7 +1762,7 @@ technologies = {
 		political_power_cap = 10
 		expenses_per_pop = 0.05
 		research_speed_factor = 0.08
-		knowledge_gain = 5
+		knowledge_spread = 0.05
 		
 		path = {
 			leads_to_tech = progressive_medicine_3
@@ -2028,7 +2029,7 @@ technologies = {
 			has_tech = progressive_3
 		}
 		on_research_complete = {
-			add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+			#add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
 		}
 		
 		minister_of_culture_cost_factor = -0.1
@@ -2275,7 +2276,7 @@ technologies = {
 		political_power_cap = 20
 		political_power_gain = 0.1
 		research_speed_factor = 0.08
-		knowledge_gain = 15
+		knowledge_gain = 10
 		
 		path = {
 			leads_to_tech = progressive_medicine_4
@@ -2464,7 +2465,7 @@ technologies = {
 		minister_of_personnel_cost_factor = -0.1
 		prosperity_factor = 0.15
 		research_speed_factor = 0.04
-		knowledge_gain = 10
+		knowledge_gain = 5
 
 		path = {
 			leads_to_tech = conservative_medicine_4

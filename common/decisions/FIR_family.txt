@@ -92,9 +92,6 @@ FIR_royal_family_category = {
 		complete_effect = {
 			unlock_decision_category_tooltip = air_genocide_category
 
-			set_variable = {
-				genocide_preparation = 4
-			}
 			set_country_flag = genocide_active
 
 
@@ -1252,12 +1249,17 @@ FIR_royal_family_category = {
 		visible = {	
 			has_character = FIR_ozai
 			has_character = FIR_iroh
+			FIR_ozai = {
+				has_character_flag = character_born
+			}
+			FIR_iroh = {
+				has_character_flag = character_born
+				has_character_flag = no_heir
+			}
 		}
 
 		available = {
-			FIR_iroh = {
-				has_character_flag = no_heir
-			}
+			
 		}
 
 		cost = 100
@@ -1832,6 +1834,57 @@ FIR_royal_family_category = {
 	
 	}
 
+	FIR_send_rhya_to_ba_sing_se = {
+
+		icon = rhya
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			tag = FIR
+			NOT = {
+				FIR = {
+					has_war_with = EAR
+				}
+			}
+			FIR = {
+				has_character = FIR_rhya
+			}
+			EAR = {
+				any_character = {
+					NOT = { has_character_flag = ambassador_@ROOT }
+				}
+			}
+		}
+		available = {
+			
+		}
+		
+		fire_only_once = yes		
+
+		cost = 20
+
+		complete_effect = {
+			set_country_flag = approach_earthkingdom
+		}
+
+		#days_remove = 30
+
+		remove_effect = {
+			EAR = { country_event = { id = fir_treaty.6 hours = 24 } }
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+	}
 
 	FIR_approach_earth_kingdom = {
 
@@ -1860,6 +1913,11 @@ FIR_royal_family_category = {
 			}
 			230 = { is_claimed_by = FIR }
 			280 = { is_claimed_by = FIR }
+			EAR = {
+				any_character = {
+					has_character_flag = ambassador_@ROOT
+				}
+			}
 		}
 		
 		fire_only_once = yes		
@@ -1867,7 +1925,7 @@ FIR_royal_family_category = {
 		#cost = 25
 
 		complete_effect = {
-			set_country_flag = approach_earthkingdom
+			
 		}
 
 		#days_remove = 30

@@ -9,7 +9,7 @@ country_event = {
 	title = centralisation.1.title
 	desc = centralisation.1.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_1
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -42,7 +42,7 @@ country_event = {
 	title = centralisation.2.title
 	desc = centralisation.2.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_2
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -69,7 +69,7 @@ country_event = {
 	title = centralisation.3.title
 	desc = centralisation.3.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_3
 	
 	trigger = {
 		peoples_initiative_available = yes
@@ -96,7 +96,7 @@ country_event = {
 	title = centralisation.4.title
 	desc = centralisation.4.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_4
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -123,7 +123,7 @@ country_event = {
 	title = centralisation.5.title
 	desc = centralisation.5.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_5
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -151,7 +151,7 @@ country_event = {
 	title = centralisation.6.title
 	desc = centralisation.6.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_6
 	
 	trigger = {
 		peoples_initiative_available = yes
@@ -178,7 +178,7 @@ country_event = {
 	title = centralisation.7.title
 	desc = centralisation.7.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_7
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -205,7 +205,7 @@ country_event = {
 	title = centralisation.8.title
 	desc = centralisation.8.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_8
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -232,7 +232,7 @@ country_event = {
 	title = centralisation.9.title
 	desc = centralisation.9.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_9
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -269,7 +269,7 @@ country_event = {
 	title = centralisation.10.title
 	desc = centralisation.10.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_10
 	
 	trigger = {
 		peoples_initiative_available = yes
@@ -298,7 +298,7 @@ country_event = {
 	title = centralisation.11.title
 	desc = centralisation.11.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_11
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -325,7 +325,7 @@ country_event = {
 	title = centralisation.12.title
 	desc = centralisation.12.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_12
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -355,7 +355,7 @@ country_event = {
 	title = centralisation.13.title
 	desc = centralisation.13.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_13
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -383,7 +383,7 @@ country_event = {
 	title = centralisation.14.title
 	desc = centralisation.14.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_14
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -410,7 +410,7 @@ country_event = {
 	title = centralisation.15.title
 	desc = centralisation.15.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_15
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -438,7 +438,7 @@ country_event = {
 	title = centralisation.16.title
 	desc = centralisation.16.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_16
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -465,7 +465,7 @@ country_event = {
 	title = centralisation.17.title
 	desc = centralisation.17.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_17
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -492,7 +492,7 @@ country_event = {
 	title = centralisation.18.title
 	desc = centralisation.18.desc
 	
-	picture = GFX_report_event_invention
+	picture = GFX_investment_18
 	
 	is_triggered_only = yes
 	minor_flavor = yes

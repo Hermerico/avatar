@@ -589,6 +589,22 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetGreatCometName
+	text = {
+		trigger = {
+			has_global_flag = sozins_comet_name
+		}
+		localization_key = sozins_comet
+	}
+	text = {
+		trigger = {
+			
+		}
+		localization_key = great_comet_normal
+	}
+}
+
 
 #### meteor rain
 

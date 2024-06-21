@@ -33,6 +33,10 @@ opinion_modifiers = {
 		value = -25
 	}
 
+	ambassador = {
+		value = 25
+	}
+
 	infiltrated_trade = {
 		trade = yes
 		value = 20

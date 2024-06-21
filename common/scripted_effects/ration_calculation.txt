@@ -461,6 +461,9 @@ ratio_effects_and_interface = {
 		max = 1
 	}
 
+	set_variable = { ration_stability_buff = ration_buff }
+	divide_variable = { ration_stability_buff = 10 }
+
 	if = {
 		limit = {
 			check_variable = { ration_variable > 0 }

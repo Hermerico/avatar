@@ -663,6 +663,30 @@ ideas = {
 			}
 		}
 
+		FIR_industrial_nation = {
+			
+			removal_cost = -1
+
+			modifier = {
+				industrialist_opinion = 10
+				urbanisation_country_factor = 0.1
+				consumer_demand = 0.2
+				steel_upkeep_factor = 0.5
+				peasant_output_factor = -1
+			}
+
+		}
+
+		FIR_private_investors = {
+			
+			removal_cost = -1
+
+			modifier = {
+				peoples_initiative = 0.2
+			}
+
+		}
+
 		FIR_modern_agriculture = {
 			
 			removal_cost = -1
@@ -696,16 +720,6 @@ ideas = {
 				avatar_influence_modifier = 0.05
 				opinion_of_avatar_modifier = -10
 				avatar_opinion_modifier = -50
-			}
-
-		}
-
-		FIR_private_investors = {
-			
-			removal_cost = -1
-
-			modifier = {
-				peoples_initiative = 0.2
 			}
 
 		}

@@ -1016,6 +1016,152 @@ country_event = {
 
 }
 
+#Send ryha to ba sing se
+country_event = {
+	id = fir_treaty.6
+	title = fir_treaty.6.t
+	desc = fir_treaty.6.d
+	picture = GFX_report_event_fir_ambassador
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Accept
+		name = fir_treaty.6.a
+		ai_chance = { 
+			base = 100
+		}
+
+		every_possible_country = {
+			limit = { has_character = FIR_rhya }
+			random_character = {
+				limit = { is_character = FIR_rhya }
+
+				set_character_flag = ambassador_FIR
+
+				set_nationality = EAR
+			}
+
+			reverse_add_opinion_modifier = {
+				target = PREV
+				modifier = ambassador
+			}
+
+			country_event = {
+				id = fir_treaty.7
+				days = 2
+			}
+		}
+	}
+	option = { #refuse
+		name = fir_treaty.6.b
+		ai_chance = { 
+			base = 0
+			modifier = {
+				add = 100
+				is_historical_focus_on = no
+			}
+		}
+		
+		FIR = {
+			country_event = {
+				id = fir_treaty.8
+				days = 2
+			}
+		}
+		
+	}
+	option = { #capture
+		name = fir_treaty.6.c
+		ai_chance = { 
+			base = 0
+			modifier = {
+				add = 100
+				is_historical_focus_on = no
+			}
+		}
+
+		every_possible_country = {
+			limit = { has_character = FIR_rhya }
+			random_character = {
+				limit = { is_character = FIR_rhya }
+				
+				set_character_flag = imprisoned
+
+				set_nationality = EAR
+			}
+
+			country_event = {
+				id = fir_treaty.9
+				days = 2
+			}
+		}
+		
+	}
+
+}
+
+
+#ba sing se accepts
+country_event = {
+	id = fir_treaty.7
+	title = fir_treaty.7.t
+	desc = fir_treaty.7.d
+	picture = GFX_report_event_fir_ambassador
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = fir_treaty.7.a
+		ai_chance = { 
+			base = 100
+		}
+	}
+
+}
+
+#ba sing se refuses
+country_event = {
+	id = fir_treaty.8
+	title = fir_treaty.8.t
+	desc = fir_treaty.8.d
+	picture = GFX_report_event_fir_ambassador
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = fir_treaty.8.a
+		ai_chance = { 
+			base = 100
+		}
+	}
+
+}
+
+#ba sing se captures her
+country_event = {
+	id = fir_treaty.9
+	title = fir_treaty.9.t
+	desc = fir_treaty.9.d
+	picture = GFX_report_event_fir_ambassador
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = fir_treaty.9.a
+		ai_chance = { 
+			base = 100
+		}
+	}
+
+}
 
 
 

@@ -77,8 +77,9 @@ FIR_starting_tech_12 = {
 
 	# reform
 	
-	conservative_0 = yes
-	procressive_1 = yes
+	progressive_0 = yes
+	progressive_1 = yes
+
 	set_technology = {
 		reform_2 = 1
 		conservative_2 = 1
@@ -451,54 +452,22 @@ FIR_starting_tech_52 = {
 		long_march = 1
 
 	# inventions
-		measurements = 1
-		kinectics = 1
-		domestication = 1
-		metaphysics = 1
-		geometry = 1
-		astronomy = 1
-		smelting = 1
-		agriculture = 1
-		writing = 1
-		architecture = 1
-		leverage = 1
-		bronze_alloy = 1
-		surgery = 1
-		natural_philosophy = 1
-		statistics = 1
-		magnetism = 1
-		alchemy = 1
-		botanics = 1
-		printing_press = 1
+	}
+
+	inventions_4 = yes
+
+	set_technology = {
 		steam_engine = 1
 		steel_alloy = 1
-
+	}
 
 	# reform
-		reform_0 = 1
-		progressive_0 = 1
-	    progressive_resources_0 = 1
-		progressive_economy_0 = 1
-		progressive_education_0 = 1
-		conservative_1 = 1
-		reform_1 = 1
-		conservative_resources_1 = 1
-		conservative_economy_1 = 1
-		conservative_education_1 = 1
-		reform_2 = 1
-		conservative_2 = 1
-		conservative_resources_2 = 1
-		conservative_economy_2 = 1
-		conservative_resources_1 = 1
-		conservative_economy_1 = 1
-		conservative_education_2 = 1
-		reform_3 = 1
-		progressive_3 = 1
-		progressive_resources_3 = 1
-		progressive_economy_3 = 1
-		progressive_resources_3 = 1
-		progressive_economy_3 = 1
-		progressive_education_3 = 1
+
+	conservative_2 = yes
+	conservative_3 = yes
+
+	set_technology = {
+
 		reform_4 = 1
 		conservative_4 = 1
 
@@ -894,10 +863,15 @@ FIR_starting_tech_106 = {
 		gas_turbine = 1
 		chemistry = 1
 
+	}
+
+
 	# reform
-		conservative_4 = 1
-		conservative_4 = 1
-		conservative_4 = 1
+
+	conservative_4 = yes
+
+	set_technology = {
+
 		reform_5 = 1
 
 	# construction

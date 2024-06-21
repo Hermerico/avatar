@@ -91,14 +91,9 @@ country_event = {
 	}
 	option = {
 		name = air_gen.2.a
+
 		custom_effect_tooltip = ear_genocide_description
 		hidden_effect = {
-			#every_character = {
-			#	limit = {
-			#		is_country_leader = yes
-			#	}
-			#	add_country_leader_trait = secret_genocide_plan
-			#}
 			GIF = {
 				transfer_state = 297
 				
@@ -389,6 +384,17 @@ country_event = {
 				remove_decision = southern_operation_base
 				remove_decision = western_operation_base
 			}
+			if = {
+				limit = {
+					FIR = { has_country_flag = hired_dai_li }
+				}
+				FIR = {
+					activate_mission = FIR_eastern_temple_attack
+					activate_mission = FIR_western_temple_attack
+					activate_mission = FIR_northern_temple_attack
+					activate_mission = FIR_southern_temple_attack
+				}
+			}
 		}
 		ai_chance = {
 			base = 100
@@ -396,6 +402,13 @@ country_event = {
 	}
 	option = {
 		name = air_gen.2.b
+		trigger = {
+			NOT = {
+				FIR = {
+					has_country_flag = hired_dai_li
+				}
+			}
+		}
 		custom_effect_tooltip = ear_cold_feet_description
 		ai_chance = {
 			base = 0
@@ -652,9 +665,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					not = {
-						has_global_flag = send_aang_away
-					}
+					check_variable = { global.avatar_location = 329.id }
 				}
 				random_list = {
 					100 = {
@@ -669,6 +680,7 @@ country_event = {
 								id = news.8
 								days = 10
 							}
+							set_global_flag = avatar_cycle_broken
 						}
 					}
 					0 = {

@@ -9,5 +9,78 @@ spriteTypes = {
 		name = "GFX_peasant_generic_1"
 		texturefile = "gfx/event_pictures/peasant_and_centralisation/peasant_generic_1.dds"
 	}
+
+	spriteType = {
+		name = "GFX_investment_1"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_1.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_2"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_3"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_3.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_4"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_4.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_5"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_5.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_6"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_6.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_7"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_7.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_8"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_8.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_9"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_9.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_10"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_10.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_11"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_11.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_12"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_12.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_13"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_13.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_14"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_14.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_15"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_15.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_16"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_16.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_17"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_17.dds"
+	}
+	spriteType = {
+		name = "GFX_investment_18"
+		texturefile = "gfx/event_pictures/peasant_and_centralisation/investment_18.dds"
+	}
 	
 }

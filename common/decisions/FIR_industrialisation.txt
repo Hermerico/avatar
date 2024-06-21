@@ -30,6 +30,7 @@ FIR_civil_decision_category = {
 		}
 
 		cost = 50
+		fire_only_once = yes
 		
 		ai_will_do = {
 			factor = 50
@@ -41,6 +42,40 @@ FIR_civil_decision_category = {
 }
 
 FIR_industrialisation_category = {
+
+	an_industrial_nation = {
+
+		icon = industrial_nation
+
+		allowed = {		
+			tag = FIR
+		}
+		visible = {	
+			
+		}
+		available = {
+			has_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+
+		}
+
+		cost = 200
+		fire_only_once = yes
+
+		complete_effect = {
+			add_ideas = FIR_industrial_nation
+
+			set_country_flag = industrialisation_country_decision
+			set_country_flag = {
+				flag = industrialisation_active
+				value = 2
+			}
+			custom_effect_tooltip = make_this_category_country_decision
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	agricultural_modernisation = {
 
@@ -102,7 +137,7 @@ FIR_industrialisation_category = {
 
 		modifier = {
 			industrial_capacity_factory = 0.2
-			peasant_opinion = -10
+			labourers_opinion = -10
 		}
 
 		complete_effect = {
@@ -223,6 +258,74 @@ FIR_industrialisation_category = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+
+	FIR_factory_investment = {
+
+		icon = factory_investment
+		
+		state_target = yes
+
+		allowed = {
+			tag = FIR
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = FIR
+				arms_factory > 0
+			}
+		}
+
+		visible = {
+			has_country_flag = fire_industrialisation
+		}
+
+		available = {
+			has_tech = factory_1
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = {
+				state = FROM
+			}
+		}
+
+
+		on_map_mode = map_only
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 2000 }
+		}
+		custom_cost_text = expenses_2000
+		
+		days_remove = 120
+		
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 2000 }
+			
+			
+		}
+
+		remove_effect = {
+			FROM = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					instant_build = yes
+					type = factory
+					level = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
 	}
 
 }

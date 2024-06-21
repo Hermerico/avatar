@@ -32,7 +32,10 @@ nobility_dynamic_modifier = {
 	enable = { always = yes }
 
 	remove_trigger = {
-		has_tech = progressive_3
+		AND = {
+			check_variable = { centralisation_variable < 50 }
+			check_variable = { production_employed_constant > resource_employed_constant }
+		}
 	}
 
 	political_power_factor = mtth:nobility_political_power
@@ -45,8 +48,10 @@ industrialist_dynamic_modifier = {
 
 	remove_trigger = {
 		NOT = {
-			has_tech = progressive_3
-			has_tech = reform_4
+			AND = {
+				check_variable = { centralisation_variable < 50 }
+				check_variable = { production_employed_constant > resource_employed_constant }
+			}
 		}
 	}
 
@@ -55,32 +60,33 @@ industrialist_dynamic_modifier = {
 }
 
 
+clergy_dynamic_modifier = {
+			
+	enable = { always = yes }
+
+	remove_trigger = {
+		AND = {
+			amount_research_slots > 3
+			check_variable = { literacy_variable > 50 }
+		}
+	}
+
+	bender_target = mtth:clergy_bender
+	education_laws_cost_factor = mtth:clergy_law_cost
+}
 academics_dynamic_modifier = {
 			
 	enable = { always = yes }
 
 	remove_trigger = {
 		NOT = {
-			has_tech = progressive_education_2
+			AND = {
+				amount_research_slots > 3
+				check_variable = { literacy_variable > 50 }
+			}
 		}
-		has_tech = conservative_education_2
 	}
 
 	knowledge = mtth:academics_knowledge
 	research_speed_factor = mtth:academics_research
-}
-
-clergy_dynamic_modifier = {
-			
-	enable = { always = yes }
-
-	remove_trigger = {
-		NOT = {
-			has_tech = conservative_education_2
-		}
-		has_tech = progressive_education_2
-	}
-
-	bender_target = mtth:clergy_bender
-	education_laws_cost_factor = mtth:clergy_law_cost
 }

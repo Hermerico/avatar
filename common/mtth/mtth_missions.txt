@@ -67,7 +67,19 @@ get_missions = {
 		tag = FIR
 		has_country_flag = genocide_active
 		NOT = {
-			has_global_flag = air_nomad_genocide
+			has_country_flag = hunting_the_avatar
+			AND = {
+				has_global_flag = air_nomad_genocide
+				has_global_flag = avatar_cycle_broken
+			}
+		}
+		add = 1
+	}
+	modifier = {
+		tag = FIR
+		has_country_flag = {
+			flag = hunting_the_avatar
+			value < 2
 		}
 		add = 1
 	}

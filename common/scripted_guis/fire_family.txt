@@ -23,6 +23,7 @@ scripted_gui = {
 				check_variable = { mtth:rhya_age > 15 }
 				check_variable = { mtth:rhya_age < 55 }
 				OR = {
+					has_character = FIR_rhya
 					has_idea = spirit_princess_rhya
 					has_country_leader = {
 						character = FIR_rhya

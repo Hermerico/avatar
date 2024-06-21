@@ -42,13 +42,40 @@ inventions_3 = {
 		natural_philosophy = 1
 	}
 }
+inventions_4 = {
+	set_technology = {
+		statistics = 1
+		magnetism = 1
+		alchemy = 1
+		botanics = 1
+		printing_press = 1
+	}
+}
+inventions_5 = {
+	set_technology = {
+		laws_of_nature = 1
+		steam_engine = 1
+		steel_alloy = 1
+		genetics = 1
+		scientific_method = 1
+	}
+}
+inventions_6 = {
+	set_technology = {
+		applied_mathematics = 1
+		gas_turbine = 1
+		aerodynamics = 1
+		chemistry = 1
+		energy_manipulation = 1
+	}
+}
 
 society_reforms_progress = {
-	procressive_0 = yes
-	procressive_1 = yes
-	procressive_2 = yes
-	procressive_3 = yes
-	procressive_4 = yes
+	progressive_0 = yes
+	progressive_1 = yes
+	progressive_2 = yes
+	progressive_3 = yes
+	progressive_4 = yes
 	set_technology = {
 		reform_5 = 1
 	}
@@ -65,7 +92,7 @@ society_reforms_tradition = {
 	}
 }
 
-procressive_0 = {
+progressive_0 = {
 	set_technology = {
 		reform_0 = 1
 		progressive_0 = 1
@@ -77,7 +104,7 @@ procressive_0 = {
 		conservative_medicine_0 = 1
 	}
 }
-procressive_1 = {
+progressive_1 = {
 	set_technology = {
 		reform_1 = 1
 		progressive_1 = 1
@@ -89,7 +116,7 @@ procressive_1 = {
 		conservative_medicine_1 = 1
 	}
 }
-procressive_2 = {
+progressive_2 = {
 	set_technology = {
 		reform_2 = 1
 		progressive_2 = 1
@@ -101,7 +128,7 @@ procressive_2 = {
 		conservative_medicine_2 = 1
 	}
 }
-procressive_3 = {
+progressive_3 = {
 	set_technology = {
 		reform_3 = 1
 		progressive_3 = 1
@@ -113,7 +140,7 @@ procressive_3 = {
 		conservative_medicine_3 = 1
 	}
 }
-procressive_4 = {
+progressive_4 = {
 	set_technology = {
 		reform_4 = 1
 		progressive_4 = 1

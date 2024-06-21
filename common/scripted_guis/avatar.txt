@@ -87,6 +87,25 @@ scripted_gui = {
 				has_variable = global.avatar_location
 			}
 
+			team_1_portrait_visible = {
+				check_variable = { global.avatar_team^num > 1 }
+			}
+			team_2_portrait_visible = {
+				check_variable = { global.avatar_team^num > 2 }
+			}
+			team_3_portrait_visible = {
+				check_variable = { global.avatar_team^num > 3 }
+			}
+			team_4_portrait_visible = {
+				check_variable = { global.avatar_team^num > 4 }
+			}
+			team_5_portrait_visible = {
+				check_variable = { global.avatar_team^num > 5 }
+			}
+			team_6_portrait_visible = {
+				check_variable = { global.avatar_team^num > 6 }
+			}
+
 		}
 
 		properties = {
