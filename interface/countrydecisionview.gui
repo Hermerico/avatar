@@ -178,7 +178,7 @@ guiTypes = {
 			size = { x = 500 y = 32 }
 			format = center
 			spacing = 1.0
-			Orientation = LEFT
+			Orientation = UPPER_LEFT
 		}	
 	}
 

@@ -46,7 +46,7 @@ FIR_keep_up_with_firebender_demands = {
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
-		type = equipment_production_min_factories
+		type = equipment_variant_production_factor
 		id = firebender_equipment
 		value = 14
 	}
@@ -963,36 +963,36 @@ FIR_naval_war_with_SWT = {
 		id = SWT
 		value = 0
 	}
-	ai_strategy = {
-		type = strike_force_home_base
-		id = 168
-		value = 70
-	}
-	ai_strategy = {
-		type = strike_force_home_base
-		id = 157
-		value = 70
-	}
-	ai_strategy = {
-		type = strike_force_home_base
-		id = 179
-		value = 70
-	}
-	ai_strategy = {
-		type = strike_force_home_base
-		id = 145
-		value = 70
-	}
-	ai_strategy = {
-		type = strike_force_home_base
-		id = 143
-		value = 70
-	}
-	ai_strategy = {
-		type = strike_force_home_base
-		id = 34
-		value = 70
-	}
+	#ai_strategy = {
+	#	type = strike_force_home_base
+	#	id = 168
+	#	value = 70
+	#}
+	#ai_strategy = {
+	#	type = strike_force_home_base
+	#	id = 157
+	#	value = 70
+	#}
+	#ai_strategy = {
+	#	type = strike_force_home_base
+	#	id = 179
+	#	value = 70
+	#}
+	#ai_strategy = {
+	#	type = strike_force_home_base
+	#	id = 145
+	#	value = 70
+	#}
+	#ai_strategy = {
+	#	type = strike_force_home_base
+	#	id = 143
+	#	value = 70
+	#}
+	#ai_strategy = {
+	#	type = strike_force_home_base
+	#	id = 34
+	#	value = 70
+	#}
 	ai_strategy = {
 		type = naval_mission_threshold
 		id = MISSION_PATROL

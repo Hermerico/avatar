@@ -248,26 +248,6 @@ SAO = {
 	color_ui = rgb { 122 14 14 }
 }
 
-INT = {
-	color = rgb { 204 54 54 }
-	color_ui = rgb { 204 54 54 }
-}
-
-LAH = {
-	color = rgb { 168 47 13 }
-	color_ui = rgb { 168 47 13 }
-}
-
-MAN = {
-	color = rgb { 211 133 16 }
-	color_ui = rgb { 211 133 16 }
-}
-
-FAR = {
-	color = rgb { 63 63 63 }
-	color_ui = rgb { 63 63 63 }
-}
-
 TEJ = {
 	color = rgb { 51 90 64 }
 	color_ui = rgb { 51 90 64 }
@@ -275,29 +255,10 @@ TEJ = {
 
 ##### NEW 
 
-ANP = {
-	color = rgb { 60 137 15 }
-	color_ui = rgb { 60 137 15 }
-}
-
-AOT = {
-	color = rgb { 81 175 43 }
-	color_ui = rgb { 81 175 43 }
-}
 
 BAI = {
 	color = rgb { 161 179 89 }
 	color_ui = rgb { 161 179 89 }
-}
-
-BIN = {
-	color = rgb { 172 204 79 }
-	color_ui = rgb { 172 204 79 }
-}
-
-CAO = {
-	color = rgb { 56 137 31 }
-	color_ui = rgb { 56 137 31 }
 }
 
 DAW = {
@@ -315,65 +276,14 @@ FUJ = {
 	color_ui = rgb { 88 153 69 }
 }
 
-FUN = {
-	color = rgb { 81 150 70 }
-	color_ui = rgb { 81 150 70 }
-}
-
-GAS = {
-	color = rgb { 179 216 130 }
-	color_ui = rgb { 179 216 130 }
-}
-
 GOU = {
 	color = rgb { 57 191 60 }
 	color_ui = rgb { 57 191 60 }
 }
 
-KEY = {
-	color = rgb { 196 196 74 }
-	color_ui = rgb { 196 196 74 }
-}
-
-PEN = {
-	color = rgb { 158 193 93 }
-	color_ui = rgb { 158 193 93 }
-}
-
-REX = {
-	color = rgb { 76 135 0 }
-	color_ui = rgb { 76 135 0 }
-}
-
-
 SHE = {
 	color = rgb { 116 179 89 }
 	color_ui = rgb { 116 179 89 }
-}
-
-TAN = {
-	color = rgb { 100 153 71 }
-	color_ui = rgb { 100 153 71 }
-}
-
-TIG = {
-	color = rgb { 43 135 81 }
-	color_ui = rgb { 43 135 81 }
-}
-
-TUM = {
-	color = rgb { 40 145 56 }
-	color_ui = rgb { 40 145 56 }
-}
-
-WAI = {
-	color = rgb { 181 170 59 }
-	color_ui = rgb { 181 170 59 }
-}
-
-WAO = {
-	color = rgb { 123 183 91 }
-	color_ui = rgb { 123 183 91 }
 }
 
 XIL = {

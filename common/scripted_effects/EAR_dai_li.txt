@@ -36,10 +36,10 @@ EAR_upgrade_dai_li = {
 			check_variable =  { EAR_militia_template_level < 2 }
 		}
 		add_units_to_division_template = {
-			template_name = "EARss Citizen Militia"
+			template_name = "Dai Li Unit"
 			regiments = {
-				spearmen = 0
-				spearmen = 0 
+				dai_li_units = 0
+				dai_li_units = 0 
 			}
 		}
 	}
@@ -49,10 +49,10 @@ EAR_upgrade_dai_li = {
 			check_variable =  { EAR_militia_template_level < 4 }
 		}
 		add_units_to_division_template = {
-			template_name = "EARss Citizen Militia"
+			template_name = "Dai Li Unit"
 			regiments = {
-				spearmen = 1
-				spearmen = 1 
+				dai_li_units = 1
+				dai_li_units = 1 
 			}
 		}
 	}
@@ -63,37 +63,10 @@ EAR_upgrade_dai_li = {
 
 		}
 		add_units_to_division_template = {
-			template_name = "EARss Citizen Militia"
+			template_name = "Dai Li Unit"
 			regiments = {
-				spearmen = 2
-				spearmen = 2 
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_variable = EAR_militia_template_level
-			check_variable =  { EAR_militia_template_level < 8 }
-
-		}
-		add_units_to_division_template = {
-			template_name = "EARss Citizen Militia"
-			regiments = {
-				spearmen = 3
-				spearmen = 3 
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_variable = EAR_militia_template_level
-			check_variable =  { EAR_militia_template_level < 10 }
-		}
-		add_units_to_division_template = {
-			template_name = "EARss Citizen Militia"
-			regiments = {
-				spearmen = 4
-				spearmen = 4 
+				dai_li_units = 2
+				dai_li_units = 2 
 			}
 		}
 	}
@@ -109,14 +82,14 @@ EAR_upgrade_dai_li = {
 			NOT = { has_variable = EAR_militia_template_level }  
 		}
 		division_template = {
-			name = "EARss Citizen Militia"
+			name = "Dai Li Unit"
 			is_locked = yes
 			force_allow_recruiting = yes
 			priority = 1
 			template_counter = 70
 			regiments = {
-				spearmen = { x = 0 y = 0 }
-				spearmen = { x = 0 y = 1 }
+				dai_li_units = { x = 0 y = 0 }
+				dai_li_units = { x = 0 y = 1 }
 			}
 			support = {
 
@@ -150,155 +123,6 @@ EAR_increase_militia_cap = {
 	}
 }
 
-
-EAR_turn_spearmens_into_regulars = { #Effect to turn spearmens into regulars 
-	custom_effect_tooltip = EAR_professionalize_spearmens_TT
-	hidden_effect = {
-		division_template = {
-			name = "EARss Infantry Division"
-			priority = 1
-			regiments = {
-				swordsmen = { x = 0 y = 0 }
-				swordsmen = { x = 0 y = 1 }
-			}
-			support = {
-			}
-		}
-		EAR_bring_professionalized_divisions_to_the_correct_level = yes
-		every_country_division = {
-			limit = {
-				division_has_majority_template = militia
-			}
-			change_division_template = {
-				division_template = "EARss infantry Division" 
-			}
-		}
-		set_division_template_lock = { division_template = "EARss Citizen militia" is_locked = no }
-		clear_division_template_cap = { division_template = "EARss Citizen militia"  }
-		EAR = { 
-			set_country_flag = EAR_militias_turned_into_regulars 
-			if = {
-				limit = {
-					has_country_flag = EAR_militia_active
-				}
-				clr_country_flag = EAR_militia_active
-			}
-			if = {
-				limit = {
-					has_dynamic_modifier = { modifier =  EAR_dormant_citizen_militia} 
-				}
-				remove_dynamic_modifier = {
-					modifier = EAR_dormant_citizen_militia 
-				}
-			}
-			if = {
-				limit = {
-					has_dynamic_modifier = { modifier = EAR_active_citizen_militia }
-				}
-				remove_dynamic_modifier = {
-					modifier = EAR_active_citizen_militia 
-				}
-			}
-		}  
-	}
-}
-
-EAR_bring_professionalized_divisions_to_the_correct_level = {
-	set_variable = { EAR_infantry_template_level = 1 }
-
-	while_loop_effect = {
-		limit = {
-			check_variable = {
-				EAR_infantry_template_level < EAR_militia_template_level
-			}
-		}
-		if = {
-			limit = {
-				check_variable =  { EAR_infantry_template_level < 2 }
-			}
-			add_units_to_division_template = {
-				template_name = "EARss infantry Division"
-				regiments = {
-					swordsmen = 0
-					swordsmen = 0 
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable =  { EAR_infantry_template_level < 4 }
-			}
-			add_units_to_division_template = {
-				template_name = "EARss infantry Division"
-				regiments = {
-					swordsmen = 1
-					swordsmen = 1 
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable =  { EAR_infantry_template_level < 6 }
-	
-			}
-			add_units_to_division_template = {
-				template_name = "EARss infantry Division"
-				regiments = {
-					swordsmen = 2
-					swordsmen = 2 
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable =  { EAR_infantry_template_level < 8 }
-	
-			}
-			add_units_to_division_template = {
-				template_name = "EARss infantry Division"
-				regiments = {
-					swordsmen = 3
-					swordsmen = 3 
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable =  { EAR_infantry_template_level < 10 }
-			}
-			add_units_to_division_template = {
-				template_name = "EARss infantry Division"
-				regiments = {
-					swordsmen = 4
-					swordsmen = 4 
-				}
-			}
-		}
-		add_to_variable = { EAR_infantry_template_level = 1 }
-	}
-
-}
-
-EAR_reset_citizen_militia_active_modifier = {
-
-	set_variable = { EAR_citizen_militia_industrial_capacity_factory = EAR_citizen_militia_initial_industrial_capacity_factory }
-	set_variable = { EAR_citizen_militia_industrial_capacity_dockyard = EAR_citizen_militia_initial_industrial_capacity_dockyard }
-	set_variable = { EAR_citizen_militia_production_speed_buildings_factor = EAR_citizen_militia_initial_production_speed_buildings_factor }
-	set_variable = { EAR_citizen_militia_civ_factory_use = EAR_citizen_militia_initial_civ_factory_use }
-	set_variable = { EAR_citizen_militia_training_time_factor = EAR_citizen_militia_initial_training_time_factor}
-	set_variable = { EAR_citizen_militia_active_level = 1 }
-
-}
-
-EAR_level_up_citizen_militia_active_modifier = {
-	
-	subtract_from_variable = { EAR_citizen_militia_industrial_capacity_factory = EAR_citizen_militia_modifier_change } 
-	subtract_from_variable = { EAR_citizen_militia_industrial_capacity_dockyard = EAR_citizen_militia_modifier_change } 
-	subtract_from_variable = { EAR_citizen_militia_production_speed_buildings_factor = EAR_citizen_militia_modifier_change } 
-	add_to_variable = { EAR_citizen_militia_civ_factory_use = 1 } 
-	add_to_variable = { EAR_citizen_militia_training_time_factor = EAR_citizen_militia_modifier_change }  
-	add_to_variable = { EAR_citizen_militia_active_level = 1 }
-}
 
 
 	###  #### #     #  ###  #   # ###   ### 

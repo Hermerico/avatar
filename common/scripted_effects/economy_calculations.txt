@@ -1204,11 +1204,6 @@ employment_calculation_country = {
 	set_variable = { unepmployed_percentage = temp_unepmployed_percentage }
 
 
-	set_variable = { resource_employed_constant = resource_employed }
-	add_to_variable = { resource_employed_constant = self_employed_k }
-	set_variable = { production_employed_constant = production_employed }
-
-
 	set_variable = { worker_deficit_ratio = worker_deficit_k }
 	divide_variable = { worker_deficit_ratio = employment_need_k }
 
@@ -1823,7 +1818,7 @@ building_upkeep_calc = {
 
 	if = {
 		limit = {
-			check_variable = { modifier@animal_product_construction > 0 }
+			check_variable = { modifier@animal_product_upkeep_factor > 0 }
 		}
 		add_to_variable = { first_construction_resource = resource@chromium }
 	}
@@ -2273,7 +2268,6 @@ resource_storage_calculation = {
 
 	set_variable = { consumer_goods_produced_total = resource_produced@consumer_goods_resource }
 	add_to_variable = { consumer_goods_produced_total = consumer_goods_demand }
-	add_to_variable = { consumer_goods_produced_total = mtth:consumer_goods_cost }
 	
 	set_variable = { consumer_goods_in_store = resource@consumer_goods_resource }
 	multiply_variable = { consumer_goods_in_store = -1 }
@@ -2319,7 +2313,6 @@ resource_storage_calculation = {
 
 	set_variable = { luxury_goods_produced_total = resource_produced@luxury_goods_resource }
 	add_to_variable = { luxury_goods_produced_total = luxury_goods_demand }
-	add_to_variable = { luxury_goods_produced_total = mtth:luxury_goods_cost }
 	
 	set_variable = { luxury_goods_in_store = resource@luxury_goods_resource }
 	multiply_variable = { luxury_goods_in_store = -1 }
@@ -2365,7 +2358,6 @@ resource_storage_calculation = {
 
 	set_variable = { planks_produced_total = resource_produced@planks_resource }
 	add_to_variable = { planks_produced_total = planks_demand }
-	add_to_variable = { planks_produced_total = mtth:planks_cost }
 	add_to_variable = { planks_produced_total = local_plank_upkeep_cost }
 	
 	set_variable = { planks_in_store = resource@planks_resource }
@@ -2412,7 +2404,6 @@ resource_storage_calculation = {
 
 	set_variable = { bricks_produced_total = resource_produced@bricks_resource }
 	add_to_variable = { bricks_produced_total = bricks_demand }
-	add_to_variable = { bricks_produced_total = mtth:bricks_cost }
 	add_to_variable = { bricks_produced_total = local_brick_upkeep_cost }
 	
 	set_variable = { bricks_in_store = resource@bricks_resource }
@@ -2459,7 +2450,6 @@ resource_storage_calculation = {
 
 	set_variable = { steel_beams_produced_total = resource_produced@steel_beams_resource }
 	add_to_variable = { steel_beams_produced_total = steel_beams_demand }
-	add_to_variable = { steel_beams_produced_total = mtth:steel_beams_cost }
 	add_to_variable = { steel_beams_produced_total = local_steel_beam_upkeep_cost }
 	
 	set_variable = { steel_beams_in_store = resource@steel_beams_resource }

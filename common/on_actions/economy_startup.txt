@@ -4,6 +4,7 @@ on_actions = {
 		effect = {
 			every_country = {
 
+				set_variable = { grain_variable = 0 }
 				set_variable = { animal_products_variable = 0 }
 				set_variable = { textile_variable = 0 }
 				set_variable = { wood_variable = 0 }
@@ -15,6 +16,8 @@ on_actions = {
 				set_variable = { planks_variable = 0 }
 				set_variable = { bricks_variable = 0 }
 				set_variable = { steel_beams_variable = 0 }
+
+				set_variable = { national_prosperity_const = 1 }
 
 				country_event = { id = population_calc.1 }
 

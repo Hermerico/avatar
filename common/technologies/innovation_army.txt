@@ -226,7 +226,15 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { substance change freedom }
+		allow = {
+			NOT = {
+				has_tech = substance
+				has_tech = change
+				has_tech = freedom
+			}
+		}
+
+		#xor = { substance change freedom }
 
 		path = {
 			leads_to_tech = desire_and_will
@@ -650,7 +658,15 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { power change freedom }
+		allow = {
+			NOT = {
+				has_tech = power
+				has_tech = change
+				has_tech = freedom
+			}
+		}
+		
+		#xor = { power change freedom }
 
 		path = {
 			leads_to_tech = persistence
@@ -1043,7 +1059,15 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { power substance freedom }
+		allow = {
+			NOT = {
+				has_tech = power
+				has_tech = substance
+				has_tech = freedom
+			}
+		}
+
+		#xor = { power substance freedom }
 
 		path = {
 			leads_to_tech = adaptation
@@ -1459,7 +1483,15 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { power substance change }
+		allow = {
+			NOT = {
+				has_tech = power
+				has_tech = substance
+				has_tech = change
+			}
+		}
+
+		#xor = { power substance change }
 
 		path = {
 			leads_to_tech = peace
@@ -1843,7 +1875,13 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { root_b root_c }
+		allow = {
+			NOT = {
+				has_tech = root_b
+				has_tech = root_c
+			}
+		}
+		#xor = { root_b root_c }
 
 		path = {
 			leads_to_tech = sacral_a
@@ -2179,7 +2217,14 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { attack advance }
+		allow = {
+			NOT = {
+				has_tech = attack
+				has_tech = advance
+			}
+		}
+		
+		#xor = { attack advance }
 
 		path = {
 			leads_to_tech = balance
@@ -2324,7 +2369,14 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { inner_peace advance }
+		allow = {
+			NOT = {
+				has_tech = inner_peace
+				has_tech = advance
+			}
+		}
+
+		#xor = { inner_peace advance }
 
 		path = {
 			leads_to_tech = immense_power
@@ -2470,7 +2522,14 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { inner_peace attack }
+		allow = {
+			NOT = {
+				has_tech = inner_peace
+				has_tech = attack
+			}
+		}
+
+		#xor = { inner_peace attack }
 
 		path = {
 			leads_to_tech = unstoppable_force
@@ -2614,7 +2673,14 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { root_a root_c }
+		allow = {
+			NOT = {
+				has_tech = root_a
+				has_tech = root_c
+			}
+		}
+
+		#xor = { root_a root_c }
 
 		path = {
 			leads_to_tech = sacral_b
@@ -3231,7 +3297,14 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { root_b root_a }
+		allow = {
+			NOT = {
+				has_tech = root_b
+				has_tech = root_a
+			}
+		}
+
+		#xor = { root_b root_a }
 
 		path = {
 			leads_to_tech = sacral_c
@@ -3566,7 +3639,14 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { evade the_void }
+		allow = {
+			NOT = {
+				has_tech = evade
+				has_tech = the_void
+			}
+		}
+
+		#xor = { evade the_void }
 
 		path = {
 			leads_to_tech = improvise
@@ -3700,7 +3780,14 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { retreat the_void }
+		allow = {
+			NOT = {
+				has_tech = retreat
+				has_tech = the_void
+			}
+		}
+
+		#xor = { retreat the_void }
 
 		path = {
 			leads_to_tech = surprise
@@ -3839,7 +3926,14 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
-		xor = { retreat evade}
+		allow = {
+			NOT = {
+				has_tech = retreat
+				has_tech = evade
+			}
+		}
+
+		#xor = { retreat evade}
 
 		path = {
 			leads_to_tech = spiritual_drive

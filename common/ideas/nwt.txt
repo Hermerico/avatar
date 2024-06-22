@@ -111,6 +111,8 @@ ideas = {
 				research_speed_factor = -0.1
 				stability_factor = 0.025
 				min_export = -0.1
+			}
+			rule = {
 				can_join_factions = yes
 			}
 		}

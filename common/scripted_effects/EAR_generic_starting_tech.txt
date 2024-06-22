@@ -943,7 +943,7 @@ EAR_generic_starting_tech = {
             earth_training_5 = 1
 			defense_training_earth_2 = 1
 
-			earth_tank_prototype = 1
+			earth_tank_prototype_1 = 1
 
             ##### doctrine #####
             multiplanar_warfare = 1

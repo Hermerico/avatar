@@ -18,7 +18,7 @@ characters={
 		name="Zosu"
 		portraits={
 			civilian={
-				large="gfx/leaders/SNW/Portrait_Sunwarriors_leader.dds"
+				large="GFX_Portrait_Sunwarriors_leader"
 			}
 		}
 		country_leader={
@@ -48,10 +48,10 @@ characters={
 		name="Kedu"
 		portraits={
 			army={
-				small=""
+				small="GFX_Portrait_Sunwarriors_leader_small"
 			}
 			army={
-				large="gfx/leaders/SNW/Portrait_Sunwarriors_Armyleader_Kedu.dds"
+				large="GFX_Portrait_Sunwarriors_leader"
 			}
 		}
 		field_marshal={

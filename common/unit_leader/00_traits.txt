@@ -150,7 +150,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -162,7 +162,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -174,7 +174,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -226,7 +226,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -238,7 +238,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -250,7 +250,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -299,7 +299,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -311,7 +311,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -323,7 +323,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -388,7 +388,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -400,7 +400,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -412,7 +412,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -563,7 +563,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -575,7 +575,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -587,7 +587,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -686,7 +686,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -698,7 +698,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -710,7 +710,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -806,7 +806,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -818,7 +818,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -830,7 +830,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -877,7 +877,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -889,7 +889,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -901,7 +901,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -952,7 +952,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -964,7 +964,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -976,7 +976,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1052,7 +1052,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1064,7 +1064,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1076,7 +1076,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1123,7 +1123,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1135,7 +1135,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1147,7 +1147,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1192,7 +1192,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1204,7 +1204,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1216,7 +1216,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1289,7 +1289,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1301,7 +1301,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1313,7 +1313,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1400,7 +1400,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1412,7 +1412,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1424,7 +1424,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1526,7 +1526,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1538,7 +1538,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1550,7 +1550,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1829,7 +1829,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1841,7 +1841,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -1853,7 +1853,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2198,7 +2198,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2210,7 +2210,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2222,7 +2222,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2263,7 +2263,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2275,7 +2275,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2287,7 +2287,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2332,7 +2332,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2344,7 +2344,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2356,7 +2356,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2471,7 +2471,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2483,7 +2483,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2495,7 +2495,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2570,7 +2570,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2582,7 +2582,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2594,7 +2594,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2674,7 +2674,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2686,7 +2686,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2698,7 +2698,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2739,7 +2739,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2751,7 +2751,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -2763,7 +2763,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -3160,7 +3160,7 @@ leader_traits = {
 				}
 				if = {
 					limit = {
-						skill > 8
+						check_variable = { THIS.skill_level > 8 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -3172,7 +3172,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 5
+						check_variable = { THIS.skill_level > 5 }
 					}
 					add_advisor_role = {
 						advisor = {
@@ -3184,7 +3184,7 @@ leader_traits = {
 				}
 				else_if = {
 					limit = {
-						skill > 2
+						check_variable = { THIS.skill_level > 2 }
 					}
 					add_advisor_role = {
 						advisor = {

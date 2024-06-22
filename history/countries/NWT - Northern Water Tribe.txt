@@ -48,8 +48,8 @@ set_popularities = {
 }
 
 set_technology = {
-                    water_bender_healer = 1
-					}
+	water_bender_healer = 1
+}
 
 recruit_character = NWT_rundak
 recruit_character = NWT_arnook

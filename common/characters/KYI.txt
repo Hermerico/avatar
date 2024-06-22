@@ -31,7 +31,7 @@ characters={
 		name="Suki"
 		portraits={
 			army={
-				small=""
+				small="GFX_Portrait_Kyoshi_Suki_small"
 			}
 			army={
 				large="GFX_Portrait_Kyoshi_Suki"
@@ -50,7 +50,7 @@ characters={
 		name="Kyoshi Warrior"
 		portraits={
 			army={
-				small=""
+				small="GFX_Portrait_Kyoshi_Generic_1_small"
 			}
 			army={
 				large="GFX_Portrait_Kyoshi_Generic_1"

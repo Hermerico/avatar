@@ -1811,15 +1811,12 @@ country_event = {
  				advisor = {
  					slot = minister_of_culture
  					cost = 100
- 					idea_token = GER_character_token_air_chief
+ 					idea_token = FIR_ilah
  					traits = {
  					    icon_of_the_firenation
  					}
  					modifier = {
  						political_power_cost = 0.1
- 					}
- 					visible = {
- 						has_character_flag = character_available
  					}
  				}
  			}
@@ -1855,15 +1852,12 @@ country_event = {
  				advisor = {
  					slot = minister_of_culture
  					cost = 100
- 					idea_token = GER_character_token_air_chief
+ 					idea_token = FIR_michi
  					traits = {
- 					    icon_of_the_firenation
+ 						icon_of_the_firenation
  					}
  					modifier = {
  						political_power_cost = 0.1
- 					}
- 					visible = {
- 						has_character_flag = character_available
  					}
  				}
  			}
@@ -1899,15 +1893,12 @@ country_event = {
  				advisor = {
  					slot = minister_of_culture
  					cost = 100
- 					idea_token = GER_character_token_air_chief
+ 					idea_token = FIR_ursa
  					traits = {
- 					    icon_of_the_firenation
+ 						icon_of_the_firenation
  					}
  					modifier = {
  						political_power_cost = 0.1
- 					}
- 					visible = {
- 						has_character_flag = character_available
  					}
  				}
  			}

@@ -12,7 +12,7 @@ music = {
 }
 
 music = {
-	song = "firebending_training"
+	song = "firebending_training_music"
 
 }
 

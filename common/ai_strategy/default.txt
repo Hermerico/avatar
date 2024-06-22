@@ -132,11 +132,6 @@ obtain_relation_research_slot = {
 				value = 100
 			}
 		}
-	}	
-	ai_strategy = {
-		type = pp_spend_amount
-		id = guarantee
-		value = 60
 	}
 	ai_strategy = {
 		type = pp_spend_priority
@@ -162,11 +157,6 @@ EBA_befriend_EAR = {
 		value = 70
 	}
 	ai_strategy = {
-		type = pp_spend_amount
-		id = guarantee
-		value = 60
-	}
-	ai_strategy = {
 		type = pp_spend_priority
 		id = relation
 		value = 90
@@ -187,11 +177,6 @@ DIN_befriend_EBA = {
 		type = befriend
 		id = EBA
 		value = 70
-	}
-	ai_strategy = {
-		type = pp_spend_amount
-		id = guarantee
-		value = 60
 	}
 	ai_strategy = {
 		type = pp_spend_priority
@@ -216,11 +201,6 @@ ECB_befriend_EBA = {
 		value = 70
 	}
 	ai_strategy = {
-		type = pp_spend_amount
-		id = guarantee
-		value = 60
-	}
-	ai_strategy = {
 		type = pp_spend_priority
 		id = relation
 		value = 90
@@ -241,11 +221,6 @@ ECB_befriend_EBA = {
 			type = befriend
 			id = DAW
 			value = 70
-		}
-		ai_strategy = {
-			type = pp_spend_amount
-			id = guarantee
-			value = 60
 		}
 		ai_strategy = {
 			type = pp_spend_priority

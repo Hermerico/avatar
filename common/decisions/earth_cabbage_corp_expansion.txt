@@ -55,6 +55,12 @@ cabbage_corp_expansion = {
 		icon = decision_cabbage
 
 		allowed = {
+			OR = {
+				tag = EAR
+				tag = OMS
+			}
+		}
+		visible = {
 			has_country_flag = cabbage_corp_expansion_active
 		}
 

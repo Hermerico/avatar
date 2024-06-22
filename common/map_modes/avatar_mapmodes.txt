@@ -100,7 +100,7 @@ scripted_map_modes = {
 				FROM = {
 
 					set_temp_variable = { opinion = 0 }
-					CONTROLLER = { add_to_temp_variable = { opinion = mtth:avatar_opinion_modifier } }
+					CONTROLLER = { add_to_temp_variable = { opinion = mtth:avatar_opinion } }
 					multiply_temp_variable = { opinion = 0.005 }
 
 					subtract_from_temp_variable = { red = opinion }

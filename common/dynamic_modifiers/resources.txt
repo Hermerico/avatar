@@ -110,7 +110,7 @@ stored_scripted_resources = {
 	country_resource_luxury_goods_resource = luxury_good_in_store
 	country_resource_planks_resource = plank_in_store
 	country_resource_bricks_resource = brick_in_store
-	country_resource_steel_beam_resource = steel_beam_in_store
+	country_resource_steel_beams_resource = steel_beam_in_store
 }
 
 animal_resource_consumption = {

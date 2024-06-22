@@ -41,8 +41,6 @@ gfx/interface/counters/divisions_small/onmap_ostrich_horses_icon.dds
 gfx/interface/decisions/fire_family/azula_adult.dds
 gfx/interface/decisions/fire_family/zuko_adult.dds
 
-gfx/leaders/TEJ/Portrait_Chin_fire_tribes.dds
-	
 Ideas
 
 gfx/interface/ideas/spirit/cavalry_tradition

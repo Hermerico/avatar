@@ -209,6 +209,14 @@ characters={
 				small = "GFX_Portrait_Ilah_small"
 			}
 		}
+		advisor = {
+ 			slot = minister_of_culture
+ 			cost = 100
+ 			idea_token = FIR_ilah
+ 			visible = {
+ 				has_character_flag = character_available
+ 			}
+ 		}
 	}
 
 
@@ -240,6 +248,14 @@ characters={
 			army = {
 				large = "GFX_Portrait_Michi"
 				small = "GFX_Portrait_Michi_small"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			cost = 100
+			idea_token = FIR_michi
+			visible = {
+				has_character_flag = character_available
 			}
 		}
 	}
@@ -314,9 +330,6 @@ characters={
 			visible = {
 				has_character_flag = character_available
 			}
-			
-			
-			traits = { icon_of_the_firenation }
 		}
 	}
 

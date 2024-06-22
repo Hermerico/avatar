@@ -23,7 +23,7 @@ FIR_royal_family_category = {
 	}
 
 	priority = {
-		base = 115000
+		base = 500
 		modifier = {
 			factor = 100
 			has_country_leader = {
@@ -32,6 +32,31 @@ FIR_royal_family_category = {
 			}
 		}
 	}
+}
+
+
+FIR_clan_category = {
+
+	icon = GFX_decision_category_royal_family
+
+	#picture = GFX_decision_cat_fir_royal_family
+
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = FIR
+	}
+
+	visible = {
+		original_tag = FIR
+		NOT = { has_country_flag = hide_country_decisions }
+		always = no
+	}
+
+	priority = {
+		base = 200
+	}
+	
 }
 
 

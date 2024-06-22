@@ -300,6 +300,10 @@ spriteTypes = {
 		name = "GFX_Portrait_Kyoshi_Suki"
 		texturefile = "gfx/leaders/KYI/Portrait_Kyoshi_Suki.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Kyoshi_Suki_small"
+		texturefile = "gfx/interface/ideas/leader_small/KYI/idea_suki_small.dds"
+	}
 
 	spriteType = {
 		name = "GFX_Portrait_Misty_Palm_Sha_Mo"

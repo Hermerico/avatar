@@ -21,7 +21,7 @@ characters = {
 		name="Generic"
 		portraits={
 			civilian={
-				large="gfx/leaders/TEJ/Portrait_Chin_fire_tribes.dds"
+				large="gfx/leaders/CHN/Portrait_Chin_fire_tribes.dds"
 			}
 		}
 		country_leader={

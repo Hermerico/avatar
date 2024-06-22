@@ -68,7 +68,7 @@ THE_EARTHKINGDOM = {
 			modifier = {
 				add = 200
 				
-				ROOT = { surrender_progress = 0.4 }
+				ROOT = { surrender_progress < 0.4 }
 			}
 		}
 		complete_effect = {

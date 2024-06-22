@@ -890,7 +890,7 @@ guiTypes = {
 			position = {x=70 y=8}
 			font = "hoi_18"
 			size = { x=212 y=23 }
-			orientation = left
+			orientation = UPPER_LEFT
 		}
 
 		buttonType ={

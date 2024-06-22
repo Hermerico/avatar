@@ -5,7 +5,7 @@ guiTypes = {
 		name = "recruit_ministers"
 		position = { x=50 y=50 }	
 		size = { width=795 height=605 }
-		Orientation = left
+		Orientation = UPPER_LEFT
 			
 		buttonType = {
 			name = "new_minister_of_personnel_button"

@@ -54,14 +54,6 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "bg"
-			spriteType = "GFX_uprising_bar_state_bg"
-			centerPosition = yes
-			position = { x = -11 y = 43 }
-			pdx_tooltip = "loyalty_and_revolt_tooltip"
-		}
-
-		iconType = {
 			name = "uprising_bar"
 			spriteType = "GFX_loyalty_bar"
 			centerPosition = yes
