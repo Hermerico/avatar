@@ -1089,6 +1089,7 @@ add_farm_random_instant = {
 			level = 1
 			instant_build = yes
 		}
+		save_event_target_as = building_in_this_state
 	}
 
 }
@@ -1113,6 +1114,7 @@ add_fishing_stand_random_instant = {
 			level = 1
 			instant_build = yes
 		}
+		save_event_target_as = building_in_this_state
 	}
 
 }
@@ -1137,6 +1139,7 @@ add_ranch_random_instant = {
 			level = 1
 			instant_build = yes
 		}
+		save_event_target_as = building_in_this_state
 	}
 }
 
@@ -1160,6 +1163,7 @@ add_lumber_mill_random_instant = {
 			level = 1
 			instant_build = yes
 		}
+		save_event_target_as = building_in_this_state
 	}
 }
 
@@ -1183,6 +1187,7 @@ add_quarry_random_instant = {
 			level = 1
 			instant_build = yes
 		}
+		save_event_target_as = building_in_this_state
 	}
 }
 
@@ -1205,6 +1210,57 @@ add_mine_random_instant = {
 			type = mine
 			level = 1
 			instant_build = yes
+		}
+		save_event_target_as = building_in_this_state
+	}
+}
+
+add_mill_random_instant = {
+	effect_tooltip = {
+		add_building_construction = {
+			type = mill
+			level = 1
+			instant_build = yes
+		}
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_flag = core_all_construction_flag
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = mill
+						size > 0
+						include_locked = no
+					}
+				}
+				add_building_construction = {
+					type = mill
+					level = 1
+					instant_build = yes
+				}
+				save_event_target_as = building_in_this_state
+			}
+		}
+		else = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = mill
+						size > 0
+						include_locked = no
+					}
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = mill
+					level = 1
+					instant_build = yes
+				}
+				save_event_target_as = building_in_this_state
+			}
 		}
 	}
 }
@@ -1235,6 +1291,7 @@ add_crop_weaving_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1252,6 +1309,7 @@ add_crop_weaving_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1283,6 +1341,7 @@ add_animal_weaving_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1300,6 +1359,7 @@ add_animal_weaving_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1331,6 +1391,7 @@ add_steelworks_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1348,6 +1409,7 @@ add_steelworks_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1379,6 +1441,7 @@ add_smithy_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1396,6 +1459,7 @@ add_smithy_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1427,6 +1491,7 @@ add_factory_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1444,6 +1509,7 @@ add_factory_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1476,6 +1542,7 @@ add_harbour_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1494,6 +1561,7 @@ add_harbour_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1526,6 +1594,7 @@ add_dockyard_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1544,6 +1613,7 @@ add_dockyard_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1575,6 +1645,7 @@ add_consumer_good_factory_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1592,6 +1663,7 @@ add_consumer_good_factory_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1623,6 +1695,7 @@ add_luxury_good_factory_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1640,6 +1713,7 @@ add_luxury_good_factory_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1671,6 +1745,7 @@ add_carpentry_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1688,6 +1763,7 @@ add_carpentry_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1719,6 +1795,7 @@ add_masonry_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1736,6 +1813,7 @@ add_masonry_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}
@@ -1767,6 +1845,7 @@ add_steel_beam_factory_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 		else = {
@@ -1784,6 +1863,7 @@ add_steel_beam_factory_random_instant = {
 					level = 1
 					instant_build = yes
 				}
+				save_event_target_as = building_in_this_state
 			}
 		}
 	}

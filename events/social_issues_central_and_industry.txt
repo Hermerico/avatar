@@ -22,9 +22,10 @@ country_event = {
 		name = centralisation.1.a
 
 		add_tech_bonus = {
+			name = invention_tech_bonus
 			bonus = 0.1
 			uses = 1
-			category = industry
+			category = industry_tech
 		}
 		
 		ai_chance = {
@@ -51,10 +52,14 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			add_carpentry_random_instant = yes
+		}
+	}
+
 	option = {
 		name = centralisation.2.a
-
-		add_carpentry_random_instant = yes
 		
 		ai_chance = {
 			base = 0
@@ -75,13 +80,17 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			add_masonry_random_instant = yes
+		}
+	}
+
 	is_triggered_only = yes
 	minor_flavor = yes
 
 	option = {
 		name = centralisation.3.a
-
-		add_masonry_random_instant = yes
 		
 		ai_chance = {
 			base = 0
@@ -105,10 +114,14 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			add_farm_random_instant = yes
+		}
+	}
+
 	option = {
 		name = centralisation.4.a
-
-		add_farm_random_instant = yes
 		
 		ai_chance = {
 			base = 0
@@ -130,13 +143,16 @@ country_event = {
 
 	trigger = {
 		peoples_initiative_available = yes
-		lumber_mill_investment_allowed = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_ranch_random_instant = yes
+		}
 	}
 
 	option = {
 		name = centralisation.5.a
-
-		add_ranch_random_instant = yes
 		
 		ai_chance = {
 			base = 0
@@ -160,10 +176,14 @@ country_event = {
 	is_triggered_only = yes
 	minor_flavor = yes
 
+	immediate = {
+		hidden_effect = {
+			add_mill_random_instant = yes
+		}
+	}
+
 	option = {
 		name = centralisation.6.a
-
-		add_lumber_mill_random_instant = yes
 		
 		ai_chance = {
 			base = 0
@@ -187,10 +207,14 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			add_lumber_mill_random_instant = yes
+		}
+	}
+
 	option = {
 		name = centralisation.7.a
-
-		add_lumber_mill_random_instant = yes
 		
 		ai_chance = {
 			base = 0
@@ -214,11 +238,15 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			add_quarry_random_instant = yes
+		}
+	}
+
 	option = {
 		name = centralisation.8.a
 
-		add_quarry_random_instant = yes
-		
 		ai_chance = {
 			base = 0
 		}
@@ -241,20 +269,23 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { ai_priority_animal_products > ai_priority_grain }
+					crop_weaving_investment_allowed = yes
+				}
+				add_crop_weaving_random_instant = yes
+			}
+			else = {
+				add_animal_weaving_random_instant = yes
+			}
+		}
+	}
+
 	option = {
 		name = centralisation.9.a
-
-
-		if = {
-			limit = {
-				check_variable = { ai_priority_animal_products > ai_priority_grain }
-				crop_weaving_investment_allowed = yes
-			}
-			add_crop_weaving_random_instant = yes
-		}
-		else = {
-			add_animal_weaving_random_instant = yes
-		}
 		
 		ai_chance = {
 			base = 0
@@ -278,10 +309,14 @@ country_event = {
 	is_triggered_only = yes
 	minor_flavor = yes
 
+	immediate = {
+		hidden_effect = {
+			add_consumer_good_factory_random_instant = yes
+		}
+	}
+
 	option = {
 		name = centralisation.10.a
-
-		add_consumer_good_factory_random_instant = yes
 		
 		ai_chance = {
 			base = 0
@@ -307,10 +342,14 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			add_luxury_good_factory_random_instant = yes
+		}
+	}
+
 	option = {
 		name = centralisation.11.a
-
-		add_luxury_good_factory_random_instant = yes
 		
 		ai_chance = {
 			base = 0
@@ -392,10 +431,14 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			add_steelworks_random_instant = yes
+		}
+	}
+
 	option = {
 		name = centralisation.14.a
-
-		add_steelworks_random_instant = yes
 		
 		ai_chance = {
 			base = 0
@@ -419,11 +462,15 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			add_mine_random_instant = yes
+		}
+	}
+
 	option = {
 		name = centralisation.15.a
 
-		add_mine_random_instant = yes
-		
 		ai_chance = {
 			base = 0
 		}
@@ -447,11 +494,16 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			add_steel_beam_factory_random_instant = yes
+		}
+	}
+
+
 	option = {
 		name = centralisation.16.a
 
-		add_steel_beam_factory_random_instant = yes
-		
 		ai_chance = {
 			base = 0
 		}
@@ -501,11 +553,15 @@ country_event = {
 		peoples_initiative_available = yes
 	}
 
+	immediate = {
+		hidden_effect = {
+			add_fishing_stand_random_instant = yes
+		}
+	}
+
 	option = {
 		name = centralisation.18.a
 
-		add_fishing_stand_random_instant = yes
-		
 		ai_chance = {
 			base = 0
 		}
