@@ -368,6 +368,8 @@
  fir_light_engine_designer_desc:0 ""
  fir_consumer_industries:0 "Trade Company"
  fir_consumer_industries_desc:0 ""
+ fir_steel_workshops:0 "Steelmakers' Workshops"
+ fir_steel_workshops_desc:0 ""
  fir_heavy_industries:0 "Heavy Industry"
  fir_heavy_industries_desc:0 ""
  fir_wartime_industries:0 "War Industry"

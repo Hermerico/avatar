@@ -386,6 +386,8 @@
  bolt_equipment_5:0"Rocket"
  bolt_equipment_5_desc:0"A devastating projectile that can burst appart the enemy defenses with ease."
 
+ projectile_equipment:0 "Projectiles"
+ projectile_equipmet_desc:0 "These heavy objects are lethal when thrown from a siege weapon."
  projectile_equipment_0:0"Boulder"
  projectile_equipment_0_desc:0"A heavy mass of rock, shaped for use in a siege engine."
  projectile_equipment_1:0"Polished Boulder"
@@ -453,6 +455,10 @@
  catapult_equipment_4_desc:0 "This towering contraption can hurl massive projectiles over the enemy defences and hit targets behind their defensive lines. Invaluable for any seige."
  catapult_equipment_5:0 "Bombard Cannon"
  catapult_equipment_5_desc:0 "The use of combustion to propel projectiles allows for a level of range, accuracy and destructive power never seen before on the battlefield."
+
+support_equipment:0 "Support Equipment"
+support_equipment_short:0 "Support Eq."
+support_equipment_desc:0 "Tools not designed for combat that nevertheless prove very helpful in a war."
  
   #firenation
  
