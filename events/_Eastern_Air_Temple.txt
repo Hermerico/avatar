@@ -14,6 +14,9 @@ country_event = {
 	is_triggered_only = yes
 
 	fire_only_once = yes
+	immediate = {
+		set_country_flag = meetings_disrupted
+	}
 
 	option = {
 		name = eastern.1.a

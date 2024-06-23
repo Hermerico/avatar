@@ -15,9 +15,9 @@ country_event = {
 
 	fire_only_once = yes
 
-	#immediate = {
-	#	set_global_flag = west_temple_fallen
-	#}
+	immediate = {
+		set_country_flag = meetings_disrupted
+	}
 
 	option = {
 		name = western.1.a

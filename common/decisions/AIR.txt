@@ -8,7 +8,7 @@ AIR_council_category = {
 		available = {
 			has_country_flag = meetings_disrupted
 		}
-		days_mission_timeout = 50
+		days_mission_timeout = 30
 		is_good = yes
 		priority = 1000
 		
