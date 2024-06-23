@@ -58,7 +58,7 @@ country_event = { id = chin.1 days = 60 } #Avatar Day
 set_variable = { victory_condition = token:chin_legacy_spirit }
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	local_markets
 	construction_efforts_law

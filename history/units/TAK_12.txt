@@ -11,20 +11,6 @@ division_template = {
 }
 
 division_template = {
-	name = "Infantry Banner"
-
-	regiments = {
-		pikemen = { x = 0 y = 0 }
-		pikemen = { x = 0 y = 1 }
-		pikemen = { x = 1 y = 0 }
-		pikemen = { x = 1 y = 1 }
-		archers = { x = 2 y = 0 }
-		archers = { x = 2 y = 1 }
-	}
-
-}
-
-division_template = {
 	name = "Archer Brigade"
 
 	regiments = {
@@ -37,13 +23,19 @@ division_template = {
 }
 
 division_template = {
-	name = "Militia Brigade"
+	name = "Earthbender Cavalry"
 
 	regiments = {
-		spearmen = { x = 0 y = 0 }
-		swordsmen = { x = 1 y = 0 }
-		swordsmen = { x = 1 y = 1 }
+		bender_ostrich_horses = { x = 0 y = 0 }
+		bender_ostrich_horses = { x = 0 y = 1 }
+		bender_ostrich_horses = { x = 1 y = 0 }
+		bender_ostrich_horses = { x = 1 y = 1 }
 	}
+
+	support = {
+		scout_ostrich_horses = { x = 0 y = 0 }
+	}
+
 }
 
 division_template = {
@@ -57,123 +49,205 @@ division_template = {
 
 }
 
+division_template = {
+	name = "Earthbender Division"
+
+	regiments = {
+		earthbender = { x = 0 y = 0 }
+		earthbender = { x = 0 y = 1 }
+		earthbender = { x = 0 y = 2 }
+		earthbender = { x = 1 y = 0 }
+		earthbender = { x = 1 y = 1 }
+	}
+
+}
+
 #############################################
 units = {
 
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
-		location = 3646
+		location = 6901
+		division_template = "Earthbender Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6901
 		division_template = "Town Guard"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1  #0.8
+		start_equipment_factor = 1
 	}
-
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 1744
-		division_template = "Militia Brigade"
-		start_experience_factor = 0.08
-		start_equipment_factor = 1  #0.75
-	}
-
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
 		location = 563
-		division_template = "Archer Brigade"
-		start_experience_factor = 0.07
-		start_equipment_factor = 1  #0.5
+		division_template = "Town Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
 	}
-
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
 		location = 2483
-		division_template = "Infantry Banner"
-		start_experience_factor = 0.15
-		start_equipment_factor = 1  #0.1
+		division_template = "Earthbender Cavalry"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
+		location = 2483
+		division_template = "Earthbender Cavalry"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+
+	#### taku fort defenders
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Taku Fort Brigade"
 		location = 736
 		division_template = "Earthbender Brigade"
-		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
-		start_experience_factor = 0.05
-		start_equipment_factor = 1  #0.5
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
 	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Castle Archers"
+		location = 736
+		division_template = "Archer Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Taku Fort Earthbenders"
+		location = 736
+		division_template = "Earthbender Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
 
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
 		location = 107
 		division_template = "Earthbender Brigade"
-		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
-		start_experience_factor = 0.05
-		start_equipment_factor = 1  #0.5
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
 	}
-
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
-		location = 5063
-		division_template = "Earthbender Brigade"
-		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
-		start_experience_factor = 0.05
-		start_equipment_factor = 1  #0.5
+		name = "Western Bridge Guards"
+		location = 2471
+		division_template = "Earthbender Division"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
 	}
-	
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
 		location = 5023
 		division_template = "Earthbender Brigade"
-		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
-		start_experience_factor = 0.05
-		start_equipment_factor = 1  #0.5
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1744
+		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Eastern Bridge Guards"
+		location = 3301
+		division_template = "Earthbender Division"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
 	}
 
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
-		location = 7209
+		name = "Earthbender Training Brigade 1"
+		location = 6967
 		division_template = "Earthbender Brigade"
-		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 1  #0.5
+		start_equipment_factor = 1
 	}
-	
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
-		location = 2351
+		name = "Earthbender Training Brigade 2"
+		location = 6967
 		division_template = "Earthbender Brigade"
-		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
 		start_experience_factor = 0.05
-		start_equipment_factor = 1  #0.5
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Earthbender Training Brigade 3"
+		location = 6967
+		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "TAK" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 1
 	}
 
 }
@@ -191,7 +265,7 @@ instant_effect = {
 			type = earthbender_equipment_1
 			creator = "TAK"
 		}
-		requested_factories = 1
+		requested_factories = 3
 		progress = 0.1
 		efficiency = 50
 	}
@@ -208,7 +282,7 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = spear_equipment_0
+			type = spear_equipment_1
 			creator = "TAK"
 		}
 		requested_factories = 1
@@ -216,4 +290,42 @@ instant_effect = {
 		efficiency = 50
 	}
 
+}
+
+
+ ### #####  ###  #  # ###  # #   ####
+#      #   #   # # #  #  # # #   #   
+ ##    #   #   # ##   ###  # #   ### 
+   #   #   #   # # #  #    # #   #   
+###    #    ###  #  # #    # ### ####
+
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = earthbender_equipment_1
+		amount = 241
+		producer = TAK
+	}
+	add_equipment_to_stockpile = {
+		type = spear_equipment_0
+		amount = 672
+		producer = TAK
+	}
+	add_equipment_to_stockpile = {
+		type = heavy_armor_equipment_0
+		amount = 352
+		producer = TAK
+	}
+
+	add_equipment_to_stockpile = {
+		type = transport_equipment_1
+		amount = 47
+		producer = TAK
+	}
+	
+	add_equipment_to_stockpile = {
+		type = train_equipment_1
+		amount = 6
+		producer = TAK
+	}
 }

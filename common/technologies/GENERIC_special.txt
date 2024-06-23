@@ -4,7 +4,7 @@ technologies = {
 
 		allow_branch = {
 			tag = KYI
-        }
+		}
 
 		enable_equipments = {
 			kyoshi_equipment_1
@@ -15,6 +15,10 @@ technologies = {
 		}
 
 		path = {
+			leads_to_tech = kyoshi_equipment_2
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = kyoshi_training_1
 			research_cost_coeff = 1
 		}
@@ -23,10 +27,82 @@ technologies = {
 		#start_year = 1
 		folder = {
 			name = special_forces_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
+			age_1
+
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kyoshi_equipment_2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			kyoshi_equipment_2
+		}
+
+		path = {
+			leads_to_tech = kyoshi_equipment_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = kyoshi_training_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 30
+		folder = {
+			name = special_forces_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		categories = {
+			age_3
+
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kyoshi_equipment_3 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipments = {
+			kyoshi_equipment_3
+		}
+
+		path = {
+			leads_to_tech = kyoshi_equipment_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = kyoshi_training_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 60
+		folder = {
+			name = special_forces_folder
+			position = { x = 4 y = 0 }
+		}
+		
+		categories = {
+			age_5
+
 			infantry_weapons
 		}
 		
@@ -35,42 +111,86 @@ technologies = {
 		}
 	}
 
+	kyoshi_equipment_4 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipments = {
+			kyoshi_equipment_4
+		}
+
+		path = {
+			leads_to_tech = kyoshi_training_10
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 100
+		folder = {
+			name = special_forces_folder
+			position = { x = 6 y = 0 }
+		}
+		
+		categories = {
+			age_6
+
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
 	kyoshi_training_1 = {
+		dependencies = {
+			metaphysics = 1
+		}
 
 		kyoshi_warriors = {
-			soft_attack = 0.1
+			breakthrough = 0.1
+			hard_attack = 0.1
 		}
 
 		path = {
 			leads_to_tech = kyoshi_training_2
 			research_cost_coeff = 1
 		}
-		
+
+
 		research_cost = 2
-		#start_year = 1
+		#start_year = 10
 		folder = {
 			name = special_forces_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 2 }
 		}
 		
 		categories = {
+			age_1
+
 			infantry_weapons
+			bender
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-
 	kyoshi_training_2 = {
+		dependencies = {
+			astronomy = 1
+		}
 
 		kyoshi_warriors = {
 			breakthrough = 0.1
-			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 
-		path = {
-			leads_to_tech = kyoshi_equipment_2
+		path = { 
+			leads_to_tech = kyoshi_training_3
 			research_cost_coeff = 1
 		}
 		
@@ -82,34 +202,10 @@ technologies = {
 		}
 		
 		categories = {
+			age_1
+
 			infantry_weapons
 			bender
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	kyoshi_equipment_2 = {
-
-		enable_equipments = {
-			kyoshi_equipment_2
-		}
-
-		path = {
-			leads_to_tech = kyoshi_training_3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		#start_year = 30
-		folder = {
-			name = special_forces_folder
-			position = { x = 0 y = 8 }
-		}
-		
-		categories = {
-			infantry_weapons
 		}
 		
 		ai_will_do = {
@@ -120,7 +216,35 @@ technologies = {
 
 		kyoshi_warriors = {
 			breakthrough = 0.1
-			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		
+		research_cost = 2
+		#start_year = 20
+		folder = {
+			name = special_forces_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kyoshi_training_4 = {
+		dependencies = {
+			natural_philosophy = 1
+		}
+
+		kyoshi_warriors = {
+			breakthrough = 0.1
+			hard_attack = 0.1
 		}
 
 		path = { 
@@ -136,10 +260,12 @@ technologies = {
 		#start_year = 40
 		folder = {
 			name = special_forces_folder
-			position = { x = 0 y = 10 }
+			position = { x = 2 y = 2 }
 		}
 		
 		categories = {
+			age_2
+
 			infantry_weapons
 			bender
 		}
@@ -153,12 +279,12 @@ technologies = {
 		xor = { defense_training_kyoshi }
 
 		kyoshi_warriors = {
-			ap_attack = 0.2
+			soft_attack = 0.2
 			air_attack = 0.2
 		}
 
 		path = {
-			leads_to_tech = kyoshi_equipment_3
+			leads_to_tech = kyoshi_training_5
 			research_cost_coeff = 1
 		}
 
@@ -166,10 +292,12 @@ technologies = {
 		#start_year = 50
 		folder = {
 			name = special_forces_folder
-			position = { x = -1 y = 12 }
+			position = { x = 1 y = 4 }
 		}
 		
 		categories = {
+			age_2
+
 			infantry_weapons
 			bender
 		}
@@ -185,11 +313,11 @@ technologies = {
 
 		kyoshi_warriors = {
 			defense = 0.2
-			max_organisation = 6
+			max_organisation = 4
 		}
 
 		path = {
-			leads_to_tech = kyoshi_equipment_3
+			leads_to_tech = kyoshi_training_5
 			research_cost_coeff = 1
 		}
 
@@ -197,10 +325,68 @@ technologies = {
 		#start_year = 50
 		folder = {
 			name = special_forces_folder
-			position = { x = 1 y = 12 }
+			position = { x = 3 y = 4 }
 		}
 		
 		categories = {
+			age_2
+
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	kyoshi_training_5 = {
+
+		kyoshi_warriors = {
+			breakthrough = 0.1
+			hard_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = kyoshi_training_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 40
+		folder = {
+			name = special_forces_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		categories = {
+			age_2
+
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kyoshi_training_6 = {
+
+		kyoshi_warriors = {
+			breakthrough = 0.1
+			hard_attack = 0.1
+		}
+		
+		research_cost = 2
+		#start_year = 40
+		folder = {
+			name = special_forces_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			age_2
+
 			infantry_weapons
 			bender
 		}
@@ -210,15 +396,15 @@ technologies = {
 		}
 	}
 	
-	kyoshi_training_4 = {
+	kyoshi_training_7 = {
 
 		kyoshi_warriors = {
 			breakthrough = 0.1
-			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 
-		path = {
-			leads_to_tech = kyoshi_training_5
+		path = { 
+			leads_to_tech = kyoshi_training_8
 			research_cost_coeff = 1
 		}
 		
@@ -226,10 +412,12 @@ technologies = {
 		#start_year = 70
 		folder = {
 			name = special_forces_folder
-			position = { x = 0 y = 16 }
+			position = { x = 4 y = 2 }
 		}
 		
 		categories = {
+			age_3
+
 			infantry_weapons
 			bender
 		}
@@ -238,12 +426,71 @@ technologies = {
 			factor = 1
 		}
 	}
-	kyoshi_training_5 = {
+
+	kyoshi_training_8 = {
+
+		kyoshi_warriors = {
+			breakthrough = 0.1
+			hard_attack = 0.1
+		}
+
+		path = { 
+			leads_to_tech = kyoshi_training_9
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		#start_year = 70
+		folder = {
+			name = special_forces_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			age_3
+
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	kyoshi_training_9 = {
 
 
 		kyoshi_warriors = {
 			breakthrough = 0.1
-			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		
+		research_cost = 2
+		#start_year = 80
+		folder = {
+			name = special_forces_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			age_4
+
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	kyoshi_training_10 = {
+
+
+		kyoshi_warriors = {
+			breakthrough = 0.1
+			hard_attack = 0.1
 		}
 
 		path = { 
@@ -259,10 +506,12 @@ technologies = {
 		#start_year = 80
 		folder = {
 			name = special_forces_folder
-			position = { x = 0 y = 18 }
+			position = { x = 6 y = 2 }
 		}
 		
 		categories = {
+			age_4
+
 			infantry_weapons
 			bender
 		}
@@ -271,85 +520,31 @@ technologies = {
 			factor = 1
 		}
 	}
+	
 	attack_training_kyoshi_2 = {
 
 		xor = { defense_training_kyoshi_2 }
-
+	
 		kyoshi_warriors = {
-			ap_attack = 0.2
+			soft_attack = 0.2
 			air_attack = 0.2
 		}
 
 		path = {
-			leads_to_tech = kyoshi_equipment_4
+			leads_to_tech = kyoshi_training_11
 			research_cost_coeff = 1
-		}
-
-		research_cost = 3
-		#start_year = 90
-		folder = {
-			name = special_forces_folder
-			position = { x = -1 y = 20 }
-		}
-		
-		categories = {
-			infantry_weapons
-			bender
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	defense_training_kyoshi_2 = {
-
-		xor = { attack_training_kyoshi_2 }
-
-		kyoshi_warriors = {
-			defense = 0.2
-			max_organisation = 6
-		}
-
-		path = {
-			leads_to_tech = kyoshi_equipment_4
-			research_cost_coeff = 1
-		}
-
-		research_cost = 3
-		#start_year = 90
-		folder = {
-			name = special_forces_folder
-			position = { x = 1 y = 20 }
-		}
-		
-		categories = {
-			infantry_weapons
-			bender
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	kyoshi_training_6 = {
-
-		xor = { kyoshi_training_7 }
-	
-		kyoshi_warriors = {
-			ap_attack = 0.2
-			air_attack = 0.2
 		}
 		
 		research_cost = 4
 		#start_year = 110
 		folder = {
 			name = special_forces_folder
-			position = { x = -1 y = 24 }
+			position = { x = 5 y = 4 }
 		}
 		
 		categories = {
+			age_4
+
 			infantry_weapons
 			bender
 		}
@@ -358,24 +553,30 @@ technologies = {
 			factor = 1
 		}
 	}
-	kyoshi_training_7 = {
+	defense_training_kyoshi_2 = {
 
-		xor = { kyoshi_training_6 }
+		xor = { attack_training_kyoshi_2 }
 		
 		kyoshi_warriors = {
 			defense = 0.2
-			max_organisation = 6
+			max_organisation = 4
 		}
 
+		path = {
+			leads_to_tech = kyoshi_training_11
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 3
 		#start_year = 110
 		folder = {
 			name = special_forces_folder
-			position = { x = 1 y = 24 }
+			position = { x = 7 y = 4 }
 		}
 		
 		categories = {
+			age_4
+
 			infantry_weapons
 			bender
 		}
@@ -384,26 +585,58 @@ technologies = {
 			factor = 1
 		}
 	}
-	kyoshi_equipment_3 = {
 
-		enable_equipments = {
-			kyoshi_equipment_3
+	kyoshi_training_11 = {
+
+
+		kyoshi_warriors = {
+			breakthrough = 0.1
+			hard_attack = 0.1
 		}
 
 		path = {
-			leads_to_tech = kyoshi_training_4
+			leads_to_tech = kyoshi_training_12
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
-		#start_year = 60
+		research_cost = 2
+		#start_year = 80
 		folder = {
 			name = special_forces_folder
-			position = { x = 0 y = 14 }
+			position = { x = 6 y = 6 }
 		}
 		
 		categories = {
+			age_4
+
 			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kyoshi_training_12 = {
+
+
+		kyoshi_warriors = {
+			breakthrough = 0.1
+			hard_attack = 0.1
+		}
+
+		research_cost = 2
+		#start_year = 80
+		folder = {
+			name = special_forces_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		categories = {
+			age_4
+
+			infantry_weapons
+			bender
 		}
 		
 		ai_will_do = {
@@ -411,36 +644,6 @@ technologies = {
 		}
 	}
 
-	kyoshi_equipment_4 = {
-
-		enable_equipments = {
-			kyoshi_equipment_4
-		}
-
-		path = {
-			leads_to_tech = kyoshi_training_6
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = kyoshi_training_7
-			research_cost_coeff = 1
-		}
-
-		research_cost = 3
-		#start_year = 100
-		folder = {
-			name = special_forces_folder
-			position = { x = 0 y = 22 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
 
 }

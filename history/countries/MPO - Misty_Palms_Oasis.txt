@@ -60,7 +60,7 @@ set_popularities = {
 set_variable = { victory_condition = token:fractured_desert_spirit }
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	swamp_siwong_volunteers
 	local_markets
 	construction_efforts_law

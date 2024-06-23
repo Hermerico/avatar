@@ -59,7 +59,7 @@ add_ideas = {
 	local_markets
 	swamp_siwong_volunteers
 	construction_efforts_law
-	volunteer_water_nation
+	volunteer_only
 	family_support_3
 	no_education
 }

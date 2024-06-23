@@ -62,7 +62,7 @@ set_popularities = {
 set_variable = { victory_condition = token:fire_supremacy_spirit }
 
 add_ideas = {
-	limited_fire_conscription
+	limited_conscription
 	fire_benders_only
 	international_trade
 	buildup_focus_law

@@ -257,10 +257,7 @@ peasant_uprising_category = {
 					has_idea = all_adults_serve
 					has_idea = service_by_requirement
 					has_idea = extensive_conscription
-					has_idea = limited_air_conscription
-					has_idea = limited_fire_conscription
-					has_idea = limited_earth_conscription
-					has_idea = limited_water_conscription
+					has_idea = limited_conscription
 				}
 			}
 			if = {
@@ -268,30 +265,19 @@ peasant_uprising_category = {
 				OR = {
 					has_idea = service_by_requirement
 					has_idea = extensive_conscription
-					has_idea = limited_air_conscription
-					has_idea = limited_fire_conscription
-					has_idea = limited_earth_conscription
-					has_idea = limited_water_conscription
+					has_idea = limited_conscription
 				}
 			}
 			if = {
 				limit = { has_country_flag = revolt_service_by_requirement }
 				OR = {
 					has_idea = extensive_conscription
-					has_idea = limited_air_conscription
-					has_idea = limited_fire_conscription
-					has_idea = limited_earth_conscription
-					has_idea = limited_water_conscription
+					has_idea = limited_conscription
 				}
 			}
 			if = {
 				limit = { has_country_flag = revolt_extensive_conscription }
-				OR = {
-					has_idea = limited_air_conscription
-					has_idea = limited_fire_conscription
-					has_idea = limited_earth_conscription
-					has_idea = limited_water_conscription
-				}
+				has_idea = limited_conscription
 			}
 		}
 

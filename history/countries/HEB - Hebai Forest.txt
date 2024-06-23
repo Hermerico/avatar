@@ -51,7 +51,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	global_trade
 	construction_efforts_law

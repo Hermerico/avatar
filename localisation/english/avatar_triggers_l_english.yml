@@ -16,6 +16,8 @@
  check_liberty_tooltip:0 "Less than $RIGHT|%%Y2$ £centralisation_weekly_texticon  Centralisation"
  check_authority_tooltip:0 "More than $RIGHT|%%Y2$ £centralisation_weekly_texticon  Centralisation"
 
+ check_urbanisation_tooltip:0 "Less than $RIGHT|Y0$ £urbanisation_texticon  Urbanisation"
+
  income_deficit_check:0 "Having an income §Rdeficit§! from £taxes_texticon  Taxation and £payments_texticon  Expenses: $LEFT|Y2$"
  daily_money_check:0 "Having a daily £income_texticon  §YIncome§! of at least: $RIGHT|Y2$"
  money_check:0 "£income_texticon  §YTreasury§! is less than or equals: $RIGHT|Y2$"
