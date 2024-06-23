@@ -177,7 +177,7 @@
  people_investment_pool_tooltip:0 "£peoples_initiative_texticon  §HPeople's Initiative§! \nPercentage reinvested: [?initiative_chance|Y%1] \nWeekly change: [?weekly_peoples_investment_ic|Y3] \n\nBalance: [?peoples_investment_ic|Y3] \n£civ_factory_output  Civilian Production: [?peoples_ic_points|Y0]"
  people_investment_pool_tooltip_delayed:0 "§LThe population will re-invest their surpluss money if they see a profit in it.§!"
  ic_transfer_number:0 "[?ic_transfer_integer|Y0]"
- civ_conversion_tooltip:0 "[GetFactoryConversion] \n£smithy|2 Smithies and £civ_factory Civilian Capacities can partially be used in each others domain. This is usefull for adjusting war- and peacetime production."
+ civ_conversion_tooltip:0 "[GetFactoryConversion] \n£smithy|2 Smithies and £civ_factory Civilian Capacities can partially be used in each others domain. This is useful for adjusting war- and peacetime production."
  civ_conversion_tooltip_delayed:0 "§LSmithies produce tools and Workshops make Armor!? Outrageous, don´t they know their place in society?§!"
  mil_to_civ_tooltip:0 "£mil_civ  §HMilitary Capacity used in Civil Sector§!"
  civ_to_mil_tooltip:0 "£civ_mil  §HCivil Capacity used in Military Sector§!"

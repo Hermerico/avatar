@@ -20,7 +20,7 @@
  stone_desc:0 "Stones & Raw Materials can be used on the tip of spears or arrows or as projectiles for catapults and trebuchets."
  iron_desc:0 "Iron and Copper are the most cost effective material to supply your army with weapons of all types."
  steel_desc:0 "Steel is the strongest and most expensive metal for modern equipment like swords and spears, but also tanks and ships."
- chromium_desc:0 "Though very primitive, Hides & Animal Products are still very usefull and necessary for a variety of weapons."
+ chromium_desc:0 "Though very primitive, Hides & Animal Products are still very useful and necessary for a variety of weapons."
  food_resource_desc:1 "Food is necessary for the people to survive."
  consumer_goods_resource_desc:1 "Consumer goods make live easier."
  luxury_goods_resource_desc:1 "Luxury goods are needed for the upper class, which can establish in prosperous societies."
