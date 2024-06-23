@@ -49,9 +49,11 @@ state={
 
 				farm = 2
 				ranch = 3
+				lumber_mill = 1
 
 				arms_factory = 1
 				mill = 1
+				carpentry = 1
 			}
 
 		instant_resource_calc = yes
