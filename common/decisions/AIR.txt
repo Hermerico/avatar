@@ -44,7 +44,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
-			add_manpower = 100
+			#add_manpower = 100
 			remove_from_array = { air_current_missions = token:AIR_mission_nr1 }
 		}
 		ai_will_do = {base = 100}	
@@ -187,7 +187,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
-			add_manpower = 20
+			#add_manpower = 20
 			remove_from_array = { air_current_missions = token:AIR_mission_nr5 }
 		}
 		ai_will_do = {base = 100}	
@@ -281,7 +281,7 @@ AIR_council_category = {
 				AIR_council_small_support = yes
 			}
 			remove_from_array = { air_current_missions = 8}
-			add_manpower = -20
+			#add_manpower = -20
 			random_owned_controlled_state = {
 				limit = { OR = {
 					state = 239
@@ -571,7 +571,7 @@ AIR_council_category = {
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
-			add_manpower = 20
+			#add_manpower = 20
 			remove_from_array = { air_current_missions = token:AIR_mission_nr13}
 		}
 		ai_will_do = {base = 100}	

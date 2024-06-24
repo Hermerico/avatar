@@ -144,7 +144,7 @@ on_actions = {
 						multiply_variable = { migrating_population = modifier@monthly_migration_state }
 						round_variable = migrating_population
 					
-						add_manpower = var:migrating_population
+						#add_manpower = var:migrating_population
 
 						multiply_variable = { migrating_population = -1 }
 
@@ -213,7 +213,7 @@ on_actions = {
 					}
 
 					#####################################################################################
-					add_manpower = var:refugees_accepted_last_month
+					#add_manpower = var:refugees_accepted_last_month
 
 					if = {
 						limit = {
