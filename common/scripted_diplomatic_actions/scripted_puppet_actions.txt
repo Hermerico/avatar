@@ -130,7 +130,40 @@ scripted_diplomatic_actions = {
 
 		ai_desire = {
 			base = 0
-
+			modifier = {
+				ROOT = {
+					has_resources_in_country = {
+						resource = tungsten
+						amount < 10
+					}
+					
+				}
+				THIS = {
+					has_resources_in_country = {
+						resource = tungsten
+						amount > 15
+					}
+				}
+				add = 20
+				
+			}
+			modifier = {
+				ROOT = {
+					has_resources_in_country = {
+						resource = oil
+						amount < 20
+					}
+					
+				}
+				THIS = {
+					has_resources_in_country = {
+						resource = oil
+						amount > 5
+					}
+				}
+				add = 80
+				
+			}
 		}
 	}
 
