@@ -45,7 +45,6 @@ state={
 
 			buildings = {
 				infrastructure = 1
-				air_base = 1
 			}
 
 		instant_resource_calc = yes

@@ -15,6 +15,10 @@ technologies = {
 		}
 
 		path = {
+			leads_to_tech = firebender_equipment_2
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = fire_training_1
 			research_cost_coeff = 1
 		}
@@ -23,10 +27,12 @@ technologies = {
 		#start_year = 1
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
+			age_1
+
 			infantry_weapons
 		}
 		
@@ -34,6 +40,111 @@ technologies = {
 			factor = 1
 		}
 	}
+	firebender_equipment_2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			firebender_equipment_2
+		}
+
+		path = {
+			leads_to_tech = firebender_equipment_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fire_training_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 30
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		categories = {
+			age_3
+
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	firebender_equipment_3 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipments = {
+			firebender_equipment_3
+		}
+
+		path = {
+			leads_to_tech = firebender_equipment_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fire_training_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 60
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 4 y = 0 }
+		}
+		
+		categories = {
+			age_5
+
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	firebender_equipment_4 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipments = {
+			firebender_equipment_4
+		}
+
+		path = {
+			leads_to_tech = fire_training_10
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 100
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 6 y = 0 }
+		}
+		
+		categories = {
+			age_6
+
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
 	fire_training_1 = {
 		dependencies = {
 			metaphysics = 1
@@ -48,20 +159,18 @@ technologies = {
 			leads_to_tech = fire_training_2
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = trebuchets_1
-			research_cost_coeff = 1
-		}
 
 
 		research_cost = 2
 		#start_year = 10
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 2 }
 		}
 		
 		categories = {
+			age_1
+
 			infantry_weapons
 			bender
 		}
@@ -80,8 +189,8 @@ technologies = {
 			hard_attack = 0.1
 		}
 
-		path = {
-			leads_to_tech = firebender_equipment_2
+		path = { 
+			leads_to_tech = fire_training_3
 			research_cost_coeff = 1
 		}
 		
@@ -93,6 +202,8 @@ technologies = {
 		}
 		
 		categories = {
+			age_1
+
 			infantry_weapons
 			bender
 		}
@@ -101,36 +212,32 @@ technologies = {
 			factor = 1
 		}
 	}
-	firebender_equipment_2 = {
-		dependencies = {
-			smelting = 1
-		}
+	fire_training_3 = {
 
-		enable_equipments = {
-			firebender_equipment_2
+		firebender = {
+			breakthrough = 0.1
+			hard_attack = 0.1
 		}
-
-		path = {
-			leads_to_tech = fire_training_3
-			research_cost_coeff = 1
-		}
-
+		
 		research_cost = 2
-		#start_year = 30
+		#start_year = 20
 		folder = {
 			name = fir_special_forces_folder
 			position = { x = 0 y = 8 }
 		}
 		
 		categories = {
+			age_1
+
 			infantry_weapons
+			bender
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	fire_training_3 = {
+	fire_training_4 = {
 		dependencies = {
 			natural_philosophy = 1
 		}
@@ -153,10 +260,12 @@ technologies = {
 		#start_year = 40
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 0 y = 10 }
+			position = { x = 2 y = 2 }
 		}
 		
 		categories = {
+			age_2
+
 			infantry_weapons
 			bender
 		}
@@ -175,7 +284,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = firebender_equipment_3
+			leads_to_tech = fire_training_5
 			research_cost_coeff = 1
 		}
 
@@ -183,10 +292,12 @@ technologies = {
 		#start_year = 50
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = -1 y = 12 }
+			position = { x = 1 y = 4 }
 		}
 		
 		categories = {
+			age_2
+
 			infantry_weapons
 			bender
 		}
@@ -206,7 +317,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = firebender_equipment_3
+			leads_to_tech = fire_training_5
 			research_cost_coeff = 1
 		}
 
@@ -214,10 +325,68 @@ technologies = {
 		#start_year = 50
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 1 y = 12 }
+			position = { x = 3 y = 4 }
 		}
 		
 		categories = {
+			age_2
+
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fire_training_5 = {
+
+		firebender = {
+			breakthrough = 0.1
+			hard_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = fire_training_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 40
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		categories = {
+			age_2
+
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fire_training_6 = {
+
+		firebender = {
+			breakthrough = 0.1
+			hard_attack = 0.1
+		}
+		
+		research_cost = 2
+		#start_year = 40
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			age_2
+
 			infantry_weapons
 			bender
 		}
@@ -227,15 +396,15 @@ technologies = {
 		}
 	}
 	
-	fire_training_4 = {
+	fire_training_7 = {
 
 		firebender = {
 			breakthrough = 0.1
 			hard_attack = 0.1
 		}
 
-		path = {
-			leads_to_tech = fire_training_5
+		path = { 
+			leads_to_tech = fire_training_8
 			research_cost_coeff = 1
 		}
 		
@@ -243,10 +412,12 @@ technologies = {
 		#start_year = 70
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 0 y = 16 }
+			position = { x = 4 y = 2 }
 		}
 		
 		categories = {
+			age_3
+
 			infantry_weapons
 			bender
 		}
@@ -255,7 +426,66 @@ technologies = {
 			factor = 1
 		}
 	}
-	fire_training_5 = {
+
+	fire_training_8 = {
+
+		firebender = {
+			breakthrough = 0.1
+			hard_attack = 0.1
+		}
+
+		path = { 
+			leads_to_tech = fire_training_9
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		#start_year = 70
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			age_3
+
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fire_training_9 = {
+
+
+		firebender = {
+			breakthrough = 0.1
+			hard_attack = 0.1
+		}
+		
+		research_cost = 2
+		#start_year = 80
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			age_4
+
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fire_training_10 = {
 
 
 		firebender = {
@@ -276,10 +506,12 @@ technologies = {
 		#start_year = 80
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 0 y = 18 }
+			position = { x = 6 y = 2 }
 		}
 		
 		categories = {
+			age_4
+
 			infantry_weapons
 			bender
 		}
@@ -288,85 +520,31 @@ technologies = {
 			factor = 1
 		}
 	}
+	
 	attack_training_fire_2 = {
 
 		xor = { defense_training_fire_2 }
-
+	
 		firebender = {
 			soft_attack = 0.2
 			air_attack = 0.2
 		}
 
 		path = {
-			leads_to_tech = firebender_equipment_4
+			leads_to_tech = fire_training_11
 			research_cost_coeff = 1
-		}
-
-		research_cost = 3
-		#start_year = 90
-		folder = {
-			name = fir_special_forces_folder
-			position = { x = -1 y = 20 }
-		}
-		
-		categories = {
-			infantry_weapons
-			bender
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	defense_training_fire_2 = {
-
-		xor = { attack_training_fire_2 }
-
-		firebender = {
-			defense = 0.2
-			max_organisation = 4
-		}
-
-		path = {
-			leads_to_tech = firebender_equipment_4
-			research_cost_coeff = 1
-		}
-
-		research_cost = 3
-		#start_year = 90
-		folder = {
-			name = fir_special_forces_folder
-			position = { x = 1 y = 20 }
-		}
-		
-		categories = {
-			infantry_weapons
-			bender
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	fire_training_6 = {
-
-		xor = { fire_training_7 }
-	
-		firebender = {
-			soft_attack = 0.2
-			air_attack = 0.2
 		}
 		
 		research_cost = 4
 		#start_year = 110
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = -1 y = 24 }
+			position = { x = 5 y = 4 }
 		}
 		
 		categories = {
+			age_4
+
 			infantry_weapons
 			bender
 		}
@@ -375,24 +553,30 @@ technologies = {
 			factor = 1
 		}
 	}
-	fire_training_7 = {
+	defense_training_fire_2 = {
 
-		xor = { fire_training_6 }
+		xor = { attack_training_fire_2 }
 		
 		firebender = {
 			defense = 0.2
 			max_organisation = 4
 		}
 
+		path = {
+			leads_to_tech = fire_training_11
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 3
 		#start_year = 110
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 1 y = 24 }
+			position = { x = 7 y = 4 }
 		}
 		
 		categories = {
+			age_4
+
 			infantry_weapons
 			bender
 		}
@@ -401,63 +585,58 @@ technologies = {
 			factor = 1
 		}
 	}
-	firebender_equipment_3 = {
-		dependencies = {
-			bronze_alloy = 1
-		}
 
-		enable_equipments = {
-			firebender_equipment_3
+	fire_training_11 = {
+
+
+		firebender = {
+			breakthrough = 0.1
+			hard_attack = 0.1
 		}
 
 		path = {
-			leads_to_tech = fire_training_4
+			leads_to_tech = fire_training_12
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
-		#start_year = 60
+		research_cost = 2
+		#start_year = 80
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 0 y = 14 }
+			position = { x = 6 y = 6 }
 		}
 		
 		categories = {
+			age_4
+
 			infantry_weapons
+			bender
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
+	fire_training_12 = {
 
-	firebender_equipment_4 = {
-		dependencies = {
-			steel_alloy = 1
+
+		firebender = {
+			breakthrough = 0.1
+			hard_attack = 0.1
 		}
 
-		enable_equipments = {
-			firebender_equipment_4
-		}
-
-		path = {
-			leads_to_tech = fire_training_6
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = fire_training_7
-			research_cost_coeff = 1
-		}
-
-		research_cost = 3
-		#start_year = 100
+		research_cost = 2
+		#start_year = 80
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 0 y = 22 }
+			position = { x = 6 y = 8 }
 		}
 		
 		categories = {
+			age_4
+
 			infantry_weapons
+			bender
 		}
 		
 		ai_will_do = {
@@ -487,15 +666,21 @@ technologies = {
 			leads_to_tech = trebuchet_upgrade_1
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = trebuchets_2
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		#start_year = 1
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 4 y = 4 }
+			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
+			age_5
+
 			infantry_weapons
 			bender
 		}
@@ -512,19 +697,16 @@ technologies = {
 			hard_attack = 0.1
 		}
 
-		path = {
-			leads_to_tech = trebuchets_2
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2
 		#start_year = 1
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 4 y = 6 }
+			position = { x = 1 y = 2 }
 		}
 		
 		categories = {
+			age_5
+
 			infantry_weapons
 			bender
 		}
@@ -551,15 +733,21 @@ technologies = {
 			leads_to_tech = trebuchet_upgrade_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = trebuchets_3
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		#start_year = 1
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 4 y = 8 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
+			age_5
+
 			infantry_weapons
 			bender
 		}
@@ -576,19 +764,16 @@ technologies = {
 			hard_attack = 0.1
 		}
 
-		path = {
-			leads_to_tech = trebuchets_3
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2
 		#start_year = 1
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 4 y = 10 }
+			position = { x = 1 y = 6 }
 		}
 		
 		categories = {
+			age_5
+
 			infantry_weapons
 			bender
 		}
@@ -614,10 +799,12 @@ technologies = {
 		#start_year = 1
 		folder = {
 			name = fir_special_forces_folder
-			position = { x = 4 y = 12 }
+			position = { x = 0 y = 8 }
 		}
 		
 		categories = {
+			age_6
+
 			infantry_weapons
 			bender
 		}

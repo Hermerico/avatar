@@ -30,7 +30,7 @@ pop_growth = {
 		multiply_temp_variable = { manpower_add_temp = growth_rate_52 }
 		subtract_from_temp_variable = { manpower_add_temp = manpower_temp }
 
-		add_manpower = var:manpower_add_temp
+		#add_manpower = var:manpower_add_temp
 	}
 
 	if = {
@@ -44,7 +44,7 @@ pop_growth = {
 		multiply_temp_variable = { manpower_add_temp = growth_rate_94 }
 		subtract_from_temp_variable = { manpower_add_temp = manpower_temp }
 
-		add_manpower = var:manpower_add_temp
+		#add_manpower = var:manpower_add_temp
 	}
 
 	if = {
@@ -57,7 +57,7 @@ pop_growth = {
 		multiply_temp_variable = { manpower_add_temp = growth_rate_111 }
 		subtract_from_temp_variable = { manpower_add_temp = manpower_temp }
 
-		add_manpower = var:manpower_add_temp
+		#add_manpower = var:manpower_add_temp
 	}
 }
 

@@ -75,7 +75,7 @@ omashu_puppet_12 = yes
 
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	intercontinental_trade
 	construction_efforts_law

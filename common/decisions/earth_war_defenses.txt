@@ -709,7 +709,7 @@ EAR_defense_category = {
 #				}
 #				set_temp_variable = { this_population_temp = THIS.state_population }
 #				divide_temp_variable = { this_population_temp = -20 }
-#				add_manpower = var:this_population_temp
+#				#add_manpower = var:this_population_temp
 #			}
 #		}
 #

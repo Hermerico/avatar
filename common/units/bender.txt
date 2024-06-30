@@ -94,6 +94,8 @@ sub_units = {
 		suppression = 1
 		weight = 0.1
 
+		entrenchment = 1
+
 		supply_consumption = 0.1
 	
 		need = {
@@ -175,6 +177,9 @@ sub_units = {
 		suppression = 1
 		weight = 0.1
 		supply_consumption = 0.1
+
+		entrenchment = 1
+		
 		need = {
 			earthbender_equipment = 10
 		}

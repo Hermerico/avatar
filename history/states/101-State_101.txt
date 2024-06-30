@@ -11,29 +11,34 @@ state={
 		add_core_of = TAK
 		
 		add_dynamic_modifier = { modifier = eel_herd }
+
 		add_to_variable = {
 			var = forest
-			value = 1		}
+			value = 1
+		}
 		add_to_variable = {
 			var = mountain
-			value = 8
+			value = 11
 		}
 		add_to_variable = {
 			var = field
-			value = 1		}
+			value = 0
+		}
 		add_to_variable = {
 			var = water
-			value = 1		}
+			value = 3
+		}
 		add_to_variable = {
 			var = stonefield
 			value = 7
 		}
 		add_to_variable = {
 			var = animal
-			value = 1		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
+			value = 1
+		}
+		
+		victory_points = {
+			493 5 
 		}
 		12.1.1 = {
 			owner = TAK
@@ -41,11 +46,14 @@ state={
 			add_core_of = TAK
 			buildings = {
 				infrastructure = 3
-				quarry = 1
+
+				quarry = 3
 				mine = 1
+
+				masonry = 1
 			}
 
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			controller = FIR

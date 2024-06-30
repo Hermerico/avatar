@@ -37,7 +37,7 @@ units = {
 
 air_wings = {
 	### Bison Herd ###
-	5 = { 
+	316 = { 
 		name = "Bison Herd"
 		bison_equipment_1 = {
 			owner = "NAT" 

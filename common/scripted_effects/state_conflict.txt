@@ -102,7 +102,7 @@ attacker_combatants = {
 	}
 	multiply_temp_variable = { attacker_manpower = -1 }
 	hidden_effect = {
-		add_manpower = attacker_manpower
+		#add_manpower = attacker_manpower
 	}
 
 	recalc_state_strength = yes
@@ -117,7 +117,7 @@ attacker_reserves = {
 	}
 	multiply_temp_variable = { attacker_manpower = -1 }
 	hidden_effect = {
-		add_manpower = attacker_manpower
+		#add_manpower = attacker_manpower
 	}
 
 	recalc_state_strength = yes
@@ -135,7 +135,7 @@ defender_combatants = {
 	}
 	multiply_temp_variable = { defender_manpower = -1 }
 	hidden_effect = {
-		add_manpower = defender_manpower
+		#add_manpower = defender_manpower
 	}
 
 	recalc_state_strength = yes
@@ -150,7 +150,7 @@ defender_reserves = {
 	}
 	multiply_temp_variable = { defender_manpower = -1 }
 	hidden_effect = {
-		add_manpower = defender_manpower
+		#add_manpower = defender_manpower
 	}
 
 	recalc_state_strength = yes
@@ -265,7 +265,7 @@ end_state_conflict = {
 	var:attacker = {
 		custom_effect_tooltip = clear_state_attacker
 		hidden_effect = {
-			add_manpower = PREV.FROM.attacker_strength
+			#add_manpower = PREV.FROM.attacker_strength
 			remove_targeted_decision = {
 				target = PREV.FROM
 				decision = state_conflict_show_attacker
@@ -291,7 +291,7 @@ end_state_conflict = {
 	
 	var:defender = {
 		hidden_effect = {
-			add_manpower = PREV.FROM.defender_strength
+			#add_manpower = PREV.FROM.defender_strength
 			remove_targeted_decision = {
 				target = PREV.FROM
 				decision = state_conflict_show_defender

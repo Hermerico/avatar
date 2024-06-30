@@ -18,7 +18,6 @@ state={
 		add_to_variable = {
 			var = mountain
 			value = 6
-
 		}
 		add_to_variable = {
 			var = field
@@ -31,34 +30,34 @@ state={
 		add_to_variable = {
 			var = stonefield
 			value = 5
-
 		}
 		add_to_variable = {
 			var = animal
 			value = 2
 		}
-		add_to_variable = {
-			var = resource_deposites
-			value = 6
+		
 
-		}
 		victory_points = {
 			736 5 
 		}
+
 		12.1.1 = {
 			owner = TAK
 			controller = TAK
 			add_core_of = TAK
+
 			buildings = {
 				infrastructure = 2
+
 				lumber_mill = 1
 				quarry = 1
 				mine = 1
-				masonry = 1
 
+				masonry = 1
+				arms_factory = 2
 			}
 
-		instant_resource_calc = yes
+			instant_resource_calc = yes
 		}
 		52.5.16 = {
 			controller = FIR
