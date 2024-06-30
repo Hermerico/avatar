@@ -31,7 +31,7 @@ if = {
 
 
 #set_research_slots = 2
-set_convoys = 125
+set_convoys = 76
 set_stability = 0.4 
 set_war_support = 0.6
 
@@ -57,8 +57,8 @@ set_popularities = {
 taku_puppet_12 = yes
 
 add_ideas = {
-	volunteer_only
-	earth_exceptional
+	volunteer_earth_nation
+	earth_benders_only
 	international_trade
 	construction_efforts_law
 	family_support_3

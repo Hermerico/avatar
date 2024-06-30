@@ -150,12 +150,12 @@ country_event = {
 
 
 		event_target:migration_state = {
-			#add_manpower = event_target:migration_origin.var:migrating_population
+			add_manpower = event_target:migration_origin.var:migrating_population
 		}
 
 		event_target:migration_origin = {
 			multiply_variable = { migrating_population = -1 }
-			#add_manpower = var:migrating_population
+			add_manpower = var:migrating_population
 
 			clear_variable = migrating_population
 		}

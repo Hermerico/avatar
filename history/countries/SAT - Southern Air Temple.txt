@@ -40,7 +40,7 @@ add_ideas = {
 
 	international_trade
 	construction_efforts_law
-	disarmed_nation
+	disarmed_air_nation
 	air_benders_only
 	family_support_3
 	mandatory_education

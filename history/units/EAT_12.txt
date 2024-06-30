@@ -51,7 +51,15 @@ units = {
 
 air_wings = {
 	### Bison Herd ###
-	188 = {
+	63 = {
+		name = "Bison Herd"
+		bison_equipment_1 = {
+			owner = "EAT"
+			amount = 20
+		}
+	}
+	### Bison Herd ###
+	234 = {
 		name = "Bison Herd"
 		bison_equipment_1 = {
 			owner = "EAT"

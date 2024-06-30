@@ -2,8 +2,6 @@
 state={
 	id=154
 	name="STATE_154"
-	manpower=23560
-	state_category=large_city
 
 	history = {
 		pop_growth = yes
@@ -14,7 +12,7 @@ state={
 		
 		add_to_variable = {
 			var = forest
-			value = 5
+			value = 4
 		}
 		add_to_variable = {
 			var = mountain
@@ -22,11 +20,11 @@ state={
 		}
 		add_to_variable = {
 			var = field
-			value = 2
+			value = 7
 		}
 		add_to_variable = {
 			var = water
-			value = 7
+			value = 3
 		}
 		add_to_variable = {
 			var = stonefield
@@ -49,20 +47,17 @@ state={
 			add_core_of = TAK
 			buildings = {
 				infrastructure = 6
-
-				mine = 2
-				lumber_mill = 3
-
 				arms_factory = 3
-				harbour = 3
+				harbour = 1
 				crop_weaving = 2
+				mine = 2
 				consumer_good_factory = 2
 				luxury_good_factory = 2
 				carpentry = 1
 
 				563 = {
-					coastal_fortress = 2
-					naval_base = 6
+					coastal_fortress = 1
+					naval_base = 4
 
 				}
 				6901 = {
@@ -71,7 +66,7 @@ state={
 
 			}
 
-			instant_resource_calc = yes
+		instant_resource_calc = yes
 		}
 		52.5.16 = {
 			controller = FIR
@@ -99,4 +94,7 @@ state={
 	provinces = {
 		563 2483 2523 3414 3646 4221 4614 4820 5104 5608 6850 6894 6901 6924 6972 6987 7017 7056 
 	}
+	manpower=23560
+	
+	state_category=large_city
 }

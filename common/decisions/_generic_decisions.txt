@@ -191,9 +191,9 @@ recruitment_decision_category = {
 						state_population < 10000
 					}
 				}
-				#add_manpower = -1000
+				add_manpower = -1000
 			}
-			#add_manpower = 1000
+			add_manpower = 1000
 		}
 
 		cost = 10
@@ -225,9 +225,9 @@ recruitment_decision_category = {
 						state_population < 20000
 					}
 				}
-				#add_manpower = -2000
+				add_manpower = -2000
 			}
-			#add_manpower = 2000
+			add_manpower = 2000
 		}
 		cost = 20
 
@@ -258,9 +258,9 @@ recruitment_decision_category = {
 						state_population < 50000
 					}
 				}
-				#add_manpower = -4000
+				add_manpower = -4000
 			}
-			#add_manpower = 4000
+			add_manpower = 4000
 		}
 		cost = 30
 

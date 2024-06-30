@@ -11,15 +11,15 @@ state={
 
 		add_to_variable = {
 			var = forest
-			value = 5	
+			value = 3	
 		}
 		add_to_variable = {
 			var = mountain
-			value = 2
+			value = 0
 		}
 		add_to_variable = {
 			var = field
-			value = 3
+			value = 8
 		}
 		add_to_variable = {
 			var = water
@@ -27,11 +27,11 @@ state={
 		}
 		add_to_variable = {
 			var = stonefield
-			value = 3
+			value = 0
 		}
 		add_to_variable = {
 			var = animal
-			value = 7
+			value = 3
 		}
 		
 		victory_points = {
@@ -46,14 +46,9 @@ state={
 			add_core_of = TAK
 			buildings = {
 				infrastructure = 4
-
-				farm = 2
-				ranch = 3
-				lumber_mill = 1
-
 				arms_factory = 1
+				farm = 4
 				mill = 1
-				carpentry = 1
 			}
 
 		instant_resource_calc = yes

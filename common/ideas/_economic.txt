@@ -400,14 +400,6 @@ ideas = {
 				NOT = {
 					has_capitulated = yes
 				}
-				all_controlled_state = {
-					check_variable = {
-						var = actual_urbanisation
-						value = 25
-						compare = less_than_or_equals
-						tooltip = check_urbanisation_tooltip
-					}
-				}
 			}
 		
 			cost = 150

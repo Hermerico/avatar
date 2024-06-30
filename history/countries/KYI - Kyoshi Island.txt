@@ -11,7 +11,7 @@ set_technology = {
 set_variable = { victory_condition = token:kyoshi_isolation_spirit }
 
 add_ideas = {
-	volunteer_only
+	volunteer_earth_nation
 	kyoshi_indiscriminate
 	city_markets
 	buildup_focus_law

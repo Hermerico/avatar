@@ -294,7 +294,7 @@ print_money_for_deficit:0 "Mint More Coins"
  alliance_with_the_dragons:0 "Befriend the Dragons"
  alliance_with_the_dragons_desc:0 "The Dragon is a significant cultural and spiritual icon of the Fire Nation. We shall learn to live in harmony with these scaly beasts, and perhaps this cooperation can lead to further prosperity."
 
- FIR_industrialisation_category:0 "[GetFIR_industrialisation_categoryStatus]Industrialisation§!"
+ FIR_industrialisation_category:0 "§mIndustrialisation§!"
  FIR_industrialisation_category_desc:0 "Its geographic location and the fact that some members of its society can bend Fire and by that create pure Energy, helped the Fire Nation to become the first industrialized country in the world.\nThis advantage is not to be neglected..."
  FIR_industrialisation_category_desc:0 "Its geographic location and the fact that some members of its society can bend Fire and by that create pure Energy, helped the Firenation to become the first industrialized country in the world.\nThis advantage is not to be neglected..."
  agricultural_modernisation:0 "Agricultural Modernisation"

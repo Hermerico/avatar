@@ -475,34 +475,18 @@ additional_conscription_factor = {
 bender_pop_bonus = {
 	base = 0
 	modifier = {
-		set_temp_variable = { core_population_k_temp = core_population_k }
+		set_temp_variable = { bender_bonus = 0.5 }
+
+		set_temp_variable = { bonus_recruitment_factor = 1 }
+		subtract_from_temp_variable = { bonus_recruitment_factor = modifier@conscription }
 		clamp_temp_variable = {
-			var = core_population_k_temp
-			min = 0.001
+			var = bonus_recruitment_factor
+			min = 0
+			max = 1
 		}
+
+		multiply_temp_variable = { bender_bonus = bonus_recruitment_factor }
 		
-		set_temp_variable = { nonbender_ratio = 1 }
-		subtract_from_temp_variable = { nonbender_ratio = bender_percentage }
-
-		set_temp_variable = { nonbender_factor = 1 }
-		add_to_temp_variable = { nonbender_factor = modifier@nonbender_factor }
-
-		multiply_temp_variable = { nonbender_ratio = nonbender_factor }
-
-		set_temp_variable = { bender_unit_ratio = 1 }
-		subtract_from_temp_variable = { bender_unit_ratio = nonbender_ratio }
-
-		set_temp_variable = { bender_manpower_k = core_population_k_temp }
-		multiply_temp_variable = { bender_manpower_k = bender_percentage }
-
-		set_temp_variable = { bender_in_army_k = max_available_manpower_k }
-		multiply_temp_variable = { bender_in_army_k = bender_unit_ratio }
-
-		subtract_from_temp_variable = { bender_manpower_k = bender_in_army_k }
-
-		set_temp_variable = { bender_bonus = bender_manpower_k }
-		divide_temp_variable = { bender_bonus = core_population_k_temp }
-
 		add = bender_bonus
 	}
 }
@@ -510,35 +494,17 @@ bender_pop_bonus = {
 bender_pop_bonus_negative = {
 	base = 0
 	modifier = {
-		set_temp_variable = { core_population_k_temp = core_population_k }
+		set_temp_variable = { bender_bonus = -0.5 }
+
+		set_temp_variable = { bonus_recruitment_factor = 1 }
+		subtract_from_temp_variable = { bonus_recruitment_factor = modifier@conscription }
 		clamp_temp_variable = {
-			var = core_population_k_temp
-			min = 0.001
+			var = bonus_recruitment_factor
+			min = 0
+			max = 1
 		}
 
-		set_temp_variable = { nonbender_ratio = 1 }
-		subtract_from_temp_variable = { nonbender_ratio = bender_percentage }
-
-		set_temp_variable = { nonbender_factor = 1 }
-		add_to_temp_variable = { nonbender_factor = modifier@nonbender_factor }
-
-		multiply_temp_variable = { nonbender_ratio = nonbender_factor }
-
-		set_temp_variable = { bender_unit_ratio = 1 }
-		subtract_from_temp_variable = { bender_unit_ratio = nonbender_ratio }
-
-		set_temp_variable = { bender_manpower_k = core_population_k_temp }
-		multiply_temp_variable = { bender_manpower_k = bender_percentage }
-
-		set_temp_variable = { bender_in_army_k = max_available_manpower_k }
-		multiply_temp_variable = { bender_in_army_k = bender_unit_ratio }
-
-		subtract_from_temp_variable = { bender_manpower_k = bender_in_army_k }
-
-		set_temp_variable = { bender_bonus = bender_manpower_k }
-		divide_temp_variable = { bender_bonus = core_population_k_temp }
-
-		multiply_temp_variable = { bender_bonus = -1 }
+		multiply_temp_variable = { bender_bonus = bonus_recruitment_factor }
 		
 		add = bender_bonus
 	}
@@ -548,7 +514,7 @@ bender_pop_bonus_negative = {
 bender_k = {
 	base = 0
 	modifier = {
-		set_temp_variable = { bender_manpower_k = core_population_k }
+		set_temp_variable = { bender_manpower_k = max_manpower_k }
 
 		multiply_temp_variable = { bender_manpower_k = bender_percentage }
 		

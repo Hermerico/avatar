@@ -47,10 +47,9 @@ state={
 			add_core_of = NWT
 			buildings = {
 				infrastructure = 1
-
 			}
 
-			instant_resource_calc = yes
+		instant_resource_calc = yes
 		}
 		52.5.16 = {
 			owner = NWT

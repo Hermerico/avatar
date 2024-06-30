@@ -373,16 +373,15 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "warriors"
-						position = { x = 80 y = 30 }
+						position = { x = 480 y = 30 }
 						textureFile = ""
 						font = "hoi_33"
 						borderSize = {x = 0 y = 4}
 						text = "SPECIAL_WARRIORS"
-						maxWidth = 180
+						maxWidth = 290
 						maxHeight = 62
 						format = center
 						Orientation = "UPPER_LEFT"
-						pdx_tooltip = special_warriors_desc
 					}
 
 				}
@@ -391,9 +390,9 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "kyoshi_equipment_1_tree"
-				position = { x = 140 y = 220 }
+				position = { x = 600 y = 40 }
 				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
+				format = "UP"
 			}
 
 
@@ -444,46 +443,17 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "firebender"
-						position = { x = 80 y = 30 }
+						position = { x = 500 y = 30 }
 						textureFile = ""
 						font = "hoi_33"
 						borderSize = {x = 0 y = 4}
 						text = "FIREBENDER"
-						maxWidth = 180
+						maxWidth = 290
 						maxHeight = 62
 						format = center
 						Orientation = "UPPER_LEFT"
 						pdx_tooltip = firebender_desc
 					}
-
-					instantTextBoxType = {
-						name = "trebuchets"
-						position = { x = 820 y = 30 }
-						textureFile = ""
-						font = "hoi_33"
-						borderSize = {x = 0 y = 4}
-						text = "TREBUCHETS"
-						maxWidth = 180
-						maxHeight = 62
-						format = center
-						Orientation = "UPPER_LEFT"
-						pdx_tooltip = trebuchet_desc
-					}
-
-					instantTextBoxType = {
-						name = "tanks"
-						position = { x = 1180 y = 30 }
-						textureFile = ""
-						font = "hoi_33"
-						borderSize = {x = 0 y = 4}
-						text = "TANKS"
-						maxWidth = 180
-						maxHeight = 62
-						format = center
-						Orientation = "UPPER_LEFT"
-						pdx_tooltip = tanks_desc
-					}
-
 
 				}
 
@@ -492,21 +462,14 @@ guiTypes = {
 
 			gridboxtype = {
             	name = "firebender_equipment_1_tree"
-            	position = { x = 140 y = 220 }
-            	slotsize = { width = 70 height = 70 }
-            	format = "LEFT"
-        	}
-
-        	gridboxtype = {
-            	name = "trebuchets_1_tree"
-            	position = { x = 920 y = 180 }
+            	position = { x = 640 y = 20 }
             	slotsize = { width = 70 height = 70 }
             	format = "UP"
         	}
 
 			gridboxtype = {
 				name = "armored_vehicle_prototype_tree"
-				position = { x = 1280 y = 180 }
+				position = { x = 1280 y = 860 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
@@ -638,12 +601,12 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "airbender"
-						position = { x = 80 y = 30 }
+						position = { x = 400 y = 30 }
 						textureFile = ""
 						font = "hoi_33"
 						borderSize = {x = 0 y = 4}
 						text = "AIRBENDER"
-						maxWidth = 180
+						maxWidth = 290
 						maxHeight = 62
 						format = center
 						Orientation = "UPPER_LEFT"
@@ -654,11 +617,12 @@ guiTypes = {
 
 			}
 
-        	gridboxtype = {
- 				name = "airbender_equipment_1_tree"
- 				position = { x = 140 y = 220 }
- 				slotsize = { width = 70 height = 70 }
- 				format = "LEFT"
+
+			gridboxtype = {
+            	name = "airbender_equipment_1_tree"
+            	position = { x = 640 y = 50 }
+            	slotsize = { width = 70 height = 70 }
+            	format = "UP"
         	}
 
 			
@@ -709,12 +673,12 @@ guiTypes = {
 				
 					instantTextBoxType = {
 						name = "water_healer"
-						position = { x = 380 y = 20 }
+						position = { x = 300 y = 30 }
 						textureFile = ""
 						font = "hoi_33"
 						borderSize = {x = 0 y = 4}
 						text = "HEALER_TECH"
-						maxWidth = 160
+						maxWidth = 210
 						maxHeight = 22
 						format = center
 						Orientation = "UPPER_LEFT"
@@ -722,12 +686,12 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "waterbender"
-						position = { x = 80 y = 30 }
+						position = { x = 500 y = 30 }
 						textureFile = ""
 						font = "hoi_33"
 						borderSize = {x = 0 y = 4}
 						text = "WATERBENDER"
-						maxWidth = 180
+						maxWidth = 290
 						maxHeight = 62
 						format = center
 						Orientation = "UPPER_LEFT"
@@ -738,10 +702,10 @@ guiTypes = {
 			}
 
 			gridboxtype = {
- 				name = "waterbender_equipment_1_tree"
- 				position = { x = 140 y = 220 }
- 				slotsize = { width = 70 height = 70 }
- 				format = "LEFT"
+            	name = "waterbender_equipment_1_tree"
+            	position = { x = 640 y = 40 }
+            	slotsize = { width = 70 height = 70 }
+            	format = "UP"
         	}
 
 
@@ -793,55 +757,35 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "earthbender"
-						position = { x = 80 y = 30 }
+						position = { x = 400 y = 30 }
 						textureFile = ""
 						font = "hoi_33"
 						borderSize = {x = 0 y = 4}
 						text = "EARTHBENDER"
-						maxWidth = 180
+						maxWidth = 290
 						maxHeight = 62
 						format = center
 						Orientation = "UPPER_LEFT"
 						pdx_tooltip = earthbender_desc
-					}
-
-					instantTextBoxType = {
-						name = "tanks"
-						position = { x = 920 y = 30 }
-						textureFile = ""
-						font = "hoi_33"
-						borderSize = {x = 0 y = 4}
-						text = "TANKS"
-						maxWidth = 180
-						maxHeight = 62
-						format = center
-						Orientation = "UPPER_LEFT"
-						pdx_tooltip = tanks_desc
 					}
 				}
 
 			}
 
 			gridboxtype = {
- 				name = "earthbender_equipment_1_tree"
- 				position = { x = 140 y = 220 }
- 				slotsize = { width = 70 height = 70 }
- 				format = "LEFT"
+            	name = "earthbender_equipment_1_tree"
+            	position = { x = 640 y = 20 }
+            	slotsize = { width = 70 height = 70 }
+            	format = "UP"
         	}
 
 			gridboxtype = {
 				name = "earth_armored_vehicle_prototype_tree"
-				position = { x = 1020 y = 180 }
+				position = { x = 1280 y = 860 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
-			gridboxtype = {
- 				name = "sandbender_equipment_1_tree"
- 				position = { x = 1240 y = 220 }
- 				slotsize = { width = 70 height = 70 }
- 				format = "LEFT"
-        	}
 
 		}
 

@@ -57,7 +57,7 @@ add_ideas = {
 	corrupt_bureaucracy
 	the_dai_li
 
-	volunteer_only
+	volunteer_earth_nation
 	earth_benders_only
 	city_markets
 	construction_efforts_law

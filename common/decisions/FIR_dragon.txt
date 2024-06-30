@@ -17,7 +17,7 @@ FIR_dragon_category = {
 		}
 
 		complete_effect = {
-			#add_manpower = -100
+			add_manpower = -100
 			add_equipment_to_stockpile = {
 				type = firebender_equipment
 				amount = -100

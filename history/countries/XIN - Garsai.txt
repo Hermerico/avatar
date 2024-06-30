@@ -53,7 +53,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_only
+	volunteer_earth_nation
 	earth_benders_only
 	intercontinental_trade
 	construction_efforts_law

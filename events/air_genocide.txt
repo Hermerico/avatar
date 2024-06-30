@@ -97,7 +97,7 @@ country_event = {
 			GIF = {
 				transfer_state = 297
 				
-				#add_manpower = 4000
+				add_manpower = 4000
 				if = {
 					limit = {
 						NOT = {
@@ -491,7 +491,7 @@ country_event = {
 
 					set_temp_variable = { people_to_kill = state_population }
 					multiply_temp_variable = { people_to_kill = -1 }
-					#add_manpower = var:people_to_kill
+					add_manpower = var:people_to_kill
 
 					add_dynamic_modifier = {
 						modifier = genocide_state
@@ -639,7 +639,7 @@ country_event = {
 
 					set_temp_variable = { people_to_kill = state_population }
 					multiply_temp_variable = { people_to_kill = -1 }
-					#add_manpower = var:people_to_kill
+					add_manpower = var:people_to_kill
 
 					add_dynamic_modifier = {
 						modifier = genocide_state
@@ -853,7 +853,7 @@ country_event = {
 					
 					set_temp_variable = { people_to_kill = state_population }
 					multiply_temp_variable = { people_to_kill = -1 }
-					#add_manpower = var:people_to_kill
+					add_manpower = var:people_to_kill
 
 					add_dynamic_modifier = {
 						modifier = genocide_state
@@ -1002,7 +1002,7 @@ country_event = {
 					
 					set_temp_variable = { people_to_kill = state_population }
 					multiply_temp_variable = { people_to_kill = -1 }
-					#add_manpower = var:people_to_kill
+					add_manpower = var:people_to_kill
 
 					add_dynamic_modifier = {
 						modifier = genocide_state
@@ -1197,7 +1197,7 @@ country_event = {
 					days = 100
 				}
 				
-				#add_manpower = 4000
+				add_manpower = 4000
 				division_template = {
 					name = "Fire Commando"
 					regiments = {
