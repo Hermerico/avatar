@@ -226,6 +226,14 @@ spriteTypes = {
 		name = "GFX_idea_dragon_army"
 		texturefile = "gfx/interface/ideas/spirit/dragon_army.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_FIR_colonial_administration"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_colonial_administration.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_banished_prince"
+		texturefile = "gfx/interface/ideas/spirit/FIR/banished_prince.dds"
+	}
 
 
 	#fir colonies
