@@ -53,7 +53,9 @@ state={
 
 		52.5.16 = {
 			controller = FIR
-
+			buildings = {
+				lumber_mill = 1
+			}
 			instant_resource_calc = yes
 		}
 

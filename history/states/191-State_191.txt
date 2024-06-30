@@ -60,7 +60,11 @@ state={
 			owner = YFC
 			controller = YFC
 			add_core_of = YFC
-		
+			buildings = {
+				quarry = 1
+				fishing_stand = 1
+				arms_factory = 2
+			}
 			instant_resource_calc = yes
 		}
 		106.2.4 = {

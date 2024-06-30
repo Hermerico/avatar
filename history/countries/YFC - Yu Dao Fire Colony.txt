@@ -118,7 +118,51 @@ permanent_spirits_and_modifiers = yes
 	#	enemy = EAR
 	#}
 	OOB="YFC_52"
+	add_ideas =  {
+		fire_benders_only
+		generic_army_1
+		generic_clergy_4
+	}
+	add_war_support = 0.6
+	add_stability = 0.52
+	set_technology = {
+		### Inventions
+		measurements = 1
+		kinectics = 1
+		wind_manipulation = 1
+		domestication = 1
+		metaphysics = 1
+		writing = 1
+		### Support Equipment
+		tech_engineers2 = 1
+		tech_transport = 1
+		tech_field_hospital = 1
+		tech_scavenger2 = 1
+		tech_combat_pioneers = 1
+		tech_transport = 1
+		### Society
+		conservative_0 = 1
+		conservative_economy_0 = 1
+		conservative_education_0 = 1
+		conservative_resources_0 = 1
+		conservative_culture_0 = 1
+		conservative_medicine_0 = 1
+		reform_1 = 1
+		conservative_1 = 1
+		#Land Doctrine
+		standing_army = 1
+		scouts_and_spies = 1
+		army_movement = 1
+		coordination_drills = 1
+		coordination1 = 1
+		coordination2 = 1
+		coordination3 = 1
+		#Naval Doctrine
+		fleet_in_being_1 = 1
+		galley_tactics_1 = 1
+	}
 }
+
 
 
  ## #####  ##  ###  #####       #  ##    #
