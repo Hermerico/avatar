@@ -359,20 +359,13 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-   				factor = 1
+   				base = 1
 
    				modifier = {
 					add = -4
 					
 					is_major = yes
 				}
-				
-				modifier = {
-					factor = 0
-					
-					has_large_ally_not_pick_local_markets = yes
-				}
-
 				modifier = {
 					add = 100
 					
@@ -402,6 +395,10 @@ ideas = {
 				modifier = {
 					factor = 10
 					check_variable = { ai_priority_iron > 1 }
+				}
+				modifier = {
+					factor = 0	
+					has_large_ally_not_pick_local_markets = yes
 				}
    			}
 		}
