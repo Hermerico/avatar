@@ -68,6 +68,8 @@ print_money_for_deficit:0 "Mint More Coins"
  taxation_category_desc:0 "The national budget is our £taxes_texticon  §YTaxation§! and  £payments_texticon  §YExpenses§! on the one hand, which describes all flow of currency of the government and the £income_texticon  §YTreasury§! on the other hand, which is direct income that is saved and can be spent on projects or decisions. \n\n£money_cap_texticon  Max Treasury: [?money_cap|0Y]"
  change_funding:0 "Change Tax Spending"
  change_funding_desc:0 "The current investment is not what we need now."
+ increase_treasury_capacity:0 "Increase Treasury Capacity"
+
  research_investment_very_low:0 "Fund Education and Research"
  research_investment_very_low_desc:0 "Use our very small budget to fund education and research."
  family_investment_very_low:0 "Fund Healthcare Institutions"
@@ -888,4 +890,5 @@ print_money_for_deficit:0 "Mint More Coins"
  set_0:0 "DEBUG set war weariness to 0"
  
  show_wanted_divisions:0 "DEBUG AI Wants Divisions: [?ai_wants_divisions|Y]"
+ avatars_location:0 "The Avatar is in [GetAvatarLocation]"
  

@@ -20,6 +20,12 @@ generic_debug_view = {
 		}
 
 	}
+	avatars_location = {
+		allowed = {
+			always = yes
+		}
+		
+	}
 }
 
 
