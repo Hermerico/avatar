@@ -751,7 +751,17 @@ scripted_gui = {
 				ai_will_do = { factor = 100 }
 			}
 			natural_philosophy_2_click = {
-				ai_will_do = { factor = 100 }
+				ai_will_do = { 
+					base = 100
+					modifier = {
+						check_variable = {
+							FROM.ration_balance < 0.01	#Leads to farm output boosting technologies, so prioritize if you have food shortages.
+						}
+						factor = 2
+					}
+
+				} 
+			}
 			}
 			statistics_2_click = {
 				ai_will_do = { factor = 100 }

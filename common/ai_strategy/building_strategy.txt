@@ -75,6 +75,9 @@ build_weavings = {
 			resource = tungsten
 			amount < 0
 		}
+		check_variable = {
+			THIS.daily_ration_need_in_food < THIS.resource@food_resource
+		}
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -139,6 +142,66 @@ build_food = {
 		type = building_target
 		id = mill
 		value = 1000
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = carpentry
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = masonry
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = steelworks
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = quarry
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = mine
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = rail_way
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = supply_node
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = wall
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = naval_base
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = coastal_fortress
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = infrastructure
+		value = 0
 	}
 }
 water_tribes_build_food = {
