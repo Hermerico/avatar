@@ -1,0 +1,58 @@
+OMS_role_ratios_1 = {
+	allowed = {
+		tag = OMS	
+	} 
+	enable = {
+		has_equipment = {
+			spear_equipment > 81
+		}
+		has_equipment = {
+			heavy_armor_equipment > 81
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 84
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = benders_only
+		value = 14
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = defender
+		value = 2
+	}
+
+}
+OMS_production_1 = { 
+	allowed = {
+		tag = OMS	
+	} 
+	enable = {always = yes}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_production_factor
+		id = spear_equipment_1
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = spear_equipment_1
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_armor_equipment
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = heavy_armor_equipment
+		value = 2
+	}
+
+}

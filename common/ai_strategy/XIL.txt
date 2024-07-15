@@ -1,0 +1,35 @@
+XIL_build_fishing_stands_in_Meandertown = {
+	allowed = {
+		tag = XIL
+	}
+	enable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = build_building
+		id = fishing_stand
+		target = 128
+		value = 4
+	}
+	ai_strategy = {
+		type = building_target
+		id = fishing_stand
+		value = 4
+	}
+	ai_strategy = {
+		type = building_target
+		id = crop_weaving
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = animal_weaving
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = consumer_good_factory
+		value = 0
+	}
+
+}

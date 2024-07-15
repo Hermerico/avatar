@@ -96,3 +96,30 @@ RECRUITMENT_exceptional = {
 		value = -100
 	}
 }
+default_equipment_stockpile_surplus_ratio = {
+	allowed = {
+<<<<<<< Updated upstream
+		always = yes
+	}
+	enable = {always = yes}
+	abort = {always = no}
+=======
+		NOT = {
+			tag = FIR
+			tag = NWT	
+		}
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+>>>>>>> Stashed changes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -30
+	}
+<<<<<<< Updated upstream
+=======
+	
+>>>>>>> Stashed changes
+}

@@ -1,4 +1,56 @@
-
+FIR_you_fear_the_earth_kingdom = {
+	allowed = {
+		tag = FIR
+	}
+	enable = {
+		always = no
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = antagonize
+		id = OMS
+		value = 10
+	}
+	ai_strategy = {
+		type = antagonize
+		id = TAK
+		value = 10
+	}
+	ai_strategy = {
+		type = antagonize
+		id = WUL
+		value = 10
+	}
+	ai_strategy = {
+		type = contain
+		id = TAK
+		value = 10
+	}
+}
+FIR_land_role_ratios_historical = {
+	allowed = {tag = FIR}
+	ai_strategy = {
+		type = role_ratio
+		id = average_tier
+		value = 9
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = high_tier
+		value = 3
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = benders_only
+		value = 2
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 40
+	}
+}
 FIR_naval_role_ratios_historical = {
 	allowed = {
 		tag = FIR

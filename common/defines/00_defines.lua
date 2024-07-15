@@ -2303,8 +2303,8 @@ NAI = {
 	NEIGHBOUR_WAR_THREAT_FACTOR = 1.10, 		-- How much increase in threat does AI feel against neighbours who are at war
 	POTENTIAL_ALLY_JOIN_WAR_FACTOR = 100, 		-- How much increase in threat does AI feel against neighbours who are allied against one of our enemies
 	POTENTIAL_FUTURE_ENEMY_FACTOR = 100, 		-- How much increase in threat does AI feel against neighbours who at war with our allies
-	NEUTRAL_THREAT_PARANOIA = 10,				-- How scared neutrals are of everyone
-	DIFFERENT_FACTION_THREAT = 30,				-- Threat caused by not being in the same faction
+	NEUTRAL_THREAT_PARANOIA = 20,				-- How scared neutrals are of everyone
+	DIFFERENT_FACTION_THREAT = 2,				-- Threat caused by not being in the same faction
 	MAX_THREAT_FOR_FIRST_YEAR_CIVILIAN_MODE = 0, -- above this threshold, ai will leave first year civilian factory mode which bumps it civilian factory scores while building
 	PLAN_ATTACK_MIN_ORG_FACTOR_LOW = 0.85,		-- Minimum org % for a unit to actively attack an enemy unit when executing a plan
 	PLAN_ATTACK_MIN_STRENGTH_FACTOR_LOW = 0.4,	-- Minimum strength for a unit to actively attack an enemy unit when executing a plan
@@ -2485,13 +2485,17 @@ NAI = {
 
 	-- Calculating wanted nr of divisions
 	WANTED_UNITS_INDUSTRY_FACTOR = 0.45,                        -- How many units a country wants is partially based on how much military industry that is available
-	WANTED_UNITS_THREAT_BASE = 0.7,                             -- If no threat, multiply min wanted units by this
+	WANTED_UNITS_THREAT_BASE = 0.25,                             -- If no threat, multiply min wanted units by this
 	WANTED_UNITS_THREAT_MAX = 2.0,                             -- Normalized threat is clamped to this
 	WANTED_UNITS_WAR_THREAT_FACTOR = 2.5,                       -- Factor threat with this if country is at war. this value is overriden by the value in ideology database if that value exceedes this.
 	WANTED_UNITS_DANGEROUS_NEIGHBOR_FACTOR = 1.25,              -- Factor if has dangerous neighbor
 	WANTED_UNITS_MANPOWER_DIVISOR = 500,                      -- Normalizing divisor for AI manpower. (for each x max available manpower, they want one division)
-	WANTED_UNITS_WEIGHT_FRONTS_WANT = 0.35,                      -- Weight of front needs when computing final nr wanted units
-	WANTED_UNITS_WEIGHT_FACTORIES = 0.45,                        -- Weight of military factories when computing final nr wanted units
+<<<<<<< Updated upstream
+	WANTED_UNITS_WEIGHT_FRONTS_WANT = 0.001,                      -- Weight of front needs when computing final nr wanted units
+=======
+	WANTED_UNITS_WEIGHT_FRONTS_WANT = 0.010,                      -- Weight of front needs when computing final nr wanted units
+>>>>>>> Stashed changes
+	WANTED_UNITS_WEIGHT_FACTORIES = 0.7,                        -- Weight of military factories when computing final nr wanted units
 	WANTED_UNITS_WEIGHT_MANPOWER = 0.3,                         -- Weight of manpower availability when computing final nr wanted units
 	WANTED_UNITS_MIN_DEFENCE_FACTOR = 0.4,						-- Factor on units required for min defence
 	-- End of calculating wanted nr of divisions

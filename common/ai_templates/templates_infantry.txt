@@ -17,10 +17,12 @@ template_infantry_high_tier = {
 	}
 	
 	upgrade_prio = {
-		factor = 2
-
+		base = 1
 		modifier = {
-			factor = 5
+			has_equipment = {
+				support_equipment < 60
+			}
+			factor = 0
 		}
 	}
 
