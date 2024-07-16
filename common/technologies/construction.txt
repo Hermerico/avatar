@@ -3759,13 +3759,34 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				num_of_civilian_factories > 15
+				OR = {
+					any_owned_state = {
+						days_since_last_strategic_bombing > 1
+						days_since_last_strategic_bombing < 359 
+					}
+					any_allied_country = {
+						any_owned_state = {
+							days_since_last_strategic_bombing > 1
+							days_since_last_strategic_bombing < 359 
+						}
+					}
+					any_enemy_country = {
+						air_base > 2
+					}	
+				}
+				add = 3	
 			}
+			modifier = {
+				has_bombing_war_support > -0.1
+				factor = 1.2
+			}
+			modifier = {
+				has_bombing_war_support > -0.2
+				factor = 3
+			}  
 		}
 		
 		categories = {

@@ -3343,7 +3343,57 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				fishing_stand > 0
+				add = 1
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier =  famine
+				}
+				any_owned_state = {
+					is_coastal = yes
+				}
+				add = 10
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.6
+				}
+				add = 4
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.5
+				}
+				add = 30
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.4
+				}
+				add = 30
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.3
+				}
+				add = 30
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.2
+				}
+				factor = 2
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier = burgerking
+				}
+				factor = 0
+			}
+		
 		}
 		
 		categories = {
@@ -3369,9 +3419,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 2
+
 		}
-		
 		categories = {
 			age_1
 
@@ -3396,9 +3446,57 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				fishing_stand > 0
+				add = 1
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier =  famine
+				}
+				any_owned_state = {
+					is_coastal = yes
+				}
+				add = 10
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.6
+				}
+				add = 4
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.5
+				}
+				add = 30
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.4
+				}
+				add = 30
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.3
+				}
+				add = 30
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.2
+				}
+				factor = 2
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier = burgerking
+				}
+				factor = 0
+			}
 		}
-		
 		categories = {
 			age_2
 
@@ -3502,7 +3600,56 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				fishing_stand > 0
+				add = 1
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier =  famine
+				}
+				any_owned_state = {
+					is_coastal = yes
+				}
+				add = 10
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.6
+				}
+				add = 4
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.5
+				}
+				add = 30
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.4
+				}
+				add = 30
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.3
+				}
+				add = 30
+			}
+			modifier = {
+				check_variable = {
+					THIS.ration_ratio_percent < 0.2
+				}
+				factor = 2
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier = burgerking
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
