@@ -100,15 +100,33 @@ default_equipment_stockpile_surplus_ratio = {
 	allowed = {
 		NOT = {
 			tag = FIR
-			tag = NWT	
+			tag = NWT
 		}
 	}
 	enable = {
-		always = yes
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}	
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = equipment_stockpile_surplus_ratio
 		value = -30
+	}
+}
+minnow_recruitment_blocker = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		has_country_flag = AI_earth_kingdom_minnow
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = 8000
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 0
 	}
 }

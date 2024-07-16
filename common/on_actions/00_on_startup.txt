@@ -40,6 +40,21 @@ on_actions = {
 				}													
 			}
 		}
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = yes
+					num_of_military_factories < 2
+					OR = {
+						is_puppet_of = EAR
+						is_puppet_of = OMS
+						is_puppet_of = TAK
+					}
+				}
+				set_country_flag = AI_earth_kingdom_minnow	
+
+			}
+		}
 	}
 
 
