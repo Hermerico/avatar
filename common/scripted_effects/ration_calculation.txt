@@ -6,8 +6,18 @@ ration_calculation = {
 
 
 	#### daily consumption
-
+	set_variable = {food_available_before_rationing = 0}
 	set_variable = { daily_ration_need = 0 }
+
+	add_to_variable = {food_available_before_rationing = resource@food_resource}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {daily_ration_need_in_food = 0}
+			}
+		}
+		add_to_variable = {food_available_before_rationing = daily_ration_need_in_food}
+	}
 
 	set_variable = { soldier_demand_k = deployed_army_manpower_k }
 	divide_variable = { soldier_demand_k = 200 }
@@ -103,7 +113,7 @@ ration_calculation = {
 	add_to_variable = { ration_daily = modifier_gain }
 
 	# base gain
-	set_variable = { resource_gain = resource@food_resource }
+	set_variable = { resource_gain = food_available_before_rationing }
 	divide_variable = { resource_gain = 2000 }
 	add_to_variable = { ration_daily = resource_gain }
 

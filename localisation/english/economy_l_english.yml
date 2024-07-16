@@ -305,7 +305,7 @@
  ration_empty_months:0 "[?ration_months_to_empty|0G] §Rm§!"
  ration_empty_years:0 "[?ration_years_to_empty|0G] §Ry§!"
  ration_empty:0 "§REmpty§!"
- ration_topbar_tooltip:0 "§HRations§! \n\nCurrent Rations: [GetRationHundreds] \nDaily Gain: [GetRationGainHundreds] \nDaily Change: [GetRationBalanceHundreds] \nRation Capacity: [GetMaxRationHundreds] \nRequired Capacity for full bonus: [GetWantRationHundreds] \n\n£economy_resources|1  Food required: [?resource@food_resource|0+]/[?daily_ration_need_in_food|0Y] \n\nCurrent Daily Consumption: [GetRationNeedHundreds] \nMaximum Daily Consumption: [GetPotentialRationNeedHundreds] \n[GetRationSoldiersNeed][GetRationPopulationNeed][GetRationWorkersNeed][GetRationOccupiedNeed] "
+ ration_topbar_tooltip:0 "§HRations§! \n\nCurrent Rations: [GetRationHundreds] \nDaily Gain: [GetRationGainHundreds] \nDaily Change: [GetRationBalanceHundreds] \nRation Capacity: [GetMaxRationHundreds] \nRequired Capacity for full bonus: [GetWantRationHundreds] \n\n£economy_resources|1  Food required: [?food_available_before_rationing|0+]/[?daily_ration_need_in_food|0Y] \n\nCurrent Daily Consumption: [GetRationNeedHundreds] \nMaximum Daily Consumption: [GetPotentialRationNeedHundreds] \n[GetRationSoldiersNeed][GetRationPopulationNeed][GetRationWorkersNeed][GetRationOccupiedNeed] "
  ration_topbar_tooltip_delayed:0 "§HRations§! are gained in "
  no_ration_consumed_ttp:0 ""
  family_ration_consumption:0 "\n§HPopulation§! \n Received: [?family_get|H0*]/day \n Daily Need: [?family_demand|H0*]/day \n"

@@ -149,6 +149,7 @@ population_resource_bought_on_market = {
 	country_resource_cost_planks_resource = planks_demand
 	country_resource_cost_bricks_resource = bricks_demand
 	country_resource_cost_steel_beams_resource = steel_beams_demand
+	country_resource_cost_food_resource = daily_ration_need_in_food
 
 }
 
