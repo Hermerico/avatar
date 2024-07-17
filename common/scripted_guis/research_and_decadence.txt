@@ -759,9 +759,7 @@ scripted_gui = {
 						}
 						factor = 2
 					}
-
 				} 
-			}
 			}
 			statistics_2_click = {
 				ai_will_do = { factor = 100 }
@@ -776,7 +774,21 @@ scripted_gui = {
 				ai_will_do = { factor = 100 }
 			}
 			printing_press_2_click = {
-				ai_will_do = { factor = 100 }
+				ai_will_do = { 
+					base = 100
+					modifier = {
+						check_variable = {THIS.resource@tungsten < 5} #textile
+						add = 20
+					}
+					modifier = {
+						check_variable = {THIS.resource@tungsten < 0}
+						add = 50
+					}
+					modifier = {
+						check_variable = {THIS.resource@tungsten < -5}
+						factor = 3
+					}  
+				}
 			}
 			laws_of_nature_2_click = {
 				ai_will_do = { factor = 100 }
