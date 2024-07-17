@@ -127,7 +127,29 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			modifier = {
+				has_war = yes
+				factor = 5
+			}
+			modifier = {
+				date > 18.1.1
+				NOT = {
+					WUL = {
+						has_capitulated = yes
+					}
+				}
+				factor = 10
+			}
+			modifier = {
+				date > 19.8.1
+				NOT = {
+					XIN = {
+						has_capitulated = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 	fire_training_3 = {

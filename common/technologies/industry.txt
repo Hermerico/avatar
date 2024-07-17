@@ -2087,7 +2087,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 1
+			modifier = {
+				check_variable = {
+					THIS.resource@luxury_goods_resource  < 1
+				}
+				check_variable = {
+					THIS.resource@stone > 3
+				}
+			add = 4	
+			}
 		}
 		
 		categories = {
@@ -2121,7 +2130,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 1
+			modifier = {
+				check_variable = {
+					THIS.resource@luxury_goods_resource  < 1
+				}
+				check_variable = {
+					THIS.resource@stone > 3
+				}
+			add = 4	
+			}
 		}
 		
 		categories = {
@@ -2155,7 +2173,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 1
+			modifier = {
+				check_variable = {
+					THIS.resource@luxury_goods_resource  < 1
+				}
+				check_variable = {
+					THIS.resource@stone > 3
+				}
+			add = 4	
+			}
 		}
 		
 		categories = {
@@ -2189,7 +2216,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 1
+			modifier = {
+				check_variable = {
+					THIS.resource@luxury_goods_resource  < 1
+				}
+				check_variable = {
+					THIS.resource@stone > 3
+				}
+			add = 4	
+			}
 		}
 		
 		categories = {
@@ -2220,7 +2256,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 1
+			modifier = {
+				check_variable = {
+					THIS.resource@luxury_goods_resource  < 1
+				}
+				check_variable = {
+					THIS.resource@stone > 3
+				}
+			add = 4	
+			}
 		}
 		
 		categories = {
@@ -4307,7 +4352,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 1
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 10
+				}
+				add = 2
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 5
+				}
+				factor = 10
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 0
+				}
+				factor = 30
+			}
 		}
 		
 		categories = {
@@ -4378,7 +4441,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 1
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 10
+				}
+				add = 2
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 5
+				}
+				factor = 10
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 0
+				}
+				factor = 30
+			}
 		}
 		
 		categories = {
@@ -4414,7 +4495,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 1
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 10
+				}
+				add = 2
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 5
+				}
+				factor = 10
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 0
+				}
+				factor = 30
+			}
 		}
 		
 		categories = {
@@ -4450,7 +4549,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 1
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 10
+				}
+				add = 2
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 5
+				}
+				factor = 10
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 0
+				}
+				factor = 30
+			}
 		}
 		
 		categories = {
@@ -4481,7 +4598,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 1
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 10
+				}
+				add = 2
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 5
+				}
+				factor = 10
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@tungsten < 0
+				}
+				factor = 30
+			}
 		}
 		
 		categories = {

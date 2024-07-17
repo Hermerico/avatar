@@ -1587,12 +1587,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 30
-			
-			
+			base = 5
 			modifier = {
 				factor = 3
-				date > "2.1.1"
+				has_manpower < 400
 			}
 		}
 		

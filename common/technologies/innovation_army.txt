@@ -29,12 +29,16 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 20
+			base = 1
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
+			}
+			modifier = {
+				tag = FIR
+				add = 120
 			}
 		}
 	}
@@ -423,7 +427,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 20
+			base = 80
 			modifier = {
 				not = {
 					has_army_experience > 120

@@ -805,7 +805,23 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+				add = 1
+			}
+			modifier = {
+				fishing_stand > 2
+				factor = 2	
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@food_resource < 3
+				}
+				factor = 10
+			}
 		}
 		
 		categories = {
@@ -846,7 +862,23 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+				add = 1
+			}
+			modifier = {
+				fishing_stand > 4
+				factor = 2	
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@food_resource < 3
+				}
+				factor = 10
+			}
 		}
 		
 		categories = {
@@ -888,7 +920,23 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+				add = 1
+			}
+			modifier = {
+				fishing_stand > 6
+				factor = 2	
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@food_resource < 3
+				}
+				factor = 10
+			}
 		}
 		
 		categories = {
@@ -923,7 +971,23 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+				add = 1
+			}
+			modifier = {
+				fishing_stand > 8
+				factor = 2	
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@food_resource < 3
+				}
+				factor = 10
+			}
 		}
 		
 		categories = {
@@ -3063,7 +3127,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 1
 		}
 		
 		categories = {
@@ -3099,7 +3163,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 1
 		}
 		
 		categories = {
@@ -3129,7 +3193,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 1
 		}
 		
 		categories = {
@@ -3159,7 +3223,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 1
 		}
 		
 		categories = {
@@ -3184,7 +3248,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 1
 		}
 		
 		categories = {
@@ -3215,7 +3279,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 1
 		}
 		
 		categories = {
@@ -3246,7 +3310,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 1
 		}
 		
 		categories = {
@@ -3278,7 +3342,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 1
 		}
 		
 		categories = {
@@ -3310,7 +3374,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 1
 		}
 		
 		categories = {
@@ -3336,7 +3400,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 1
 		}
 		
 		categories = {
