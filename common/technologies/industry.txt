@@ -59,7 +59,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			modifier = {
+				set_temp_variable = {
+					b = THIS.resource@bricks_resource
+				}
+				multiply_temp_variable = {
+					b = 5
+				}
+				add = b
+			}
+			modifier = {
+				has_resources_in_country = {
+					resource = stone
+					amount = 0
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {

@@ -518,7 +518,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				OR = {
+					has_tech = sails_tech_1
+					has_tech = fire_sails_1
+				}
+			add = 20	
+			}
 		}
 		
 		ai_research_weights = {
@@ -554,7 +561,40 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				# ai_will_do = (1 - r) * 10
+				set_temp_variable = {
+					r = THIS.alliance_naval_strength_ratio
+				}
+				multiply_temp_variable = {
+					var = r
+					value = -1
+				}
+				add_to_temp_variable = {
+					var = r
+					value = 1
+				}
+				multiply_temp_variable = {
+					var = r
+					value = 10
+				}
+				add = r 
+			}
+			modifier = {
+				has_navy_size = {
+					size > 2
+					archetype = galley_hull
+				}
+				add = 2
+			}
+			modifier = {
+				has_navy_size = {
+					size > 8
+					archetype = galley_hull
+				}
+				factor = 4
+			}
 		}
 		
 		ai_research_weights = {

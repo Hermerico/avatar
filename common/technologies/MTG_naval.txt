@@ -23,7 +23,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			modifier = {
+				harbour > 2
+				add = 5
+			}
+			modifier = {
+				set_temp_variable = {d = THIS.num_dockyards}
+				multiply_temp_variable = {d = 3}
+				add = d
+			}	
+			modifier = {
+				check_variable = {
+					THIS.resource@aluminium < 3
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
