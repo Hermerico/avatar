@@ -36,6 +36,8 @@ build_supply_lines = {
 	enable = {
 		num_of_supply_nodes < 150
 		num_of_civilian_factories > 60
+		check_variable = {THIS.resource@food_resource > 0 }
+		check_variable = {THIS.construction_material > 0.3 }
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
