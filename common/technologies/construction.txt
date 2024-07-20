@@ -3786,12 +3786,32 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				any_owned_state = {
+					days_since_last_strategic_bombing < 365
+				}
+				add = 50
+			}
+			modifier = {
+				any_allied_country = {
+					any_owned_state = {
+						days_since_last_strategic_bombing < 365
+					}
+				}
+				add = 50
+			}
+			modifier = {
+				set_temp_variable = {
+					p = 0
+				}
+				all_enemy_country = {
+					add_to_temp_variable = { p = THIS.num_deployed_planes}
+				}
+				multiply_temp_variable = {
+					p = 3
+				}
+				add = p
 			}
 		}
 		
@@ -3882,12 +3902,32 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				any_owned_state = {
+					days_since_last_strategic_bombing < 365
+				}
+				add = 50
+			}
+			modifier = {
+				any_allied_country = {
+					any_owned_state = {
+						days_since_last_strategic_bombing < 365
+					}
+				}
+				add = 50
+			}
+			modifier = {
+				set_temp_variable = {
+					p = 0
+				}
+				all_enemy_country = {
+					add_to_temp_variable = { p = THIS.num_deployed_planes}
+				}
+				multiply_temp_variable = {
+					p = 3
+				}
+				add = p
 			}
 		}
 		
@@ -3919,12 +3959,32 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				any_owned_state = {
+					days_since_last_strategic_bombing < 365
+				}
+				add = 50
+			}
+			modifier = {
+				any_allied_country = {
+					any_owned_state = {
+						days_since_last_strategic_bombing < 365
+					}
+				}
+				add = 50
+			}
+			modifier = {
+				set_temp_variable = {
+					p = 0
+				}
+				all_enemy_country = {
+					add_to_temp_variable = { p = THIS.num_deployed_planes}
+				}
+				multiply_temp_variable = {
+					p = 3
+				}
+				add = p
 			}
 		}
 		
@@ -3950,12 +4010,32 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				any_owned_state = {
+					days_since_last_strategic_bombing < 365
+				}
+				add = 50
+			}
+			modifier = {
+				any_allied_country = {
+					any_owned_state = {
+						days_since_last_strategic_bombing < 365
+					}
+				}
+				add = 50
+			}
+			modifier = {
+				set_temp_variable = {
+					p = 0
+				}
+				all_enemy_country = {
+					add_to_temp_variable = { p = THIS.num_deployed_planes}
+				}
+				multiply_temp_variable = {
+					p = 3
+				}
+				add = p
 			}
 		}
 		

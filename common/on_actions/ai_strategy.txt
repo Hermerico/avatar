@@ -200,6 +200,69 @@ on_actions = {
 
 		}
 	}
-
-
+	on_monthly = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = yes
+				}
+				set_variable = {
+					var = THIS.AI_fielded_equipment_estimate
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.AI_fielded_equipment_estimate
+					value = THIS.num_equipment_in_armies@heavy_armor_equipment
+				}
+				add_to_variable = {
+					var = THIS.AI_fielded_equipment_estimate
+					value = THIS.num_equipment_in_armies@light_armor_equipment
+				}
+				if = {
+					limit = {
+						has_country_flag = FIR_special_forces
+					}
+					add_to_variable = {
+						var = THIS.AI_fielded_equipment_estimate
+						value = THIS.num_equipment_in_armies@firebender_equipment
+					}
+					else_if = {
+						limit = {
+							has_country_flag = EARTH_special_forces
+						}
+						add_to_variable = {
+							var = THIS.AI_fielded_equipment_estimate
+							value = THIS.num_equipment_in_armies@earthbender_equipment
+						}
+						
+					}
+					else_if = {
+						limit = {
+							has_country_flag = WATER_special_forces
+						}
+						add_to_variable = {
+							var = THIS.AI_fielded_equipment_estimate
+							value = THIS.num_equipment_in_armies@waterbender_equipment
+						}
+						
+					}
+					else_if = {
+						limit = {
+							has_country_flag = AIR_special_forces
+						}
+						add_to_variable = {
+							var = THIS.AI_fielded_equipment_estimate
+							value = THIS.num_equipment_in_armies@airbender_equipment
+						}	
+					}
+					else = {
+						add_to_variable = {
+							var = THIS.AI_fielded_equipment_estimate
+							value = THIS.num_equipment_in_armies@kyoshi_equipment
+						}
+					}
+				}
+			}	
+		}
+	}
 }

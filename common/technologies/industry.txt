@@ -71,7 +71,7 @@ technologies = {
 			modifier = {
 				has_resources_in_country = {
 					resource = stone
-					amount = 0
+					amount < 1
 				}
 				factor = 0
 			}
@@ -2480,7 +2480,33 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
+				# ai_will_do = 3*(m-s)
+				#Make it percentual
+				#ai_will_do = 3 * {[(m-s)/m]*100}
+				set_temp_variable = {s = THIS.wood_variable}
+				set_temp_variable = {m = THIS.wood_max}
+				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				subtract_from_temp_variable = { #m-s
+					var = m
+					value = s
+				}
+				divide_temp_variable = { # (m-s)/m
+					var = m
+					value = d
+				}
+				multiply_temp_variable = { # [(m-s)/m] * 100
+					var = m
+					value = 100
+				}
+				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
+					var = m
+					value = 3
+				}
+				add = m
+			}
 		}
 		
 		categories = {
@@ -2543,7 +2569,33 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
+				# ai_will_do = 3*(m-s)
+				#Make it percentual
+				#ai_will_do = 3 * {[(m-s)/m]*100}
+				set_temp_variable = {s = THIS.wood_variable}
+				set_temp_variable = {m = THIS.wood_max}
+				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				subtract_from_temp_variable = { #m-s
+					var = m
+					value = s
+				}
+				divide_temp_variable = { # (m-s)/m
+					var = m
+					value = d
+				}
+				multiply_temp_variable = { # [(m-s)/m] * 100
+					var = m
+					value = 100
+				}
+				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
+					var = m
+					value = 3
+				}
+				add = m
+			}
 		}
 		
 		categories = {
@@ -2605,7 +2657,33 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
+				# ai_will_do = 3*(m-s)
+				#Make it percentual
+				#ai_will_do = 3 * {[(m-s)/m]*100}
+				set_temp_variable = {s = THIS.wood_variable}
+				set_temp_variable = {m = THIS.wood_max}
+				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				subtract_from_temp_variable = { #m-s
+					var = m
+					value = s
+				}
+				divide_temp_variable = { # (m-s)/m
+					var = m
+					value = d
+				}
+				multiply_temp_variable = { # [(m-s)/m] * 100
+					var = m
+					value = 100
+				}
+				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
+					var = m
+					value = 3
+				}
+				add = m
+			}
 		}
 		
 		categories = {
@@ -2667,7 +2745,33 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
+				# ai_will_do = 3*(m-s)
+				#Make it percentual
+				#ai_will_do = 3 * {[(m-s)/m]*100}
+				set_temp_variable = {s = THIS.wood_variable}
+				set_temp_variable = {m = THIS.wood_max}
+				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				subtract_from_temp_variable = { #m-s
+					var = m
+					value = s
+				}
+				divide_temp_variable = { # (m-s)/m
+					var = m
+					value = d
+				}
+				multiply_temp_variable = { # [(m-s)/m] * 100
+					var = m
+					value = 100
+				}
+				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
+					var = m
+					value = 3
+				}
+				add = m
+			}
 		}
 		
 		categories = {
@@ -2726,7 +2830,33 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
+				# ai_will_do = 3*(m-s)
+				#Make it percentual
+				#ai_will_do = 3 * {[(m-s)/m]*100}
+				set_temp_variable = {s = THIS.wood_variable}
+				set_temp_variable = {m = THIS.wood_max}
+				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				subtract_from_temp_variable = { #m-s
+					var = m
+					value = s
+				}
+				divide_temp_variable = { # (m-s)/m
+					var = m
+					value = d
+				}
+				multiply_temp_variable = { # [(m-s)/m] * 100
+					var = m
+					value = 100
+				}
+				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
+					var = m
+					value = 3
+				}
+				add = m
+			}
 		}
 		
 		categories = {
@@ -3803,16 +3933,49 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
 			modifier = {
-				OR = {
-					tag = NWT
-					tag = SWT
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = b
+					value = d
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = permafrost_modifier
+					}
 				}
 				factor = 0
 			}
 		}
-		
+
 		categories = {
 			age_1
 
@@ -3848,7 +4011,47 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = b
+					value = d
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = permafrost_modifier
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -3878,7 +4081,47 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = b
+					value = d
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = permafrost_modifier
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -3914,7 +4157,47 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = b
+					value = d
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = permafrost_modifier
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -3942,7 +4225,47 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = b
+					value = d
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = permafrost_modifier
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -3980,7 +4303,47 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = b
+					value = d
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = permafrost_modifier
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -4008,7 +4371,47 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = b
+					value = d
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = permafrost_modifier
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -4044,7 +4447,47 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = b
+					value = d
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = permafrost_modifier
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -4073,7 +4516,47 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = b
+					value = d
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = permafrost_modifier
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -4136,7 +4619,47 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = b
+					value = d
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = permafrost_modifier
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {

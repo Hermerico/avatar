@@ -25,12 +25,12 @@ NWT_pre_unification = {
 		type = build_building
 		id = arms_factory
 		value = 1
-		target 17
+		target = 17
 	}
 	ai_strategy = {
 		type = build_building
 		id = arms_factory
 		value = 1
-		target 10
+		target = 10
 	}
 }

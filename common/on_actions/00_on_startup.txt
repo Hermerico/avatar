@@ -55,7 +55,13 @@ on_actions = {
 
 			}
 		}
+		effect = {
+			every_country = {
+				set_variable = {
+					var = AI_fielded_equipment_estimate
+					value = 0
+				}
+			}
+		}
 	}
-
-
 }

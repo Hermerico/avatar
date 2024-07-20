@@ -49,6 +49,12 @@ RECRUITMENT_bender_only = {
 		id = garrison
 		value = -100
 	}
+	ai_strategy = {
+		type = role_ratio
+		id = supportless
+		value = 20
+	}
+
 }
 
 RECRUITMENT_exceptional = {
@@ -96,20 +102,158 @@ RECRUITMENT_exceptional = {
 		value = -100
 	}
 }
-default_equipment_stockpile_surplus_ratio = {
+
+ess_10 = {
 	allowed = {
-		NOT = {
-			tag = FIR
-			tag = NWT
-		}
+		always = yes
 	}
 	enable = {
-		NOT = {has_country_flag = AI_earth_kingdom_minnow}	
+		check_variable = {THIS.AI_fielded_equipment_estimate < 300}
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = 10
+	}
+}
+ess_neg_27 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		check_variable = {THIS.AI_fielded_equipment_estimate > 2700}
+		check_variable = {THIS.AI_fielded_equipment_estimate < 2800}
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -27
+	}
+}
+ess_neg_28 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		check_variable = {THIS.AI_fielded_equipment_estimate > 2800}
+		check_variable = {THIS.AI_fielded_equipment_estimate < 2900}
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -28
+	}
+}
+ess_neg_29 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		check_variable = {THIS.AI_fielded_equipment_estimate > 2900}
+		check_variable = {THIS.AI_fielded_equipment_estimate < 3000}
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -29
+	}
+}
+ess_neg_30 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		check_variable = {THIS.AI_fielded_equipment_estimate > 3000}
+		check_variable = {THIS.AI_fielded_equipment_estimate < 3100}
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = equipment_stockpile_surplus_ratio
 		value = -30
+	}
+}
+ess_neg_40 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		check_variable = {THIS.AI_fielded_equipment_estimate > 3100}
+		check_variable = {THIS.AI_fielded_equipment_estimate < 4000}
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -46
+	}
+}
+ess_neg_50 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		check_variable = {THIS.AI_fielded_equipment_estimate > 4000}
+		check_variable = {THIS.AI_fielded_equipment_estimate < 4100}
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -50
+	}
+}
+ess_neg_47 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		check_variable = {THIS.AI_fielded_equipment_estimate > 4100}
+		check_variable = {THIS.AI_fielded_equipment_estimate < 4200}
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -47
+	}
+}
+ess_neg_48 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		check_variable = {THIS.AI_fielded_equipment_estimate > 4200}
+		check_variable = {THIS.AI_fielded_equipment_estimate < 4300}
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -48
+	}
+}
+ess_neg_49 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		check_variable = {THIS.AI_fielded_equipment_estimate > 4300}
+		NOT = {has_country_flag = AI_earth_kingdom_minnow}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -49
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 0
 	}
 }
 minnow_recruitment_blocker = {

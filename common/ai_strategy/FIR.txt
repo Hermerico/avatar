@@ -31,6 +31,8 @@ FIR_you_fear_the_earth_kingdom = {
 }
 FIR_land_role_ratios_historical = {
 	allowed = {tag = FIR}
+	enable = {always = yes}
+	abort = {always = no}
 	ai_strategy = {
 		type = role_ratio
 		id = average_tier
@@ -839,7 +841,7 @@ FIR_raid_north_earth_convoys = {
 		tag = FIR
 	}
 	enable = {
-		always = yes
+		has_war_with = EAR
 	}
 	abort_when_not_enabled = yes
 

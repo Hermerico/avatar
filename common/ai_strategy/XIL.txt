@@ -5,6 +5,9 @@ XIL_build_fishing_stands_in_Meandertown = {
 	enable = {
 		always = yes
 	}
+	abort = {
+		fishing_stand > 5
+	}
 	ai_strategy = {
 		type = build_building
 		id = fishing_stand
