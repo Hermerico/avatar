@@ -3907,7 +3907,54 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = FROM.daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = FROM.daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = d
+					value = b
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				clamp_temp_variable = {
+					var = b
+					min = 0
+					max = 15000
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -3939,14 +3986,14 @@ technologies = {
 					b = THIS.food_available_before_rationing
 				}
 				set_temp_variable = {
-					d = daily_ration_need_in_food
+					d = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = d
 					value = 365
 				}
 				set_temp_variable = {
-					a = daily_ration_need_in_food
+					a = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = a
@@ -3957,19 +4004,26 @@ technologies = {
 					value = a
 				}
 				divide_temp_variable = {
-					var = b
-					value = d
+					var = d
+					value = b
 				}
 				multiply_temp_variable = {
 					var = b
 					value = 100
+				}
+				clamp_temp_variable = {
+					var = b
+					min = 0
+					max = 15000
 				}
 				add = b
 			}
 			modifier = {
 				THIS = {
 					all_owned_state = {
-						has_dynamic_modifier = permafrost_modifier
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
 					}
 				}
 				factor = 0
@@ -4017,14 +4071,14 @@ technologies = {
 					b = THIS.food_available_before_rationing
 				}
 				set_temp_variable = {
-					d = daily_ration_need_in_food
+					d = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = d
 					value = 365
 				}
 				set_temp_variable = {
-					a = daily_ration_need_in_food
+					a = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = a
@@ -4035,19 +4089,26 @@ technologies = {
 					value = a
 				}
 				divide_temp_variable = {
-					var = b
-					value = d
+					var = d
+					value = b
 				}
 				multiply_temp_variable = {
 					var = b
 					value = 100
+				}
+				clamp_temp_variable = {
+					var = b
+					min = 0
+					max = 15000
 				}
 				add = b
 			}
 			modifier = {
 				THIS = {
 					all_owned_state = {
-						has_dynamic_modifier = permafrost_modifier
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
 					}
 				}
 				factor = 0
@@ -4087,14 +4148,14 @@ technologies = {
 					b = THIS.food_available_before_rationing
 				}
 				set_temp_variable = {
-					d = daily_ration_need_in_food
+					d = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = d
 					value = 365
 				}
 				set_temp_variable = {
-					a = daily_ration_need_in_food
+					a = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = a
@@ -4105,19 +4166,26 @@ technologies = {
 					value = a
 				}
 				divide_temp_variable = {
-					var = b
-					value = d
+					var = d
+					value = b
 				}
 				multiply_temp_variable = {
 					var = b
 					value = 100
+				}
+				clamp_temp_variable = {
+					var = b
+					min = 0
+					max = 15000
 				}
 				add = b
 			}
 			modifier = {
 				THIS = {
 					all_owned_state = {
-						has_dynamic_modifier = permafrost_modifier
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
 					}
 				}
 				factor = 0
@@ -4163,14 +4231,14 @@ technologies = {
 					b = THIS.food_available_before_rationing
 				}
 				set_temp_variable = {
-					d = daily_ration_need_in_food
+					d = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = d
 					value = 365
 				}
 				set_temp_variable = {
-					a = daily_ration_need_in_food
+					a = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = a
@@ -4181,19 +4249,26 @@ technologies = {
 					value = a
 				}
 				divide_temp_variable = {
-					var = b
-					value = d
+					var = d
+					value = b
 				}
 				multiply_temp_variable = {
 					var = b
 					value = 100
+				}
+				clamp_temp_variable = {
+					var = b
+					min = 0
+					max = 15000
 				}
 				add = b
 			}
 			modifier = {
 				THIS = {
 					all_owned_state = {
-						has_dynamic_modifier = permafrost_modifier
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
 					}
 				}
 				factor = 0
@@ -4231,14 +4306,14 @@ technologies = {
 					b = THIS.food_available_before_rationing
 				}
 				set_temp_variable = {
-					d = daily_ration_need_in_food
+					d = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = d
 					value = 365
 				}
 				set_temp_variable = {
-					a = daily_ration_need_in_food
+					a = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = a
@@ -4249,19 +4324,26 @@ technologies = {
 					value = a
 				}
 				divide_temp_variable = {
-					var = b
-					value = d
+					var = d
+					value = b
 				}
 				multiply_temp_variable = {
 					var = b
 					value = 100
+				}
+				clamp_temp_variable = {
+					var = b
+					min = 0
+					max = 15000
 				}
 				add = b
 			}
 			modifier = {
 				THIS = {
 					all_owned_state = {
-						has_dynamic_modifier = permafrost_modifier
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
 					}
 				}
 				factor = 0
@@ -4309,14 +4391,14 @@ technologies = {
 					b = THIS.food_available_before_rationing
 				}
 				set_temp_variable = {
-					d = daily_ration_need_in_food
+					d = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = d
 					value = 365
 				}
 				set_temp_variable = {
-					a = daily_ration_need_in_food
+					a = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = a
@@ -4327,19 +4409,26 @@ technologies = {
 					value = a
 				}
 				divide_temp_variable = {
-					var = b
-					value = d
+					var = d
+					value = b
 				}
 				multiply_temp_variable = {
 					var = b
 					value = 100
+				}
+				clamp_temp_variable = {
+					var = b
+					min = 0
+					max = 15000
 				}
 				add = b
 			}
 			modifier = {
 				THIS = {
 					all_owned_state = {
-						has_dynamic_modifier = permafrost_modifier
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
 					}
 				}
 				factor = 0
@@ -4377,14 +4466,14 @@ technologies = {
 					b = THIS.food_available_before_rationing
 				}
 				set_temp_variable = {
-					d = daily_ration_need_in_food
+					d = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = d
 					value = 365
 				}
 				set_temp_variable = {
-					a = daily_ration_need_in_food
+					a = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = a
@@ -4395,19 +4484,26 @@ technologies = {
 					value = a
 				}
 				divide_temp_variable = {
-					var = b
-					value = d
+					var = d
+					value = b
 				}
 				multiply_temp_variable = {
 					var = b
 					value = 100
+				}
+				clamp_temp_variable = {
+					var = b
+					min = 0
+					max = 15000
 				}
 				add = b
 			}
 			modifier = {
 				THIS = {
 					all_owned_state = {
-						has_dynamic_modifier = permafrost_modifier
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
 					}
 				}
 				factor = 0
@@ -4453,14 +4549,14 @@ technologies = {
 					b = THIS.food_available_before_rationing
 				}
 				set_temp_variable = {
-					d = daily_ration_need_in_food
+					d = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = d
 					value = 365
 				}
 				set_temp_variable = {
-					a = daily_ration_need_in_food
+					a = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = a
@@ -4471,19 +4567,26 @@ technologies = {
 					value = a
 				}
 				divide_temp_variable = {
-					var = b
-					value = d
+					var = d
+					value = b
 				}
 				multiply_temp_variable = {
 					var = b
 					value = 100
+				}
+				clamp_temp_variable = {
+					var = b
+					min = 0
+					max = 15000
 				}
 				add = b
 			}
 			modifier = {
 				THIS = {
 					all_owned_state = {
-						has_dynamic_modifier = permafrost_modifier
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
 					}
 				}
 				factor = 0
@@ -4522,14 +4625,14 @@ technologies = {
 					b = THIS.food_available_before_rationing
 				}
 				set_temp_variable = {
-					d = daily_ration_need_in_food
+					d = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = d
 					value = 365
 				}
 				set_temp_variable = {
-					a = daily_ration_need_in_food
+					a = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = a
@@ -4540,8 +4643,8 @@ technologies = {
 					value = a
 				}
 				divide_temp_variable = {
-					var = b
-					value = d
+					var = d
+					value = b
 				}
 				multiply_temp_variable = {
 					var = b
@@ -4552,7 +4655,9 @@ technologies = {
 			modifier = {
 				THIS = {
 					all_owned_state = {
-						has_dynamic_modifier = permafrost_modifier
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
 					}
 				}
 				factor = 0
@@ -4590,7 +4695,49 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					b = THIS.food_available_before_rationing
+				}
+				set_temp_variable = {
+					d = FROM.daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = d
+					value = 365
+				}
+				set_temp_variable = {
+					a = FROM.daily_ration_need_in_food
+				}
+				multiply_temp_variable = {
+					var = a
+					value = 0.1
+				}
+				add_to_temp_variable = {
+					var = d
+					value = a
+				}
+				divide_temp_variable = {
+					var = d
+					value = b
+				}
+				multiply_temp_variable = {
+					var = b
+					value = 100
+				}
+				add = b
+			}
+			modifier = {
+				THIS = {
+					all_owned_state = {
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
+					}
+				}
+				factor = 0
+			}
 		}
 		
 		categories = {
@@ -4625,14 +4772,14 @@ technologies = {
 					b = THIS.food_available_before_rationing
 				}
 				set_temp_variable = {
-					d = daily_ration_need_in_food
+					d = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = d
 					value = 365
 				}
 				set_temp_variable = {
-					a = daily_ration_need_in_food
+					a = FROM.daily_ration_need_in_food
 				}
 				multiply_temp_variable = {
 					var = a
@@ -4643,8 +4790,8 @@ technologies = {
 					value = a
 				}
 				divide_temp_variable = {
-					var = b
-					value = d
+					var = d
+					value = b
 				}
 				multiply_temp_variable = {
 					var = b
@@ -4655,7 +4802,9 @@ technologies = {
 			modifier = {
 				THIS = {
 					all_owned_state = {
-						has_dynamic_modifier = permafrost_modifier
+						has_dynamic_modifier = { 
+							modifier = permafrost_modifier 
+						}
 					}
 				}
 				factor = 0
