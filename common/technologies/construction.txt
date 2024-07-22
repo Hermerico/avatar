@@ -38,12 +38,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				FROM = {
+					all_owned_state = {
+						OR = {
+							check_variable = {THIS.field = THIS.building_level@farm}
+							check_variable = {THIS.field < 2}
+						}
+					}
+				}	
+				add = 80
 			}
 		}
 		
@@ -97,7 +102,18 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				FROM = {
+					all_owned_state = {
+						OR = {
+							check_variable = {THIS.field = THIS.building_level@farm}
+							check_variable = {THIS.field < 2}
+						}
+					}
+				}	
+				add = 80
+			}
 		}
 		
 		categories = {
@@ -141,12 +157,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				FROM = {
+					all_owned_state = {
+						OR = {
+							check_variable = {THIS.field = THIS.building_level@farm}
+							check_variable = {THIS.field < 2}
+						}
+					}
+				}	
+				add = 80
 			}
 		}
 		
@@ -183,12 +204,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				FROM = {
+					all_owned_state = {
+						OR = {
+							check_variable = {THIS.field = THIS.building_level@farm}
+							check_variable = {THIS.field < 2}
+						}
+					}
+				}	
+				add = 80
 			}
 		}
 		
