@@ -3909,41 +3909,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				clamp_temp_variable = {
-					var = b
-					min = 0
-					max = 15000
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -3982,41 +3982,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				clamp_temp_variable = {
-					var = b
-					min = 0
-					max = 15000
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -4067,41 +4067,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				clamp_temp_variable = {
-					var = b
-					min = 0
-					max = 15000
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -4144,41 +4144,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				clamp_temp_variable = {
-					var = b
-					min = 0
-					max = 15000
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -4227,41 +4227,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				clamp_temp_variable = {
-					var = b
-					min = 0
-					max = 15000
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -4302,41 +4302,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				clamp_temp_variable = {
-					var = b
-					min = 0
-					max = 15000
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -4387,41 +4387,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				clamp_temp_variable = {
-					var = b
-					min = 0
-					max = 15000
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -4462,41 +4462,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				clamp_temp_variable = {
-					var = b
-					min = 0
-					max = 15000
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -4545,41 +4545,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				clamp_temp_variable = {
-					var = b
-					min = 0
-					max = 15000
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -4621,36 +4621,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -4697,36 +4702,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
@@ -4768,36 +4778,41 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				set_temp_variable = {a = 500}
 				set_temp_variable = {
-					b = THIS.food_available_before_rationing
+					m = THIS.ration_months_to_empty
 				}
-				set_temp_variable = {
-					d = FROM.daily_ration_need_in_food
+				if = {
+					limit = {
+						THIS = {
+							NOT = {tag = FIR} #They're on the equator.
+							all_owned_state = {
+								has_dynamic_modifier = {
+									modifier = winter_modifer
+								}
+							NOT = {check_variable = {global.calendar_month = 2}}
+							}
+						}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 2
+					}
 				}
-				multiply_temp_variable = {
-					var = d
-					value = 365
-				}
-				set_temp_variable = {
-					a = FROM.daily_ration_need_in_food
-				}
-				multiply_temp_variable = {
-					var = a
-					value = 0.1
-				}
-				add_to_temp_variable = {
-					var = d
-					value = a
+				if = {
+					limit = {
+						check_variable = {m = 0}
+					}
+					add_to_temp_variable = {
+						var = m
+						value = 1
+					}
 				}
 				divide_temp_variable = {
-					var = d
-					value = b
+					var = a
+					value = m
 				}
-				multiply_temp_variable = {
-					var = b
-					value = 100
-				}
-				add = b
+				add = a	
 			}
 			modifier = {
 				THIS = {
