@@ -2807,11 +2807,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				num_of_civilian_factories > 5
+				add = 10
+			}
+			modifier = {
+				has_dynamic_modifier = {modifier = extreme_poverty}
+				add = -20
+			}
+			modifier = {
+				has_dynamic_modifier = {modifier = poverty}
+				add = -10
+			}
+			modifier = {
+				is_faction_leader = yes
+				factor = 4
 			}
 		}
 		
@@ -2850,11 +2861,30 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				num_of_civilian_factories > 5
+				add = 10
+			}
+			modifier = {
+				has_dynamic_modifier = {modifier = extreme_poverty}
+				add = -20
+			}
+			modifier = {
+				has_dynamic_modifier = {modifier = poverty}
+				add = -10
+			}
+			modifier = {
+				is_faction_leader = yes
+				factor = 4
+			}
+			modifier = {
+				NOT = {
+				 	any_owned_state = {
+						infrastructure =  4
+					}
+				}
+				factor = 0 
 			}
 		}
 		
@@ -2892,7 +2922,31 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				num_of_civilian_factories > 5
+				add = 10
+			}
+			modifier = {
+				has_dynamic_modifier = {modifier = extreme_poverty}
+				add = -20
+			}
+			modifier = {
+				has_dynamic_modifier = {modifier = poverty}
+				add = -10
+			}
+			modifier = {
+				is_faction_leader = yes
+				factor = 4
+			}
+			modifier = {
+				NOT = {
+				 	any_owned_state = {
+						infrastructure =  4
+					}
+				}
+				factor = 0 
+			}
 		}
 		
 		categories = {
@@ -2930,7 +2984,36 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				num_of_civilian_factories > 5
+				add = 10
+			}
+			modifier = {
+				has_dynamic_modifier = {modifier = extreme_poverty}
+				add = -20
+			}
+			modifier = {
+				has_dynamic_modifier = {modifier = poverty}
+				add = -10
+			}
+			modifier = {
+				is_faction_leader = yes
+				factor = 4
+			}
+			modifier = {
+				NOT = {
+				 	has_built = {
+						type = infrastructure
+						value > 10
+					}
+					has_built = {
+						type = rail_way
+						value > 5
+					}
+				}
+				factor = 0 
+			}
 		}
 		
 		categories = {
@@ -2960,15 +3043,43 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				num_of_civilian_factories > 5
+				add = 10
+			}
+			modifier = {
+				has_dynamic_modifier = {modifier = extreme_poverty}
+				add = -20
+			}
+			modifier = {
+				has_dynamic_modifier = {modifier = poverty}
+				add = -10
+			}
+			modifier = {
+				is_faction_leader = yes
+				factor = 4
+			}
+			modifier = {
+				NOT = {
+				 	has_built = {
+						type = infrastructure
+						value > 10
+					}
+					has_built = {
+						type = rail_way
+						value > 5
+					}
+				}
+				factor = 0 
+			}
 		}
-		
 		categories = {
 			construction
 			resource_construction
 			stone_construction
-		}	
-	}
+		}
+	}		
 	wall_1 = {
 
 		enable_building = {
@@ -2996,14 +3107,20 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				set_temp_variable = {r = THIS.enemies_strength_ratio}
+				multiply_temp_variable = {
+					var = r
+					value = 200
+				}
+				subtract_from_temp_variable = {
+					var = r
+					value = 50
+				}
+				add = r
 			}
 		}
-		
 		categories = {
 			construction
 			resource_construction
@@ -3031,11 +3148,18 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				set_temp_variable = {r = THIS.enemies_strength_ratio}
+				multiply_temp_variable = {
+					var = r
+					value = 200
+				}
+				subtract_from_temp_variable = {
+					var = r
+					value = 50
+				}
+				add = r
 			}
 		}
 		
@@ -3066,7 +3190,19 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				set_temp_variable = {r = THIS.enemies_strength_ratio}
+				multiply_temp_variable = {
+					var = r
+					value = 200
+				}
+				subtract_from_temp_variable = {
+					var = r
+					value = 50
+				}
+				add = r
+			}
 		}
 		
 		categories = {
@@ -3091,7 +3227,19 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				set_temp_variable = {r = THIS.enemies_strength_ratio}
+				multiply_temp_variable = {
+					var = r
+					value = 200
+				}
+				subtract_from_temp_variable = {
+					var = r
+					value = 50
+				}
+				add = r
+			}
 		}
 		
 		categories = {
@@ -3118,7 +3266,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				num_of_civilian_factories > 20
+				has_stability > 0.6
+				add = 30
+			}
 		}
 		
 		categories = {
@@ -3488,7 +3641,19 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				any_enemy_country = {
+					air_base > 1
+				}
+				add = 40
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier = extreme_poverty
+				}
+			factor = 0	
+			}
 		}
 		
 		categories = {
@@ -3519,7 +3684,19 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				any_enemy_country = {
+					air_base > 1
+				}
+				add = 40
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier = extreme_poverty
+				}
+			factor = 0	
+			}
 		}
 		
 		categories = {
@@ -3550,7 +3727,19 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				any_enemy_country = {
+					air_base > 1
+				}
+				add = 40
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier = extreme_poverty
+				}
+			factor = 0	
+			}
 		}
 		
 		categories = {
@@ -3580,7 +3769,19 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				any_enemy_country = {
+					air_base > 1
+				}
+				add = 40
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier = extreme_poverty
+				}
+			factor = 0	
+			}
 		}
 		
 		categories = {
@@ -3605,7 +3806,19 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				any_enemy_country = {
+					air_base > 1
+				}
+				add = 40
+			}
+			modifier = {
+				has_dynamic_modifier = {
+					modifier = extreme_poverty
+				}
+			factor = 0	
+			}
 		}
 		
 		categories = {
@@ -3641,12 +3854,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				set_temp_variable = {
+					p = num_deployed_planes
+				}
+				set_temp variable = {
+					b = air_base
+				}
+				divide_temp_variable = { 
+					var = p
+					value = b
+				}
+				divide_temp_variable = { 
+					var = p
+					value = 20
+				}
+				multiply_temp_variable = { 
+					var = p
+					value = 100
+				}
+				add = p
 			}
 		}
 		
@@ -3675,12 +3903,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				set_temp_variable = {
+					p = num_deployed_planes
+				}
+				set_temp variable = {
+					b = air_base
+				}
+				divide_temp_variable = { 
+					var = p
+					value = b
+				}
+				divide_temp_variable = { 
+					var = p
+					value = 20
+				}
+				multiply_temp_variable = { 
+					var = p
+					value = 100
+				}
+				add = p
 			}
 		}
 		
@@ -3709,12 +3952,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				set_temp_variable = {
+					p = num_deployed_planes
+				}
+				set_temp variable = {
+					b = air_base
+				}
+				divide_temp_variable = { 
+					var = p
+					value = b
+				}
+				divide_temp_variable = { 
+					var = p
+					value = 20
+				}
+				multiply_temp_variable = { 
+					var = p
+					value = 100
+				}
+				add = p
 			}
 		}
 		
@@ -3745,12 +4003,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				set_temp_variable = {
+					p = num_deployed_planes
+				}
+				set_temp variable = {
+					b = air_base
+				}
+				divide_temp_variable = { 
+					var = p
+					value = b
+				}
+				divide_temp_variable = { 
+					var = p
+					value = 20
+				}
+				multiply_temp_variable = { 
+					var = p
+					value = 100
+				}
+				add = p
 			}
 		}
 		
@@ -3774,12 +4047,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				set_temp_variable = {
+					p = num_deployed_planes
+				}
+				set_temp variable = {
+					b = air_base
+				}
+				divide_temp_variable = { 
+					var = p
+					value = b
+				}
+				divide_temp_variable = { 
+					var = p
+					value = 20
+				}
+				multiply_temp_variable = { 
+					var = p
+					value = 100
+				}
+				add = p
 			}
 		}
 		
