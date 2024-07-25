@@ -263,12 +263,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
+			base = 0
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				all_owned_state = {
+					check_variable = {THIS.animal > 1}
+					ranch > 1
+				}
+				add = 20
 			}
 		}
 		
@@ -313,7 +314,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				all_owned_state = {
+					check_variable = {THIS.animal > 1}
+					ranch > 1
+				}
+				add = 20
+			}
 		}
 		
 		categories = {
@@ -350,7 +358,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				all_owned_state = {
+					check_variable = {THIS.animal > 1}
+					ranch > 1
+				}
+				add = 20
+			}
 		}
 		
 		categories = {
@@ -385,7 +400,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				any_owned_state = {
+					farm > 0
+				}
+				add = 40
+			}
 		}
 		
 		categories = {
@@ -419,7 +440,46 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				set_temp_variable = {m = 0}
+				set_temp_variable = {s = FROM.num_owned_states}
+				if = {
+					limit = {
+						check_variable = {s = 0}
+					}
+					add_to_temp_variable = {
+						var = s
+						value = 10000
+					}
+				}
+				all_owned_state = {
+					add_to_temp_variable = {
+						var = m
+						value = THIS.building_level@mill
+					}
+				}
+				divide_temp_variable = {
+					var = m
+					value = s
+				}
+				if = {
+					limit = {
+						check_variable = {m < 4}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 0
+					}
+					else = {
+						multiply_temp_variable = {
+							var = m
+							value = 23
+						}
+					}	
+				}
+				add = m
+			}
 		}
 		
 		categories = {
@@ -457,7 +517,46 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				set_temp_variable = {m = 0}
+				set_temp_variable = {s = FROM.num_owned_states}
+				if = {
+					limit = {
+						check_variable = {s = 0}
+					}
+					add_to_temp_variable = {
+						var = s
+						value = 10000
+					}
+				}
+				all_owned_state = {
+					add_to_temp_variable = {
+						var = m
+						value = THIS.building_level@mill
+					}
+				}
+				divide_temp_variable = {
+					var = m
+					value = s
+				}
+				if = {
+					limit = {
+						check_variable = {m < 9}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 0
+					}
+					else = {
+						multiply_temp_variable = {
+							var = m
+							value = 12
+						}
+					}	
+				}
+				add = m
+			}
 		}
 		
 		categories = {
@@ -488,7 +587,46 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
+			modifier = {
+				set_temp_variable = {m = 0}
+				set_temp_variable = {s = FROM.num_owned_states}
+				if = {
+					limit = {
+						check_variable = {s = 0}
+					}
+					add_to_temp_variable = {
+						var = s
+						value = 10000
+					}
+				}
+				all_owned_state = {
+					add_to_temp_variable = {
+						var = m
+						value = THIS.building_level@mill
+					}
+				}
+				divide_temp_variable = {
+					var = m
+					value = s
+				}
+				if = {
+					limit = {
+						check_variable = {m < 24}
+					}
+					multiply_temp_variable = {
+						var = m
+						value = 0
+					}
+					else = {
+						multiply_temp_variable = {
+							var = m
+							value = 4
+						}
+					}	
+				}
+				add = m
+			}
 		}
 		
 		categories = {
@@ -524,13 +662,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
+			base = 0
 		}
 		
 		categories = {
@@ -565,13 +697,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
+			base = 0
 		}
 		
 		categories = {
@@ -609,7 +735,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
 		}
 		
 		categories = {
@@ -642,7 +768,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
 		}
 		
 		categories = {
@@ -677,13 +803,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
+			base = 0
 		}
 		
 		categories = {
@@ -717,13 +837,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
-			
-			
-			modifier = {
-				factor = 3
-				date > "2.1.1"
-			}
+			base = 0
 		}
 		
 		categories = {
@@ -761,7 +875,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
 		}
 		
 		categories = {
@@ -794,7 +908,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
 		}
 		
 		categories = {
@@ -2881,7 +2995,7 @@ technologies = {
 			modifier = {
 				NOT = {
 				 	any_owned_state = {
-						infrastructure =  4
+						infrastructure > 3
 					}
 				}
 				factor = 0 
@@ -2942,7 +3056,7 @@ technologies = {
 			modifier = {
 				NOT = {
 				 	any_owned_state = {
-						infrastructure =  4
+						infrastructure > 3
 					}
 				}
 				factor = 0 
