@@ -1180,11 +1180,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			base = 0
 			
 			modifier = {
-				factor = 3
-				date > "2.1.1"
+				any_owned_state = {
+					is_coastal = yes
+				}
+				add = 80
 			}
 		}
 		
@@ -3973,8 +3975,25 @@ technologies = {
 				set_temp_variable = {
 					p = num_deployed_planes
 				}
-				set_temp variable = {
-					b = air_base
+				set_temp_variable = {
+					b = 0
+				}
+				all_owned_state = {
+					add_to_temp_variable = {
+						var = b
+						value = THIS.building_level@air_base 
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							b = 0
+						}
+					}
+					add_to_temp_variable = {
+						var = b
+						value = 10000
+					}
 				}
 				divide_temp_variable = { 
 					var = p
@@ -4022,8 +4041,25 @@ technologies = {
 				set_temp_variable = {
 					p = num_deployed_planes
 				}
-				set_temp variable = {
-					b = air_base
+				set_temp_variable = {
+					b = 0
+				}
+				all_owned_state = {
+					add_to_temp_variable = {
+						var = b
+						value = THIS.building_level@air_base 
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							b = 0
+						}
+					}
+					add_to_temp_variable = {
+						var = b
+						value = 10000
+					}
 				}
 				divide_temp_variable = { 
 					var = p
@@ -4071,8 +4107,25 @@ technologies = {
 				set_temp_variable = {
 					p = num_deployed_planes
 				}
-				set_temp variable = {
-					b = air_base
+				set_temp_variable = {
+					b = 0
+				}
+				all_owned_state = {
+					add_to_temp_variable = {
+						var = b
+						value = THIS.building_level@air_base 
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							b = 0
+						}
+					}
+					add_to_temp_variable = {
+						var = b
+						value = 10000
+					}
 				}
 				divide_temp_variable = { 
 					var = p
@@ -4122,8 +4175,25 @@ technologies = {
 				set_temp_variable = {
 					p = num_deployed_planes
 				}
-				set_temp variable = {
-					b = air_base
+				set_temp_variable = {
+					b = 0
+				}
+				all_owned_state = {
+					add_to_temp_variable = {
+						var = b
+						value = THIS.building_level@air_base 
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							b = 0
+						}
+					}
+					add_to_temp_variable = {
+						var = b
+						value = 10000
+					}
 				}
 				divide_temp_variable = { 
 					var = p
@@ -4166,8 +4236,25 @@ technologies = {
 				set_temp_variable = {
 					p = num_deployed_planes
 				}
-				set_temp variable = {
-					b = air_base
+				set_temp_variable = {
+					b = 0
+				}
+				all_owned_state = {
+					add_to_temp_variable = {
+						var = b
+						value = THIS.building_level@air_base 
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							b = 0
+						}
+					}
+					add_to_temp_variable = {
+						var = b
+						value = 10000
+					}
 				}
 				divide_temp_variable = { 
 					var = p
