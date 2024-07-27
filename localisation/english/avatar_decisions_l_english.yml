@@ -309,7 +309,7 @@ print_money_for_deficit:0 "Mint More Coins"
  industry_research_efforts_desc:0 "Spendings on improved technologies for our Industry."
  
  FIR_conquest_category:0 "§mConquest Plans§!"
- FIR_conquest_category_desc:0 "Firelord Sozins ambitions are not limited to the borders of the Fire Nation. To make this Nation the greatest and most prosperous in the world, war is inevitable. The only question that remains is:\nWhere, When and How?"
+ FIR_conquest_category_desc:0 "Firelord Sozin's ambitions are not limited to the borders of the Fire Nation. To make this Nation the greatest and most prosperous in the world, war is inevitable. The only question that remains is:\nWhere, When and How?"
  FIR_establish_colonies:0 "Establish Colonies"
  military_preparations:0 "Military Preparations"
  military_preparations_desc:0 "We have to prepare for war."
@@ -891,4 +891,5 @@ print_money_for_deficit:0 "Mint More Coins"
  
  show_wanted_divisions:0 "DEBUG AI Wants Divisions: [?ai_wants_divisions|Y]"
  avatars_location:0 "The Avatar is in [GetAvatarLocation]"
+ stop_all_current_wars:0 "Stop All Current Wars"
  
