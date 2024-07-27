@@ -26,6 +26,89 @@ generic_debug_view = {
 		}
 		
 	}
+	stop_all_current_wars = {
+		allowed = {
+			always = yes
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_war = yes
+				}
+				every_possible_country = {
+					limit = {
+						has_war_with = PREV
+					}
+					white_peace = PREV
+					give_military_access = PREV 
+				}
+			}
+		}
+	}
+	declare_war_immediately = {
+		allowed = {
+			always = yes
+		}
+		target_trigger = {
+			FROM = {
+				NOT = {tag = ROOT} 
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_in_faction = yes
+					}
+				}
+				FROM = {
+					leave_faction = yes
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_in_faction = yes
+					}
+				}
+				ROOT = {
+					leave_faction = yes
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_puppet = yes
+					}
+				}
+				FROM.overlord = {
+					release_puppet = FROM
+				}
+				FROM = {
+					set_autonomy = {
+						target = THIS
+						autonomy_state = autonomy_free
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_puppet = yes
+					}
+				}
+				ROOT.overlord = {
+					release_puppet = ROOT
+				}
+			}
+			ROOT = {
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				} 
+			}
+		}
+	}
 }
 
 
