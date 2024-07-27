@@ -29,7 +29,7 @@ technologies = {
 				add = 5
 			}
 			modifier = {
-				set_temp_variable = {d = THIS.num_dockyards}
+				set_temp_variable = {d = THIS.num_of_naval_factories}
 				multiply_temp_variable = {d = 3}
 				add = d
 			}	
@@ -72,7 +72,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+				num_of_available_naval_factories > 0
+				add = 80
+			}
 		}
 		
 		categories = {
@@ -110,8 +117,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+				num_of_available_naval_factories > 0
+				add = 80
+			}
 		}
+		
 		
 		categories = {
 			naval_equipment
@@ -148,8 +163,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+				num_of_available_naval_factories > 0
+				add = 80
+			}
 		}
+		
 		
 		categories = {
 			naval_equipment
@@ -186,8 +209,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+				num_of_available_naval_factories > 0
+				add = 80
+			}
 		}
+		
 		
 		categories = {
 			naval_equipment
@@ -221,8 +252,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+				num_of_available_naval_factories > 0
+				add = 80
+			}
 		}
+		
 		
 		categories = {
 			naval_equipment
@@ -250,7 +289,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+				add = 1
+			}
+			modifier = {
+				check_variable = {
+					THIS.resource@steel < 5
+				}
+					factor = 0.1
+			}
+			#TODO
+			#modifier = {	#We are at war and it is going so bad that better navy won't help
+
+			#}
+			#modifier = {	#We are at war and the enemies no longer have the industrial capacity to contest our navy
+
+			#}
 		}
 		
 		categories = {
