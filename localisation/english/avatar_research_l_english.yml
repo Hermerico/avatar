@@ -2272,9 +2272,9 @@
  birb_seeb_3:0 "Prey Feeding"
  birb_seeb_desc_3:0 "Keeping our raven eagles on a diet of Hawk, will accustum them to predate on the enemy messenger hawks."
  
- birb_defense:0 "Evasion Trainning"
+ birb_defense:0 "Evasion Training"
  birb_defense_desc:0 "Speed alone won't guarantee that a bird is able to catch another, it alse requires a more precise and controled dominion over it's flight."
- birb_offense:0 "Interception Trainning"
+ birb_offense:0 "Interception Training"
  birb_offense_desc:0 "Our intercepting birds must be trainned in the art of stealth and ambush, to take out unexpected messengers."
  birb_armor:0 "Bird Armor"
  birb_armor_desc:0 "A light piece of cushioned armor can go a long way preventing our birds to be broken on impact with interceptors or with the ground."
