@@ -39,10 +39,27 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 		
-		ai_will_do = {
-			factor = 1
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@eel_hound_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@mongooze_lizard_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@cat_deer_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@buffalo_yak_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
 		}
-		
 		categories = {
 			cavalry
 			cat_light_cavalry
@@ -129,8 +146,26 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 		
-		ai_will_do = {
-			factor = 1
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@eel_hound_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@mongooze_lizard_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@cat_deer_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@buffalo_yak_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
 		}
 		
 		categories = {
@@ -158,7 +193,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 20
 		}
 		
 		categories = {
@@ -270,8 +305,26 @@ technologies = {
 			position = { x = 0 y = 10 }
 		}
 		
-		ai_will_do = {
-			factor = 1
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@eel_hound_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@mongooze_lizard_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@cat_deer_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@buffalo_yak_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
 		}
 		
 		categories = {
@@ -411,10 +464,27 @@ technologies = {
 			position = { x = 0 y = 16 }
 		}
 		
-		ai_will_do = {
-			factor = 1
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@eel_hound_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@mongooze_lizard_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@cat_deer_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@buffalo_yak_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
 		}
-		
 		categories = {
 			cavalry
 			cat_light_cavalry
@@ -547,8 +617,26 @@ technologies = {
 			position = { x = 0 y = 22 }
 		}
 		
-		ai_will_do = {
-			factor = 1
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@eel_hound_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@mongooze_lizard_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@cat_deer_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@buffalo_yak_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
 		}
 		
 		categories = {
@@ -697,8 +785,26 @@ technologies = {
 			position = { x = 8 y = 0 }
 		}
 		
-		ai_will_do = {
-			factor = 1
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@ostrich_horse_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@polar_dog_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@dragon_moose_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@desert_bug_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
 		}
 		
 		categories = {
@@ -1350,8 +1456,23 @@ technologies = {
 			position = { x = 16 y = 0 }
 		}
 		
-		ai_will_do = {
-			factor = 1
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@komodo_rhino_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@walrus_yak_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@elephant_camel_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
 		}
 		
 		categories = {
