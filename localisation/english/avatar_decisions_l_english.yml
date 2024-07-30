@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  generic_research_slot_category:0 "Research Investments"
  generic_research_slot_category_desc:0 "By financially supporting the research of philosophers, mathematicians, historians, and engineers, we can reach new heights as an enlightened society."
  second_extra_research_slot:0 "Second research Slot"
@@ -273,7 +273,7 @@ print_money_for_deficit:0 "Mint More Coins"
  origins_of_firebending:0 "True Origins of Firebending"
  origins_of_firebending_desc:0 "The origins of Firebending come from the fire of our souls, and the connection we have to the fire of the dragons and the sun. By tapping into our spirtual selves, we are able to train and unquestionably better our army, tenfold."
  ban_poaching:0 "Ban Poaching"
- ban_poaching_desc:0 "Dragons are incredible creatures that require freedom. Annihilating them and hindering their ability to grow as a species is counterintuitive towards our development. Outlawing poaching will allow us to expand our services to that of the Dragon
+ ban_poaching_desc:0 "Dragons are incredible creatures that require freedom. Annihilating them and hindering their ability to grow as a species is counterintuitive towards our development. Outlawing poaching will allow us to expand our services to that of the Dragon"
  encourage_poaching:0 "Encourage Poachers"
  encourage_poaching_desc:0 "By encouraging dragon poaching we can easily find volunteers to get rid of the dragons, but its less prestigious."
  offerings_to_the_dragons:0 "Offerings to the Dragons"
