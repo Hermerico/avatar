@@ -366,6 +366,10 @@ spriteTypes = {
 		name = "GFX_idea_cavalry_tradition"
 		texturefile = "gfx/interface/ideas/spirit/cavalry_tradition.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_Teka_kimonos"
+		texturefile = "gfx/interface/ideas/designer/idea_teka_kimonos.dds"
+	}
 
 	### chin
 

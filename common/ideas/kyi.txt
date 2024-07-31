@@ -41,4 +41,19 @@ ideas = {
 		}
 
 	}
+	melee_designer = {
+		designer = yes
+		Teka_kimonos = {
+			allowed = {
+				tag = KYI
+			}
+			allowed_to_remove = {always = yes}
+			cost = 135
+			removal_cost = -1
+			traits = {
+				ragged_kimonos
+			}
+		}
+	}	
+
 }

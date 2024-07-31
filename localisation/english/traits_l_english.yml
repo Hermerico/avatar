@@ -374,7 +374,9 @@
  fir_heavy_industries_desc:0 ""
  fir_wartime_industries:0 "War Industry"
  fir_wartime_industries_desc:0 ""
-
+  ### KYI
+ ragged_kimonos:0 "Ragged Kimonos"
+ ragged_kimonos_desc:0 "While not as comfortable as the other models, these kimonos are much more durable than those of the other manufacturers."
  terrain_traits:0 "Terrain Traits"
  traits:0 "Traits"
  basic_traits:1 "Level 1"

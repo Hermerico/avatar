@@ -2341,6 +2341,20 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	### KYI
+	ragged_kimonos = {
+		random = no
+		income = @expenses10
+		equipment_bonus = {
+			kyoshi_equipment = {
+				defense = 2
+				soft_attack = -0.66
+			}
+		}
+		ai_will_do = {
+			base = 60
+		}
+	}
 	nwt_hunting_tradition_designer = {
 		random = no
 		equipment_bonus = {
