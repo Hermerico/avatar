@@ -54,6 +54,17 @@ ideas = {
 				ragged_kimonos
 			}
 		}
+		Ringo_kimonos = {
+			allowed = {
+				tag = KYI
+			}
+			allowed_to_remove = {always = yes}
+			cost = 101
+			removal_cost = -1
+			traits = {
+				light_kimonos
+			}
+		}
 	}	
 
 }

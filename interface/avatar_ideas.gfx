@@ -370,6 +370,10 @@ spriteTypes = {
 		name = "GFX_idea_Teka_kimonos"
 		texturefile = "gfx/interface/ideas/designer/idea_teka_kimonos.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_Ringo_kimonos"
+		texturefile = "gfx/interface/ideas/designer/idea_ringo_kimonos.dds"
+	}
 
 	### chin
 
