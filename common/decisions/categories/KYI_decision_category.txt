@@ -1,0 +1,10 @@
+KYI_industrialization_category = {
+	allowed = {
+		tag = KYI
+	}
+	visible = {always = yes}
+	available = {always = yes}
+	visible_when_empty = yes
+	priority = {base = 5}
+	
+}

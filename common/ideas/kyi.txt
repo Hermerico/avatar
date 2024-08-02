@@ -58,6 +58,9 @@ ideas = {
 			allowed = {
 				tag = KYI
 			}
+			visible = {
+				has_country_flag = KYI_Ringo_kimonos_enabled
+			}
 			allowed_to_remove = {always = yes}
 			cost = 101
 			removal_cost = -1
