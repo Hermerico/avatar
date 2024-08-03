@@ -769,7 +769,7 @@ print_money_for_deficit:0 "Mint More Coins"
  KYI_industrialization_category:0 "Industrialization"
  KYI_industrialization_category_desc:0 "While [KYI.GetNameDef] wishes to avoid conflict, we are defintely not above industrial expansion."
  approve_industrialization_decision:0 "Approve Yokoya Industrialization Proposal"
- approve_industrialization_decision_desc:0 "While the Northern Kyoshi Island does have some room for development, an ambitious merchant demands that a farm and a mill be torn down to test his proposal. While such a plan seems outrgeous, it is to be weighed against a possible opportunity to improve our warriors' famous kimonos."
+ approve_industrialization_decision_desc:0 "While the Northern Kyoshi Island does have some room for development, an ambitious merchant demands that a farm and a mill be torn down to test his proposal. While such a plan seems outrageous, it is to be weighed against a possible opportunity to improve our warriors' famous kimonos."
  fund_industrialization_mission:0 "Proving Grounds Setup"
  fund_industrialization_mission_desc:0 "Ijuru nervously awaits the news of the merchants' survey, while trying to avoid any relatives of the displaced farmers." 
 

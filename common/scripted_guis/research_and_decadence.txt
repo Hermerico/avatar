@@ -51,11 +51,21 @@ scripted_gui = {
 			invention_button_click = {
 				ai_will_do = {
 					base = 0
-
 					modifier = {
+						set_temp_variable = {
+							AI_knowledge_threshold_to_open_inventions_tab = 0
+						}
+						add_to_temp_variable = {
+							var = AI_knowledge_threshold_to_open_inventions_tab
+							value = THIS.age_multiplier_for_AI_invention_logic_calculation
+						}
+						multiply_temp_variable = {
+							var = AI_knowledge_threshold_to_open_inventions_tab
+							value = 100
+						}
 						check_variable = { 
 							var = knowledge_variable 
-							value = 100
+							value = AI_knowledge_threshold_to_open_inventions_tab
 							compare = greater_than_or_equals
 						}
 						NOT = {

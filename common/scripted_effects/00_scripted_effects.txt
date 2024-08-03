@@ -91,6 +91,9 @@ remove_from_allowed_party = {
 
 
 invention_check = {
+	set_variable = {
+		age_multiplier_for_AI_invention_logic_calculation = 1
+	}
 	if = {
 		limit = {
 			count_triggers = {
@@ -129,8 +132,75 @@ invention_check = {
 		}
 	
 		set_country_flag = all_inventions_made
+		break = yes
+	}
+	if = {
+		limit = {
+			has_tech = measurements
+			has_tech = kinectics
+			has_tech = wind_manipulation
+			has_tech = domestication
+			has_tech = metaphysics
+		}
+		add_to_variable = {
+			var = age_multiplier_for_AI_invention_logic_calculation
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_tech = geometry
+			has_tech = astronomy
+			has_tech = smelting
+			has_tech = agriculture
+			has_tech = writing
+		}
+		add_to_variable = {
+			var = age_multiplier_for_AI_invention_logic_calculation
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_tech = architecture
+			has_tech = leverage
+			has_tech = bronze_alloy
+			has_tech = surgery
+			has_tech = natural_philosophy
+		}
+		add_to_variable = {
+			var = age_multiplier_for_AI_invention_logic_calculation
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_tech = statistics
+			has_tech = magnetism
+			has_tech = alchemy
+			has_tech = botanics
+			has_tech = printing_press
+		}
+		add_to_variable = {
+			var = age_multiplier_for_AI_invention_logic_calculation
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_tech = laws_of_nature
+			has_tech = steam_engine
+			has_tech = steel_alloy
+			has_tech = genetics
+			has_tech = scientific_method
+		}
+		add_to_variable = {
+			var = age_multiplier_for_AI_invention_logic_calculation
+			value = 1
+		}
 	}
 }
+
 
 generic_minister_recalc = {
 	set_variable = { generic_minster_var = 0 }
