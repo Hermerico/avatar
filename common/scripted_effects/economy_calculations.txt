@@ -231,12 +231,23 @@ reset_var_to_zero = {
 
 	set_variable = { pleb_construction_cost = 0 }
 
-	set_variable = { civs_for_deposites = num_of_civilian_factories }
-
+	set_variable = { saved_civilian_factories = 1 }
+	set_variable = { civs_for_deposites = num_of_civilian_factories}
 
 	recalc_increase_factory_clamp = yes
 
 	multiply_variable = { civs_for_deposites = deposit_percentage }
+	if = {
+		limit = {
+			check_variable = {
+				THIS.num_of_civilian_factories = THIS.civs_for_deposites
+			}
+		}
+		subtract_from_variable = {
+			var = THIS.civs_for_deposites
+			value = 1
+		}
+	}
 
 }
 
