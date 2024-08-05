@@ -240,11 +240,11 @@ reset_var_to_zero = {
 	if = {
 		limit = {
 			check_variable = {
-				THIS.num_of_civilian_factories = THIS.civs_for_deposites
+				ROOT.num_of_civilian_factories = ROOT.civs_for_deposites
 			}
 		}
 		subtract_from_variable = {
-			var = THIS.civs_for_deposites
+			var = ROOT.civs_for_deposites
 			value = 1
 		}
 	}
