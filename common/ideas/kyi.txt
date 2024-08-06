@@ -39,6 +39,17 @@ ideas = {
 				female_random_admiral_chance = 2
 			}
 		}
+		KYI_signed_memorandum_of_cooperation_with_teka_kimonos_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			research_bonus = {
+				bender = 0.25
+				industry_tech = -0.15
+			}
+		}
 
 	}
 	melee_designer = {
