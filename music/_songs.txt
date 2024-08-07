@@ -338,7 +338,7 @@ music = {
 				any_enemy_country = {
 					417 = {
 						any_neighbor_state = {
-							controller = PREV.PREV
+							is_controlled_by = PREV.PREV
 						}
 					}
 				}
