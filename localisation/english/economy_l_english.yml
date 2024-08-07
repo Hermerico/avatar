@@ -306,7 +306,7 @@
  ration_empty_years:0 "[?ration_years_to_empty|0G] §Ry§!"
  ration_empty:0 "§REmpty§!"
  ration_topbar_tooltip:0 "§HRations§! \n\nCurrent Rations: [GetRationHundreds] \nDaily Gain: [GetRationGainHundreds] \nDaily Change: [GetRationBalanceHundreds] \nRation Capacity: [GetMaxRationHundreds] \nRequired Capacity for full bonus: [GetWantRationHundreds] \n\n£economy_resources|1  Food required: [?food_available_before_rationing|0+]/[?daily_ration_need_in_food|0Y] \n\nCurrent Daily Consumption: [GetRationNeedHundreds] \nMaximum Daily Consumption: [GetPotentialRationNeedHundreds] \n[GetRationSoldiersNeed][GetRationPopulationNeed][GetRationWorkersNeed][GetRationOccupiedNeed] "
- ration_topbar_tooltip_delayed:0 "§HRations§! are gained in "
+ ration_topbar_tooltip_delayed:0 "§HRations§! represent food that has been prepared for our population to eat. To gain more rations, gain more food. Keep in mind that farms yield most of their food in summer, so you will need a surplus to get you through the leaner months."
  no_ration_consumed_ttp:0 ""
  family_ration_consumption:0 "\n§HPopulation§! \n Received: [?family_get|H0*]/day \n Daily Need: [?family_demand|H0*]/day \n"
  workers_ration_consumption:0 "\n§HWorkers§! \n Received: [?working_get|H0*]/day \n Daily Need: [?working_demand|H0*]/day \n"
