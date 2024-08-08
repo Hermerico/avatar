@@ -77,4 +77,28 @@ KYI_industrialization_category = {
 			}
 		}
 	}
+	Sign_memorandum_of_cooperation_with_ringo_kimonos = {
+		allowed = {tag = KYI}
+		visible = {has_idea = Ringo_kimonos}
+		available = {
+			always = yes
+		}
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = KYI_signed_memorandum_of_cooperation_with_ringo_kimonos_idea
+				years = 5
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+					OR = {
+						has_tech = conservative_education_1
+						has_tech = progressive_education_1
+					}
+				add = 60	
+			}
+		}
+	}
 }
