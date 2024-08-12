@@ -416,6 +416,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/spirit/the_kyoshi_warriors.dds"
 	}
 	SpriteType = {
+		name = "GFX_idea_KYI_signed_memorandum_of_cooperation_with_ringo_kimonos_idea"
+		texturefile = "gfx/interface/ideas/spirit/KYI_signed_memorandum_of_cooperation_with_ringo_kimonos_idea.dds"
+	}
+	SpriteType = {
 		name = "GFX_idea_remote_isolation"
 		texturefile = "gfx/interface/ideas/spirit/remote_isolation.dds"
 	}
