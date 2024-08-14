@@ -48,6 +48,7 @@ state = {
 				infrastructure = 4
 				ranch = 1
 				lumber_mill = 1
+				animal_weaving = 1
 			}
 			instant_resource_calc = yes
 		}

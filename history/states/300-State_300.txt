@@ -45,6 +45,9 @@ state={
 
 			buildings = {
 				infrastructure = 2
+				animal_weaving = 1
+				lumber_mill = 1
+				fishing_stand = 2
 				7588 = {
 					naval_base = 3
 				}
