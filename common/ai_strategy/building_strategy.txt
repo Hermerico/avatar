@@ -253,6 +253,16 @@ build_luxury = {
 		}
 	}
 	abort_when_not_enabled = yes
+	abort = {
+		has_resources_in_country = {
+			resource = iron
+			amount < 1
+		}
+		has_resources_in_country = {
+			resource = stone
+			amount < 1
+		}
+	}
 
 	ai_strategy = {
 		type = building_target
@@ -261,7 +271,7 @@ build_luxury = {
 	}
 }
 
-build_construction = {
+build_carpentries = {
 	allowed = {
 		always = yes
 	}
@@ -272,6 +282,11 @@ build_construction = {
 		}
 	}
 	abort_when_not_enabled = yes
+	abort = {
+		check_variable = {
+			THIS.resource@aluminium < 1
+		}
+	}
 
 	ai_strategy = {
 		type = building_target
@@ -291,7 +306,11 @@ build_masonry = {
 		}
 	}
 	abort_when_not_enabled = yes
-
+	abort = {
+		check_variable = {
+			THIS.resource@stone < masonry_need 
+		}
+	}
 	ai_strategy = {
 		type = building_target
 		id = masonry
@@ -310,6 +329,11 @@ build_steel_beam_factory = {
 		}
 	}
 	abort_when_not_enabled = yes
+	abort = {
+		check_variable = {
+			resource@steel < 1
+		}
+	}
 
 	ai_strategy = {
 		type = building_target
