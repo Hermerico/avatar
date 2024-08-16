@@ -900,6 +900,7 @@ print_money_for_deficit:0 "Mint More Coins"
  set_0:0 "DEBUG set war weariness to 0"
  
  show_wanted_divisions:0 "DEBUG AI Wants Divisions: [?ai_wants_divisions|Y]"
+ show_current_taxation:0 "Current Taxation: [?ROOT.taxation_efficiency_percentage]"
  avatars_location:0 "The Avatar is in [GetAvatarLocation]"
  stop_all_current_wars:0 "Stop All Current Wars"
  

@@ -6,6 +6,12 @@ generic_debug_view = {
 			always = no
 		}
 	}
+	show_current_taxation = {
+		available = {always = yes}
+		complete_effect = {
+			calculate_countrys_taxation = yes
+		}
+	} 
 
 	fir_effect = {
 		allowed = {
