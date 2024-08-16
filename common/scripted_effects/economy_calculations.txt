@@ -1233,9 +1233,9 @@ employment_calculation_country = {
 factory_calculations = {
 	#### civil capacity
 
-	set_variable = { factories_bought = civ_factory_payments }
-	clamp_variable = { var = factories_bought  min = 0 }
-	set_variable = { factories_bought_price = 0.2 }
+	set_variable = { acquired_civil_capacities = civ_factory_payments }
+	clamp_variable = { var = acquired_civil_capacities min = 0 }
+	set_variable = { factories_bought_price = 0.02 }
 	multiply_variable = { factories_bought_price = mtth:civilian_cost_factor }
 
 #	set_variable = { building_income_ratio = building_count }
@@ -1252,13 +1252,14 @@ factory_calculations = {
 #
 #	clamp_variable = { var = factories_bought_price  min = 0.005 }
 #
-#	divide_variable = { factories_bought = factories_bought_price }
+#	divide_variable = { acquired_civil_capacities = factories_bought_price }
 
 	set_variable = { ic_factor = 1 }
 	add_to_variable = { ic_factor = modifier@civilian_capacity_factor }
-	multiply_variable = { factories_bought = ic_factor }
+	multiply_variable = { acquired_civil_capacities = ic_factor }
 
-	round_variable = factories_bought
+	round_variable = acquired_civil_capacities
+	divide_variable = { acquired_civil_capacities = factories_bought_price }
 
 
 	set_variable = { ic_from_self_employed = 0.1 }
@@ -1270,7 +1271,7 @@ factory_calculations = {
 
 	round_variable = ic_from_self_employed
 
-	set_variable = { ic = factories_bought }
+	set_variable = { ic = acquired_civil_capacities }
 
 
 	#### military capacity
@@ -1736,9 +1737,9 @@ wages_and_taxes = {
 		set_variable = { mil_factory_use_percentage = 0 }
 	}
 
-	set_variable = { smithy_payments = mil_factory_use }
-	multiply_variable = { smithy_payments = 0.05 }
-	multiply_variable = { smithy_payments = mtth:military_cost_factor }
+	set_variable = { war_industry_expenses = mil_factory_use }
+	multiply_variable = { war_industry_expenses = 0.05 }
+	multiply_variable = { war_industry_expenses = mtth:military_cost_factor }
 
 	set_variable = { naval_factory_use = num_of_naval_factories }
 	subtract_from_variable = { naval_factory_use = num_of_available_naval_factories }
@@ -1762,7 +1763,7 @@ wages_and_taxes = {
 	add_to_variable = { state_income = inflation_money }
 	set_variable = { state_expenses = mtth:expenses_per_pop }
 	add_to_variable = { state_expenses = military_wages }
-	add_to_variable = { state_expenses = smithy_payments }
+	add_to_variable = { state_expenses = war_industry_expenses }
 	add_to_variable = { state_expenses = dockyard_payments }
 	multiply_variable = { state_expenses = mtth:expenses_factor }
 	clamp_variable = { var = state_expenses  min = 0 }
@@ -1770,7 +1771,7 @@ wages_and_taxes = {
 	set_variable = { tax_balance = state_income }
 	subtract_from_variable = { tax_balance = state_expenses }
 	 
-	set_variable = { civ_factory_payments = tax_balance }
+	set_variable = { civ_factory_payments = tax_balance } #
 	multiply_variable = { civ_factory_payments = civ_buy_factor }
 	clamp_variable = { var = civ_factory_payments  min = 0 }
 
@@ -3070,4 +3071,30 @@ resource_state_calc = {
 	multiply_variable = { steel_beam_factory_steel_beam_gain = local_resource_factor }
 	multiply_variable = { steel_beam_factory_steel_beam_gain =  controller:steel_beams_throughput }
 	
+}
+calculate_countrys_taxation = {
+	set_temp_variable = {countrys_uncollected_taxes = 0}
+	every_owned_state = {
+		add_to_temp_variable = {
+			var = countrys_uncollected_taxes
+			value = mtth:local_tax_waste
+		}
+	}
+	multiply_temp_variable = {
+		var = countrys_uncollected_taxes
+		value = -1
+	}
+	set_variable = {taxation_efficiency_percentage = 0}
+	add_to_variable = {
+		var = taxation_efficiency_percentage 
+		value = taxation_var
+	}
+	divide_variable = {
+		var = taxation_efficiency_percentage 
+		value = countrys_uncollected_taxes
+	}
+	multiply_variable = {
+		var = taxation_efficiency_percentage 
+		value = 100
+	}
 }

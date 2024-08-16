@@ -60,7 +60,7 @@ deposit_construction_cost = {
 civs_from_tax_buy = {
 	enable = { always = yes }
 
-	industrial_factory_donations = factories_bought
+	industrial_factory_donations = acquired_civil_capacities
 }
 civs_from_conversion = {
 	enable = { always = yes }
