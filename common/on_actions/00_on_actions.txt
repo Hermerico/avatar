@@ -88,7 +88,35 @@ on_actions = {
 			
 		}
 	}
+	on_yearly = {
+		add_to_variable = {
+			var = global.avatar_age
+			value = 1
+		}
+	}
 
+	on_monthly = {
+		effect = {
+			set_variable = {
+				var = ai_build_farm_desire
+				value = 0
+			}
+			add_to_variable = {
+				var = ai_build_farm_desire
+				value = this.resource@food_resource
+			}
+			add_to_variable = {
+				var = ai_build_farm_desire
+				value = -10
+			}
+			multiply_variable = {
+				var = ai_build_farm_desire
+				value = -1
+			}
+			log = "[THIS.GetNameDef] :  [?THIS.resource@food_resource] food build_farm_desire: [?THIS.ai_build_farm_desire]"
+		}
+	}
+	
 
 
 

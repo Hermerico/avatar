@@ -2,6 +2,14 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			every_country = {
+				set_variable = {
+					var = ai_build_farm_desire
+					value = 0
+				}
+			}
+		}
+		effect = {
 			every_state = {
 				
 			}
@@ -11,9 +19,6 @@ on_actions = {
 		}
 		effect = {
 			every_country = {
-				limit = {
-					is_ai = yes
-				}
 				set_variable = {
 					variable = ai_keep_current_minister_of_personnel_willingness
 					value = 1
@@ -37,7 +42,7 @@ on_actions = {
 				set_variable = {
 					variable = ai_keep_current_minister_of_rites_willingness
 					value = 6
-				}													
+				}												
 			}
 		}
 		effect = {
