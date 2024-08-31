@@ -256,20 +256,20 @@ scripted_gui = {
 				}
 			}
 
-			decrease_civ_buy_click = {
+			increase_treasury_priority_button_click = {
 				decrease_civ_buy_effect = yes
 			}
-			increase_civ_buy_click = {
+			increase_civilian_capacity_priority_button_click = {
 				increase_civ_buy_effect = yes
 			}
-			decrease_civ_buy_shift_click = {
+			increase_treasury_priority_button_shift_click = {
 				decrease_civ_buy_effect = yes
 				decrease_civ_buy_effect = yes
 				decrease_civ_buy_effect = yes
 				decrease_civ_buy_effect = yes
 				decrease_civ_buy_effect = yes
 			}
-			increase_civ_buy_shift_click = {
+			increase_civilian_capacity_priority_button_shift_click = {
 				increase_civ_buy_effect = yes
 				increase_civ_buy_effect = yes
 				increase_civ_buy_effect = yes
@@ -277,20 +277,20 @@ scripted_gui = {
 				increase_civ_buy_effect = yes
 			}
 
-			decrease_factory_percentage_click = {
+			increase_resource_buildings_priority_button_click = {
 				decrease_factory_effect = yes
 			}
-			increase_factory_percentage_click = {
+			increase_production_buildings_priority_button_click = {
 				increase_factory_effect = yes
 			}
-			decrease_factory_percentage_shift_click = {
+			increase_resource_buildings_priority_button_shift_click = {
 				decrease_factory_effect = yes
 				decrease_factory_effect = yes
 				decrease_factory_effect = yes
 				decrease_factory_effect = yes
 				decrease_factory_effect = yes
 			}
-			increase_factory_percentage_shift_click = {
+			increase_production_buildings_priority_button_shift_click = {
 				increase_factory_effect = yes
 				increase_factory_effect = yes
 				increase_factory_effect = yes
@@ -420,7 +420,7 @@ scripted_gui = {
                 	factor = 100
                 }
 			}
-			increase_civ_buy_click = {
+			increase_civilian_capacity_priority_button_click = {
 				ai_will_do = {
 					base = 0
 					modifier = {
@@ -441,7 +441,7 @@ scripted_gui = {
 					}
 				}
 			}
-			decrease_civ_buy_click = {
+			increase_treasury_priority_button_click = {
 				ai_will_do = {
 					base = 0
 					modifier = {
@@ -454,7 +454,7 @@ scripted_gui = {
 					}
 				}
 			}
-			increase_factory_percentage_click = {
+			increase_production_buildings_priority_button_click = {
 				ai_will_do = {
 					base = 0
 					modifier = {
@@ -463,9 +463,17 @@ scripted_gui = {
 						}
 						add = 80
 					}
+					modifier = {
+						set_temp_variable = { f = THIS.resource@food_resource}
+						multiply_temp_variable = {
+							var = f
+							value = -1
+						}
+						add = f
+					}
 				}
 			}
-			decrease_factory_percentage_click = {
+			increase_resource_buildings_priority_button_click = {
 				ai_will_do = {
 					base = 0
 					modifier = {

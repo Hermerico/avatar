@@ -1026,14 +1026,14 @@ guiTypes = {
 				}
 
 				buttonType = {
-					name ="decrease_civ_buy"
+					name ="increase_treasury_priority_button"
 					spriteType = "GFX_scroll_left"
 					position = { x= 4 y = 16 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "decrease_civ_buy"
 				}
 				buttonType = {
-					name ="increase_civ_buy"
+					name ="increase_civilian_capacity_priority_button"
 					spriteType = "GFX_scroll_right"
 					position = { x= 130 y = 16 }
 					Orientation = "UPPER_LEFT"
@@ -1087,14 +1087,14 @@ guiTypes = {
 				}
 
 				buttonType = {
-					name ="decrease_factory_percentage"
+					name ="increase_resource_buildings_priority_button"
 					spriteType = "GFX_scroll_left"
 					position = { x= 4 y = 16 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "decrease_factory_percentage"
 				}
 				buttonType = {
-					name ="increase_factory_percentage"
+					name ="increase_production_buildings_priority_button"
 					spriteType = "GFX_scroll_right"
 					position = { x= 130 y = 16 }
 					Orientation = "UPPER_LEFT"

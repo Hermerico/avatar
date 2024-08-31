@@ -2231,7 +2231,7 @@ technologies = {
 		#xor = { attack advance }
 
 		path = {
-			leads_to_tech = balance
+			leads_to_tech = balance_tech
 			research_cost_coeff = 1
 		}
 
@@ -2273,7 +2273,7 @@ technologies = {
 		#}
 	}
 
-	balance = {
+	balance_tech = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100

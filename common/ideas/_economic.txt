@@ -44,10 +44,71 @@ ideas = {
    				factor = 1
 
 				modifier = {
-					factor = 100
+					add = 80
 					has_war = yes
 				}
+				modifier = {
+					set_temp_variable = {
+						r = 0
+					}
+					add_to_temp_variable = {
+						var = r
+						value = this.resource@aluminium
+					}
+					add_to_temp_variable = {
+						var = r
+						value = this.resource@chromium
+					}
+					add_to_temp_variable = {
+						var = r
+						value = this.resource@tungsten
+					}
+					set_temp_variable = {
+						d = THIS.daily_ration_need_in_food
+					}
+					set_temp_variable = {f = THIS.food_available_before_rationing }
+					divide_temp_variable = {
+						var = f
+						value = d
+					}
+					if = {
+						limit = {
+							check_variable = {
+								f < 1.2 
+							}
+						}
+						multiply_temp_variable = {
+							var = r
+							value = 0
+						}
+						else = {
+							set_temp_variable = {
+								t = THIS.ai_attitude_threatened_weight
+							}
+							set_temp_variable = {
+								o = THIS.num_buildings@dockyard
+							}
+							set_temp_variable = {
+								m = THIS.num_buildings@smithy
+							}
+							add_to_temp_variable = {
+								var = t
+								value = m
+							}
+							add_to_temp_variable = {
+								var = t
+								value = o
+							}
+							divide_temp_variable = {
+								var = r
+								value = t
+							}			
+						}
 
+					}
+					add = r
+
+				}	
 				modifier = {
 					factor = 0
 					check_variable = { weekly_accumulated_exhaustion > 50 }
@@ -367,7 +428,7 @@ ideas = {
 
 
 			ai_will_do = {
-   				factor = 1
+   				base = 1
 
    				modifier = {
 					factor = 15

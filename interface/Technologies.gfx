@@ -6878,7 +6878,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/doctrines/inner_peace.dds"
 	}
 	SpriteType = {
-		name = "GFX_balance_medium"
+		name = "GFX_balance_tech_medium"
 		texturefile = "gfx/interface/technologies/doctrines/balance.dds"
 	}
 	SpriteType = {

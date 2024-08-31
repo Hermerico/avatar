@@ -116,6 +116,19 @@ on_actions = {
 			log = "[THIS.GetNameDef] :  [?THIS.resource@food_resource] food build_farm_desire: [?THIS.ai_build_farm_desire]"
 		}
 	}
+	on_monthly = {
+		effect = {
+			set_variable = { d = 0 }
+			for_each_scope_loop = {
+				array = global.countries
+				add_to_variable = {
+					var = d
+					value = this.num_divisions
+				}
+			}
+			log = "There are [?d] divisions."
+		}
+	}
 	
 
 

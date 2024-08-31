@@ -303,14 +303,38 @@ scripted_gui = {
 			check_variable = { ai_irrationality > 0 }
 		}
 		
-		ai_max_weight_taken_per_test = 1
+		ai_max_weight_taken_per_test = 2
 		ai_weights = {
+			open_construction_click = {
+				ai_will_do = {
+					base = 100
+				}
+			}
+			build_farm_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						set_temp_variable = {
+							d = ROOT.ai_build_farm_desire
+						}
+						set_temp_variable = {
+							q = ROOT.farm_construction_que
+						}
+						subtract_from_temp_variable = {
+							var = d
+							value = q
+						}
+						add = d
+					}
+				}
+			}
 			send_settlers_click = {
 				ai_will_do = {
 					base = 10
 					
 				}
 			}
+
 		}
 
 	}

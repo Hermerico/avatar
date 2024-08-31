@@ -155,3 +155,9 @@ has_at_least_120_of_own_bender_equipment = {
 		}
 	}
 }
+is_in_earth_kingdom = {
+	is_in_array = {
+		array = global.earth_kingdom
+		value = THIS.id
+	}
+}
