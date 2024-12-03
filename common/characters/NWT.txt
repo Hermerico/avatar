@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = martial_chiefdom
-			expire = "151.3.24"
+			expire = "151.3.24.1"
 			id = -1
 		}
 	}
@@ -21,7 +21,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = martial_chiefdom
-			expire = "151.3.24"
+			expire = "151.3.24.1"
 			id = -1
 		}
 	}
@@ -132,22 +132,22 @@ characters = {
 		}
 		country_leader = {
 			ideology = theocracy
-			expire = "120.4.7"
+			expire = "120.4.7.1"
 			id = -1
 		}
 		country_leader = {
 			ideology = fire_tribes
-			expire = "120.4.7"
+			expire = "120.4.7.1"
 			id = -1
 		}
 		country_leader = {
 			ideology = comunism
-			expire = "120.4.7"
+			expire = "120.4.7.1"
 			id = -1
 		}
 		country_leader = {
 			ideology = absolute_pacifism
-			expire = "120.4.7"
+			expire = "120.4.7.1"
 			id = -1
 		}
 	}
