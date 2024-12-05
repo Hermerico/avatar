@@ -9,3 +9,5 @@ in the authority system, remove some of the permanent modifiers and make a left 
 add real prices and currency to the economy. probably not worth the effort for what it would achieve in the end
 
 add dlc features for dlcs that will be free soon
+
+testing discord stuff
