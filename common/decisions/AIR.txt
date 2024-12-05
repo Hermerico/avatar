@@ -1,128 +1,135 @@
 AIR_council_category = {
 	upcoming_meeting = {
-	
 		icon = council_will_meet_again
-
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			has_country_flag = meetings_disrupted
 		}
 		days_mission_timeout = 30
 		is_good = yes
 		priority = 1000
-		
 		timeout_effect = {
 			custom_effect_tooltip = "The Council meets once again!"
 			AIR_generate_missions = yes
-			ROOT = { country_event = { id = AIR_council.1 } }
+			ROOT = {
+				country_event = {
+					id = AIR_council.1
+				}
+			}
 		}
 	}
-
-	
 	AIR_mission_nr1 = {
 		icon = council_army_mission
-		
-		allowed = { always = no }
-		
+		allowed = {
+			always = no
+		}
 		is_good = yes
 		cost = 50
 		days_mission_timeout = 120
 		days_remove = 0
 		selectable_mission = yes
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr1_timeout
+			custom_effect_tooltip = mission_nr1_timeout
 			hidden_effect = {
 				AIR_council_medium_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr1 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr1
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr1_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
 			add_manpower = 100
-			remove_from_array = { air_current_missions = token:AIR_mission_nr1 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr1
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr2 = {
 		icon = council_army_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			command_power > 40
 		}
-		
 		is_good = yes
 		days_mission_timeout = 120
 		days_remove = 0
 		selectable_mission = yes
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr2_timeout
+			custom_effect_tooltip = mission_nr2_timeout
 			hidden_effect = {
 				AIR_council_medium_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr2 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr2
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr2_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
 			add_command_power = -40
-			army_experience  = 40
-			remove_from_array = { air_current_missions = token:AIR_mission_nr2 }
+			army_experience = 40
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr2
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr3 = {
 		icon = council_army_mission
-
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
-		
 		is_good = yes
 		days_mission_timeout = 30
 		days_remove = 0
 		selectable_mission = yes
 		cost = 30
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr3_timeout
+			custom_effect_tooltip = mission_nr3_timeout
 			hidden_effect = {
 				AIR_council_medium_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr3 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr3
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr3_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr3 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr3
+			}
 			army_experience = 15
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr4 = {
 		icon = council_army_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
@@ -130,15 +137,15 @@ AIR_council_category = {
 		days_mission_timeout = 30
 		days_remove = 0
 		selectable_mission = yes
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr4_timeout
+			custom_effect_tooltip = mission_nr4_timeout
 			hidden_effect = {
 				AIR_council_medium_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr4 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr4
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr4_start
 			random_owned_controlled_state = {
@@ -154,151 +161,167 @@ AIR_council_category = {
 				}
 				set_state_flag = air_mission_4
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr4 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr4
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr5 = {
 		icon = council_army_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
-		
 		is_good = yes
 		days_mission_timeout = 30
 		days_remove = 0
 		selectable_mission = yes
 		cost = 10
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr5_timeout
+			custom_effect_tooltip = mission_nr5_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr5 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr5
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr5_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
 			add_manpower = 20
-			remove_from_array = { air_current_missions = token:AIR_mission_nr5 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr5
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr6 = {
 		icon = council_navy_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
-		
 		is_good = yes
 		days_mission_timeout = 100
 		days_remove = 0
 		selectable_mission = yes
 		cost = 40
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr6_timeout
+			custom_effect_tooltip = mission_nr6_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr6 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr6
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr6_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
 			navy_experience = 25
-			remove_from_array = { air_current_missions = token:AIR_mission_nr6 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr6
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr7 = {
 		icon = council_army_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		is_good = yes
 		days_mission_timeout = 100
 		days_remove = 0
 		selectable_mission = yes
 		cost = 40
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr7_timeout
+			custom_effect_tooltip = mission_nr7_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr7 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr7
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr7_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr7 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr7
+			}
 			army_experience = 10
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr8 = {
 		icon = council_navy_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		is_good = yes
 		days_mission_timeout = 100
 		days_remove = 0
 		selectable_mission = yes
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr8_timeout
+			custom_effect_tooltip = mission_nr8_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = 8}
+			remove_from_array = {
+				air_current_missions = 8
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr8_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
-			remove_from_array = { air_current_missions = 8}
+			remove_from_array = {
+				air_current_missions = 8
+			}
 			add_manpower = -20
 			random_owned_controlled_state = {
-				limit = { OR = {
-					state = 239
-					state = 274
-					state = 134
-					state = 285
-					state = 356
-					state = 371
-					state = 22
-					state = 34
-					state = 123
-					state = 100
-					state = 175
-					state = 232
-				}}
+				limit = {
+					OR = {
+						state = 239
+						state = 274
+						state = 134
+						state = 285
+						state = 356
+						state = 371
+						state = 22
+						state = 34
+						state = 123
+						state = 100
+						state = 175
+						state = 232
+					}
+				}
 				if = {
-					limit = { state = 239 }
+					limit = {
+						state = 239
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -309,7 +332,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 274 }
+					limit = {
+						state = 274
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -320,7 +345,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 134 }
+					limit = {
+						state = 134
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -331,7 +358,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 285 }
+					limit = {
+						state = 285
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -342,7 +371,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 356 }
+					limit = {
+						state = 356
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -353,7 +384,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 371 }
+					limit = {
+						state = 371
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -364,7 +397,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 22 }
+					limit = {
+						state = 22
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -375,7 +410,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 34 }
+					limit = {
+						state = 34
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -386,7 +423,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 123 }
+					limit = {
+						state = 123
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -397,7 +436,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 100 }
+					limit = {
+						state = 100
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -408,7 +449,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 175 }
+					limit = {
+						state = 175
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -419,7 +462,9 @@ AIR_council_category = {
 					}
 				}
 				if = {
-					limit = { state = 232 }
+					limit = {
+						state = 232
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -431,174 +476,184 @@ AIR_council_category = {
 				}
 			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr9 = {
 		icon = council_navy_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
-		
 		is_good = yes
 		days_mission_timeout = 30
 		days_remove = 0
 		selectable_mission = yes
 		cost = 10
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr9_timeout
+			custom_effect_tooltip = mission_nr9_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr9}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr9
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr9_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
 			navy_experience = 10
-			remove_from_array = { air_current_missions = token:AIR_mission_nr9}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr9
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr11 = {
 		icon = council_air_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
-		
 		is_good = yes
 		days_mission_timeout = 80
 		days_remove = 0
 		selectable_mission = yes
 		cost = 30
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr11_timeout
+			custom_effect_tooltip = mission_nr11_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr11}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr11
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr11_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
 			air_experience = 20
-			remove_from_array = { air_current_missions = token:AIR_mission_nr11}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr11
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr12 = {
 		icon = council_air_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
-		
 		is_good = yes
 		days_mission_timeout = 80
 		days_remove = 0
 		selectable_mission = yes
 		cost = 10
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr12_timeout
+			custom_effect_tooltip = mission_nr12_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr12}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr12
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr12_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
 			random_owned_state = {
-				limit = { air_base < 50 }
+				limit = {
+					air_base < 50
+				}
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr12}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr12
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr13 = {
 		icon = council_air_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
-		
 		is_good = yes
 		days_mission_timeout = 30
 		days_remove = 0
 		selectable_mission = yes
 		cost = 10
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr13_timeout
+			custom_effect_tooltip = mission_nr13_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr13}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr13
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr13_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
 			add_manpower = 20
-			remove_from_array = { air_current_missions = token:AIR_mission_nr13}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr13
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr16 = {
 		icon = council_research_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			has_army_experience > 40
 		}
-
 		is_good = yes
 		days_mission_timeout = 80
 		days_remove = 0
 		selectable_mission = yes
-
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr16_timeout
+			custom_effect_tooltip = mission_nr16_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr16}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr16
+			}
 		}
-
 		complete_effect = {
 			custom_effect_tooltip = mission_nr16_success
 			hidden_effect = {
@@ -611,33 +666,35 @@ AIR_council_category = {
 				uses = 1
 				category = basic_weapons
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr16}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr16
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-
-    AIR_mission_nr17 = {
+	AIR_mission_nr17 = {
 		icon = council_research_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			has_navy_experience > 30
 		}
-
 		is_good = yes
 		days_mission_timeout = 80
 		days_remove = 0
 		selectable_mission = yes
-
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr17_timeout
+			custom_effect_tooltip = mission_nr17_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr17}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr17
+			}
 		}
-
 		complete_effect = {
 			custom_effect_tooltip = mission_nr17_success
 			hidden_effect = {
@@ -650,41 +707,43 @@ AIR_council_category = {
 			#	uses = 2
 			#	category = {
 			#	    nav_patrol
-            #        nav_raid
-            #        nav_screen
-            #        nav_capital
-            #        nav_wooden
-            #        nav_ironclad
+			#        nav_raid
+			#        nav_screen
+			#        nav_capital
+			#        nav_wooden
+			#        nav_ironclad
 			#	}
 			#}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr17 }
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr17
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr18 = {
 		icon = council_research_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
-		
 		is_good = yes
 		days_mission_timeout = 30
 		days_remove = 0
 		selectable_mission = yes
 		cost = 10
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr18_timeout
+			custom_effect_tooltip = mission_nr18_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr18}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr18
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr18_success
 			hidden_effect = {
@@ -695,178 +754,192 @@ AIR_council_category = {
 				bonus = 0.5
 				uses = 2
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr18}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr18
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr21 = {
 		icon = council_industry_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
-		
 		is_good = yes
 		days_mission_timeout = 30
 		days_remove = 0
 		selectable_mission = yes
 		cost = 10
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr21_timeout
+			custom_effect_tooltip = mission_nr21_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr21}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr21
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr21_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
-			
-			remove_from_array = { air_current_missions = token:AIR_mission_nr21}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr21
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr26 = {
 		icon = council_politics_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			command_power > 30
 		}
-		
 		is_good = yes
 		days_mission_timeout = 80
 		days_remove = 0
 		selectable_mission = yes
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr26_timeout
+			custom_effect_tooltip = mission_nr26_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr26}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr26
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr26_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
-			add_political_power  = 60
+			add_political_power = 60
 			add_command_power = -30
-			remove_from_array = { air_current_missions = token:AIR_mission_nr26}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr26
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-	
 	AIR_mission_nr27 = {
 		icon = council_politics_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		available = {
 			always = yes
 		}
-		
 		is_good = yes
 		days_mission_timeout = 30
 		days_remove = 0
 		selectable_mission = yes
 		cost = 10
-		
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr27_timeout
+			custom_effect_tooltip = mission_nr27_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr27}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr27
+			}
 		}
-		
 		complete_effect = {
 			custom_effect_tooltip = mission_nr27_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
 			add_stability = 0.05
-			remove_from_array = { air_current_missions = token:AIR_mission_nr27}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr27
+			}
 		}
-		ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
-
 	AIR_mission_nr28 = {
 		icon = council_politics_mission
-   		
-		allowed = { always = no }
-
-   		available = {
-   			has_army_experience > 10
-   			has_navy_experience > 10
-   			has_air_experience > 10
-   		}
-
-   		is_good = yes
-   		days_mission_timeout = 100
-   		days_remove = 0
-   		selectable_mission = yes
-
-   		timeout_effect = {
-   			custom_effect_tooltip  = mission_nr28_timeout
-   			hidden_effect = {
-   				AIR_council_small_opposition = yes
-   			}
-   			remove_from_array = { air_current_missions = token:AIR_mission_nr28}
-   		}
-
-    	complete_effect = {
-    		custom_effect_tooltip = mission_nr28_success
-    		hidden_effect = {
-    			AIR_council_small_support = yes
-    		}
-    		army_experience = -10
-    		navy_experience = -10
-    		air_experience = -10
-    		add_war_support = 0.1
-    		remove_from_array = { air_current_missions = token:AIR_mission_nr28}
-    	}
-		ai_will_do = {base = 100}	
-    }
-
+		allowed = {
+			always = no
+		}
+		available = {
+			has_army_experience > 10
+			has_navy_experience > 10
+			has_air_experience > 10
+		}
+		is_good = yes
+		days_mission_timeout = 100
+		days_remove = 0
+		selectable_mission = yes
+		timeout_effect = {
+			custom_effect_tooltip = mission_nr28_timeout
+			hidden_effect = {
+				AIR_council_small_opposition = yes
+			}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr28
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = mission_nr28_success
+			hidden_effect = {
+				AIR_council_small_support = yes
+			}
+			army_experience = -10
+			navy_experience = -10
+			air_experience = -10
+			add_war_support = 0.1
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr28
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 	AIR_mission_nr29 = {
 		icon = council_politics_mission
-		
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		is_good = yes
 		days_mission_timeout = 90
 		days_remove = 0
 		selectable_mission = yes
 		cost = 30
-
 		timeout_effect = {
-			custom_effect_tooltip  = mission_nr29_timeout
+			custom_effect_tooltip = mission_nr29_timeout
 			hidden_effect = {
 				AIR_council_small_opposition = yes
 			}
-			remove_from_array = { air_current_missions = token:AIR_mission_nr29}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr29
+			}
 		}
-
 		complete_effect = {
 			custom_effect_tooltip = mission_nr29_success
 			hidden_effect = {
 				AIR_council_small_support = yes
 			}
 			add_command_power = 30
-			remove_from_array = { air_current_missions = token:AIR_mission_nr29}
+			remove_from_array = {
+				air_current_missions = token:AIR_mission_nr29
+			}
 		}
-	ai_will_do = {base = 100}	
+		ai_will_do = {
+			base = 100
+		}
 	}
 }

@@ -1577,11 +1577,12 @@ country_event = {
 		}
 
 		trigger = { 
-			FIR_azulon = {
+			any_unit_leader = {
+				is_character = FIR_azulon
+				attack_skill_level > 6
 				not = {
 					has_trait = lightning_bender_trait
 				}
-				attack_skill_level > 6
 			}
 		}
 
@@ -2111,11 +2112,13 @@ country_event = {
 		}
 
 		trigger = { 
-			FIR_ozai = {
+			any_unit_leader = {
+				is_character = FIR_ozai
+				attack_skill_level > 6
 				not = {
 					has_trait = lightning_bender_trait
 				}
-				attack_skill_level > 6
+
 			}
 		}
 
@@ -2440,11 +2443,12 @@ country_event = {
 		}
 
 		trigger = { 
-			FIR_iroh = {
+			any_unit_leader = {
+				is_character = FIR_iroh
+				attack_skill_level > 6
 				not = {
 					has_trait = lightning_bender_trait
 				}
-				attack_skill_level > 6
 			}
 		}
 
@@ -2883,11 +2887,12 @@ country_event = {
 		}
 
 		trigger = { 
-			FIR_lu_ten = {
+			any_unit_leader = {
+				is_character = FIR_lu_ten
+				attack_skill_level > 6
 				not = {
 					has_trait = lightning_bender_trait
 				}
-				attack_skill_level > 6
 			}
 		}
 
@@ -3149,11 +3154,12 @@ country_event = {
 		}
 
 		trigger = { 
-			FIR_zuko = {
+			any_unit_leader = {
+				is_character = FIR_zuko
+				attack_skill_level > 6
 				not = {
 					has_trait = lightning_bender_trait
 				}
-				attack_skill_level > 6
 			}
 		}
 
@@ -3438,11 +3444,12 @@ country_event = {
 		}
 
 		trigger = { 
-			FIR_azula = {
+			any_unit_leader = {
+				is_character = FIR_azula
+				attack_skill_level > 6
 				not = {
 					has_trait = lightning_bender_trait
 				}
-				attack_skill_level > 6
 			}
 		}
 

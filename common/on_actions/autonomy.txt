@@ -28,9 +28,7 @@ on_actions = {
 				limit = {
 					ROOT = {
 						check_variable = {
-							var = mtth:overlord_influence
-							value = 1
-							compare = less_than
+							mtth:overlord_influence < 1
 							tooltip = overlord_influence_check
 						}
 					}

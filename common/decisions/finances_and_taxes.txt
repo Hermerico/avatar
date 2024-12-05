@@ -84,7 +84,10 @@ taxation_category = {
 
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -127,7 +130,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -174,7 +180,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -226,7 +235,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -274,7 +286,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -317,7 +332,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -367,7 +385,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -410,7 +431,10 @@ taxation_category = {
         }
 		
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -453,7 +477,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -505,7 +532,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -553,7 +583,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -596,7 +629,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -646,7 +682,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -689,7 +728,10 @@ taxation_category = {
         }
 		
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -733,7 +775,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -785,7 +830,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -833,7 +881,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -876,7 +927,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -926,7 +980,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -969,7 +1026,10 @@ taxation_category = {
         }
 		
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1012,7 +1072,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1064,7 +1127,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1112,7 +1178,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1155,7 +1224,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1205,7 +1277,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1248,7 +1323,10 @@ taxation_category = {
         }
 		
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1291,7 +1369,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1343,7 +1424,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1391,7 +1475,10 @@ taxation_category = {
         }
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1435,7 +1522,10 @@ taxation_category = {
 		}
 
 		cancel_trigger = {
-			check_variable = { var = money_variable compare = less_than_or_equals value = 0 tooltip = money_check }
+			check_variable = {
+				money_variable <= 0
+				tooltip = money_check
+			}
 		}
 		cancel_effect = {
 			clr_country_flag = public_funding
@@ -1526,9 +1616,7 @@ taxation_category = {
 		}
 		available = {
 			check_variable = {
-				var = tax_balance
-				value = 0
-				compare = less_than_or_equals
+				tax_balance <= 0
 				tooltip = income_deficit_check
 			}
 		}
@@ -1564,9 +1652,7 @@ taxation_category = {
 		}
 		available = {
 			check_variable = {
-				var = modifier@taxation_efficiency
-				value = 0.5
-				compare = less_than_or_equals
+				modifier@taxation_efficiency <= 0.5
 				tooltip = less_than_taxation_efficiency_check
 			}
 		}

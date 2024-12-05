@@ -79,7 +79,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_technology = {
-				kinectics = 2
+				kinectics = 1
 			}
 			if = {
 				limit = {

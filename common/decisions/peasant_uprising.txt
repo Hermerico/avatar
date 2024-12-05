@@ -342,9 +342,7 @@ peasant_uprising_category = {
 
 		available = {
 			check_variable = {
-				var = current_authority
-				value = authority_target
-				compare = less_than_or_equals
+				current_authority <= authority_target
 				tooltip = check_liberty_tooltip
 			}
 		}

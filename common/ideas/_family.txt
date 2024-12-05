@@ -12,9 +12,7 @@ ideas = {
 
 			available = {
 				check_variable = {
-					var = current_authority
-					value = 60
-					compare = greater_than_or_equals
+					current_authority >= 60
 					tooltip = check_authority_tooltip
 				}
 			}
@@ -49,9 +47,7 @@ ideas = {
 			
 			available = {
 				check_variable = {
-					var = current_authority
-					value = 40
-					compare = greater_than_or_equals
+					current_authority >= 40
 					tooltip = check_authority_tooltip
 				}
 			}
@@ -86,15 +82,11 @@ ideas = {
 			
 			available = {
 				check_variable = {
-					var = current_authority
-					value = 80
-					compare = less_than_or_equals
+					current_authority <= 80
 					tooltip = check_liberty_tooltip
 				}
 				check_variable = {
-					var = current_authority
-					value = 20
-					compare = greater_than_or_equals
+					current_authority >= 20
 					tooltip = check_authority_tooltip
 				}
 			}
@@ -127,9 +119,7 @@ ideas = {
 			
 			available = {
 				check_variable = {
-					var = current_authority
-					value = 60
-					compare = less_than_or_equals
+					current_authority <= 60
 					tooltip = check_liberty_tooltip
 				}
 			}
@@ -230,9 +220,7 @@ ideas = {
 			
 			available = {
 				check_variable = {
-					var = current_authority
-					value = 40
-					compare = less_than_or_equals
+					current_authority <= 40
 					tooltip = check_liberty_tooltip
 				}
 			}

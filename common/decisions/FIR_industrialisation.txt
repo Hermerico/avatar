@@ -169,9 +169,6 @@ FIR_industrialisation_category = {
 
 		cost = 75
 
-		modifier = {
-			
-		}
 
 		complete_effect = {
 			remove_decision = factory_longer_shift

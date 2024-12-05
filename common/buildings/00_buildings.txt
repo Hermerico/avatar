@@ -66,7 +66,9 @@ buildings = {
 		show_on_map = 2
 		base_cost = 3700
 		icon_frame = 3
-		max_level = 50
+		level_cap = {
+			state_max = 50
+		}
 		#shares_slots = yes
 		value = 9
 		infrastructure_construction_effect = yes
@@ -87,11 +89,12 @@ buildings = {
 		show_on_map = 1
 		base_cost = 4000
 		icon_frame = 6
-		max_level = 50
 		#shares_slots = yes
 		value = 6
 		infrastructure_construction_effect = yes
-		
+		level_cap = {
+			state_max = 50
+		}
 
 		#local_resources_chromium = 6
 
@@ -108,11 +111,12 @@ buildings = {
 		show_on_map = 1
 		base_cost = 3500
 		icon_frame = 11
-		max_level = 50
 		#shares_slots = yes
 		value = 7
 		infrastructure_construction_effect = yes
-		
+		level_cap = {
+			state_max = 50
+		}
 
 		#local_resources_food_resource = 2
 
@@ -127,7 +131,9 @@ buildings = {
 		base_cost = 5200
 		#per_level_extra_cost = 540
 		icon_frame = 4
-		max_level = 50 # This is the max unlock level
+		level_cap = {
+			state_max = 50
+		}
 		#shares_slots = yes
 		value = 12
 		infrastructure_construction_effect = yes
@@ -148,7 +154,9 @@ buildings = {
 		#per_level_extra_cost = 640
 		icon_frame = 5
 		##local_resources_aluminium = -1000
-		max_level = 50 # This is the max unlock level
+		level_cap = {
+			state_max = 50
+		}
 		#shares_slots = yes
 		value = 16
 		infrastructure_construction_effect = yes
@@ -168,7 +176,9 @@ buildings = {
 		base_cost = 9000
 		#per_level_extra_cost = 380
 		icon_frame = 7
-		max_level = 50 # This is the max unlock level
+		level_cap = {
+			state_max = 50
+		}
 		#shares_slots = yes
 		value = 8
 		infrastructure_construction_effect = yes
@@ -194,10 +204,12 @@ buildings = {
 		base_cost_conversion = 16000
 		general_production = 1
 		icon_frame = 32
-		max_level = 1000000000
 		#shares_slots = yes
 		value = 6
 
+		level_cap = {
+			state_max = 10000000
+		}
 		show_modifier = yes
 		civilian_capacity_modifier = 1
 		building_upkeep_cost = 2
@@ -209,7 +221,9 @@ buildings = {
 		per_level_extra_cost = 1000
 		icon_frame = 1
 		infrastructure = yes
-		max_level = 10
+		level_cap = {
+			state_max = 10
+		}
 		value = 10
 		damage_factor = 0.1
 		allied_build = yes
@@ -229,10 +243,11 @@ buildings = {
 	rail_way = {
 		base_cost = 200
 		per_level_extra_cost = 200
-		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 16
-		max_level = 1
+		level_cap = {
+			province_max = 1
+		}
 	}
 
 
@@ -244,11 +259,12 @@ buildings = {
 	supply_node = {
 		show_on_map = 1
 		base_cost = 12000
-		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 15
-		max_level = 1
 		centered = yes
+		level_cap = {
+			province_max = 1
+		}
 		supply_node = yes
 		damage_factor = 0.1
 		allied_build = yes
@@ -263,10 +279,11 @@ buildings = {
 
 		base_cost = 1500
 		per_level_extra_cost = 1500
-		provincial = yes
 		disabled_in_dmz = yes
 		land_fort = 1
-		max_level = 40
+		level_cap = {
+			province_max = 40
+		}
 		value = 2
 	}
 
@@ -279,10 +296,11 @@ buildings = {
 		base_cost = 1100
 		per_level_extra_cost = 600
 		spawn_point = naval_base_spawn 
-		provincial = yes
 		only_costal = yes
 		is_port = yes
-		max_level = 40
+		level_cap = {
+			province_max = 40
+		}
 		value = 2
 	}
 
@@ -294,11 +312,12 @@ buildings = {
 
 		base_cost = 1200
 		per_level_extra_cost = 1200
-		provincial = yes
 		disabled_in_dmz = yes
 		only_costal = yes
 		naval_fort = 1
-		max_level = 40
+		level_cap = {
+			province_max = 40
+		}
 		value = 1
 	}
 
@@ -313,8 +332,10 @@ buildings = {
 		base_cost_conversion = 4000
 		military_production = 1
 		icon_frame = 21
-		max_level = 1000000000
-		shares_slots = yes
+		level_cap = {
+			state_max = 1000000000
+			shares_slots = yes
+		}
 		value = 6
 		infrastructure_construction_effect = yes
 
@@ -332,11 +353,13 @@ buildings = {
 		show_on_map = 1
 		base_cost = 60000
 		icon_frame = 22
-		max_level = 50 # This is the max unlock level
-		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
 
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		#military_capacity_modifier = 1
 		#naval_capacity_modifier = 1
 		show_modifier = yes
@@ -356,8 +379,10 @@ buildings = {
 		only_costal = yes
 		naval_production = 1
 		icon_frame = 23
-		max_level = 1000000000
-		shares_slots = yes
+		level_cap = {
+			state_max = 10000000
+			shares_slots = yes
+		}
 		value = 3
 		infrastructure_construction_effect = yes
 
@@ -377,10 +402,12 @@ buildings = {
 		only_costal = yes
 		naval_production = 1
 		icon_frame = 24
-		max_level = 50
-		shares_slots = yes
 		value = 4
 		infrastructure_construction_effect = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 
 		show_modifier = yes
 		industrial_worker_k = 1.000
@@ -398,8 +425,10 @@ buildings = {
 		show_on_map = 1
 		base_cost = 4100
 		icon_frame = 8
-		max_level = 50
-		shares_slots = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		value = 4
 		infrastructure_construction_effect = yes
 		
@@ -418,8 +447,10 @@ buildings = {
 		show_on_map = 1
 		base_cost = 4100
 		icon_frame = 9
-		max_level = 50
-		shares_slots = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		value = 4
 		infrastructure_construction_effect = yes
 		
@@ -438,8 +469,10 @@ buildings = {
 		show_on_map = 6
 		base_cost = 4600
 		icon_frame = 30
-		max_level = 50
-		shares_slots = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		value = 3
 		infrastructure_construction_effect = yes
 
@@ -458,8 +491,10 @@ buildings = {
 		show_on_map = 1
 		base_cost = 18000
 		icon_frame = 10
-		max_level = 50 # This is the max unlock level
-		shares_slots = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		value = 5
 		infrastructure_construction_effect = yes
 
@@ -483,8 +518,10 @@ buildings = {
 		show_on_map = 6
 		base_cost = 8000
 		icon_frame = 28
-		max_level = 50
-		shares_slots = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		value = 4
 		infrastructure_construction_effect = yes
 
@@ -503,8 +540,10 @@ buildings = {
 		show_on_map = 6
 		base_cost = 12000
 		icon_frame = 27
-		max_level = 50
-		shares_slots = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		value = 4
 		infrastructure_construction_effect = yes
 
@@ -524,8 +563,10 @@ buildings = {
 		show_on_map = 6
 		base_cost = 14000
 		icon_frame = 26
-		max_level = 50
-		shares_slots = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		value = 6
 		infrastructure_construction_effect = yes
 
@@ -543,8 +584,10 @@ buildings = {
 		show_on_map = 6
 		base_cost = 14000
 		icon_frame = 25
-		max_level = 50
-		shares_slots = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		value = 7
 		infrastructure_construction_effect = yes
 
@@ -562,8 +605,10 @@ buildings = {
 		show_on_map = 6
 		base_cost = 24000
 		icon_frame = 29
-		max_level = 50
-		shares_slots = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		value = 6
 		infrastructure_construction_effect = yes
 
@@ -584,8 +629,10 @@ buildings = {
 		show_on_map = 1
 		base_cost = 20000
 		icon_frame = 20
-		max_level = 5
-		shares_slots = yes
+		level_cap = {
+			state_max = 5
+			shares_slots = yes
+		}
 		value = 1
 		infrastructure_construction_effect = yes
 		fuel_silo = yes
@@ -611,8 +658,10 @@ buildings = {
 		show_on_map_meshes = 1
 		base_cost = 12000
 		icon_frame = 31
-		max_level = 5
-		shares_slots = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
 		value = 1
 		infrastructure_construction_effect = yes
 		
@@ -632,9 +681,11 @@ buildings = {
 		icon_frame = 17
 		radar = yes
 		#max_level = 50 # max: 5
-		max_level = 5 # This is the max unlock level
 		damage_factor = 0.5
-		shares_slots = yes
+		level_cap = {
+			state_max = 5
+			shares_slots = yes
+		}
 		value = 2
 
 		show_modifier = yes
@@ -648,10 +699,12 @@ buildings = {
 		anti_air = yes
 		disabled_in_dmz = yes
 		air_defence = 1
-		max_level = 5 # This is the max unlock level
 		damage_factor = 0.1
-		shares_slots = yes
 		value = 1
+		level_cap = {
+			state_max = 5
+			shares_slots = yes
+		}
 
 		show_modifier = yes
 		building_upkeep_cost = 1
@@ -662,10 +715,12 @@ buildings = {
 		base_cost = 2400
 		icon_frame = 19
 		air_base = yes
-		max_level = 20
 		value = 1
-		shares_slots = yes
 		damage_factor = 0.5
+		level_cap = {
+			state_max = 20
+			shares_slots = yes
+		}
 
 		show_modifier = yes
 		building_upkeep_cost = 1

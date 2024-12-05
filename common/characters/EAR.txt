@@ -41,22 +41,22 @@ characters = {
 			}
 		}
 		country_leader = {
-						ideology = colonialism
+			ideology = colonialism
 			expire = "120.4.7.1"
 			id = -1
 		}
 		country_leader = {
-						ideology = elective_chiefdom
+			ideology = elective_chiefdom
 			expire = "120.4.7.1"
 			id = -1
 		}
 		country_leader = {
-						ideology = absolute_pacifism
+			ideology = absolute_pacifism
 			expire = "120.4.7.1"
 			id = -1
 		}
 		country_leader = {
-						ideology = anarchism
+			ideology = anarchism
 			expire = "120.4.7.1"
 			id = -1
 		}
@@ -323,8 +323,6 @@ characters = {
 	#  # ##### #    #    # 
 	#  # #   # #    #    # 
 	###  #   # #    #### # 
-
-
 	EAR_dai_li_government = {
 		portraits = {
 			civilian = {
@@ -341,8 +339,6 @@ characters = {
 			id = -1
 		}
 	}
-
-
 	EAR_quon = {
 		name = "Quon"
 		portraits = {
@@ -484,7 +480,7 @@ characters = {
 						days = 1
 						random_days = 7
 					}
-				}	
+				}
 			}
 			traits = {
 				extreme_royalist
