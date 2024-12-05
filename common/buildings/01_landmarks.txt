@@ -33,11 +33,13 @@ buildings = {
 	#   missing_tech_loc = <bindable localization> # See script concept bindable localization
 	#   repair_speed_factor = 0.5 # Optional. Factor for how fast the building is repaired (default = 1.0)
 
-	spawn_points = {
-		landmark_spawn = {
-			type = province
-			max = 1
-			disable_auto_nudging = yes
-		}
+}
+
+
+spawn_points = {
+	landmark_spawn = {
+		type = province
+		max = 1
+		disable_auto_nudging = yes
 	}
 }

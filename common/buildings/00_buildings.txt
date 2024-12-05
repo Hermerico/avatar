@@ -96,7 +96,6 @@ buildings = {
 		base_cost = 4000
 		icon_frame = 6
 		level_cap = {
-			shares_slots = yes
 			state_max = 50
 		} 
 		#shares_slots = yes
@@ -128,7 +127,6 @@ buildings = {
 		base_cost = 3500
 		icon_frame = 11
 		level_cap = {
-			shares_slots = yes
 			state_max = 50
 		}
 		#shares_slots = yes
@@ -154,7 +152,6 @@ buildings = {
 		#per_level_extra_cost = 540
 		icon_frame = 4
 		level_cap = {
-			shares_slots = yes
 			state_max = 50	# This is the max unlock level
 		}
 		#shares_slots = yes
@@ -825,22 +822,6 @@ buildings = {
 		}
 		state_modifiers = {
 			building_upkeep_cost = 1
-		}
-	}
-
-	rocket_site = {
-		show_on_map = 1
-		base_cost = 6400
-		icon_frame = 12
-		rocket_production = 0
-		rocket_launch_capacity = 0
-		value = 1
-		tags = {}
-		infrastructure_construction_effect = yes
-		disabled_in_dmz = yes
-		spawn_point = rocket_site_spawn
-		level_cap = {
-			state_max = 1
 		}
 	}
 
