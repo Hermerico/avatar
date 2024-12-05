@@ -67,10 +67,10 @@ NMapMode = {
 	RAILWAY_GUN_RANGE_INDICATOR_DEFAULT_COLOR = { 1.0, 1.0, 1.0, 1.0 },				-- On map circle indicating the railway gun bombardment range.
 	RAILWAY_GUN_RANGE_INDICATOR_ROTATION_SPEED = 0.001,								-- How fast the indicator is rotating.
 	RAILWAY_GUN_RANGE_STRIPES_COLOR = { 1.0, 0.5, 0.0, 0.2 },						-- Color of the railway gun range stripes (when hovered)
-	
+
 	PREPARING_RAID_ARROW_COLOR = { 0.7, 0.7, 0.7, 1.0 },							    -- Color of the arrow drawn in the raid map mode for raids that are still preparing.
 	READY_RAID_ARROW_COLOR = { 0.7, 0.7, 0, 0.9},							        -- Color of the arrow drawn in the raid map mode for raids that can be launched.
-	ACTIVE_RAID_ARROW_COLOR = { 1, 0, 0, 0.9 },	
+	ACTIVE_RAID_ARROW_COLOR = { 1, 0, 0, 0.9 },							        -- Color of the arrow drawn in the raid map mode for active raids.
 
 	OCCUPATION_MAP_MODE_COUNTRY_STRIPE_ALPHA = 0.3,									-- alpha of occupied country stripes in occupation map mode
 	OPERATIVE_MAP_MODE_INVALID_COUNTRY_TARGET_TRANSPARENCY = 0.15,							-- alpha of country which cannot be targeted by the selected operative mission
@@ -121,7 +121,6 @@ NMapMode = {
 	CONSTRUCTION_SECONDARY_VALID_BUILD_TARGET_PROVINCE_COLOR_INDEX = 10,
 	CONSTRUCTION_SECONDARY_INVALID_BUILD_TARGET_PROVINCE_COLOR_INDEX = 11,
 	CONSTRUCTION_SECONDARY_FOREIGN_BUILD_TARGET_PROVINCE_COLOR_INDEX = 12,
-
 },
 
 NMapIcons = {
@@ -272,7 +271,7 @@ NMapIcons = {
 	RESOURCES_PRIORITY_AIR_BASE = 3,
 	RESOURCES_PRIORITY_ROCKET_SITE = 3,
 	RESOURCES_PRIORITY_GUN_EMPLACEMENT = 3,
-	RESOURCES_PRIORITY_FACILITY = 3,
+	RESOURCES_PRIORITY_FACILITY = 3,	
 	RESOURCES_PRIORITY_NAVAL_BASE = 3,
 	RESOURCES_PRIORITY_NAVAL_COMBAT = 20,
 	RESOURCES_PRIORITY_NAVAL_COMBAT_RESULTS = 19,
@@ -594,7 +593,7 @@ NMapIcons = {
 	OPERATIVES_PRIORITY_NAVAL_MINES = 13,
 	OPERATIVES_PRIORITY_NAVAL_ACCIDENTS = 13,
 	OPERATIVES_PRIORITY_NAVAL_ACCIDENTS = 13,
-	
+
 	OPERATION_PRIORITY_CAN_START = 1, 					-- The order of the operation map icons (lower in first)
 	OPERATION_PRIORITY_COMPLETED = 2, 					-- The order of the operation map icons (lower in first)
 	OPERATION_PRIORITY_IN_PROGRESS = 3, 				-- The order of the operation map icons (lower in first)
@@ -673,7 +672,7 @@ NGraphics = {
 	SHIP_POPUP_SCALE_DOWN_SPEED = 4.1,
 	PORT_SHIP_OFFSET = 2.0,
 	SHIP_IN_PORT_SCALE = 0.25,
-	MAP_BUILDINGS_SHRINK_DISTANCE = 180,
+	MAP_BUILDINGS_SHRINK_DISTANCE = 180,				
 	MAP_BUILDINGS_DESTROYED_STATUS = 60,			-- If health of last building level goes below this, the building entity will use the "destroyed" mesh (if it exists)
 	MAP_BUILDINGS_DESTROYED_DEAD_ZONE = 80,			-- After becoming "destroyed" (see MAP_BUILDINGS_DESTROYED_STATUS), the 3d building will stay destroyed until the health goes above this. (This is essentially a hysteresis zone to prevent rapid switching of 3d meshes if the building is damaged and repaired at the same time)
 	MAP_BUILDINGS_DAMAGED_THRESHOLD = 0.80,			-- If average health goes below this, the building entity enters the "damaged" state (generally used to show burning/smoking buildings)
@@ -762,8 +761,6 @@ NGraphics = {
 		0.8, 0.3, 0.0, 1.0,   -- 11: construction: invalid secondary build target
 		0.7, 0.7, 0.0, 1.0,   -- 12: construction: foreign secondary build target
 	},
-
-
 	BORDER_COLOR_TUTORIAL_HIGHLIGHT_R = 0.0,
 	BORDER_COLOR_TUTORIAL_HIGHLIGHT_G = 0.61,
 	BORDER_COLOR_TUTORIAL_HIGHLIGHT_B = 0.75,
@@ -1208,7 +1205,6 @@ NGraphics = {
 	
 	INTEL_LEDGER_GRAPH_RED = { 1.0, 0.0, 0.0, 1.0 },
 	INTEL_LEDGER_GRAPH_GREEN = { 0.0, 1.0, 0.0, 1.0 },
-
 	RAID_SOURCE_MAP_STRIPES_COLOR = { 0.0, 1.0, 1.0, 0.4 },
 	RAID_SOURCE_MAP_STRIPES_HOVERED_COLOR = { 0.3, 1.0, 1.0, 0.7 },
 
@@ -1238,8 +1234,8 @@ NGraphics = {
 	RAID_MAP_ICON_DRAW_DISTANCE_MAX = 500.0,                     -- Above this distance, raid map icons are hidden in normal map modes
 	RAID_MAP_ICON_MAX_DRAW_DISTANCE_IN_RAID_MAP_MODE = 1600.0,   -- Above this distance, raid map icons are hidden in raid map mode
 
-	RAID_TARGET_ZOOM_HEIGHT = 200.0,				-- The height for the map carmera to zoom in to a raid target
-},
+	RAID_TARGET_ZOOM_HEIGHT = 200.0,				-- The height for the map carmera to zoom in to a raid target},
+} ,
 
 NInterface = {
 	MAX_NO_FACTION_FILTER_BUTTONS = 40,			-- Max number of faction filter buttons that can be generated in diplomacy view.

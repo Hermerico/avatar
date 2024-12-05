@@ -1,5 +1,5 @@
 spriteTypes = {
-
+	
 	spriteType = {
 		name = "GFX_techtree_details_progress_bar_frame"
 		textureFile = "gfx/interface/techtree/techtree_details_progress_bar_frame.dds"

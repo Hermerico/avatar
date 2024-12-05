@@ -623,6 +623,25 @@ guiTypes = {
 			format = left
 			hide = yes
 		}
+		instantTextboxType = {
+			name = "special_project"
+			font = "garamond_12"
+			position = { x=320 y=40 }
+			maxWidth = 10
+			maxHeight = 20
+			format = right
+			hide = yes
+		}
+		
+		instantTextboxType = {
+			name = "production_line"
+			font = "garamond_12"
+			position = { x=320 y= 80 }
+			maxWidth = 10
+			maxHeight = 20
+			format = right
+			hide = yes
+		}
 		
 		buttonType = {
 			name = "cancel_imports"

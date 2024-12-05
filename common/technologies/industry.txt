@@ -2534,7 +2534,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 0
+			modifier = {
+				set_temp_variable = {
+					p = THIS.resource@planks_resource
+				}
+			}
 		}
 		
 		categories = {

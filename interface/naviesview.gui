@@ -991,6 +991,12 @@ guiTypes = {
 			spriteType = "GFX_NV_all_activities"
 			frame = 1
 		}
+		iconType = {
+			name = "underway_replenishment_icon"
+			position = {x=330 y=43}
+			spriteType = "GFX_NV_btn_underway_replenishment"
+			frame = 1
+		}
 
 		iconType = {
 			name = "fuel_stocks_icon"

@@ -326,9 +326,7 @@ AIR_council_category = {
 						type = naval_base
 						level = 2
 						instant_build = yes
-						province = {
-							id = 9556
-						}
+						province = 9556
 					}
 				}
 				if = {
