@@ -391,7 +391,7 @@ luxury_good_factory_output = {				#### base luxury good output of luxury stores
 	precision = 1
 	postfix = none
 }
-carpentry_planks_output = {						#### base plank output of carpentries
+carpentry_output = {						#### base plank output of carpentries
 	color_type = good
 	value_type = number
 	precision = 1
