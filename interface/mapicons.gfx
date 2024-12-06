@@ -1,7 +1,6 @@
 
 spriteTypes = {
 
-
 	spriteType = {
 		name = "GFX_strait_canal_onmap_icon"
 		texturefile = "gfx/interface/strait_canal_onmap_icon.dds"
@@ -242,11 +241,7 @@ spriteTypes = {
 		horizontal = no
 		steps = 1000000
 	}
-	spriteType = {
-		name = "GFX_NV_btn_underway_replenishment"
-		texturefile = "gfx/interface/naviesview/NV_btn_underway_replenishment.dds"
-		noOfFrames = 2
-	}
+	
 	spriteType = {
 		name = "GFX_naval_combat_icon"
 		texturefile = "gfx/interface/onmap_naval_combat_icon.dds"
@@ -386,26 +381,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/mapicons/mapicon_building_airbase.dds"
 		noOfFrames = 7
 	}
-	spriteType = {
-		name = "GFX_mapicon_mega_gun_emplacement"
-		texturefile = "gfx/interface/mapicons/mapicon_building_mega_gun_emplacement.dds"
-		noOfFrames = 4
-	}
-	spriteType = {
-		name = "GFX_mapicon_mega_gun_emplacement_large"
-		texturefile = "gfx/interface/mapicons/mapicon_building_mega_gun_emplacement_large.dds"
-		noOfFrames = 4
-	}
-	spriteType = {
-		name = "GFX_mapicon_rocket_site"
-		texturefile = "gfx/interface/mapicons/mapicon_building_rocketsite.dds"
-		noOfFrames = 4
-	}
+
 	spriteType = {
 		name = "GFX_mapicon_rocket_site_large"
 		texturefile = "gfx/interface/mapicons/mapicon_building_rocketsite_large.dds"
 		noOfFrames = 4
 	}
+	
+	spriteType = {
+		name = "GFX_mapicon_rocket_site"
+		texturefile = "gfx/interface/mapicons/mapicon_building_rocketsite.dds"
+		noOfFrames = 4
+	}
+
 	spriteType = {
 		name = "GFX_mapicon_naval_base_large"
 		texturefile = "gfx/interface/mapicons/mapicon_building_navalbase_large.dds"
