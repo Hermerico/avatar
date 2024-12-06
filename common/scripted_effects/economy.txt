@@ -410,7 +410,7 @@ add_farm_random = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { farms = building_level@farm }
+			set_temp_variable = { farms = modifier@farm_level }
 			add_to_temp_variable = { farms = farm_construction_que }
 			check_variable = {
 				field > farms
@@ -435,7 +435,7 @@ add_fishing_stand_random = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { fishing_stands = building_level@fishing_stand }
+			set_temp_variable = { fishing_stands = modifier@fishing_stand_level }
 			add_to_temp_variable = { fishing_stands = fishing_stand_construction_que }
 			check_variable = {
 				water > fishing_stands
@@ -460,7 +460,7 @@ add_ranch_random = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { ranches = building_level@ranch }
+			set_temp_variable = { ranches = modifier@ranch_level }
 			add_to_temp_variable = { ranches = ranch_construction_que }
 			check_variable = {
 				animal > ranches
@@ -484,7 +484,7 @@ add_lumber_mill_random = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { lumber_mills = building_level@lumber_mill }
+			set_temp_variable = { lumber_mills = modifier@lumber_mill_level }
 			add_to_temp_variable = { lumber_mills = lumber_mill_construction_que }
 			check_variable = {
 				forest > lumber_mills
@@ -508,7 +508,7 @@ add_quarry_random = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { quarries = building_level@quarry }
+			set_temp_variable = { quarries = modifier@quarry_level }
 			add_to_temp_variable = { quarries = quarry_construction_que }
 			check_variable = {
 				stonefield > quarries
@@ -532,7 +532,7 @@ add_mine_random = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { mines = building_level@mine }
+			set_temp_variable = { mines = modifier@mine_level }
 			add_to_temp_variable = { mines = mine_construction_que }
 			check_variable = {
 				mountain > mines
@@ -1077,7 +1077,7 @@ add_farm_random_instant = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { farms = building_level@farm }
+			set_temp_variable = { farms = modifier@farm_level }
 			add_to_temp_variable = { farms = farm_construction_que }
 			check_variable = {
 				field > farms
@@ -1102,7 +1102,7 @@ add_fishing_stand_random_instant = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { fishing_stands = building_level@fishing_stand }
+			set_temp_variable = { fishing_stands = modifier@fishing_stand_level }
 			add_to_temp_variable = { fishing_stands = fishing_stand_construction_que }
 			check_variable = {
 				water > fishing_stands
@@ -1127,7 +1127,7 @@ add_ranch_random_instant = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { ranches = building_level@ranch }
+			set_temp_variable = { ranches = modifier@ranch_level }
 			add_to_temp_variable = { ranches = ranch_construction_que }
 			check_variable = {
 				animal > ranches
@@ -1151,7 +1151,7 @@ add_lumber_mill_random_instant = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { lumber_mills = building_level@lumber_mill }
+			set_temp_variable = { lumber_mills = modifier@lumber_mill_level }
 			add_to_temp_variable = { lumber_mills = lumber_mill_construction_que }
 			check_variable = {
 				forest > lumber_mills
@@ -1175,7 +1175,7 @@ add_quarry_random_instant = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { quarries = building_level@quarry }
+			set_temp_variable = { quarries = modifier@quarry_level }
 			add_to_temp_variable = { quarries = quarry_construction_que }
 			check_variable = {
 				stonefield > quarries
@@ -1199,7 +1199,7 @@ add_mine_random_instant = {
 				ROOT = { NOT = { has_country_flag = core_all_construction_flag } }
 				is_core_of = ROOT
 			}
-			set_temp_variable = { mines = building_level@mine }
+			set_temp_variable = { mines = modifier@mine_level }
 			add_to_temp_variable = { mines = mine_construction_que }
 			check_variable = {
 				mountain > mines

@@ -1,6 +1,7 @@
 ﻿l_english:
  STATE_UPGRADE_BUILDING:0 "Upgrade $BUILDING|H$."
  STATE_UPGRADE_BUILDING_DESC:0 "Days to construct: $COST|H$"
+ PROVINCE_BUILDING_LEVEL: "$BUILDING|H$ (level: $LEVEL|H$/$MAX_LEVEL|H$)"
  STATE_BUILDING_LEVEL:1 "$BUILDING|H$ (State level: $LEVEL|H$)"
  STATE_BUILDING_LEVEL_SHARED_SLOTS:0 "$LEVEL|H$ $BUILDING|H$"
  STATE_BUILDING_INCONSTRUCTION:0 "Under construction: $LEVEL|H$"
@@ -21,6 +22,7 @@
  STATE_CORE:0 "§T$COUNTRY|H$ has $STATE|H$ as a core state.§!"
  STATE_CORE_DESC:0 "A core state is regarded as an integral part of your nation. If it is owned by another nation you have a justifiable reason to declare war to retake it, and if successful it will not need an occupation policy - it will simply become part of your homeland once retaken."
  STATE_CLAIM:0 "§T$COUNTRY|H$ has a claim on $STATE|H$.§!"
+ STATE_CONTESTED_OWNER: "§T$COUNTRY|H$ is contested owner of $STATE|H$.§!"
  STATE_POPULATION:3 "§HRecruitable Population§!: $AVAIL|*Y$/$MAXAVAIL|*Y$\n§HCivilian Population§!: $LOCKED|*Y$/$MAXLOCKED|*Y$\n"
  MONTHLY_BASE_GROWTH:0 "Base: $VALUE|H%2$"
  STATE_POPULATION_GROWTH:0 "§HMonthly growth§!: $VALUE|%2$ ( $AVAIL|*+$ recruitable, $LOCKED|*+$ civilian )"

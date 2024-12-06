@@ -331,139 +331,107 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "possible_constructions"
-			position = { x = 426 y = 256 }
+			position = { x = 426 y = 76 }
 			size = { width = 122 height = 100%% }
 			verticalScrollbar = "right_vertical_slider"
 			margin = { top = 5 }  
 			smooth_scrolling = yes 
 			scroll_wheel_factor = 20
-
-			#background = {
-			#	name = "Background"
-			#	quadTextureSprite ="GFX_tiled_window_transparent"
-			#}
 			
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_plain_bg_small"
 			}
 
-			#iconType = {
-			#	name = "constructions_bg1"
-			#	position = { x = 0 y = 6 }
-			#	quadTextureSprite = "GFX_constructions_bg1"
-			#}
-#
-			#iconType = {
-			#	name = "constructions_bg2"
-			#	position = { x = 0 y = 194 }
-			#	quadTextureSprite = "GFX_constructions_bg4"
-			#}
-			#
-			#iconType = {
-			#	name = "constructions_bg3"
-			#	position = { x = 0 y = 470 }
-			#	quadTextureSprite = "GFX_constructions_bg4"
-			#}
-#
-			#iconType = {
-			#	name = "constructions_bg4"
-			#	position = { x = 0 y = 745 }
-			#	quadTextureSprite = "GFX_constructions_bg1"
-			#}
-
-			gridBoxType = {
-				name = "province_item_grid"
-				position = { x = 8 y = 40 }
-				size = { width = 100% height = 100% }
-				slotsize = { width = 46 height = 46 }
-				max_slots_horizontal = 2
-				format = "UPPER_LEFT"
-			}
-			
-			gridBoxType = {
-				name = "non_shared_item_grid"
-				position = { x = 52 y = 132 }
-				size = { width = 100% height = 100% }
-				slotsize = { width = 46 height = 0 }
-				max_slots_horizontal = 1
-				max_slots_vertical = 10
-				format = "UPPER_LEFT"
-				#hide = yes
-			}
-			
-			gridBoxType = {
-				name = "shared_item_grid"
-				position = { x = 8 y = 228 }
-				size = { width = 100% height = 100% }
-				slotsize = { width = 46 height = 46 }
-				max_slots_horizontal = 2
-				format = "UPPER_LEFT"
-			}
-
-			#containerWindowType = {
-			#	name = "placeholder1"
-			#	position = { x = 4 y = 470 }
-			#	size = { width = 96 height = 46 }
-			#	
-			#	background = {
-			#		name = "Background" 
-			#		quadTextureSprite ="GFX_tiled_window_transparent"
-			#	}
-			#}
-
-			#containerWindowType = {
-			#	name = "placeholder2"
-			#	position = { x = 4 y = 746 }
-			#	size = { width = 96 height = 46 }
-			#	
-			#	background = {
-			#		name = "Background" 
-			#		quadTextureSprite ="GFX_tiled_window_transparent"
-			#	}
-			#}
-
-			#iconType = {
-			#	name = "province_constructions"
-			#	position = { x = 5 y = 9 }
-			#	quadTextureSprite = "GFX_province_constructions"
-			#}
-#
-			#iconType = {
-			#	name = "resource_constructions"
-			#	position = { x = 5 y = 199 }
-			#	quadTextureSprite = "GFX_resource_constructions"
-			#	pdx_tooltip = "resource_building_tooltip"
-			#	pdx_tooltip_delayed = "resource_building_tooltip_delayed"
-			#}
-#
 			iconType = {
-				name = "factory_constructions"
-				position = { x = 5 y = 190 }
-				quadTextureSprite = "GFX_factory_constructions"
-				pdx_tooltip = "factory_building_tooltip"
-				pdx_tooltip_delayed = "factory_building_tooltip_delayed"
+				name = "resource_constructions"
+				position = { x = 10 y = 0 }
+				quadTextureSprite = "GFX_resource_constructions"
+				pdx_tooltip = "resource_building_tooltip"
+				pdx_tooltip_delayed = "resource_building_tooltip_delayed"
 			}
-#
-			#iconType = {
-			#	name = "state_constructions"
-			#	position = { x = -10005 y = 155 }
-			#	quadTextureSprite = "GFX_factory_constructions"
-			#}
-#
+
+			containerWindowType = {
+				name = "possible_province_constructions"
+				position = { x = 0 y = 0 }
+				size = { width = 267 height = 100% }
+
+				gridBoxType = {
+					name = "province_item_grid"
+					position = { x = 8 y = -420 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 46 }
+					max_slots_horizontal = 2
+					max_slots_vertical = 6
+					add_horizontal = no
+					format = "UPPER_LEFT"
+				}
+			}
+
 			iconType = {
 				name = "misc_constructions"
-				position = { x = 5 y = 0 }
+				position = { x = 60 y = 0 }
 				quadTextureSprite = "GFX_misc_constructions"
 				pdx_tooltip = "misc_building_tooltip"
 				pdx_tooltip_delayed = "misc_building_tooltip_delayed"
 			}
-#
-			#iconType = {
-			#	name = "shared_constructions"
-			#	position = { x = -10005 y = 749 }
-			#	quadTextureSprite = "GFX_misc_constructions"
-			#}
+
+			containerWindowType = {
+				name = "possible_state_constructions"
+				position = { x = 0 y = 0 }
+				size = { width = 267 height = 100% }
+
+				gridBoxType = {
+					name = "non_shared_item_grid"
+					position = { x = 54 y = 270 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 0 }
+					max_slots_horizontal = 2
+					max_slots_vertical = 10
+					format = "UPPER_LEFT"
+					#hide = yes
+				}
+			}
+
+
+			iconType = {
+				name = "factory_constructions"
+				position = { x = 10 y = 320 }
+				quadTextureSprite = "GFX_factory_constructions"
+				pdx_tooltip = "factory_building_tooltip"
+				pdx_tooltip_delayed = "factory_building_tooltip_delayed"
+			}
+
+			
+			containerWindowType = {
+				name = "possible_shared_constructions"
+				position = { x = 0 y = 0 }
+				size = { width = 267 height = 100% }
+
+				gridBoxType = {
+					name = "shared_item_grid"
+					position = { x = 8 y = 358 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 46 }
+					max_slots_horizontal = 2
+					format = "UPPER_LEFT"
+				}
+			}
+
+			containerWindowType = {
+				name = "possible_facility_constructions"
+				position = { x = 0 y = 150 }
+				size = { width = 267 height = 100% }
+
+				gridBoxType = {
+					name = "facility_item_grid"
+					position = { x = 28 y = 52 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 44 }
+					max_slots_horizontal = 4
+					format = "UPPER_LEFT"
+				}
+			}
 			
 		}
 

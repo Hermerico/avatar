@@ -11,64 +11,64 @@ technologies = {
 		}
 	}
 
-	locking_farm = {
-		enable_building = {
-			building = farm
-			level = 1
-		}
-		allow = {
-			always = no
-		}
-	}
-
-	locking_ranch = {
-		enable_building = {
-			building = ranch
-			level = 1
-		}
-		allow = {
-			always = no
-		}
-	}
-
-	locking_fishing_stand = {
-		enable_building = {
-			building = fishing_stand
-			level = 1
-		}
-		allow = {
-			always = no
-		}
-	}
-
-	locking_lumber_mill = {
-		enable_building = {
-			building = lumber_mill
-			level = 1
-		}
-		allow = {
-			always = no
-		}
-	}
-
-	locking_quarry = {
-		enable_building = {
-			building = quarry
-			level = 1
-		}
-		allow = {
-			always = no
-		}
-	}
-
-	locking_mine = {
-		enable_building = {
-			building = mine
-			level = 1
-		}
-		allow = {
-			always = no
-		}
-	}
+#	locking_farm = {
+#		enable_building = {
+#			building = farm
+#			level = 1
+#		}
+#		allow = {
+#			always = no
+#		}
+#	}
+#
+#	locking_ranch = {
+#		enable_building = {
+#			building = ranch
+#			level = 1
+#		}
+#		allow = {
+#			always = no
+#		}
+#	}
+#
+#	locking_fishing_stand = {
+#		enable_building = {
+#			building = fishing_stand
+#			level = 1
+#		}
+#		allow = {
+#			always = no
+#		}
+#	}
+#
+#	locking_lumber_mill = {
+#		enable_building = {
+#			building = lumber_mill
+#			level = 1
+#		}
+#		allow = {
+#			always = no
+#		}
+#	}
+#
+#	locking_quarry = {
+#		enable_building = {
+#			building = quarry
+#			level = 1
+#		}
+#		allow = {
+#			always = no
+#		}
+#	}
+#
+#	locking_mine = {
+#		enable_building = {
+#			building = mine
+#			level = 1
+#		}
+#		allow = {
+#			always = no
+#		}
+#	}
 
 }
