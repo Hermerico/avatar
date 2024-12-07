@@ -11,7 +11,7 @@ scripted_gui = {
 		context_type = player_context
 		
 		window_name = "research_and_decadence"
-		parent_window_token = technology_tab
+		parent_window_name = research_slots
 		
 		visible = {
 			always = yes

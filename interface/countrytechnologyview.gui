@@ -99,16 +99,17 @@ guiTypes = {
 		
 		containerWindowType = {
 			name ="research_slots"
-			position = { x=0 y= 90 }
+			position = { x=0 y= 80 }
 			size = { width=550 height=-5 }
 			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 40
 			smooth_scrolling = yes
-			margin = { top = 13 bottom = 13 }
+			#margin = { top = 13 bottom = 13 }
 			
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window2_1b_border"
+				position = { x=-1 y= 0 }
 			}
 
 			background = {
@@ -118,7 +119,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name ="slots_window"
-				position = { x = 0 y=140 }
+				position = { x = 0 y=160 }
 				size = { width=550 height=-1 }
 				verticalScrollbar = "right_vertical_slider"
 				scroll_wheel_factor = 40

@@ -13,7 +13,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "research_and_decadence"
-		position = {x=6 y=54}
+		position = {x=6 y=10}
 		size = { width=550 height=144 }
 
 
