@@ -99,16 +99,17 @@ guiTypes = {
 		
 		containerWindowType = {
 			name ="research_slots"
-			position = { x=0 y=285 }
+			position = { x=0 y= 80 }
 			size = { width=550 height=-5 }
 			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 40
 			smooth_scrolling = yes
-			margin = { top = 13 bottom = 13 }
+			#margin = { top = 13 bottom = 13 }
 			
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window2_1b_border"
+				position = { x=-1 y= 0 }
 			}
 
 			background = {
@@ -118,7 +119,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name ="slots_window"
-				position = { x = 0 y=140 }
+				position = { x = 0 y=160 }
 				size = { width=550 height=-1 }
 				verticalScrollbar = "right_vertical_slider"
 				scroll_wheel_factor = 40
@@ -129,7 +130,6 @@ guiTypes = {
 					spriteType = "GFX_tiled_window_transparent"
 				}
 			
-<<<<<<< HEAD
 				gridboxType = {
 					name = "research_slots_grid"
 					position = { x =15 y=0 }
@@ -221,99 +221,14 @@ guiTypes = {
 					max_slots_vertical = 7
 				}
 			}
-=======
-			gridboxType = {
-				name = "research_slots_grid"
-				position = { x = 15 y=10 }
-				size = { width = -20 height = 100%% }
-				slotsize = { width = 500 height = 100 }
-				format = "UPPER_LEFT"
-			}
-			
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 		}
 
 		containerWindowType = {
-			name = "research_win_top"
-			position = { x = 1 y = 44 }
-			size = { width = 100% height = 80% }
+			name ="facilities"
+			position = { x=0 y=80 }
+			size = { width=550 height=-5 }
 
-			background = {
-				name = "Background"
-				spriteType ="GFX_research_top_win"
-			}
-			
-			iconType = {
-				name = "focus_bonuses"
-				position = { x = 110 y = 228 }
-				spriteType = "GFX_focus_bonuses_icon"
-			}
-
-			instantTextboxType = {
-				name = "limited_research_bonus_text"
-				position = { x = 0 y = 230 }
-				textureFile = ""
-				font = "hoi_18mbs"
-				borderSize = {x = 0 y = 0}
-				text = "LIMITED_RESEARCH_BONUS"
-				maxWidth = 100
-				maxHeight = 20
-				format = right
-				fixedsize = yes
-			}
-
-			instantTextboxType = {
-				name = "limited_research_bonus_value"
-				position = { x = 145 y = 230 }
-				textureFile = ""
-				font = "hoi_18mbs"
-				borderSize = {x = 0 y = 0}
-				text = "999"
-				maxWidth = 50
-				maxHeight = 20
-				format = left
-			}
-
-			iconType = {
-				name = "research_speed_icon"
-				position = { x = 422 y = 228 }
-				spriteType = "GFX_research_speed_icon"
-			}
-
-			instantTextboxType = {
-				name = "research_speed_text"
-				position = { x = 295 y = 230 }
-				textureFile = ""
-				font = "hoi_18mbs"
-				borderSize = {x = 0 y = 0}
-				text = "RESEARCH_SPEED"
-				maxWidth = 125
-				maxHeight = 20
-				format = left
-				fixedsize = yes
-			}
-
-			instantTextboxType = {
-				name = "research_speed_value"
-				position = { x = 454 y = 230 }
-				textureFile = ""
-				font = "hoi_18mbs"
-				borderSize = {x = 0 y = 0}
-				text = "999"
-				maxWidth = 50
-				maxHeight = 20
-				format = right
-			}
-			
-			gridboxType = {
-				name = "research_groups_grid"
-				position = { x = 328 y = 5 }
-				size = { width = 192 height = 128 }
-				slotsize = { width = 59 height = 62 }
-				format = "RIGHT"
-				max_slots_horizontal = 3
-				max_slots_vertical = 7
-			}
+			# containerWindowType facilities_view (cf. facility_roster.gui) is embedded by code here
 		}
 	
 		containerWindowType = {
@@ -343,7 +258,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "research_slot_entry"
-		position = { x=0 y=0 }
+		position = { x=0 y=100 }
 		size = { width=500 height= 100 }
 		clipping = no
 		
