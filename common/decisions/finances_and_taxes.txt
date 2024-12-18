@@ -85,7 +85,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -131,7 +133,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -181,7 +185,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -236,7 +242,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -287,7 +295,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -333,7 +343,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -386,7 +398,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -432,7 +446,9 @@ taxation_category = {
 		
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -478,7 +494,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -533,7 +551,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -584,7 +604,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -630,7 +652,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -683,7 +707,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -729,7 +755,9 @@ taxation_category = {
 		
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -776,7 +804,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -831,7 +861,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -882,7 +914,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -928,7 +962,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -981,7 +1017,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1027,7 +1065,9 @@ taxation_category = {
 		
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1073,7 +1113,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1128,7 +1170,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1179,7 +1223,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1225,7 +1271,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1278,7 +1326,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1324,7 +1374,9 @@ taxation_category = {
 		
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1370,7 +1422,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1425,7 +1479,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1476,7 +1532,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1523,7 +1581,9 @@ taxation_category = {
 
 		cancel_trigger = {
 			check_variable = {
-				money_variable <= 0
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
 				tooltip = money_check
 			}
 		}
@@ -1652,7 +1712,9 @@ taxation_category = {
 		}
 		available = {
 			check_variable = {
-				modifier@taxation_efficiency <= 0.5
+				var = modifier@taxation_efficiency
+				value = 0.5
+				compare = less_than_or_equals
 				tooltip = less_than_taxation_efficiency_check
 			}
 		}
