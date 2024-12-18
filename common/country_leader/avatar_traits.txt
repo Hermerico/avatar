@@ -1067,7 +1067,7 @@ leader_traits = {
 		breakthrough_factor = 0.05
 		offensive_war_stability_factor = 0.05
 		weekly_war_weariness = 0.04
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1079,7 +1079,7 @@ leader_traits = {
 		breakthrough_factor = 0.1
 		offensive_war_stability_factor = 0.1
 		weekly_war_weariness = 0.02
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1091,7 +1091,7 @@ leader_traits = {
 		breakthrough_factor = 0.15
 		offensive_war_stability_factor = 0.15
 		weekly_war_weariness = 0.01
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1101,7 +1101,7 @@ leader_traits = {
 		sprite = 9
 		army_attack_factor = 0.05
 		org_loss_when_moving = -0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1111,7 +1111,7 @@ leader_traits = {
 		sprite = 9
 		army_attack_factor = 0.1
 		org_loss_when_moving = -0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1121,7 +1121,7 @@ leader_traits = {
 		sprite = 9
 		army_attack_factor = 0.15
 		org_loss_when_moving = -0.3
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1132,7 +1132,7 @@ leader_traits = {
 		army_core_attack_factor = 0.04
 		army_core_defence_factor = 0.04
 		defensive_war_stability_factor = 0.04
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1143,7 +1143,7 @@ leader_traits = {
 		army_core_attack_factor = 0.08
 		army_core_defence_factor = 0.08
 		defensive_war_stability_factor = 0.08
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1154,7 +1154,7 @@ leader_traits = {
 		army_core_attack_factor = 0.12
 		army_core_defence_factor = 0.12
 		defensive_war_stability_factor = 0.12
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1164,7 +1164,7 @@ leader_traits = {
 		sprite = 11
 		army_core_defence_factor = 0.04
 		defensive_war_stability_factor = 0.04
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1174,7 +1174,7 @@ leader_traits = {
 		sprite = 11
 		army_core_defence_factor = 0.08
 		defensive_war_stability_factor = 0.08
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1184,7 +1184,7 @@ leader_traits = {
 		sprite = 11
 		army_core_defence_factor = 0.12
 		defensive_war_stability_factor = 0.12
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1195,7 +1195,7 @@ leader_traits = {
 		river_crossing_factor = -0.4
 		planning_speed = 0.1
 		shore_bombardment_bonus = 0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1206,7 +1206,7 @@ leader_traits = {
 		river_crossing_factor = -0.08
 		planning_speed = 0.2
 		shore_bombardment_bonus = 0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1217,7 +1217,7 @@ leader_traits = {
 		river_crossing_factor = -0.12
 		planning_speed = 0.3
 		shore_bombardment_bonus = 0.3
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1228,7 +1228,7 @@ leader_traits = {
 		command_power_gain = 0.25
 		max_planning = 0.1
 		recon_factor = 0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1239,7 +1239,7 @@ leader_traits = {
 		command_power_gain = 0.5
 		max_planning = 0.2
 		recon_factor = 0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1250,7 +1250,7 @@ leader_traits = {
 		command_power_gain = 0.75
 		max_planning = 0.4
 		recon_factor = 0.4
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1261,7 +1261,7 @@ leader_traits = {
 		resistance_growth_on_our_occupied_states = 0.2
 		resistance_damage_to_garrison_on_our_occupied_states = 0.2
 		boost_resistance_factor = 0.2
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1272,7 +1272,7 @@ leader_traits = {
 		resistance_growth_on_our_occupied_states = 0.3
 		resistance_damage_to_garrison_on_our_occupied_states = 0.3
 		boost_resistance_factor = 0.3
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1283,7 +1283,7 @@ leader_traits = {
 		resistance_growth_on_our_occupied_states = 0.4
 		resistance_damage_to_garrison_on_our_occupied_states = 0.4
 		boost_resistance_factor = 0.4
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1295,7 +1295,7 @@ leader_traits = {
 		army_org_regain = -0.1
 		army_morale_factor = -0.1
 		weekly_war_weariness = -0.03
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1307,7 +1307,7 @@ leader_traits = {
 		army_org_regain = -0.05
 		army_morale_factor = -0.05
 		weekly_war_weariness = -0.04
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1316,7 +1316,7 @@ leader_traits = {
 		random = no
 		sprite = 7
 		weekly_war_weariness = -0.05
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1327,7 +1327,7 @@ leader_traits = {
 		supply_consumption_factor = -0.1
 		no_supply_grace = 48
 		land_reinforce_rate = 0.01
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1338,7 +1338,7 @@ leader_traits = {
 		supply_consumption_factor = -0.15
 		no_supply_grace = 96
 		land_reinforce_rate = 0.02
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1349,7 +1349,7 @@ leader_traits = {
 		supply_consumption_factor = -0.2
 		no_supply_grace = 134
 		land_reinforce_rate = 0.03
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1361,7 +1361,7 @@ leader_traits = {
 		org_loss_when_moving = -0.1
 		army_speed_factor = 0.05
 		transport_capacity = -0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1373,7 +1373,7 @@ leader_traits = {
 		org_loss_when_moving = -0.15
 		army_speed_factor = 0.1
 		transport_capacity = -0.15
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1385,7 +1385,7 @@ leader_traits = {
 		org_loss_when_moving = -0.2
 		army_speed_factor = 0.15
 		transport_capacity = -0.25
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1397,7 +1397,7 @@ leader_traits = {
 		no_supply_grace = 60
 		pocket_penalty = -0.1
 		equipment_capture_factor = 0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1409,7 +1409,7 @@ leader_traits = {
 		no_supply_grace = 80
 		pocket_penalty = -0.2
 		equipment_capture_factor = 0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1421,7 +1421,7 @@ leader_traits = {
 		no_supply_grace = 100
 		pocket_penalty = -0.3
 		equipment_capture_factor = 0.3
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1431,7 +1431,7 @@ leader_traits = {
 		sprite = 23
 		winter_attrition_factor = -0.15
 		supply_consumption_factor = -0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1441,7 +1441,7 @@ leader_traits = {
 		sprite = 23
 		winter_attrition_factor = -0.3
 		supply_consumption_factor = -0.1
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1451,7 +1451,7 @@ leader_traits = {
 		sprite = 23
 		winter_attrition_factor = -0.45
 		supply_consumption_factor = -0.1
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1461,7 +1461,7 @@ leader_traits = {
 		sprite = 24
 		heat_attrition_factor = -0.1
 		supply_consumption_factor = -0.1
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1471,7 +1471,7 @@ leader_traits = {
 		sprite = 24
 		heat_attrition_factor = -0.2
 		supply_consumption_factor = -0.1
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1481,7 +1481,7 @@ leader_traits = {
 		sprite = 24
 		heat_attrition_factor = -0.3
 		supply_consumption_factor = -0.1
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1491,7 +1491,7 @@ leader_traits = {
 		sprite = 25
 		terrain_penalty_reduction = 0.1
 		heat_attrition_factor = -0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1501,7 +1501,7 @@ leader_traits = {
 		sprite = 25
 		terrain_penalty_reduction = 0.2
 		heat_attrition_factor = -0.15
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1511,7 +1511,7 @@ leader_traits = {
 		sprite = 25
 		terrain_penalty_reduction = 0.3
 		heat_attrition_factor = -0.2
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1522,7 +1522,7 @@ leader_traits = {
 		invasion_preparation = -0.1
 		amphibious_invasion = 0.1
 		amphibious_invasion_defence = 0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1533,7 +1533,7 @@ leader_traits = {
 		invasion_preparation = -0.2
 		amphibious_invasion = 0.2
 		amphibious_invasion_defence = 0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1544,7 +1544,7 @@ leader_traits = {
 		invasion_preparation = -0.3
 		amphibious_invasion = 0.3
 		amphibious_invasion_defence = 0.3
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1567,7 +1567,7 @@ leader_traits = {
 			}
 		}
 		custom_modifier_tooltip = smithing_guildmaster_ttp
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1590,7 +1590,7 @@ leader_traits = {
 			}
 		}
 		custom_modifier_tooltip = smithing_guildmaster_ttp
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1613,7 +1613,7 @@ leader_traits = {
 			}
 		}
 		custom_modifier_tooltip = smithing_guildmaster_ttp
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1632,7 +1632,7 @@ leader_traits = {
 			}
 		}
 		custom_modifier_tooltip = swordsmen_guildmaster_ttp
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1651,7 +1651,7 @@ leader_traits = {
 			}
 		}
 		custom_modifier_tooltip = swordsmen_guildmaster_ttp
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1670,7 +1670,7 @@ leader_traits = {
 			}
 		}
 		custom_modifier_tooltip = swordsmen_guildmaster_ttp
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1684,7 +1684,7 @@ leader_traits = {
 				build_cost_ic = -0.1
 			}
 		}
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1698,7 +1698,7 @@ leader_traits = {
 				build_cost_ic = -0.2
 			}
 		}
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1712,7 +1712,7 @@ leader_traits = {
 				build_cost_ic = -0.3
 			}
 		}
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1726,7 +1726,7 @@ leader_traits = {
 				build_cost_ic = -0.1
 			}
 		}
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1740,7 +1740,7 @@ leader_traits = {
 				build_cost_ic = -0.2
 			}
 		}
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1754,7 +1754,7 @@ leader_traits = {
 				build_cost_ic = -0.3
 			}
 		}
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1764,7 +1764,7 @@ leader_traits = {
 		sprite = 4
 		pocket_penalty = -0.1
 		max_dig_in = 10
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1774,7 +1774,7 @@ leader_traits = {
 		sprite = 4
 		pocket_penalty = -0.2
 		max_dig_in = 20
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1784,7 +1784,7 @@ leader_traits = {
 		sprite = 4
 		pocket_penalty = -0.3
 		max_dig_in = 30
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1794,7 +1794,7 @@ leader_traits = {
 		sprite = 17
 		recon_factor = 0.1
 		intel_from_combat_factor = 0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1804,7 +1804,7 @@ leader_traits = {
 		sprite = 17
 		recon_factor = 0.2
 		intel_from_combat_factor = 0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1814,7 +1814,7 @@ leader_traits = {
 		sprite = 17
 		recon_factor = 0.3
 		intel_from_combat_factor = 0.3
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1880,7 +1880,7 @@ leader_traits = {
 			}
 		}
 		fortification_damage = 0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1895,7 +1895,7 @@ leader_traits = {
 			}
 		}
 		fortification_damage = 0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1910,7 +1910,7 @@ leader_traits = {
 			}
 		}
 		fortification_damage = 0.3
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1935,7 +1935,7 @@ leader_traits = {
 		ships_at_battle_start = 0.05
 		naval_critical_score_chance_factor = 0.05
 		critical_receive_chance = 0.05
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1947,7 +1947,7 @@ leader_traits = {
 		ships_at_battle_start = 0.1
 		naval_critical_score_chance_factor = 0.1
 		critical_receive_chance = 0.1
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1959,7 +1959,7 @@ leader_traits = {
 		ships_at_battle_start = 0.15
 		naval_critical_score_chance_factor = 0.15
 		critical_receive_chance = 0.15
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1971,7 +1971,7 @@ leader_traits = {
 		spotting_chance = 0.1
 		naval_torpedo_cooldown_factor = -0.1
 		naval_torpedo_hit_chance_factor = 0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1983,7 +1983,7 @@ leader_traits = {
 		spotting_chance = 0.2
 		naval_torpedo_cooldown_factor = -0.2
 		naval_torpedo_hit_chance_factor = 0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1995,7 +1995,7 @@ leader_traits = {
 		spotting_chance = 0.3
 		naval_torpedo_cooldown_factor = -0.3
 		naval_torpedo_hit_chance_factor = 0.3
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2007,7 +2007,7 @@ leader_traits = {
 		convoy_escort_efficiency = 0.1
 		screening_efficiency = 0.1
 		convoy_retreat_speed = 0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -2019,7 +2019,7 @@ leader_traits = {
 		convoy_escort_efficiency = 0.2
 		screening_efficiency = 0.2
 		convoy_retreat_speed = 0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -2031,7 +2031,7 @@ leader_traits = {
 		convoy_escort_efficiency = 0.3
 		screening_efficiency = 0.3
 		convoy_retreat_speed = 0.3
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2043,7 +2043,7 @@ leader_traits = {
 		naval_coordination = 0.1
 		navy_fuel_consumption_factor = -0.1
 		naval_speed_factor = 0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -2055,7 +2055,7 @@ leader_traits = {
 		naval_coordination = 0.2
 		navy_fuel_consumption_factor = -0.2
 		naval_speed_factor = 0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -2067,7 +2067,7 @@ leader_traits = {
 		naval_coordination = 0.3
 		navy_fuel_consumption_factor = -0.3
 		naval_speed_factor = 0.3
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2079,7 +2079,7 @@ leader_traits = {
 		critical_receive_chance = -0.1
 		naval_critical_effect_factor = -0.05
 		naval_retreat_chance = 0.1
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -2091,7 +2091,7 @@ leader_traits = {
 		critical_receive_chance = -0.2
 		naval_critical_effect_factor = -0.1
 		naval_retreat_chance = 0.2
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -2103,7 +2103,7 @@ leader_traits = {
 		critical_receive_chance = -0.3
 		naval_critical_effect_factor = -0.15
 		naval_retreat_chance = 0.3
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2113,7 +2113,7 @@ leader_traits = {
 		sprite = 5
 		naval_morale_factor = 0.05
 		experience_gain_navy = 0.05
-		command_cap = @tier1
+		#command_cap = @tier1
 		ai_will_do = {
 			factor = 1
 		}
@@ -2123,7 +2123,7 @@ leader_traits = {
 		sprite = 5
 		naval_morale_factor = 0.1
 		experience_gain_navy = 0.1
-		command_cap = @tier2
+		#command_cap = @tier2
 		ai_will_do = {
 			factor = 1
 		}
@@ -2133,7 +2133,7 @@ leader_traits = {
 		sprite = 5
 		naval_morale_factor = 0.15
 		experience_gain_navy = 0.15
-		command_cap = @tier3
+		#command_cap = @tier3
 		ai_will_do = {
 			factor = 1
 		}
