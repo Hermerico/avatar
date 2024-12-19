@@ -7,15 +7,7 @@
 
 
 template_infantry_high_tier = {
-
-	
-
-	roles = {
-		high_tier
-		defender
-		non_bender
-	}
-	
+	role = {high_tier}
 	upgrade_prio = {
 		base = 1
 		modifier = {
@@ -24,46 +16,21 @@ template_infantry_high_tier = {
 			}
 			factor = 0
 		}
-	}
-
-	match_to_count = 0.10
-	
+	}	
 	infantry_high_tier_1 = {
-	
 		upgrade_prio = {
-			factor = 2
-
-			modifier = {
-				factor = 1
-			}
+			base = 2
 		}
-		
-		target_width = 18.0
-		width_weight = 0.4
-		column_swap_factor = 0.7
-		
 		target_template = {
-			weight = 0.6
-			match_value = 3000.0
-			
 			regiments = {
 				spearmen = 4
 				pikemen = 2
 			}
-
 			support = {
 				avatar_engineer = 1
 				scout = 1
 			}
 		}
-		
-		allowed_types = {
-			spearmen
-			pikemen
-			avatar_engineer
-			scout
-		}
-
 		replace_at_match = 0.4
 		replace_with = infantry_high_tier_2
 		target_min_match = 0.5
@@ -122,100 +89,41 @@ template_infantry_high_tier = {
 
 
 template_infantry_average_tier = {
+	role = {average_tier}	
+	upgrade_prio = {base = 2}
 
-	roles = {
-		average_tier
-		defender
-		non_bender
-	}
-	
-	upgrade_prio = {
-		factor = 2
-
-		modifier = {
-			factor = 5
-		}
-	}
-
-	match_to_count = 0.10
-	
 	infantry_average_tier_1 = {
-	
-		upgrade_prio = {
-			factor = 2
-
-			modifier = {
-				factor = 1
-			}
-		}
-		
-		target_width = 12.0
-		width_weight = 0.4
-		column_swap_factor = 0.7
-		
+		upgrade_prio = {base = 2}
 		target_template = {
-			weight = 0.6
-			match_value = 3000.0
-			
 			regiments = {
 				spearmen = 4
 			}
-
 			support = {
 				avatar_engineer = 1
 			}
 		}
-		
-		allowed_types = {
-			spearmen
-			avatar_engineer
-		}
-
 		replace_at_match = 0.4
 		replace_with = infantry_average_tier_2
 		target_min_match = 0.5
 	}
 
 	infantry_average_tier_2 = {
-	
-		upgrade_prio = {
-			factor = 2
-
-			modifier = {
-				factor = 1
-			}
-		}
-		
-		target_width = 12.0
-		width_weight = 0.4
-		column_swap_factor = 0.7
-		
+		upgrade_prio = {base = 2}
 		target_template = {
-			weight = 0.6
-			match_value = 3000.0
-			
 			regiments = {
 				spearmen = 4
 			}
-
 			support = {
 				avatar_engineer = 1
 				scout = 1
 				supply_wagon = 1
 			}
 		}
-		
-		allowed_types = {
-			spearmen
-			avatar_engineer
-			scout
-			supply_wagon
-		}
 	}
 	
 }
 template_infantry_supportless = {
-	roles = {
+	role = {
 		supportless
 	}
 	upgrade_prio = {
@@ -226,7 +134,6 @@ template_infantry_supportless = {
 			factor = 2
 		}
 	}
-	match_to_count = 1.0
 	supportless_1 = {
 		custom_icon = 36
 		upgrade_prio = {
@@ -242,18 +149,10 @@ template_infantry_supportless = {
 				bow_equipment > 30
 			}
 		}
-		target_width = 9
-		width_weight = 4
-		column_swap_factor = 0
 		target_template = {	
-			weight = 5
-			match_value = 1.0	
 			regiments = {
 				spearmen = 3
 			}
-		}
-		allowed_types = {
-			spearmen
 		}
 	}
 	supportless_2 = {
@@ -271,20 +170,11 @@ template_infantry_supportless = {
 				bow_equipment > 30
 			}
 		}
-		target_width = 10
-		width_weight = 4
-		column_swap_factor = 0
 		target_template = {	
-			weight = 5
-			match_value = 1.0	
 			regiments = {
 				spearmen = 3
 				archers = 1
 			}
-		}
-		allowed_types = {
-			spearmen
-			archers
 		}
 	}
 	supportless_3 = {
@@ -302,22 +192,12 @@ template_infantry_supportless = {
 				sword_equipment > 120
 			}
 		}
-		target_width = 15
-		width_weight = 4
-		column_swap_factor = 0
-		target_template = {	
-			weight = 5
-			match_value = 1.0	
+		target_template = {		
 			regiments = {
 				spearmen = 3
 				archers = 2
 				swordsmen = 4
 			}
-		}
-		allowed_types = {
-			spearmen
-			archers
-			swordsmen
 		}
 	}
 	supportless_4 = {
@@ -332,22 +212,12 @@ template_infantry_supportless = {
 		can_upgrade_in_field = {
 			always = yes
 		}
-		target_width = 14
-		width_weight = 4
-		column_swap_factor = 0
 		target_template = {	
-			weight = 5
-			match_value = 1.0	
 			regiments = {
 				spearmen = 2
 				archers = 2
 				swordsmen = 5
 			}
-		}
-		allowed_types = {
-			spearmen
-			archers
-			swordsmen
 		}
 	}
 }
