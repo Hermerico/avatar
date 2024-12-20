@@ -11,7 +11,9 @@ ideas = {
 				has_war = yes
 				has_war_support > 0.8
 				check_variable = {
-					current_authority >= 75
+					current_authority
+					value = 85
+					compare = greater_than_or_equals
 					tooltip = check_authority_tooltip
 				}
 				NOT = {
@@ -136,7 +138,9 @@ ideas = {
 			
 			available = {
 				check_variable = {
-					current_authority >= 50
+					var = current_authority
+					value = 50
+					compare = greater_than_or_equals
 					tooltip = check_authority_tooltip
 				}
 				OR = {
@@ -215,7 +219,9 @@ ideas = {
 			}
 			available = {
 				check_variable = {
-					current_authority <= 15
+					var = current_authority
+					value = 15
+					compare = less_than_or_equals
 					tooltip = check_liberty_tooltip
 				}
 				NOT = {
@@ -250,7 +256,9 @@ ideas = {
 			}
 			available = {
 				check_variable = {
-					current_authority >= 85
+					var = current_authority
+					value = 85
+					compare = greater_than_or_equals
 					tooltip = check_authority_tooltip
 				}
 				NOT = {
@@ -341,7 +349,9 @@ ideas = {
 				OR = {
 					has_war = no
 					check_variable = {
-						current_authority <= 50
+						var = current_authority
+						value = 50
+						compare = less_than_or_equals
 						tooltip = check_liberty_tooltip
 					}
 				}
@@ -394,7 +404,9 @@ ideas = {
 				OR = {
 					has_war = no
 					check_variable = {
-						current_authority <= 25
+						var = current_authority 
+						value = 25
+						compare = less_than_or_equals
 						tooltip = check_liberty_tooltip
 					}
 				}
@@ -441,7 +453,9 @@ ideas = {
 			
 			available = {
 				check_variable = {
-					current_authority <= 50
+					var = current_authority 
+					value = 50
+					compare = less_than_or_equals
 					tooltip = check_liberty_tooltip
 				}
 				NOT = {
