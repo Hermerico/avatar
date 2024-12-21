@@ -147,3 +147,11 @@ diplomacy_lend_lease_entry
 statsarea
 	tech_info_special_description_bottom_margin	 
 
+province_building_special_icon_entry:FIXED?
+raid_map_icon_button_container
+raid_map_icon
+raid_map_icon_frame
+state_stakeholder_entry
+convert_ic_entry
+gun_emplacement_mapicon
+special_facility_mapicon 
