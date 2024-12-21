@@ -156,6 +156,12 @@ spriteTypes = {
 		name = "GFX_generic_text_bg_40"
 		textureFile = "gfx/interface/generic_text_bg_40.dds"
 	}
+
+	spriteType = {
+		name = "GFX_province_landmark_bg"
+		textureFile = "gfx/interface/stateview/province_landmark_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 	
 	spriteType = {
 		name = "GFX_core_owner_placeholder_bg"
