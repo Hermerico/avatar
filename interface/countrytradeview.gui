@@ -604,6 +604,23 @@ guiTypes = {
 			maxHeight = 18
 			format = left
 		}
+		instantTextboxType = {
+			name = "special_project"
+			font = "hoi_16mbs"
+			position = { x=295 y=4 }
+			maxWidth = 50
+			maxHeight = 18
+			format = right
+		}
+		
+		instantTextboxType = {
+			name = "production_line"
+			font = "hoi_16mbs"
+			position = { x=295 y=16 }
+			maxWidth = 50
+			maxHeight = 18
+			format = right
+		}
 		
 		instantTextboxType = {
 			name = "needed"
