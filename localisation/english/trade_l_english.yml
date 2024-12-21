@@ -49,6 +49,8 @@
  CONVOYS:0 "Convoys"
  CANCEL_RESOURCE_IMPORT:0 "Cancel all resource imports"
  CONVOYS_USAGE_DELAYED:0 "Convoys are used when importing resources by sea from other countries, transferring our resources produced internally, and delivering supplies to our land forces in the colonies."
+ RESOURCE_DETAILS_NET_SURPLUS: "We have a net surplus of $SURPLUS|G$ units of $RESOURCE|H$."
+ RESOURCE_DETAILS_NET_DEFICIT: "We have a net deficit of $DEFICIT|R$ units of $RESOURCE|H$." 
  RESOURCE_DETAILS_SURPLUS:0 "We have $TOTAL|H$ units of $RESOURCE|H$ for use.\n\nNeeded by Production Lines: $NEEDED|H$\nSurplus: $SURPLUS|H$"
  RESOURCE_DETAILS_DEFICIT:0 "We have $TOTAL|H$ units of $RESOURCE|H$ for use.\n\nNeeded by Production Lines: $NEEDED|H$\nDeficit: $DEFICIT|H$"
  RESOURCE_DETAILS_FUEL:2 "We have $TOTAL|H$ units of $RESOURCE|H$ for use.\n\nCurrent consumption: $ACTIVE_FUEL|H$\nMaximum consumption: $POTENTIAL_FUEL|H$"
