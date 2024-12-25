@@ -2835,3 +2835,15 @@ soundeffect = {
 	}
 	volume = 0.4
 }
+
+soundeffect = {
+    name = explosion_big
+    falloff = falloff_100
+    sounds = {
+        sound = explosion_big_01
+    }
+    max_audible = 5
+    max_audible_behaviour = fail
+    is3d = yes
+    volume = 1.0
+}

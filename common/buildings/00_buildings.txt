@@ -76,7 +76,6 @@ buildings = {
 
 		#local_resources_oil = 2
 		#local_resources_food_resource = 1
-<<<<<<< HEAD
 		country_modifiers = {
 			modifiers = { 
 				farmer_k = 0.60
@@ -91,8 +90,6 @@ buildings = {
 			farm_level = 1
 		}
 		show_modifier = yes
-=======
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 
 		show_modifier = yes
 		farmer_k = 0.60
@@ -107,7 +104,6 @@ buildings = {
 		show_on_map = 1
 		base_cost = 4000
 		icon_frame = 6
-<<<<<<< HEAD
 		level_cap = {
 			province_max = 10
 		}
@@ -127,13 +123,6 @@ buildings = {
 			local_supplies_for_controller = 0.025
 			urbanisation = -0.1
 			ranch_level = 1
-=======
-		#shares_slots = yes
-		value = 6
-		infrastructure_construction_effect = yes
-		level_cap = {
-			state_max = 50
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 		}
 
 		#local_resources_chromium = 6
@@ -144,54 +133,26 @@ buildings = {
 		local_supplies_for_controller = 0.025
 		max_grain_building_k = 0.2
 
-<<<<<<< HEAD
-
-=======
 		urbanisation = -0.1
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 	}
 
 	fishing_stand = {
 		show_on_map = 1
 		base_cost = 3500
 		icon_frame = 11
-<<<<<<< HEAD
-		level_cap = {
-			province_max = 10
-		}
-		#shares_slots = yes
-		value = 7
-		infrastructure_construction_effect = yes
-		only_display_if_exists = yes
-		only_costal = yes
-=======
 		#shares_slots = yes
 		value = 7
 		infrastructure_construction_effect = yes
 		level_cap = {
 			state_max = 50
 		}
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 
 		#local_resources_food_resource = 2
 
 		show_modifier = yes
-<<<<<<< HEAD
-		country_modifiers = {
-			modifiers = { 		
-				fisher_k = 0.075
-				building_upkeep_cost = 1
-			}
-		}
-		state_modifiers = {
-			local_supplies_for_controller = 0.025
-			fishing_stand_level = 1
-		}
-=======
 		fisher_k = 0.075
 		building_upkeep_cost = 1
 		local_supplies_for_controller = 0.025
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 	}
 
 	lumber_mill = {
@@ -200,11 +161,7 @@ buildings = {
 		#per_level_extra_cost = 540
 		icon_frame = 4
 		level_cap = {
-<<<<<<< HEAD
-			province_max = 10
-=======
 			state_max = 50
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 		}
 		#shares_slots = yes
 		value = 12
@@ -214,23 +171,10 @@ buildings = {
 		#local_resources_aluminium = 10
 
 		show_modifier = yes
-<<<<<<< HEAD
-		country_modifiers = {
-			modifiers = {
-				lumberjack_k = 0.1
-				building_upkeep_cost = 1
-			 }
-		}
-		state_modifiers = {
-			urbanisation = -0.1
-			lumber_mill_level = 1
-		}
-=======
 		lumberjack_k = 0.1
 		building_upkeep_cost = 1
 
 		urbanisation = -0.1
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 	}
 
 	quarry = {
@@ -240,11 +184,7 @@ buildings = {
 		icon_frame = 5
 		##local_resources_aluminium = -1000
 		level_cap = {
-<<<<<<< HEAD
-			province_max = 10
-=======
 			state_max = 50
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 		}
 		#shares_slots = yes
 		value = 16
@@ -254,23 +194,10 @@ buildings = {
 		#local_resources_stone = 6
 
 		show_modifier = yes
-<<<<<<< HEAD
-		country_modifiers = {
-			modifiers = { 
-				miner_k = 0.160
-				building_upkeep_cost = 2
-			}
-		}
-		state_modifiers = {
-			urbanisation = -0.1
-			quarry_level = 1
-		}
-=======
 		miner_k = 0.160
 		building_upkeep_cost = 2
 
 		urbanisation = -0.1
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 	}
 
 	mine = {
@@ -279,11 +206,7 @@ buildings = {
 		#per_level_extra_cost = 380
 		icon_frame = 7
 		level_cap = {
-<<<<<<< HEAD
-			province_max = 10
-=======
 			state_max = 50
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 		}
 		#shares_slots = yes
 		value = 8
@@ -294,23 +217,10 @@ buildings = {
 		#local_resources_rubber = 1
 
 		show_modifier = yes
-<<<<<<< HEAD
-		country_modifiers = {
-			modifiers = { 
-				miner_k = 0.180
-				building_upkeep_cost = 2
-			}
-		}
-		state_modifiers = {
-			urbanisation = -0.1
-			mine_level = 1
-		}
-=======
 		miner_k = 0.180
 		building_upkeep_cost = 2
 
 		urbanisation = -0.1
->>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
 	}
 
 
