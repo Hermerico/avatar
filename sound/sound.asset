@@ -943,6 +943,29 @@ sound =
 	file = "animations/nuke_01.wav"
 	always_load = no
 }
+#################ATOM BOMB#######################################
+sound =
+{
+	name = "nuke_01"
+	file = "animations/nuke_01.wav"
+	always_load = no
+}
+
+sound = {
+    name = "nuke_big_explosion_and_fire"
+    file = "animations/nuke_big_explosion_and_fire.wav"
+}
+sound = {
+    name = "nuke_big_light_flash"
+    file = "animations/nuke_big_light_flash.wav"
+}
+
+#################GENERIC EXPLOSION#######################################
+sound = {
+    name = "explosion_big_01"
+    file = "audiofiles/explosion_big_01.wav"
+}
+
 #######################################################
 sound =
 {

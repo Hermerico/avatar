@@ -159,10 +159,10 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_province_landmark_bg"
-		textureFile = "gfx/interface/stateview/province_landmark_bg.dds"
+		textureFile = "gfx/interface/state_view/province_landmark_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
-	
+
 	spriteType = {
 		name = "GFX_core_owner_placeholder_bg"
 		textureFile = "gfx/interface/core_owner_placeholder.dds"

@@ -145,16 +145,21 @@ buildings = {
 		max_grain_building_k = 0.2
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 		urbanisation = -0.1
 >>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
+=======
+		urbanisation = -0.1
+>>>>>>> Cordy-Develop
 	}
 
 	fishing_stand = {
 		show_on_map = 1
 		base_cost = 3500
 		icon_frame = 11
+<<<<<<< HEAD
 <<<<<<< HEAD
 		level_cap = {
 			province_max = 10
@@ -172,10 +177,19 @@ buildings = {
 			state_max = 50
 		}
 >>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
+=======
+		#shares_slots = yes
+		value = 7
+		infrastructure_construction_effect = yes
+		level_cap = {
+			state_max = 50
+		}
+>>>>>>> Cordy-Develop
 
 		#local_resources_food_resource = 2
 
 		show_modifier = yes
+<<<<<<< HEAD
 <<<<<<< HEAD
 		country_modifiers = {
 			modifiers = { 		
@@ -192,6 +206,11 @@ buildings = {
 		building_upkeep_cost = 1
 		local_supplies_for_controller = 0.025
 >>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
+=======
+		fisher_k = 0.075
+		building_upkeep_cost = 1
+		local_supplies_for_controller = 0.025
+>>>>>>> Cordy-Develop
 	}
 
 	lumber_mill = {
@@ -201,10 +220,14 @@ buildings = {
 		icon_frame = 4
 		level_cap = {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			province_max = 10
 =======
 			state_max = 50
 >>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
+=======
+			state_max = 50
+>>>>>>> Cordy-Develop
 		}
 		#shares_slots = yes
 		value = 12
@@ -214,6 +237,7 @@ buildings = {
 		#local_resources_aluminium = 10
 
 		show_modifier = yes
+<<<<<<< HEAD
 <<<<<<< HEAD
 		country_modifiers = {
 			modifiers = {
@@ -226,11 +250,16 @@ buildings = {
 			lumber_mill_level = 1
 		}
 =======
+=======
+>>>>>>> Cordy-Develop
 		lumberjack_k = 0.1
 		building_upkeep_cost = 1
 
 		urbanisation = -0.1
+<<<<<<< HEAD
 >>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
+=======
+>>>>>>> Cordy-Develop
 	}
 
 	quarry = {
@@ -241,10 +270,14 @@ buildings = {
 		##local_resources_aluminium = -1000
 		level_cap = {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			province_max = 10
 =======
 			state_max = 50
 >>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
+=======
+			state_max = 50
+>>>>>>> Cordy-Develop
 		}
 		#shares_slots = yes
 		value = 16
@@ -254,6 +287,7 @@ buildings = {
 		#local_resources_stone = 6
 
 		show_modifier = yes
+<<<<<<< HEAD
 <<<<<<< HEAD
 		country_modifiers = {
 			modifiers = { 
@@ -266,11 +300,16 @@ buildings = {
 			quarry_level = 1
 		}
 =======
+=======
+>>>>>>> Cordy-Develop
 		miner_k = 0.160
 		building_upkeep_cost = 2
 
 		urbanisation = -0.1
+<<<<<<< HEAD
 >>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
+=======
+>>>>>>> Cordy-Develop
 	}
 
 	mine = {
@@ -280,10 +319,14 @@ buildings = {
 		icon_frame = 7
 		level_cap = {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			province_max = 10
 =======
 			state_max = 50
 >>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
+=======
+			state_max = 50
+>>>>>>> Cordy-Develop
 		}
 		#shares_slots = yes
 		value = 8
@@ -294,6 +337,7 @@ buildings = {
 		#local_resources_rubber = 1
 
 		show_modifier = yes
+<<<<<<< HEAD
 <<<<<<< HEAD
 		country_modifiers = {
 			modifiers = { 
@@ -306,11 +350,16 @@ buildings = {
 			mine_level = 1
 		}
 =======
+=======
+>>>>>>> Cordy-Develop
 		miner_k = 0.180
 		building_upkeep_cost = 2
 
 		urbanisation = -0.1
+<<<<<<< HEAD
 >>>>>>> parent of 0f1f5d925 (1.15 Defines, map file structure)
+=======
+>>>>>>> Cordy-Develop
 	}
 
 
