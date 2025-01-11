@@ -52,11 +52,19 @@ EAR = {
 NWT = {
 	male = {
 		names = {
-			Amak Amon Arnook Atuat Bato Buthaka Gommu Eska Due Gilak Hahn Hakoda Hiryu Hasook Hotah Iknik Varrick Kam Kinto Kuruk Thano Maliq Noa Pakku Rafa Sangok Saikhan Siku Slim Sokka Tarrlok Thod Tonraq Unalaq Visola Wushu Wei Yakone
+			Amak Amon Arnook Atuat Bato Buthaka Gommu Eska Due Gilak
+			Hahn Hakoda Hiryu Hasook Hotah Hutok Hurkak Gunu Fendo Iknik
+			Varrick Kam Kinto Kuruk Thano Henuro Dunqak Maliq Noa Pakku
+			Rafa Sangok Saikhan Siku Slim Suhik Saunaka Suuwarak Suukurik Sutek
+			Suvuk Sokka Tarrlok Thod Tonraq Unalaq Visola Wushu Wei Yakone
 		}
 	}
 	female = {
-		names = { Ashuna Desna Hama Kanna Katara Korra Kya Kaya Nutha Misu Senna Sura Ummi Yue Yugoda }
+		names = { 
+			Ashuna Arate Ankhasa Aaruku Abeta Abikisa Abikida Agreka Ahona Asegi
+			Desna Hama Kanna Katara Korra Kya Kaya Nutha Misu Senna 
+			Sura Ummi Yue Yugoda 
+		}
 	}
 	surnames = { "" }
 	callsigns = { "" }
@@ -65,11 +73,18 @@ NWT = {
 SWT = {
 	male = {
 		names = {
-			Amak Amon Arnook Atuat Bato Buthaka Eska Due Gommu Gilak Hahn Hakoda Hiryu Hotah Hasook Iknik Varrick Kam Kinto Kuruk Thano Maliq Noa Pakku Rafa Sangok Siku Saikhan Slim Sokka Tarrlok Thod Tonraq Unalaq Visola Wushu Wei Yakone
+			Amak Amon Arnook Atuat Bato Buthaka Eska Due Gommu Gilak Hahn Hakoda Hiryu Hotah Homkoh Hasook Iknik Ikirik Varrick Kam Kanta Kinto Kuruk Kugek Thano Maliq Noa Nowura Pakku Rafa Sangok Siku Saikhan Slim Sokka Tarrlok Thod Tonraq Unalaq Visola Wushu Wei Yakone
 		}
 	}
 	female = {
-		names = { Ashuna Desna Hama Kanna Katara Korra Kya Kaya Nutha Misu Senna Sura Ummi Yue Yugoda}
+		names = {
+			Ashuna Desna Hama Kanna Katara Korra Kya Kaya Nutha Nushoba
+			Deusu Duburi Dukiki Dulu Dukuk Duzungu Dutire Durnu Duse Dumaga
+			Arwaka Alima Anaka Areme Arkala Alebe Alhala Anariki Auwutu Amuzuta
+			Bengo Bihuuta Bika Bigrana Buuyuka Burnaka Burugu Buvutu Bvauga Banegturu  
+			Martuuk Melek Mirudu Mirwata Mirweke Mirwuuru Misu Senna Sinnsima Surwata
+		  	Sura Ummi Yue Yugoda
+		}
 	}
 	surnames = { "" }
 	callsigns = { "" }
@@ -78,7 +93,22 @@ SWT = {
 NAT = {
 	male = {
 		names = {
-			Aang Meelo Afiko Gyatso Jinju Jinpa Kelsang Laghima Malu Momo Appa Pasang Pengpeng Pik Pak Tang Xu "Tang-Xu" Tashi Yingyong Dorjee Gyaltsen Sangye Sashi Nawang Kalsang Tashi Tenzin
+			Aang Meelo Afiko Gyatso Jinju Jinpa Kelsang Laghima Malu Momo Nerwamo Yousegi Appa Pasang Pengpeng Pik Pak Tang Xu "Tang-Xu" Tashi Yingyong Dorjee Gyaltsen Sangye Sashi Nawang Kalsang Tashi Tenzin
+			Ahurna Auteki Awenka Ceujudi Cinuki
+			Dateri Deuteko Deumiru Dufiki Duso
+		    Fuse Huniki Sekire Sawafa Serudi
+			Bonuzi Bretreti Bisesti Biyonki Bawarti
+			Wayaya Hanagaha Futububu Tutunyunyu Gers
+	  		Wris Sirnir Smerder Jurja Vukju
+		}
+	}
+	female = {
+		names = {
+			Sdewe Sneke Snebe Snele Snege Snehe Snete Skete Sbete Sfete Spete
+			Shete Shute Shume Shuke Sjute Sbute Swute Trube Niste
+			Babu Ijuruke Nerezte Wayda Zupara Doxuni Daztu Putolda
+			Neime Zutu Ichuka Nuturi Wanaba Yuwana Kanutuwi Hewuza
+			Mebifo Rumeni Kanturi Zue Tuwa Nucu 
 		}
 	}
 	surnames = { "" }
@@ -107,7 +137,13 @@ WAT = {
 
 EAT = {
 	male = {
-		names = {Limelis Hortokas Irobo Nomuka Savokis Jonukas Horuko Mefaga Rotupi Hewoto Nuriweka Anokoda Fecuhepi Saratiso Yosukobi Awameru}
+		names = {
+			Limelis Hortokas Irobo Nomuka Savokis Jonukas Horuko Mefaga Rotupi Hewoto
+		 	Nuriweka Anokoda Fecuhepi Saratiso Yosukobi Awameru Usona Hauwapo Sadanawa Henu
+			Ceugo Jonovavis Haosopo Denfetera Eugosomu Forosagi Nemebros Safo Jonovikus Bemhotos
+			Dehnhosto Gutosos Funiokas Eldesepis Semvara Wrusoubi Boutis Huseka Wuninto Aukis
+			Gestesis Finosokis Remses Bekisis Deupulis
+		}
 	}
 	female = {
 		names = { Iio Jesa Wimu Kotura Noribo Setoka Hinoro Fewuna Yangchen Choekyi Akar Amala Assam Amrita Dawa Diki Ikki Jinora Jinpa Opame Gyaltsen Gewa Ngawang Pema Popo Passang Popo Sashi }
@@ -119,8 +155,22 @@ EAT = {
 SAT = {
 	male = {
 		names = {
-			Aang Meelo Afiko Gyatso Jinju Jinpa Kelsang Laghima Malu Momo Appa Pasang Pengpeng Pik Pak Tang Xu "Tang-Xu" Tashi Yingyong Dorjee Gyaltsen Sangye Sashi Nawang Kalsang Tashi Tenzin
+			Aang Meelo Afiko Gyatso Jinju Jinpa Kelsang Laghima Malu Momo 
+			Appa Pasang Pengpeng Pik Pak Tang Xu Tang-Xu Tashi Yingyong Moko
+			Dorjee Gyaltsen Sangye Sashi Nawang Kalsang Tashi Tenzin Tengweng Weizan
+			Duree Dezui Duz Duti Duno Dase Dako Dale Dare Dafo
+			Dapo Dazi Turgan Feuwis Fuporu Bizrit Keini Poyagi Nizugo Weizi
+			Dudi Uri Genti Seuteres Eripis Heisepi Weikidi Weresi Zenka
 		}
+	}
+	female = {
+		names = {
+			Waizei Huangfa Sinhoi Eusui Fahan Keru Tenmei Donghur Saidei Arthang
+			Huyo Dizu Kisuta Feiwa Nayu Sauto Poyu Nuzeika Bentor Keiben
+			Reinmghan Kusei Nuipi Beimui Durika Binreta Winwugo Seirike Neigibo Pirete
+			Beze Husoka Cengli Duriz Nemren Surew Hurmob Dwasa Reizin Okli
+			Belzit Weikai Neihu Guisi Ingoriba Poruweikine Tripo Rusubi Mensepire Runike
+		}	
 	}
 	surnames = { "" }
 	callsigns = { "" }
@@ -129,7 +179,11 @@ SAT = {
 SNW = {
 	male = {
 		names = {
-			Fang Ran Shaw Eztli Itzcali Ohtli Patlee Yaotl Xolotl Xipil Ueman Patlee Bahrun Bakri Dadan Kargono Joso
+			Fang Ran Shaw Eztli Itzcali Ohtli Patlee Yaotl Xolotl Xipil Ueman 
+			Patlee Bahrun Bakri Dadan Kargono Joso Jecili Hinsuli Kerili Hiliki
+			Ayasulpa Athala Nathara Arathulpa Renetzli Nezli Wehili Eriliki Renusira Arthl
+			Sentherl Kinthrothl Denthrsothl Rothl Gunthrl Senthet Remheter Ursthl Krnhgra Kersera
+			Ungrah Ferstoli Meusan Rengaran Dimuran Harwan Saukeli Fungrah Gautreli Pihualpi
 		}
 	}
 	female = {
@@ -142,11 +196,18 @@ SNW = {
 SWA = {
 	male = {
 		names = {
-			Due Huu Tho Woo Ik Ook Dood Wat Nou Monke Yu Oog Buu Nig Ger Gar
+			Due Dau Das Deu Diu Dim Dis Duu Dne Dom
+			Fus Fau Fah Fai Fer Fez Fek Fis Fil Feb
+			Gun Gum Gub Gul Gut Gud Gus Guk Gup Gur
+			Gew Gem Geh Gen Geb Gys Gyl Ger Gar Oog
+			Huu Tho Woo Ik Ook Dood Wat Nou Monke Yu
+			Buu Nig 
 		}
 	}
 	female = {
-		names = { Net Phet Fan Tan Tin Meme Nam Ee Sasa Nii }
+		names = {
+			Net Phet Fan Tan Tin Meme Nam Ee Sasa Nii 
+			Gyw Gyr Gyt }
 	}
 	surnames = { "" }
 	callsigns = { "" }
@@ -155,11 +216,25 @@ SWA = {
 KYI = {
 	male = {
 		names = {
-			Oyaji Hiroshi Yasuko Tokuga Shiro Raiko Mushi Akira Daichi Goto Ginjiro Hayato Hiro Ichiro Seiko Taijo Taiki Taichi
+			Oyaji Hiroshi Yasuko Tokuga Shiro Raiko Mushi Akira Daichi Goto 
+			Ginjiro Hayato Hiro Ichiro Seiko Taijo Taiki Taichi Mamoru Izawa
+ 			Izaki Izuma Izuya Iyaka Isomu Ikki Inugo Ihorata Itorobi Iwusada
+			Munoka Miruka Misuoka Minoru Miyagi Mitsuru Miwu Mihara Mikuzoa Mihoruki
+			Jun Jugo Juweto Juda Jusuke Jugowi Junoka Jumeko Judogi Jizabe
+			Towa Toiriki Tomura Torego Togure Tonuka Tisomo Tiwao Turobatsu Tunoka
+			Tengo Tonjin Tebu Taho Tuntsu Toroyomi Tuzoki Tauwira Timuzu Tuko
+			Funo Fusuke Feha Femuka Fizu Feweri Fusogi Fuudo Faguta Furu
+			Puyutsu Punoku Pawuto Puasuka Pino Ponutoka Puzi Pihota Punuto Pereko
 		}
 	}
 	female = {
-		names = { Suki Azumi Izumi Izanami Kioshy Aiko Chisuzu Emiko Harumi  Hinata Hitomi Kamiko Kiyoko Kumiko Masami Natsumi Sayaka }
+		names = { 
+				Ayama Toneko Suki Azumi Izumi Izanami Kioshy Aiko Chisuzu Emiko
+				Haruka Harumi Haruna Hinata Hitomi Kamiko Kiyoko Kumiko Masami Natsumi
+				Genuta Gomuba Guwata Gewene Geweta Gewego Geweyo Geweka Guko Gaki
+				Ootori Osukaze Okoyama Oriko Onusoka Osozuki Onoseki Osumi Oyosaka Ozika
+				Sayaka Daiki Dunota Duki Denka Dina Dokuhi Disupo Darugo Degora 
+				Dumutsu}
 	}
 	surnames = { "" }
 	callsigns = { "" }
